@@ -1,0 +1,33 @@
+script ; 6186
+ sinit
+  refid "_-QF:_-1nt/init"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 1
+   maxscopedepth 3
+   code
+    getlocal0
+    pushscope
+
+    debugfile           "k"
+    debugline           5
+    findpropstrict      Multiname("_-1nt", [PackageNamespace("_-QF")])
+    getlex              QName(PackageNamespace(""), "Object")
+    pushscope
+
+    getlex              QName(PackageNamespace(""), "Object")
+    newclass            "_-QF:_-1nt"
+    popscope
+    initproperty        QName(PackageNamespace("_-QF"), "_-1nt")
+
+    debugfile           "k"
+    debugline           4
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait class QName(PackageNamespace("_-QF"), "_-1nt")
+  #include "_-1nt.class.asasm"
+ end ; trait
+end ; script

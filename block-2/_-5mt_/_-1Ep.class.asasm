@@ -1,0 +1,489 @@
+class
+ refid "_-5mt:_-1Ep"
+ instance QName(PackageNamespace("_-5mt"), "_-1Ep")
+  extends QName(PackageNamespace(""), "Object")
+  implements Multiname("_-4BI", [PackageNamespace("_-0XF")])
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-5rm")
+  iinit
+   refid "_-5mt:_-1Ep/instance/init"
+   param QName(PackageNamespace("_-5bO"), "_-5Z8")
+   param QName(PackageNamespace(""), "String")
+   param QName(PackageNamespace("_-2tk"), "IBitmapWrapperWindow")
+   body
+    maxstack 3
+    localcount 5
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     debugfile           "k"
+     debugline           20
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 20
+     debug               1, "k", 1, 20
+     debug               1, "k", 2, 20
+     debugline           20
+     getlocal0
+     constructsuper      0
+
+     debug               1, "k", 3, 25
+     debugline           21
+     getlocal0
+     getlocal1
+     initproperty        QName(PrivateNamespace("_-5rm"), "_-2ld")
+
+     debugline           22
+     getlocal0
+     getlocal2
+     initproperty        QName(PrivateNamespace("_-5rm"), "_-2T8")
+
+     debugline           23
+     getlocal0
+     getlocal3
+     initproperty        QName(PrivateNamespace("_-5rm"), "_-1GB")
+
+     debugline           25
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-5rm"), "_-2ld")
+     pushstring          "image.library.url"
+     callproperty        QName(Namespace("_-319"), "getProperty"), 1
+     coerce_s
+     setlocal            4
+
+     debugline           26
+     getlocal0
+     getlocal            4
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-5rm"), "_-2T8")
+     add
+     initproperty        QName(PrivateNamespace("_-5rm"), "_-3oL")
+
+     debugline           27
+     getlex              QName(PackageNamespace(""), "_-Vz")
+     pushstring          "[OFFICIAL ROOM ICON IMAGE DOWNLOADER] : "
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-5rm"), "_-3oL")
+     add
+     callpropvoid        QName(PackageNamespace(""), "log"), 1
+
+     debugline           28
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-5rm"), "_-2ld") type QName(PackageNamespace("_-5bO"), "_-5Z8") end
+  trait slot QName(PrivateNamespace("_-5rm"), "_-2T8") type QName(PackageNamespace(""), "String") end
+  trait slot QName(PrivateNamespace("_-5rm"), "_-3oL") type QName(PackageNamespace(""), "String") end
+  trait slot QName(PrivateNamespace("_-5rm"), "_-1GB") type QName(PackageNamespace("_-2tk"), "IBitmapWrapperWindow") end
+  trait slot QName(PrivateNamespace("_-5rm"), "_disposed") type QName(PackageNamespace(""), "Boolean") end
+  trait method QName(PackageNamespace(""), "include")
+   method
+    refid "_-5mt:_-1Ep/instance/include"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 3
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           30
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("flash.net"), "URLRequest")
+      setlocal1
+
+      pushnull
+      coerce              QName(PackageNamespace("_-475"), "_-sY")
+      setlocal2
+
+      debugline           31
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5rm"), "_-2ld")
+      getproperty         QName(Namespace("_-319"), "assets")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5rm"), "_-2T8")
+      callproperty        QName(Namespace("_-14k"), "hasAsset"), 1
+      iffalse             L34
+
+      debugline           32
+      getlocal0
+      callpropvoid        QName(PrivateNamespace("_-5rm"), "_-3M1"), 0
+
+      jump                L66
+
+      ; 0xEF
+      ; 0x01
+      ; 0x02
+      ; 0x00
+      ; 0x22
+      ; 0xEF
+      ; 0x01
+      ; 0x02
+      ; 0x01
+      ; 0x23
+      ; 0xF0
+      ; 0x22
+L34:
+      findpropstrict      QName(PackageNamespace("flash.net"), "URLRequest")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5rm"), "_-3oL")
+      constructprop       QName(PackageNamespace("flash.net"), "URLRequest"), 1
+      coerce              QName(PackageNamespace("flash.net"), "URLRequest")
+      setlocal1
+
+      debugline           35
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5rm"), "_-2ld")
+      getproperty         QName(Namespace("_-319"), "assets")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5rm"), "_-2T8")
+      getlocal1
+      pushstring          "image/gif"
+      callproperty        QName(Namespace("_-14k"), "loadAssetFromFile"), 3
+      coerce              QName(PackageNamespace("_-475"), "_-sY")
+      setlocal2
+
+      debugline           36
+      getlocal2
+      getlex              QName(PackageNamespace("_-01F"), "AssetLoaderEvent")
+      getproperty         QName(PackageNamespace(""), "_-2lm")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5rm"), "_-5lW")
+      callpropvoid        QName(PackageNamespace(""), "addEventListener"), 2
+
+      debugline           37
+      getlocal2
+      getlex              QName(PackageNamespace("_-01F"), "AssetLoaderEvent")
+      getproperty         QName(PackageNamespace(""), "_-6IU")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5rm"), "_-6P3")
+      callpropvoid        QName(PackageNamespace(""), "addEventListener"), 2
+
+      debugline           39
+L66:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-5rm"), "_-5lW")
+   method
+    refid "_-5mt:_-1Ep/instance/_-5mt:_-1Ep/instance/_-5lW"
+    param QName(PackageNamespace("_-01F"), "AssetLoaderEvent")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           42
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 42
+      debug               1, "k", 1, 46
+      debugline           43
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5rm"), "_disposed")
+      iffalse             L14
+
+      debugline           44
+      returnvoid
+
+      ; 0xF0
+      ; 0x2E
+L14:
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "target")
+      getlex              QName(PackageNamespace("_-475"), "_-sY")
+      astypelate
+      coerce              QName(PackageNamespace("_-475"), "_-sY")
+      setlocal2
+
+      debugline           48
+      getlocal2
+      pushnull
+      ifne                L37
+
+      debugline           49
+      getlex              QName(PackageNamespace(""), "_-Vz")
+      pushstring          "Loading pic from url: "
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5rm"), "_-3oL")
+      add
+      pushstring          " failed. loaderStruct == null"
+      add
+      callpropvoid        QName(PackageNamespace(""), "log"), 1
+
+      debugline           50
+      returnvoid
+
+      ; 0xF0
+      ; 0x35
+L37:
+      getlocal0
+      callpropvoid        QName(PrivateNamespace("_-5rm"), "_-3M1"), 0
+
+      debugline           54
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-5rm"), "_-3M1")
+   method
+    refid "_-5mt:_-1Ep/instance/_-5mt:_-1Ep/instance/_-3M1"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           56
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("flash.display"), "BitmapData")
+      setlocal1
+
+      debugline           57
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5rm"), "_-2ld")
+      coerce_a
+      dup
+      iffalse             L19
+
+      pop
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5rm"), "_-2ld")
+      getproperty         QName(Namespace("_-0mn"), "disposed")
+      not
+      coerce_a
+L19:
+      coerce_a
+      convert_b
+      dup
+      iffalse             L28
+
+      pop
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5rm"), "_-1GB")
+      coerce_a
+      convert_b
+L28:
+      dup
+      iffalse             L35
+
+      pop
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5rm"), "_-1GB")
+      getproperty         QName(Namespace("_-0mn"), "disposed")
+      not
+L35:
+      iffalse             L86
+
+      debug               1, "k", 0, 58
+      debugline           58
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5rm"), "_-2ld")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5rm"), "_-2T8")
+      pushstring          ""
+      callproperty        QName(Namespace("_-319"), "_-28G"), 2
+      coerce              QName(PackageNamespace("flash.display"), "BitmapData")
+      setlocal1
+
+      debugline           59
+      getlocal1
+      iffalse             L79
+
+      debugline           60
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5rm"), "_-1GB")
+      pushfalse
+      setproperty         QName(Namespace("_-0Oa"), "_-54s")
+
+      debugline           61
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5rm"), "_-1GB")
+      getlocal1
+      setproperty         QName(Namespace("_-0Oa"), "bitmap")
+
+      debugline           62
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5rm"), "_-1GB")
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "width")
+      setproperty         QName(Namespace("_-0jq"), "width")
+
+      debugline           63
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5rm"), "_-1GB")
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "height")
+      setproperty         QName(Namespace("_-0jq"), "height")
+
+      debugline           64
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5rm"), "_-1GB")
+      pushtrue
+      setproperty         QName(Namespace("_-0jq"), "visible")
+
+      jump                L86
+
+      ; 0xF0
+      ; 0x42
+L79:
+      getlex              QName(PackageNamespace(""), "_-Vz")
+      pushstring          "OfficialRoomImageLoader - Image not found: "
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5rm"), "_-2T8")
+      add
+      callpropvoid        QName(PackageNamespace(""), "log"), 1
+
+      debugline           69
+L86:
+      getlocal0
+      callpropvoid        QName(PackageNamespace(""), "dispose"), 0
+
+      debugline           70
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-5rm"), "_-6P3")
+   method
+    refid "_-5mt:_-1Ep/instance/_-5mt:_-1Ep/instance/_-6P3"
+    param QName(PackageNamespace("_-01F"), "AssetLoaderEvent")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           72
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 72
+      debugline           73
+      getlex              QName(PackageNamespace(""), "_-Vz")
+      pushstring          "Error loading image: "
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5rm"), "_-3oL")
+      add
+      pushstring          ", "
+      add
+      getlocal1
+      add
+      callpropvoid        QName(PackageNamespace(""), "log"), 1
+
+      debugline           74
+      getlocal0
+      callpropvoid        QName(PackageNamespace(""), "dispose"), 0
+
+      debugline           75
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "dispose")
+   method
+    refid "_-5mt:_-1Ep/instance/dispose"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           80
+      getlocal0
+      pushscope
+
+      debugline           81
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5rm"), "_disposed")
+      iffalse             L12
+
+      debugline           82
+      returnvoid
+
+      ; 0xF0
+      ; 0x55
+L12:
+      getlocal0
+      pushtrue
+      initproperty        QName(PrivateNamespace("_-5rm"), "_disposed")
+
+      debugline           86
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-5rm"), "_-1GB")
+
+      debugline           87
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-5rm"), "_-2ld")
+
+      debugline           88
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "disposed")
+   method
+    refid "_-5mt:_-1Ep/instance/disposed/getter"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           90
+      getlocal0
+      pushscope
+
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5rm"), "_disposed")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-5mt:_-1Ep/class/init"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

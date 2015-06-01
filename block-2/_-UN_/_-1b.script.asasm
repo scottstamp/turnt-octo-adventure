@@ -1,0 +1,33 @@
+script ; 4091
+ sinit
+  refid "_-UN:_-1b/init"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 1
+   maxscopedepth 3
+   code
+    getlocal0
+    pushscope
+
+    debugfile           "k"
+    debugline           5
+    getscopeobject      0
+    getlex              QName(PackageNamespace(""), "Object")
+    pushscope
+
+    getlex              QName(PackageNamespace(""), "Object")
+    newclass            "_-UN:_-1b"
+    popscope
+    initproperty        QName(PackageNamespace("_-UN"), "_-1b")
+
+    debugfile           "k"
+    debugline           4
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait class QName(PackageNamespace("_-UN"), "_-1b") slotid 1
+  #include "_-1b.class.asasm"
+ end ; trait
+end ; script

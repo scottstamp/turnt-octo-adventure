@@ -1,0 +1,475 @@
+class
+ refid "_-5bO:UserCountRenderer"
+ instance QName(PackageNamespace("_-5bO"), "UserCountRenderer")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-0jb")
+  iinit
+   refid "_-5bO:UserCountRenderer/instance/init"
+   param QName(PackageNamespace("_-5bO"), "_-5Z8")
+   body
+    maxstack 2
+    localcount 2
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     debugfile           "k"
+     debugline           10
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 10
+     debugline           10
+     getlocal0
+     constructsuper      0
+
+     debugline           11
+     getlocal0
+     getlocal1
+     initproperty        QName(PrivateNamespace("_-0jb"), "_-2ld")
+
+     debugline           12
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-0jb"), "_-2ld") type QName(PackageNamespace("_-5bO"), "_-5Z8") end
+  trait method QName(PackageNamespace(""), "dispose")
+   method
+    refid "_-5bO:UserCountRenderer/instance/dispose"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           14
+      getlocal0
+      pushscope
+
+      debugline           15
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-0jb"), "_-2ld")
+
+      debugline           16
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "refreshUserCount")
+   method
+    refid "_-5bO:UserCountRenderer/instance/refreshUserCount"
+    param QName(PackageNamespace(""), "int")
+    param QName(PackageNamespace("_-2z-"), "IWindowContainer")
+    param QName(PackageNamespace(""), "int")
+    param QName(PackageNamespace(""), "String")
+    param QName(PackageNamespace(""), "int")
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 10
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           18
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 18
+      debug               1, "k", 1, 18
+      debug               1, "k", 2, 18
+      debug               1, "k", 3, 18
+      debug               1, "k", 4, 18
+      debug               1, "k", 5, 18
+      debug               1, "k", 6, 19
+      debug               1, "k", 7, 30
+      debug               1, "k", 8, 33
+      debugline           19
+      findpropstrict      QName(PackageNamespace("_-2z-"), "IWindowContainer")
+      getlocal2
+      getlex              QName(PackageNamespace(""), "_-1PW")
+      callproperty        QName(Namespace("_-7H"), "findChildByName"), 1
+      callproperty        QName(PackageNamespace("_-2z-"), "IWindowContainer"), 1
+      coerce              QName(PackageNamespace("_-2z-"), "IWindowContainer")
+      setlocal            7
+
+      debugline           20
+      getlocal            7
+      pushnull
+      ifne                L51
+
+      debugline           21
+      findpropstrict      QName(PackageNamespace("_-2z-"), "IWindowContainer")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0jb"), "_-2ld")
+      pushstring          "grs_usercount"
+      callproperty        QName(Namespace("_-319"), "getXmlWindow"), 1
+      callproperty        QName(PackageNamespace("_-2z-"), "IWindowContainer"), 1
+      coerce              QName(PackageNamespace("_-2z-"), "IWindowContainer")
+      setlocal            7
+
+      debugline           22
+      getlocal            7
+      getlex              QName(PackageNamespace(""), "_-1PW")
+      setproperty         QName(Namespace("_-0jq"), "name")
+
+      debugline           23
+      getlocal            7
+      getlocal            5
+      setproperty         QName(Namespace("_-0jq"), "x")
+
+      debugline           24
+      getlocal            7
+      getlocal            6
+      setproperty         QName(Namespace("_-0jq"), "y")
+
+      debugline           25
+      getlocal2
+      getlocal            7
+      callpropvoid        QName(Namespace("_-7H"), "addChild"), 1
+
+      debugline           28
+L51:
+      findpropstrict      QName(PackageNamespace("_-2tk"), "IInteractiveWindow")
+      getlocal            7
+      callproperty        QName(PackageNamespace("_-2tk"), "IInteractiveWindow"), 1
+      getlocal            4
+      setproperty         QName(Namespace("_-0M9"), "_-0Fg")
+
+      debugline           30
+      findpropstrict      QName(PackageNamespace("_-2tk"), "ITextWindow")
+      getlocal            7
+      pushstring          "txt"
+      callproperty        QName(Namespace("_-7H"), "findChildByName"), 1
+      callproperty        QName(PackageNamespace("_-2tk"), "ITextWindow"), 1
+      coerce              QName(PackageNamespace("_-2tk"), "ITextWindow")
+      setlocal            8
+
+      debugline           31
+      getlocal            8
+      pushstring          ""
+      getlocal3
+      add
+      setproperty         QName(Namespace("_-49x"), "text")
+
+      debugline           33
+      getlocal0
+      getlocal1
+      getlocal3
+      callproperty        QName(PrivateNamespace("_-0jb"), "getBgColor"), 2
+      coerce_s
+      setlocal            9
+
+      debugline           34
+      getlocal0
+      getlocal            7
+      getlocal            9
+      callpropvoid        QName(PrivateNamespace("_-0jb"), "_-45p"), 2
+
+      debugline           36
+      getlocal            7
+      pushtrue
+      setproperty         QName(Namespace("_-0jq"), "visible")
+
+      debugline           37
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-0jb"), "getBgColor")
+   method
+    refid "_-5bO:UserCountRenderer/instance/_-5bO:UserCountRenderer/instance/getBgColor"
+    param QName(PackageNamespace(""), "int")
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "String")
+    body
+     maxstack 5
+     localcount 3
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           39
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 39
+      debug               1, "k", 1, 39
+      debugline           40
+      getlocal2
+      pushbyte            0
+      ifne                L15
+
+      pushstring          "b"
+      debugline           41
+      returnvalue
+
+      ; 0xF0
+      ; 0x2A
+L15:
+      getlocal0
+      getlocal1
+      getlocal2
+      pushstring          "red"
+      pushbyte            92
+      callproperty        QName(PrivateNamespace("_-0jb"), "_-0NT"), 4
+      iffalse             L27
+
+      pushstring          "r"
+      debugline           43
+      returnvalue
+
+      ; 0xF0
+      ; 0x2C
+L27:
+      getlocal0
+      getlocal1
+      getlocal2
+      pushstring          "orange"
+      pushbyte            80
+      callproperty        QName(PrivateNamespace("_-0jb"), "_-0NT"), 4
+      iffalse             L39
+
+      pushstring          "o"
+      debugline           45
+      returnvalue
+
+      ; 0xF0
+      ; 0x2E
+L39:
+      getlocal0
+      getlocal1
+      getlocal2
+      pushstring          "yellow"
+      pushbyte            50
+      callproperty        QName(PrivateNamespace("_-0jb"), "_-0NT"), 4
+      iffalse             L49
+
+      pushstring          "y"
+      debugline           47
+      returnvalue
+
+L49:
+      pushstring          "g"
+      debugline           49
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-0jb"), "_-0NT")
+   method
+    refid "_-5bO:UserCountRenderer/instance/_-5bO:UserCountRenderer/instance/_-0NT"
+    param QName(PackageNamespace(""), "int")
+    param QName(PackageNamespace(""), "int")
+    param QName(PackageNamespace(""), "String")
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 3
+     localcount 8
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           53
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 53
+      debug               1, "k", 1, 53
+      debug               1, "k", 2, 53
+      debug               1, "k", 3, 53
+      debug               1, "k", 4, 54
+      debug               1, "k", 5, 55
+      debug               1, "k", 6, 56
+      pushstring          "navigator.colorlimit."
+      debugline           54
+      getlocal3
+      add
+      coerce_s
+      setlocal            5
+
+      debugline           55
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0jb"), "_-2ld")
+      getlocal            5
+      getlocal            4
+      callproperty        QName(Namespace("_-319"), "getInteger"), 2
+      convert_i
+      setlocal            6
+
+      debugline           56
+      getlocal1
+      getlocal            6
+      multiply
+      pushbyte            100
+      divide
+      convert_i
+      setlocal            7
+
+      debugline           57
+      getlocal2
+      getlocal            7
+      greaterequals
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-0jb"), "_-45p")
+   method
+    refid "_-5bO:UserCountRenderer/instance/_-5bO:UserCountRenderer/instance/_-45p"
+    param QName(PackageNamespace("_-2z-"), "IWindowContainer")
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 5
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           60
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce_s
+      setlocal            4
+
+      debug               1, "k", 0, 60
+      debug               1, "k", 1, 60
+      debug               1, "k", 2, 61
+      debugline           61
+      findpropstrict      QName(PackageNamespace("_-2tk"), "IBitmapWrapperWindow")
+      getlocal1
+      pushstring          "usercount_bg"
+      callproperty        QName(Namespace("_-7H"), "findChildByName"), 1
+      callproperty        QName(PackageNamespace("_-2tk"), "IBitmapWrapperWindow"), 1
+      coerce              QName(PackageNamespace("_-2tk"), "IBitmapWrapperWindow")
+      setlocal3
+
+      debugline           62
+      getlocal3
+      getproperty         QName(Namespace("_-0jq"), "tags")
+      pushbyte            0
+      getproperty         MultinameL([PrivateNamespace("_-0jb"), PackageNamespace(""), PackageNamespace("_-5bO"), PackageNamespace("_-2z-"), PackageNamespace("_-2tk"), PrivateNamespace("UserCountRenderer.as$3679"), PackageInternalNs("_-5bO"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-0jb"), StaticProtectedNs("_-0jb")])
+      getlocal2
+      ifeq                L60
+
+      debug               1, "k", 3, 66
+      debugline           64
+      getlocal3
+      getproperty         QName(Namespace("_-0jq"), "tags")
+      pushbyte            0
+      getlocal3
+      getproperty         QName(Namespace("_-0jq"), "tags")
+      getproperty         QName(PackageNamespace(""), "length")
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "splice"), 2
+
+      debugline           65
+      getlocal3
+      getproperty         QName(Namespace("_-0jq"), "tags")
+      getlocal2
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      pushstring          "usercount_fixed_"
+      debugline           66
+      getlocal2
+      add
+      coerce_s
+      setlocal            4
+
+      debugline           67
+      getlocal3
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0jb"), "_-2ld")
+      getlocal            4
+      callproperty        QName(Namespace("_-319"), "_-28G"), 1
+      setproperty         QName(Namespace("_-0Oa"), "bitmap")
+
+      debugline           68
+      getlocal3
+      pushfalse
+      setproperty         QName(Namespace("_-0Oa"), "_-54s")
+
+      debugline           69
+      getlocal3
+      callpropvoid        QName(Namespace("_-0jq"), "invalidate"), 0
+
+      debugline           71
+L60:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-0jb"), "_-4zq")
+   method
+    refid "_-5bO:UserCountRenderer/instance/_-5bO:UserCountRenderer/instance/_-4zq"
+    param QName(PackageNamespace("_-2z-"), "IWindowContainer")
+    param QName(PackageNamespace(""), "String")
+    param QName(PackageNamespace(""), "Boolean")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 6
+     localcount 4
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           73
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 73
+      debug               1, "k", 1, 73
+      debug               1, "k", 2, 73
+      debugline           74
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0jb"), "_-2ld")
+      getlocal1
+      getlocal2
+      getlocal3
+      pushnull
+      pushbyte            0
+      callpropvoid        QName(Namespace("_-319"), "refreshButton"), 5
+
+      debugline           75
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-5bO:UserCountRenderer/class/init"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    debug               1, "k", 0, 7
+    findproperty        QName(PackageNamespace(""), "_-1PW")
+    pushstring          "usercount"
+    initproperty        QName(PackageNamespace(""), "_-1PW")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait const QName(PackageNamespace(""), "_-1PW") slotid 1 type QName(PackageNamespace(""), "String") value Utf8("usercount") end
+end ; class

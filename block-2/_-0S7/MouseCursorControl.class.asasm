@@ -1,0 +1,810 @@
+class
+ refid "_-0S7:MouseCursorControl"
+ instance QName(PackageNamespace("_-0S7"), "MouseCursorControl")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-2Gn")
+  iinit
+   refid "_-0S7:MouseCursorControl/instance/init"
+   param QName(PackageNamespace("flash.display"), "DisplayObject")
+   body
+    maxstack 2
+    localcount 2
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     debugfile           "k"
+     debugline           33
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 33
+     debugline           33
+     getlocal0
+     constructsuper      0
+
+     debugline           35
+     findproperty        QName(PrivateNamespace("_-2Gn"), "_-6X9")
+     getlocal1
+     getproperty         QName(PackageNamespace(""), "stage")
+     setproperty         QName(PrivateNamespace("_-2Gn"), "_-6X9")
+
+     debugline           36
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+ end ; instance
+ cinit
+  refid "_-0S7:MouseCursorControl/class/init"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    debug               1, "k", 0, 18
+    findproperty        QName(PrivateNamespace("_-2Gn"), "_-5g")
+    getlex              QName(PackageNamespace("_-02Q"), "_-5jN")
+    getproperty         QName(PackageNamespace(""), "DEFAULT")
+    setproperty         QName(PrivateNamespace("_-2Gn"), "_-5g")
+
+    debug               1, "k", 1, 19
+    debug               1, "k", 2, 20
+    findproperty        QName(PrivateNamespace("_-2Gn"), "_-5yD")
+    pushtrue
+    setproperty         QName(PrivateNamespace("_-2Gn"), "_-5yD")
+
+    debug               1, "k", 3, 21
+    findproperty        QName(PrivateNamespace("_-2Gn"), "_disposed")
+    pushfalse
+    setproperty         QName(PrivateNamespace("_-2Gn"), "_disposed")
+
+    debug               1, "k", 4, 22
+    findproperty        QName(PrivateNamespace("_-2Gn"), "_-3b-")
+    pushtrue
+    setproperty         QName(PrivateNamespace("_-2Gn"), "_-3b-")
+
+    debug               1, "k", 5, 26
+    debug               1, "k", 6, 27
+    findproperty        QName(PrivateNamespace("_-2Gn"), "_-0r0")
+    findpropstrict      QName(PackageNamespace("flash.utils"), "Dictionary")
+    constructprop       QName(PackageNamespace("flash.utils"), "Dictionary"), 0
+    setproperty         QName(PrivateNamespace("_-2Gn"), "_-0r0")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait slot QName(PrivateNamespace("_-2Gn"), "_-5g") slotid 1 type QName(PackageNamespace(""), "uint") value Integer(0) end
+ trait slot QName(PrivateNamespace("_-2Gn"), "_-6X9") slotid 2 type QName(PackageNamespace("flash.display"), "Stage") end
+ trait slot QName(PrivateNamespace("_-2Gn"), "_-5yD") slotid 3 type QName(PackageNamespace(""), "Boolean") value True() end
+ trait slot QName(PrivateNamespace("_-2Gn"), "_disposed") slotid 4 type QName(PackageNamespace(""), "Boolean") value False() end
+ trait slot QName(PrivateNamespace("_-2Gn"), "_-3b-") slotid 5 type QName(PackageNamespace(""), "Boolean") value True() end
+ trait slot QName(PrivateNamespace("_-2Gn"), "_-5EU") slotid 6 type QName(PackageNamespace("flash.display"), "DisplayObject") end
+ trait slot QName(PrivateNamespace("_-2Gn"), "_-0r0") slotid 7 type QName(PackageNamespace("flash.utils"), "Dictionary") end
+ trait method QName(PackageNamespace(""), "dispose") flag FINAL dispid 3
+  method
+   refid "_-0S7:MouseCursorControl/class/dispose"
+   returns QName(PackageNamespace(""), "void")
+   body
+    maxstack 3
+    localcount 1
+    initscopedepth 3
+    maxscopedepth 4
+    code
+     debugfile           "k"
+     debugline           41
+     getlocal0
+     pushscope
+
+     debugline           43
+     getlex              QName(PrivateNamespace("_-2Gn"), "_disposed")
+     iftrue              L43
+
+     debugline           44
+     getlex              QName(PrivateNamespace("_-2Gn"), "_-5EU")
+     iffalse             L39
+
+     debugline           45
+     getlex              QName(PrivateNamespace("_-2Gn"), "_-6X9")
+     getlex              QName(PrivateNamespace("_-2Gn"), "_-5EU")
+     callpropvoid        QName(PackageNamespace(""), "removeChild"), 1
+
+     debugline           46
+     getlex              QName(PrivateNamespace("_-2Gn"), "_-6X9")
+     getlex              QName(PackageNamespace("flash.events"), "Event")
+     getproperty         QName(PackageNamespace(""), "MOUSE_LEAVE")
+     getlex              QName(PrivateNamespace("_-2Gn"), "_-56T")
+     callpropvoid        QName(PackageNamespace(""), "removeEventListener"), 2
+
+     debugline           47
+     getlex              QName(PrivateNamespace("_-2Gn"), "_-6X9")
+     getlex              QName(PackageNamespace("flash.events"), "MouseEvent")
+     getproperty         QName(PackageNamespace(""), "MOUSE_MOVE")
+     getlex              QName(PrivateNamespace("_-2Gn"), "_-5MX")
+     callpropvoid        QName(PackageNamespace(""), "removeEventListener"), 2
+
+     debugline           48
+     getlex              QName(PrivateNamespace("_-2Gn"), "_-6X9")
+     getlex              QName(PackageNamespace("flash.events"), "MouseEvent")
+     getproperty         QName(PackageNamespace(""), "MOUSE_OVER")
+     getlex              QName(PrivateNamespace("_-2Gn"), "_-5MX")
+     callpropvoid        QName(PackageNamespace(""), "removeEventListener"), 2
+
+     debugline           49
+     getlex              QName(PrivateNamespace("_-2Gn"), "_-6X9")
+     getlex              QName(PackageNamespace("flash.events"), "MouseEvent")
+     getproperty         QName(PackageNamespace(""), "MOUSE_OUT")
+     getlex              QName(PrivateNamespace("_-2Gn"), "_-5MX")
+     callpropvoid        QName(PackageNamespace(""), "removeEventListener"), 2
+
+     debugline           51
+L39:
+     findproperty        QName(PrivateNamespace("_-2Gn"), "_disposed")
+     pushtrue
+     setproperty         QName(PrivateNamespace("_-2Gn"), "_disposed")
+
+     debugline           53
+L43:
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+ trait getter QName(PackageNamespace(""), "disposed") flag FINAL dispid 4
+  method
+   refid "_-0S7:MouseCursorControl/class/disposed/getter"
+   returns QName(PackageNamespace(""), "Boolean")
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 3
+    maxscopedepth 4
+    code
+     debugfile           "k"
+     debugline           55
+     getlocal0
+     pushscope
+
+     getlex              QName(PrivateNamespace("_-2Gn"), "_disposed")
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+ trait getter QName(PackageNamespace(""), "type") flag FINAL dispid 5
+  method
+   refid "_-0S7:MouseCursorControl/class/type/getter"
+   returns QName(PackageNamespace(""), "uint")
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 3
+    maxscopedepth 4
+    code
+     debugfile           "k"
+     debugline           63
+     getlocal0
+     pushscope
+
+     getlex              QName(PrivateNamespace("_-2Gn"), "_-5g")
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+ trait setter QName(PackageNamespace(""), "type") flag FINAL dispid 6
+  method
+   refid "_-0S7:MouseCursorControl/class/type/setter"
+   param QName(PackageNamespace(""), "uint")
+   returns QName(PackageNamespace(""), "void")
+   body
+    maxstack 2
+    localcount 2
+    initscopedepth 3
+    maxscopedepth 4
+    code
+     debugfile           "k"
+     debugline           72
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 72
+     debugline           74
+     getlex              QName(PrivateNamespace("_-2Gn"), "_-5g")
+     getlocal1
+     ifeq                L18
+
+     debugline           75
+     findproperty        QName(PrivateNamespace("_-2Gn"), "_-5g")
+     getlocal1
+     setproperty         QName(PrivateNamespace("_-2Gn"), "_-5g")
+
+     debugline           76
+     findproperty        QName(PrivateNamespace("_-2Gn"), "_-3b-")
+     pushtrue
+     setproperty         QName(PrivateNamespace("_-2Gn"), "_-3b-")
+
+     debugline           78
+L18:
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+ trait getter QName(PackageNamespace(""), "visible") flag FINAL dispid 7
+  method
+   refid "_-0S7:MouseCursorControl/class/visible/getter"
+   returns QName(PackageNamespace(""), "Boolean")
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 3
+    maxscopedepth 4
+    code
+     debugfile           "k"
+     debugline           84
+     getlocal0
+     pushscope
+
+     getlex              QName(PrivateNamespace("_-2Gn"), "_-5yD")
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+ trait setter QName(PackageNamespace(""), "visible") flag FINAL dispid 8
+  method
+   refid "_-0S7:MouseCursorControl/class/visible/setter"
+   param QName(PackageNamespace(""), "Boolean")
+   returns QName(PackageNamespace(""), "void")
+   body
+    maxstack 2
+    localcount 2
+    initscopedepth 3
+    maxscopedepth 4
+    code
+     debugfile           "k"
+     debugline           90
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 90
+     debugline           92
+     findproperty        QName(PrivateNamespace("_-2Gn"), "_-5yD")
+     getlocal1
+     setproperty         QName(PrivateNamespace("_-2Gn"), "_-5yD")
+
+     debugline           94
+     getlex              QName(PrivateNamespace("_-2Gn"), "_-5yD")
+     iffalse             L27
+
+     debugline           95
+     getlex              QName(PrivateNamespace("_-2Gn"), "_-5EU")
+     iffalse             L22
+
+     debugline           96
+     getlex              QName(PrivateNamespace("_-2Gn"), "_-5EU")
+     pushtrue
+     setproperty         QName(PackageNamespace(""), "visible")
+
+     jump                L24
+
+     ; 0xF0
+     ; 0x62
+L22:
+     getlex              QName(PackageNamespace("flash.ui"), "Mouse")
+     callpropvoid        QName(PackageNamespace(""), "show"), 0
+
+L24:
+     jump                L39
+
+     ; 0xF0
+     ; 0x65
+L27:
+     getlex              QName(PrivateNamespace("_-2Gn"), "_-5EU")
+     iffalse             L36
+
+     debugline           102
+     getlex              QName(PrivateNamespace("_-2Gn"), "_-5EU")
+     pushfalse
+     setproperty         QName(PackageNamespace(""), "visible")
+
+     jump                L39
+
+     ; 0xF0
+     ; 0x68
+L36:
+     getlex              QName(PackageNamespace("flash.ui"), "Mouse")
+     callpropvoid        QName(PackageNamespace(""), "hide"), 0
+
+     debugline           107
+L39:
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PackageNamespace(""), "change") flag FINAL dispid 9
+  method
+   refid "_-0S7:MouseCursorControl/class/change"
+   returns QName(PackageNamespace(""), "void")
+   body
+    maxstack 3
+    localcount 3
+    initscopedepth 3
+    maxscopedepth 4
+    code
+     debugfile           "k"
+     debugline           114
+     getlocal0
+     pushscope
+
+     pushnull
+     coerce              QName(PackageNamespace("flash.display"), "DisplayObject")
+     setlocal1
+
+     debugline           116
+     getlex              QName(PrivateNamespace("_-2Gn"), "_-3b-")
+     iffalse             L235
+
+     debug               1, "k", 0, 118
+     debugline           118
+     getlex              QName(PrivateNamespace("_-2Gn"), "_-0r0")
+     getlex              QName(PrivateNamespace("_-2Gn"), "_-5g")
+     getproperty         MultinameL([PrivateNamespace("_-2Gn"), PackageNamespace(""), PrivateNamespace("MouseCursorControl.as$2012"), PackageNamespace("_-0S7"), PackageInternalNs("_-0S7"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-2Gn"), StaticProtectedNs("_-2Gn")])
+     coerce              QName(PackageNamespace("flash.display"), "DisplayObject")
+     setlocal1
+
+     debugline           120
+     getlocal1
+     iffalse             L68
+
+     debugline           124
+     getlex              QName(PrivateNamespace("_-2Gn"), "_-5EU")
+     iffalse             L30
+
+     debugline           125
+     getlex              QName(PrivateNamespace("_-2Gn"), "_-6X9")
+     getlex              QName(PrivateNamespace("_-2Gn"), "_-5EU")
+     callpropvoid        QName(PackageNamespace(""), "removeChild"), 1
+
+     jump                L57
+
+     ; 0xF0
+     ; 0x7F
+L30:
+     getlex              QName(PrivateNamespace("_-2Gn"), "_-6X9")
+     getlex              QName(PackageNamespace("flash.events"), "Event")
+     getproperty         QName(PackageNamespace(""), "MOUSE_LEAVE")
+     getlex              QName(PrivateNamespace("_-2Gn"), "_-56T")
+     callpropvoid        QName(PackageNamespace(""), "addEventListener"), 2
+
+     debugline           128
+     getlex              QName(PrivateNamespace("_-2Gn"), "_-6X9")
+     getlex              QName(PackageNamespace("flash.events"), "MouseEvent")
+     getproperty         QName(PackageNamespace(""), "MOUSE_MOVE")
+     getlex              QName(PrivateNamespace("_-2Gn"), "_-5MX")
+     callpropvoid        QName(PackageNamespace(""), "addEventListener"), 2
+
+     debugline           129
+     getlex              QName(PrivateNamespace("_-2Gn"), "_-6X9")
+     getlex              QName(PackageNamespace("flash.events"), "MouseEvent")
+     getproperty         QName(PackageNamespace(""), "MOUSE_OVER")
+     getlex              QName(PrivateNamespace("_-2Gn"), "_-5MX")
+     callpropvoid        QName(PackageNamespace(""), "addEventListener"), 2
+
+     debugline           130
+     getlex              QName(PrivateNamespace("_-2Gn"), "_-6X9")
+     getlex              QName(PackageNamespace("flash.events"), "MouseEvent")
+     getproperty         QName(PackageNamespace(""), "MOUSE_OUT")
+     getlex              QName(PrivateNamespace("_-2Gn"), "_-5MX")
+     callpropvoid        QName(PackageNamespace(""), "addEventListener"), 2
+
+     debugline           131
+     getlex              QName(PackageNamespace("flash.ui"), "Mouse")
+     callpropvoid        QName(PackageNamespace(""), "hide"), 0
+
+     debugline           134
+L57:
+     findproperty        QName(PrivateNamespace("_-2Gn"), "_-5EU")
+     getlocal1
+     setproperty         QName(PrivateNamespace("_-2Gn"), "_-5EU")
+
+     debugline           135
+     getlex              QName(PrivateNamespace("_-2Gn"), "_-6X9")
+     getlex              QName(PrivateNamespace("_-2Gn"), "_-5EU")
+     callpropvoid        QName(PackageNamespace(""), "addChild"), 1
+
+     jump                L231
+
+     ; 0xF0
+     ; 0x8D
+     ; 0x01
+L68:
+     getlex              QName(PrivateNamespace("_-2Gn"), "_-5EU")
+     iffalse             L105
+
+     debugline           142
+     getlex              QName(PrivateNamespace("_-2Gn"), "_-6X9")
+     getlex              QName(PrivateNamespace("_-2Gn"), "_-5EU")
+     callpropvoid        QName(PackageNamespace(""), "removeChild"), 1
+
+     debugline           143
+     getlex              QName(PrivateNamespace("_-2Gn"), "_-6X9")
+     getlex              QName(PackageNamespace("flash.events"), "Event")
+     getproperty         QName(PackageNamespace(""), "MOUSE_LEAVE")
+     getlex              QName(PrivateNamespace("_-2Gn"), "_-56T")
+     callpropvoid        QName(PackageNamespace(""), "removeEventListener"), 2
+
+     debugline           144
+     getlex              QName(PrivateNamespace("_-2Gn"), "_-6X9")
+     getlex              QName(PackageNamespace("flash.events"), "MouseEvent")
+     getproperty         QName(PackageNamespace(""), "MOUSE_MOVE")
+     getlex              QName(PrivateNamespace("_-2Gn"), "_-5MX")
+     callpropvoid        QName(PackageNamespace(""), "removeEventListener"), 2
+
+     debugline           145
+     getlex              QName(PrivateNamespace("_-2Gn"), "_-6X9")
+     getlex              QName(PackageNamespace("flash.events"), "MouseEvent")
+     getproperty         QName(PackageNamespace(""), "MOUSE_OVER")
+     getlex              QName(PrivateNamespace("_-2Gn"), "_-5MX")
+     callpropvoid        QName(PackageNamespace(""), "removeEventListener"), 2
+
+     debugline           146
+     getlex              QName(PrivateNamespace("_-2Gn"), "_-6X9")
+     getlex              QName(PackageNamespace("flash.events"), "MouseEvent")
+     getproperty         QName(PackageNamespace(""), "MOUSE_OUT")
+     getlex              QName(PrivateNamespace("_-2Gn"), "_-5MX")
+     callpropvoid        QName(PackageNamespace(""), "removeEventListener"), 2
+
+     debugline           147
+     findproperty        QName(PrivateNamespace("_-2Gn"), "_-5EU")
+     pushnull
+     setproperty         QName(PrivateNamespace("_-2Gn"), "_-5EU")
+
+     debugline           148
+     getlex              QName(PackageNamespace("flash.ui"), "Mouse")
+     callpropvoid        QName(PackageNamespace(""), "show"), 0
+
+L105:
+     jump                L146
+
+L106:
+     label
+     debugline           154
+     getlex              QName(PackageNamespace("flash.ui"), "Mouse")
+     getlex              QName(PackageNamespace("flash.ui"), "MouseCursor")
+     getproperty         QName(PackageNamespace(""), "AUTO")
+     setproperty         QName(PackageNamespace(""), "cursor")
+
+     debugline           155
+     jump                L231
+
+L114:
+     label
+     debugline           157
+     getlex              QName(PackageNamespace("flash.ui"), "Mouse")
+     getlex              QName(PackageNamespace("flash.ui"), "MouseCursor")
+     getproperty         QName(PackageNamespace(""), "BUTTON")
+     setproperty         QName(PackageNamespace(""), "cursor")
+
+     debugline           158
+     jump                L231
+
+L122:
+     label
+     debugline           163
+     getlex              QName(PackageNamespace("flash.ui"), "Mouse")
+     getlex              QName(PackageNamespace("flash.ui"), "MouseCursor")
+     getproperty         QName(PackageNamespace(""), "HAND")
+     setproperty         QName(PackageNamespace(""), "cursor")
+
+     debugline           164
+     jump                L231
+
+L130:
+     label
+     debugline           166
+     getlex              QName(PackageNamespace("flash.ui"), "Mouse")
+     getlex              QName(PackageNamespace("flash.ui"), "MouseCursor")
+     getproperty         QName(PackageNamespace(""), "AUTO")
+     setproperty         QName(PackageNamespace(""), "cursor")
+
+     debugline           167
+     getlex              QName(PackageNamespace("flash.ui"), "Mouse")
+     callpropvoid        QName(PackageNamespace(""), "hide"), 0
+
+     debugline           168
+     jump                L231
+
+L141:
+     label
+     jump                L231
+
+     ; 0xF0
+     ; 0x97
+     ; 0x01
+L146:
+     getlex              QName(PrivateNamespace("_-2Gn"), "_-5g")
+     setlocal2
+
+     debugline           152
+     getlex              QName(PackageNamespace("_-02Q"), "_-5jN")
+     getproperty         QName(PackageNamespace(""), "DEFAULT")
+     getlocal2
+     ifstrictne          L158
+
+     pushbyte            0
+     jump                L226
+
+     ; 0xF0
+     ; 0x99
+     ; 0x01
+L158:
+     getlex              QName(PackageNamespace("_-02Q"), "_-5jN")
+     getproperty         QName(PackageNamespace(""), "_-3HX")
+     getlocal2
+     ifstrictne          L167
+
+     pushbyte            1
+     jump                L226
+
+     ; 0xF0
+     ; 0x9C
+     ; 0x01
+L167:
+     getlex              QName(PackageNamespace("_-02Q"), "_-5jN")
+     getproperty         QName(PackageNamespace(""), "_-0qp")
+     getlocal2
+     ifstrictne          L176
+
+     pushbyte            2
+     jump                L226
+
+     ; 0xF0
+     ; 0x9F
+     ; 0x01
+L176:
+     getlex              QName(PackageNamespace("_-02Q"), "_-5jN")
+     getproperty         QName(PackageNamespace(""), "_-0jD")
+     getlocal2
+     ifstrictne          L185
+
+     pushbyte            3
+     jump                L226
+
+     ; 0xF0
+     ; 0xA0
+     ; 0x01
+L185:
+     getlex              QName(PackageNamespace("_-02Q"), "_-5jN")
+     getproperty         QName(PackageNamespace(""), "_-4ii")
+     getlocal2
+     ifstrictne          L194
+
+     pushbyte            4
+     jump                L226
+
+     ; 0xF0
+     ; 0xA1
+     ; 0x01
+L194:
+     getlex              QName(PackageNamespace("_-02Q"), "_-5jN")
+     getproperty         QName(PackageNamespace(""), "_-6SA")
+     getlocal2
+     ifstrictne          L203
+
+     pushbyte            5
+     jump                L226
+
+     ; 0xF0
+     ; 0xA2
+     ; 0x01
+L203:
+     getlex              QName(PackageNamespace("_-02Q"), "_-5jN")
+     getproperty         QName(PackageNamespace(""), "_-61g")
+     getlocal2
+     ifstrictne          L212
+
+     pushbyte            6
+     jump                L226
+
+     ; 0xF0
+     ; 0xA5
+     ; 0x01
+L212:
+     getlex              QName(PackageNamespace("_-02Q"), "_-5jN")
+     getproperty         QName(PackageNamespace(""), "NONE")
+     getlocal2
+     ifstrictne          L218
+
+     pushbyte            7
+     jump                L226
+
+L218:
+     jump                L225
+
+     ; 0x24
+     ; 0x08
+     ; 0x10
+     ; 0x02
+     ; 0x00
+     ; 0x00
+L225:
+     pushbyte            8
+L226:
+     kill                2
+     lookupswitch        L141, [L106, L106, L114, L122, L122, L122, L122, L130, L141]
+
+     ; 0xF0
+     ; 0xAB
+     ; 0x01
+L231:
+     findproperty        QName(PrivateNamespace("_-2Gn"), "_-3b-")
+     pushfalse
+     setproperty         QName(PrivateNamespace("_-2Gn"), "_-3b-")
+
+     debugline           173
+L235:
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PackageNamespace(""), "_-1PC") flag FINAL dispid 10
+  method
+   refid "_-0S7:MouseCursorControl/class/_-1PC"
+   param QName(PackageNamespace(""), "uint")
+   param QName(PackageNamespace("flash.display"), "DisplayObject")
+   returns QName(PackageNamespace(""), "void")
+   body
+    maxstack 3
+    localcount 3
+    initscopedepth 3
+    maxscopedepth 4
+    code
+     debugfile           "k"
+     debugline           180
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 180
+     debug               1, "k", 1, 180
+     debugline           182
+     getlex              QName(PrivateNamespace("_-2Gn"), "_-0r0")
+     getlocal1
+     getlocal2
+     setproperty         MultinameL([PrivateNamespace("_-2Gn"), PackageNamespace(""), PrivateNamespace("MouseCursorControl.as$2012"), PackageNamespace("_-0S7"), PackageInternalNs("_-0S7"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-2Gn"), StaticProtectedNs("_-2Gn")])
+
+     debugline           183
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PrivateNamespace("_-2Gn"), "_-5MX") flag FINAL dispid 11
+  method
+   refid "_-0S7:MouseCursorControl/class/_-0S7:MouseCursorControl/_-5MX"
+   param QName(PackageNamespace("flash.events"), "MouseEvent")
+   returns QName(PackageNamespace(""), "void")
+   body
+    maxstack 3
+    localcount 2
+    initscopedepth 3
+    maxscopedepth 4
+    code
+     debugfile           "k"
+     debugline           189
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 189
+     debugline           191
+     getlex              QName(PrivateNamespace("_-2Gn"), "_-5EU")
+     iffalse             L43
+
+     debugline           193
+     getlex              QName(PrivateNamespace("_-2Gn"), "_-5EU")
+     getlocal1
+     getproperty         QName(PackageNamespace(""), "stageX")
+     pushbyte            2
+     subtract
+     setproperty         QName(PackageNamespace(""), "x")
+
+     debugline           194
+     getlex              QName(PrivateNamespace("_-2Gn"), "_-5EU")
+     getlocal1
+     getproperty         QName(PackageNamespace(""), "stageY")
+     setproperty         QName(PackageNamespace(""), "y")
+
+     debugline           196
+     getlex              QName(PrivateNamespace("_-2Gn"), "_-5g")
+     getlex              QName(PackageNamespace("_-02Q"), "_-5jN")
+     getproperty         QName(PackageNamespace(""), "DEFAULT")
+     ifne                L36
+
+     debugline           197
+     findproperty        QName(PrivateNamespace("_-2Gn"), "_-5yD")
+     pushfalse
+     setproperty         QName(PrivateNamespace("_-2Gn"), "_-5yD")
+
+     debugline           198
+     getlex              QName(PackageNamespace("flash.ui"), "Mouse")
+     callpropvoid        QName(PackageNamespace(""), "show"), 0
+
+     jump                L43
+
+     ; 0xF0
+     ; 0xC8
+     ; 0x01
+L36:
+     findproperty        QName(PrivateNamespace("_-2Gn"), "_-5yD")
+     pushtrue
+     setproperty         QName(PrivateNamespace("_-2Gn"), "_-5yD")
+
+     debugline           201
+     getlex              QName(PackageNamespace("flash.ui"), "Mouse")
+     callpropvoid        QName(PackageNamespace(""), "hide"), 0
+
+     debugline           204
+L43:
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PrivateNamespace("_-2Gn"), "_-56T") flag FINAL dispid 12
+  method
+   refid "_-0S7:MouseCursorControl/class/_-0S7:MouseCursorControl/_-56T"
+   param QName(PackageNamespace("flash.events"), "Event")
+   returns QName(PackageNamespace(""), "void")
+   body
+    maxstack 2
+    localcount 2
+    initscopedepth 3
+    maxscopedepth 4
+    code
+     debugfile           "k"
+     debugline           206
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 206
+     debugline           208
+     getlex              QName(PrivateNamespace("_-2Gn"), "_-5EU")
+     convert_b
+     dup
+     iffalse             L16
+
+     pop
+     getlex              QName(PrivateNamespace("_-2Gn"), "_-5g")
+     getlex              QName(PackageNamespace("_-02Q"), "_-5jN")
+     getproperty         QName(PackageNamespace(""), "DEFAULT")
+     equals
+     not
+L16:
+     iffalse             L25
+
+     debugline           209
+     getlex              QName(PackageNamespace("flash.ui"), "Mouse")
+     callpropvoid        QName(PackageNamespace(""), "hide"), 0
+
+     debugline           210
+     findproperty        QName(PrivateNamespace("_-2Gn"), "_-5yD")
+     pushfalse
+     setproperty         QName(PrivateNamespace("_-2Gn"), "_-5yD")
+
+     debugline           212
+L25:
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+end ; class

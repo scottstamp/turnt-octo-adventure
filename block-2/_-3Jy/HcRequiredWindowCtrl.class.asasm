@@ -1,0 +1,374 @@
+class
+ refid "_-3Jy:HcRequiredWindowCtrl"
+ instance QName(PackageNamespace("_-3Jy"), "HcRequiredWindowCtrl")
+  extends QName(PackageNamespace(""), "Object")
+  implements Multiname("_-4BI", [PackageNamespace("_-0XF")])
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-1ho")
+  iinit
+   refid "_-3Jy:HcRequiredWindowCtrl/instance/init"
+   param QName(PackageNamespace("_-3Jy"), "HabboGroupsManager")
+   body
+    maxstack 2
+    localcount 2
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     debugfile           "k"
+     debugline           12
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 12
+     debugline           12
+     getlocal0
+     constructsuper      0
+
+     debugline           13
+     getlocal0
+     getlocal1
+     initproperty        QName(PrivateNamespace("_-1ho"), "_-6FV")
+
+     debugline           14
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-1ho"), "_-6FV") type QName(PackageNamespace("_-3Jy"), "HabboGroupsManager") end
+  trait slot QName(PrivateNamespace("_-1ho"), "_-36K") type QName(PackageNamespace("_-2tk"), "IFrameWindow") end
+  trait method QName(PackageNamespace(""), "dispose")
+   method
+    refid "_-3Jy:HcRequiredWindowCtrl/instance/dispose"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           16
+      getlocal0
+      pushscope
+
+      debugline           17
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-1ho"), "_-6FV")
+
+      debugline           18
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1ho"), "_-36K")
+      iffalse             L21
+
+      debugline           19
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1ho"), "_-36K")
+      callpropvoid        QName(Namespace("_-0mn"), "dispose"), 0
+
+      debugline           20
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-1ho"), "_-36K")
+
+      debugline           22
+L21:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "disposed")
+   method
+    refid "_-3Jy:HcRequiredWindowCtrl/instance/disposed/getter"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           24
+      getlocal0
+      pushscope
+
+      debugline           25
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1ho"), "_-6FV")
+      pushnull
+      equals
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "show")
+   method
+    refid "_-3Jy:HcRequiredWindowCtrl/instance/show"
+    param QName(PackageNamespace(""), "Boolean")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           28
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 28
+      debugline           29
+      getlocal0
+      callpropvoid        QName(PrivateNamespace("_-1ho"), "_-4Wi"), 0
+
+      debugline           31
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1ho"), "_-36K")
+      pushstring          "info_txt"
+      callproperty        QName(Namespace("_-7H"), "findChildByName"), 1
+      getlocal1
+      iffalse             L17
+
+      pushstring          "${group.hcrequired.info.manage}"
+      jump                L18
+
+L17:
+      pushstring          "${group.hcrequired.info.join}"
+L18:
+      setproperty         QName(Namespace("_-0jq"), "caption")
+
+      debugline           33
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1ho"), "_-36K")
+      pushtrue
+      setproperty         QName(Namespace("_-0jq"), "visible")
+
+      debugline           34
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1ho"), "_-36K")
+      callpropvoid        QName(Namespace("_-0jq"), "activate"), 0
+
+      debugline           35
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-1ho"), "_-4Wi")
+   method
+    refid "_-3Jy:HcRequiredWindowCtrl/instance/_-3Jy:HcRequiredWindowCtrl/instance/_-4Wi"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           37
+      getlocal0
+      pushscope
+
+      debugline           38
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1ho"), "_-36K")
+      pushnull
+      ifeq                L13
+
+      debugline           39
+      returnvoid
+
+      ; 0xF0
+      ; 0x29
+L13:
+      getlocal0
+      findpropstrict      QName(PackageNamespace("_-2tk"), "IFrameWindow")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1ho"), "_-6FV")
+      pushstring          "club_required"
+      callproperty        QName(PackageNamespace(""), "getXmlWindow"), 1
+      callproperty        QName(PackageNamespace("_-2tk"), "IFrameWindow"), 1
+      initproperty        QName(PrivateNamespace("_-1ho"), "_-36K")
+
+      debugline           42
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1ho"), "_-36K")
+      pushstring          "close"
+      callproperty        QName(Namespace("_-7H"), "findChildByTag"), 1
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1ho"), "_-3C-")
+      setproperty         QName(Namespace("_-0jq"), "procedure")
+
+      debugline           43
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1ho"), "_-36K")
+      pushstring          "cancel_link_region"
+      callproperty        QName(Namespace("_-7H"), "findChildByName"), 1
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1ho"), "_-3C-")
+      setproperty         QName(Namespace("_-0jq"), "procedure")
+
+      debugline           44
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1ho"), "_-36K")
+      pushstring          "join_button"
+      callproperty        QName(Namespace("_-7H"), "findChildByName"), 1
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1ho"), "_-4Ke")
+      setproperty         QName(Namespace("_-0jq"), "procedure")
+
+      debugline           45
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1ho"), "_-36K")
+      pushstring          "more_info_link_region"
+      callproperty        QName(Namespace("_-7H"), "findChildByName"), 1
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1ho"), "_-4Ke")
+      setproperty         QName(Namespace("_-0jq"), "procedure")
+
+      debugline           46
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1ho"), "_-36K")
+      callpropvoid        QName(Namespace("_-0jq"), "center"), 0
+
+      debugline           47
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-1ho"), "_-3C-")
+   method
+    refid "_-3Jy:HcRequiredWindowCtrl/instance/_-3Jy:HcRequiredWindowCtrl/instance/_-3C-"
+    param QName(PackageNamespace("_-0eT"), "WindowEvent")
+    param QName(PackageNamespace("_-2z-"), "IWindow")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 3
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           49
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 49
+      debug               1, "k", 1, 49
+      debugline           50
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "type")
+      getlex              QName(PackageNamespace("_-0eT"), "WindowMouseEvent")
+      getproperty         QName(PackageNamespace(""), "CLICK")
+      ifne                L16
+
+      debugline           51
+      getlocal0
+      callpropvoid        QName(PackageNamespace(""), "close"), 0
+
+      debugline           53
+L16:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-1ho"), "_-4Ke")
+   method
+    refid "_-3Jy:HcRequiredWindowCtrl/instance/_-3Jy:HcRequiredWindowCtrl/instance/_-4Ke"
+    param QName(PackageNamespace("_-0eT"), "WindowEvent")
+    param QName(PackageNamespace("_-2z-"), "IWindow")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 3
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           55
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 55
+      debug               1, "k", 1, 55
+      debugline           56
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "type")
+      getlex              QName(PackageNamespace("_-0eT"), "WindowMouseEvent")
+      getproperty         QName(PackageNamespace(""), "CLICK")
+      ifne                L21
+
+      debugline           57
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1ho"), "_-6FV")
+      pushstring          "HcRequiredWindowCtrl"
+      callpropvoid        QName(PackageNamespace(""), "_-gu"), 1
+
+      debugline           58
+      getlocal0
+      callpropvoid        QName(PackageNamespace(""), "close"), 0
+
+      debugline           60
+L21:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "close")
+   method
+    refid "_-3Jy:HcRequiredWindowCtrl/instance/close"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           62
+      getlocal0
+      pushscope
+
+      debugline           63
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1ho"), "_-36K")
+      pushnull
+      ifeq                L15
+
+      debugline           64
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1ho"), "_-36K")
+      pushfalse
+      setproperty         QName(Namespace("_-0jq"), "visible")
+
+      debugline           66
+L15:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-3Jy:HcRequiredWindowCtrl/class/init"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

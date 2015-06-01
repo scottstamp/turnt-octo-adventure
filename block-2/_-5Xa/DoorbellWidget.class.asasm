@@ -1,0 +1,598 @@
+class
+ refid "_-5Xa:DoorbellWidget"
+ instance QName(PackageNamespace("_-5Xa"), "DoorbellWidget")
+  extends QName(PackageNamespace("_-2uq"), "_-2jh")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-6FS")
+  iinit
+   refid "_-5Xa:DoorbellWidget/instance/init"
+   param QName(PackageNamespace("_-4aA"), "_-08f")
+   param QName(PackageNamespace("_-6Wb"), "_-4fO")
+   param QName(PackageNamespace("_-475"), "_-10k")
+   param QName(PackageNamespace("_-T4"), "_-2rY")
+   body
+    maxstack 5
+    localcount 5
+    initscopedepth 5
+    maxscopedepth 6
+    code
+     debugfile           "k"
+     debugline           20
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 20
+     debug               1, "k", 1, 20
+     debug               1, "k", 2, 20
+     debug               1, "k", 3, 20
+     debugline           22
+     getlocal0
+     getlocal1
+     getlocal2
+     getlocal3
+     getlocal            4
+     constructsuper      4
+
+     debugline           24
+     getlocal0
+     findpropstrict      QName(PackageNamespace("_-5Xa"), "DoorbellView")
+     getlocal0
+     constructprop       QName(PackageNamespace("_-5Xa"), "DoorbellView"), 1
+     initproperty        QName(PrivateNamespace("_-6FS"), "_-5a5")
+
+     debugline           25
+     getlocal0
+     newarray            0
+     initproperty        QName(PrivateNamespace("_-6FS"), "_-2h5")
+
+     debugline           26
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-6FS"), "_-2h5") type QName(PackageNamespace(""), "Array") end
+  trait slot QName(PrivateNamespace("_-6FS"), "_-5a5") type QName(PackageNamespace("_-5Xa"), "DoorbellView") end
+  trait getter QName(PackageNamespace(""), "mainWindow") flag OVERRIDE
+   method
+    refid "_-5Xa:DoorbellWidget/instance/mainWindow/getter"
+    returns QName(PackageNamespace("_-2z-"), "IWindow")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           28
+      getlocal0
+      pushscope
+
+      debugline           29
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-6FS"), "_-5a5")
+      getproperty         QName(PackageNamespace(""), "mainWindow")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "users")
+   method
+    refid "_-5Xa:DoorbellWidget/instance/users/getter"
+    returns QName(PackageNamespace(""), "Array")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           32
+      getlocal0
+      pushscope
+
+      debugline           33
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-6FS"), "_-2h5")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "dispose") flag OVERRIDE
+   method
+    refid "_-5Xa:DoorbellWidget/instance/dispose"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           36
+      getlocal0
+      pushscope
+
+      debugline           37
+      getlex              QName(PackageNamespace(""), "disposed")
+      iffalse             L11
+
+      debugline           38
+      returnvoid
+
+      ; 0xF0
+      ; 0x28
+L11:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-6FS"), "_-5a5")
+      iffalse             L23
+
+      debugline           41
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-6FS"), "_-5a5")
+      callpropvoid        QName(PackageNamespace(""), "dispose"), 0
+
+      debugline           42
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-6FS"), "_-5a5")
+
+      debugline           44
+L23:
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-6FS"), "_-2h5")
+
+      debugline           45
+      getlocal0
+      callsupervoid       QName(PackageNamespace(""), "dispose"), 0
+      debugline           46
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "registerUpdateEvents") flag OVERRIDE
+   method
+    refid "_-5Xa:DoorbellWidget/instance/registerUpdateEvents"
+    param QName(PackageNamespace("flash.events"), "IEventDispatcher")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           48
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 48
+      debugline           49
+      getlocal1
+      pushnull
+      ifne                L13
+
+      debugline           50
+      returnvoid
+
+      ; 0xF0
+      ; 0x35
+L13:
+      getlocal1
+      getlex              QName(PackageNamespace("_-3iz"), "_-5uc")
+      getproperty         QName(PackageNamespace(""), "_-5qU")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-6FS"), "_-IQ")
+      callpropvoid        QName(Namespace("flash.events:IEventDispatcher"), "addEventListener"), 2
+
+      debugline           54
+      getlocal1
+      getlex              QName(PackageNamespace("_-3iz"), "_-5uc")
+      getproperty         QName(PackageNamespace(""), "REJECTED")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-6FS"), "_-1On")
+      callpropvoid        QName(Namespace("flash.events:IEventDispatcher"), "addEventListener"), 2
+
+      debugline           55
+      getlocal1
+      getlex              QName(PackageNamespace("_-3iz"), "_-5uc")
+      getproperty         QName(PackageNamespace(""), "_-5sU")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-6FS"), "_-1On")
+      callpropvoid        QName(Namespace("flash.events:IEventDispatcher"), "addEventListener"), 2
+
+      debugline           58
+      getlocal0
+      getlocal1
+      callsupervoid       QName(PackageNamespace(""), "registerUpdateEvents"), 1
+      debugline           59
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "unregisterUpdateEvents") flag OVERRIDE
+   method
+    refid "_-5Xa:DoorbellWidget/instance/unregisterUpdateEvents"
+    param QName(PackageNamespace("flash.events"), "IEventDispatcher")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           61
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 61
+      debugline           62
+      getlocal1
+      pushnull
+      ifne                L13
+
+      debugline           63
+      returnvoid
+
+      ; 0xF0
+      ; 0x42
+L13:
+      getlocal1
+      getlex              QName(PackageNamespace("_-3iz"), "_-5uc")
+      getproperty         QName(PackageNamespace(""), "_-5qU")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-6FS"), "_-IQ")
+      callpropvoid        QName(Namespace("flash.events:IEventDispatcher"), "removeEventListener"), 2
+
+      debugline           67
+      getlocal1
+      getlex              QName(PackageNamespace("_-3iz"), "_-5uc")
+      getproperty         QName(PackageNamespace(""), "REJECTED")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-6FS"), "_-1On")
+      callpropvoid        QName(Namespace("flash.events:IEventDispatcher"), "removeEventListener"), 2
+
+      debugline           68
+      getlocal1
+      getlex              QName(PackageNamespace("_-3iz"), "_-5uc")
+      getproperty         QName(PackageNamespace(""), "_-5sU")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-6FS"), "_-1On")
+      callpropvoid        QName(Namespace("flash.events:IEventDispatcher"), "removeEventListener"), 2
+
+      debugline           69
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-6FS"), "_-IQ")
+   method
+    refid "_-5Xa:DoorbellWidget/instance/_-5Xa:DoorbellWidget/_-IQ"
+    param QName(PackageNamespace("_-3iz"), "_-5uc")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           71
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 71
+      debugline           72
+      getlocal0
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "userName")
+      callpropvoid        QName(PackageNamespace(""), "_-6TV"), 1
+
+      debugline           73
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-6FS"), "_-1On")
+   method
+    refid "_-5Xa:DoorbellWidget/instance/_-5Xa:DoorbellWidget/_-1On"
+    param QName(PackageNamespace("_-3iz"), "_-5uc")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           75
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 75
+      debugline           76
+      getlocal0
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "userName")
+      callpropvoid        QName(PackageNamespace(""), "_-5NT"), 1
+
+      debugline           77
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-6TV")
+   method
+    refid "_-5Xa:DoorbellWidget/instance/_-6TV"
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           79
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 79
+      debugline           81
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-6FS"), "_-2h5")
+      getlocal1
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "indexOf"), 1
+      pushbyte            -1
+      ifeq                L16
+
+      debugline           82
+      returnvoid
+
+      ; 0xF0
+      ; 0x55
+L16:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-6FS"), "_-2h5")
+      getproperty         QName(PackageNamespace(""), "length")
+      getlex              QName(PrivateNamespace("_-6FS"), "_-3o8")
+      ifnge               L29
+
+      debugline           86
+      getlocal0
+      getlocal1
+      callpropvoid        QName(PackageNamespace(""), "deny"), 1
+
+      debugline           87
+      returnvoid
+
+      ; 0xF0
+      ; 0x59
+L29:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-6FS"), "_-2h5")
+      getlocal1
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      debugline           91
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-6FS"), "_-5a5")
+      callpropvoid        QName(PackageNamespace(""), "update"), 0
+
+      debugline           92
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-5NT")
+   method
+    refid "_-5Xa:DoorbellWidget/instance/_-5NT"
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           94
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 94
+      debug               1, "k", 1, 95
+      debugline           95
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-6FS"), "_-2h5")
+      getlocal1
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "indexOf"), 1
+      convert_i
+      setlocal2
+
+      debugline           96
+      getlocal2
+      pushbyte            -1
+      ifne                L21
+
+      debugline           97
+      returnvoid
+
+      ; 0xF0
+      ; 0x63
+L21:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-6FS"), "_-2h5")
+      getlocal2
+      pushbyte            1
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "splice"), 2
+
+      debugline           101
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-6FS"), "_-5a5")
+      callpropvoid        QName(PackageNamespace(""), "update"), 0
+
+      debugline           102
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "accept")
+   method
+    refid "_-5Xa:DoorbellWidget/instance/accept"
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           104
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 104
+      debug               1, "k", 1, 105
+      debugline           105
+      findpropstrict      QName(PackageNamespace("_-5oI"), "_-0hK")
+      getlocal1
+      pushtrue
+      constructprop       QName(PackageNamespace("_-5oI"), "_-0hK"), 2
+      coerce              QName(PackageNamespace("_-5oI"), "_-0hK")
+      setlocal2
+
+      debugline           106
+      getlex              QName(PackageNamespace(""), "messageListener")
+      getlocal2
+      callpropvoid        QName(Namespace("_-HM"), "processWidgetMessage"), 1
+
+      debugline           107
+      getlocal0
+      getlocal1
+      callpropvoid        QName(PackageNamespace(""), "_-5NT"), 1
+
+      debugline           108
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "deny")
+   method
+    refid "_-5Xa:DoorbellWidget/instance/deny"
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           110
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 110
+      debug               1, "k", 1, 111
+      debugline           111
+      findpropstrict      QName(PackageNamespace("_-5oI"), "_-0hK")
+      getlocal1
+      pushfalse
+      constructprop       QName(PackageNamespace("_-5oI"), "_-0hK"), 2
+      coerce              QName(PackageNamespace("_-5oI"), "_-0hK")
+      setlocal2
+
+      debugline           112
+      getlex              QName(PackageNamespace(""), "messageListener")
+      getlocal2
+      callpropvoid        QName(Namespace("_-HM"), "processWidgetMessage"), 1
+
+      debugline           113
+      getlocal0
+      getlocal1
+      callpropvoid        QName(PackageNamespace(""), "_-5NT"), 1
+
+      debugline           114
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-6UO")
+   method
+    refid "_-5Xa:DoorbellWidget/instance/_-6UO"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           116
+      getlocal0
+      pushscope
+
+      jump                L14
+
+L5:
+      label
+      debugline           118
+      getlocal0
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-6FS"), "_-2h5")
+      pushbyte            0
+      getproperty         MultinameL([PrivateNamespace("_-6FS"), PackageNamespace("_-5Xa"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("DoorbellWidget.as$4447"), PackageInternalNs("_-5Xa"), ProtectedNamespace("_-6FS"), StaticProtectedNs("_-6FS"), StaticProtectedNs("_-3t2")])
+      callpropvoid        QName(PackageNamespace(""), "deny"), 1
+
+      debugline           117
+L14:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-6FS"), "_-2h5")
+      getproperty         QName(PackageNamespace(""), "length")
+      pushbyte            0
+      ifgt                L5
+
+      debugline           121
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-5Xa:DoorbellWidget/class/init"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 4
+   maxscopedepth 5
+   code
+    getlocal0
+    pushscope
+
+    debug               1, "k", 0, 16
+    findproperty        QName(PrivateNamespace("_-6FS"), "_-3o8")
+    pushbyte            50
+    initproperty        QName(PrivateNamespace("_-6FS"), "_-3o8")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait const QName(PrivateNamespace("_-6FS"), "_-3o8") slotid 1 type QName(PackageNamespace(""), "int") value Integer(50) end
+end ; class

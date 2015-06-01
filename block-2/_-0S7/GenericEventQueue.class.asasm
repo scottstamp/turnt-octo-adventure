@@ -1,0 +1,412 @@
+class
+ refid "_-0S7:GenericEventQueue"
+ instance QName(PackageNamespace("_-0S7"), "GenericEventQueue")
+  extends QName(PackageNamespace(""), "Object")
+  implements Multiname("_-4im", [PackageNamespace("_-0S7")])
+  implements Multiname("_-4BI", [PackageNamespace("_-0XF")])
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-3ic")
+  iinit
+   refid "_-0S7:GenericEventQueue/instance/init"
+   param QName(PackageNamespace("flash.events"), "IEventDispatcher")
+   body
+    maxstack 3
+    localcount 2
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     debugfile           "k"
+     debugline           27
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 27
+     debugline           27
+     getlocal0
+     constructsuper      0
+
+     debugline           29
+     getlocal0
+     getlex              Multiname("Vector", [PrivateNamespace("_-3ic"), ProtectedNamespace("_-3ic"), PackageNamespace(""), PrivateNamespace("GenericEventQueue.as$2276"), PackageNamespace("_-0S7"), PackageInternalNs("_-0S7"), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("_-3ic"), PackageNamespace("__AS3__.vec")])
+     getlex              QName(PackageNamespace("flash.events"), "Event")
+     applytype           1
+     construct           0
+     initproperty        QName(ProtectedNamespace("_-3ic"), "_-5Mg")
+
+     debugline           30
+     getlocal0
+     getlocal1
+     initproperty        QName(ProtectedNamespace("_-3ic"), "_eventDispatcher")
+
+     debugline           31
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait getter QName(PackageNamespace(""), "length")
+   method
+    refid "_-0S7:GenericEventQueue/instance/length/getter"
+    returns QName(PackageNamespace(""), "uint")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           14
+      getlocal0
+      pushscope
+
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-3ic"), "_-5Mg")
+      getproperty         QName(PackageNamespace(""), "length")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "disposed")
+   method
+    refid "_-0S7:GenericEventQueue/instance/disposed/getter"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           15
+      getlocal0
+      pushscope
+
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-3ic"), "_disposed")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait slot QName(ProtectedNamespace("_-3ic"), "_disposed") type QName(PackageNamespace(""), "Boolean") value False() end
+  trait slot QName(ProtectedNamespace("_-3ic"), "_eventDispatcher") type QName(PackageNamespace("flash.events"), "IEventDispatcher") end
+  trait slot QName(ProtectedNamespace("_-3ic"), "_-5Mg") type TypeName(QName(PackageNamespace("__AS3__.vec"), "Vector")<QName(PackageNamespace("flash.events"), "Event")>) end
+  trait slot QName(ProtectedNamespace("_-3ic"), "_index") type QName(PackageNamespace(""), "uint") value Integer(0) end
+  trait slot QName(ProtectedNamespace("_-3ic"), "_-19B") type QName(PackageNamespace(""), "Boolean") value True() end
+  trait method QName(PackageNamespace(""), "dispose")
+   method
+    refid "_-0S7:GenericEventQueue/instance/dispose"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           36
+      getlocal0
+      pushscope
+
+      debugline           38
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-3ic"), "_disposed")
+      iftrue              L30
+
+      debugline           39
+      getlocal0
+      pushnull
+      initproperty        QName(ProtectedNamespace("_-3ic"), "_eventDispatcher")
+
+      debugline           40
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-3ic"), "_-5Mg")
+      getproperty         QName(PackageNamespace(""), "length")
+      iffalse             L26
+
+      debugline           41
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-3ic"), "_-5Mg")
+      pushbyte            0
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-3ic"), "_-5Mg")
+      getproperty         QName(PackageNamespace(""), "length")
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "splice"), 2
+
+      debugline           43
+L26:
+      getlocal0
+      pushtrue
+      initproperty        QName(ProtectedNamespace("_-3ic"), "_disposed")
+
+      debugline           45
+L30:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "begin")
+   method
+    refid "_-0S7:GenericEventQueue/instance/begin"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           50
+      getlocal0
+      pushscope
+
+      debugline           52
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-3ic"), "_-19B")
+      iftrue              L11
+
+      getlocal0
+      callpropvoid        QName(PackageNamespace(""), "flush"), 0
+
+      debugline           53
+L11:
+      getlocal0
+      pushbyte            0
+      initproperty        QName(ProtectedNamespace("_-3ic"), "_index")
+
+      debugline           54
+      getlocal0
+      pushfalse
+      initproperty        QName(ProtectedNamespace("_-3ic"), "_-19B")
+
+      debugline           55
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "next")
+   method
+    refid "_-0S7:GenericEventQueue/instance/next"
+    returns QName(PackageNamespace("flash.events"), "Event")
+    body
+     maxstack 2
+     localcount 4
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           61
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("flash.events"), "Event")
+      setlocal1
+
+      debug               1, "k", 0, 63
+      debugline           65
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-3ic"), "_index")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-3ic"), "_-5Mg")
+      getproperty         QName(PackageNamespace(""), "length")
+      ifnlt               L36
+
+      debugline           66
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-3ic"), "_-5Mg")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-3ic"), "_index")
+      getproperty         MultinameL([PrivateNamespace("_-3ic"), ProtectedNamespace("_-3ic"), PackageNamespace(""), PrivateNamespace("GenericEventQueue.as$2276"), PackageNamespace("_-0S7"), PackageInternalNs("_-0S7"), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("_-3ic")])
+      coerce              QName(PackageNamespace("flash.events"), "Event")
+      setlocal1
+
+      debugline           67
+      getlocal0
+      dup
+      setlocal2
+
+      getproperty         QName(ProtectedNamespace("_-3ic"), "_index")
+      increment
+      setlocal3
+
+      getlocal2
+      getlocal3
+      setproperty         QName(ProtectedNamespace("_-3ic"), "_index")
+
+      kill                3
+      kill                2
+      debugline           69
+L36:
+      getlocal1
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "remove")
+   method
+    refid "_-0S7:GenericEventQueue/instance/remove"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           75
+      getlocal0
+      pushscope
+
+      debugline           77
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-3ic"), "_-5Mg")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-3ic"), "_index")
+      decrement
+      pushbyte            1
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "splice"), 2
+
+      debugline           78
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-3ic"), "_index")
+      pushbyte            0
+      ifngt               L29
+
+      getlocal0
+      dup
+      setlocal1
+
+      getproperty         QName(ProtectedNamespace("_-3ic"), "_index")
+      decrement
+      setlocal2
+
+      getlocal1
+      getlocal2
+      setproperty         QName(ProtectedNamespace("_-3ic"), "_index")
+
+      kill                2
+      kill                1
+      debugline           79
+L29:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "end")
+   method
+    refid "_-0S7:GenericEventQueue/instance/end"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           85
+      getlocal0
+      pushscope
+
+      debugline           87
+      getlocal0
+      pushbyte            0
+      initproperty        QName(ProtectedNamespace("_-3ic"), "_index")
+
+      debugline           88
+      getlocal0
+      pushtrue
+      initproperty        QName(ProtectedNamespace("_-3ic"), "_-19B")
+
+      debugline           89
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "flush")
+   method
+    refid "_-0S7:GenericEventQueue/instance/flush"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           94
+      getlocal0
+      pushscope
+
+      debugline           96
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-3ic"), "_-5Mg")
+      pushbyte            0
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-3ic"), "_-5Mg")
+      getproperty         QName(PackageNamespace(""), "length")
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "splice"), 2
+
+      debugline           97
+      getlocal0
+      pushbyte            0
+      initproperty        QName(ProtectedNamespace("_-3ic"), "_index")
+
+      debugline           98
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-3ic"), "_-68Z")
+   method
+    refid "_-0S7:GenericEventQueue/instance/_-3ic:_-68Z"
+    param QName(PackageNamespace("flash.events"), "Event")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           104
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 104
+      debugline           106
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-3ic"), "_-5Mg")
+      getlocal1
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      debugline           107
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-0S7:GenericEventQueue/class/init"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

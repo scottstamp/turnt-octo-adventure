@@ -1,0 +1,33 @@
+script ; 5484
+ sinit
+  refid "_-05n:_-IF/init"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 1
+   maxscopedepth 3
+   code
+    getlocal0
+    pushscope
+
+    debugfile           "k"
+    debugline           10
+    findpropstrict      Multiname("_-IF", [PackageNamespace("_-05n")])
+    getlex              QName(PackageNamespace(""), "Object")
+    pushscope
+
+    getlex              QName(PackageNamespace(""), "Object")
+    newclass            "_-05n:_-IF"
+    popscope
+    initproperty        QName(PackageNamespace("_-05n"), "_-IF")
+
+    debugfile           "k"
+    debugline           1
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait class QName(PackageNamespace("_-05n"), "_-IF")
+  #include "_-IF.class.asasm"
+ end ; trait
+end ; script

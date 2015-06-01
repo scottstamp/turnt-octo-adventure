@@ -1,0 +1,151 @@
+class
+ refid "_-5Fy:_-4DK"
+ instance QName(PackageNamespace("_-5Fy"), "_-4DK")
+  extends QName(PackageNamespace("_-5Fy"), "_-4Ob")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-39P")
+  iinit
+   refid "_-5Fy:_-4DK/instance/init"
+   param QName(PackageNamespace(""), "String")
+   param QName(PackageNamespace(""), "String")
+   flag HAS_OPTIONAL
+   optional Utf8("flash")
+   optional Null()
+   body
+    maxstack 4
+    localcount 3
+    initscopedepth 6
+    maxscopedepth 7
+    code
+     debugfile           "k"
+     debugline           27
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 27
+     debug               1, "k", 1, 27
+     debugline           28
+     getlocal0
+     getlocal1
+     getlocal2
+     pushnull
+     ifeq                L15
+
+     getlocal2
+     coerce_s
+     jump                L17
+
+L15:
+     pushnull
+     coerce_s
+L17:
+     constructsuper      2
+
+     debugline           29
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait method QName(PackageNamespace(""), "getContent") flag OVERRIDE
+   method
+    refid "_-5Fy:_-4DK/instance/getContent"
+    param QName(PackageNamespace("_-2mt"), "NonLinearVideoAd")
+    returns QName(PackageNamespace(""), "String")
+    body
+     maxstack 4
+     localcount 2
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           31
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 31
+      debugline           32
+      getlocal1
+      pushnull
+      ifeq                L53
+
+      debugline           33
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "_-2oi"), 0
+      iffalse             L33
+
+      debugline           34
+      findpropstrict      QName(ProtectedNamespace("_-5Mn"), "replace")
+      getlex              QName(ProtectedNamespace("_-5Mn"), "_-11E")
+      pushnull
+      ifne                L20
+
+      pushstring          "_code_"
+      jump                L22
+
+L20:
+      getlex              QName(ProtectedNamespace("_-5Mn"), "_-11E")
+      coerce_s
+L22:
+      pushstring          "code"
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "codeBlock")
+      callproperty        QName(ProtectedNamespace("_-5Mn"), "replace"), 3
+      returnvalue
+
+      ; 0x10
+      ; 0x2A
+      ; 0x00
+      ; 0x00
+      ; 0xF0
+      ; 0x25
+L33:
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "url")
+      pushnull
+      ifeq                L46
+
+      debugline           38
+      findpropstrict      QName(ProtectedNamespace("_-5Mn"), "replace")
+      pushstring          "<script type='text/javascript' src='_code_'></script>"
+      pushstring          "code"
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "url")
+      getproperty         QName(PackageNamespace(""), "url")
+      callproperty        QName(ProtectedNamespace("_-5Mn"), "replace"), 3
+      returnvalue
+
+L46:
+      pushstring          "<script type='text/javascript' src=''></script>"
+      debugline           40
+      returnvalue
+
+      ; 0x10
+      ; 0x06
+      ; 0x00
+      ; 0x00
+L53:
+      pushstring          "Non-linear video ad not available"
+      debugline           43
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-5Fy:_-4DK/class/init"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 5
+   maxscopedepth 6
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

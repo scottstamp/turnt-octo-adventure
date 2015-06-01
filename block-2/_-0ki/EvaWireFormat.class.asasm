@@ -1,0 +1,605 @@
+class
+ refid "_-0ki:EvaWireFormat"
+ instance QName(PackageNamespace("_-0ki"), "EvaWireFormat")
+  extends QName(PackageNamespace(""), "Object")
+  implements Multiname("_-0Mg", [PackageNamespace("_-0ki")])
+  flag SEALED
+  flag FINAL
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-1Mn")
+  iinit
+   refid "_-0ki:EvaWireFormat/instance/init"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     debugfile           "k"
+     debugline           117
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait method QName(PackageNamespace(""), "dispose")
+   method
+    refid "_-0ki:EvaWireFormat/instance/dispose"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           17
+      getlocal0
+      pushscope
+
+      debugline           18
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "encode")
+   method
+    refid "_-0ki:EvaWireFormat/instance/encode"
+    param QName(PackageNamespace(""), "int")
+    param QName(PackageNamespace(""), "Array")
+    returns QName(PackageNamespace("flash.utils"), "ByteArray")
+    body
+     maxstack 3
+     localcount 9
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           20
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace(""), "Object")
+      setlocal            4
+
+      pushbyte            0
+      convert_u
+      setlocal            5
+
+      pushnull
+      coerce              QName(PackageNamespace("flash.utils"), "ByteArray")
+      setlocal            6
+
+      debug               1, "k", 0, 20
+      debug               1, "k", 1, 20
+      debug               1, "k", 2, 21
+      debug               1, "k", 3, 30
+      debug               1, "k", 4, 47
+      debugline           21
+      findpropstrict      QName(PackageNamespace("flash.utils"), "ByteArray")
+      constructprop       QName(PackageNamespace("flash.utils"), "ByteArray"), 0
+      coerce              QName(PackageNamespace("flash.utils"), "ByteArray")
+      setlocal3
+
+      debugline           24
+      getlocal3
+      pushbyte            0
+      callpropvoid        QName(PackageNamespace(""), "writeInt"), 1
+
+      debugline           27
+      getlocal3
+      getlocal1
+      callpropvoid        QName(PackageNamespace(""), "writeShort"), 1
+
+      debugline           30
+      pushbyte            0
+      setlocal            7
+
+      getlocal2
+      coerce_a
+      setlocal            8
+
+      jump                L119
+
+L38:
+      label
+      getlocal            8
+      getlocal            7
+      nextvalue
+      coerce              QName(PackageNamespace(""), "Object")
+      setlocal            4
+
+      debugline           31
+      getlocal            4
+      getlex              QName(PackageNamespace(""), "String")
+      istypelate
+      iffalse             L58
+
+      debugline           32
+      getlocal3
+      getlocal            4
+      getlex              QName(PackageNamespace(""), "String")
+      astypelate
+      callpropvoid        QName(PackageNamespace(""), "writeUTF"), 1
+
+      jump                L119
+
+      ; 0xF0
+      ; 0x21
+L58:
+      getlocal            4
+      getlex              QName(PackageNamespace(""), "int")
+      istypelate
+      iffalse             L71
+
+      debugline           34
+      getlocal3
+      getlocal            4
+      getlex              QName(PackageNamespace(""), "int")
+      astypelate
+      callpropvoid        QName(PackageNamespace(""), "writeInt"), 1
+
+      jump                L119
+
+      ; 0xF0
+      ; 0x23
+L71:
+      getlocal            4
+      getlex              QName(PackageNamespace(""), "Boolean")
+      istypelate
+      iffalse             L84
+
+      debugline           36
+      getlocal3
+      getlocal            4
+      getlex              QName(PackageNamespace(""), "Boolean")
+      astypelate
+      callpropvoid        QName(PackageNamespace(""), "writeBoolean"), 1
+
+      jump                L119
+
+      ; 0xF0
+      ; 0x25
+L84:
+      getlocal            4
+      getlex              QName(PackageNamespace("_-0Vk"), "_-0cQ")
+      istypelate
+      iffalse             L98
+
+      debugline           38
+      getlocal3
+      getlocal            4
+      getlex              QName(PackageNamespace("_-0Vk"), "_-0cQ")
+      astypelate
+      getproperty         QName(PackageNamespace(""), "value")
+      callpropvoid        QName(PackageNamespace(""), "writeShort"), 1
+
+      jump                L119
+
+      ; 0xF0
+      ; 0x27
+L98:
+      getlocal            4
+      getlex              QName(PackageNamespace("flash.utils"), "ByteArray")
+      istypelate
+      iffalse             L119
+
+      debug               1, "k", 5, 40
+      debugline           40
+      getlocal            4
+      getlex              QName(PackageNamespace("flash.utils"), "ByteArray")
+      astypelate
+      coerce              QName(PackageNamespace("flash.utils"), "ByteArray")
+      setlocal            6
+
+      debugline           41
+      getlocal3
+      getlocal            6
+      getproperty         QName(PackageNamespace(""), "length")
+      callpropvoid        QName(PackageNamespace(""), "writeInt"), 1
+
+      debugline           42
+      getlocal3
+      getlocal            6
+      callpropvoid        QName(PackageNamespace(""), "writeBytes"), 1
+
+      debugline           30
+L119:
+      hasnext2            8, 7
+      iftrue              L38
+
+      kill                8
+      kill                7
+      debugline           47
+      getlocal3
+      getproperty         QName(PackageNamespace(""), "length")
+      convert_u
+      setlocal            5
+
+      debugline           48
+      getlocal3
+      pushbyte            0
+      setproperty         QName(PackageNamespace(""), "position")
+
+      debugline           49
+      getlocal3
+      getlocal            5
+      pushbyte            4
+      subtract
+      callpropvoid        QName(PackageNamespace(""), "writeInt"), 1
+
+      debugline           50
+      getlocal3
+      getlocal            5
+      setproperty         QName(PackageNamespace(""), "position")
+
+      debugline           52
+      getlocal3
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-5fy")
+   method
+    refid "_-0ki:EvaWireFormat/instance/_-5fy"
+    param QName(PackageNamespace("flash.utils"), "ByteArray")
+    param QName(PackageNamespace("_-5IJ"), "_-1S-")
+    returns QName(PackageNamespace(""), "Array")
+    body
+     maxstack 4
+     localcount 12
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           55
+      getlocal0
+      pushscope
+
+      pushbyte            0
+      convert_u
+      setlocal            4
+
+      pushbyte            0
+      convert_u
+      setlocal            5
+
+      pushnull
+      coerce              QName(PackageNamespace("_-2Tq"), "_-0Y0")
+      setlocal            6
+
+      pushnull
+      coerce              QName(PackageNamespace("flash.utils"), "ByteArray")
+      setlocal            7
+
+      pushbyte            0
+      setlocal            8
+
+      pushnull
+      coerce              QName(PackageNamespace("flash.utils"), "ByteArray")
+      setlocal            9
+
+      pushnull
+      coerce              QName(PackageNamespace("flash.utils"), "ByteArray")
+      setlocal            10
+
+      pushnull
+      coerce              QName(PackageNamespace("flash.utils"), "ByteArray")
+      setlocal            11
+
+      debug               1, "k", 0, 55
+      debug               1, "k", 1, 55
+      debug               1, "k", 2, 56
+      debugline           56
+      findpropstrict      QName(PackageNamespace(""), "Array")
+      constructprop       QName(PackageNamespace(""), "Array"), 0
+      coerce              QName(PackageNamespace(""), "Array")
+      setlocal3
+
+      jump                L251
+
+L36:
+      label
+      debug               1, "k", 3, 62
+      debug               1, "k", 4, 63
+      debug               1, "k", 5, 65
+      debug               1, "k", 6, 96
+      debug               1, "k", 7, 110
+      debugline           58
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "bytesAvailable")
+      pushbyte            6
+      ifnlt               L52
+
+      debugline           59
+      getlocal3
+      returnvalue
+
+      ; 0xF0
+      ; 0x3E
+L52:
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "position")
+      convert_u
+      setlocal            4
+
+      debugline           63
+      pushbyte            0
+      convert_u
+      setlocal            5
+
+      debugline           65
+      getlocal2
+      callproperty        QName(Namespace("_-nL"), "_-2eI"), 0
+      coerce              QName(PackageNamespace("_-2Tq"), "_-0Y0")
+      setlocal            6
+
+      debugline           66
+      getlocal            6
+      pushnull
+      ifeq                L141
+
+      debug               1, "k", 8, 70
+      debug               1, "k", 9, 76
+      debugline           67
+      getlocal            6
+      callpropvoid        QName(Namespace("_-55x"), "_-3iD"), 0
+
+      debugline           70
+      findpropstrict      QName(PackageNamespace("flash.utils"), "ByteArray")
+      constructprop       QName(PackageNamespace("flash.utils"), "ByteArray"), 0
+      coerce              QName(PackageNamespace("flash.utils"), "ByteArray")
+      setlocal            9
+
+      debugline           71
+      getlocal            9
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "readByte"), 0
+      callpropvoid        QName(PackageNamespace(""), "writeByte"), 1
+
+      debugline           72
+      getlocal            9
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "readByte"), 0
+      callpropvoid        QName(PackageNamespace(""), "writeByte"), 1
+
+      debugline           73
+      getlocal            9
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "readByte"), 0
+      callpropvoid        QName(PackageNamespace(""), "writeByte"), 1
+
+      debugline           74
+      getlocal            9
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "readByte"), 0
+      callpropvoid        QName(PackageNamespace(""), "writeByte"), 1
+
+      debugline           76
+      getlocal            6
+      getlocal            9
+      callproperty        QName(Namespace("_-55x"), "_-10i"), 1
+      coerce              QName(PackageNamespace("flash.utils"), "ByteArray")
+      setlocal            10
+
+      debugline           78
+      pushshort           255
+      getlocal            10
+      pushbyte            0
+      getproperty         MultinameL([PrivateNamespace("_-1Mn"), PackageNamespace(""), PrivateNamespace("EvaWireFormat.as$3822"), PackageNamespace("_-0ki"), PackageInternalNs("_-0ki"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-1Mn"), StaticProtectedNs("_-1Mn")])
+      bitand
+      pushbyte            24
+      lshift
+      pushshort           255
+      getlocal            10
+      pushbyte            1
+      getproperty         MultinameL([PrivateNamespace("_-1Mn"), PackageNamespace(""), PrivateNamespace("EvaWireFormat.as$3822"), PackageNamespace("_-0ki"), PackageInternalNs("_-0ki"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-1Mn"), StaticProtectedNs("_-1Mn")])
+      bitand
+      pushbyte            16
+      lshift
+      bitor
+      debugline           79
+      pushshort           255
+      getlocal            10
+      pushbyte            2
+      getproperty         MultinameL([PrivateNamespace("_-1Mn"), PackageNamespace(""), PrivateNamespace("EvaWireFormat.as$3822"), PackageNamespace("_-0ki"), PackageInternalNs("_-0ki"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-1Mn"), StaticProtectedNs("_-1Mn")])
+      bitand
+      pushbyte            8
+      lshift
+      bitor
+      pushshort           255
+      getlocal            10
+      pushbyte            3
+      getproperty         MultinameL([PrivateNamespace("_-1Mn"), PackageNamespace(""), PrivateNamespace("EvaWireFormat.as$3822"), PackageNamespace("_-0ki"), PackageInternalNs("_-0ki"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-1Mn"), StaticProtectedNs("_-1Mn")])
+      bitand
+      bitor
+      convert_u
+      setlocal            5
+
+      jump                L146
+
+      ; 0xF0
+      ; 0x51
+L141:
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "readInt"), 0
+      convert_u
+      setlocal            5
+
+      debugline           84
+L146:
+      getlocal            5
+      pushbyte            2
+      lessthan
+      dup
+      iftrue              L155
+
+      pop
+      getlocal            5
+      getlex              QName(PrivateNamespace("_-1Mn"), "_-1Dd")
+      greaterthan
+L155:
+      iffalse             L165
+
+      debugline           85
+      findpropstrict      QName(PackageNamespace(""), "Error")
+      pushstring          "Invalid message length "
+      getlocal            5
+      add
+      constructprop       QName(PackageNamespace(""), "Error"), 1
+      throw
+
+      ; 0xF0
+      ; 0x58
+L165:
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "bytesAvailable")
+      getlocal            5
+      ifnlt               L185
+
+      debugline           89
+      getlocal1
+      getlocal            4
+      setproperty         QName(PackageNamespace(""), "position")
+
+      debugline           90
+      getlocal            6
+      pushnull
+      ifeq                L181
+
+      debugline           91
+      getlocal            6
+      callpropvoid        QName(Namespace("_-55x"), "reset"), 0
+
+      debugline           93
+L181:
+      getlocal3
+      returnvalue
+
+      ; 0xF0
+      ; 0x60
+L185:
+      findpropstrict      QName(PackageNamespace("flash.utils"), "ByteArray")
+      constructprop       QName(PackageNamespace("flash.utils"), "ByteArray"), 0
+      coerce              QName(PackageNamespace("flash.utils"), "ByteArray")
+      setlocal            7
+
+      debugline           98
+      getlocal            6
+      pushnull
+      ifeq                L221
+
+      debug               1, "k", 10, 99
+      debugline           99
+      findpropstrict      QName(PackageNamespace("flash.utils"), "ByteArray")
+      constructprop       QName(PackageNamespace("flash.utils"), "ByteArray"), 0
+      coerce              QName(PackageNamespace("flash.utils"), "ByteArray")
+      setlocal            11
+
+      debugline           100
+      getlocal            11
+      getlocal1
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "position")
+      getlocal            5
+      callpropvoid        QName(PackageNamespace(""), "writeBytes"), 3
+
+      debugline           102
+      getlocal            7
+      getlocal            6
+      getlocal            11
+      callproperty        QName(Namespace("_-55x"), "_-10i"), 1
+      pushbyte            0
+      getlocal            5
+      callpropvoid        QName(PackageNamespace(""), "writeBytes"), 3
+
+      debugline           103
+      getlocal            7
+      pushbyte            0
+      setproperty         QName(PackageNamespace(""), "position")
+
+      jump                L232
+
+      ; 0xF0
+      ; 0x69
+L221:
+      getlocal            7
+      getlocal1
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "position")
+      getlocal            5
+      callpropvoid        QName(PackageNamespace(""), "writeBytes"), 3
+
+      debugline           106
+      getlocal            7
+      pushbyte            0
+      setproperty         QName(PackageNamespace(""), "position")
+
+      debugline           109
+L232:
+      getlocal1
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "position")
+      getlocal            5
+      add
+      setproperty         QName(PackageNamespace(""), "position")
+
+      debugline           110
+      getlocal            7
+      callproperty        QName(PackageNamespace(""), "readShort"), 0
+      convert_i
+      setlocal            8
+
+      debugline           111
+      getlocal3
+      findpropstrict      QName(PackageInternalNs("_-0ki"), "_-14W")
+      getlocal            8
+      getlocal            7
+      constructprop       QName(PackageInternalNs("_-0ki"), "_-14W"), 2
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      debugline           57
+L251:
+      jump                L36
+
+      ; 0xF0
+      ; 0x71
+      ; 0xD3
+      ; 0x48
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-0ki:EvaWireFormat/class/init"
+  body
+   maxstack 3
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    debug               1, "k", 0, 15
+    findproperty        QName(PrivateNamespace("_-1Mn"), "_-1Dd")
+    pushshort           128
+    pushshort           1024
+    multiply
+    initproperty        QName(PrivateNamespace("_-1Mn"), "_-1Dd")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait const QName(PrivateNamespace("_-1Mn"), "_-1Dd") slotid 1 type QName(PackageNamespace(""), "uint") value Double(131072) end
+end ; class

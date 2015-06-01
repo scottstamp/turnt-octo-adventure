@@ -1,0 +1,229 @@
+class
+ refid "_-4Za:_-0rA"
+ instance QName(PackageNamespace("_-4Za"), "_-0rA")
+  extends QName(PackageNamespace("_-4Za"), "Plane")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-3yx")
+  iinit
+   refid "_-4Za:_-0rA/instance/init"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 5
+    maxscopedepth 6
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     debugfile           "k"
+     debugline           55
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait method QName(PackageNamespace(""), "render")
+   method
+    refid "_-4Za:_-0rA/instance/render"
+    param QName(PackageNamespace("flash.display"), "BitmapData")
+    param QName(PackageNamespace(""), "Number")
+    param QName(PackageNamespace(""), "Number")
+    param QName(PackageNamespace(""), "Number")
+    param QName(PackageNamespace("_-3hA"), "_-CB")
+    param QName(PackageNamespace(""), "Boolean")
+    returns QName(PackageNamespace("flash.display"), "BitmapData")
+    body
+     maxstack 6
+     localcount 11
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           33
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 33
+      debug               1, "k", 1, 33
+      debug               1, "k", 2, 33
+      debug               1, "k", 3, 33
+      debug               1, "k", 4, 33
+      debug               1, "k", 5, 33
+      debug               1, "k", 6, 35
+      debug               1, "k", 7, 39
+      debug               1, "k", 8, 40
+      debug               1, "k", 9, 41
+      debugline           35
+      findpropstrict      QName(ProtectedNamespace("_-5s4"), "_-05W")
+      getlocal            4
+      callproperty        QName(ProtectedNamespace("_-5s4"), "_-05W"), 1
+      coerce              QName(PackageNamespace("_-4Za"), "PlaneVisualization")
+      setlocal            7
+
+      debugline           36
+      getlocal            7
+      pushnull
+      equals
+      dup
+      iftrue              L31
+
+      pop
+      getlocal            7
+      getproperty         QName(PackageNamespace(""), "geometry")
+      pushnull
+      equals
+L31:
+      iffalse             L36
+
+      pushnull
+      returnvalue
+
+      ; 0xF0
+      ; 0x27
+L36:
+      getlocal            7
+      getproperty         QName(PackageNamespace(""), "geometry")
+      findpropstrict      QName(PackageNamespace("_-3hA"), "_-4TB")
+      pushbyte            0
+      dup
+      dup
+      constructprop       QName(PackageNamespace("_-3hA"), "_-4TB"), 3
+      callproperty        QName(Namespace("_-ZO"), "_-G"), 1
+      coerce              QName(PackageNamespace("flash.geom"), "Point")
+      setlocal            8
+
+      debugline           40
+      getlocal            7
+      getproperty         QName(PackageNamespace(""), "geometry")
+      findpropstrict      QName(PackageNamespace("_-3hA"), "_-4TB")
+      pushbyte            0
+      dup
+      getlocal3
+      getlocal            7
+      getproperty         QName(PackageNamespace(""), "geometry")
+      getproperty         QName(Namespace("_-ZO"), "scale")
+      divide
+      constructprop       QName(PackageNamespace("_-3hA"), "_-4TB"), 3
+      callproperty        QName(Namespace("_-ZO"), "_-G"), 1
+      coerce              QName(PackageNamespace("flash.geom"), "Point")
+      setlocal            9
+
+      debugline           41
+      getlocal            7
+      getproperty         QName(PackageNamespace(""), "geometry")
+      findpropstrict      QName(PackageNamespace("_-3hA"), "_-4TB")
+      pushbyte            0
+      getlocal2
+      getlocal            7
+      getproperty         QName(PackageNamespace(""), "geometry")
+      getproperty         QName(Namespace("_-ZO"), "scale")
+      divide
+      pushbyte            0
+      constructprop       QName(PackageNamespace("_-3hA"), "_-4TB"), 3
+      callproperty        QName(Namespace("_-ZO"), "_-G"), 1
+      coerce              QName(PackageNamespace("flash.geom"), "Point")
+      setlocal            10
+
+      debugline           43
+      getlocal            8
+      pushnull
+      equals
+      not
+      dup
+      iffalse             L88
+
+      pop
+      getlocal            9
+      pushnull
+      equals
+      not
+L88:
+      dup
+      iffalse             L95
+
+      pop
+      getlocal            10
+      pushnull
+      equals
+      not
+L95:
+      iffalse             L121
+
+      debugline           45
+      getlex              QName(PackageNamespace(""), "Math")
+      getlex              QName(PackageNamespace(""), "Math")
+      getlocal            8
+      getproperty         QName(PackageNamespace(""), "x")
+      getlocal            10
+      getproperty         QName(PackageNamespace(""), "x")
+      subtract
+      callproperty        QName(PackageNamespace(""), "abs"), 1
+      callproperty        QName(PackageNamespace(""), "round"), 1
+      convert_d
+      setlocal2
+
+      debugline           46
+      getlex              QName(PackageNamespace(""), "Math")
+      getlex              QName(PackageNamespace(""), "Math")
+      getlocal            8
+      getproperty         QName(PackageNamespace(""), "y")
+      getlocal            9
+      getproperty         QName(PackageNamespace(""), "y")
+      subtract
+      callproperty        QName(PackageNamespace(""), "abs"), 1
+      callproperty        QName(PackageNamespace(""), "round"), 1
+      convert_d
+      setlocal3
+
+      debugline           50
+L121:
+      getlocal            7
+      getlocal1
+      getlocal2
+      getlocal3
+      getlocal            5
+      getlocal            6
+      callproperty        QName(PackageNamespace(""), "render"), 5
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-4Za:_-0rA/class/init"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 4
+   maxscopedepth 5
+   code
+    getlocal0
+    pushscope
+
+    debug               1, "k", 0, 18
+    findproperty        QName(PackageNamespace(""), "_-2K3")
+    pushint             16777215
+    initproperty        QName(PackageNamespace(""), "_-2K3")
+
+    debug               1, "k", 1, 19
+    findproperty        QName(PackageNamespace(""), "_-4JD")
+    pushbyte            45
+    initproperty        QName(PackageNamespace(""), "_-4JD")
+
+    debug               1, "k", 2, 20
+    findproperty        QName(PackageNamespace(""), "_-3Ih")
+    pushbyte            30
+    initproperty        QName(PackageNamespace(""), "_-3Ih")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait const QName(PackageNamespace(""), "_-2K3") slotid 1 type QName(PackageNamespace(""), "uint") value Integer(16777215) end
+ trait const QName(PackageNamespace(""), "_-4JD") slotid 2 type QName(PackageNamespace(""), "Number") value Double(45) end
+ trait const QName(PackageNamespace(""), "_-3Ih") slotid 3 type QName(PackageNamespace(""), "Number") value Double(30) end
+end ; class

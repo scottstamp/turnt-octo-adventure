@@ -1,0 +1,104 @@
+method
+ refid "_-2n:HeightMapEditor/class/_-3ki/inline_method"
+ param QName(PackageNamespace(""), "Number")
+ param QName(PackageNamespace(""), "Number")
+ param QName(PackageNamespace(""), "Number")
+ returns QName(PackageNamespace(""), "Number")
+ body
+  maxstack 4
+  localcount 4
+  initscopedepth 4
+  maxscopedepth 4
+  code
+   debug               1, "k", 0, 228
+   debug               1, "k", 1, 228
+   debug               1, "k", 2, 228
+   debugfile           "k"
+   debugline           229
+   getlocal3
+   pushdouble          0
+   ifnlt               L14
+
+   getlocal3
+   pushbyte            1
+   add
+   convert_d
+   setlocal3
+
+   debugline           230
+L14:
+   getlocal3
+   pushbyte            1
+   ifngt               L22
+
+   getlocal3
+   decrement
+   convert_d
+   setlocal3
+
+   debugline           231
+L22:
+   getlocal3
+   pushbyte            1
+   pushbyte            6
+   divide
+   ifnlt               L40
+
+   getlocal1
+   getlocal2
+   getlocal1
+   subtract
+   pushbyte            6
+   multiply
+   getlocal3
+   multiply
+   add
+   returnvalue
+
+   ; 0xF0
+   ; 0xE8
+   ; 0x01
+L40:
+   getlocal3
+   pushbyte            1
+   pushbyte            2
+   divide
+   ifnlt               L50
+
+   getlocal2
+   returnvalue
+
+   ; 0xF0
+   ; 0xE9
+   ; 0x01
+L50:
+   getlocal3
+   pushbyte            2
+   pushbyte            3
+   divide
+   ifnlt               L72
+
+   getlocal1
+   getlocal2
+   getlocal1
+   subtract
+   pushbyte            2
+   pushbyte            3
+   divide
+   getlocal3
+   subtract
+   multiply
+   pushbyte            6
+   multiply
+   add
+   returnvalue
+
+   ; 0xF0
+   ; 0xEA
+   ; 0x01
+L72:
+   getlocal1
+   returnvalue
+  end ; code
+ end ; body
+end ; method

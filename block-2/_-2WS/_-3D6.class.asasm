@@ -1,0 +1,436 @@
+class
+ refid "_-2WS:_-3D6"
+ instance QName(PackageNamespace("_-2WS"), "_-3D6")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-4eY")
+  iinit
+   refid "_-2WS:_-3D6/instance/init"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     debugfile           "k"
+     debugline           49
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+ end ; instance
+ cinit
+  refid "_-2WS:_-3D6/class/init"
+  body
+   maxstack 3
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    debug               1, "k", 0, 5
+    findproperty        QName(PrivateNamespace("_-4eY"), "_-3Dc")
+    pushbyte            60
+    initproperty        QName(PrivateNamespace("_-4eY"), "_-3Dc")
+
+    debug               1, "k", 1, 6
+    findproperty        QName(PrivateNamespace("_-4eY"), "_-g1")
+    pushbyte            60
+    getlex              QName(PrivateNamespace("_-4eY"), "_-3Dc")
+    multiply
+    initproperty        QName(PrivateNamespace("_-4eY"), "_-g1")
+
+    debug               1, "k", 2, 7
+    findproperty        QName(PrivateNamespace("_-4eY"), "_-4If")
+    pushbyte            24
+    getlex              QName(PrivateNamespace("_-4eY"), "_-g1")
+    multiply
+    initproperty        QName(PrivateNamespace("_-4eY"), "_-4If")
+
+    debug               1, "k", 3, 8
+    findproperty        QName(PrivateNamespace("_-4eY"), "_-3af")
+    pushbyte            7
+    getlex              QName(PrivateNamespace("_-4eY"), "_-4If")
+    multiply
+    initproperty        QName(PrivateNamespace("_-4eY"), "_-3af")
+
+    debug               1, "k", 4, 9
+    findproperty        QName(PrivateNamespace("_-4eY"), "_-eU")
+    pushbyte            30
+    getlex              QName(PrivateNamespace("_-4eY"), "_-4If")
+    multiply
+    initproperty        QName(PrivateNamespace("_-4eY"), "_-eU")
+
+    debug               1, "k", 5, 10
+    findproperty        QName(PrivateNamespace("_-4eY"), "_-2hw")
+    pushshort           365
+    getlex              QName(PrivateNamespace("_-4eY"), "_-4If")
+    multiply
+    initproperty        QName(PrivateNamespace("_-4eY"), "_-2hw")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait const QName(PrivateNamespace("_-4eY"), "_-3Dc") slotid 1 type QName(PackageNamespace(""), "uint") value Integer(60) end
+ trait const QName(PrivateNamespace("_-4eY"), "_-g1") slotid 2 type QName(PackageNamespace(""), "uint") value Double(3600) end
+ trait const QName(PrivateNamespace("_-4eY"), "_-4If") slotid 3 type QName(PackageNamespace(""), "uint") value Double(86400) end
+ trait const QName(PrivateNamespace("_-4eY"), "_-3af") slotid 4 type QName(PackageNamespace(""), "uint") value Double(604800) end
+ trait const QName(PrivateNamespace("_-4eY"), "_-eU") slotid 5 type QName(PackageNamespace(""), "uint") value Double(2592000) end
+ trait const QName(PrivateNamespace("_-4eY"), "_-2hw") slotid 6 type QName(PackageNamespace(""), "uint") value Double(31536000) end
+ trait method QName(PackageNamespace(""), "_-1u9") flag FINAL dispid 3
+  method
+   refid "_-2WS:_-3D6/class/_-1u9"
+   param QName(PackageNamespace("_-T4"), "_-2rY")
+   param QName(PackageNamespace(""), "Number")
+   param QName(PackageNamespace(""), "String")
+   param QName(PackageNamespace(""), "int")
+   returns QName(PackageNamespace(""), "String")
+   flag HAS_OPTIONAL
+   optional Utf8("")
+   optional Integer(3)
+   body
+    maxstack 6
+    localcount 5
+    initscopedepth 3
+    maxscopedepth 4
+    code
+     debugfile           "k"
+     debugline           12
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 12
+     debug               1, "k", 1, 12
+     debug               1, "k", 2, 12
+     debug               1, "k", 3, 12
+     debugline           13
+     getlocal2
+     getlocal            4
+     getlex              QName(PrivateNamespace("_-4eY"), "_-2hw")
+     multiply
+     ifngt               L29
+
+     debugline           14
+     findpropstrict      QName(PackageNamespace(""), "getLocalization")
+     getlocal1
+     pushstring          "friendlytime.years"
+     getlocal3
+     add
+     getlex              QName(PackageNamespace(""), "Math")
+     getlocal2
+     getlex              QName(PrivateNamespace("_-4eY"), "_-2hw")
+     divide
+     callproperty        QName(PackageNamespace(""), "round"), 1
+     callproperty        QName(PackageNamespace(""), "getLocalization"), 3
+     returnvalue
+
+     ; 0xF0
+     ; 0x0F
+L29:
+     getlocal2
+     getlocal            4
+     getlex              QName(PrivateNamespace("_-4eY"), "_-eU")
+     multiply
+     ifngt               L49
+
+     debugline           16
+     findpropstrict      QName(PackageNamespace(""), "getLocalization")
+     getlocal1
+     pushstring          "friendlytime.months"
+     getlocal3
+     add
+     getlex              QName(PackageNamespace(""), "Math")
+     getlocal2
+     getlex              QName(PrivateNamespace("_-4eY"), "_-eU")
+     divide
+     callproperty        QName(PackageNamespace(""), "round"), 1
+     callproperty        QName(PackageNamespace(""), "getLocalization"), 3
+     returnvalue
+
+     ; 0xF0
+     ; 0x11
+L49:
+     getlocal2
+     getlocal            4
+     getlex              QName(PrivateNamespace("_-4eY"), "_-4If")
+     multiply
+     ifngt               L69
+
+     debugline           18
+     findpropstrict      QName(PackageNamespace(""), "getLocalization")
+     getlocal1
+     pushstring          "friendlytime.days"
+     getlocal3
+     add
+     getlex              QName(PackageNamespace(""), "Math")
+     getlocal2
+     getlex              QName(PrivateNamespace("_-4eY"), "_-4If")
+     divide
+     callproperty        QName(PackageNamespace(""), "round"), 1
+     callproperty        QName(PackageNamespace(""), "getLocalization"), 3
+     returnvalue
+
+     ; 0xF0
+     ; 0x13
+L69:
+     getlocal2
+     getlocal            4
+     getlex              QName(PrivateNamespace("_-4eY"), "_-g1")
+     multiply
+     ifngt               L89
+
+     debugline           20
+     findpropstrict      QName(PackageNamespace(""), "getLocalization")
+     getlocal1
+     pushstring          "friendlytime.hours"
+     getlocal3
+     add
+     getlex              QName(PackageNamespace(""), "Math")
+     getlocal2
+     getlex              QName(PrivateNamespace("_-4eY"), "_-g1")
+     divide
+     callproperty        QName(PackageNamespace(""), "round"), 1
+     callproperty        QName(PackageNamespace(""), "getLocalization"), 3
+     returnvalue
+
+     ; 0xF0
+     ; 0x15
+L89:
+     getlocal2
+     getlocal            4
+     getlex              QName(PrivateNamespace("_-4eY"), "_-3Dc")
+     multiply
+     ifngt               L109
+
+     debugline           22
+     findpropstrict      QName(PackageNamespace(""), "getLocalization")
+     getlocal1
+     pushstring          "friendlytime.minutes"
+     getlocal3
+     add
+     getlex              QName(PackageNamespace(""), "Math")
+     getlocal2
+     getlex              QName(PrivateNamespace("_-4eY"), "_-3Dc")
+     divide
+     callproperty        QName(PackageNamespace(""), "round"), 1
+     callproperty        QName(PackageNamespace(""), "getLocalization"), 3
+     returnvalue
+
+     ; 0xF0
+     ; 0x18
+L109:
+     findpropstrict      QName(PackageNamespace(""), "getLocalization")
+     getlocal1
+     pushstring          "friendlytime.seconds"
+     getlocal3
+     add
+     getlex              QName(PackageNamespace(""), "Math")
+     getlocal2
+     callproperty        QName(PackageNamespace(""), "round"), 1
+     callproperty        QName(PackageNamespace(""), "getLocalization"), 3
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PackageNamespace(""), "_-0aa") flag FINAL dispid 4
+  method
+   refid "_-2WS:_-3D6/class/_-0aa"
+   param QName(PackageNamespace("_-T4"), "_-2rY")
+   param QName(PackageNamespace(""), "Number")
+   param QName(PackageNamespace(""), "String")
+   param QName(PackageNamespace(""), "int")
+   returns QName(PackageNamespace(""), "String")
+   flag HAS_OPTIONAL
+   optional Utf8("")
+   optional Integer(3)
+   body
+    maxstack 6
+    localcount 5
+    initscopedepth 3
+    maxscopedepth 4
+    code
+     debugfile           "k"
+     debugline           28
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 28
+     debug               1, "k", 1, 28
+     debug               1, "k", 2, 28
+     debug               1, "k", 3, 28
+     debugline           29
+     getlocal2
+     getlocal            4
+     getlex              QName(PrivateNamespace("_-4eY"), "_-2hw")
+     multiply
+     ifngt               L29
+
+     debugline           30
+     findpropstrict      QName(PackageNamespace(""), "getLocalization")
+     getlocal1
+     pushstring          "friendlytime.years.short"
+     getlocal3
+     add
+     getlex              QName(PackageNamespace(""), "Math")
+     getlocal2
+     getlex              QName(PrivateNamespace("_-4eY"), "_-2hw")
+     divide
+     callproperty        QName(PackageNamespace(""), "round"), 1
+     callproperty        QName(PackageNamespace(""), "getLocalization"), 3
+     returnvalue
+
+     ; 0xF0
+     ; 0x1F
+L29:
+     getlocal2
+     getlocal            4
+     getlex              QName(PrivateNamespace("_-4eY"), "_-eU")
+     multiply
+     ifngt               L49
+
+     debugline           32
+     findpropstrict      QName(PackageNamespace(""), "getLocalization")
+     getlocal1
+     pushstring          "friendlytime.months.short"
+     getlocal3
+     add
+     getlex              QName(PackageNamespace(""), "Math")
+     getlocal2
+     getlex              QName(PrivateNamespace("_-4eY"), "_-eU")
+     divide
+     callproperty        QName(PackageNamespace(""), "round"), 1
+     callproperty        QName(PackageNamespace(""), "getLocalization"), 3
+     returnvalue
+
+     ; 0xF0
+     ; 0x21
+L49:
+     getlocal2
+     getlocal            4
+     getlex              QName(PrivateNamespace("_-4eY"), "_-4If")
+     multiply
+     ifngt               L69
+
+     debugline           34
+     findpropstrict      QName(PackageNamespace(""), "getLocalization")
+     getlocal1
+     pushstring          "friendlytime.days.short"
+     getlocal3
+     add
+     getlex              QName(PackageNamespace(""), "Math")
+     getlocal2
+     getlex              QName(PrivateNamespace("_-4eY"), "_-4If")
+     divide
+     callproperty        QName(PackageNamespace(""), "round"), 1
+     callproperty        QName(PackageNamespace(""), "getLocalization"), 3
+     returnvalue
+
+     ; 0xF0
+     ; 0x23
+L69:
+     getlocal2
+     getlocal            4
+     getlex              QName(PrivateNamespace("_-4eY"), "_-g1")
+     multiply
+     ifngt               L89
+
+     debugline           36
+     findpropstrict      QName(PackageNamespace(""), "getLocalization")
+     getlocal1
+     pushstring          "friendlytime.hours.short"
+     getlocal3
+     add
+     getlex              QName(PackageNamespace(""), "Math")
+     getlocal2
+     getlex              QName(PrivateNamespace("_-4eY"), "_-g1")
+     divide
+     callproperty        QName(PackageNamespace(""), "round"), 1
+     callproperty        QName(PackageNamespace(""), "getLocalization"), 3
+     returnvalue
+
+     ; 0xF0
+     ; 0x25
+L89:
+     getlocal2
+     getlocal            4
+     getlex              QName(PrivateNamespace("_-4eY"), "_-3Dc")
+     multiply
+     ifngt               L109
+
+     debugline           38
+     findpropstrict      QName(PackageNamespace(""), "getLocalization")
+     getlocal1
+     pushstring          "friendlytime.minutes.short"
+     getlocal3
+     add
+     getlex              QName(PackageNamespace(""), "Math")
+     getlocal2
+     getlex              QName(PrivateNamespace("_-4eY"), "_-3Dc")
+     divide
+     callproperty        QName(PackageNamespace(""), "round"), 1
+     callproperty        QName(PackageNamespace(""), "getLocalization"), 3
+     returnvalue
+
+     ; 0xF0
+     ; 0x28
+L109:
+     findpropstrict      QName(PackageNamespace(""), "getLocalization")
+     getlocal1
+     pushstring          "friendlytime.seconds.short"
+     getlocal3
+     add
+     getlex              QName(PackageNamespace(""), "Math")
+     getlocal2
+     callproperty        QName(PackageNamespace(""), "round"), 1
+     callproperty        QName(PackageNamespace(""), "getLocalization"), 3
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PackageNamespace(""), "getLocalization") flag FINAL dispid 5
+  method
+   refid "_-2WS:_-3D6/class/getLocalization"
+   param QName(PackageNamespace("_-T4"), "_-2rY")
+   param QName(PackageNamespace(""), "String")
+   param QName(PackageNamespace(""), "int")
+   returns QName(PackageNamespace(""), "String")
+   body
+    maxstack 5
+    localcount 4
+    initscopedepth 3
+    maxscopedepth 4
+    code
+     debugfile           "k"
+     debugline           44
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 44
+     debug               1, "k", 1, 44
+     debug               1, "k", 2, 44
+     debugline           45
+     getlocal1
+     getlocal2
+     getlocal2
+     pushstring          "amount"
+     getlocal3
+     callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "toString"), 0
+     callproperty        QName(Namespace("_-4vA"), "getLocalizationWithParams"), 4
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+end ; class

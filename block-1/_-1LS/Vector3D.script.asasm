@@ -1,0 +1,33 @@
+script ; 410
+ sinit
+  refid "_-1LS:Vector3D/init"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 1
+   maxscopedepth 3
+   code
+    getlocal0
+    pushscope
+
+    debugfile           "k"
+    debugline           7
+    findpropstrict      Multiname("Vector3D", [PackageNamespace("_-1LS")])
+    getlex              QName(PackageNamespace("", "#0"), "Object")
+    pushscope
+
+    getlex              QName(PackageNamespace("", "#0"), "Object")
+    newclass            "_-1LS:Vector3D"
+    popscope
+    initproperty        QName(PackageNamespace("_-1LS"), "Vector3D")
+
+    debugfile           "k"
+    debugline           5
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait class QName(PackageNamespace("_-1LS"), "Vector3D")
+  #include "Vector3D.class.asasm"
+ end ; trait
+end ; script

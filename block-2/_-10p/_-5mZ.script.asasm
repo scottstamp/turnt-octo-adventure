@@ -1,0 +1,33 @@
+script ; 4659
+ sinit
+  refid "_-10p:_-5mZ/init"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 1
+   maxscopedepth 3
+   code
+    getlocal0
+    pushscope
+
+    debugfile           "k"
+    debugline           15
+    findpropstrict      Multiname("_-5mZ", [PackageNamespace("_-10p")])
+    getlex              QName(PackageNamespace(""), "Object")
+    pushscope
+
+    getlex              QName(PackageNamespace(""), "Object")
+    newclass            "_-10p:_-5mZ"
+    popscope
+    initproperty        QName(PackageNamespace("_-10p"), "_-5mZ")
+
+    debugfile           "k"
+    debugline           10
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait class QName(PackageNamespace("_-10p"), "_-5mZ")
+  #include "_-5mZ.class.asasm"
+ end ; trait
+end ; script

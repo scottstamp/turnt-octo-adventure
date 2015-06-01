@@ -1,0 +1,213 @@
+class
+ refid "_-2tk:_-1T3"
+ instance QName(PackageNamespace("_-2tk"), "_-1T3")
+  extends QName(PackageNamespace("_-2z-"), "WindowController")
+  implements Multiname("IWindowContainer", [PackageNamespace("_-2z-")])
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-13z")
+  iinit
+   refid "_-2tk:_-1T3/instance/init"
+   param QName(PackageNamespace(""), "String")
+   param QName(PackageNamespace(""), "uint")
+   param QName(PackageNamespace(""), "uint")
+   param QName(PackageNamespace(""), "uint")
+   param QName(PackageNamespace("_-2z-"), "WindowContext")
+   param QName(PackageNamespace("flash.geom"), "Rectangle")
+   param QName(PackageNamespace("_-2z-"), "IWindow")
+   param QName(PackageNamespace(""), "Function")
+   param QName(PackageNamespace(""), "Array")
+   param QName(PackageNamespace(""), "Array")
+   param QName(PackageNamespace(""), "uint")
+   flag HAS_OPTIONAL
+   optional Null()
+   optional Null()
+   optional Null()
+   optional Integer(0)
+   body
+    maxstack 12
+    localcount 12
+    initscopedepth 6
+    maxscopedepth 7
+    code
+     debugfile           "k"
+     debugline           27
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 27
+     debug               1, "k", 1, 27
+     debug               1, "k", 2, 27
+     debug               1, "k", 3, 27
+     debug               1, "k", 4, 27
+     debug               1, "k", 5, 27
+     debug               1, "k", 6, 27
+     debug               1, "k", 7, 27
+     debug               1, "k", 8, 27
+     debug               1, "k", 9, 27
+     debug               1, "k", 10, 27
+     debugline           41
+     getlocal0
+     getlocal1
+     getlocal2
+     getlocal3
+     getlocal            4
+     getlocal            5
+     getlocal            6
+     getlocal            7
+     getlocal            8
+     getlocal            9
+     getlocal            10
+     getlocal            11
+     constructsuper      11
+
+     debugline           43
+     findproperty        QName(ProtectedNamespace("_-4Gi"), "_-63u")
+     debugline           44
+     getlex              QName(ProtectedNamespace("_-6WA"), "_-3DY")
+     convert_b
+     dup
+     iftrue              L43
+
+     pop
+     debugline           45
+     findpropstrict      QName(PackageNamespace(""), "_-5JL")
+     getlex              QName(PackageNamespace("_-02Q"), "WindowParam")
+     getproperty         QName(PackageNamespace(""), "_-2xl")
+     callproperty        QName(PackageNamespace(""), "_-5JL"), 1
+     convert_b
+L43:
+     dup
+     iftrue              L52
+
+     pop
+     debugline           46
+     findpropstrict      QName(PackageNamespace(""), "_-5JL")
+     getlex              QName(PackageNamespace("_-02Q"), "WindowParam")
+     getproperty         QName(PackageNamespace(""), "_-0OC")
+     callproperty        QName(PackageNamespace(""), "_-5JL"), 1
+     not
+L52:
+     initproperty        QName(ProtectedNamespace("_-4Gi"), "_-63u")
+
+     debugline           47
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait getter QName(PackageNamespace(""), "iterator")
+   method
+    refid "_-2tk:_-1T3/instance/iterator/getter"
+    returns QName(PackageNamespace("_-0S7"), "_-w3")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           22
+      getlocal0
+      pushscope
+
+      findpropstrict      QName(PackageNamespace("_-0qX"), "_-2KV")
+      getlocal0
+      constructprop       QName(PackageNamespace("_-0qX"), "_-2KV"), 1
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "getGraphicContext") flag OVERRIDE
+   method
+    refid "_-2tk:_-1T3/instance/getGraphicContext"
+    param QName(PackageNamespace(""), "Boolean")
+    returns QName(PackageNamespace("_-3Jx"), "IGraphicContext")
+    body
+     maxstack 5
+     localcount 2
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           58
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 58
+      debugline           60
+      getlocal1
+      convert_b
+      dup
+      iffalse             L13
+
+      pop
+      getlex              QName(ProtectedNamespace("_-4Gi"), "_-Jp")
+      not
+L13:
+      iffalse             L48
+
+      debugline           61
+      findproperty        QName(ProtectedNamespace("_-4Gi"), "_-Jp")
+      findpropstrict      QName(PackageNamespace("_-3Jx"), "_-1lO")
+      pushstring          "GC {"
+      debugline           62
+      getlex              QName(ProtectedNamespace("_-6WA"), "_name")
+      add
+      pushstring          "}"
+      add
+      debugline           63
+      findpropstrict      QName(PackageNamespace(""), "_-5JL")
+      getlex              QName(PackageNamespace("_-02Q"), "WindowParam")
+      getproperty         QName(PackageNamespace(""), "_-0OC")
+      callproperty        QName(PackageNamespace(""), "_-5JL"), 1
+      iffalse             L36
+
+      debugline           64
+      getlex              QName(PackageNamespace("_-3Jx"), "_-1lO")
+      getproperty         QName(PackageNamespace(""), "GC_TYPE_CONTAINER")
+      convert_u
+      jump                L40
+
+      ; 0xF0
+      ; 0x41
+L36:
+      getlex              QName(PackageNamespace("_-3Jx"), "_-1lO")
+      getproperty         QName(PackageNamespace(""), "GC_TYPE_BITMAP")
+      convert_u
+      debugline           66
+L40:
+      getlex              QName(PackageNamespace(""), "rectangle")
+      constructprop       QName(PackageNamespace("_-3Jx"), "_-1lO"), 3
+      initproperty        QName(ProtectedNamespace("_-4Gi"), "_-Jp")
+
+      debugline           67
+      getlex              QName(ProtectedNamespace("_-4Gi"), "_-Jp")
+      getlex              QName(ProtectedNamespace("_-6WA"), "_-5yD")
+      setproperty         QName(Namespace("_-4a6"), "visible")
+
+      debugline           69
+L48:
+      getlex              QName(ProtectedNamespace("_-4Gi"), "_-Jp")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-2tk:_-1T3/class/init"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 5
+   maxscopedepth 6
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

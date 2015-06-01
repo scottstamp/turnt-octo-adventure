@@ -1,0 +1,33 @@
+script ; 3121
+ sinit
+  refid "_-2cn:_-1SX/init"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 1
+   maxscopedepth 3
+   code
+    getlocal0
+    pushscope
+
+    debugfile           "k"
+    debugline           4
+    findpropstrict      Multiname("_-1SX", [PackageNamespace("_-2cn")])
+    getlex              QName(PackageNamespace(""), "Object")
+    pushscope
+
+    getlex              QName(PackageNamespace(""), "Object")
+    newclass            "_-2cn:_-1SX"
+    popscope
+    initproperty        QName(PackageNamespace("_-2cn"), "_-1SX")
+
+    debugfile           "k"
+    debugline           1
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait class QName(PackageNamespace("_-2cn"), "_-1SX")
+  #include "_-1SX.class.asasm"
+ end ; trait
+end ; script

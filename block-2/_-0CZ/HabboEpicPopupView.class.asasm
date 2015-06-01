@@ -1,0 +1,384 @@
+class
+ refid "_-0CZ:HabboEpicPopupView"
+ instance QName(PackageNamespace("_-0CZ"), "HabboEpicPopupView")
+  extends QName(PackageNamespace("_-5FI"), "AbstractView")
+  implements Multiname("_-11a", [PackageNamespace("_-2Z1")])
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-3Ro")
+  iinit
+   refid "_-0CZ:HabboEpicPopupView/instance/init"
+   param QName(PackageNamespace("_-0XF"), "_-25s")
+   param QName(PackageNamespace(""), "uint")
+   param QName(PackageNamespace("_-475"), "_-10k")
+   body
+    maxstack 4
+    localcount 4
+    initscopedepth 6
+    maxscopedepth 7
+    code
+     debugfile           "k"
+     debugline           28
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 28
+     debug               1, "k", 1, 28
+     debug               1, "k", 2, 28
+     debugline           29
+     getlocal0
+     getlocal1
+     getlocal2
+     getlocal3
+     constructsuper      3
+
+     debugline           30
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-3Ro"), "_-2Jr") type QName(PackageNamespace("_-1Ch"), "_-1BL") end
+  trait slot QName(PrivateNamespace("_-3Ro"), "_-10j") type QName(PackageNamespace("_-2z-"), "IWindowContainer") end
+  trait getter QName(ProtectedNamespace("_-3Ro"), "dependencies") flag OVERRIDE
+   method
+    refid "_-0CZ:HabboEpicPopupView/instance/_-3Ro:dependencies/getter"
+    returns TypeName(QName(PackageNamespace("__AS3__.vec"), "Vector")<QName(PackageNamespace("_-0XF"), "_-6Lg")>)
+    flag NEED_ACTIVATION
+    body
+     maxstack 7
+     localcount 2
+     initscopedepth 7
+     maxscopedepth 9
+     code
+      debugfile           "k"
+      debugline           32
+      getlocal0
+      pushscope
+
+      newactivation
+      dup
+      setlocal1
+
+      pushscope
+
+      debug               1, "k", 0, 32
+      debugline           33
+      getlocal0
+      getsuper            QName(ProtectedNamespace("_-5EV"), "dependencies")
+      findpropstrict      Multiname("Vector", [PackageNamespace("__AS3__.vec")])
+      getproperty         Multiname("Vector", [PrivateNamespace("_-3Ro"), PackageNamespace(""), PackageNamespace("__AS3__.vec"), PrivateNamespace("HabboEpicPopupView.as$1767"), PackageNamespace("_-0CZ"), PackageInternalNs("_-0CZ"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-3Ro"), StaticProtectedNs("_-3Ro"), StaticProtectedNs("_-5EV"), StaticProtectedNs("_-5hr")])
+      getlex              QName(PackageNamespace("_-0XF"), "_-6Lg")
+      applytype           1
+      pushbyte            1
+      construct           1
+      dup
+      pushbyte            0
+      debugline           34
+      findpropstrict      QName(PackageNamespace("_-0XF"), "_-6Lg")
+      findpropstrict      QName(PackageNamespace("com.sulake.iid"), "IIDHabboCommunicationManager")
+      constructprop       QName(PackageNamespace("com.sulake.iid"), "IIDHabboCommunicationManager"), 0
+      newfunction         "_-0CZ:HabboEpicPopupView/instance/_-3Ro:dependencies/getter/inline_method"
+      constructprop       QName(PackageNamespace("_-0XF"), "_-6Lg"), 2
+      setproperty         MultinameL([PackageNamespace("")])
+
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "concat"), 1
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "dispose") flag OVERRIDE
+   method
+    refid "_-0CZ:HabboEpicPopupView/instance/dispose"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           38
+      getlocal0
+      pushscope
+
+      debugline           39
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3Ro"), "_-10j")
+      pushnull
+      ifeq                L18
+
+      debugline           40
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3Ro"), "_-10j")
+      callpropvoid        QName(Namespace("_-0mn"), "dispose"), 0
+
+      debugline           41
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-3Ro"), "_-10j")
+
+      debugline           43
+L18:
+      getlocal0
+      callsupervoid       QName(PackageNamespace(""), "dispose"), 0
+      debugline           44
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-3Ro"), "initComponent") flag OVERRIDE
+   method
+    refid "_-0CZ:HabboEpicPopupView/instance/_-3Ro:initComponent"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 1
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           46
+      getlocal0
+      pushscope
+
+      debugline           47
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3Ro"), "_-2Jr")
+      findpropstrict      QName(PackageNamespace("_-6Ax"), "_-37Y")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3Ro"), "_-5pN")
+      constructprop       QName(PackageNamespace("_-6Ax"), "_-37Y"), 1
+      callpropvoid        QName(Namespace("_-62Q"), "addHabboConnectionMessageEvent"), 1
+
+      debugline           48
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-3Ro"), "_-5pN")
+   method
+    refid "_-0CZ:HabboEpicPopupView/instance/_-0CZ:HabboEpicPopupView/instance/_-5pN"
+    param QName(PackageNamespace("_-6Ax"), "_-37Y")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           50
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 50
+      debugline           51
+      getlocal0
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "_-Gq"), 0
+      getproperty         QName(PackageNamespace(""), "_-1Nu")
+      callpropvoid        QName(PackageNamespace(""), "_-37Z"), 1
+
+      debugline           52
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-37Z")
+   method
+    refid "_-0CZ:HabboEpicPopupView/instance/_-37Z"
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 2
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           54
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 54
+      debugline           55
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3Ro"), "_-10j")
+      pushnull
+      ifeq                L15
+
+      debugline           56
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3Ro"), "_-10j")
+      callpropvoid        QName(Namespace("_-0mn"), "dispose"), 0
+
+      debugline           58
+L15:
+      getlocal0
+      getlex              QName(ProtectedNamespace("_-5EV"), "_-0cE")
+      getlex              QName(PackageNamespace(""), "assets")
+      pushstring          "epic_popup_frame_xml"
+      callproperty        QName(Namespace("_-14k"), "getAssetByName"), 1
+      getproperty         QName(Namespace("_-3SO"), "content")
+      getlex              QName(PackageNamespace(""), "XML")
+      astypelate
+      callproperty        QName(Namespace("_-40D"), "buildFromXML"), 1
+      getlex              QName(PackageNamespace("_-2z-"), "IWindowContainer")
+      astypelate
+      initproperty        QName(PrivateNamespace("_-3Ro"), "_-10j")
+
+      debugline           59
+      findpropstrict      QName(PackageNamespace("_-2tk"), "_-s9")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3Ro"), "_-10j")
+      pushstring          "content_static_bitmap"
+      callproperty        QName(Namespace("_-7H"), "findChildByName"), 1
+      callproperty        QName(PackageNamespace("_-2tk"), "_-s9"), 1
+      getlocal1
+      setproperty         QName(Namespace("_-1ZL"), "assetUri")
+
+      debugline           60
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3Ro"), "_-10j")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3Ro"), "_-3ij")
+      setproperty         QName(Namespace("_-0jq"), "procedure")
+
+      debugline           61
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3Ro"), "_-10j")
+      callpropvoid        QName(Namespace("_-0jq"), "center"), 0
+
+      debugline           62
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-3Ro"), "_-3ij")
+   method
+    refid "_-0CZ:HabboEpicPopupView/instance/_-0CZ:HabboEpicPopupView/instance/_-3ij"
+    param QName(PackageNamespace("_-0eT"), "WindowEvent")
+    param QName(PackageNamespace("_-2z-"), "IWindow")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 4
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           64
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 64
+      debug               1, "k", 1, 64
+      debugline           65
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3Ro"), "_-10j")
+      pushnull
+      equals
+      not
+      dup
+      iffalse             L20
+
+      pop
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "type")
+      getlex              QName(PackageNamespace("_-0eT"), "WindowMouseEvent")
+      getproperty         QName(PackageNamespace(""), "CLICK")
+      equals
+L20:
+      iffalse             L65
+
+      jump                L37
+
+L22:
+      label
+      debugline           69
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3Ro"), "_-10j")
+      callpropvoid        QName(Namespace("_-0mn"), "dispose"), 0
+
+      debugline           70
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-3Ro"), "_-10j")
+
+      debugline           71
+      jump                L65
+
+L33:
+      label
+      jump                L65
+
+      ; 0xF0
+      ; 0x42
+L37:
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "target")
+      getproperty         QName(Namespace("_-0jq"), "name")
+      setlocal3
+
+      pushstring          "close_button"
+      debugline           67
+      getlocal3
+      ifstrictne          L47
+
+      pushbyte            0
+      jump                L61
+
+L47:
+      pushstring          "header_button_close"
+      debugline           68
+      getlocal3
+      ifstrictne          L53
+
+      pushbyte            1
+      jump                L61
+
+L53:
+      jump                L60
+
+      ; 0x24
+      ; 0x02
+      ; 0x10
+      ; 0x02
+      ; 0x00
+      ; 0x00
+L60:
+      pushbyte            2
+L61:
+      kill                3
+      lookupswitch        L33, [L22, L22, L33]
+
+      ; 0xF0
+      ; 0x4A
+L65:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-0CZ:HabboEpicPopupView/class/init"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 5
+   maxscopedepth 6
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

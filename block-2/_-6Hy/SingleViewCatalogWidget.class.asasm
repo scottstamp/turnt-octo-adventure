@@ -1,0 +1,169 @@
+class
+ refid "_-6Hy:SingleViewCatalogWidget"
+ instance QName(PackageNamespace("_-6Hy"), "SingleViewCatalogWidget")
+  extends QName(PackageNamespace("_-6Hy"), "ProductViewCatalogWidget")
+  implements Multiname("_-wt", [PackageNamespace("_-6Hy")])
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-2kz")
+  iinit
+   refid "_-6Hy:SingleViewCatalogWidget/instance/init#0"
+   param QName(PackageNamespace("_-2z-"), "IWindowContainer")
+   param QName(PackageNamespace("_-0ce"), "HabboCatalog")
+   body
+    maxstack 3
+    localcount 3
+    initscopedepth 6
+    maxscopedepth 7
+    code
+     debugfile           "k"
+     debugline           15
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 15
+     debug               1, "k", 1, 15
+     debugline           16
+     getlocal0
+     getlocal1
+     getlocal2
+     constructsuper      2
+
+     debugline           17
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait method QName(PackageNamespace(""), "dispose") flag OVERRIDE
+   method
+    refid "_-6Hy:SingleViewCatalogWidget/instance/dispose"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           22
+      getlocal0
+      pushscope
+
+      debugline           23
+      getlocal0
+      callsupervoid       QName(PackageNamespace(""), "dispose"), 0
+      debugline           24
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "init") flag OVERRIDE
+   method
+    refid "_-6Hy:SingleViewCatalogWidget/instance/init#1"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 3
+     localcount 1
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           29
+      getlocal0
+      pushscope
+
+      debugline           30
+      getlocal0
+      callsuper           QName(PackageNamespace(""), "init"), 0
+      iftrue              L13
+
+      debugline           31
+      pushfalse
+      returnvalue
+
+      ; 0xF0
+      ; 0x21
+L13:
+      getlex              QName(PackageNamespace(""), "events")
+      getlex              QName(PackageNamespace("_-1SS"), "_-4Jg")
+      getproperty         QName(PackageNamespace(""), "WIDGETS_INITIALIZED")
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "_-3fe")
+      callpropvoid        QName(Namespace("flash.events:IEventDispatcher"), "addEventListener"), 2
+
+      debugline           34
+      pushtrue
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-3fe")
+   method
+    refid "_-6Hy:SingleViewCatalogWidget/instance/_-3fe"
+    param QName(PackageNamespace("_-1SS"), "_-5hl")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           42
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 42
+      debug               1, "k", 1, 45
+      debugline           43
+      getlex              QName(PackageNamespace(""), "page")
+      getproperty         QName(Namespace("_-35M"), "offers")
+      getproperty         QName(PackageNamespace(""), "length")
+      pushbyte            0
+      ifne                L16
+
+      debugline           44
+      returnvoid
+
+      ; 0xF0
+      ; 0x2D
+L16:
+      getlex              QName(PackageNamespace(""), "page")
+      getproperty         QName(Namespace("_-35M"), "offers")
+      pushbyte            0
+      getproperty         MultinameL([PrivateNamespace("_-2kz"), PackageNamespace(""), PrivateNamespace("SingleViewCatalogWidget.as$3811"), PackageNamespace("_-6Hy"), PackageInternalNs("_-6Hy"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-2kz"), StaticProtectedNs("_-2kz"), StaticProtectedNs("_-Ux"), StaticProtectedNs("_-18j")])
+      coerce              QName(PackageNamespace("_-0ce"), "_-0OB")
+      setlocal2
+
+      debugline           46
+      getlex              QName(PackageNamespace(""), "events")
+      findpropstrict      QName(PackageNamespace("_-1SS"), "_-Sw")
+      getlocal2
+      constructprop       QName(PackageNamespace("_-1SS"), "_-Sw"), 1
+      callpropvoid        QName(Namespace("flash.events:IEventDispatcher"), "dispatchEvent"), 1
+
+      debugline           47
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-6Hy:SingleViewCatalogWidget/class/init"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 5
+   maxscopedepth 6
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

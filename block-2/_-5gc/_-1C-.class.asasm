@@ -1,0 +1,211 @@
+class
+ refid "_-5gc:_-1C-"
+ instance QName(PackageNamespace("_-5gc"), "_-1C-")
+  extends QName(PackageNamespace("_-5gc"), "_-Wz")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-4ch")
+  iinit
+   refid "_-5gc:_-1C-/instance/init"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 8
+    maxscopedepth 9
+    code
+     debugfile           "k"
+     debugline           18
+     getlocal0
+     pushscope
+
+     debugline           19
+     getlocal0
+     constructsuper      0
+
+     debugline           20
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-4ch"), "_-40c") type QName(PackageNamespace(""), "int") value Integer(-1) end
+  trait slot QName(PrivateNamespace("_-4ch"), "_-1lG") type QName(PackageNamespace("_-3hA"), "_-CB") end
+  trait method QName(PackageNamespace(""), "getEventTypes") flag OVERRIDE
+   method
+    refid "_-5gc:_-1C-/instance/getEventTypes"
+    returns QName(PackageNamespace(""), "Array")
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 8
+     maxscopedepth 9
+     code
+      debugfile           "k"
+      debugline           22
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 23
+      debugline           23
+      getlex              QName(PackageNamespace("_-4LP"), "_-0-U")
+      getproperty         QName(PackageNamespace(""), "_-3Jm")
+      newarray            1
+      coerce              QName(PackageNamespace(""), "Array")
+      setlocal1
+
+      debugline           24
+      findpropstrict      QName(ProtectedNamespace("_-1db"), "_-2Cz")
+      getlocal0
+      callsuper           QName(PackageNamespace(""), "getEventTypes"), 0
+      getlocal1
+      callproperty        QName(ProtectedNamespace("_-1db"), "_-2Cz"), 2
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "processUpdateMessage") flag OVERRIDE
+   method
+    refid "_-5gc:_-1C-/instance/processUpdateMessage"
+    param QName(PackageNamespace("_-z6"), "_-2bs")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 3
+     initscopedepth 8
+     maxscopedepth 9
+     code
+      debugfile           "k"
+      debugline           27
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 27
+      debug               1, "k", 1, 29
+      debugline           28
+      getlocal0
+      getlocal1
+      callsupervoid       QName(PackageNamespace(""), "processUpdateMessage"), 1
+      debugline           29
+      getlocal1
+      getlex              QName(PackageNamespace("_-sE"), "_-0Wh")
+      astypelate
+      coerce              QName(PackageNamespace("_-sE"), "_-0Wh")
+      setlocal2
+
+      debugline           30
+      getlocal2
+      pushnull
+      ifeq                L50
+
+      debugline           32
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4ch"), "_-40c")
+      pushbyte            -1
+      equals
+      not
+      dup
+      iffalse             L35
+
+      pop
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "state")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4ch"), "_-40c")
+      equals
+      not
+L35:
+      iffalse             L43
+
+      debugline           33
+      getlocal0
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4ch"), "_-1lG")
+      getproperty         QName(Namespace("_-04C"), "z")
+      callpropvoid        QName(PrivateNamespace("_-4ch"), "_-3TI"), 1
+
+      debugline           35
+L43:
+      getlocal0
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "state")
+      initproperty        QName(PrivateNamespace("_-4ch"), "_-40c")
+
+      jump                L55
+
+      ; 0xF0
+      ; 0x25
+L50:
+      getlocal0
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "loc")
+      initproperty        QName(PrivateNamespace("_-4ch"), "_-1lG")
+
+      debugline           39
+L55:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-4ch"), "_-3TI")
+   method
+    refid "_-5gc:_-1C-/instance/_-5gc:_-1C-/instance/processUpdateMessage/_-3TI"
+    param QName(PackageNamespace(""), "Number")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 6
+     localcount 3
+     initscopedepth 8
+     maxscopedepth 9
+     code
+      debugfile           "k"
+      debugline           41
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 41
+      debug               1, "k", 1, 42
+      debugline           42
+      getlex              QName(PackageNamespace(""), "Math")
+      pushbyte            2
+      getlocal1
+      pushdouble          1.2
+      subtract
+      callproperty        QName(PackageNamespace(""), "pow"), 2
+      convert_d
+      setlocal2
+
+      debugline           43
+      getlex              QName(PackageNamespace(""), "eventDispatcher")
+      findpropstrict      QName(PackageNamespace("_-4LP"), "_-0-U")
+      getlex              QName(PackageNamespace("_-4LP"), "_-0-U")
+      getproperty         QName(PackageNamespace(""), "_-3Jm")
+      getlex              QName(PackageNamespace(""), "object")
+      pushstring          "FURNITURE_cuckoo_clock"
+      getlocal2
+      constructprop       QName(PackageNamespace("_-4LP"), "_-0-U"), 4
+      callpropvoid        QName(Namespace("flash.events:IEventDispatcher"), "dispatchEvent"), 1
+
+      debugline           44
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-5gc:_-1C-/class/init"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 7
+   maxscopedepth 8
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

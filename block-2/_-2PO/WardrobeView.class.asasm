@@ -1,0 +1,356 @@
+class
+ refid "_-2PO:WardrobeView"
+ instance QName(PackageNamespace("_-2PO"), "WardrobeView")
+  extends QName(PackageNamespace(""), "Object")
+  implements Multiname("_-3lH", [PackageNamespace("_-ff")])
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-2CK")
+  iinit
+   refid "_-2PO:WardrobeView/instance/init"
+   param QName(PackageNamespace("_-2PO"), "WardrobeModel")
+   body
+    maxstack 4
+    localcount 3
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     debugfile           "k"
+     debugline           22
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 22
+     debugline           22
+     getlocal0
+     constructsuper      0
+
+     debug               1, "k", 1, 25
+     debugline           23
+     getlocal0
+     getlocal1
+     initproperty        QName(PrivateNamespace("_-2CK"), "_-55I")
+
+     debugline           25
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-2CK"), "_-55I")
+     getproperty         QName(PackageNamespace(""), "controller")
+     getproperty         QName(PackageNamespace(""), "manager")
+     getproperty         QName(PackageNamespace(""), "assets")
+     pushstring          "avatareditor_wardrobe_base"
+     callproperty        QName(Namespace("_-14k"), "getAssetByName"), 1
+     getlex              QName(PackageNamespace("_-475"), "XmlAsset")
+     astypelate
+     coerce              QName(PackageNamespace("_-475"), "XmlAsset")
+     setlocal2
+
+     debugline           26
+     getlocal0
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-2CK"), "_-55I")
+     getproperty         QName(PackageNamespace(""), "controller")
+     getproperty         QName(PackageNamespace(""), "manager")
+     getproperty         QName(PackageNamespace(""), "windowManager")
+     getlocal2
+     getproperty         QName(PackageNamespace(""), "content")
+     getlex              QName(PackageNamespace(""), "XML")
+     astypelate
+     callproperty        QName(Namespace("_-40D"), "buildFromXML"), 1
+     getlex              QName(PackageNamespace("_-2z-"), "IWindowContainer")
+     astypelate
+     initproperty        QName(PrivateNamespace("_-2CK"), "_-36K")
+
+     debugline           28
+     getlocal0
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-2CK"), "_-36K")
+     pushstring          "hc_slots"
+     callproperty        QName(Namespace("_-7H"), "findChildByName"), 1
+     getlex              QName(PackageNamespace("_-2tk"), "IItemListWindow")
+     astypelate
+     initproperty        QName(PrivateNamespace("_-2CK"), "_-5zT")
+
+     debugline           29
+     getlocal0
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-2CK"), "_-36K")
+     pushstring          "vip_slots"
+     callproperty        QName(Namespace("_-7H"), "findChildByName"), 1
+     getlex              QName(PackageNamespace("_-2tk"), "IItemListWindow")
+     astypelate
+     initproperty        QName(PrivateNamespace("_-2CK"), "_-uf")
+
+     debugline           31
+     getlocal0
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-2CK"), "_-36K")
+     pushstring          "slot_template"
+     callproperty        QName(Namespace("_-7H"), "findChildByName"), 1
+     initproperty        QName(PrivateNamespace("_-2CK"), "_-2SO")
+
+     debugline           32
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-2CK"), "_-2SO")
+     iffalse             L76
+
+     debugline           33
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-2CK"), "_-36K")
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-2CK"), "_-2SO")
+     callpropvoid        QName(Namespace("_-7H"), "removeChild"), 1
+
+     debugline           36
+L76:
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-2CK"), "_-36K")
+     pushfalse
+     setproperty         QName(Namespace("_-0jq"), "visible")
+
+     debugline           37
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-2CK"), "_-36K") type QName(PackageNamespace("_-2z-"), "IWindowContainer") end
+  trait slot QName(PrivateNamespace("_-2CK"), "_-55I") type QName(PackageNamespace("_-2PO"), "WardrobeModel") end
+  trait slot QName(PrivateNamespace("_-2CK"), "_-5zT") type QName(PackageNamespace("_-2tk"), "IItemListWindow") end
+  trait slot QName(PrivateNamespace("_-2CK"), "_-uf") type QName(PackageNamespace("_-2tk"), "IItemListWindow") end
+  trait slot QName(PrivateNamespace("_-2CK"), "_-2SO") type QName(PackageNamespace("_-2z-"), "IWindow") end
+  trait getter QName(PackageNamespace(""), "_-Tx")
+   method
+    refid "_-2PO:WardrobeView/instance/_-Tx/getter"
+    returns QName(PackageNamespace("_-2z-"), "IWindow")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           39
+      getlocal0
+      pushscope
+
+      debugline           40
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2CK"), "_-2SO")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "dispose")
+   method
+    refid "_-2PO:WardrobeView/instance/dispose"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           46
+      getlocal0
+      pushscope
+
+      debugline           48
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-2CK"), "_-55I")
+
+      debugline           49
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-2CK"), "_-5zT")
+
+      debugline           51
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2CK"), "_-36K")
+      iffalse             L25
+
+      debugline           52
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2CK"), "_-36K")
+      callpropvoid        QName(Namespace("_-0mn"), "dispose"), 0
+
+      debugline           53
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-2CK"), "_-36K")
+
+      debugline           56
+L25:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "update")
+   method
+    refid "_-2PO:WardrobeView/instance/update"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 4
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           58
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-2PO"), "_-a6")
+      setlocal2
+
+      debug               1, "k", 0, 68
+      debug               1, "k", 1, 69
+      debug               1, "k", 2, 70
+      debugline           60
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2CK"), "_-5zT")
+      iffalse             L19
+
+      debugline           61
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2CK"), "_-5zT")
+      callpropvoid        QName(Namespace("_-00u"), "_-508"), 0
+
+      debugline           64
+L19:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2CK"), "_-uf")
+      iffalse             L27
+
+      debugline           65
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2CK"), "_-uf")
+      callpropvoid        QName(Namespace("_-00u"), "_-508"), 0
+
+      debugline           68
+L27:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2CK"), "_-55I")
+      getproperty         QName(PackageNamespace(""), "_-wo")
+      coerce              QName(PackageNamespace(""), "Array")
+      setlocal1
+
+      debugline           70
+      pushbyte            0
+      setlocal3
+
+      jump                L81
+
+L36:
+      label
+      debugline           71
+      getlocal1
+      getlocal3
+      getproperty         MultinameL([PrivateNamespace("_-2CK"), PackageNamespace(""), PackageNamespace("_-2PO"), PrivateNamespace("WardrobeView.as$5138"), PackageInternalNs("_-2PO"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-2CK"), StaticProtectedNs("_-2CK")])
+      coerce              QName(PackageNamespace("_-2PO"), "_-a6")
+      setlocal2
+
+      debugline           73
+      getlocal3
+      pushbyte            5
+      ifnlt               L65
+
+      debugline           74
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2CK"), "_-5zT")
+      iffalse             L62
+
+      debugline           75
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2CK"), "_-5zT")
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "view")
+      callpropvoid        QName(Namespace("_-00u"), "addListItem"), 1
+
+      debugline           76
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "view")
+      pushtrue
+      setproperty         QName(Namespace("_-0jq"), "visible")
+
+L62:
+      jump                L80
+
+      ; 0xF0
+      ; 0x4F
+L65:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2CK"), "_-uf")
+      iffalse             L80
+
+      debugline           80
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2CK"), "_-uf")
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "view")
+      callpropvoid        QName(Namespace("_-00u"), "addListItem"), 1
+
+      debugline           81
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "view")
+      pushtrue
+      setproperty         QName(Namespace("_-0jq"), "visible")
+
+      debugline           70
+L80:
+      inclocal_i          3
+L81:
+      getlocal3
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "length")
+      iflt                L36
+
+      debugline           87
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "getWindowContainer")
+   method
+    refid "_-2PO:WardrobeView/instance/getWindowContainer"
+    returns QName(PackageNamespace("_-2z-"), "IWindowContainer")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           93
+      getlocal0
+      pushscope
+
+      debugline           94
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2CK"), "_-36K")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-2PO:WardrobeView/class/init"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

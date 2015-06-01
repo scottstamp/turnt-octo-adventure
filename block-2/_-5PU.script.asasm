@@ -1,0 +1,37 @@
+script ; 1005
+ sinit
+  refid "_-5PU/init"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 1
+   maxscopedepth 5
+   code
+    getlocal0
+    pushscope
+
+    findpropstrict      Multiname("_-5PU", [PackageNamespace("")])
+    getlex              QName(PackageNamespace(""), "Object")
+    pushscope
+
+    getlex              QName(PackageNamespace("flash.text"), "Font")
+    pushscope
+
+    getlex              QName(PackageNamespace("mx.core"), "FontAsset")
+    pushscope
+
+    getlex              QName(PackageNamespace("mx.core"), "FontAsset")
+    newclass            "_-5PU"
+    popscope
+    popscope
+    popscope
+    initproperty        QName(PackageNamespace(""), "_-5PU")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait class QName(PackageNamespace(""), "_-5PU")
+  #include "_-5PU.class.asasm"
+ end ; trait
+end ; script

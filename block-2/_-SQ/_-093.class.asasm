@@ -1,0 +1,112 @@
+class
+ refid "_-SQ:_-093"
+ instance QName(PackageNamespace("_-SQ"), "_-093")
+  extends QName(PackageNamespace("_-6Y3"), "AdServerRequest")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-3wx")
+  iinit
+   refid "_-SQ:_-093/instance/init"
+   param QName(PackageNamespace("_-SQ"), "_-0OD")
+   flag HAS_OPTIONAL
+   optional Null()
+   body
+    maxstack 3
+    localcount 2
+    initscopedepth 6
+    maxscopedepth 7
+    code
+     debugfile           "k"
+     debugline           26
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 26
+     debugline           27
+     getlocal0
+     getlocal1
+     pushnull
+     ifeq                L13
+
+     getlocal1
+     coerce              QName(PackageNamespace("_-1N-"), "AdServerConfig")
+     jump                L16
+
+L13:
+     findpropstrict      QName(PackageNamespace("_-SQ"), "_-0OD")
+     constructprop       QName(PackageNamespace("_-SQ"), "_-0OD"), 0
+     coerce              QName(PackageNamespace("_-1N-"), "AdServerConfig")
+L16:
+     constructsuper      1
+
+     debugline           28
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait method QName(PackageNamespace(""), "formRequest") flag OVERRIDE
+   method
+    refid "_-SQ:_-093/instance/formRequest"
+    param QName(PackageNamespace(""), "Array")
+    returns QName(PackageNamespace(""), "String")
+    flag HAS_OPTIONAL
+    optional Null()
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           30
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 30
+      debugline           31
+      getlex              QName(ProtectedNamespace("_-68f"), "_-5jw")
+      pushnull
+      ifeq                L19
+
+      debugline           32
+      findproperty        QName(ProtectedNamespace("_-68f"), "_-VZ")
+      findpropstrict      QName(PackageNamespace(""), "unescape")
+      getlex              QName(ProtectedNamespace("_-68f"), "_-5jw")
+      getproperty         QName(PackageNamespace(""), "tag")
+      callproperty        QName(PackageNamespace(""), "unescape"), 1
+      initproperty        QName(ProtectedNamespace("_-68f"), "_-VZ")
+
+      jump                L23
+
+      ; 0xF0
+      ; 0x22
+L19:
+      findproperty        QName(ProtectedNamespace("_-68f"), "_-VZ")
+      pushstring          "<?xml version=\"1.0\" encoding=\"UTF-8\" ?><VAST version=\"2.0\"></VAST>"
+      initproperty        QName(ProtectedNamespace("_-68f"), "_-VZ")
+
+      debugline           35
+L23:
+      getlex              QName(ProtectedNamespace("_-68f"), "_-VZ")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-SQ:_-093/class/init"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 5
+   maxscopedepth 6
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

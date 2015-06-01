@@ -1,0 +1,33 @@
+script ; 6184
+ sinit
+  refid "_-10R:_-301/init"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 1
+   maxscopedepth 3
+   code
+    getlocal0
+    pushscope
+
+    debugfile           "k"
+    debugline           9
+    findpropstrict      Multiname("_-301", [PackageNamespace("_-10R")])
+    getlex              QName(PackageNamespace(""), "Object")
+    pushscope
+
+    getlex              QName(PackageNamespace(""), "Object")
+    newclass            "_-10R:_-301"
+    popscope
+    initproperty        QName(PackageNamespace("_-10R"), "_-301")
+
+    debugfile           "k"
+    debugline           6
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait class QName(PackageNamespace("_-10R"), "_-301")
+  #include "_-301.class.asasm"
+ end ; trait
+end ; script

@@ -1,0 +1,33 @@
+script ; 6024
+ sinit
+  refid "_-2WS:FixedSizeStack/init"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 1
+   maxscopedepth 3
+   code
+    getlocal0
+    pushscope
+
+    debugfile           "k"
+    debugline           9
+    findpropstrict      Multiname("FixedSizeStack", [PackageNamespace("_-2WS")])
+    getlex              QName(PackageNamespace(""), "Object")
+    pushscope
+
+    getlex              QName(PackageNamespace(""), "Object")
+    newclass            "_-2WS:FixedSizeStack"
+    popscope
+    initproperty        QName(PackageNamespace("_-2WS"), "FixedSizeStack")
+
+    debugfile           "k"
+    debugline           8
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait class QName(PackageNamespace("_-2WS"), "FixedSizeStack")
+  #include "FixedSizeStack.class.asasm"
+ end ; trait
+end ; script

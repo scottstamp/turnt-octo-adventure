@@ -1,0 +1,266 @@
+class
+ refid "_-6Nv:_-fq"
+ instance QName(PackageNamespace("_-6Nv"), "_-fq")
+  extends QName(PackageNamespace(""), "Object")
+  implements Multiname("_-3AL", [PackageNamespace("_-43b")])
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-4rm")
+  iinit
+   refid "_-6Nv:_-fq/instance/init"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     debugfile           "k"
+     debugline           49
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-4rm"), "_-5xy") type QName(PackageNamespace(""), "int") end
+  trait slot QName(PrivateNamespace("_-4rm"), "_-5T9") type QName(PackageNamespace("_-0eP"), "_-34J") end
+  trait method QName(PackageNamespace(""), "flush")
+   method
+    refid "_-6Nv:_-fq/instance/flush"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           16
+      getlocal0
+      pushscope
+
+      debugline           17
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-4rm"), "_-5T9")
+
+      debugline           18
+      pushtrue
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "parse")
+   method
+    refid "_-6Nv:_-fq/instance/parse"
+    param QName(PackageNamespace("_-43b"), "_-5nc")
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           21
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 21
+      debugline           22
+      getlocal0
+      getlocal1
+      callproperty        QName(Namespace("_-1mg"), "_-44H"), 0
+      initproperty        QName(PrivateNamespace("_-4rm"), "_-5xy")
+
+      debugline           23
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4rm"), "_-5xy")
+      getlex              QName(PackageNamespace(""), "_-oR")
+      ifne                L22
+
+      debugline           24
+      getlocal0
+      findpropstrict      QName(PackageNamespace("_-0eP"), "_-34J")
+      getlocal1
+      constructprop       QName(PackageNamespace("_-0eP"), "_-34J"), 1
+      initproperty        QName(PrivateNamespace("_-4rm"), "_-5T9")
+
+      debugline           26
+L22:
+      pushtrue
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "_-37X")
+   method
+    refid "_-6Nv:_-fq/instance/_-37X/getter"
+    returns QName(PackageNamespace(""), "int")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           29
+      getlocal0
+      pushscope
+
+      debugline           30
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4rm"), "_-5xy")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "_-1O1")
+   method
+    refid "_-6Nv:_-fq/instance/_-1O1/getter"
+    returns QName(PackageNamespace("_-0eP"), "_-34J")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           33
+      getlocal0
+      pushscope
+
+      debugline           34
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4rm"), "_-5T9")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "_-5R-")
+   method
+    refid "_-6Nv:_-fq/instance/_-5R-/getter"
+    returns QName(PackageNamespace(""), "String")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           37
+      getlocal0
+      pushscope
+
+      jump                L19
+
+L5:
+      label
+      pushstring          "blocked"
+      debugline           40
+      returnvalue
+
+L9:
+      label
+      pushstring          "tooquick"
+      debugline           42
+      returnvalue
+
+L13:
+      label
+      pushstring          ""
+      debugline           44
+      returnvalue
+
+      ; 0xF0
+      ; 0x26
+L19:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4rm"), "_-5xy")
+      setlocal1
+
+      debugline           39
+      getlex              QName(PackageNamespace(""), "_-K0")
+      getlocal1
+      ifstrictne          L30
+
+      pushbyte            0
+      jump                L43
+
+      ; 0xF0
+      ; 0x29
+L30:
+      getlex              QName(PackageNamespace(""), "_-1oX")
+      getlocal1
+      ifstrictne          L35
+
+      pushbyte            1
+      jump                L43
+
+L35:
+      jump                L42
+
+      ; 0x24
+      ; 0x02
+      ; 0x10
+      ; 0x02
+      ; 0x00
+      ; 0x00
+L42:
+      pushbyte            2
+L43:
+      kill                1
+      lookupswitch        L13, [L5, L9, L13]
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-6Nv:_-fq/class/init"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    debug               1, "k", 0, 8
+    findproperty        QName(PackageNamespace(""), "_-3Ir")
+    pushbyte            0
+    initproperty        QName(PackageNamespace(""), "_-3Ir")
+
+    debug               1, "k", 1, 9
+    findproperty        QName(PackageNamespace(""), "_-oR")
+    pushbyte            1
+    initproperty        QName(PackageNamespace(""), "_-oR")
+
+    debug               1, "k", 2, 10
+    findproperty        QName(PackageNamespace(""), "_-K0")
+    pushbyte            2
+    initproperty        QName(PackageNamespace(""), "_-K0")
+
+    debug               1, "k", 3, 11
+    findproperty        QName(PackageNamespace(""), "_-1oX")
+    pushbyte            3
+    initproperty        QName(PackageNamespace(""), "_-1oX")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait const QName(PackageNamespace(""), "_-3Ir") slotid 1 type QName(PackageNamespace(""), "int") value Integer(0) end
+ trait const QName(PackageNamespace(""), "_-oR") slotid 2 type QName(PackageNamespace(""), "int") value Integer(1) end
+ trait const QName(PackageNamespace(""), "_-K0") slotid 3 type QName(PackageNamespace(""), "int") value Integer(2) end
+ trait const QName(PackageNamespace(""), "_-1oX") slotid 4 type QName(PackageNamespace(""), "int") value Integer(3) end
+end ; class

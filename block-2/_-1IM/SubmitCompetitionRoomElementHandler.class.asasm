@@ -1,0 +1,255 @@
+class
+ refid "_-1IM:SubmitCompetitionRoomElementHandler"
+ instance QName(PackageNamespace("_-1IM"), "SubmitCompetitionRoomElementHandler")
+  extends QName(PackageNamespace("_-1IM"), "AbstractButtonElementHandler")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-Jt")
+  iinit
+   refid "_-1IM:SubmitCompetitionRoomElementHandler/instance/init"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 5
+    maxscopedepth 6
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     debugfile           "k"
+     debugline           47
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-Jt"), "do ") type QName(PackageNamespace(""), "String") end
+  trait slot QName(PrivateNamespace("_-Jt"), "_-0bX") type QName(PackageNamespace(""), "String") end
+  trait slot QName(PrivateNamespace("_-Jt"), "_-6FX") type QName(PackageNamespace(""), "Boolean") end
+  trait slot QName(PrivateNamespace("_-Jt"), "_-3rZ") type QName(PackageNamespace(""), "int") end
+  trait method QName(PackageNamespace(""), "initialize") flag OVERRIDE
+   method
+    refid "_-1IM:SubmitCompetitionRoomElementHandler/instance/initialize"
+    param QName(PackageNamespace("_-0v6"), "HabboLandingView")
+    param QName(PackageNamespace("_-2z-"), "IWindow")
+    param QName(PackageNamespace(""), "Array")
+    param QName(PackageNamespace("_-5o4"), "GenericWidget")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 5
+     localcount 5
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           15
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 15
+      debug               1, "k", 1, 15
+      debug               1, "k", 2, 15
+      debug               1, "k", 3, 15
+      debugline           16
+      getlocal0
+      getlocal1
+      getlocal2
+      getlocal3
+      getlocal            4
+      callsupervoid       QName(PackageNamespace(""), "initialize"), 4
+      debugline           17
+      getlocal0
+      getlocal3
+      pushbyte            2
+      getproperty         MultinameL([PrivateNamespace("_-Jt"), PackageNamespace(""), PrivateNamespace("SubmitCompetitionRoomElementHandler.as$2307"), PackageNamespace("_-1IM"), PackageInternalNs("_-1IM"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-Jt"), StaticProtectedNs("_-Jt"), StaticProtectedNs("_-o5")])
+      initproperty        QName(PrivateNamespace("_-Jt"), "do ")
+
+      debugline           18
+      getlocal0
+      getlocal3
+      pushbyte            3
+      getproperty         MultinameL([PrivateNamespace("_-Jt"), PackageNamespace(""), PrivateNamespace("SubmitCompetitionRoomElementHandler.as$2307"), PackageNamespace("_-1IM"), PackageInternalNs("_-1IM"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-Jt"), StaticProtectedNs("_-Jt"), StaticProtectedNs("_-o5")])
+      initproperty        QName(PrivateNamespace("_-Jt"), "_-0bX")
+
+      debugline           19
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "communicationManager")
+      findpropstrict      QName(PackageNamespace("_-26b"), "_-3DS")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-Jt"), "_-1Gz")
+      constructprop       QName(PackageNamespace("_-26b"), "_-3DS"), 1
+      callpropvoid        QName(Namespace("_-62Q"), "addHabboConnectionMessageEvent"), 1
+
+      debugline           20
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "refresh") flag OVERRIDE
+   method
+    refid "_-1IM:SubmitCompetitionRoomElementHandler/instance/refresh"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           22
+      getlocal0
+      pushscope
+
+      debugline           23
+      getlocal0
+      callsupervoid       QName(PackageNamespace(""), "refresh"), 0
+      debugline           24
+      getlex              QName(PackageNamespace(""), "landingView")
+      findpropstrict      QName(PackageNamespace("_-2mT"), "_-qp")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-Jt"), "_-0bX")
+      constructprop       QName(PackageNamespace("_-2mT"), "_-qp"), 1
+      callpropvoid        QName(PackageNamespace(""), "send"), 1
+
+      debugline           25
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-Jt"), "onClick") flag OVERRIDE
+   method
+    refid "_-1IM:SubmitCompetitionRoomElementHandler/instance/_-Jt:onClick"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           27
+      getlocal0
+      pushscope
+
+      debugline           28
+      getlex              QName(PackageNamespace(""), "landingView")
+      getproperty         QName(PackageNamespace(""), "questEngine")
+      callpropvoid        QName(Namespace("_-RQ"), "reenableRoomCompetitionWindow"), 0
+
+      debugline           29
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-Jt"), "_-6FX")
+      iffalse             L27
+
+      debugline           30
+      getlex              QName(PackageNamespace(""), "landingView")
+      getproperty         QName(PackageNamespace(""), "navigator")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-Jt"), "_-3rZ")
+      callpropvoid        QName(Namespace("_-4Ui"), "goToPrivateRoom"), 1
+
+      debugline           31
+      getlex              QName(PackageNamespace(""), "landingView")
+      getproperty         QName(PackageNamespace(""), "tracking")
+      pushstring          "landingView"
+      pushstring          "click_submittedroom"
+      callpropvoid        QName(Namespace("_-2St"), "trackGoogle"), 2
+
+      jump                L38
+
+      ; 0xF0
+      ; 0x21
+L27:
+      getlex              QName(PackageNamespace(""), "landingView")
+      findpropstrict      QName(PackageNamespace("_-2mT"), "_-rI")
+      constructprop       QName(PackageNamespace("_-2mT"), "_-rI"), 0
+      callpropvoid        QName(PackageNamespace(""), "send"), 1
+
+      debugline           34
+      getlex              QName(PackageNamespace(""), "landingView")
+      getproperty         QName(PackageNamespace(""), "tracking")
+      pushstring          "landingView"
+      pushstring          "click_startsubmit"
+      callpropvoid        QName(Namespace("_-2St"), "trackGoogle"), 2
+
+      debugline           36
+L38:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-Jt"), "_-1Gz")
+   method
+    refid "_-1IM:SubmitCompetitionRoomElementHandler/instance/_-1IM:SubmitCompetitionRoomElementHandler/instance/_-1Gz"
+    param QName(PackageNamespace("_-26b"), "_-3DS")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           38
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 38
+      debugline           39
+      getlocal0
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "_-Gq"), 0
+      getproperty         QName(PackageNamespace(""), "_-cG")
+      initproperty        QName(PrivateNamespace("_-Jt"), "_-6FX")
+
+      debugline           40
+      getlocal0
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "_-Gq"), 0
+      getproperty         QName(PackageNamespace(""), "_-3gk")
+      initproperty        QName(PrivateNamespace("_-Jt"), "_-3rZ")
+
+      debugline           41
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-Jt"), "_-6FX")
+      iffalse             L31
+
+      debugline           42
+      getlex              QName(PackageNamespace(""), "window")
+      pushstring          "${"
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-Jt"), "do ")
+      add
+      pushstring          "}"
+      add
+      setproperty         QName(Namespace("_-0jq"), "caption")
+
+      debugline           44
+L31:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-1IM:SubmitCompetitionRoomElementHandler/class/init"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 4
+   maxscopedepth 5
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

@@ -1,0 +1,551 @@
+class
+ refid "_-0S7:TextFieldCache"
+ instance QName(PackageNamespace("_-0S7"), "TextFieldCache")
+  extends QName(PackageNamespace(""), "Object")
+  implements Multiname("_-4BI", [PackageNamespace("_-0XF")])
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-33b")
+  iinit
+   refid "_-0S7:TextFieldCache/instance/init"
+   body
+    maxstack 3
+    localcount 1
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     debugfile           "k"
+     debugline           29
+     getlocal0
+     pushscope
+
+     debugline           29
+     getlocal0
+     constructsuper      0
+
+     debugline           31
+     getlex              QName(PrivateNamespace("_-33b"), "_-1Jr")
+     pushnull
+     ifne                L20
+
+     debugline           32
+     getlex              QName(PackageNamespace("_-0S7"), "TextStyleManager")
+     getproperty         QName(PackageNamespace(""), "events")
+     getlex              QName(PackageNamespace("flash.events"), "Event")
+     getproperty         QName(PackageNamespace(""), "CHANGE")
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-33b"), "_-11Y")
+     callpropvoid        QName(Namespace("flash.events:IEventDispatcher"), "addEventListener"), 2
+
+     debugline           34
+L20:
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait getter QName(PackageNamespace(""), "disposed")
+   method
+    refid "_-0S7:TextFieldCache/instance/disposed/getter"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           21
+      getlocal0
+      pushscope
+
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-33b"), "_disposed")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait slot QName(PrivateNamespace("_-33b"), "_disposed") type QName(PackageNamespace(""), "Boolean") value False() end
+  trait method QName(PackageNamespace(""), "dispose")
+   method
+    refid "_-0S7:TextFieldCache/instance/dispose"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           39
+      getlocal0
+      pushscope
+
+      debugline           41
+      getlex              QName(PackageNamespace("_-0S7"), "TextStyleManager")
+      getproperty         QName(PackageNamespace(""), "events")
+      getlex              QName(PackageNamespace("flash.events"), "Event")
+      getproperty         QName(PackageNamespace(""), "CHANGE")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-33b"), "_-11Y")
+      callpropvoid        QName(Namespace("flash.events:IEventDispatcher"), "removeEventListener"), 2
+
+      debugline           42
+      getlex              QName(PrivateNamespace("_-33b"), "_-4km")
+      callpropvoid        QName(PackageNamespace(""), "reset"), 0
+
+      debugline           43
+      findproperty        QName(PrivateNamespace("_-33b"), "_-1Jr")
+      pushnull
+      setproperty         QName(PrivateNamespace("_-33b"), "_-1Jr")
+
+      debugline           44
+      getlocal0
+      pushtrue
+      initproperty        QName(PrivateNamespace("_-33b"), "_disposed")
+
+      debugline           45
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-33b"), "_-11Y")
+   method
+    refid "_-0S7:TextFieldCache/instance/_-0S7:TextFieldCache/_-11Y"
+    param QName(PackageNamespace("flash.events"), "Event")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 1
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           119
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 119
+      debugline           121
+      getlex              QName(PrivateNamespace("_-33b"), "_-4km")
+      callpropvoid        QName(PackageNamespace(""), "reset"), 0
+
+      debugline           122
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-0S7:TextFieldCache/class/init"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    debug               1, "k", 0, 23
+    findproperty        QName(PrivateNamespace("_-33b"), "_-4km")
+    findpropstrict      QName(PackageNamespace("_-67e"), "Map")
+    constructprop       QName(PackageNamespace("_-67e"), "Map"), 0
+    setproperty         QName(PrivateNamespace("_-33b"), "_-4km")
+
+    debug               1, "k", 1, 24
+    findproperty        QName(PrivateNamespace("_-33b"), "_-1Jr")
+    getlocal0
+    construct           0
+    setproperty         QName(PrivateNamespace("_-33b"), "_-1Jr")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait slot QName(PrivateNamespace("_-33b"), "_-4km") slotid 1 type QName(PackageNamespace("_-67e"), "Map") end
+ trait slot QName(PrivateNamespace("_-33b"), "_-1Jr") slotid 2 type QName(PackageNamespace("_-0S7"), "TextFieldCache") end
+ trait method QName(PackageNamespace(""), "_-6-D") flag FINAL dispid 3
+  method
+   refid "_-0S7:TextFieldCache/class/_-6-D"
+   param QName(PackageNamespace("_-0S7"), "TextStyle")
+   returns QName(PackageNamespace("flash.text"), "TextField")
+   body
+    maxstack 3
+    localcount 4
+    initscopedepth 3
+    maxscopedepth 4
+    code
+     debugfile           "k"
+     debugline           52
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 52
+     debug               1, "k", 1, 54
+     debug               1, "k", 2, 59
+     debugline           54
+     getlex              QName(PrivateNamespace("_-33b"), "_-4km")
+     getlocal1
+     getproperty         QName(PackageNamespace(""), "name")
+     getproperty         MultinameL([PrivateNamespace("_-33b"), PackageNamespace(""), PrivateNamespace("TextFieldCache.as$2961"), PackageNamespace("_-0S7"), PackageInternalNs("_-0S7"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-33b"), StaticProtectedNs("_-33b")])
+     coerce              QName(PackageNamespace("flash.text"), "TextField")
+     setlocal2
+
+     debugline           56
+     getlocal2
+     iffalse             L21
+
+     getlocal2
+     returnvalue
+
+     ; 0xF0
+     ; 0x39
+L21:
+     findpropstrict      QName(PackageNamespace("flash.text"), "TextField")
+     constructprop       QName(PackageNamespace("flash.text"), "TextField"), 0
+     coerce              QName(PackageNamespace("flash.text"), "TextField")
+     setlocal2
+
+     debugline           59
+     getlocal2
+     getproperty         QName(PackageNamespace(""), "defaultTextFormat")
+     coerce              QName(PackageNamespace("flash.text"), "TextFormat")
+     setlocal3
+
+     debugline           61
+     getlocal1
+     iftrue              L40
+
+     getlex              QName(PackageNamespace("_-0S7"), "TextStyleManager")
+     getlex              QName(PackageNamespace("_-0S7"), "TextStyleManager")
+     getproperty         QName(PackageNamespace(""), "REGULAR")
+     callproperty        QName(PackageNamespace(""), "getStyle"), 1
+     coerce              QName(PackageNamespace("_-0S7"), "TextStyle")
+     setlocal1
+
+     debugline           63
+L40:
+     getlocal3
+     getlocal1
+     getproperty         QName(PackageNamespace(""), "fontFamily")
+     setproperty         QName(PackageNamespace(""), "font")
+
+     debugline           64
+     getlocal3
+     getlocal1
+     getproperty         QName(PackageNamespace(""), "fontSize")
+     setproperty         QName(PackageNamespace(""), "size")
+
+     debugline           65
+     getlocal3
+     getlocal1
+     getproperty         QName(PackageNamespace(""), "color")
+     setproperty         QName(PackageNamespace(""), "color")
+
+     debugline           66
+     getlocal3
+     getlocal1
+     getproperty         QName(PackageNamespace(""), "fontWeight")
+     getlex              QName(PackageNamespace("flash.text"), "FontStyle")
+     getproperty         QName(PackageNamespace(""), "BOLD")
+     equals
+     iffalse             L65
+
+     pushtrue
+     coerce              QName(PackageNamespace(""), "Object")
+     jump                L67
+
+L65:
+     pushnull
+     coerce              QName(PackageNamespace(""), "Object")
+L67:
+     setproperty         QName(PackageNamespace(""), "bold")
+
+     debugline           67
+     getlocal3
+     getlocal1
+     getproperty         QName(PackageNamespace(""), "fontStyle")
+     getlex              QName(PackageNamespace("flash.text"), "FontStyle")
+     getproperty         QName(PackageNamespace(""), "ITALIC")
+     equals
+     iffalse             L79
+
+     pushtrue
+     coerce              QName(PackageNamespace(""), "Object")
+     jump                L81
+
+L79:
+     pushnull
+     coerce              QName(PackageNamespace(""), "Object")
+L81:
+     setproperty         QName(PackageNamespace(""), "italic")
+
+     debugline           68
+     getlocal3
+     getlocal1
+     getproperty         QName(PackageNamespace(""), "textDecoration")
+     getlex              QName(PackageNamespace("_-0S7"), "TextStyle")
+     getproperty         QName(PackageNamespace(""), "_-4os")
+     equals
+     iffalse             L93
+
+     pushtrue
+     coerce              QName(PackageNamespace(""), "Object")
+     jump                L95
+
+L93:
+     pushnull
+     coerce              QName(PackageNamespace(""), "Object")
+L95:
+     setproperty         QName(PackageNamespace(""), "underline")
+
+     debugline           69
+     getlocal3
+     getlocal1
+     getproperty         QName(PackageNamespace(""), "textIndent")
+     setproperty         QName(PackageNamespace(""), "indent")
+
+     debugline           70
+     getlocal3
+     getlocal1
+     getproperty         QName(PackageNamespace(""), "leading")
+     setproperty         QName(PackageNamespace(""), "leading")
+
+     debugline           71
+     getlocal3
+     getlocal1
+     getproperty         QName(PackageNamespace(""), "kerning")
+     setproperty         QName(PackageNamespace(""), "kerning")
+
+     debugline           72
+     getlocal3
+     getlocal1
+     getproperty         QName(PackageNamespace(""), "letterSpacing")
+     setproperty         QName(PackageNamespace(""), "letterSpacing")
+
+     debugline           74
+     getlocal2
+     getlocal1
+     getproperty         QName(PackageNamespace(""), "antiAliasType")
+     getlex              QName(PackageNamespace("flash.text"), "AntiAliasType")
+     getproperty         QName(PackageNamespace(""), "ADVANCED")
+     equals
+     iffalse             L128
+
+     getlex              QName(PackageNamespace("flash.text"), "AntiAliasType")
+     getproperty         QName(PackageNamespace(""), "ADVANCED")
+     coerce_s
+     jump                L131
+
+L128:
+     getlex              QName(PackageNamespace("flash.text"), "AntiAliasType")
+     getproperty         QName(PackageNamespace(""), "NORMAL")
+     coerce_s
+L131:
+     setproperty         QName(PackageNamespace(""), "antiAliasType")
+
+     debugline           75
+     getlocal2
+     getlocal1
+     getproperty         QName(PackageNamespace(""), "sharpness")
+     iffalse             L143
+
+     getlocal1
+     getproperty         QName(PackageNamespace(""), "sharpness")
+     getlex              QName(PackageNamespace(""), "int")
+     astypelate
+     convert_d
+     jump                L145
+
+L143:
+     pushbyte            0
+     convert_d
+L145:
+     setproperty         QName(PackageNamespace(""), "sharpness")
+
+     debugline           76
+     getlocal2
+     getlocal1
+     getproperty         QName(PackageNamespace(""), "thickness")
+     iffalse             L157
+
+     getlocal1
+     getproperty         QName(PackageNamespace(""), "thickness")
+     getlex              QName(PackageNamespace(""), "int")
+     astypelate
+     convert_d
+     jump                L159
+
+L157:
+     pushbyte            0
+     convert_d
+L159:
+     setproperty         QName(PackageNamespace(""), "thickness")
+
+     debugline           80
+     getlocal1
+     getproperty         QName(PackageNamespace(""), "fontWeight")
+     iftrue              L168
+
+     getlocal3
+     pushfalse
+     setproperty         QName(PackageNamespace(""), "bold")
+
+     debugline           81
+L168:
+     getlocal1
+     getproperty         QName(PackageNamespace(""), "fontStyle")
+     iftrue              L175
+
+     getlocal3
+     pushfalse
+     setproperty         QName(PackageNamespace(""), "italic")
+
+     debugline           82
+L175:
+     getlocal1
+     getproperty         QName(PackageNamespace(""), "textDecoration")
+     iftrue              L182
+
+     getlocal3
+     pushfalse
+     setproperty         QName(PackageNamespace(""), "underline")
+
+     debugline           83
+L182:
+     getlocal1
+     getproperty         QName(PackageNamespace(""), "textIndent")
+     iftrue              L189
+
+     getlocal3
+     pushbyte            0
+     setproperty         QName(PackageNamespace(""), "indent")
+
+     debugline           84
+L189:
+     getlocal1
+     getproperty         QName(PackageNamespace(""), "leading")
+     iftrue              L196
+
+     getlocal3
+     pushbyte            0
+     setproperty         QName(PackageNamespace(""), "leading")
+
+     debugline           85
+L196:
+     getlocal1
+     getproperty         QName(PackageNamespace(""), "kerning")
+     iftrue              L203
+
+     getlocal3
+     pushfalse
+     setproperty         QName(PackageNamespace(""), "kerning")
+
+     debugline           86
+L203:
+     getlocal1
+     getproperty         QName(PackageNamespace(""), "letterSpacing")
+     iftrue              L210
+
+     getlocal3
+     pushbyte            0
+     setproperty         QName(PackageNamespace(""), "letterSpacing")
+
+     debugline           87
+L210:
+     getlocal1
+     getproperty         QName(PackageNamespace(""), "antiAliasType")
+     iftrue              L218
+
+     getlocal2
+     getlex              QName(PackageNamespace("flash.text"), "AntiAliasType")
+     getproperty         QName(PackageNamespace(""), "NORMAL")
+     setproperty         QName(PackageNamespace(""), "antiAliasType")
+
+     debugline           89
+L218:
+     getlocal2
+     getlex              QName(PackageNamespace("flash.text"), "TextFieldAutoSize")
+     getproperty         QName(PackageNamespace(""), "LEFT")
+     setproperty         QName(PackageNamespace(""), "autoSize")
+
+     debugline           90
+     getlocal2
+     getlocal3
+     callpropvoid        QName(PackageNamespace(""), "setTextFormat"), 1
+
+     debugline           91
+     getlocal2
+     getlex              QName(PackageNamespace("_-67e"), "FontEnum")
+     getlocal3
+     getproperty         QName(PackageNamespace(""), "font")
+     callproperty        QName(PackageNamespace(""), "_-4Hb"), 1
+     setproperty         QName(PackageNamespace(""), "embedFonts")
+
+     debugline           92
+     getlocal2
+     getlocal3
+     setproperty         QName(PackageNamespace(""), "defaultTextFormat")
+
+     debugline           94
+     getlex              QName(PrivateNamespace("_-33b"), "_-4km")
+     getlocal1
+     getproperty         QName(PackageNamespace(""), "name")
+     getlocal2
+     setproperty         MultinameL([PrivateNamespace("_-33b"), PackageNamespace(""), PrivateNamespace("TextFieldCache.as$2961"), PackageNamespace("_-0S7"), PackageInternalNs("_-0S7"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-33b"), StaticProtectedNs("_-33b")])
+
+     debugline           95
+     getlocal2
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PackageNamespace(""), "_-49h") flag FINAL dispid 4
+  method
+   refid "_-0S7:TextFieldCache/class/_-49h"
+   param QName(PackageNamespace(""), "String")
+   returns QName(PackageNamespace("flash.text"), "TextField")
+   body
+    maxstack 2
+    localcount 3
+    initscopedepth 3
+    maxscopedepth 4
+    code
+     debugfile           "k"
+     debugline           103
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 103
+     debug               1, "k", 1, 105
+     debugline           105
+     getlex              QName(PackageNamespace("_-0S7"), "TextStyleManager")
+     getlocal1
+     callproperty        QName(PackageNamespace(""), "getStyle"), 1
+     coerce              QName(PackageNamespace("_-0S7"), "TextStyle")
+     setlocal2
+
+     debugline           107
+     getlocal2
+     iftrue              L20
+
+     debugline           109
+     pushnull
+     returnvalue
+
+     ; 0xF0
+     ; 0x70
+L20:
+     findpropstrict      QName(PackageNamespace(""), "_-6-D")
+     getlocal2
+     callproperty        QName(PackageNamespace(""), "_-6-D"), 1
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+end ; class

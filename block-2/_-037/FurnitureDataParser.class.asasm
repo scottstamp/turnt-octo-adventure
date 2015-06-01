@@ -1,0 +1,1885 @@
+class
+ refid "_-037:FurnitureDataParser"
+ instance QName(PackageNamespace("_-037"), "FurnitureDataParser")
+  extends QName(PackageNamespace("_-3hr"), "EventDispatcherWrapper")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-3S6")
+  iinit
+   refid "_-037:FurnitureDataParser/instance/init"
+   param QName(PackageNamespace("_-67e"), "Map")
+   param QName(PackageNamespace("_-67e"), "Map")
+   param QName(PackageNamespace("_-67e"), "Map")
+   param QName(PackageNamespace("_-3K5"), "ICoreLocalizationManager")
+   body
+    maxstack 3
+    localcount 5
+    initscopedepth 5
+    maxscopedepth 6
+    code
+     debugfile           "k"
+     debugline           38
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 38
+     debug               1, "k", 1, 38
+     debug               1, "k", 2, 38
+     debug               1, "k", 3, 38
+     debugline           38
+     getlocal0
+     constructsuper      0
+
+     debugline           39
+     getlocal0
+     getlocal1
+     initproperty        QName(PrivateNamespace("_-3S6"), "_-5Ri")
+
+     debugline           40
+     getlocal0
+     getlocal2
+     initproperty        QName(PrivateNamespace("_-3S6"), "_-6Z9")
+
+     debugline           41
+     getlocal0
+     getlocal3
+     initproperty        QName(PrivateNamespace("_-3S6"), "_-3PS")
+
+     debugline           42
+     getlocal0
+     getlocal            4
+     initproperty        QName(PrivateNamespace("_-3S6"), "_-5jk")
+
+     debugline           43
+     getlocal0
+     findpropstrict      QName(PackageNamespace("_-475"), "AssetLibrary")
+     pushstring          "FurniDataParserAssetLib"
+     constructprop       QName(PackageNamespace("_-475"), "AssetLibrary"), 1
+     initproperty        QName(PrivateNamespace("_-3S6"), "_-0nd")
+
+     debugline           44
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-3S6"), "_-5Ri") type QName(PackageNamespace("_-67e"), "Map") end
+  trait slot QName(PrivateNamespace("_-3S6"), "_-6Z9") type QName(PackageNamespace("_-67e"), "Map") end
+  trait slot QName(PrivateNamespace("_-3S6"), "_-3PS") type QName(PackageNamespace("_-67e"), "Map") end
+  trait slot QName(PrivateNamespace("_-3S6"), "_-5jk") type QName(PackageNamespace("_-3K5"), "ICoreLocalizationManager") end
+  trait slot QName(PrivateNamespace("_-3S6"), "_-0nd") type QName(PackageNamespace("_-475"), "AssetLibrary") end
+  trait method QName(PackageNamespace(""), "dispose") flag OVERRIDE
+   method
+    refid "_-037:FurnitureDataParser/instance/dispose"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           46
+      getlocal0
+      pushscope
+
+      debugline           47
+      getlocal0
+      callsupervoid       QName(PackageNamespace(""), "dispose"), 0
+      debugline           48
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3S6"), "_-0nd")
+      iffalse             L20
+
+      debugline           49
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3S6"), "_-0nd")
+      callpropvoid        QName(PackageNamespace(""), "dispose"), 0
+
+      debugline           50
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-3S6"), "_-0nd")
+
+      debugline           53
+L20:
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-3S6"), "_-5jk")
+
+      debugline           54
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-3S6"), "_-5Ri")
+
+      debugline           55
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-3S6"), "_-6Z9")
+
+      debugline           56
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-3S6"), "_-3PS")
+
+      debugline           57
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-2iu")
+   method
+    refid "_-037:FurnitureDataParser/instance/_-2iu"
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 3
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           63
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 63
+      debug               1, "k", 1, 64
+      debugline           64
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3S6"), "_-0nd")
+      getlocal1
+      findpropstrict      QName(PackageNamespace("flash.net"), "URLRequest")
+      getlocal1
+      constructprop       QName(PackageNamespace("flash.net"), "URLRequest"), 1
+      pushstring          "text/plain"
+      callproperty        QName(PackageNamespace(""), "loadAssetFromFile"), 3
+      coerce              QName(PackageNamespace("_-475"), "_-sY")
+      setlocal2
+
+      debugline           65
+      getlocal2
+      getlex              QName(PackageNamespace("_-01F"), "AssetLoaderEvent")
+      getproperty         QName(PackageNamespace(""), "_-2lm")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3S6"), "_-2uV")
+      callpropvoid        QName(PackageNamespace(""), "addEventListener"), 2
+
+      debugline           66
+      getlocal2
+      getlex              QName(PackageNamespace("_-01F"), "AssetLoaderEvent")
+      getproperty         QName(PackageNamespace(""), "_-6IU")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3S6"), "_-3Sr")
+      callpropvoid        QName(PackageNamespace(""), "addEventListener"), 2
+
+      debugline           67
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-3S6"), "_-2uV")
+   method
+    refid "_-037:FurnitureDataParser/instance/_-037:FurnitureDataParser/instance/_-2uV"
+    param QName(PackageNamespace("_-01F"), "AssetLoaderEvent")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 4
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           69
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 69
+      debug               1, "k", 1, 70
+      debug               1, "k", 2, 74
+      debugline           70
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "target")
+      getlex              QName(PackageNamespace("_-475"), "_-sY")
+      astypelate
+      coerce              QName(PackageNamespace("_-475"), "_-sY")
+      setlocal2
+
+      debugline           71
+      getlocal2
+      pushnull
+      ifne                L21
+
+      returnvoid
+
+      ; 0xF0
+      ; 0x48
+L21:
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "_-1h5")
+      pushnull
+      equals
+      dup
+      iftrue              L33
+
+      pop
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "_-1h5")
+      getproperty         QName(Namespace("_-Ul"), "content")
+      pushnull
+      equals
+L33:
+      iffalse             L37
+
+      returnvoid
+
+      ; 0xF0
+      ; 0x4A
+L37:
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "_-1h5")
+      getproperty         QName(Namespace("_-Ul"), "content")
+      getlex              QName(PackageNamespace(""), "String")
+      astypelate
+      coerce_s
+      setlocal3
+
+      debugline           75
+      getlocal3
+      pushbyte            0
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "charAt"), 1
+      pushstring          "<"
+      ifne                L57
+
+      debugline           76
+      getlocal0
+      getlocal3
+      callpropvoid        QName(PrivateNamespace("_-3S6"), "_-xs"), 1
+
+      jump                L61
+
+      ; 0xF0
+      ; 0x4E
+L57:
+      getlocal0
+      getlocal3
+      callpropvoid        QName(PrivateNamespace("_-3S6"), "_-6GJ"), 1
+
+      debugline           80
+L61:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-3S6"), "_-xs")
+   method
+    refid "_-037:FurnitureDataParser/instance/_-037:FurnitureDataParser/instance/_-xs"
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace(""), "void")
+    flag NEED_ACTIVATION
+    body
+     maxstack 4
+     localcount 5
+     initscopedepth 6
+     maxscopedepth 11
+     code
+      debugfile           "k"
+      debugline           82
+      getlocal0
+      pushscope
+
+      newactivation
+      dup
+      setlocal2
+
+      pushscope
+
+      debug               1, "k", 1, 82
+      getscopeobject      1
+      pushnull
+      coerce              QName(PackageNamespace(""), "XMLList")
+      setslot             2
+
+      getscopeobject      1
+      pushnull
+      coerce              QName(PackageNamespace(""), "XML")
+      setslot             3
+
+      getscopeobject      1
+      pushnull
+      coerce              QName(PackageNamespace("_-037"), "_-sI")
+      setslot             4
+
+      getscopeobject      1
+      pushnull
+      coerce              QName(PackageNamespace(""), "XML")
+      setslot             5
+
+      getscopeobject      1
+      getlocal1
+      setslot             1
+
+      debug               1, "k", 0, 82
+      debugline           84
+L30:
+      getscopeobject      1
+      findpropstrict      QName(PackageNamespace(""), "XML")
+      getscopeobject      1
+      getslot             1
+      constructprop       QName(PackageNamespace(""), "XML"), 1
+      coerce              QName(PackageNamespace(""), "XML")
+      setslot             5
+
+      debugline           85
+L38:
+      jump                L63
+
+L39:
+      getlocal0
+      pushscope
+
+      getlocal2
+      pushscope
+
+      newcatch            0
+      dup
+      setlocal3
+
+      dup
+      pushscope
+
+      swap
+      setslot             1
+
+      debugline           86
+      getlex              QName(PackageNamespace("_-1lC"), "Core")
+      pushstring          "XML furni data was malformed: "
+      getscopeobject      1
+      getslot             1
+      add
+      pushtrue
+      getlex              QName(PackageNamespace("_-1lC"), "Core")
+      getproperty         QName(PackageNamespace(""), "_-6Ir")
+      callpropvoid        QName(PackageNamespace(""), "error"), 3
+
+      popscope
+      kill                3
+      debugline           88
+L63:
+      getscopeobject      1
+      getslot             5
+      pushnull
+      ifne                L70
+
+      returnvoid
+
+      ; 0xF0
+      ; 0x5E
+L70:
+      getscopeobject      1
+      getscopeobject      1
+      getslot             5
+      getproperty         Multiname("roomitemtypes", [PrivateNamespace("_-3S6"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-037"), PrivateNamespace("FurnitureDataParser.as$3158"), PackageInternalNs("_-037"), ProtectedNamespace("_-3S6"), StaticProtectedNs("_-3S6"), StaticProtectedNs("_-5dl")])
+      coerce              QName(PackageNamespace(""), "XMLList")
+      setslot             2
+
+      debugline           95
+      pushbyte            0
+      setlocal3
+
+      getscopeobject      1
+      getslot             2
+      getproperty         Multiname("furnitype", [PrivateNamespace("_-3S6"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-037"), PrivateNamespace("FurnitureDataParser.as$3158"), PackageInternalNs("_-037"), ProtectedNamespace("_-3S6"), StaticProtectedNs("_-3S6"), StaticProtectedNs("_-5dl")])
+      coerce_a
+      setlocal            4
+
+      jump                L111
+
+L85:
+      label
+      getscopeobject      1
+      getlocal            4
+      getlocal3
+      nextvalue
+      coerce              QName(PackageNamespace(""), "XML")
+      setslot             3
+
+      debugline           96
+      getscopeobject      1
+      getlocal0
+      getscopeobject      1
+      getslot             3
+      callproperty        QName(PrivateNamespace("_-3S6"), "_-1Xa"), 1
+      coerce              QName(PackageNamespace("_-037"), "_-sI")
+      setslot             4
+
+      debugline           97
+      getlocal0
+      getscopeobject      1
+      getslot             4
+      callpropvoid        QName(PrivateNamespace("_-3S6"), "_-1Wu"), 1
+
+      debugline           98
+      getlocal0
+      getscopeobject      1
+      getslot             4
+      callpropvoid        QName(PrivateNamespace("_-3S6"), "_-0sM"), 1
+
+      debugline           95
+L111:
+      hasnext2            4, 3
+      iftrue              L85
+
+      kill                4
+      kill                3
+      debugline           101
+      getscopeobject      1
+      getscopeobject      1
+      getslot             5
+      getproperty         Multiname("wallitemtypes", [PrivateNamespace("_-3S6"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-037"), PrivateNamespace("FurnitureDataParser.as$3158"), PackageInternalNs("_-037"), ProtectedNamespace("_-3S6"), StaticProtectedNs("_-3S6"), StaticProtectedNs("_-5dl")])
+      coerce              QName(PackageNamespace(""), "XMLList")
+      setslot             2
+
+      debugline           102
+      pushbyte            0
+      setlocal3
+
+      getscopeobject      1
+      getslot             2
+      getproperty         Multiname("furnitype", [PrivateNamespace("_-3S6"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-037"), PrivateNamespace("FurnitureDataParser.as$3158"), PackageInternalNs("_-037"), ProtectedNamespace("_-3S6"), StaticProtectedNs("_-3S6"), StaticProtectedNs("_-5dl")])
+      coerce_a
+      setlocal            4
+
+      jump                L157
+
+L131:
+      label
+      getscopeobject      1
+      getlocal            4
+      getlocal3
+      nextvalue
+      coerce              QName(PackageNamespace(""), "XML")
+      setslot             3
+
+      debugline           103
+      getscopeobject      1
+      getlocal0
+      getscopeobject      1
+      getslot             3
+      callproperty        QName(PrivateNamespace("_-3S6"), "_-0Os"), 1
+      coerce              QName(PackageNamespace("_-037"), "_-sI")
+      setslot             4
+
+      debugline           104
+      getlocal0
+      getscopeobject      1
+      getslot             4
+      callpropvoid        QName(PrivateNamespace("_-3S6"), "_-1Wu"), 1
+
+      debugline           105
+      getlocal0
+      getscopeobject      1
+      getslot             4
+      callpropvoid        QName(PrivateNamespace("_-3S6"), "_-0sM"), 1
+
+      debugline           102
+L157:
+      hasnext2            4, 3
+      iftrue              L131
+
+      kill                4
+      kill                3
+      debugline           108
+      findpropstrict      QName(PackageNamespace(""), "dispatchEvent")
+      findpropstrict      QName(PackageNamespace("flash.events"), "Event")
+      getlex              QName(PackageNamespace(""), "_-1QE")
+      constructprop       QName(PackageNamespace("flash.events"), "Event"), 1
+      callpropvoid        QName(PackageNamespace(""), "dispatchEvent"), 1
+
+      debugline           109
+      returnvoid
+     end ; code
+     try from L30 to L38 target L39 type QName(PackageNamespace(""), "Error") name QName(PackageNamespace(""), "e") end
+     trait slot QName(PackageInternalNs("_-037"), "data") slotid 1 type QName(PackageNamespace(""), "String") end
+     trait slot QName(PackageInternalNs("_-037"), "categoryTypes") slotid 2 type QName(PackageNamespace(""), "XMLList") end
+     trait slot QName(PackageInternalNs("_-037"), "itemXml") slotid 3 type QName(PackageNamespace(""), "XML") end
+     trait slot QName(PackageInternalNs("_-037"), "furniData") slotid 4 type QName(PackageNamespace("_-037"), "_-sI") end
+     trait slot QName(PackageInternalNs("_-037"), "xmlData") slotid 5 type QName(PackageNamespace(""), "XML") end
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-3S6"), "_-1Xa")
+   method
+    refid "_-037:FurnitureDataParser/instance/_-037:FurnitureDataParser/instance/_-1Xa"
+    param QName(PackageNamespace(""), "XML")
+    returns QName(PackageNamespace("_-037"), "_-sI")
+    body
+     maxstack 26
+     localcount 13
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           111
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace(""), "XML")
+      setlocal            4
+
+      pushnull
+      coerce_s
+      setlocal            5
+
+      pushnull
+      coerce              QName(PackageNamespace(""), "Array")
+      setlocal            6
+
+      pushnull
+      coerce_s
+      setlocal            7
+
+      pushbyte            0
+      setlocal            8
+
+      pushnull
+      coerce_s
+      setlocal            10
+
+      debug               1, "k", 0, 111
+      debug               1, "k", 1, 112
+      debug               1, "k", 2, 113
+      debug               1, "k", 3, 114
+      debug               1, "k", 4, 124
+      debug               1, "k", 5, 125
+      debug               1, "k", 6, 126
+      debug               1, "k", 7, 127
+      debug               1, "k", 8, 129
+      debugline           112
+      findpropstrict      QName(PackageNamespace(""), "parseInt")
+      getlocal1
+      getproperty         MultinameA("id", [PrivateNamespace("_-3S6"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-037"), PrivateNamespace("FurnitureDataParser.as$3158"), PackageInternalNs("_-037"), ProtectedNamespace("_-3S6"), StaticProtectedNs("_-3S6"), StaticProtectedNs("_-5dl")])
+      callproperty        QName(PackageNamespace(""), "parseInt"), 1
+      convert_i
+      setlocal2
+
+      debugline           113
+      findpropstrict      QName(PackageNamespace(""), "Array")
+      constructprop       QName(PackageNamespace(""), "Array"), 0
+      coerce              QName(PackageNamespace(""), "Array")
+      setlocal3
+
+      debugline           114
+      pushbyte            0
+      setlocal            11
+
+      getlocal1
+      getproperty         Multiname("partcolors", [PrivateNamespace("_-3S6"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-037"), PrivateNamespace("FurnitureDataParser.as$3158"), PackageInternalNs("_-037"), ProtectedNamespace("_-3S6"), StaticProtectedNs("_-3S6"), StaticProtectedNs("_-5dl")])
+      getproperty         Multiname("color", [PrivateNamespace("_-3S6"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-037"), PrivateNamespace("FurnitureDataParser.as$3158"), PackageInternalNs("_-037"), ProtectedNamespace("_-3S6"), StaticProtectedNs("_-3S6"), StaticProtectedNs("_-5dl")])
+      coerce_a
+      setlocal            12
+
+      jump                L92
+
+L51:
+      label
+      getlocal            12
+      getlocal            11
+      nextvalue
+      coerce              QName(PackageNamespace(""), "XML")
+      setlocal            4
+
+      debug               1, "k", 9, 115
+      debugline           115
+      getlocal            4
+      coerce_s
+      setlocal            10
+
+      debugline           116
+      getlocal            10
+      pushbyte            0
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "charAt"), 1
+      pushstring          "#"
+      ifne                L85
+
+      debugline           117
+      getlocal            10
+      pushstring          "#"
+      pushstring          ""
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "replace"), 2
+      coerce_s
+      setlocal            10
+
+      debugline           118
+      getlocal3
+      findpropstrict      QName(PackageNamespace(""), "parseInt")
+      getlocal            10
+      pushbyte            16
+      callproperty        QName(PackageNamespace(""), "parseInt"), 2
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      jump                L92
+
+      ; 0xF0
+      ; 0x78
+L85:
+      getlocal3
+      findpropstrict      QName(PackageNamespace(""), "parseInt")
+      getlocal            10
+      callproperty        QName(PackageNamespace(""), "parseInt"), 1
+      negate
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      debugline           114
+L92:
+      hasnext2            12, 11
+      iftrue              L51
+
+      kill                12
+      kill                11
+      debugline           124
+      getlocal1
+      getproperty         MultinameA("classname", [PrivateNamespace("_-3S6"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-037"), PrivateNamespace("FurnitureDataParser.as$3158"), PackageInternalNs("_-037"), ProtectedNamespace("_-3S6"), StaticProtectedNs("_-3S6"), StaticProtectedNs("_-5dl")])
+      coerce_s
+      setlocal            5
+
+      debugline           125
+      getlocal            5
+      pushstring          "*"
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "split"), 1
+      coerce              QName(PackageNamespace(""), "Array")
+      setlocal            6
+
+      debugline           126
+      getlocal            6
+      pushbyte            0
+      getproperty         MultinameL([PrivateNamespace("_-3S6"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-037"), PrivateNamespace("FurnitureDataParser.as$3158"), PackageInternalNs("_-037"), ProtectedNamespace("_-3S6"), StaticProtectedNs("_-3S6"), StaticProtectedNs("_-5dl")])
+      coerce_s
+      setlocal            7
+
+      debugline           127
+      getlocal            6
+      getproperty         QName(PackageNamespace(""), "length")
+      pushbyte            1
+      ifngt               L125
+
+      findpropstrict      QName(PackageNamespace(""), "parseInt")
+      getlocal            6
+      pushbyte            1
+      getproperty         MultinameL([PrivateNamespace("_-3S6"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-037"), PrivateNamespace("FurnitureDataParser.as$3158"), PackageInternalNs("_-037"), ProtectedNamespace("_-3S6"), StaticProtectedNs("_-3S6"), StaticProtectedNs("_-5dl")])
+      callproperty        QName(PackageNamespace(""), "parseInt"), 1
+      convert_i
+      jump                L126
+
+L125:
+      pushbyte            0
+L126:
+      convert_i
+      setlocal            8
+
+      debugline           129
+      findpropstrict      QName(PackageNamespace("_-037"), "_-sI")
+      debugline           129
+      getlex              QName(PackageNamespace("_-037"), "_-sI")
+      getproperty         QName(PackageNamespace(""), "_-kw")
+      getlocal2
+      getlocal            5
+      getlocal            7
+      getlocal1
+      getproperty         Multiname("name", [PrivateNamespace("_-3S6"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-037"), PrivateNamespace("FurnitureDataParser.as$3158"), PackageInternalNs("_-037"), ProtectedNamespace("_-3S6"), StaticProtectedNs("_-3S6"), StaticProtectedNs("_-5dl")])
+      getlocal1
+      getproperty         Multiname("description", [PrivateNamespace("_-3S6"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-037"), PrivateNamespace("FurnitureDataParser.as$3158"), PackageInternalNs("_-037"), ProtectedNamespace("_-3S6"), StaticProtectedNs("_-3S6"), StaticProtectedNs("_-5dl")])
+      getlocal1
+      getproperty         Multiname("revision", [PrivateNamespace("_-3S6"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-037"), PrivateNamespace("FurnitureDataParser.as$3158"), PackageInternalNs("_-037"), ProtectedNamespace("_-3S6"), StaticProtectedNs("_-3S6"), StaticProtectedNs("_-5dl")])
+      getlocal1
+      getproperty         Multiname("xdim", [PrivateNamespace("_-3S6"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-037"), PrivateNamespace("FurnitureDataParser.as$3158"), PackageInternalNs("_-037"), ProtectedNamespace("_-3S6"), StaticProtectedNs("_-3S6"), StaticProtectedNs("_-5dl")])
+      getlocal1
+      getproperty         Multiname("ydim", [PrivateNamespace("_-3S6"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-037"), PrivateNamespace("FurnitureDataParser.as$3158"), PackageInternalNs("_-037"), ProtectedNamespace("_-3S6"), StaticProtectedNs("_-3S6"), StaticProtectedNs("_-5dl")])
+      pushbyte            0
+      getlocal3
+      getlocal            8
+      getlocal1
+      getproperty         Multiname("adurl", [PrivateNamespace("_-3S6"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-037"), PrivateNamespace("FurnitureDataParser.as$3158"), PackageInternalNs("_-037"), ProtectedNamespace("_-3S6"), StaticProtectedNs("_-3S6"), StaticProtectedNs("_-5dl")])
+      getlocal1
+      getproperty         Multiname("offerid", [PrivateNamespace("_-3S6"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-037"), PrivateNamespace("FurnitureDataParser.as$3158"), PackageInternalNs("_-037"), ProtectedNamespace("_-3S6"), StaticProtectedNs("_-3S6"), StaticProtectedNs("_-5dl")])
+      getlocal1
+      getproperty         Multiname("buyout", [PrivateNamespace("_-3S6"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-037"), PrivateNamespace("FurnitureDataParser.as$3158"), PackageInternalNs("_-037"), ProtectedNamespace("_-3S6"), StaticProtectedNs("_-3S6"), StaticProtectedNs("_-5dl")])
+      pushstring          "1"
+      equals
+      getlocal1
+      getproperty         Multiname("rentofferid", [PrivateNamespace("_-3S6"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-037"), PrivateNamespace("FurnitureDataParser.as$3158"), PackageInternalNs("_-037"), ProtectedNamespace("_-3S6"), StaticProtectedNs("_-3S6"), StaticProtectedNs("_-5dl")])
+      getlocal1
+      getproperty         Multiname("rentbuyout", [PrivateNamespace("_-3S6"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-037"), PrivateNamespace("FurnitureDataParser.as$3158"), PackageInternalNs("_-037"), ProtectedNamespace("_-3S6"), StaticProtectedNs("_-3S6"), StaticProtectedNs("_-5dl")])
+      pushstring          "1"
+      equals
+      getlocal1
+      getproperty         Multiname("bc", [PrivateNamespace("_-3S6"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-037"), PrivateNamespace("FurnitureDataParser.as$3158"), PackageInternalNs("_-037"), ProtectedNamespace("_-3S6"), StaticProtectedNs("_-3S6"), StaticProtectedNs("_-5dl")])
+      pushstring          "1"
+      equals
+      getlocal1
+      getproperty         Multiname("customparams", [PrivateNamespace("_-3S6"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-037"), PrivateNamespace("FurnitureDataParser.as$3158"), PackageInternalNs("_-037"), ProtectedNamespace("_-3S6"), StaticProtectedNs("_-3S6"), StaticProtectedNs("_-5dl")])
+      getlocal1
+      getproperty         Multiname("specialtype", [PrivateNamespace("_-3S6"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-037"), PrivateNamespace("FurnitureDataParser.as$3158"), PackageInternalNs("_-037"), ProtectedNamespace("_-3S6"), StaticProtectedNs("_-3S6"), StaticProtectedNs("_-5dl")])
+      getlocal1
+      getproperty         Multiname("canstandon", [PrivateNamespace("_-3S6"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-037"), PrivateNamespace("FurnitureDataParser.as$3158"), PackageInternalNs("_-037"), ProtectedNamespace("_-3S6"), StaticProtectedNs("_-3S6"), StaticProtectedNs("_-5dl")])
+      pushstring          "1"
+      equals
+      getlocal1
+      getproperty         Multiname("cansiton", [PrivateNamespace("_-3S6"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-037"), PrivateNamespace("FurnitureDataParser.as$3158"), PackageInternalNs("_-037"), ProtectedNamespace("_-3S6"), StaticProtectedNs("_-3S6"), StaticProtectedNs("_-5dl")])
+      pushstring          "1"
+      equals
+      getlocal1
+      getproperty         Multiname("canlayon", [PrivateNamespace("_-3S6"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-037"), PrivateNamespace("FurnitureDataParser.as$3158"), PackageInternalNs("_-037"), ProtectedNamespace("_-3S6"), StaticProtectedNs("_-3S6"), StaticProtectedNs("_-5dl")])
+      pushstring          "1"
+      equals
+      debugline           130
+      getlocal1
+      getproperty         Multiname("excludeddynamic", [PrivateNamespace("_-3S6"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-037"), PrivateNamespace("FurnitureDataParser.as$3158"), PackageInternalNs("_-037"), ProtectedNamespace("_-3S6"), StaticProtectedNs("_-3S6"), StaticProtectedNs("_-5dl")])
+      pushstring          "1"
+      equals
+      constructprop       QName(PackageNamespace("_-037"), "_-sI"), 24
+      coerce              QName(PackageNamespace("_-037"), "_-sI")
+      setlocal            9
+
+      debugline           132
+      getlocal            9
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-3S6"), "_-0Os")
+   method
+    refid "_-037:FurnitureDataParser/instance/_-037:FurnitureDataParser/instance/_-0Os"
+    param QName(PackageNamespace(""), "XML")
+    returns QName(PackageNamespace("_-037"), "_-sI")
+    body
+     maxstack 26
+     localcount 4
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           135
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 135
+      debug               1, "k", 1, 136
+      debug               1, "k", 2, 137
+      debugline           136
+      findpropstrict      QName(PackageNamespace(""), "parseInt")
+      getlocal1
+      getproperty         MultinameA("id", [PrivateNamespace("_-3S6"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-037"), PrivateNamespace("FurnitureDataParser.as$3158"), PackageInternalNs("_-037"), ProtectedNamespace("_-3S6"), StaticProtectedNs("_-3S6"), StaticProtectedNs("_-5dl")])
+      callproperty        QName(PackageNamespace(""), "parseInt"), 1
+      convert_i
+      setlocal2
+
+      debugline           137
+      findpropstrict      QName(PackageNamespace("_-037"), "_-sI")
+      debugline           137
+      getlex              QName(PackageNamespace("_-037"), "_-sI")
+      getproperty         QName(PackageNamespace(""), "_-5zw")
+      getlocal2
+      getlocal1
+      getproperty         MultinameA("classname", [PrivateNamespace("_-3S6"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-037"), PrivateNamespace("FurnitureDataParser.as$3158"), PackageInternalNs("_-037"), ProtectedNamespace("_-3S6"), StaticProtectedNs("_-3S6"), StaticProtectedNs("_-5dl")])
+      getlocal1
+      getproperty         MultinameA("classname", [PrivateNamespace("_-3S6"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-037"), PrivateNamespace("FurnitureDataParser.as$3158"), PackageInternalNs("_-037"), ProtectedNamespace("_-3S6"), StaticProtectedNs("_-3S6"), StaticProtectedNs("_-5dl")])
+      getlocal1
+      getproperty         Multiname("name", [PrivateNamespace("_-3S6"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-037"), PrivateNamespace("FurnitureDataParser.as$3158"), PackageInternalNs("_-037"), ProtectedNamespace("_-3S6"), StaticProtectedNs("_-3S6"), StaticProtectedNs("_-5dl")])
+      getlocal1
+      getproperty         Multiname("description", [PrivateNamespace("_-3S6"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-037"), PrivateNamespace("FurnitureDataParser.as$3158"), PackageInternalNs("_-037"), ProtectedNamespace("_-3S6"), StaticProtectedNs("_-3S6"), StaticProtectedNs("_-5dl")])
+      getlocal1
+      getproperty         Multiname("revision", [PrivateNamespace("_-3S6"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-037"), PrivateNamespace("FurnitureDataParser.as$3158"), PackageInternalNs("_-037"), ProtectedNamespace("_-3S6"), StaticProtectedNs("_-3S6"), StaticProtectedNs("_-5dl")])
+      pushbyte            0
+      dup
+      dup
+      pushnull
+      pushbyte            0
+      getlocal1
+      getproperty         Multiname("adurl", [PrivateNamespace("_-3S6"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-037"), PrivateNamespace("FurnitureDataParser.as$3158"), PackageInternalNs("_-037"), ProtectedNamespace("_-3S6"), StaticProtectedNs("_-3S6"), StaticProtectedNs("_-5dl")])
+      getlocal1
+      getproperty         Multiname("offerid", [PrivateNamespace("_-3S6"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-037"), PrivateNamespace("FurnitureDataParser.as$3158"), PackageInternalNs("_-037"), ProtectedNamespace("_-3S6"), StaticProtectedNs("_-3S6"), StaticProtectedNs("_-5dl")])
+      getlocal1
+      getproperty         Multiname("buyout", [PrivateNamespace("_-3S6"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-037"), PrivateNamespace("FurnitureDataParser.as$3158"), PackageInternalNs("_-037"), ProtectedNamespace("_-3S6"), StaticProtectedNs("_-3S6"), StaticProtectedNs("_-5dl")])
+      pushstring          "1"
+      equals
+      getlocal1
+      getproperty         Multiname("rentofferid", [PrivateNamespace("_-3S6"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-037"), PrivateNamespace("FurnitureDataParser.as$3158"), PackageInternalNs("_-037"), ProtectedNamespace("_-3S6"), StaticProtectedNs("_-3S6"), StaticProtectedNs("_-5dl")])
+      getlocal1
+      getproperty         Multiname("rentbuyout", [PrivateNamespace("_-3S6"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-037"), PrivateNamespace("FurnitureDataParser.as$3158"), PackageInternalNs("_-037"), ProtectedNamespace("_-3S6"), StaticProtectedNs("_-3S6"), StaticProtectedNs("_-5dl")])
+      pushstring          "1"
+      equals
+      getlocal1
+      getproperty         Multiname("bc", [PrivateNamespace("_-3S6"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-037"), PrivateNamespace("FurnitureDataParser.as$3158"), PackageInternalNs("_-037"), ProtectedNamespace("_-3S6"), StaticProtectedNs("_-3S6"), StaticProtectedNs("_-5dl")])
+      pushstring          "1"
+      equals
+      pushnull
+      getlocal1
+      getproperty         Multiname("specialtype", [PrivateNamespace("_-3S6"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-037"), PrivateNamespace("FurnitureDataParser.as$3158"), PackageInternalNs("_-037"), ProtectedNamespace("_-3S6"), StaticProtectedNs("_-3S6"), StaticProtectedNs("_-5dl")])
+      pushfalse
+      pushfalse
+      pushfalse
+      debugline           138
+      getlocal1
+      getproperty         Multiname("excludeddynamic", [PrivateNamespace("_-3S6"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-037"), PrivateNamespace("FurnitureDataParser.as$3158"), PackageInternalNs("_-037"), ProtectedNamespace("_-3S6"), StaticProtectedNs("_-3S6"), StaticProtectedNs("_-5dl")])
+      pushstring          "1"
+      equals
+      constructprop       QName(PackageNamespace("_-037"), "_-sI"), 24
+      coerce              QName(PackageNamespace("_-037"), "_-sI")
+      setlocal3
+
+      debugline           139
+      getlocal3
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-3S6"), "_-6GJ")
+   method
+    refid "_-037:FurnitureDataParser/instance/_-037:FurnitureDataParser/instance/_-6GJ"
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 25
+     localcount 45
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           142
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce_s
+      setlocal            7
+
+      pushnull
+      coerce              QName(PackageNamespace(""), "Array")
+      setlocal            8
+
+      pushnull
+      coerce_s
+      setlocal            9
+
+      pushnull
+      coerce              QName(PackageNamespace(""), "Array")
+      setlocal            10
+
+      pushnull
+      coerce_s
+      setlocal            11
+
+      pushbyte            0
+      setlocal            12
+
+      pushnull
+      coerce_s
+      setlocal            13
+
+      pushnull
+      coerce              QName(PackageNamespace(""), "Array")
+      setlocal            14
+
+      pushnull
+      coerce_s
+      setlocal            15
+
+      pushbyte            0
+      setlocal            16
+
+      pushbyte            0
+      setlocal            17
+
+      pushbyte            0
+      setlocal            18
+
+      pushbyte            0
+      setlocal            19
+
+      pushbyte            0
+      setlocal            20
+
+      pushnull
+      coerce              QName(PackageNamespace(""), "Array")
+      setlocal            21
+
+      pushnull
+      coerce              QName(PackageNamespace(""), "Array")
+      setlocal            22
+
+      pushbyte            0
+      setlocal            23
+
+      pushnull
+      coerce_s
+      setlocal            24
+
+      pushnull
+      coerce_s
+      setlocal            25
+
+      pushnull
+      coerce_s
+      setlocal            26
+
+      pushbyte            0
+      setlocal            27
+
+      pushfalse
+      setlocal            28
+
+      pushbyte            0
+      setlocal            29
+
+      pushfalse
+      setlocal            30
+
+      pushnull
+      coerce_s
+      setlocal            31
+
+      pushbyte            0
+      setlocal            32
+
+      pushfalse
+      setlocal            33
+
+      pushfalse
+      setlocal            34
+
+      pushfalse
+      setlocal            35
+
+      pushfalse
+      setlocal            36
+
+      pushfalse
+      setlocal            37
+
+      pushfalse
+      setlocal            38
+
+      pushnull
+      coerce              QName(PackageNamespace("_-037"), "_-sI")
+      setlocal            39
+
+      pushnull
+      coerce_s
+      setlocal            40
+
+      debug               1, "k", 0, 142
+      debug               1, "k", 1, 144
+      debug               1, "k", 2, 145
+      debug               1, "k", 3, 146
+      debug               1, "k", 4, 151
+      debug               1, "k", 5, 152
+      debug               1, "k", 6, 153
+      debugline           144
+      getlex              QName(PackageNamespace(""), "RegExp")
+      pushstring          "\\n\\r{1,}|\\n{1,}|\\r{1,}"
+      pushstring          "mg"
+      construct           2
+      coerce              QName(PackageNamespace(""), "RegExp")
+      setlocal2
+
+      debugline           145
+      getlex              QName(PackageNamespace(""), "RegExp")
+      pushstring          "^\\s+|\\s+$"
+      pushstring          "g"
+      construct           2
+      coerce              QName(PackageNamespace(""), "RegExp")
+      setlocal3
+
+      debugline           146
+      getlex              QName(PackageNamespace(""), "RegExp")
+      pushstring          "\\[+?((.)*?)\\]"
+      pushstring          "g"
+      construct           2
+      coerce              QName(PackageNamespace(""), "RegExp")
+      setlocal            4
+
+      debugline           151
+      getlocal1
+      getlocal2
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "split"), 1
+      coerce              QName(PackageNamespace(""), "Array")
+      setlocal            5
+
+      debugline           152
+      pushbyte            0
+      setlocal            6
+
+      debugline           153
+      pushbyte            0
+      setlocal            41
+
+      getlocal            5
+      coerce_a
+      setlocal            42
+
+      jump                L579
+
+L132:
+      label
+      getlocal            42
+      getlocal            41
+      nextvalue
+      coerce_s
+      setlocal            7
+
+      debug               1, "k", 7, 155
+      debug               1, "k", 8, 158
+      debugline           155
+      getlocal            7
+      getlocal            4
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "match"), 1
+      coerce              QName(PackageNamespace(""), "Array")
+      setlocal            8
+
+      debugline           158
+      pushbyte            0
+      setlocal            43
+
+      getlocal            8
+      coerce_a
+      setlocal            44
+
+      jump                L572
+
+L153:
+      label
+      getlocal            44
+      getlocal            43
+      nextvalue
+      coerce_s
+      setlocal            9
+
+      debug               1, "k", 9, 165
+      debug               1, "k", 10, 176
+      debug               1, "k", 11, 177
+      debug               1, "k", 12, 178
+      debug               1, "k", 13, 179
+      debug               1, "k", 14, 180
+      debug               1, "k", 15, 181
+      debug               1, "k", 16, 182
+      debug               1, "k", 17, 183
+      debug               1, "k", 18, 184
+      debug               1, "k", 19, 185
+      debug               1, "k", 20, 186
+      debug               1, "k", 21, 187
+      debug               1, "k", 22, 188
+      debug               1, "k", 23, 200
+      debug               1, "k", 24, 201
+      debug               1, "k", 25, 202
+      debug               1, "k", 26, 203
+      debug               1, "k", 27, 204
+      debug               1, "k", 28, 205
+      debug               1, "k", 29, 206
+      debug               1, "k", 30, 207
+      debug               1, "k", 31, 208
+      debug               1, "k", 32, 209
+      debug               1, "k", 33, 211
+      debug               1, "k", 34, 212
+      debug               1, "k", 35, 213
+      debug               1, "k", 36, 215
+      debug               1, "k", 37, 216
+      debug               1, "k", 38, 233
+      debugline           161
+      getlocal            9
+      getlex              QName(PackageNamespace(""), "RegExp")
+      pushstring          "\\[{1,}"
+      pushstring          "mg"
+      construct           2
+      pushstring          ""
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "replace"), 2
+      coerce_s
+      setlocal            9
+
+      debugline           162
+      getlocal            9
+      getlex              QName(PackageNamespace(""), "RegExp")
+      pushstring          "\\]{1,}"
+      pushstring          "mg"
+      construct           2
+      pushstring          ""
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "replace"), 2
+      coerce_s
+      setlocal            9
+
+      debugline           165
+      getlocal            9
+      pushstring          "\""
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "split"), 1
+      coerce              QName(PackageNamespace(""), "Array")
+      setlocal            10
+
+      debugline           166
+      getlocal0
+      getlocal            10
+      pushstring          ", "
+      callpropvoid        QName(PrivateNamespace("_-3S6"), "_-309"), 2
+
+      debugline           167
+      getlocal0
+      getlocal            10
+      pushstring          ","
+      callpropvoid        QName(PrivateNamespace("_-3S6"), "_-309"), 2
+
+      debugline           168
+      getlocal            10
+      pushbyte            0
+      pushbyte            1
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "splice"), 2
+
+      debugline           169
+      getlocal            10
+      getlocal            10
+      getproperty         QName(PackageNamespace(""), "length")
+      decrement
+      pushbyte            1
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "splice"), 2
+
+      debugline           171
+      getlocal            10
+      getproperty         QName(PackageNamespace(""), "length")
+      pushbyte            18
+      ifnlt               L256
+
+      debugline           172
+      getlex              QName(PackageNamespace("_-1lC"), "Core")
+      pushstring          "Lingo furni data was malformed: "
+      getlocal1
+      add
+      pushtrue
+      getlex              QName(PackageNamespace("_-1lC"), "Core")
+      getproperty         QName(PackageNamespace(""), "_-6Ir")
+      callpropvoid        QName(PackageNamespace(""), "error"), 3
+
+      debugline           173
+      returnvoid
+
+      ; 0xF0
+      ; 0xB0
+      ; 0x01
+L256:
+      getlocal            10
+      pushbyte            0
+      getproperty         MultinameL([PrivateNamespace("_-3S6"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-037"), PrivateNamespace("FurnitureDataParser.as$3158"), PackageInternalNs("_-037"), ProtectedNamespace("_-3S6"), StaticProtectedNs("_-3S6"), StaticProtectedNs("_-5dl")])
+      coerce_s
+      setlocal            11
+
+      debugline           177
+      findpropstrict      QName(PackageNamespace(""), "parseInt")
+      getlocal            10
+      pushbyte            1
+      getproperty         MultinameL([PrivateNamespace("_-3S6"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-037"), PrivateNamespace("FurnitureDataParser.as$3158"), PackageInternalNs("_-037"), ProtectedNamespace("_-3S6"), StaticProtectedNs("_-3S6"), StaticProtectedNs("_-5dl")])
+      callproperty        QName(PackageNamespace(""), "parseInt"), 1
+      convert_i
+      setlocal            12
+
+      debugline           178
+      findpropstrict      QName(PackageNamespace(""), "String")
+      getlocal            10
+      pushbyte            2
+      getproperty         MultinameL([PrivateNamespace("_-3S6"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-037"), PrivateNamespace("FurnitureDataParser.as$3158"), PackageInternalNs("_-037"), ProtectedNamespace("_-3S6"), StaticProtectedNs("_-3S6"), StaticProtectedNs("_-5dl")])
+      callproperty        QName(PackageNamespace(""), "String"), 1
+      coerce_s
+      setlocal            13
+
+      debugline           179
+      getlocal            13
+      pushstring          "*"
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "split"), 1
+      coerce              QName(PackageNamespace(""), "Array")
+      setlocal            14
+
+      debugline           180
+      getlocal            14
+      pushbyte            0
+      getproperty         MultinameL([PrivateNamespace("_-3S6"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-037"), PrivateNamespace("FurnitureDataParser.as$3158"), PackageInternalNs("_-037"), ProtectedNamespace("_-3S6"), StaticProtectedNs("_-3S6"), StaticProtectedNs("_-5dl")])
+      coerce_s
+      setlocal            15
+
+      debugline           181
+      getlocal            14
+      getproperty         QName(PackageNamespace(""), "length")
+      pushbyte            1
+      ifngt               L301
+
+      findpropstrict      QName(PackageNamespace(""), "parseInt")
+      getlocal            14
+      pushbyte            1
+      getproperty         MultinameL([PrivateNamespace("_-3S6"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-037"), PrivateNamespace("FurnitureDataParser.as$3158"), PackageInternalNs("_-037"), ProtectedNamespace("_-3S6"), StaticProtectedNs("_-3S6"), StaticProtectedNs("_-5dl")])
+      callproperty        QName(PackageNamespace(""), "parseInt"), 1
+      convert_i
+      jump                L302
+
+L301:
+      pushbyte            0
+L302:
+      convert_i
+      setlocal            16
+
+      debugline           182
+      findpropstrict      QName(PackageNamespace(""), "parseInt")
+      getlocal            10
+      pushbyte            3
+      getproperty         MultinameL([PrivateNamespace("_-3S6"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-037"), PrivateNamespace("FurnitureDataParser.as$3158"), PackageInternalNs("_-037"), ProtectedNamespace("_-3S6"), StaticProtectedNs("_-3S6"), StaticProtectedNs("_-5dl")])
+      callproperty        QName(PackageNamespace(""), "parseInt"), 1
+      convert_i
+      setlocal            17
+
+      debugline           183
+      findpropstrict      QName(PackageNamespace(""), "parseInt")
+      getlocal            10
+      pushbyte            4
+      getproperty         MultinameL([PrivateNamespace("_-3S6"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-037"), PrivateNamespace("FurnitureDataParser.as$3158"), PackageInternalNs("_-037"), ProtectedNamespace("_-3S6"), StaticProtectedNs("_-3S6"), StaticProtectedNs("_-5dl")])
+      callproperty        QName(PackageNamespace(""), "parseInt"), 1
+      convert_i
+      setlocal            18
+
+      debugline           184
+      findpropstrict      QName(PackageNamespace(""), "parseInt")
+      getlocal            10
+      pushbyte            5
+      getproperty         MultinameL([PrivateNamespace("_-3S6"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-037"), PrivateNamespace("FurnitureDataParser.as$3158"), PackageInternalNs("_-037"), ProtectedNamespace("_-3S6"), StaticProtectedNs("_-3S6"), StaticProtectedNs("_-5dl")])
+      callproperty        QName(PackageNamespace(""), "parseInt"), 1
+      convert_i
+      setlocal            19
+
+      debugline           185
+      findpropstrict      QName(PackageNamespace(""), "parseInt")
+      getlocal            10
+      pushbyte            6
+      getproperty         MultinameL([PrivateNamespace("_-3S6"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-037"), PrivateNamespace("FurnitureDataParser.as$3158"), PackageInternalNs("_-037"), ProtectedNamespace("_-3S6"), StaticProtectedNs("_-3S6"), StaticProtectedNs("_-5dl")])
+      callproperty        QName(PackageNamespace(""), "parseInt"), 1
+      convert_i
+      setlocal            20
+
+      debugline           186
+      newarray            0
+      coerce              QName(PackageNamespace(""), "Array")
+      setlocal            21
+
+      debugline           187
+      getlocal            10
+      pushbyte            7
+      getproperty         MultinameL([PrivateNamespace("_-3S6"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-037"), PrivateNamespace("FurnitureDataParser.as$3158"), PackageInternalNs("_-037"), ProtectedNamespace("_-3S6"), StaticProtectedNs("_-3S6"), StaticProtectedNs("_-5dl")])
+      pushstring          ","
+      callproperty        Multiname("split", [PrivateNamespace("_-3S6"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-037"), PrivateNamespace("FurnitureDataParser.as$3158"), PackageInternalNs("_-037"), ProtectedNamespace("_-3S6"), StaticProtectedNs("_-3S6"), StaticProtectedNs("_-5dl")]), 1
+      coerce              QName(PackageNamespace(""), "Array")
+      setlocal            22
+
+      debugline           188
+      pushbyte            0
+      setlocal            23
+
+      jump                L393
+
+L352:
+      label
+      debug               1, "k", 39, 190
+      debugline           190
+      getlocal            22
+      getlocal            23
+      getproperty         MultinameL([PrivateNamespace("_-3S6"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-037"), PrivateNamespace("FurnitureDataParser.as$3158"), PackageInternalNs("_-037"), ProtectedNamespace("_-3S6"), StaticProtectedNs("_-3S6"), StaticProtectedNs("_-5dl")])
+      coerce_s
+      setlocal            40
+
+      debugline           191
+      getlocal            40
+      pushbyte            0
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "charAt"), 1
+      pushstring          "#"
+      ifne                L384
+
+      debugline           192
+      getlocal            40
+      pushstring          "#"
+      pushstring          ""
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "replace"), 2
+      coerce_s
+      setlocal            40
+
+      debugline           193
+      getlocal            21
+      findpropstrict      QName(PackageNamespace(""), "parseInt")
+      getlocal            40
+      pushbyte            16
+      callproperty        QName(PackageNamespace(""), "parseInt"), 2
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      jump                L391
+
+      ; 0xF0
+      ; 0xC3
+      ; 0x01
+L384:
+      getlocal            21
+      findpropstrict      QName(PackageNamespace(""), "parseInt")
+      getlocal            40
+      callproperty        QName(PackageNamespace(""), "parseInt"), 1
+      negate
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      debugline           197
+L391:
+      inclocal_i          23
+      debugline           189
+L393:
+      getlocal            23
+      getlocal            22
+      getproperty         QName(PackageNamespace(""), "length")
+      iflt                L352
+
+      debugline           200
+      getlocal            10
+      pushbyte            8
+      getproperty         MultinameL([PrivateNamespace("_-3S6"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-037"), PrivateNamespace("FurnitureDataParser.as$3158"), PackageInternalNs("_-037"), ProtectedNamespace("_-3S6"), StaticProtectedNs("_-3S6"), StaticProtectedNs("_-5dl")])
+      coerce_s
+      setlocal            24
+
+      debugline           201
+      getlocal            10
+      pushbyte            9
+      getproperty         MultinameL([PrivateNamespace("_-3S6"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-037"), PrivateNamespace("FurnitureDataParser.as$3158"), PackageInternalNs("_-037"), ProtectedNamespace("_-3S6"), StaticProtectedNs("_-3S6"), StaticProtectedNs("_-5dl")])
+      coerce_s
+      setlocal            25
+
+      debugline           202
+      getlocal            10
+      pushbyte            10
+      getproperty         MultinameL([PrivateNamespace("_-3S6"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-037"), PrivateNamespace("FurnitureDataParser.as$3158"), PackageInternalNs("_-037"), ProtectedNamespace("_-3S6"), StaticProtectedNs("_-3S6"), StaticProtectedNs("_-5dl")])
+      coerce_s
+      setlocal            26
+
+      debugline           203
+      findpropstrict      QName(PackageNamespace(""), "parseInt")
+      getlocal            10
+      pushbyte            11
+      getproperty         MultinameL([PrivateNamespace("_-3S6"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-037"), PrivateNamespace("FurnitureDataParser.as$3158"), PackageInternalNs("_-037"), ProtectedNamespace("_-3S6"), StaticProtectedNs("_-3S6"), StaticProtectedNs("_-5dl")])
+      callproperty        QName(PackageNamespace(""), "parseInt"), 1
+      convert_i
+      setlocal            27
+
+      debugline           204
+      getlocal            10
+      pushbyte            12
+      getproperty         MultinameL([PrivateNamespace("_-3S6"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-037"), PrivateNamespace("FurnitureDataParser.as$3158"), PackageInternalNs("_-037"), ProtectedNamespace("_-3S6"), StaticProtectedNs("_-3S6"), StaticProtectedNs("_-5dl")])
+      pushstring          "true"
+      equals
+      setlocal            28
+
+      debugline           205
+      findpropstrict      QName(PackageNamespace(""), "parseInt")
+      getlocal            10
+      pushbyte            13
+      getproperty         MultinameL([PrivateNamespace("_-3S6"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-037"), PrivateNamespace("FurnitureDataParser.as$3158"), PackageInternalNs("_-037"), ProtectedNamespace("_-3S6"), StaticProtectedNs("_-3S6"), StaticProtectedNs("_-5dl")])
+      callproperty        QName(PackageNamespace(""), "parseInt"), 1
+      convert_i
+      setlocal            29
+
+      debugline           206
+      getlocal            10
+      pushbyte            14
+      getproperty         MultinameL([PrivateNamespace("_-3S6"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-037"), PrivateNamespace("FurnitureDataParser.as$3158"), PackageInternalNs("_-037"), ProtectedNamespace("_-3S6"), StaticProtectedNs("_-3S6"), StaticProtectedNs("_-5dl")])
+      pushstring          "true"
+      equals
+      setlocal            30
+
+      debugline           207
+      getlocal            10
+      pushbyte            15
+      getproperty         MultinameL([PrivateNamespace("_-3S6"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-037"), PrivateNamespace("FurnitureDataParser.as$3158"), PackageInternalNs("_-037"), ProtectedNamespace("_-3S6"), StaticProtectedNs("_-3S6"), StaticProtectedNs("_-5dl")])
+      coerce_s
+      setlocal            31
+
+      debugline           208
+      findpropstrict      QName(PackageNamespace(""), "parseInt")
+      getlocal            10
+      pushbyte            16
+      getproperty         MultinameL([PrivateNamespace("_-3S6"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-037"), PrivateNamespace("FurnitureDataParser.as$3158"), PackageInternalNs("_-037"), ProtectedNamespace("_-3S6"), StaticProtectedNs("_-3S6"), StaticProtectedNs("_-5dl")])
+      callproperty        QName(PackageNamespace(""), "parseInt"), 1
+      convert_i
+      setlocal            32
+
+      debugline           209
+      getlocal            10
+      pushbyte            17
+      getproperty         MultinameL([PrivateNamespace("_-3S6"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-037"), PrivateNamespace("FurnitureDataParser.as$3158"), PackageInternalNs("_-037"), ProtectedNamespace("_-3S6"), StaticProtectedNs("_-3S6"), StaticProtectedNs("_-5dl")])
+      pushstring          "true"
+      equals
+      setlocal            33
+
+      debugline           215
+      pushfalse
+      setlocal            37
+
+      debugline           216
+      getlocal            11
+      pushstring          "i"
+      equals
+      setlocal            38
+
+      debugline           217
+      getlocal            38
+      iffalse             L502
+
+      debugline           218
+      pushfalse
+      setlocal            34
+
+      debugline           219
+      pushfalse
+      setlocal            35
+
+      debugline           220
+      pushfalse
+      setlocal            36
+
+      debugline           221
+      getlocal            10
+      getproperty         QName(PackageNamespace(""), "length")
+      pushbyte            19
+      ifnge               L498
+
+      debugline           222
+      getlocal            10
+      pushbyte            18
+      getproperty         MultinameL([PrivateNamespace("_-3S6"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-037"), PrivateNamespace("FurnitureDataParser.as$3158"), PackageInternalNs("_-037"), ProtectedNamespace("_-3S6"), StaticProtectedNs("_-3S6"), StaticProtectedNs("_-5dl")])
+      pushstring          "1"
+      equals
+      setlocal            37
+
+L498:
+      jump                L535
+
+      ; 0xF0
+      ; 0xE1
+      ; 0x01
+L502:
+      getlocal            10
+      pushbyte            18
+      getproperty         MultinameL([PrivateNamespace("_-3S6"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-037"), PrivateNamespace("FurnitureDataParser.as$3158"), PackageInternalNs("_-037"), ProtectedNamespace("_-3S6"), StaticProtectedNs("_-3S6"), StaticProtectedNs("_-5dl")])
+      pushstring          "1"
+      equals
+      setlocal            34
+
+      debugline           226
+      getlocal            10
+      pushbyte            19
+      getproperty         MultinameL([PrivateNamespace("_-3S6"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-037"), PrivateNamespace("FurnitureDataParser.as$3158"), PackageInternalNs("_-037"), ProtectedNamespace("_-3S6"), StaticProtectedNs("_-3S6"), StaticProtectedNs("_-5dl")])
+      pushstring          "1"
+      equals
+      setlocal            35
+
+      debugline           227
+      getlocal            10
+      pushbyte            20
+      getproperty         MultinameL([PrivateNamespace("_-3S6"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-037"), PrivateNamespace("FurnitureDataParser.as$3158"), PackageInternalNs("_-037"), ProtectedNamespace("_-3S6"), StaticProtectedNs("_-3S6"), StaticProtectedNs("_-5dl")])
+      pushstring          "1"
+      equals
+      setlocal            36
+
+      debugline           228
+      getlocal            10
+      getproperty         QName(PackageNamespace(""), "length")
+      pushbyte            22
+      ifnge               L535
+
+      debugline           229
+      getlocal            10
+      pushbyte            21
+      getproperty         MultinameL([PrivateNamespace("_-3S6"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-037"), PrivateNamespace("FurnitureDataParser.as$3158"), PackageInternalNs("_-037"), ProtectedNamespace("_-3S6"), StaticProtectedNs("_-3S6"), StaticProtectedNs("_-5dl")])
+      pushstring          "1"
+      equals
+      setlocal            37
+
+      debugline           233
+L535:
+      findpropstrict      QName(PackageNamespace("_-037"), "_-sI")
+      getlocal            11
+      getlocal            12
+      getlocal            13
+      getlocal            15
+      getlocal            24
+      getlocal            25
+      getlocal            17
+      getlocal            18
+      getlocal            19
+      getlocal            20
+      getlocal            21
+      getlocal            16
+      getlocal            26
+      getlocal            27
+      getlocal            28
+      getlocal            29
+      getlocal            30
+      getlocal            33
+      getlocal            31
+      getlocal            32
+      getlocal            34
+      getlocal            35
+      getlocal            36
+      getlocal            37
+      constructprop       QName(PackageNamespace("_-037"), "_-sI"), 24
+      coerce              QName(PackageNamespace("_-037"), "_-sI")
+      setlocal            39
+
+      debugline           234
+      getlocal0
+      getlocal            39
+      callpropvoid        QName(PrivateNamespace("_-3S6"), "_-1Wu"), 1
+
+      debugline           235
+      getlocal0
+      getlocal            39
+      callpropvoid        QName(PrivateNamespace("_-3S6"), "_-0sM"), 1
+
+      debugline           158
+L572:
+      hasnext2            44, 43
+      iftrue              L153
+
+      kill                44
+      kill                43
+      debugline           239
+      inclocal_i          6
+      debugline           153
+L579:
+      hasnext2            42, 41
+      iftrue              L132
+
+      kill                42
+      kill                41
+      debugline           242
+      findpropstrict      QName(PackageNamespace(""), "dispatchEvent")
+      findpropstrict      QName(PackageNamespace("flash.events"), "Event")
+      getlex              QName(PackageNamespace(""), "_-1QE")
+      constructprop       QName(PackageNamespace("flash.events"), "Event"), 1
+      callpropvoid        QName(PackageNamespace(""), "dispatchEvent"), 1
+
+      debugline           244
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-3S6"), "_-1Wu")
+   method
+    refid "_-037:FurnitureDataParser/instance/_-037:FurnitureDataParser/instance/_-1Wu"
+    param QName(PackageNamespace("_-037"), "_-sI")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           246
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 246
+      debug               1, "k", 1, 252
+      debugline           247
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "type")
+      getlex              QName(PackageNamespace("_-037"), "_-sI")
+      getproperty         QName(PackageNamespace(""), "_-kw")
+      ifne                L23
+
+      debugline           248
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3S6"), "_-5Ri")
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "id")
+      getlocal1
+      callpropvoid        QName(PackageNamespace(""), "add"), 2
+
+      jump                L36
+
+      ; 0xF0
+      ; 0xF9
+      ; 0x01
+L23:
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "type")
+      getlex              QName(PackageNamespace("_-037"), "_-sI")
+      getproperty         QName(PackageNamespace(""), "_-5zw")
+      ifne                L36
+
+      debugline           250
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3S6"), "_-6Z9")
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "id")
+      getlocal1
+      callpropvoid        QName(PackageNamespace(""), "add"), 2
+
+      debugline           252
+L36:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3S6"), "_-3PS")
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "_-4yt")
+      getproperty         MultinameL([PrivateNamespace("_-3S6"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-037"), PrivateNamespace("FurnitureDataParser.as$3158"), PackageInternalNs("_-037"), ProtectedNamespace("_-3S6"), StaticProtectedNs("_-3S6"), StaticProtectedNs("_-5dl")])
+      coerce              QName(PackageNamespace(""), "Array")
+      setlocal2
+
+      debugline           253
+      getlocal2
+      pushnull
+      ifne                L59
+
+      debugline           254
+      newarray            0
+      coerce              QName(PackageNamespace(""), "Array")
+      setlocal2
+
+      debugline           255
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3S6"), "_-3PS")
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "_-4yt")
+      getlocal2
+      callpropvoid        QName(PackageNamespace(""), "add"), 2
+
+      debugline           257
+L59:
+      getlocal2
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "_-4ZH")
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "id")
+      setproperty         MultinameL([PrivateNamespace("_-3S6"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-037"), PrivateNamespace("FurnitureDataParser.as$3158"), PackageInternalNs("_-037"), ProtectedNamespace("_-3S6"), StaticProtectedNs("_-3S6"), StaticProtectedNs("_-5dl")])
+
+      debugline           258
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-3S6"), "_-3Sr")
+   method
+    refid "_-037:FurnitureDataParser/instance/_-037:FurnitureDataParser/instance/_-3Sr"
+    param QName(PackageNamespace("_-01F"), "AssetLoaderEvent")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           260
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 260
+      debugline           262
+      getlex              QName(PackageNamespace("_-2WS"), "_-0Sj")
+      pushstring          "furnituredata download error "
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "status")
+      add
+      callpropvoid        QName(PackageNamespace(""), "logEventLog"), 1
+
+      debugline           263
+      getlex              QName(PackageNamespace("_-1lC"), "Core")
+      pushstring          "Could not download furnidata definition"
+      pushtrue
+      getlex              QName(PackageNamespace("_-1lC"), "Core")
+      getproperty         QName(PackageNamespace(""), "_-6Ir")
+      callpropvoid        QName(PackageNamespace(""), "error"), 3
+
+      debugline           264
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-3S6"), "_-0sM")
+   method
+    refid "_-037:FurnitureDataParser/instance/_-037:FurnitureDataParser/instance/_-0sM"
+    param QName(PackageNamespace("_-037"), "_-sI")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           271
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 271
+      debugline           272
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3S6"), "_-5jk")
+      pushnull
+      ifeq                L66
+
+      debugline           273
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "type")
+      getlex              QName(PackageNamespace("_-037"), "_-sI")
+      getproperty         QName(PackageNamespace(""), "_-kw")
+      ifne                L40
+
+      debugline           274
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3S6"), "_-5jk")
+      pushstring          "roomItem.name."
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "id")
+      add
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "_-33t")
+      callpropvoid        QName(Namespace("_-3mY"), "_-0LM"), 2
+
+      debugline           275
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3S6"), "_-5jk")
+      pushstring          "roomItem.desc."
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "id")
+      add
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "description")
+      callpropvoid        QName(Namespace("_-3mY"), "_-0LM"), 2
+
+      jump                L66
+
+      ; 0xF0
+      ; 0x94
+      ; 0x02
+L40:
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "type")
+      getlex              QName(PackageNamespace("_-037"), "_-sI")
+      getproperty         QName(PackageNamespace(""), "_-5zw")
+      ifne                L66
+
+      debugline           277
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3S6"), "_-5jk")
+      pushstring          "wallItem.name."
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "id")
+      add
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "_-33t")
+      callpropvoid        QName(Namespace("_-3mY"), "_-0LM"), 2
+
+      debugline           278
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3S6"), "_-5jk")
+      pushstring          "wallItem.desc."
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "id")
+      add
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "description")
+      callpropvoid        QName(Namespace("_-3mY"), "_-0LM"), 2
+
+      debugline           281
+L66:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-3S6"), "_-309")
+   method
+    refid "_-037:FurnitureDataParser/instance/_-037:FurnitureDataParser/instance/_-309"
+    param QName(PackageNamespace(""), "Array")
+    param QName(PackageNamespace(""), "Object")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 4
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           288
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 288
+      debug               1, "k", 1, 288
+      debug               1, "k", 2, 289
+      debugline           289
+      pushbyte            0
+      setlocal3
+
+      jump                L29
+
+L11:
+      label
+      debugline           290
+      getlocal1
+      getlocal3
+      getproperty         MultinameL([PrivateNamespace("_-3S6"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-037"), PrivateNamespace("FurnitureDataParser.as$3158"), PackageInternalNs("_-037"), ProtectedNamespace("_-3S6"), StaticProtectedNs("_-3S6"), StaticProtectedNs("_-5dl")])
+      getlocal2
+      ifne                L28
+
+      debugline           291
+      getlocal1
+      getlocal3
+      pushbyte            1
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "splice"), 2
+
+      debugline           292
+      getlocal3
+      decrement_i
+      setlocal3
+
+      debugline           289
+L28:
+      inclocal_i          3
+L29:
+      getlocal3
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "length")
+      iflt                L11
+
+      debugline           295
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-037:FurnitureDataParser/class/init"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 4
+   maxscopedepth 5
+   code
+    getlocal0
+    pushscope
+
+    debug               1, "k", 0, 23
+    findproperty        QName(PackageNamespace(""), "_-1QE")
+    pushstring          "FDP_furniture_data_ready"
+    initproperty        QName(PackageNamespace(""), "_-1QE")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait const QName(PackageNamespace(""), "_-1QE") slotid 1 type QName(PackageNamespace(""), "String") value Utf8("FDP_furniture_data_ready") end
+end ; class

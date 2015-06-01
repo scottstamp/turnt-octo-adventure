@@ -1,0 +1,69 @@
+method
+ refid "_-4vJ:FurnitureRoomLinkHandler/instance/_-3O6/inline_method"
+ param QName(PackageNamespace("_-VV"), "_-56r")
+ param QName(PackageNamespace("_-0eT"), "WindowEvent")
+ returns QName(PackageNamespace(""), "void")
+ body
+  maxstack 3
+  localcount 3
+  initscopedepth 5
+  maxscopedepth 5
+  code
+   debug               1, "k", 0, 73
+   debug               1, "k", 1, 73
+   debugfile           "k"
+   debugline           75
+   getlex              QName(PrivateNamespace("_-3Wy"), "_container")
+   getproperty         QName(Namespace("_-26S"), "roomEngine")
+   pushnull
+   equals
+   not
+   dup
+   iffalse             L17
+
+   pop
+   getlocal2
+   getproperty         QName(PackageNamespace(""), "type")
+   getlex              QName(PackageNamespace("_-0eT"), "WindowEvent")
+   getproperty         QName(PackageNamespace(""), "_-10C")
+   equals
+L17:
+   iffalse             L42
+
+   debugline           76
+   getlex              QName(PackageInternalNs("_-4vJ"), "link")
+   pushnull
+   equals
+   not
+   dup
+   iffalse             L30
+
+   pop
+   getlex              QName(PackageInternalNs("_-4vJ"), "link")
+   getproperty         QName(PackageNamespace(""), "length")
+   pushbyte            0
+   greaterthan
+L30:
+   iffalse             L42
+
+   debugline           77
+   getlex              QName(PrivateNamespace("_-3Wy"), "_container")
+   getproperty         QName(Namespace("_-26S"), "roomEngine")
+   getlex              QName(PackageNamespace("_-0XF"), "Component")
+   astypelate
+   getproperty         QName(PackageNamespace(""), "context")
+   pushstring          "navigator/goto/"
+   getlex              QName(PackageInternalNs("_-4vJ"), "link")
+   add
+   callpropvoid        QName(Namespace("_-23J"), "createLinkEvent"), 1
+
+   debugline           81
+L42:
+   getlocal1
+   callpropvoid        QName(Namespace("_-0mn"), "dispose"), 0
+
+   debugline           82
+   returnvoid
+  end ; code
+ end ; body
+end ; method

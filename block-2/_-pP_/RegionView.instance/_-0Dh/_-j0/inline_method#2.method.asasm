@@ -1,0 +1,190 @@
+method
+ refid "_-pP:RegionView/instance/_-0Dh:_-j0/inline_method#2"
+ param QName(PackageNamespace("flash.events"), "Event")
+ returns QName(PackageNamespace(""), "void")
+ body
+  maxstack 4
+  localcount 5
+  initscopedepth 10
+  maxscopedepth 10
+  code
+   debugfile           "k"
+   debugline           758
+   pushnan
+   setlocal2
+
+   pushnan
+   setlocal3
+
+   debug               1, "k", 0, 758
+   debugline           760
+   findproperty        QName(ProtectedNamespace("_-0Dh"), "_-4J3")
+   findpropstrict      QName(PackageNamespace("flash.display"), "Bitmap")
+   getlex              QName(ProtectedNamespace("_-0Dh"), "_-33H")
+   getproperty         QName(PackageNamespace(""), "content")
+   callproperty        QName(PackageNamespace("flash.display"), "Bitmap"), 1
+   initproperty        QName(ProtectedNamespace("_-0Dh"), "_-4J3")
+
+   debugline           763
+   getlex              QName(ProtectedNamespace("_-0Dh"), "_-4J3")
+   pushbyte            0
+   setproperty         QName(PackageNamespace(""), "x")
+
+   debugline           764
+   getlex              QName(ProtectedNamespace("_-0Dh"), "_-4J3")
+   pushbyte            0
+   setproperty         QName(PackageNamespace(""), "y")
+
+   debugline           766
+   getlex              QName(PackageNamespace(""), "scalable")
+   iffalse             L120
+
+   debug               1, "k", 1, 768
+   debug               1, "k", 2, 769
+   debugline           768
+   getlex              QName(PackageInternalNs("_-pP"), "recommendedWidth")
+   getlex              QName(ProtectedNamespace("_-0Dh"), "_-4J3")
+   getproperty         QName(PackageNamespace(""), "width")
+   divide
+   convert_d
+   setlocal2
+
+   debugline           769
+   getlex              QName(PackageInternalNs("_-pP"), "recommendedHeight")
+   getlex              QName(ProtectedNamespace("_-0Dh"), "_-4J3")
+   getproperty         QName(PackageNamespace(""), "height")
+   divide
+   convert_d
+   setlocal3
+
+   debugline           770
+   getlex              QName(PackageInternalNs("_-pP"), "scaleToDeclaredSize")
+   iffalse             L56
+
+   debugline           771
+   getlex              QName(ProtectedNamespace("_-0Dh"), "_-4J3")
+   getlocal2
+   setproperty         QName(PackageNamespace(""), "scaleX")
+
+   debugline           772
+   getlex              QName(ProtectedNamespace("_-0Dh"), "_-4J3")
+   getlocal3
+   setproperty         QName(PackageNamespace(""), "scaleY")
+
+   jump                L103
+
+   ; 0xF0
+   ; 0x86
+   ; 0x06
+L56:
+   getlocal2
+   getlocal3
+   ifnlt               L83
+
+   debugline           775
+   getlex              QName(PackageInternalNs("_-pP"), "maintainAspectRatio")
+   iffalse             L76
+
+   debugline           776
+   getlex              QName(ProtectedNamespace("_-0Dh"), "_-4J3")
+   getlex              QName(ProtectedNamespace("_-0Dh"), "_-4J3")
+   getlocal2
+   dup
+   setlocal            4
+
+   setproperty         QName(PackageNamespace(""), "scaleY")
+
+   getlocal            4
+   kill                4
+   setproperty         QName(PackageNamespace(""), "scaleX")
+
+   jump                L79
+
+   ; 0xF0
+   ; 0x8A
+   ; 0x06
+L76:
+   getlex              QName(ProtectedNamespace("_-0Dh"), "_-4J3")
+   getlocal2
+   setproperty         QName(PackageNamespace(""), "scaleX")
+
+L79:
+   jump                L103
+
+   ; 0xF0
+   ; 0x8D
+   ; 0x06
+L83:
+   getlex              QName(PackageInternalNs("_-pP"), "maintainAspectRatio")
+   iffalse             L99
+
+   debugline           782
+   getlex              QName(ProtectedNamespace("_-0Dh"), "_-4J3")
+   getlex              QName(ProtectedNamespace("_-0Dh"), "_-4J3")
+   getlocal3
+   dup
+   setlocal            4
+
+   setproperty         QName(PackageNamespace(""), "scaleY")
+
+   getlocal            4
+   kill                4
+   setproperty         QName(PackageNamespace(""), "scaleX")
+
+   jump                L103
+
+   ; 0xF0
+   ; 0x90
+   ; 0x06
+L99:
+   getlex              QName(ProtectedNamespace("_-0Dh"), "_-4J3")
+   getlocal3
+   setproperty         QName(PackageNamespace(""), "scaleX")
+
+   debugline           789
+L103:
+   findpropstrict      QName(PackageNamespace(""), "isAutoSizing")
+   callproperty        QName(PackageNamespace(""), "isAutoSizing"), 0
+   iffalse             L113
+
+   debugline           790
+   findpropstrict      QName(PackageNamespace(""), "resizeDimensions")
+   getlex              QName(ProtectedNamespace("_-0Dh"), "_-4J3")
+   getproperty         QName(PackageNamespace(""), "width")
+   getlex              QName(ProtectedNamespace("_-0Dh"), "_-4J3")
+   getproperty         QName(PackageNamespace(""), "height")
+   callpropvoid        QName(PackageNamespace(""), "resizeDimensions"), 2
+
+L113:
+   jump                L120
+
+   ; 0xF0
+   ; 0x9A
+   ; 0x06
+   ; 0xF0
+   ; 0x9E
+   ; 0x06
+L120:
+   findpropstrict      QName(PackageNamespace(""), "addChild")
+   getlex              QName(ProtectedNamespace("_-0Dh"), "_-4J3")
+   callpropvoid        QName(PackageNamespace(""), "addChild"), 1
+
+   debugline           799
+   findpropstrict      QName(PrivateNamespace("_-0Dh"), "_-2v-")
+   callpropvoid        QName(PrivateNamespace("_-0Dh"), "_-2v-"), 0
+
+   debugline           800
+   getlex              QName(ProtectedNamespace("_-0Dh"), "_-4J3")
+   pushtrue
+   setproperty         QName(PackageNamespace(""), "visible")
+
+   debugline           801
+   findproperty        QName(ProtectedNamespace("_-0Dh"), "_-33H")
+   pushnull
+   initproperty        QName(ProtectedNamespace("_-0Dh"), "_-33H")
+
+   debugline           802
+   returnvoid
+  end ; code
+ end ; body
+end ; method

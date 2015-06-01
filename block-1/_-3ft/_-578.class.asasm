@@ -1,0 +1,409 @@
+class
+ refid "_-3ft:_-578"
+ instance QName(PackageNamespace("_-3ft"), "_-578")
+  extends QName(PackageNamespace("_-3hr"), "EventDispatcherWrapper")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-1QB")
+  iinit
+   refid "_-3ft:_-578/instance/init"
+   param QName(PackageNamespace("_-475"), "_-10k")
+   param QName(PackageNamespace("", "#0"), "String")
+   param QName(PackageNamespace("_-3ft"), "_-3ey")
+   body
+    maxstack 4
+    localcount 6
+    initscopedepth 5
+    maxscopedepth 6
+    code
+     debugfile           "k"
+     debugline           24
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 24
+     debug               1, "k", 1, 24
+     debug               1, "k", 2, 24
+     debugline           24
+     getlocal0
+     constructsuper      0
+
+     debug               1, "k", 3, 32
+     debug               1, "k", 4, 33
+     debugline           26
+     getlocal0
+     getlocal3
+     initproperty        QName(PrivateNamespace("_-1QB"), "_-3PE")
+
+     debugline           28
+     getlocal1
+     getlocal2
+     callproperty        QName(Namespace("_-14k"), "hasAsset"), 1
+     iffalse             L28
+
+     debugline           29
+     getlex              QName(PackageNamespace("", "#0"), "_-Vz")
+     pushstring          "[AvatarStructureDownload] reload data for url: "
+     getlocal2
+     add
+     callpropvoid        QName(PackageNamespace("", "#0"), "log"), 1
+
+     debugline           32
+L28:
+     findpropstrict      QName(PackageNamespace("flash.net"), "URLRequest")
+     getlocal2
+     constructprop       QName(PackageNamespace("flash.net"), "URLRequest"), 1
+     coerce              QName(PackageNamespace("flash.net"), "URLRequest")
+     setlocal            4
+
+     debugline           33
+     getlocal1
+     getlocal2
+     getlocal            4
+     pushstring          "text/plain"
+     callproperty        QName(Namespace("_-14k"), "loadAssetFromFile"), 3
+     coerce              QName(PackageNamespace("_-475"), "_-sY")
+     setlocal            5
+
+     debugline           34
+     getlocal            5
+     getlex              QName(PackageNamespace("_-01F"), "AssetLoaderEvent")
+     getproperty         QName(PackageNamespace("", "#0"), "_-2lm")
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-1QB"), "_-1b2")
+     callpropvoid        QName(PackageNamespace("", "#0"), "addEventListener"), 2
+
+     debugline           35
+     getlocal            5
+     getlex              QName(PackageNamespace("_-01F"), "AssetLoaderEvent")
+     getproperty         QName(PackageNamespace("", "#0"), "_-6IU")
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-1QB"), "_-3XX")
+     callpropvoid        QName(PackageNamespace("", "#0"), "addEventListener"), 2
+
+     debugline           36
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-1QB"), "_-3PE") type QName(PackageNamespace("_-3ft"), "_-3ey") end
+  trait method QName(PrivateNamespace("_-1QB"), "_-1b2")
+   method
+    refid "_-3ft:_-578/instance/_-3ft:_-578/instance/_-1b2"
+    param QName(PackageNamespace("flash.events"), "Event")
+    returns QName(PackageNamespace("", "#0"), "void")
+    flag NEED_ACTIVATION
+    body
+     maxstack 4
+     localcount 4
+     initscopedepth 6
+     maxscopedepth 11
+     code
+      debugfile           "k"
+      debugline           42
+      getlocal0
+      pushscope
+
+      newactivation
+      dup
+      setlocal2
+
+      pushscope
+
+      debug               1, "k", 1, 42
+      getscopeobject      1
+      pushnull
+      coerce_s
+      setslot             3
+
+      getscopeobject      1
+      pushnull
+      coerce              QName(PackageNamespace("", "#0"), "XML")
+      setslot             4
+
+      getscopeobject      1
+      getlocal1
+      setslot             1
+
+      debug               1, "k", 0, 42
+      debugline           43
+      getscopeobject      1
+      getscopeobject      1
+      getslot             1
+      getproperty         QName(PackageNamespace("", "#0"), "target")
+      getlex              QName(PackageNamespace("_-475"), "_-sY")
+      astypelate
+      coerce              QName(PackageNamespace("_-475"), "_-sY")
+      setslot             2
+
+      debugline           44
+      getscopeobject      1
+      getslot             2
+      pushnull
+      equals
+      dup
+      iftrue              L43
+
+      pop
+      getscopeobject      1
+      getslot             2
+      getproperty         QName(PackageNamespace("", "#0"), "_-1h5")
+      pushnull
+      equals
+L43:
+      iffalse             L50
+
+      debugline           45
+      returnvoid
+
+      ; 0xF0
+      ; 0x31
+      ; 0xF0
+      ; 0x31
+L50:
+      getscopeobject      1
+      getscopeobject      1
+      getslot             2
+      getproperty         QName(PackageNamespace("", "#0"), "_-1h5")
+      getproperty         QName(Namespace("_-Ul"), "content")
+      getlex              QName(PackageNamespace("", "#0"), "String")
+      astypelate
+      coerce_s
+      setslot             3
+
+      debugline           50
+      getscopeobject      1
+      getslot             3
+      pushnull
+      equals
+      dup
+      iftrue              L72
+
+      pop
+      getscopeobject      1
+      getslot             3
+      getproperty         QName(PackageNamespace("", "#0"), "length")
+      pushbyte            0
+      equals
+L72:
+      iffalse             L94
+
+      debugline           51
+      getlex              QName(PackageNamespace("_-1lC"), "Core")
+      pushstring          "Could not load avatar structure, got empty data from URL "
+      getscopeobject      1
+      getslot             2
+      getproperty         QName(PackageNamespace("", "#0"), "_-1h5")
+      getproperty         QName(Namespace("_-Ul"), "url")
+      add
+      pushstring          " data length = "
+      add
+      getscopeobject      1
+      getslot             3
+      getproperty         QName(PackageNamespace("", "#0"), "length")
+      add
+      pushstring          "."
+      add
+      pushfalse
+      getlex              QName(PackageNamespace("_-1lC"), "Core")
+      getproperty         QName(PackageNamespace("", "#0"), "_-6Rt")
+      callpropvoid        QName(PackageNamespace("", "#0"), "error"), 3
+
+      debugline           53
+L94:
+      getscopeobject      1
+      findpropstrict      QName(PackageNamespace("", "#0"), "XML")
+      getscopeobject      1
+      getslot             3
+      constructprop       QName(PackageNamespace("", "#0"), "XML"), 1
+      coerce              QName(PackageNamespace("", "#0"), "XML")
+      setslot             4
+
+      debugline           55
+L102:
+      jump                L129
+
+L103:
+      getlocal0
+      pushscope
+
+      getlocal2
+      pushscope
+
+      newcatch            0
+      dup
+      setlocal3
+
+      dup
+      pushscope
+
+      swap
+      setslot             1
+
+      debugline           56
+      getlex              QName(PackageNamespace("", "#0"), "_-Vz")
+      pushstring          "[AvatarStructureDownload] Error: "
+      getscopeobject      2
+      getslot             1
+      getproperty         QName(PackageNamespace("", "#0"), "message")
+      add
+      callpropvoid        QName(PackageNamespace("", "#0"), "log"), 1
+
+      debugline           57
+      returnvoid
+
+      ; 0x1D
+      ; 0x08
+      ; 0x03
+      ; 0xF0
+      ; 0x3C
+L129:
+      getscopeobject      1
+      getslot             4
+      pushnull
+      ifne                L146
+
+      debugline           61
+      getlex              QName(PackageNamespace("", "#0"), "_-Vz")
+      pushstring          "[AvatarStructureDownload] XML error: "
+      getscopeobject      1
+      getslot             2
+      add
+      pushstring          " not valid XML"
+      add
+      callpropvoid        QName(PackageNamespace("", "#0"), "log"), 1
+
+      debugline           62
+      returnvoid
+
+      ; 0xF0
+      ; 0x40
+L146:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1QB"), "_-3PE")
+      getscopeobject      1
+      getslot             4
+      callpropvoid        QName(Namespace("_-4gR"), "_-5Pp"), 1
+
+      debugline           65
+      findpropstrict      QName(PackageNamespace("", "#0"), "dispatchEvent")
+      findpropstrict      QName(PackageNamespace("flash.events"), "Event")
+      getlex              QName(PackageNamespace("_-3ft"), "_-578")
+      getproperty         QName(PackageNamespace("", "#0"), "_-K3")
+      constructprop       QName(PackageNamespace("flash.events"), "Event"), 1
+      callpropvoid        QName(PackageNamespace("", "#0"), "dispatchEvent"), 1
+
+      debugline           66
+      returnvoid
+     end ; code
+     try from L50 to L102 target L103 type QName(PackageNamespace("", "#0"), "Error") name QName(PackageNamespace("", "#0"), "e") end
+     trait slot QName(PackageInternalNs("_-3ft"), "event") slotid 1 type QName(PackageNamespace("flash.events"), "Event") end
+     trait slot QName(PackageInternalNs("_-3ft"), "loaderStruct") slotid 2 type QName(PackageNamespace("_-475"), "_-sY") end
+     trait slot QName(PackageInternalNs("_-3ft"), "data") slotid 3 type QName(PackageNamespace("", "#0"), "String") end
+     trait slot QName(PackageInternalNs("_-3ft"), "dataSet") slotid 4 type QName(PackageNamespace("", "#0"), "XML") end
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-1QB"), "_-3XX")
+   method
+    refid "_-3ft:_-578/instance/_-3ft:_-578/instance/_-3XX"
+    param QName(PackageNamespace("flash.events"), "Event")
+    returns QName(PackageNamespace("", "#0"), "void")
+    body
+     maxstack 4
+     localcount 4
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           69
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 69
+      debug               1, "k", 1, 71
+      debug               1, "k", 2, 72
+      debugline           71
+      getlocal1
+      getproperty         QName(PackageNamespace("", "#0"), "target")
+      getlex              QName(PackageNamespace("_-475"), "_-sY")
+      astypelate
+      coerce              QName(PackageNamespace("_-475"), "_-sY")
+      setlocal2
+
+      pushstring          ""
+      debugline           72
+      coerce_s
+      setlocal3
+
+      debugline           73
+      getlocal2
+      pushnull
+      equals
+      not
+      dup
+      iffalse             L31
+
+      pop
+      getlocal2
+      getproperty         QName(PackageNamespace("", "#0"), "_-1h5")
+      pushnull
+      equals
+      not
+L31:
+      iffalse             L39
+
+      debugline           74
+      getlocal2
+      getproperty         QName(PackageNamespace("", "#0"), "_-1h5")
+      getproperty         QName(Namespace("_-Ul"), "url")
+      coerce_s
+      setlocal3
+
+      debugline           76
+L39:
+      getlex              QName(PackageNamespace("_-2WS"), "_-0Sj")
+      pushstring          "figurepartlist download error "
+      getlocal3
+      add
+      callpropvoid        QName(PackageNamespace("", "#0"), "logEventLog"), 1
+
+      debugline           77
+      getlex              QName(PackageNamespace("_-1lC"), "Core")
+      pushstring          "Could not load avatar structure. Failed to get data from URL "
+      getlocal3
+      add
+      pushtrue
+      getlex              QName(PackageNamespace("_-1lC"), "Core")
+      getproperty         QName(PackageNamespace("", "#0"), "_-6Rt")
+      callpropvoid        QName(PackageNamespace("", "#0"), "error"), 3
+
+      debugline           78
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-3ft:_-578/class/init"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 4
+   maxscopedepth 5
+   code
+    getlocal0
+    pushscope
+
+    debug               1, "k", 0, 15
+    findproperty        QName(PackageNamespace("", "#0"), "_-K3")
+    pushstring          "AVATAR_STRUCTURE_DONE"
+    initproperty        QName(PackageNamespace("", "#0"), "_-K3")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait const QName(PackageNamespace("", "#0"), "_-K3") slotid 1 type QName(PackageNamespace("", "#0"), "String") value Utf8("AVATAR_STRUCTURE_DONE") end
+end ; class

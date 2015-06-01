@@ -1,0 +1,386 @@
+class
+ refid "_-5mt:PopularTagsListCtrl"
+ instance QName(PackageNamespace("_-5mt"), "PopularTagsListCtrl")
+  extends QName(PackageNamespace(""), "Object")
+  implements Multiname("_-2Hu", [PackageNamespace("_-5bO")])
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-6MX")
+  iinit
+   refid "_-5mt:PopularTagsListCtrl/instance/init"
+   param QName(PackageNamespace("_-5bO"), "HabboNavigator")
+   returns QName(PackageNamespace(""), "void")
+   body
+    maxstack 3
+    localcount 2
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     debugfile           "k"
+     debugline           24
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 24
+     debugline           24
+     getlocal0
+     constructsuper      0
+
+     debugline           25
+     getlocal0
+     getlocal1
+     initproperty        QName(PrivateNamespace("_-6MX"), "_-2ld")
+
+     debugline           26
+     getlocal0
+     findpropstrict      QName(PackageNamespace("_-5bO"), "TagRenderer")
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-6MX"), "_-2ld")
+     constructprop       QName(PackageNamespace("_-5bO"), "TagRenderer"), 1
+     initproperty        QName(PrivateNamespace("_-6MX"), "_-0Lm")
+
+     debugline           27
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-6MX"), "_-2ld") type QName(PackageNamespace("_-5bO"), "HabboNavigator") end
+  trait slot QName(PrivateNamespace("_-6MX"), "_content") type QName(PackageNamespace("_-2z-"), "IWindowContainer") end
+  trait slot QName(PrivateNamespace("_-6MX"), "_-3wa") type QName(PackageNamespace("_-2tk"), "IItemListWindow") end
+  trait slot QName(PrivateNamespace("_-6MX"), "_-04p") type QName(PackageNamespace(""), "int") end
+  trait slot QName(PrivateNamespace("_-6MX"), "_-0Lm") type QName(PackageNamespace("_-5bO"), "TagRenderer") end
+  trait method QName(PackageNamespace(""), "dispose")
+   method
+    refid "_-5mt:PopularTagsListCtrl/instance/dispose"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           29
+      getlocal0
+      pushscope
+
+      debugline           30
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-6MX"), "_-0Lm")
+      iffalse             L17
+
+      debugline           31
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-6MX"), "_-0Lm")
+      callpropvoid        QName(PackageNamespace(""), "dispose"), 0
+
+      debugline           32
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-6MX"), "_-0Lm")
+
+      debugline           34
+L17:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait setter QName(PackageNamespace(""), "content")
+   method
+    refid "_-5mt:PopularTagsListCtrl/instance/content/setter"
+    param QName(PackageNamespace("_-2z-"), "IWindowContainer")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           39
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 39
+      debugline           40
+      getlocal0
+      getlocal1
+      initproperty        QName(PrivateNamespace("_-6MX"), "_content")
+
+      debugline           41
+      getlocal0
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-6MX"), "_content")
+      iffalse             L22
+
+      findpropstrict      QName(PackageNamespace("_-2tk"), "IItemListWindow")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-6MX"), "_content")
+      pushstring          "item_list"
+      callproperty        QName(Namespace("_-7H"), "findChildByName"), 1
+      callproperty        QName(PackageNamespace("_-2tk"), "IItemListWindow"), 1
+      coerce              QName(PackageNamespace("_-2tk"), "IItemListWindow")
+      jump                L24
+
+L22:
+      pushnull
+      coerce              QName(PackageNamespace("_-2tk"), "IItemListWindow")
+L24:
+      initproperty        QName(PrivateNamespace("_-6MX"), "_-3wa")
+
+      debugline           42
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "content")
+   method
+    refid "_-5mt:PopularTagsListCtrl/instance/content/getter"
+    returns QName(PackageNamespace("_-2z-"), "IWindowContainer")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           47
+      getlocal0
+      pushscope
+
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-6MX"), "_content")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "refresh")
+   method
+    refid "_-5mt:PopularTagsListCtrl/instance/refresh"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 5
+     localcount 5
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           52
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-5Hb"), "_-6L5")
+      setlocal            4
+
+      debug               1, "k", 0, 54
+      debug               1, "k", 1, 55
+      debug               1, "k", 2, 63
+      debugline           53
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-6MX"), "_-0Lm")
+      pushtrue
+      setproperty         QName(PackageNamespace(""), "_-6JT")
+
+      debugline           54
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-6MX"), "_-2ld")
+      getproperty         QName(PackageNamespace(""), "data")
+      getproperty         QName(PackageNamespace(""), "_-5Dn")
+      getproperty         QName(PackageNamespace(""), "tags")
+      coerce              QName(PackageNamespace(""), "Array")
+      setlocal1
+
+      debugline           55
+      findpropstrict      QName(PackageNamespace("_-2z-"), "IWindowContainer")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-6MX"), "_-3wa")
+      pushbyte            0
+      callproperty        QName(Namespace("_-00u"), "getListItemAt"), 1
+      callproperty        QName(PackageNamespace("_-2z-"), "IWindowContainer"), 1
+      coerce              QName(PackageNamespace("_-2z-"), "IWindowContainer")
+      setlocal2
+
+      debugline           56
+      getlocal2
+      pushnull
+      ifne                L51
+
+      debugline           57
+      findpropstrict      QName(PackageNamespace("_-2z-"), "IWindowContainer")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-6MX"), "_-2ld")
+      pushstring          "grs_popular_tag_row"
+      callproperty        QName(PackageNamespace(""), "getXmlWindow"), 1
+      callproperty        QName(PackageNamespace("_-2z-"), "IWindowContainer"), 1
+      coerce              QName(PackageNamespace("_-2z-"), "IWindowContainer")
+      setlocal2
+
+      debugline           58
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-6MX"), "_-3wa")
+      getlocal2
+      callpropvoid        QName(Namespace("_-00u"), "addListItem"), 1
+
+      debugline           62
+L51:
+      getlex              QName(PackageNamespace("_-5bO"), "_-55c")
+      getlocal2
+      callpropvoid        QName(PackageNamespace(""), "_-6Gy"), 1
+
+      debugline           63
+      pushbyte            0
+      setlocal3
+
+      jump                L80
+
+L58:
+      label
+      debug               1, "k", 3, 64
+      debugline           64
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-6MX"), "_-2ld")
+      getproperty         QName(PackageNamespace(""), "data")
+      getproperty         QName(PackageNamespace(""), "_-5Dn")
+      getproperty         QName(PackageNamespace(""), "tags")
+      getlocal3
+      getproperty         MultinameL([PrivateNamespace("_-6MX"), PackageNamespace("_-5bO"), PackageNamespace(""), PackageNamespace("_-2tk"), PackageNamespace("_-2z-"), PrivateNamespace("PopularTagsListCtrl.as$3082"), PackageNamespace("_-5mt"), PackageInternalNs("_-5mt"), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-02Q"), PackageNamespace("_-0eT"), ProtectedNamespace("_-6MX"), StaticProtectedNs("_-6MX")])
+      coerce              QName(PackageNamespace("_-5Hb"), "_-6L5")
+      setlocal            4
+
+      debugline           65
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-6MX"), "_-0Lm")
+      getlocal2
+      getlocal3
+      getlocal            4
+      getproperty         QName(PackageNamespace(""), "tagName")
+      callpropvoid        QName(PackageNamespace(""), "_-4zy"), 3
+
+      debugline           63
+      inclocal_i          3
+L80:
+      getlocal3
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-6MX"), "_-2ld")
+      getproperty         QName(PackageNamespace(""), "data")
+      getproperty         QName(PackageNamespace(""), "_-5Dn")
+      getproperty         QName(PackageNamespace(""), "tags")
+      getproperty         QName(PackageNamespace(""), "length")
+      iflt                L58
+
+      debugline           67
+      getlex              QName(PackageNamespace("_-5bO"), "_-55c")
+      getlocal2
+      getlocal2
+      getproperty         QName(Namespace("_-0jq"), "width")
+      pushbyte            18
+      pushbyte            3
+      callpropvoid        QName(PackageNamespace(""), "_-2np"), 4
+
+      debugline           68
+      getlocal2
+      getlex              QName(PackageNamespace("_-5bO"), "_-55c")
+      getlocal2
+      callproperty        QName(PackageNamespace(""), "_-5QE"), 1
+      setproperty         QName(Namespace("_-0jq"), "height")
+
+      debugline           70
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-6MX"), "_content")
+      pushstring          "no_tags_found"
+      callproperty        QName(Namespace("_-7H"), "findChildByName"), 1
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "length")
+      pushbyte            1
+      lessthan
+      setproperty         QName(Namespace("_-0jq"), "visible")
+
+      debugline           71
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-6MX"), "_-25x")
+   method
+    refid "_-5mt:PopularTagsListCtrl/instance/_-5mt:PopularTagsListCtrl/instance/_-25x"
+    param QName(PackageNamespace("_-2z-"), "IWindowContainer")
+    param QName(PackageNamespace("_-5Hb"), "_-6L5")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 5
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           73
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 73
+      debug               1, "k", 1, 73
+      debug               1, "k", 2, 74
+      debug               1, "k", 3, 75
+      pushstring          "txt"
+      debugline           74
+      coerce_s
+      setlocal3
+
+      debugline           75
+      findpropstrict      QName(PackageNamespace("_-2tk"), "ITextWindow")
+      getlocal1
+      getlocal3
+      callproperty        QName(Namespace("_-7H"), "findChildByName"), 1
+      callproperty        QName(PackageNamespace("_-2tk"), "ITextWindow"), 1
+      coerce              QName(PackageNamespace("_-2tk"), "ITextWindow")
+      setlocal            4
+
+      debugline           76
+      getlocal2
+      pushnull
+      ifne                L28
+
+      debugline           77
+      returnvoid
+
+      ; 0xF0
+      ; 0x4F
+L28:
+      getlocal            4
+      pushtrue
+      setproperty         QName(Namespace("_-0jq"), "visible")
+
+      debugline           80
+      getlocal            4
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "tagName")
+      setproperty         QName(Namespace("_-49x"), "text")
+
+      debugline           81
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-5mt:PopularTagsListCtrl/class/init"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

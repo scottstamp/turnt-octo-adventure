@@ -1,0 +1,142 @@
+class
+ refid "_-ol:_-zV"
+ instance QName(PackageNamespace("_-ol"), "_-zV")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-2Sr")
+  iinit
+   refid "_-ol:_-zV/instance/init"
+   param QName(PackageNamespace("_-ol"), "ModerationManager")
+   param QName(PackageNamespace("_-ol"), "ChatlogCtrl")
+   param QName(PackageNamespace("_-2z-"), "IWindow")
+   param QName(PackageNamespace(""), "int")
+   param QName(PackageNamespace(""), "int")
+   body
+    maxstack 2
+    localcount 6
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     debugfile           "k"
+     debugline           15
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 15
+     debug               1, "k", 1, 15
+     debug               1, "k", 2, 15
+     debug               1, "k", 3, 15
+     debug               1, "k", 4, 15
+     debugline           15
+     getlocal0
+     constructsuper      0
+
+     debugline           16
+     getlocal0
+     getlocal1
+     initproperty        QName(PrivateNamespace("_-2Sr"), "_-3fC")
+
+     debugline           17
+     getlocal0
+     getlocal2
+     initproperty        QName(PrivateNamespace("_-2Sr"), "_-5RY")
+
+     debugline           18
+     getlocal0
+     getlocal            4
+     initproperty        QName(PrivateNamespace("_-2Sr"), "_-zP")
+
+     debugline           19
+     getlocal0
+     getlocal            5
+     initproperty        QName(PrivateNamespace("_-2Sr"), "_-0CY")
+
+     debugline           20
+     getlocal3
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-2Sr"), "onClick")
+     setproperty         QName(Namespace("_-0jq"), "procedure")
+
+     debugline           21
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-2Sr"), "_-3fC") type QName(PackageNamespace("_-ol"), "ModerationManager") end
+  trait slot QName(PrivateNamespace("_-2Sr"), "_-5RY") type QName(PackageNamespace("_-ol"), "ChatlogCtrl") end
+  trait slot QName(PrivateNamespace("_-2Sr"), "_-zP") type QName(PackageNamespace(""), "int") end
+  trait slot QName(PrivateNamespace("_-2Sr"), "_-0CY") type QName(PackageNamespace(""), "int") end
+  trait method QName(PrivateNamespace("_-2Sr"), "onClick")
+   method
+    refid "_-ol:_-zV/instance/_-ol:_-zV/instance/onClick"
+    param QName(PackageNamespace("_-0eT"), "WindowEvent")
+    param QName(PackageNamespace("_-2z-"), "IWindow")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 5
+     localcount 3
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           23
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 23
+      debug               1, "k", 1, 23
+      debugline           24
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "type")
+      getlex              QName(PackageNamespace("_-0eT"), "WindowMouseEvent")
+      getproperty         QName(PackageNamespace(""), "CLICK")
+      ifeq                L16
+
+      debugline           25
+      returnvoid
+
+      ; 0xF0
+      ; 0x1C
+L16:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2Sr"), "_-5RY")
+      callpropvoid        QName(PackageNamespace(""), "dispose"), 0
+
+      debugline           29
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2Sr"), "_-3fC")
+      getproperty         QName(PackageNamespace(""), "connection")
+      findpropstrict      QName(PackageNamespace("_-5z4"), "_-4UM")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2Sr"), "_-zP")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2Sr"), "_-0CY")
+      getlex              QName(PackageNamespace("_-GT"), "_-uj")
+      getproperty         QName(PackageNamespace(""), "_-3io")
+      constructprop       QName(PackageNamespace("_-5z4"), "_-4UM"), 3
+      callpropvoid        QName(Namespace("_-nL"), "send"), 1
+
+      debugline           30
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-ol:_-zV/class/init"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

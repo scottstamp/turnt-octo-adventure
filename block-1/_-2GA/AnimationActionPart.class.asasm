@@ -1,0 +1,161 @@
+class
+ refid "_-2GA:AnimationActionPart"
+ instance QName(PackageNamespace("_-2GA"), "AnimationActionPart")
+  extends QName(PackageNamespace("", "#0"), "Object")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-5Bg")
+  iinit
+   refid "_-2GA:AnimationActionPart/instance/init"
+   param QName(PackageNamespace("", "#0"), "XML")
+   body
+    maxstack 4
+    localcount 6
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     debugfile           "k"
+     debugline           10
+     getlocal0
+     pushscope
+
+     pushnull
+     coerce              QName(PackageNamespace("", "#0"), "XML")
+     setlocal2
+
+     pushbyte            0
+     setlocal3
+
+     debug               1, "k", 0, 10
+     debugline           10
+     getlocal0
+     constructsuper      0
+
+     debug               1, "k", 1, 13
+     debugline           11
+     getlocal0
+     findpropstrict      QName(PackageNamespace("", "#0"), "Array")
+     constructprop       QName(PackageNamespace("", "#0"), "Array"), 0
+     initproperty        QName(PrivateNamespace("_-5Bg"), "_-4eW")
+
+     debugline           13
+     pushbyte            0
+     setlocal            4
+
+     getlocal1
+     getproperty         Multiname("frame", [PrivateNamespace("_-5Bg"), PackageNamespace("", "#0"), PrivateNamespace("AnimationActionPart.as$539"), PackageNamespace("_-2GA"), PackageInternalNs("_-2GA"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-5Bg"), StaticProtectedNs("_-5Bg")])
+     coerce_a
+     setlocal            5
+
+     jump                L74
+
+L27:
+     label
+     getlocal            5
+     getlocal            4
+     nextvalue
+     coerce              QName(PackageNamespace("", "#0"), "XML")
+     setlocal2
+
+     debug               1, "k", 2, 15
+     debugline           14
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-5Bg"), "_-4eW")
+     findpropstrict      QName(PackageNamespace("_-2GA"), "AnimationFrame")
+     getlocal2
+     constructprop       QName(PackageNamespace("_-2GA"), "AnimationFrame"), 1
+     callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+     debugline           15
+     findpropstrict      QName(PackageNamespace("", "#0"), "parseInt")
+     getlocal2
+     getproperty         MultinameA("repeats", [PrivateNamespace("_-5Bg"), PackageNamespace("", "#0"), PrivateNamespace("AnimationActionPart.as$539"), PackageNamespace("_-2GA"), PackageInternalNs("_-2GA"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-5Bg"), StaticProtectedNs("_-5Bg")])
+     callproperty        QName(PackageNamespace("", "#0"), "parseInt"), 1
+     convert_i
+     setlocal3
+
+     debugline           16
+     getlocal3
+     pushbyte            1
+     ifngt               L74
+
+     jump                L66
+
+L53:
+     label
+     debugline           18
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-5Bg"), "_-4eW")
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-5Bg"), "_-4eW")
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-5Bg"), "_-4eW")
+     getproperty         QName(PackageNamespace("", "#0"), "length")
+     decrement
+     getproperty         MultinameL([PrivateNamespace("_-5Bg"), PackageNamespace("", "#0"), PrivateNamespace("AnimationActionPart.as$539"), PackageNamespace("_-2GA"), PackageInternalNs("_-2GA"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-5Bg"), StaticProtectedNs("_-5Bg")])
+     callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+     debugline           17
+L66:
+     getlocal3
+     decrement_i
+     dup
+     convert_i
+     setlocal3
+
+     pushbyte            0
+     ifgt                L53
+
+     debugline           13
+L74:
+     hasnext2            5, 4
+     iftrue              L27
+
+     kill                5
+     kill                4
+     debugline           22
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-5Bg"), "_-4eW") type QName(PackageNamespace("", "#0"), "Array") end
+  trait getter QName(PackageNamespace("", "#0"), "frames")
+   method
+    refid "_-2GA:AnimationActionPart/instance/frames/getter"
+    returns QName(PackageNamespace("", "#0"), "Array")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           24
+      getlocal0
+      pushscope
+
+      debugline           25
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5Bg"), "_-4eW")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-2GA:AnimationActionPart/class/init"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

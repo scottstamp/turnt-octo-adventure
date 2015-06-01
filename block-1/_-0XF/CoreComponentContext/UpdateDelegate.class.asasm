@@ -1,0 +1,443 @@
+class
+ refid "_-0XF:CoreComponentContext/UpdateDelegate"
+ instance QName(PrivateNamespace("CoreComponentContext.as$517"), "UpdateDelegate")
+  extends QName(PackageNamespace("", "#0"), "Object")
+  implements Multiname("_-4BI", [PackageNamespace("_-0XF")])
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("CoreComponentContext.as$517:UpdateDelegate")
+  iinit
+   refid "_-0XF:CoreComponentContext/UpdateDelegate/instance/init"
+   param QName(PackageNamespace("_-0XF"), "_-4Ud")
+   param QName(PackageNamespace("_-0XF"), "_-25s")
+   param QName(PackageNamespace("", "#0"), "int")
+   body
+    maxstack 3
+    localcount 4
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     debugfile           "k"
+     debugline           891
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 891
+     debug               1, "k", 1, 891
+     debug               1, "k", 2, 891
+     debugline           891
+     getlocal0
+     constructsuper      0
+
+     debugline           896
+     getlocal2
+     convert_b
+     dup
+     iffalse             L18
+
+     pop
+     getlocal1
+     convert_b
+L18:
+     iffalse             L56
+
+     debugline           898
+     getlocal0
+     getlocal1
+     initproperty        QName(PrivateNamespace("CoreComponentContext.as$517:UpdateDelegate"), "_receiver")
+
+     debugline           899
+     getlocal0
+     getlocal2
+     initproperty        QName(PrivateNamespace("CoreComponentContext.as$517:UpdateDelegate"), "_context")
+
+     debugline           900
+     getlocal0
+     getlocal3
+     initproperty        QName(PrivateNamespace("CoreComponentContext.as$517:UpdateDelegate"), "_priority")
+
+     debugline           902
+     getlocal2
+     getproperty         QName(Namespace("_-23J"), "displayObjectContainer")
+     getproperty         QName(PackageNamespace("", "#0"), "stage")
+     getlocal0
+     getproperty         QName(PrivateNamespace("CoreComponentContext.as$517:UpdateDelegate"), "_priority")
+     pushbyte            0
+     equals
+     iffalse             L44
+
+     getlex              QName(PackageNamespace("flash.events"), "Event")
+     getproperty         QName(PackageNamespace("", "#0"), "EXIT_FRAME")
+     coerce_s
+     jump                L47
+
+L44:
+     getlex              QName(PackageNamespace("flash.events"), "Event")
+     getproperty         QName(PackageNamespace("", "#0"), "ENTER_FRAME")
+     coerce_s
+L47:
+     getlocal0
+     getproperty         QName(PrivateNamespace("CoreComponentContext.as$517:UpdateDelegate"), "onFrameUpdate")
+     callpropvoid        QName(PackageNamespace("", "#0"), "addEventListener"), 2
+
+     debugline           903
+     getlocal0
+     findpropstrict      QName(PackageNamespace("flash.utils"), "getTimer")
+     callproperty        QName(PackageNamespace("flash.utils"), "getTimer"), 0
+     initproperty        QName(PrivateNamespace("CoreComponentContext.as$517:UpdateDelegate"), "_lastUpdateTimeMs")
+
+     debugline           905
+L56:
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait getter QName(PackageNamespace("", "#0"), "priority")
+   method
+    refid "_-0XF:CoreComponentContext/UpdateDelegate/instance/priority/getter"
+    returns QName(PackageNamespace("", "#0"), "int")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           867
+      getlocal0
+      pushscope
+
+      debugline           868
+      getlocal0
+      getproperty         QName(PrivateNamespace("CoreComponentContext.as$517:UpdateDelegate"), "_priority")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace("", "#0"), "receiver")
+   method
+    refid "_-0XF:CoreComponentContext/UpdateDelegate/instance/receiver/getter"
+    returns QName(PackageNamespace("_-0XF"), "_-4Ud")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           871
+      getlocal0
+      pushscope
+
+      debugline           872
+      getlocal0
+      getproperty         QName(PrivateNamespace("CoreComponentContext.as$517:UpdateDelegate"), "_receiver")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace("", "#0"), "disposed")
+   method
+    refid "_-0XF:CoreComponentContext/UpdateDelegate/instance/disposed/getter"
+    returns QName(PackageNamespace("", "#0"), "Boolean")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           875
+      getlocal0
+      pushscope
+
+      debugline           876
+      getlocal0
+      getproperty         QName(PrivateNamespace("CoreComponentContext.as$517:UpdateDelegate"), "_receiver")
+      iffalse             L13
+
+      getlocal0
+      getproperty         QName(PrivateNamespace("CoreComponentContext.as$517:UpdateDelegate"), "_receiver")
+      getproperty         QName(Namespace("_-0mn"), "disposed")
+      convert_b
+      jump                L14
+
+L13:
+      pushtrue
+L14:
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait slot QName(PrivateNamespace("CoreComponentContext.as$517:UpdateDelegate"), "_receiver") type QName(PackageNamespace("_-0XF"), "_-4Ud") end
+  trait slot QName(PrivateNamespace("CoreComponentContext.as$517:UpdateDelegate"), "_context") type QName(PackageNamespace("_-0XF"), "_-25s") end
+  trait slot QName(PrivateNamespace("CoreComponentContext.as$517:UpdateDelegate"), "_priority") type QName(PackageNamespace("", "#0"), "int") end
+  trait slot QName(PrivateNamespace("CoreComponentContext.as$517:UpdateDelegate"), "_lastUpdateTimeMs") type QName(PackageNamespace("", "#0"), "uint") end
+  trait slot QName(PrivateNamespace("CoreComponentContext.as$517:UpdateDelegate"), "_framesSkipped") type QName(PackageNamespace("", "#0"), "uint") value Integer(0) end
+  trait method QName(PackageNamespace("", "#0"), "dispose")
+   method
+    refid "_-0XF:CoreComponentContext/UpdateDelegate/instance/dispose"
+    returns QName(PackageNamespace("", "#0"), "void")
+    body
+     maxstack 3
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           910
+      getlocal0
+      pushscope
+
+      debugline           912
+      getlocal0
+      getproperty         QName(PrivateNamespace("CoreComponentContext.as$517:UpdateDelegate"), "_receiver")
+      iffalse             L37
+
+      debugline           913
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("CoreComponentContext.as$517:UpdateDelegate"), "_receiver")
+
+      debugline           914
+      getlocal0
+      getproperty         QName(PrivateNamespace("CoreComponentContext.as$517:UpdateDelegate"), "_context")
+      getproperty         QName(Namespace("_-23J"), "displayObjectContainer")
+      getproperty         QName(PackageNamespace("", "#0"), "stage")
+      getlocal0
+      getproperty         QName(PrivateNamespace("CoreComponentContext.as$517:UpdateDelegate"), "_priority")
+      pushbyte            0
+      equals
+      iffalse             L26
+
+      getlex              QName(PackageNamespace("flash.events"), "Event")
+      getproperty         QName(PackageNamespace("", "#0"), "EXIT_FRAME")
+      coerce_s
+      jump                L29
+
+L26:
+      getlex              QName(PackageNamespace("flash.events"), "Event")
+      getproperty         QName(PackageNamespace("", "#0"), "ENTER_FRAME")
+      coerce_s
+L29:
+      getlocal0
+      getproperty         QName(PrivateNamespace("CoreComponentContext.as$517:UpdateDelegate"), "onFrameUpdate")
+      callpropvoid        QName(PackageNamespace("", "#0"), "removeEventListener"), 2
+
+      debugline           915
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("CoreComponentContext.as$517:UpdateDelegate"), "_context")
+
+      debugline           917
+L37:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("CoreComponentContext.as$517:UpdateDelegate"), "onFrameUpdate")
+   method
+    refid "_-0XF:CoreComponentContext/UpdateDelegate/instance/_-0XF:CoreComponentContext/UpdateDelegate/instance/onFrameUpdate"
+    param QName(PackageNamespace("flash.events"), "Event")
+    returns QName(PackageNamespace("", "#0"), "void")
+    flag NEED_ACTIVATION
+    body
+     maxstack 5
+     localcount 5
+     initscopedepth 5
+     maxscopedepth 10
+     code
+      debugfile           "k"
+      debugline           923
+      getlocal0
+      pushscope
+
+      newactivation
+      dup
+      setlocal2
+
+      pushscope
+
+      debug               1, "k", 1, 923
+      getscopeobject      1
+      pushbyte            0
+      convert_u
+      setslot             2
+
+      getscopeobject      1
+      pushbyte            0
+      convert_u
+      setslot             3
+
+      getscopeobject      1
+      getlocal1
+      setslot             1
+
+      debug               1, "k", 0, 923
+      debugline           925
+      getlocal0
+      getproperty         QName(PackageNamespace("", "#0"), "disposed")
+      iftrue              L132
+
+      debugline           927
+      getscopeobject      1
+      findpropstrict      QName(PackageNamespace("flash.utils"), "getTimer")
+      callproperty        QName(PackageNamespace("flash.utils"), "getTimer"), 0
+      convert_u
+      setslot             2
+
+      debugline           928
+      getscopeobject      1
+      getscopeobject      1
+      getslot             2
+      getlocal0
+      getproperty         QName(PrivateNamespace("CoreComponentContext.as$517:UpdateDelegate"), "_lastUpdateTimeMs")
+      subtract
+      convert_u
+      setslot             3
+
+      debugline           930
+      getlocal0
+      getscopeobject      1
+      getslot             2
+      initproperty        QName(PrivateNamespace("CoreComponentContext.as$517:UpdateDelegate"), "_lastUpdateTimeMs")
+
+      debugline           934
+      getlocal0
+      getproperty         QName(PrivateNamespace("CoreComponentContext.as$517:UpdateDelegate"), "_priority")
+      pushbyte            0
+      greaterthan
+      dup
+      iffalse             L58
+
+      pop
+      getlocal0
+      getproperty         QName(PrivateNamespace("CoreComponentContext.as$517:UpdateDelegate"), "_framesSkipped")
+      getlocal0
+      getproperty         QName(PrivateNamespace("CoreComponentContext.as$517:UpdateDelegate"), "_priority")
+      lessthan
+L58:
+      iffalse             L87
+
+      debugline           935
+      getscopeobject      1
+      getslot             3
+      pushshort           1000
+      getlocal0
+      getproperty         QName(PrivateNamespace("CoreComponentContext.as$517:UpdateDelegate"), "_context")
+      getproperty         QName(Namespace("_-23J"), "displayObjectContainer")
+      getproperty         QName(PackageNamespace("", "#0"), "stage")
+      getproperty         QName(PackageNamespace("", "#0"), "frameRate")
+      divide
+      ifngt               L87
+
+      debugline           936
+      getlocal0
+      dup
+      setlocal3
+
+      getproperty         QName(PrivateNamespace("CoreComponentContext.as$517:UpdateDelegate"), "_framesSkipped")
+      increment
+      setlocal            4
+
+      getlocal3
+      getlocal            4
+      setproperty         QName(PrivateNamespace("CoreComponentContext.as$517:UpdateDelegate"), "_framesSkipped")
+
+      kill                4
+      kill                3
+      debugline           938
+      returnvoid
+
+      ; 0xF0
+      ; 0xAE
+      ; 0x07
+L87:
+      getlocal0
+      pushbyte            0
+      initproperty        QName(PrivateNamespace("CoreComponentContext.as$517:UpdateDelegate"), "_framesSkipped")
+
+      debugline           951
+L91:
+      getlocal0
+      getproperty         QName(PrivateNamespace("CoreComponentContext.as$517:UpdateDelegate"), "_receiver")
+      getscopeobject      1
+      getslot             3
+      callpropvoid        QName(Namespace("_-VP"), "update"), 1
+
+      debugline           953
+L97:
+      jump                L132
+
+L98:
+      getlocal0
+      pushscope
+
+      getlocal2
+      pushscope
+
+      newcatch            0
+      dup
+      setlocal3
+
+      dup
+      pushscope
+
+      swap
+      setslot             1
+
+      debugline           954
+      getlex              QName(PrivateNamespace("CoreComponentContext.as$517:UpdateDelegate"), "_context")
+      pushstring          "Error in update receiver \""
+      findpropstrict      QName(PackageNamespace("flash.utils"), "getQualifiedClassName")
+      getlex              QName(PrivateNamespace("CoreComponentContext.as$517:UpdateDelegate"), "_receiver")
+      callproperty        QName(PackageNamespace("flash.utils"), "getQualifiedClassName"), 1
+      add
+      pushstring          "\": "
+      add
+      getscopeobject      2
+      getslot             1
+      getproperty         QName(PackageNamespace("", "#0"), "message")
+      add
+      pushtrue
+      getscopeobject      2
+      getslot             1
+      getproperty         QName(PackageNamespace("", "#0"), "errorID")
+      getscopeobject      2
+      getslot             1
+      callpropvoid        QName(Namespace("_-23J"), "error"), 4
+
+      popscope
+      kill                3
+      debugline           959
+L132:
+      returnvoid
+     end ; code
+     try from L91 to L97 target L98 type QName(PackageNamespace("", "#0"), "Error") name QName(PackageNamespace("", "#0"), "e") end
+     trait slot QName(PrivateNamespace("CoreComponentContext.as$517"), "event") slotid 1 type QName(PackageNamespace("flash.events"), "Event") end
+     trait slot QName(PrivateNamespace("CoreComponentContext.as$517"), "msCurrentTime") slotid 2 type QName(PackageNamespace("", "#0"), "uint") end
+     trait slot QName(PrivateNamespace("CoreComponentContext.as$517"), "msDeltaTime") slotid 3 type QName(PackageNamespace("", "#0"), "uint") end
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-0XF:CoreComponentContext/UpdateDelegate/class/init"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

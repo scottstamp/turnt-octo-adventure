@@ -1,0 +1,144 @@
+class
+ refid "_-6Hy:_-5qX"
+ instance QName(PackageNamespace("_-6Hy"), "_-5qX")
+  extends QName(PackageNamespace("_-6Hy"), "_-65W")
+  implements Multiname("_-wt", [PackageNamespace("_-6Hy")])
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-1cs")
+  iinit
+   refid "_-6Hy:_-5qX/instance/init#0"
+   param QName(PackageNamespace("_-2z-"), "IWindowContainer")
+   param QName(PackageNamespace("_-0ce"), "HabboCatalog")
+   body
+    maxstack 2
+    localcount 3
+    initscopedepth 5
+    maxscopedepth 6
+    code
+     debugfile           "k"
+     debugline           17
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 17
+     debug               1, "k", 1, 17
+     debugline           18
+     getlocal0
+     getlocal1
+     constructsuper      1
+
+     debugline           19
+     getlocal0
+     getlocal2
+     initproperty        QName(PrivateNamespace("_-1cs"), "_-Wy")
+
+     debugline           20
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-1cs"), "_-Wy") type QName(PackageNamespace("_-0ce"), "HabboCatalog") end
+  trait slot QName(PrivateNamespace("_-1cs"), "_-4Wq") type QName(PackageNamespace("_-2z-"), "IWindow") end
+  trait method QName(PackageNamespace(""), "init") flag OVERRIDE
+   method
+    refid "_-6Hy:_-5qX/instance/init#1"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 3
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           21
+      getlocal0
+      pushscope
+
+      debugline           22
+      getlocal0
+      callsuper           QName(PackageNamespace(""), "init"), 0
+      iftrue              L13
+
+      debugline           23
+      pushfalse
+      returnvalue
+
+      ; 0xF0
+      ; 0x19
+L13:
+      getlex              QName(PackageNamespace(""), "events")
+      getlex              QName(PackageNamespace("_-1SS"), "_-4Jg")
+      getproperty         QName(PackageNamespace(""), "SELECT_PRODUCT")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1cs"), "_-1Hp")
+      callpropvoid        QName(Namespace("flash.events:IEventDispatcher"), "addEventListener"), 2
+
+      debugline           26
+      pushtrue
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-1cs"), "_-1Hp")
+   method
+    refid "_-6Hy:_-5qX/instance/_-6Hy:_-5qX/instance/_-1Hp"
+    param QName(PackageNamespace("_-1SS"), "_-Sw")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 9
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           29
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 29
+      debugline           30
+      getlocal0
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1cs"), "_-Wy")
+      getproperty         QName(PackageNamespace(""), "utils")
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "offer")
+      getlex              QName(ProtectedNamespace("_-18j"), "_-36K")
+      getlex              QName(PackageNamespace("_-2z-"), "IWindowContainer")
+      astypelate
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1cs"), "_-4Wq")
+      getlex              QName(ProtectedNamespace("_-18j"), "_-36K")
+      pushstring          "fake_productimage"
+      callproperty        QName(Namespace("_-7H"), "findChildByName"), 1
+      pushbyte            0
+      pushtrue
+      pushbyte            0
+      callproperty        QName(PackageNamespace(""), "_-52W"), 7
+      initproperty        QName(PrivateNamespace("_-1cs"), "_-4Wq")
+
+      debugline           31
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-6Hy:_-5qX/class/init"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 4
+   maxscopedepth 5
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

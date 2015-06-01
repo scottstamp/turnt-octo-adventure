@@ -1,0 +1,579 @@
+class
+ refid "_-GT:ForumsListView"
+ instance QName(PackageNamespace("_-GT"), "ForumsListView")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-2K-")
+  iinit
+   refid "_-GT:ForumsListView/instance/init"
+   param QName(PackageNamespace("_-GT"), "GroupForumView")
+   param QName(PackageNamespace("_-2tk"), "_-3yj")
+   param QName(PackageNamespace(""), "Array")
+   body
+    maxstack 4
+    localcount 4
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     debugfile           "k"
+     debugline           23
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 23
+     debug               1, "k", 1, 23
+     debug               1, "k", 2, 23
+     debugline           23
+     getlocal0
+     constructsuper      0
+
+     debugline           24
+     getlocal0
+     getlocal1
+     initproperty        QName(PrivateNamespace("_-2K-"), "_-33E")
+
+     debugline           25
+     getlocal0
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-2K-"), "_-33E")
+     getproperty         QName(PackageNamespace(""), "controller")
+     initproperty        QName(PrivateNamespace("_-2K-"), "_-1ng")
+
+     debugline           27
+     getlocal0
+     getlocal2
+     initproperty        QName(PrivateNamespace("_-2K-"), "_-3wa")
+
+     debugline           28
+     getlocal0
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-2K-"), "_-1ng")
+     getproperty         QName(PackageNamespace(""), "windowManager")
+     findpropstrict      QName(PackageNamespace(""), "XML")
+     getlex              QName(PackageNamespace(""), "HabboFriendBarCom")
+     constructprop       QName(PackageNamespace(""), "groupforum_forum_list_item_xml"), 0
+     callproperty        QName(PackageNamespace(""), "XML"), 1
+     callproperty        QName(Namespace("_-40D"), "buildFromXML"), 1
+     getlex              QName(PackageNamespace("_-2z-"), "IWindowContainer")
+     astypelate
+     initproperty        QName(PrivateNamespace("_-2K-"), "_-1BG")
+
+     debugline           30
+     getlocal0
+     getlocal3
+     initproperty        QName(PrivateNamespace("_-2K-"), "_-1rQ")
+
+     debugline           31
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-2K-"), "_-1ng") type QName(PackageNamespace("_-GT"), "GroupForumController") end
+  trait slot QName(PrivateNamespace("_-2K-"), "_-33E") type QName(PackageNamespace("_-GT"), "GroupForumView") end
+  trait slot QName(PrivateNamespace("_-2K-"), "_-3wa") type QName(PackageNamespace("_-2tk"), "_-3yj") end
+  trait slot QName(PrivateNamespace("_-2K-"), "_-1BG") type QName(PackageNamespace("_-2z-"), "IWindowContainer") end
+  trait slot QName(PrivateNamespace("_-2K-"), "_-1rQ") type QName(PackageNamespace(""), "Array") end
+  trait method QName(PackageNamespace(""), "update")
+   method
+    refid "_-GT:ForumsListView/instance/update"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 4
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           33
+      getlocal0
+      pushscope
+
+      pushbyte            0
+      setlocal1
+
+      pushnull
+      coerce              QName(PackageNamespace("_-2z-"), "IWindowContainer")
+      setlocal2
+
+      pushnull
+      coerce              QName(PackageNamespace("_-4OQ"), "_-5Bf")
+      setlocal3
+
+      debug               1, "k", 0, 36
+      debug               1, "k", 1, 37
+      debugline           34
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2K-"), "_-3wa")
+      callpropvoid        QName(Namespace("_-0jq"), "invalidate"), 0
+
+      debugline           38
+      pushbyte            0
+      setlocal1
+
+      jump                L59
+
+L22:
+      label
+      debug               1, "k", 2, 39
+      debugline           39
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2K-"), "_-1rQ")
+      getlocal1
+      getproperty         MultinameL([PrivateNamespace("_-2K-"), PackageNamespace(""), PackageNamespace("_-GT"), PrivateNamespace("ForumsListView.as$1918"), PackageInternalNs("_-GT"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-2K-"), StaticProtectedNs("_-2K-")])
+      coerce              QName(PackageNamespace("_-4OQ"), "_-5Bf")
+      setlocal3
+
+      debugline           40
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2K-"), "_-1BG")
+      callproperty        QName(Namespace("_-0jq"), "clone"), 0
+      getlex              QName(PackageNamespace("_-2z-"), "IWindowContainer")
+      astypelate
+      coerce              QName(PackageNamespace("_-2z-"), "IWindowContainer")
+      setlocal2
+
+      debugline           41
+      getlocal2
+      pushstring          "forum_"
+      getlocal3
+      getproperty         QName(PackageNamespace(""), "groupId")
+      add
+      setproperty         QName(Namespace("_-0jq"), "name")
+
+      debugline           42
+      getlocal0
+      getlocal2
+      getlocal3
+      getlocal1
+      callpropvoid        QName(PrivateNamespace("_-2K-"), "_-2HV"), 3
+
+      debugline           43
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2K-"), "_-3wa")
+      getlocal2
+      callpropvoid        QName(Namespace("_-00u"), "addListItem"), 1
+
+      debugline           38
+      inclocal_i          1
+L59:
+      getlocal1
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2K-"), "_-1rQ")
+      getproperty         QName(PackageNamespace(""), "length")
+      iflt                L22
+
+      debugline           45
+      getlocal0
+      callpropvoid        QName(PackageNamespace(""), "_-4lH"), 0
+
+      debugline           46
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-2K-"), "_-2HV")
+   method
+    refid "_-GT:ForumsListView/instance/_-GT:ForumsListView/instance/_-2HV"
+    param QName(PackageNamespace("_-2z-"), "IWindowContainer")
+    param QName(PackageNamespace("_-4OQ"), "_-5Bf")
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 13
+     localcount 10
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           48
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 48
+      debug               1, "k", 1, 48
+      debug               1, "k", 2, 48
+      debug               1, "k", 3, 49
+      debug               1, "k", 4, 52
+      debug               1, "k", 5, 54
+      debug               1, "k", 6, 57
+      debug               1, "k", 7, 87
+      debug               1, "k", 8, 88
+      debugline           49
+      getlocal1
+      getlex              QName(PackageNamespace("_-2z-"), "IWindowContainer")
+      astypelate
+      coerce              QName(PackageNamespace("_-2z-"), "IWindowContainer")
+      setlocal            4
+
+      debugline           50
+      getlocal            4
+      getlocal3
+      pushbyte            1
+      add
+      pushbyte            2
+      modulo
+      iffalse             L30
+
+      pushdouble          4293852927
+      convert_u
+      jump                L32
+
+L30:
+      pushdouble          4289914618
+      convert_u
+L32:
+      setproperty         QName(Namespace("_-0jq"), "color")
+
+      debugline           52
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "_-37K")
+      convert_i
+      setlocal            5
+
+      debugline           54
+      getlocal            4
+      pushstring          "texts_container"
+      callproperty        QName(Namespace("_-7H"), "findChildByName"), 1
+      coerce              QName(PackageNamespace("_-2z-"), "IWindow")
+      setlocal            6
+
+      debugline           55
+      getlocal            6
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "groupId")
+      setproperty         QName(Namespace("_-0jq"), "id")
+
+      debugline           57
+      getlocal            4
+      pushstring          "header"
+      callproperty        QName(Namespace("_-7H"), "findChildByName"), 1
+      getlex              QName(PackageNamespace("_-2tk"), "ITextWindow")
+      astypelate
+      coerce              QName(PackageNamespace("_-2tk"), "ITextWindow")
+      setlocal            7
+
+      debugline           58
+      getlocal            7
+      getlocal            5
+      pushbyte            0
+      greaterthan
+      setproperty         QName(Namespace("_-49x"), "bold")
+
+      debugline           59
+      getlocal            7
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "name")
+      setproperty         QName(Namespace("_-49x"), "text")
+
+      debugline           61
+      getlocal            4
+      pushstring          "header_region"
+      callproperty        QName(Namespace("_-7H"), "findChildByName"), 1
+      coerce              QName(PackageNamespace("_-2z-"), "IWindow")
+      setlocal            6
+
+      debugline           62
+      getlocal            6
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "groupId")
+      setproperty         QName(Namespace("_-0jq"), "id")
+
+      debugline           63
+      getlocal            6
+      getlex              QName(PackageNamespace("_-0eT"), "WindowMouseEvent")
+      getproperty         QName(PackageNamespace(""), "CLICK")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2K-"), "_-0nC")
+      callpropvoid        QName(Namespace("_-0jq"), "removeEventListener"), 2
+
+      debugline           64
+      getlocal            6
+      getlex              QName(PackageNamespace("_-0eT"), "WindowMouseEvent")
+      getproperty         QName(PackageNamespace(""), "CLICK")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2K-"), "_-0nC")
+      callpropvoid        QName(Namespace("_-0jq"), "addEventListener"), 2
+
+      debugline           66
+      getlocal            4
+      pushstring          "details"
+      callproperty        QName(Namespace("_-7H"), "findChildByName"), 1
+      coerce              QName(PackageNamespace("_-2z-"), "IWindow")
+      setlocal            6
+
+      debugline           67
+      getlocal            6
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2K-"), "_-1ng")
+      getproperty         QName(PackageNamespace(""), "localizationManager")
+      pushstring          "groupforum.view.forum_details"
+      pushstring          ""
+      pushstring          "rating"
+      debugline           68
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "_-4n")
+      pushstring          "last_author_id"
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "_-5B1")
+      pushstring          "last_author_name"
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "_-5VE")
+      pushstring          "update_time"
+      debugline           69
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2K-"), "_-33E")
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "_-562")
+      callproperty        QName(PackageNamespace(""), "_-21O"), 1
+      callproperty        QName(Namespace("_-4vA"), "getLocalizationWithParams"), 10
+      setproperty         QName(Namespace("_-0jq"), "caption")
+
+      debugline           71
+      getlocal            4
+      pushstring          "unread_texts_container"
+      callproperty        QName(Namespace("_-7H"), "findChildByName"), 1
+      coerce              QName(PackageNamespace("_-2z-"), "IWindow")
+      setlocal            6
+
+      debugline           72
+      getlocal            6
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "groupId")
+      setproperty         QName(Namespace("_-0jq"), "id")
+
+      debugline           74
+      getlocal            4
+      pushstring          "unread_region"
+      callproperty        QName(Namespace("_-7H"), "findChildByName"), 1
+      coerce              QName(PackageNamespace("_-2z-"), "IWindow")
+      setlocal            6
+
+      debugline           75
+      getlocal            6
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "groupId")
+      setproperty         QName(Namespace("_-0jq"), "id")
+
+      debugline           76
+      getlocal            6
+      getlex              QName(PackageNamespace("_-0eT"), "WindowMouseEvent")
+      getproperty         QName(PackageNamespace(""), "CLICK")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2K-"), "_-0nC")
+      callpropvoid        QName(Namespace("_-0jq"), "removeEventListener"), 2
+
+      debugline           77
+      getlocal            6
+      getlex              QName(PackageNamespace("_-0eT"), "WindowMouseEvent")
+      getproperty         QName(PackageNamespace(""), "CLICK")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2K-"), "_-0nC")
+      callpropvoid        QName(Namespace("_-0jq"), "addEventListener"), 2
+
+      debugline           79
+      getlocal            4
+      pushstring          "messages1"
+      callproperty        QName(Namespace("_-7H"), "findChildByName"), 1
+      getlex              QName(PackageNamespace("_-2tk"), "ITextWindow")
+      astypelate
+      coerce              QName(PackageNamespace("_-2tk"), "ITextWindow")
+      setlocal            7
+
+      debugline           80
+      getlocal            7
+      getlocal            5
+      pushbyte            0
+      greaterthan
+      setproperty         QName(Namespace("_-49x"), "bold")
+
+      debugline           81
+      getlocal            7
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2K-"), "_-1ng")
+      getproperty         QName(PackageNamespace(""), "localizationManager")
+      pushstring          "groupforum.view.thread_details1"
+      pushstring          ""
+      pushstring          "total_messages"
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "_-24H")
+      pushstring          "new_messages"
+      getlocal            5
+      callproperty        QName(Namespace("_-4vA"), "getLocalizationWithParams"), 6
+      setproperty         QName(Namespace("_-49x"), "text")
+
+      debugline           83
+      getlocal            4
+      pushstring          "messages2"
+      callproperty        QName(Namespace("_-7H"), "findChildByName"), 1
+      getlex              QName(PackageNamespace("_-2tk"), "ITextWindow")
+      astypelate
+      coerce              QName(PackageNamespace("_-2tk"), "ITextWindow")
+      setlocal            7
+
+      debugline           84
+      getlocal            7
+      getlocal            5
+      pushbyte            0
+      greaterthan
+      setproperty         QName(Namespace("_-49x"), "bold")
+
+      debugline           85
+      getlocal            7
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2K-"), "_-1ng")
+      getproperty         QName(PackageNamespace(""), "localizationManager")
+      pushstring          "groupforum.view.thread_details2"
+      pushstring          ""
+      pushstring          "total_messages"
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "_-24H")
+      pushstring          "new_messages"
+      getlocal            5
+      callproperty        QName(Namespace("_-4vA"), "getLocalizationWithParams"), 6
+      setproperty         QName(Namespace("_-49x"), "text")
+
+      debugline           87
+      findpropstrict      QName(PackageNamespace("_-2tk"), "_-247")
+      getlocal            4
+      pushstring          "group_icon"
+      callproperty        QName(Namespace("_-7H"), "findChildByName"), 1
+      callproperty        QName(PackageNamespace("_-2tk"), "_-247"), 1
+      coerce              QName(PackageNamespace("_-2tk"), "_-247")
+      setlocal            8
+
+      debugline           88
+      getlocal            8
+      getproperty         QName(Namespace("_-5Kj"), "widget")
+      getlex              QName(PackageNamespace("_-0Fd"), "_-01o")
+      astypelate
+      coerce              QName(PackageNamespace("_-0Fd"), "_-01o")
+      setlocal            9
+
+      debugline           89
+      getlocal            9
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "icon")
+      setproperty         QName(Namespace("_-6E"), "_-4px")
+
+      debugline           90
+      getlocal            9
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "groupId")
+      setproperty         QName(Namespace("_-6E"), "groupId")
+
+      debugline           91
+      getlocal            9
+      getlex              QName(PackageNamespace("_-5mS"), "_-4vi")
+      getproperty         QName(PackageNamespace(""), "_-3X8")
+      setproperty         QName(Namespace("_-6E"), "type")
+
+      debugline           92
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-4lH")
+   method
+    refid "_-GT:ForumsListView/instance/_-4lH"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           94
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 97
+      debugline           97
+      pushbyte            0
+      setlocal1
+
+      jump                L24
+
+L9:
+      label
+      debugline           98
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2K-"), "_-3wa")
+      getlocal1
+      callproperty        QName(Namespace("_-00u"), "getListItemAt"), 1
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2K-"), "_-3wa")
+      getproperty         QName(Namespace("_-00u"), "_-17I")
+      getproperty         QName(Namespace("_-0jq"), "width")
+      pushbyte            2
+      subtract
+      setproperty         QName(Namespace("_-0jq"), "width")
+
+      debugline           97
+      inclocal_i          1
+L24:
+      getlocal1
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2K-"), "_-3wa")
+      getproperty         QName(Namespace("_-00u"), "numListItems")
+      iflt                L9
+
+      debugline           100
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-2K-"), "_-0nC")
+   method
+    refid "_-GT:ForumsListView/instance/_-GT:ForumsListView/instance/_-0nC"
+    param QName(PackageNamespace("_-0eT"), "WindowMouseEvent")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           102
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 102
+      debugline           103
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2K-"), "_-1ng")
+      findpropstrict      QName(PackageNamespace(""), "int")
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "target")
+      getproperty         QName(Namespace("_-0jq"), "id")
+      callproperty        QName(PackageNamespace(""), "int"), 1
+      callpropvoid        QName(PackageNamespace(""), "_-69J"), 1
+
+      debugline           104
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-GT:ForumsListView/class/init"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

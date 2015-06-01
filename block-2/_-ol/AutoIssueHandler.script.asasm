@@ -1,0 +1,33 @@
+script ; 5124
+ sinit
+  refid "_-ol:AutoIssueHandler/init"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 1
+   maxscopedepth 3
+   code
+    getlocal0
+    pushscope
+
+    debugfile           "k"
+    debugline           39
+    findpropstrict      Multiname("AutoIssueHandler", [PackageNamespace("_-ol")])
+    getlex              QName(PackageNamespace(""), "Object")
+    pushscope
+
+    getlex              QName(PackageNamespace(""), "Object")
+    newclass            "_-ol:AutoIssueHandler"
+    popscope
+    initproperty        QName(PackageNamespace("_-ol"), "AutoIssueHandler")
+
+    debugfile           "k"
+    debugline           1
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait class QName(PackageNamespace("_-ol"), "AutoIssueHandler")
+  #include "AutoIssueHandler.class.asasm"
+ end ; trait
+end ; script

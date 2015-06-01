@@ -1,0 +1,421 @@
+class
+ refid "_-5B6:RoomToolsHistory"
+ instance QName(PackageNamespace("_-5B6"), "RoomToolsHistory")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-0lQ")
+  iinit
+   refid "_-5B6:RoomToolsHistory/instance/init"
+   param QName(PackageNamespace("_-6Wb"), "_-4fO")
+   param QName(PackageNamespace("_-475"), "_-10k")
+   param QName(PackageNamespace("_-4vJ"), "RoomToolsWidgetHandler")
+   body
+    maxstack 4
+    localcount 4
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     debugfile           "k"
+     debugline           21
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 21
+     debug               1, "k", 1, 21
+     debug               1, "k", 2, 21
+     debugline           19
+     getlocal0
+     getlex              Multiname("Vector", [PrivateNamespace("_-0lQ"), PrivateNamespace("RoomToolsHistory.as$5020"), PackageNamespace(""), PackageNamespace("_-5B6"), PackageInternalNs("_-5B6"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-0lQ"), StaticProtectedNs("_-0lQ"), PackageNamespace("__AS3__.vec")])
+     getlex              QName(PackageNamespace("_-2z-"), "IWindowContainer")
+     applytype           1
+     construct           0
+     initproperty        QName(PrivateNamespace("_-0lQ"), "_-0VM")
+
+     debugline           21
+     getlocal0
+     constructsuper      0
+
+     debugline           22
+     getlocal0
+     getlocal3
+     initproperty        QName(PrivateNamespace("_-0lQ"), "_-1wL")
+
+     debugline           23
+     getlocal0
+     getlocal2
+     initproperty        QName(PrivateNamespace("_-0lQ"), "_assets")
+
+     debugline           24
+     getlocal0
+     getlocal1
+     initproperty        QName(PrivateNamespace("_-0lQ"), "_-0cE")
+
+     debugline           25
+     getlocal0
+     getlocal1
+     getlocal2
+     pushstring          "room_tools_history_xml"
+     callproperty        QName(Namespace("_-14k"), "getAssetByName"), 1
+     getproperty         QName(Namespace("_-3SO"), "content")
+     getlex              QName(PackageNamespace(""), "XML")
+     astypelate
+     callproperty        QName(Namespace("_-40D"), "buildFromXML"), 1
+     getlex              QName(PackageNamespace("_-2z-"), "IWindowContainer")
+     astypelate
+     initproperty        QName(PrivateNamespace("_-0lQ"), "_-36K")
+
+     debugline           26
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-0lQ"), "_-0cE") type QName(PackageNamespace("_-6Wb"), "_-4fO") end
+  trait slot QName(PrivateNamespace("_-0lQ"), "_assets") type QName(PackageNamespace("_-475"), "_-10k") end
+  trait slot QName(PrivateNamespace("_-0lQ"), "_-36K") type QName(PackageNamespace("_-2z-"), "IWindowContainer") end
+  trait slot QName(PrivateNamespace("_-0lQ"), "_-1wL") type QName(PackageNamespace("_-4vJ"), "RoomToolsWidgetHandler") end
+  trait slot QName(PrivateNamespace("_-0lQ"), "_-0VM") type TypeName(QName(PackageNamespace("__AS3__.vec"), "Vector")<QName(PackageNamespace("_-2z-"), "IWindowContainer")>) end
+  trait method QName(PackageNamespace(""), "populate")
+   method
+    refid "_-5B6:RoomToolsHistory/instance/populate"
+    param TypeName(QName(PackageNamespace("__AS3__.vec"), "Vector")<QName(PackageNamespace("_-5Hb"), "_-6XH")>)
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 7
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           28
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-2z-"), "IWindow")
+      setlocal2
+
+      pushnull
+      coerce              QName(PackageNamespace("_-5Hb"), "_-6XH")
+      setlocal3
+
+      pushnull
+      coerce              QName(PackageNamespace("_-2z-"), "IWindowContainer")
+      setlocal            4
+
+      debug               1, "k", 0, 28
+      debug               1, "k", 1, 29
+      debug               1, "k", 2, 30
+      debugline           30
+      pushbyte            0
+      setlocal            5
+
+      getlocal1
+      coerce_a
+      setlocal            6
+
+      jump                L97
+
+L23:
+      label
+      getlocal            6
+      getlocal            5
+      nextvalue
+      coerce              QName(PackageNamespace("_-5Hb"), "_-6XH")
+      setlocal3
+
+      debug               1, "k", 3, 31
+      debugline           31
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0lQ"), "_-0cE")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0lQ"), "_assets")
+      pushstring          "room_tools_history_item_xml"
+      callproperty        QName(Namespace("_-14k"), "getAssetByName"), 1
+      getproperty         QName(Namespace("_-3SO"), "content")
+      getlex              QName(PackageNamespace(""), "XML")
+      astypelate
+      callproperty        QName(Namespace("_-40D"), "buildFromXML"), 1
+      getlex              QName(PackageNamespace("_-2z-"), "IWindowContainer")
+      astypelate
+      coerce              QName(PackageNamespace("_-2z-"), "IWindowContainer")
+      setlocal            4
+
+      debugline           32
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0lQ"), "_-36K")
+      getlocal            4
+      callpropvoid        QName(Namespace("_-7H"), "addChild"), 1
+
+      debugline           33
+      getlocal            4
+      pushstring          "room_name"
+      callproperty        QName(Namespace("_-7H"), "findChildByName"), 1
+      getlocal3
+      getproperty         QName(PackageNamespace(""), "roomName")
+      setproperty         QName(Namespace("_-0jq"), "caption")
+
+      debugline           34
+      getlocal2
+      iffalse             L70
+
+      debugline           35
+      getlocal            4
+      getlocal2
+      getproperty         QName(Namespace("_-0jq"), "bottom")
+      getlex              QName(PrivateNamespace("_-0lQ"), "_-15O")
+      add
+      setproperty         QName(Namespace("_-0jq"), "y")
+
+      jump                L74
+
+      ; 0xF0
+      ; 0x26
+L70:
+      getlocal            4
+      getlex              QName(PrivateNamespace("_-0lQ"), "_-1gY")
+      setproperty         QName(Namespace("_-0jq"), "y")
+
+      debugline           40
+L74:
+      getlocal            4
+      getlex              QName(PrivateNamespace("_-0lQ"), "_-1gY")
+      setproperty         QName(Namespace("_-0jq"), "x")
+
+      debugline           41
+      getlocal            4
+      getlocal3
+      getproperty         QName(PackageNamespace(""), "flatId")
+      setproperty         QName(Namespace("_-0jq"), "id")
+
+      debugline           42
+      getlocal            4
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0lQ"), "onClick")
+      setproperty         QName(Namespace("_-0jq"), "procedure")
+
+      debugline           43
+      getlocal            4
+      coerce              QName(PackageNamespace("_-2z-"), "IWindow")
+      setlocal2
+
+      debugline           44
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0lQ"), "_-0VM")
+      getlocal            4
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      debugline           30
+L97:
+      hasnext2            6, 5
+      iftrue              L23
+
+      kill                6
+      kill                5
+      debugline           46
+      getlocal2
+      iffalse             L114
+
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0lQ"), "_-36K")
+      getlocal2
+      getproperty         QName(Namespace("_-0jq"), "bottom")
+      pushbyte            2
+      getlex              QName(PrivateNamespace("_-0lQ"), "_-1gY")
+      multiply
+      add
+      setproperty         QName(Namespace("_-0jq"), "height")
+
+      debugline           47
+L114:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "dispose")
+   method
+    refid "_-5B6:RoomToolsHistory/instance/dispose"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 4
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           49
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-2z-"), "IWindowContainer")
+      setlocal1
+
+      debug               1, "k", 0, 50
+      debugline           50
+      pushbyte            0
+      setlocal2
+
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0lQ"), "_-0VM")
+      coerce_a
+      setlocal3
+
+      jump                L30
+
+L16:
+      label
+      getlocal3
+      getlocal2
+      nextvalue
+      coerce              QName(PackageNamespace("_-2z-"), "IWindowContainer")
+      setlocal1
+
+      debugline           51
+      getlocal1
+      pushnull
+      setproperty         QName(Namespace("_-0jq"), "procedure")
+
+      debugline           52
+      getlocal1
+      callpropvoid        QName(Namespace("_-0mn"), "dispose"), 0
+
+      debugline           50
+L30:
+      hasnext2            3, 2
+      iftrue              L16
+
+      kill                3
+      kill                2
+      debugline           54
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-0lQ"), "_-0VM")
+
+      debugline           55
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-0lQ"), "_-0cE")
+
+      debugline           56
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-0lQ"), "_-1wL")
+
+      debugline           57
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-0lQ"), "_assets")
+
+      debugline           58
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0lQ"), "_-36K")
+      callpropvoid        QName(Namespace("_-0mn"), "dispose"), 0
+
+      debugline           59
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-0lQ"), "_-36K")
+
+      debugline           60
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-0lQ"), "onClick")
+   method
+    refid "_-5B6:RoomToolsHistory/instance/_-5B6:RoomToolsHistory/onClick"
+    param QName(PackageNamespace("_-0eT"), "WindowEvent")
+    param QName(PackageNamespace("_-2z-"), "IWindow")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 3
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           62
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 62
+      debug               1, "k", 1, 62
+      debugline           63
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "type")
+      getlex              QName(PackageNamespace("_-0eT"), "WindowMouseEvent")
+      getproperty         QName(PackageNamespace(""), "CLICK")
+      ifeq                L15
+
+      returnvoid
+
+      ; 0xF0
+      ; 0x40
+L15:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0lQ"), "_-1wL")
+      getlocal2
+      getproperty         QName(Namespace("_-0jq"), "id")
+      callpropvoid        QName(PackageNamespace(""), "goToPrivateRoom"), 1
+
+      debugline           65
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "window")
+   method
+    refid "_-5B6:RoomToolsHistory/instance/window/getter"
+    returns QName(PackageNamespace("_-2z-"), "IWindowContainer")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           67
+      getlocal0
+      pushscope
+
+      debugline           68
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0lQ"), "_-36K")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-5B6:RoomToolsHistory/class/init"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    debug               1, "k", 0, 13
+    findproperty        QName(PrivateNamespace("_-0lQ"), "_-1gY")
+    pushbyte            5
+    initproperty        QName(PrivateNamespace("_-0lQ"), "_-1gY")
+
+    debug               1, "k", 1, 14
+    findproperty        QName(PrivateNamespace("_-0lQ"), "_-15O")
+    pushbyte            2
+    initproperty        QName(PrivateNamespace("_-0lQ"), "_-15O")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait const QName(PrivateNamespace("_-0lQ"), "_-1gY") slotid 1 type QName(PackageNamespace(""), "int") value Integer(5) end
+ trait const QName(PrivateNamespace("_-0lQ"), "_-15O") slotid 2 type QName(PackageNamespace(""), "int") value Integer(2) end
+end ; class

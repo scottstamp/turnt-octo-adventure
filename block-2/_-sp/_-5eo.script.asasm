@@ -1,0 +1,33 @@
+script ; 5727
+ sinit
+  refid "_-sp:_-5eo/init"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 1
+   maxscopedepth 3
+   code
+    getlocal0
+    pushscope
+
+    debugfile           "k"
+    debugline           9
+    findpropstrict      Multiname("_-5eo", [PackageNamespace("_-sp")])
+    getlex              QName(PackageNamespace(""), "Object")
+    pushscope
+
+    getlex              QName(PackageNamespace(""), "Object")
+    newclass            "_-sp:_-5eo"
+    popscope
+    initproperty        QName(PackageNamespace("_-sp"), "_-5eo")
+
+    debugfile           "k"
+    debugline           5
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait class QName(PackageNamespace("_-sp"), "_-5eo")
+  #include "_-5eo.class.asasm"
+ end ; trait
+end ; script

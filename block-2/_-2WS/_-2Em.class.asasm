@@ -1,0 +1,103 @@
+class
+ refid "_-2WS:_-2Em"
+ instance QName(PackageNamespace("_-2WS"), "_-2Em")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-69T")
+  iinit
+   refid "_-2WS:_-2Em/instance/init"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     debugfile           "k"
+     debugline           16
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+ end ; instance
+ cinit
+  refid "_-2WS:_-2Em/class/init"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait method QName(PackageNamespace(""), "isPerkAllowed") flag FINAL dispid 3
+  method
+   refid "_-2WS:_-2Em/class/isPerkAllowed"
+   param QName(PackageNamespace("_-0ys"), "_-4SG")
+   param QName(PackageNamespace("_-6Wb"), "_-4fO")
+   param QName(PackageNamespace(""), "String")
+   returns QName(PackageNamespace(""), "Boolean")
+   body
+    maxstack 5
+    localcount 5
+    initscopedepth 3
+    maxscopedepth 4
+    code
+     debugfile           "k"
+     debugline           6
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 6
+     debug               1, "k", 1, 6
+     debug               1, "k", 2, 6
+     debug               1, "k", 3, 10
+     debugline           7
+     getlocal1
+     getlocal3
+     callproperty        QName(Namespace("_-0yj"), "isPerkAllowed"), 1
+     iffalse             L18
+
+     debugline           8
+     pushtrue
+     returnvalue
+
+     ; 0xF0
+     ; 0x0A
+L18:
+     getlocal1
+     getlocal3
+     callproperty        QName(Namespace("_-0yj"), "_-2jq"), 1
+     coerce_s
+     setlocal            4
+
+     debugline           11
+     getlocal2
+     pushstring          "${perkmissing.title}"
+     pushstring          "${perkmissing.caption}"
+     pushstring          "${"
+     getlocal            4
+     add
+     pushstring          "}"
+     add
+     callpropvoid        QName(Namespace("_-5j5"), "simpleAlert"), 3
+
+     debugline           12
+     pushfalse
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+end ; class

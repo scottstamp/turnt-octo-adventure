@@ -1,0 +1,248 @@
+class
+ refid "_-0FD:_-1Dk"
+ instance QName(PackageNamespace("_-0FD"), "_-1Dk")
+  extends QName(PackageNamespace("_-0FD"), "_-1ov")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-0je")
+  iinit
+   refid "_-0FD:_-1Dk/instance/init"
+   param QName(PackageNamespace("_-0FD"), "AvatarInfoWidget")
+   body
+    maxstack 4
+    localcount 2
+    initscopedepth 7
+    maxscopedepth 8
+    code
+     debugfile           "k"
+     debugline           9
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 9
+     debugline           10
+     getlocal0
+     getlocal1
+     constructsuper      1
+
+     debugline           11
+     getlocal0
+     getlocal1
+     getproperty         QName(PackageNamespace(""), "localization")
+     pushstring          "room.enter.infostand.caption"
+     pushstring          ""
+     callproperty        QName(Namespace("_-3mY"), "getLocalization"), 2
+     initproperty        QName(PrivateNamespace("_-0je"), "_-5wh")
+
+     debugline           12
+     findproperty        QName(ProtectedNamespace("_-ia"), "_-1ds")
+     getlocal1
+     getproperty         QName(PackageNamespace(""), "configuration")
+     pushstring          "room.enter.infostand.fade.start.delay"
+     pushshort           5000
+     callproperty        QName(Namespace("_-5f9"), "getInteger"), 2
+     initproperty        QName(ProtectedNamespace("_-ia"), "_-1ds")
+
+     debugline           13
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-0je"), "_-5wh") type QName(PackageNamespace(""), "String") value Utf8("") end
+  trait method QName(ProtectedNamespace("_-0je"), "updateWindow") flag OVERRIDE
+   method
+    refid "_-0FD:_-1Dk/instance/_-0je:updateWindow"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 3
+     initscopedepth 7
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           19
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace(""), "XML")
+      setlocal1
+
+      pushnull
+      coerce              QName(PackageNamespace("_-2z-"), "IWindow")
+      setlocal2
+
+      debugline           20
+      getlex              QName(ProtectedNamespace("_-ia"), "_-60q")
+      not
+      dup
+      iftrue              L19
+
+      pop
+      getlex              QName(ProtectedNamespace("_-ia"), "_-60q")
+      getproperty         QName(Namespace("_-dv"), "assets")
+      not
+L19:
+      dup
+      iftrue              L25
+
+      pop
+      getlex              QName(ProtectedNamespace("_-ia"), "_-60q")
+      getproperty         QName(Namespace("_-dv"), "windowManager")
+      not
+L25:
+      iffalse             L30
+
+      debugline           21
+      returnvoid
+
+      ; 0xF0
+      ; 0x18
+L30:
+      getlex              QName(ProtectedNamespace("_-ia"), "_-36K")
+      iftrue              L75
+
+      debug               1, "k", 0, 25
+      debug               1, "k", 1, 32
+      debugline           25
+      getlex              QName(ProtectedNamespace("_-ia"), "_-60q")
+      getproperty         QName(Namespace("_-dv"), "assets")
+      pushstring          "new_user_help"
+      callproperty        QName(Namespace("_-14k"), "getAssetByName"), 1
+      getproperty         QName(Namespace("_-3SO"), "content")
+      getlex              QName(PackageNamespace(""), "XML")
+      astypelate
+      coerce              QName(PackageNamespace(""), "XML")
+      setlocal1
+
+      debugline           26
+      findproperty        QName(ProtectedNamespace("_-ia"), "_-36K")
+      getlex              QName(ProtectedNamespace("_-ia"), "_-60q")
+      getproperty         QName(Namespace("_-dv"), "windowManager")
+      getlocal1
+      pushbyte            0
+      callproperty        QName(Namespace("_-40D"), "buildFromXML"), 2
+      getlex              QName(PackageNamespace("_-2z-"), "IWindowContainer")
+      astypelate
+      initproperty        QName(ProtectedNamespace("_-ia"), "_-36K")
+
+      debugline           28
+      getlex              QName(ProtectedNamespace("_-ia"), "_-36K")
+      iftrue              L61
+
+      debugline           29
+      returnvoid
+
+      ; 0xF0
+      ; 0x20
+L61:
+      getlex              QName(ProtectedNamespace("_-ia"), "_-36K")
+      pushstring          "help"
+      callproperty        QName(Namespace("_-7H"), "findChildByName"), 1
+      coerce              QName(PackageNamespace("_-2z-"), "IWindow")
+      setlocal2
+
+      debugline           33
+      getlocal2
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0je"), "_-5wh")
+      setproperty         QName(Namespace("_-0jq"), "caption")
+
+      debugline           34
+      getlex              QName(ProtectedNamespace("_-ia"), "_-36K")
+      callpropvoid        QName(Namespace("_-0jq"), "invalidate"), 0
+
+      debugline           36
+L75:
+      findproperty        QName(ProtectedNamespace("_-ia"), "activeView")
+      getlex              QName(ProtectedNamespace("_-ia"), "_-36K")
+      initproperty        QName(ProtectedNamespace("_-ia"), "activeView")
+
+      debugline           37
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "widget")
+   method
+    refid "_-0FD:_-1Dk/instance/widget/getter"
+    returns QName(PackageNamespace("_-0FD"), "AvatarInfoWidget")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 7
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           39
+      getlocal0
+      pushscope
+
+      debugline           40
+      getlex              QName(ProtectedNamespace("_-ia"), "_-60q")
+      getlex              QName(PackageNamespace("_-0FD"), "AvatarInfoWidget")
+      astypelate
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-0FD:_-1Dk/class/init"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 6
+   maxscopedepth 7
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait method QName(PackageNamespace(""), "setup") flag FINAL dispid 3
+  method
+   refid "_-0FD:_-1Dk/class/setup"
+   param QName(PackageNamespace("_-0FD"), "_-1ov")
+   param QName(PackageNamespace(""), "int")
+   param QName(PackageNamespace(""), "String")
+   param QName(PackageNamespace(""), "int")
+   param QName(PackageNamespace(""), "int")
+   returns QName(PackageNamespace(""), "void")
+   body
+    maxstack 7
+    localcount 6
+    initscopedepth 6
+    maxscopedepth 7
+    code
+     debugfile           "k"
+     debugline           15
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 15
+     debug               1, "k", 1, 15
+     debug               1, "k", 2, 15
+     debug               1, "k", 3, 15
+     debug               1, "k", 4, 15
+     debugline           16
+     getlex              QName(PackageNamespace("_-0FD"), "_-1ov")
+     getlocal1
+     getlocal2
+     getlocal3
+     getlocal            4
+     getlocal            5
+     pushfalse
+     callpropvoid        QName(PackageNamespace(""), "setup"), 6
+
+     debugline           17
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+end ; class

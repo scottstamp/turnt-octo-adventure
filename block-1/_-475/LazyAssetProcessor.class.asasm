@@ -1,0 +1,330 @@
+class
+ refid "_-475:LazyAssetProcessor"
+ instance QName(PackageNamespace("_-475"), "LazyAssetProcessor")
+  extends QName(PackageNamespace("", "#0"), "Object")
+  implements Multiname("_-4Ud", [PackageNamespace("_-0XF")])
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-4qv")
+  iinit
+   refid "_-475:LazyAssetProcessor/instance/init"
+   body
+    maxstack 3
+    localcount 1
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     getlocal0
+     pushscope
+
+     debugfile           "k"
+     debugline           16
+     getlocal0
+     getlex              Multiname("Vector", [PrivateNamespace("_-4qv"), PackageNamespace("", "#0"), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-475"), PrivateNamespace("LazyAssetProcessor.as$436"), PackageInternalNs("_-475"), ProtectedNamespace("_-4qv"), StaticProtectedNs("_-4qv"), PackageNamespace("__AS3__.vec")])
+     getlex              QName(PackageNamespace("_-475"), "_-4Gh")
+     applytype           1
+     construct           0
+     initproperty        QName(PrivateNamespace("_-4qv"), "_-23V")
+
+     getlocal0
+     constructsuper      0
+
+     debugline           86
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait getter QName(PackageNamespace("", "#0"), "disposed")
+   method
+    refid "_-475:LazyAssetProcessor/instance/disposed/getter"
+    returns QName(PackageNamespace("", "#0"), "Boolean")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           12
+      getlocal0
+      pushscope
+
+      debugline           13
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4qv"), "_disposed")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait slot QName(PrivateNamespace("_-4qv"), "_-23V") type TypeName(QName(PackageNamespace("__AS3__.vec"), "Vector")<QName(PackageNamespace("_-475"), "_-4Gh")>) end
+  trait slot QName(PrivateNamespace("_-4qv"), "_-2Vb") type QName(PackageNamespace("", "#0"), "Boolean") value False() end
+  trait slot QName(PrivateNamespace("_-4qv"), "_disposed") type QName(PackageNamespace("", "#0"), "Boolean") value False() end
+  trait method QName(PackageNamespace("", "#0"), "dispose")
+   method
+    refid "_-475:LazyAssetProcessor/instance/dispose"
+    returns QName(PackageNamespace("", "#0"), "void")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           23
+      getlocal0
+      pushscope
+
+      debugline           25
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4qv"), "_disposed")
+      iftrue              L26
+
+      debugline           26
+      getlex              QName(PackageNamespace("_-1lC"), "Core")
+      getproperty         QName(PackageNamespace("", "#0"), "_-AS")
+      getlocal0
+      callpropvoid        QName(Namespace("_-23J"), "removeUpdateReceiver"), 1
+
+      debugline           27
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-4qv"), "_-23V")
+
+      debugline           28
+      getlocal0
+      pushfalse
+      initproperty        QName(PrivateNamespace("_-4qv"), "_-2Vb")
+
+      debugline           29
+      getlocal0
+      pushtrue
+      initproperty        QName(PrivateNamespace("_-4qv"), "_disposed")
+
+      debugline           31
+L26:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace("", "#0"), "push")
+   method
+    refid "_-475:LazyAssetProcessor/instance/push"
+    param QName(PackageNamespace("_-475"), "_-4Gh")
+    returns QName(PackageNamespace("", "#0"), "void")
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           37
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 37
+      debugline           39
+      getlocal1
+      iffalse             L28
+
+      debugline           40
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4qv"), "_-23V")
+      getlocal1
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      debugline           41
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4qv"), "_-2Vb")
+      iftrue              L28
+
+      debugline           42
+      getlex              QName(PackageNamespace("_-1lC"), "Core")
+      getproperty         QName(PackageNamespace("", "#0"), "_-AS")
+      getlocal0
+      pushbyte            2
+      callpropvoid        QName(Namespace("_-23J"), "registerUpdateReceiver"), 2
+
+      debugline           43
+      getlocal0
+      pushtrue
+      initproperty        QName(PrivateNamespace("_-4qv"), "_-2Vb")
+
+      debugline           46
+L28:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace("", "#0"), "flush")
+   method
+    refid "_-475:LazyAssetProcessor/instance/flush"
+    returns QName(PackageNamespace("", "#0"), "void")
+    body
+     maxstack 3
+     localcount 4
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           51
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-475"), "_-4Gh")
+      setlocal1
+
+      debug               1, "k", 0, 53
+      debugline           53
+      pushbyte            0
+      setlocal2
+
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4qv"), "_-23V")
+      coerce_a
+      setlocal3
+
+      jump                L30
+
+L16:
+      label
+      getlocal3
+      getlocal2
+      nextvalue
+      coerce              QName(PackageNamespace("_-475"), "_-4Gh")
+      setlocal1
+
+      debugline           54
+      getlocal1
+      getproperty         QName(Namespace("_-0mn"), "disposed")
+      iftrue              L30
+
+      debugline           55
+      getlocal1
+      callpropvoid        QName(Namespace("_-3em"), "_-21I"), 0
+
+      debugline           53
+L30:
+      hasnext2            3, 2
+      iftrue              L16
+
+      kill                3
+      kill                2
+      debugline           59
+      getlocal0
+      getlex              Multiname("Vector", [PrivateNamespace("_-4qv"), PackageNamespace("", "#0"), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-475"), PrivateNamespace("LazyAssetProcessor.as$436"), PackageInternalNs("_-475"), ProtectedNamespace("_-4qv"), StaticProtectedNs("_-4qv"), PackageNamespace("__AS3__.vec")])
+      getlex              QName(PackageNamespace("_-475"), "_-4Gh")
+      applytype           1
+      construct           0
+      initproperty        QName(PrivateNamespace("_-4qv"), "_-23V")
+
+      debugline           61
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4qv"), "_-2Vb")
+      iffalse             L55
+
+      debugline           62
+      getlex              QName(PackageNamespace("_-1lC"), "Core")
+      getproperty         QName(PackageNamespace("", "#0"), "_-AS")
+      getlocal0
+      callpropvoid        QName(Namespace("_-23J"), "removeUpdateReceiver"), 1
+
+      debugline           63
+      getlocal0
+      pushfalse
+      initproperty        QName(PrivateNamespace("_-4qv"), "_-2Vb")
+
+      debugline           65
+L55:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace("", "#0"), "update")
+   method
+    refid "_-475:LazyAssetProcessor/instance/update"
+    param QName(PackageNamespace("", "#0"), "uint")
+    returns QName(PackageNamespace("", "#0"), "void")
+    body
+     maxstack 2
+     localcount 3
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           71
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 71
+      debug               1, "k", 1, 73
+      debugline           73
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4qv"), "_-23V")
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "shift"), 0
+      coerce              QName(PackageNamespace("_-475"), "_-4Gh")
+      setlocal2
+
+      debugline           75
+      getlocal2
+      iftrue              L31
+
+      debugline           76
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4qv"), "_-2Vb")
+      iffalse             L28
+
+      debugline           77
+      getlex              QName(PackageNamespace("_-1lC"), "Core")
+      getproperty         QName(PackageNamespace("", "#0"), "_-AS")
+      getlocal0
+      callpropvoid        QName(Namespace("_-23J"), "removeUpdateReceiver"), 1
+
+      debugline           78
+      getlocal0
+      pushfalse
+      initproperty        QName(PrivateNamespace("_-4qv"), "_-2Vb")
+
+L28:
+      jump                L38
+
+      ; 0xF0
+      ; 0x50
+L31:
+      getlocal2
+      getproperty         QName(Namespace("_-0mn"), "disposed")
+      iftrue              L38
+
+      debugline           81
+      getlocal2
+      callpropvoid        QName(Namespace("_-3em"), "_-21I"), 0
+
+      debugline           83
+L38:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-475:LazyAssetProcessor/class/init"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

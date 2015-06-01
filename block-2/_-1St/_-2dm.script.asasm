@@ -1,0 +1,28 @@
+script ; 4121
+ sinit
+  refid "_-1St:_-2dm/init"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 1
+   maxscopedepth 2
+   code
+    getlocal0
+    pushscope
+
+    debugfile           "k"
+    debugline           8
+    findpropstrict      Multiname("_-2dm", [PackageNamespace("_-1St")])
+    pushnull
+    newclass            "_-1St:_-2dm"
+    initproperty        QName(PackageNamespace("_-1St"), "_-2dm")
+
+    debugline           5
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait class QName(PackageNamespace("_-1St"), "_-2dm")
+  #include "_-2dm.class.asasm"
+ end ; trait
+end ; script

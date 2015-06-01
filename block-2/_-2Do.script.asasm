@@ -1,0 +1,37 @@
+script ; 835
+ sinit
+  refid "_-2Do/init"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 1
+   maxscopedepth 5
+   code
+    getlocal0
+    pushscope
+
+    findpropstrict      Multiname("_-2Do", [PackageNamespace("")])
+    getlex              QName(PackageNamespace(""), "Object")
+    pushscope
+
+    getlex              QName(PackageNamespace("flash.utils"), "ByteArray")
+    pushscope
+
+    getlex              QName(PackageNamespace("mx.core"), "ByteArrayAsset")
+    pushscope
+
+    getlex              QName(PackageNamespace("mx.core"), "ByteArrayAsset")
+    newclass            "_-2Do"
+    popscope
+    popscope
+    popscope
+    initproperty        QName(PackageNamespace(""), "_-2Do")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait class QName(PackageNamespace(""), "_-2Do")
+  #include "_-2Do.class.asasm"
+ end ; trait
+end ; script

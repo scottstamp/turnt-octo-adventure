@@ -1,0 +1,169 @@
+class
+ refid "_-UN:_-44R"
+ instance QName(PackageNamespace("_-UN"), "_-44R")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-5r")
+  iinit
+   refid "_-UN:_-44R/instance/init"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     debugfile           "k"
+     debugline           34
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+ end ; instance
+ cinit
+  refid "_-UN:_-44R/class/init"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait method QName(PackageNamespace(""), "_-0Zr") flag FINAL dispid 3
+  method
+   refid "_-UN:_-44R/class/_-0Zr"
+   param QName(PackageNamespace("_-4oY"), "TargetedOffer")
+   returns QName(PackageNamespace(""), "String")
+   body
+    maxstack 2
+    localcount 4
+    initscopedepth 3
+    maxscopedepth 4
+    code
+     debugfile           "k"
+     debugline           11
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 11
+     debug               1, "k", 1, 12
+     pushstring          "targeted.offer.price."
+     debugline           12
+     coerce_s
+     setlocal2
+
+     debugline           13
+     getlocal1
+     getproperty         QName(PackageNamespace(""), "_-1Eq")
+     pushbyte            0
+     ifngt               L73
+
+     debugline           14
+     getlocal1
+     getproperty         QName(PackageNamespace(""), "priceInCredits")
+     pushbyte            0
+     ifngt               L25
+
+     debugline           15
+     getlocal2
+     pushstring          "credits_and_"
+     add
+     setlocal2
+
+L25:
+     jump                L42
+
+L26:
+     label
+     debugline           19
+     getlocal2
+     pushstring          "duckets"
+     add
+     returnvalue
+
+L32:
+     label
+     debugline           22
+     getlocal2
+     pushstring          "diamonds"
+     add
+     returnvalue
+
+L38:
+     label
+     jump                L70
+
+     ; 0xF0
+     ; 0x11
+L42:
+     getlocal1
+     getproperty         QName(PackageNamespace(""), "activityPointType")
+     setlocal3
+
+     debugline           18
+     getlex              QName(PackageNamespace("_-4qK"), "_-361")
+     getproperty         QName(PackageNamespace(""), "_-Q0")
+     getlocal3
+     ifstrictne          L54
+
+     pushbyte            0
+     jump                L68
+
+     ; 0xF0
+     ; 0x15
+L54:
+     getlex              QName(PackageNamespace("_-4qK"), "_-361")
+     getproperty         QName(PackageNamespace(""), "_-3K0")
+     getlocal3
+     ifstrictne          L60
+
+     pushbyte            1
+     jump                L68
+
+L60:
+     jump                L67
+
+     ; 0x24
+     ; 0x02
+     ; 0x10
+     ; 0x02
+     ; 0x00
+     ; 0x00
+L67:
+     pushbyte            2
+L68:
+     kill                3
+     lookupswitch        L38, [L26, L32, L38]
+
+L70:
+     jump                L77
+
+     ; 0xF0
+     ; 0x1B
+L73:
+     getlocal2
+     pushstring          "credits"
+     add
+     returnvalue
+
+L77:
+     pushstring          ""
+     debugline           30
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+end ; class

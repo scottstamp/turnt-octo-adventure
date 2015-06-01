@@ -1,0 +1,268 @@
+class
+ refid "_-54h:_-1AD"
+ instance QName(PackageNamespace("_-54h"), "_-1AD")
+  extends QName(PackageNamespace("_-54h"), "_-51x")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-0Jz")
+  iinit
+   refid "_-54h:_-1AD/instance/init"
+   param QName(PackageNamespace("_-2z-"), "IWindow")
+   param QName(PackageNamespace(""), "int")
+   param QName(PackageNamespace(""), "int")
+   body
+    maxstack 3
+    localcount 4
+    initscopedepth 6
+    maxscopedepth 7
+    code
+     debugfile           "k"
+     debugline           20
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 20
+     debug               1, "k", 1, 20
+     debug               1, "k", 2, 20
+     debugline           22
+     getlocal0
+     getlocal1
+     getlocal2
+     constructsuper      2
+
+     debugline           24
+     getlocal0
+     getlocal3
+     initproperty        QName(PrivateNamespace("_-0Jz"), "_height")
+
+     debugline           25
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-0Jz"), "_height") type QName(PackageNamespace(""), "int") end
+  trait slot QName(PrivateNamespace("_-0Jz"), "_-3j-") type QName(PackageNamespace(""), "int") end
+  trait method QName(PackageInternalNs("com.sulake.core.window.motion:friend"), "start") flag OVERRIDE
+   method
+    refid "_-54h:_-1AD/instance/com.sulake.core.window.motion:friend:start"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 1
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           30
+      getlocal0
+      pushscope
+
+      debugline           32
+      getlocal0
+      callsupervoid       QName(PackageInternalNs("com.sulake.core.window.motion:friend"), "start"), 0
+      debugline           33
+      getlocal0
+      getlex              QName(PackageNamespace(""), "target")
+      getproperty         QName(Namespace("_-0jq"), "y")
+      initproperty        QName(PrivateNamespace("_-0Jz"), "_-3j-")
+
+      debugline           34
+      getlex              QName(PackageNamespace(""), "target")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0Jz"), "_-3j-")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0Jz"), "_height")
+      subtract
+      setproperty         QName(Namespace("_-0jq"), "y")
+
+      debugline           35
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageInternalNs("com.sulake.core.window.motion:friend"), "update") flag OVERRIDE
+   method
+    refid "_-54h:_-1AD/instance/com.sulake.core.window.motion:friend:update"
+    param QName(PackageNamespace(""), "Number")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 2
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           41
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 41
+      debugline           43
+      getlocal0
+      getlocal1
+      callsupervoid       QName(PackageInternalNs("com.sulake.core.window.motion:friend"), "update"), 1
+      debugline           44
+      getlex              QName(PackageNamespace(""), "target")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0Jz"), "_-3j-")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0Jz"), "_height")
+      subtract
+      getlocal0
+      getlocal1
+      callproperty        QName(ProtectedNamespace("_-0Jz"), "_-20v"), 1
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0Jz"), "_height")
+      multiply
+      add
+      setproperty         QName(Namespace("_-0jq"), "y")
+
+      debugline           45
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-0Jz"), "_-20v")
+   method
+    refid "_-54h:_-1AD/instance/_-0Jz:_-20v"
+    param QName(PackageNamespace(""), "Number")
+    returns QName(PackageNamespace(""), "Number")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           52
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 52
+      debugline           54
+      getlocal1
+      pushdouble          0.364
+      ifnlt               L17
+
+      pushdouble          7.5625
+      getlocal1
+      multiply
+      getlocal1
+      multiply
+      returnvalue
+
+      ; 0xF0
+      ; 0x37
+L17:
+      getlocal1
+      pushdouble          0.727
+      ifnlt               L35
+
+      getlocal1
+      pushdouble          0.545
+      subtract
+      convert_d
+      setlocal1
+
+      pushdouble          7.5625
+      getlocal1
+      multiply
+      getlocal1
+      multiply
+      pushdouble          0.75
+      add
+      returnvalue
+
+      ; 0xF0
+      ; 0x38
+L35:
+      getlocal1
+      pushdouble          0.909
+      ifnlt               L53
+
+      getlocal1
+      pushdouble          0.9091
+      subtract
+      convert_d
+      setlocal1
+
+      pushdouble          7.5625
+      getlocal1
+      multiply
+      getlocal1
+      multiply
+      pushdouble          0.9375
+      add
+      returnvalue
+
+      ; 0xF0
+      ; 0x3A
+L53:
+      getlocal1
+      pushdouble          0.955
+      subtract
+      convert_d
+      setlocal1
+
+      debugline           59
+      pushdouble          7.5625
+      getlocal1
+      multiply
+      getlocal1
+      multiply
+      pushdouble          0.984375
+      add
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageInternalNs("com.sulake.core.window.motion:friend"), "stop") flag OVERRIDE
+   method
+    refid "_-54h:_-1AD/instance/com.sulake.core.window.motion:friend:stop"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           62
+      getlocal0
+      pushscope
+
+      debugline           63
+      getlex              QName(PackageNamespace(""), "target")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0Jz"), "_-3j-")
+      setproperty         QName(Namespace("_-0jq"), "y")
+
+      debugline           64
+      getlocal0
+      callsupervoid       QName(PackageInternalNs("com.sulake.core.window.motion:friend"), "stop"), 0
+      debugline           65
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-54h:_-1AD/class/init"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 5
+   maxscopedepth 6
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

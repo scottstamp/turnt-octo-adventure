@@ -1,0 +1,151 @@
+class
+ refid "_-6Hy:_-5hZ"
+ instance QName(PackageNamespace("_-6Hy"), "_-5hZ")
+  extends QName(PackageNamespace("_-6Hy"), "_-65W")
+  implements Multiname("_-wt", [PackageNamespace("_-6Hy")])
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-34j")
+  iinit
+   refid "_-6Hy:_-5hZ/instance/init#0"
+   param QName(PackageNamespace("_-2z-"), "IWindowContainer")
+   body
+    maxstack 2
+    localcount 2
+    initscopedepth 5
+    maxscopedepth 6
+    code
+     debugfile           "k"
+     debugline           12
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 12
+     debugline           14
+     getlocal0
+     getlocal1
+     constructsuper      1
+
+     debugline           15
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-34j"), "_-3Dp") type QName(PackageNamespace("_-2tk"), "ITextFieldWindow") end
+  trait method QName(PackageNamespace(""), "init") flag OVERRIDE
+   method
+    refid "_-6Hy:_-5hZ/instance/init#1"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 3
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           17
+      getlocal0
+      pushscope
+
+      debugline           19
+      getlocal0
+      callsuper           QName(PackageNamespace(""), "init"), 0
+      iftrue              L13
+
+      debugline           20
+      pushfalse
+      returnvalue
+
+      ; 0xF0
+      ; 0x16
+L13:
+      getlocal0
+      getlex              QName(ProtectedNamespace("_-18j"), "_-36K")
+      pushstring          "input_text"
+      callproperty        QName(Namespace("_-7H"), "findChildByName"), 1
+      getlex              QName(PackageNamespace("_-2tk"), "ITextFieldWindow")
+      astypelate
+      initproperty        QName(PrivateNamespace("_-34j"), "_-3Dp")
+
+      debugline           24
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-34j"), "_-3Dp")
+      pushnull
+      ifeq                L34
+
+      debugline           25
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-34j"), "_-3Dp")
+      getlex              QName(PackageNamespace("_-0eT"), "WindowKeyboardEvent")
+      getproperty         QName(PackageNamespace(""), "_-3Ss")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-34j"), "_-AL")
+      callpropvoid        QName(Namespace("_-0jq"), "addEventListener"), 2
+
+      debugline           28
+L34:
+      pushtrue
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-34j"), "_-AL")
+   method
+    refid "_-6Hy:_-5hZ/instance/_-6Hy:_-5hZ/instance/_-AL"
+    param QName(PackageNamespace("_-0eT"), "WindowKeyboardEvent")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           31
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 31
+      debugline           32
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-34j"), "_-3Dp")
+      pushnull
+      ifne                L13
+
+      returnvoid
+
+      ; 0xF0
+      ; 0x21
+L13:
+      getlex              QName(PackageNamespace(""), "events")
+      findpropstrict      QName(PackageNamespace("_-1SS"), "_-32M")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-34j"), "_-3Dp")
+      getproperty         QName(Namespace("_-49x"), "text")
+      constructprop       QName(PackageNamespace("_-1SS"), "_-32M"), 1
+      callpropvoid        QName(Namespace("flash.events:IEventDispatcher"), "dispatchEvent"), 1
+
+      debugline           34
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-6Hy:_-5hZ/class/init"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 4
+   maxscopedepth 5
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

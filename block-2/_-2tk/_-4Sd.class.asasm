@@ -1,0 +1,208 @@
+class
+ refid "_-2tk:_-4Sd"
+ instance QName(PackageNamespace("_-2tk"), "_-4Sd")
+  extends QName(PackageNamespace("_-2z-"), "WindowController")
+  implements Multiname("IDisplayObjectWrapper", [PackageNamespace("_-2tk")])
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-0kT")
+  iinit
+   refid "_-2tk:_-4Sd/instance/init"
+   param QName(PackageNamespace(""), "String")
+   param QName(PackageNamespace(""), "uint")
+   param QName(PackageNamespace(""), "uint")
+   param QName(PackageNamespace(""), "uint")
+   param QName(PackageNamespace("_-2z-"), "WindowContext")
+   param QName(PackageNamespace("flash.geom"), "Rectangle")
+   param QName(PackageNamespace("_-2z-"), "IWindow")
+   param QName(PackageNamespace(""), "Function")
+   param QName(PackageNamespace(""), "Array")
+   param QName(PackageNamespace(""), "Array")
+   param QName(PackageNamespace(""), "uint")
+   flag HAS_OPTIONAL
+   optional Null()
+   optional Null()
+   optional Integer(0)
+   body
+    maxstack 12
+    localcount 12
+    initscopedepth 6
+    maxscopedepth 7
+    code
+     debugfile           "k"
+     debugline           24
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 24
+     debug               1, "k", 1, 24
+     debug               1, "k", 2, 24
+     debug               1, "k", 3, 24
+     debug               1, "k", 4, 24
+     debug               1, "k", 5, 24
+     debug               1, "k", 6, 24
+     debug               1, "k", 7, 24
+     debug               1, "k", 8, 24
+     debug               1, "k", 9, 24
+     debug               1, "k", 10, 24
+     debugline           38
+     getlocal            4
+     getlex              QName(PackageNamespace("_-02Q"), "WindowParam")
+     getproperty         QName(PackageNamespace(""), "_-0OC")
+     bitnot
+     bitand
+     convert_u
+     setlocal            4
+
+     debugline           40
+     getlocal0
+     getlocal1
+     getlocal2
+     getlocal3
+     getlocal            4
+     getlocal            5
+     getlocal            6
+     getlocal            7
+     getlocal            8
+     getlocal            9
+     getlocal            10
+     getlocal            11
+     constructsuper      11
+
+     debugline           42
+     findproperty        QName(ProtectedNamespace("_-4Gi"), "_-63u")
+     pushfalse
+     initproperty        QName(ProtectedNamespace("_-4Gi"), "_-63u")
+
+     debugline           43
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait method QName(PackageNamespace(""), "getGraphicContext") flag OVERRIDE
+   method
+    refid "_-2tk:_-4Sd/instance/getGraphicContext"
+    param QName(PackageNamespace(""), "Boolean")
+    returns QName(PackageNamespace("_-3Jx"), "IGraphicContext")
+    body
+     maxstack 5
+     localcount 2
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           53
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 53
+      debugline           55
+      getlocal1
+      convert_b
+      dup
+      iffalse             L13
+
+      pop
+      getlex              QName(ProtectedNamespace("_-4Gi"), "_-Jp")
+      not
+L13:
+      iffalse             L28
+
+      debugline           56
+      findproperty        QName(ProtectedNamespace("_-4Gi"), "_-Jp")
+      findpropstrict      QName(PackageNamespace("_-3Jx"), "_-1lO")
+      pushstring          "GC {"
+      getlex              QName(ProtectedNamespace("_-6WA"), "_name")
+      add
+      pushstring          "}"
+      add
+      getlex              QName(PackageNamespace("_-3Jx"), "_-1lO")
+      getproperty         QName(PackageNamespace(""), "GC_TYPE_CONTAINER")
+      getlex              QName(PackageNamespace(""), "rectangle")
+      constructprop       QName(PackageNamespace("_-3Jx"), "_-1lO"), 3
+      initproperty        QName(ProtectedNamespace("_-4Gi"), "_-Jp")
+
+      debugline           58
+L28:
+      getlex              QName(ProtectedNamespace("_-4Gi"), "_-Jp")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "getDisplayObject")
+   method
+    refid "_-2tk:_-4Sd/instance/getDisplayObject"
+    returns QName(PackageNamespace("flash.display"), "DisplayObject")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           65
+      getlocal0
+      pushscope
+
+      debugline           67
+      findpropstrict      QName(PackageNamespace("_-3Jx"), "IGraphicContextHost")
+      getlocal0
+      callproperty        QName(PackageNamespace("_-3Jx"), "IGraphicContextHost"), 1
+      pushtrue
+      callproperty        QName(Namespace("_-380"), "getGraphicContext"), 1
+      callproperty        QName(Namespace("_-4a6"), "getDisplayObject"), 0
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "setDisplayObject")
+   method
+    refid "_-2tk:_-4Sd/instance/setDisplayObject"
+    param QName(PackageNamespace("flash.display"), "DisplayObject")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           74
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 74
+      debugline           76
+      findpropstrict      QName(PackageNamespace("_-3Jx"), "IGraphicContextHost")
+      getlocal0
+      callproperty        QName(PackageNamespace("_-3Jx"), "IGraphicContextHost"), 1
+      pushtrue
+      callproperty        QName(Namespace("_-380"), "getGraphicContext"), 1
+      getlocal1
+      callpropvoid        QName(Namespace("_-4a6"), "setDisplayObject"), 1
+
+      debugline           77
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-2tk:_-4Sd/class/init"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 5
+   maxscopedepth 6
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

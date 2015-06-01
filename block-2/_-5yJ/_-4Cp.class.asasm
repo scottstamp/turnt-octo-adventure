@@ -1,0 +1,384 @@
+class
+ refid "_-5yJ:_-4Cp"
+ instance QName(PackageNamespace("_-5yJ"), "_-4Cp")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-1KW")
+  iinit
+   refid "_-5yJ:_-4Cp/instance/init"
+   param QName(PackageNamespace(""), "Array")
+   param QName(PackageNamespace("_-475"), "_-10k")
+   param QName(PackageNamespace("_-6Wb"), "_-4fO")
+   body
+    maxstack 4
+    localcount 13
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     debugfile           "k"
+     debugline           23
+     getlocal0
+     pushscope
+
+     pushnull
+     coerce_s
+     setlocal            8
+
+     pushnull
+     coerce              QName(PackageNamespace("_-2z-"), "IWindowContainer")
+     setlocal            9
+
+     pushnull
+     coerce              QName(PackageNamespace("_-2tk"), "ITextWindow")
+     setlocal            10
+
+     debug               1, "k", 0, 23
+     debug               1, "k", 1, 23
+     debug               1, "k", 2, 23
+     debugline           23
+     getlocal0
+     constructsuper      0
+
+     debug               1, "k", 3, 29
+     debug               1, "k", 4, 36
+     debug               1, "k", 5, 38
+     debug               1, "k", 6, 39
+     debug               1, "k", 7, 41
+     debug               1, "k", 8, 42
+     debug               1, "k", 9, 43
+     debugline           25
+     getlocal3
+     not
+     dup
+     iftrue              L34
+
+     pop
+     getlocal2
+     not
+L34:
+     iffalse             L38
+
+     returnvoid
+
+     ; 0xF0
+     ; 0x1B
+L38:
+     getlocal0
+     getlocal1
+     initproperty        QName(PrivateNamespace("_-1KW"), "_-45B")
+
+     debugline           29
+     getlocal2
+     pushstring          "motd_notification_xml"
+     callproperty        QName(Namespace("_-14k"), "getAssetByName"), 1
+     getlex              QName(PackageNamespace("_-475"), "XmlAsset")
+     astypelate
+     coerce              QName(PackageNamespace("_-475"), "XmlAsset")
+     setlocal            4
+
+     debugline           30
+     getlocal            4
+     pushnull
+     ifne                L56
+
+     returnvoid
+
+     ; 0xF0
+     ; 0x1F
+L56:
+     getlocal0
+     getlocal3
+     getlocal            4
+     getproperty         QName(PackageNamespace(""), "content")
+     getlex              QName(PackageNamespace(""), "XML")
+     astypelate
+     callproperty        QName(Namespace("_-40D"), "buildFromXML"), 1
+     getlex              QName(PackageNamespace("_-2tk"), "IFrameWindow")
+     astypelate
+     initproperty        QName(PrivateNamespace("_-1KW"), "_-36K")
+
+     debugline           32
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-1KW"), "_-36K")
+     pushnull
+     ifne                L74
+
+     returnvoid
+
+     ; 0xF0
+     ; 0x21
+L74:
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-1KW"), "_-36K")
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-1KW"), "_-2Wj")
+     setproperty         QName(Namespace("_-0jq"), "procedure")
+
+     debugline           34
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-1KW"), "_-36K")
+     callpropvoid        QName(Namespace("_-0jq"), "center"), 0
+
+     debugline           36
+     getlocal2
+     pushstring          "motd_notification_item_xml"
+     callproperty        QName(Namespace("_-14k"), "getAssetByName"), 1
+     getlex              QName(PackageNamespace("_-475"), "XmlAsset")
+     astypelate
+     coerce              QName(PackageNamespace("_-475"), "XmlAsset")
+     setlocal            5
+
+     debugline           37
+     getlocal            5
+     pushnull
+     ifne                L98
+
+     returnvoid
+
+     ; 0xF0
+     ; 0x26
+L98:
+     getlocal3
+     getlocal            5
+     getproperty         QName(PackageNamespace(""), "content")
+     getlex              QName(PackageNamespace(""), "XML")
+     astypelate
+     callproperty        QName(Namespace("_-40D"), "buildFromXML"), 1
+     getlex              QName(PackageNamespace("_-2z-"), "IWindowContainer")
+     astypelate
+     coerce              QName(PackageNamespace("_-2z-"), "IWindowContainer")
+     setlocal            6
+
+     debugline           39
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-1KW"), "_-36K")
+     pushstring          "message_list"
+     callproperty        QName(Namespace("_-7H"), "findChildByName"), 1
+     getlex              QName(PackageNamespace("_-2tk"), "IItemListWindow")
+     astypelate
+     coerce              QName(PackageNamespace("_-2tk"), "IItemListWindow")
+     setlocal            7
+
+     debugline           44
+     pushbyte            0
+     setlocal            11
+
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-1KW"), "_-45B")
+     coerce_a
+     setlocal            12
+
+     jump                L163
+
+L125:
+     label
+     getlocal            12
+     getlocal            11
+     nextvalue
+     coerce_s
+     setlocal            8
+
+     debugline           45
+     getlocal            6
+     callproperty        QName(Namespace("_-0jq"), "clone"), 0
+     getlex              QName(PackageNamespace("_-2z-"), "IWindowContainer")
+     astypelate
+     coerce              QName(PackageNamespace("_-2z-"), "IWindowContainer")
+     setlocal            9
+
+     debugline           46
+     getlocal            9
+     pushstring          "message_text"
+     callproperty        QName(Namespace("_-7H"), "findChildByName"), 1
+     getlex              QName(PackageNamespace("_-2tk"), "ITextWindow")
+     astypelate
+     coerce              QName(PackageNamespace("_-2tk"), "ITextWindow")
+     setlocal            10
+
+     debugline           47
+     getlocal            10
+     getlocal            8
+     setproperty         QName(Namespace("_-49x"), "text")
+
+     debugline           48
+     getlocal            9
+     getlocal            10
+     getproperty         QName(Namespace("_-49x"), "textHeight")
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-1KW"), "_-0op")
+     add
+     setproperty         QName(Namespace("_-0jq"), "height")
+
+     debugline           49
+     getlocal            7
+     getlocal            9
+     callpropvoid        QName(Namespace("_-00u"), "addListItem"), 1
+
+     debugline           44
+L163:
+     hasnext2            12, 11
+     iftrue              L125
+
+     kill                12
+     kill                11
+     debugline           52
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-1KW"), "_-36K") type QName(PackageNamespace("_-2tk"), "IFrameWindow") end
+  trait slot QName(PrivateNamespace("_-1KW"), "_-4Xt") type QName(PackageNamespace("_-T4"), "_-2rY") end
+  trait slot QName(PrivateNamespace("_-1KW"), "_-45B") type QName(PackageNamespace(""), "Array") end
+  trait const QName(PrivateNamespace("_-1KW"), "_-0op") type QName(PackageNamespace(""), "int") value Integer(20) end
+  trait method QName(PackageNamespace(""), "dispose")
+   method
+    refid "_-5yJ:_-4Cp/instance/dispose"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           54
+      getlocal0
+      pushscope
+
+      debugline           56
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1KW"), "_-36K")
+      pushnull
+      ifeq                L18
+
+      debugline           57
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1KW"), "_-36K")
+      callpropvoid        QName(Namespace("_-0mn"), "dispose"), 0
+
+      debugline           58
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-1KW"), "_-36K")
+
+      debugline           61
+L18:
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-1KW"), "_-4Xt")
+
+      debugline           62
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-1KW"), "_-2Wj")
+   method
+    refid "_-5yJ:_-4Cp/instance/_-5yJ:_-4Cp/instance/_-2Wj"
+    param QName(PackageNamespace("_-0eT"), "WindowEvent")
+    param QName(PackageNamespace("_-2z-"), "IWindow")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 4
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           64
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 64
+      debug               1, "k", 1, 64
+      debugline           66
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "type")
+      getlex              QName(PackageNamespace("_-0eT"), "WindowMouseEvent")
+      getproperty         QName(PackageNamespace(""), "CLICK")
+      ifeq                L13
+
+      returnvoid
+
+L13:
+      jump                L24
+
+L14:
+      label
+      debugline           71
+      getlocal0
+      callpropvoid        QName(PackageNamespace(""), "dispose"), 0
+
+      debugline           72
+      returnvoid
+
+L20:
+      label
+      jump                L51
+
+      ; 0xF0
+      ; 0x44
+L24:
+      getlocal2
+      getproperty         QName(Namespace("_-0jq"), "name")
+      setlocal3
+
+      pushstring          "close"
+      debugline           69
+      getlocal3
+      ifstrictne          L33
+
+      pushbyte            0
+      jump                L47
+
+L33:
+      pushstring          "header_button_close"
+      debugline           70
+      getlocal3
+      ifstrictne          L39
+
+      pushbyte            1
+      jump                L47
+
+L39:
+      jump                L46
+
+      ; 0x24
+      ; 0x02
+      ; 0x10
+      ; 0x02
+      ; 0x00
+      ; 0x00
+L46:
+      pushbyte            2
+L47:
+      kill                3
+      lookupswitch        L20, [L14, L14, L20]
+
+      ; 0xF0
+      ; 0x4B
+L51:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-5yJ:_-4Cp/class/init"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

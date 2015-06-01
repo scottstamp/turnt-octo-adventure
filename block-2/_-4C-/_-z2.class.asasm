@@ -1,0 +1,238 @@
+class
+ refid "_-4C-:_-z2"
+ instance QName(PackageNamespace("_-4C-"), "_-z2")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-1De")
+  iinit
+   refid "_-4C-:_-z2/instance/init"
+   param QName(PackageNamespace("_-4C-"), "HabboTracking")
+   body
+    maxstack 2
+    localcount 2
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     debugfile           "k"
+     debugline           15
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 15
+     debugline           15
+     getlocal0
+     constructsuper      0
+
+     debugline           16
+     getlocal0
+     getlocal1
+     initproperty        QName(PrivateNamespace("_-1De"), "_-5sf")
+
+     debugline           17
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-1De"), "_-0fe") type QName(PackageNamespace(""), "int") end
+  trait slot QName(PrivateNamespace("_-1De"), "_-1dH") type QName(PackageNamespace(""), "int") end
+  trait slot QName(PrivateNamespace("_-1De"), "_-4QY") type QName(PackageNamespace(""), "Number") end
+  trait slot QName(PrivateNamespace("_-1De"), "_-4GH") type QName(PackageNamespace(""), "int") end
+  trait slot QName(PrivateNamespace("_-1De"), "_-5sf") type QName(PackageNamespace("_-4C-"), "HabboTracking") end
+  trait getter QName(PackageNamespace(""), "frameRate")
+   method
+    refid "_-4C-:_-z2/instance/frameRate/getter"
+    returns QName(PackageNamespace(""), "int")
+    body
+     maxstack 3
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           11
+      getlocal0
+      pushscope
+
+      debugline           12
+      getlex              QName(PackageNamespace(""), "Math")
+      pushshort           1000
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1De"), "_-4QY")
+      divide
+      callproperty        QName(PackageNamespace(""), "round"), 1
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-31J")
+   method
+    refid "_-4C-:_-z2/instance/_-31J"
+    param QName(PackageNamespace(""), "uint")
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 6
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           19
+      getlocal0
+      pushscope
+
+      pushnan
+      setlocal3
+
+      debug               1, "k", 0, 19
+      debug               1, "k", 1, 19
+      debugline           20
+      getlocal0
+      dup
+      setlocal            4
+
+      getproperty         QName(PrivateNamespace("_-1De"), "_-1dH")
+      increment_i
+      setlocal            5
+
+      getlocal            4
+      getlocal            5
+      setproperty         QName(PrivateNamespace("_-1De"), "_-1dH")
+
+      kill                5
+      kill                4
+      debugline           24
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1De"), "_-1dH")
+      pushbyte            1
+      ifne                L41
+
+      debugline           25
+      getlocal0
+      getlocal1
+      initproperty        QName(PrivateNamespace("_-1De"), "_-4QY")
+
+      debugline           26
+      getlocal0
+      getlocal2
+      initproperty        QName(PrivateNamespace("_-1De"), "_-0fe")
+
+      jump                L64
+
+      ; 0xEF
+      ; 0x01
+      ; 0x02
+      ; 0x02
+      ; 0x1C
+      ; 0xF0
+      ; 0x1C
+L41:
+      findpropstrict      QName(PackageNamespace(""), "Number")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1De"), "_-1dH")
+      callproperty        QName(PackageNamespace(""), "Number"), 1
+      convert_d
+      setlocal3
+
+      debugline           29
+      getlocal0
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1De"), "_-4QY")
+      getlocal3
+      decrement
+      multiply
+      getlocal3
+      divide
+      findpropstrict      QName(PackageNamespace(""), "Number")
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "Number"), 1
+      getlocal3
+      divide
+      add
+      initproperty        QName(PrivateNamespace("_-1De"), "_-4QY")
+
+      debugline           32
+L64:
+      getlocal2
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1De"), "_-0fe")
+      subtract
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1De"), "_-5sf")
+      pushstring          "tracking.framerate.reportInterval.seconds"
+      pushshort           300
+      callproperty        QName(PackageNamespace(""), "getInteger"), 2
+      pushshort           1000
+      multiply
+      ifnge               L114
+
+      debugline           33
+      getlocal0
+      pushbyte            0
+      initproperty        QName(PrivateNamespace("_-1De"), "_-1dH")
+
+      debugline           34
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1De"), "_-4GH")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1De"), "_-5sf")
+      pushstring          "tracking.framerate.maximumEvents"
+      pushbyte            5
+      callproperty        QName(PackageNamespace(""), "getInteger"), 2
+      ifnlt               L114
+
+      debugline           35
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1De"), "_-5sf")
+      pushstring          "performance"
+      pushstring          "averageFramerate"
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "frameRate")
+      callpropvoid        QName(PackageNamespace(""), "trackGoogle"), 3
+
+      debugline           36
+      getlocal0
+      dup
+      setlocal            4
+
+      getproperty         QName(PrivateNamespace("_-1De"), "_-4GH")
+      increment_i
+      setlocal            5
+
+      getlocal            4
+      getlocal            5
+      setproperty         QName(PrivateNamespace("_-1De"), "_-4GH")
+
+      kill                5
+      kill                4
+      debugline           37
+      getlocal0
+      getlocal2
+      initproperty        QName(PrivateNamespace("_-1De"), "_-0fe")
+
+      debugline           40
+L114:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-4C-:_-z2/class/init"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

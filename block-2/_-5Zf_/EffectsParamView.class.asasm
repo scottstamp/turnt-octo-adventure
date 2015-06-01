@@ -1,0 +1,858 @@
+class
+ refid "_-5Zf:EffectsParamView"
+ instance QName(PackageNamespace("_-5Zf"), "EffectsParamView")
+  extends QName(PackageNamespace(""), "Object")
+  implements Multiname("_-4BI", [PackageNamespace("_-0XF")])
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-4ZY")
+  iinit
+   refid "_-5Zf:EffectsParamView/instance/init"
+   param QName(PackageNamespace("_-5Zf"), "EffectsModel")
+   param QName(PackageNamespace("_-6Wb"), "_-4fO")
+   param QName(PackageNamespace("_-475"), "_-10k")
+   body
+    maxstack 3
+    localcount 4
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     debugfile           "k"
+     debugline           32
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 32
+     debug               1, "k", 1, 32
+     debug               1, "k", 2, 32
+     debugline           32
+     getlocal0
+     constructsuper      0
+
+     debugline           33
+     getlocal0
+     getlocal1
+     initproperty        QName(PrivateNamespace("_-4ZY"), "_-55I")
+
+     debugline           34
+     getlocal0
+     getlocal2
+     initproperty        QName(PrivateNamespace("_-4ZY"), "_-0cE")
+
+     debugline           35
+     getlocal0
+     getlocal1
+     getproperty         QName(PackageNamespace(""), "controller")
+     getproperty         QName(PackageNamespace(""), "view")
+     getproperty         QName(PackageNamespace(""), "effectsParamViewContainer")
+     initproperty        QName(PrivateNamespace("_-4ZY"), "_container")
+
+     debugline           36
+     getlocal0
+     getlocal1
+     getproperty         QName(PackageNamespace(""), "controller")
+     getproperty         QName(PackageNamespace(""), "manager")
+     pushstring          "avatareditor.effects.buy.button.catalog.page.name"
+     callproperty        QName(PackageNamespace(""), "getProperty"), 1
+     initproperty        QName(PrivateNamespace("_-4ZY"), "_-2X4")
+
+     debugline           37
+     getlocal0
+     findpropstrict      QName(PackageNamespace("flash.utils"), "Timer")
+     pushshort           1000
+     constructprop       QName(PackageNamespace("flash.utils"), "Timer"), 1
+     initproperty        QName(PrivateNamespace("_-4ZY"), "_-3BB")
+
+     debugline           38
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-4ZY"), "_-3BB")
+     getlex              QName(PackageNamespace("flash.events"), "TimerEvent")
+     getproperty         QName(PackageNamespace(""), "TIMER")
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-4ZY"), "_-61c")
+     callpropvoid        QName(PackageNamespace(""), "addEventListener"), 2
+
+     debugline           39
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-4ZY"), "_container")
+     pushstring          "get_more_button"
+     callproperty        QName(Namespace("_-7H"), "findChildByName"), 1
+     getlex              QName(PackageNamespace("_-0eT"), "WindowMouseEvent")
+     getproperty         QName(PackageNamespace(""), "CLICK")
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-4ZY"), "_-Nl")
+     callpropvoid        QName(Namespace("_-0jq"), "addEventListener"), 2
+
+     debugline           40
+     getlocal0
+     pushnull
+     callpropvoid        QName(PackageNamespace(""), "_-4mR"), 1
+
+     debugline           41
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-4ZY"), "_-55I") type QName(PackageNamespace("_-5Zf"), "EffectsModel") end
+  trait slot QName(PrivateNamespace("_-4ZY"), "_container") type QName(PackageNamespace("_-2z-"), "IWindowContainer") end
+  trait slot QName(PrivateNamespace("_-4ZY"), "_-2X4") type QName(PackageNamespace(""), "String") end
+  trait slot QName(PrivateNamespace("_-4ZY"), "_-0cE") type QName(PackageNamespace("_-6Wb"), "_-4fO") end
+  trait slot QName(PrivateNamespace("_-4ZY"), "_-3BB") type QName(PackageNamespace("flash.utils"), "Timer") end
+  trait slot QName(PrivateNamespace("_-4ZY"), "_-3NT") type QName(PackageNamespace(""), "int") value Integer(0) end
+  trait slot QName(PrivateNamespace("_-4ZY"), "_-3Mt") type QName(PackageNamespace("_-6Ji"), "_-3To") value Null() end
+  trait method QName(PackageNamespace(""), "dispose")
+   method
+    refid "_-5Zf:EffectsParamView/instance/dispose"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           43
+      getlocal0
+      pushscope
+
+      debugline           44
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4ZY"), "_-3BB")
+      iffalse             L25
+
+      debugline           45
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4ZY"), "_-3BB")
+      callpropvoid        QName(PackageNamespace(""), "stop"), 0
+
+      debugline           46
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4ZY"), "_-3BB")
+      getlex              QName(PackageNamespace("flash.events"), "TimerEvent")
+      getproperty         QName(PackageNamespace(""), "TIMER")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4ZY"), "_-61c")
+      callpropvoid        QName(PackageNamespace(""), "removeEventListener"), 2
+
+      debugline           47
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-4ZY"), "_-3BB")
+
+      debugline           49
+L25:
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-4ZY"), "_-0cE")
+
+      debugline           50
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-4ZY"), "_-55I")
+
+      debugline           51
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "disposed")
+   method
+    refid "_-5Zf:EffectsParamView/instance/disposed/getter"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           53
+      getlocal0
+      pushscope
+
+      debugline           54
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4ZY"), "_-55I")
+      pushnull
+      equals
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-4mR")
+   method
+    refid "_-5Zf:EffectsParamView/instance/_-4mR"
+    param QName(PackageNamespace("_-6Ji"), "_-3To")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           57
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 57
+      debugline           58
+      getlocal0
+      getlocal1
+      initproperty        QName(PrivateNamespace("_-4ZY"), "_-3Mt")
+
+      debugline           59
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4ZY"), "_container")
+      pushtrue
+      setproperty         QName(Namespace("_-0jq"), "visible")
+
+      debugline           60
+      getlocal1
+      pushnull
+      ifne                L42
+
+      debugline           61
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4ZY"), "_container")
+      pushstring          "time_left_bg"
+      callproperty        QName(Namespace("_-7H"), "findChildByName"), 1
+      pushfalse
+      setproperty         QName(Namespace("_-0jq"), "visible")
+
+      debugline           62
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4ZY"), "_container")
+      pushstring          "save_to_activate"
+      callproperty        QName(Namespace("_-7H"), "findChildByName"), 1
+      pushfalse
+      setproperty         QName(Namespace("_-0jq"), "visible")
+
+      debugline           63
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4ZY"), "_container")
+      pushstring          "effect_name"
+      callproperty        QName(Namespace("_-7H"), "findChildByName"), 1
+      pushfalse
+      setproperty         QName(Namespace("_-0jq"), "visible")
+
+      jump                L126
+
+      ; 0xF0
+      ; 0x41
+L42:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4ZY"), "_container")
+      pushstring          "effect_name"
+      callproperty        QName(Namespace("_-7H"), "findChildByName"), 1
+      pushtrue
+      setproperty         QName(Namespace("_-0jq"), "visible")
+
+      debugline           67
+      getlocal1
+      getproperty         QName(Namespace("_-3cT"), "isActive")
+      not
+      dup
+      iffalse             L58
+
+      pop
+      getlocal1
+      getproperty         QName(Namespace("_-3cT"), "_-2s9")
+      not
+L58:
+      iffalse             L80
+
+      debugline           68
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4ZY"), "_container")
+      pushstring          "time_left_bg"
+      callproperty        QName(Namespace("_-7H"), "findChildByName"), 1
+      pushfalse
+      setproperty         QName(Namespace("_-0jq"), "visible")
+
+      debugline           69
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4ZY"), "_container")
+      pushstring          "save_to_activate"
+      callproperty        QName(Namespace("_-7H"), "findChildByName"), 1
+      pushtrue
+      setproperty         QName(Namespace("_-0jq"), "visible")
+
+      debugline           70
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4ZY"), "_-3BB")
+      callpropvoid        QName(PackageNamespace(""), "stop"), 0
+
+      jump                L112
+
+      ; 0xF0
+      ; 0x48
+L80:
+      getlocal0
+      getlocal1
+      getproperty         QName(Namespace("_-3cT"), "_-4Dv")
+      initproperty        QName(PrivateNamespace("_-4ZY"), "_-3NT")
+
+      debugline           73
+      getlocal0
+      getlocal1
+      getproperty         QName(Namespace("_-3cT"), "_-4Dv")
+      getlocal1
+      getproperty         QName(Namespace("_-3cT"), "duration")
+      getlocal1
+      getproperty         QName(Namespace("_-3cT"), "_-2s9")
+      callpropvoid        QName(PrivateNamespace("_-4ZY"), "_-TO"), 3
+
+      debugline           74
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4ZY"), "_container")
+      pushstring          "time_left_bg"
+      callproperty        QName(Namespace("_-7H"), "findChildByName"), 1
+      pushtrue
+      setproperty         QName(Namespace("_-0jq"), "visible")
+
+      debugline           75
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4ZY"), "_container")
+      pushstring          "save_to_activate"
+      callproperty        QName(Namespace("_-7H"), "findChildByName"), 1
+      pushfalse
+      setproperty         QName(Namespace("_-0jq"), "visible")
+
+      debugline           76
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4ZY"), "_-3BB")
+      callpropvoid        QName(PackageNamespace(""), "start"), 0
+
+      debugline           79
+L112:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4ZY"), "_container")
+      pushstring          "effect_name"
+      callproperty        QName(Namespace("_-7H"), "findChildByName"), 1
+      pushstring          "$"
+      pushstring          "{fx_"
+      add
+      getlocal1
+      getproperty         QName(Namespace("_-3cT"), "type")
+      add
+      pushstring          "}"
+      add
+      setproperty         QName(Namespace("_-0jq"), "caption")
+
+      debugline           82
+L126:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-4ZY"), "_-TO")
+   method
+    refid "_-5Zf:EffectsParamView/instance/_-5Zf:EffectsParamView/instance/_-TO"
+    param QName(PackageNamespace(""), "int")
+    param QName(PackageNamespace(""), "int")
+    param QName(PackageNamespace(""), "Boolean")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 7
+     localcount 19
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           84
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce_s
+      setlocal            10
+
+      pushbyte            0
+      setlocal            11
+
+      pushbyte            0
+      setlocal            12
+
+      pushbyte            0
+      setlocal            13
+
+      pushbyte            0
+      setlocal            14
+
+      pushbyte            0
+      setlocal            15
+
+      pushnull
+      coerce_s
+      setlocal            16
+
+      pushnull
+      coerce_s
+      setlocal            17
+
+      pushnull
+      coerce_s
+      setlocal            18
+
+      debug               1, "k", 0, 84
+      debug               1, "k", 1, 84
+      debug               1, "k", 2, 84
+      debug               1, "k", 3, 85
+      debug               1, "k", 4, 87
+      debug               1, "k", 5, 88
+      debug               1, "k", 6, 90
+      debug               1, "k", 7, 91
+      debug               1, "k", 8, 95
+      debug               1, "k", 9, 96
+      debugline           85
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4ZY"), "_container")
+      pushstring          "time_left_bg"
+      callproperty        QName(Namespace("_-7H"), "findChildByName"), 1
+      getlex              QName(PackageNamespace("_-2z-"), "IWindowContainer")
+      astypelate
+      coerce              QName(PackageNamespace("_-2z-"), "IWindowContainer")
+      setlocal            4
+
+      debugline           87
+      findpropstrict      QName(PackageNamespace("_-2tk"), "IBitmapWrapperWindow")
+      getlocal            4
+      pushstring          "progress_bar_bitmap"
+      callproperty        QName(Namespace("_-7H"), "findChildByName"), 1
+      callproperty        QName(PackageNamespace("_-2tk"), "IBitmapWrapperWindow"), 1
+      coerce              QName(PackageNamespace("_-2tk"), "IBitmapWrapperWindow")
+      setlocal            5
+
+      debugline           88
+      findpropstrict      QName(PackageNamespace("flash.display"), "BitmapData")
+      getlocal            5
+      getproperty         QName(Namespace("_-0jq"), "width")
+      getlocal            5
+      getproperty         QName(Namespace("_-0jq"), "height")
+      pushfalse
+      pushbyte            0
+      constructprop       QName(PackageNamespace("flash.display"), "BitmapData"), 4
+      coerce              QName(PackageNamespace("flash.display"), "BitmapData")
+      setlocal            6
+
+      debugline           90
+      getlocal3
+      iffalse             L70
+
+      getlocal2
+      convert_i
+      jump                L72
+
+L70:
+      getlocal1
+      convert_i
+L72:
+      convert_i
+      setlocal            7
+
+      debugline           91
+      findpropstrict      QName(PackageNamespace("flash.geom"), "Rectangle")
+      pushbyte            0
+      dup
+      findpropstrict      QName(PackageNamespace(""), "int")
+      getlocal            6
+      getproperty         QName(PackageNamespace(""), "width")
+      findpropstrict      QName(PackageNamespace(""), "Number")
+      getlocal            7
+      callproperty        QName(PackageNamespace(""), "Number"), 1
+      getlocal2
+      divide
+      multiply
+      callproperty        QName(PackageNamespace(""), "int"), 1
+      getlocal            6
+      getproperty         QName(PackageNamespace(""), "height")
+      constructprop       QName(PackageNamespace("flash.geom"), "Rectangle"), 4
+      coerce              QName(PackageNamespace("flash.geom"), "Rectangle")
+      setlocal            8
+
+      debugline           92
+      getlocal            6
+      getlocal            8
+      pushint             2146080
+      callpropvoid        QName(PackageNamespace(""), "fillRect"), 2
+
+      debugline           93
+      getlocal            5
+      getlocal            6
+      setproperty         QName(Namespace("_-0Oa"), "bitmap")
+
+      debugline           95
+      findpropstrict      QName(PackageNamespace("_-2tk"), "ITextWindow")
+      getlocal            4
+      pushstring          "effect_time_left"
+      callproperty        QName(Namespace("_-7H"), "findChildByName"), 1
+      callproperty        QName(PackageNamespace("_-2tk"), "ITextWindow"), 1
+      coerce              QName(PackageNamespace("_-2tk"), "ITextWindow")
+      setlocal            9
+
+      debugline           98
+      getlocal3
+      iffalse             L125
+
+      debugline           99
+      getlocal            9
+      pushstring          "${avatareditor.effects.active.permanent}"
+      setproperty         QName(Namespace("_-0jq"), "caption")
+
+      debugline           100
+      getlocal            9
+      getproperty         QName(Namespace("_-49x"), "text")
+      coerce_s
+      setlocal            10
+
+      jump                L307
+
+      ; 0xF0
+      ; 0x66
+L125:
+      getlocal1
+      pushbyte            60
+      dup
+      multiply
+      pushbyte            24
+      multiply
+      ifngt               L199
+
+      debug               1, "k", 10, 105
+      debugline           103
+      getlocal            9
+      pushstring          "${avatareditor.effects.active.daysleft}"
+      setproperty         QName(Namespace("_-0jq"), "caption")
+
+      debugline           104
+      getlocal            9
+      getproperty         QName(Namespace("_-49x"), "text")
+      coerce_s
+      setlocal            10
+
+      debugline           105
+      getlex              QName(PackageNamespace(""), "Math")
+      getlocal1
+      pushbyte            60
+      dup
+      multiply
+      pushbyte            24
+      multiply
+      divide
+      callproperty        QName(PackageNamespace(""), "floor"), 1
+      convert_i
+      setlocal            11
+
+      debugline           106
+      getlocal            10
+      pushstring          "%days_left%"
+      getlocal            11
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "replace"), 2
+      coerce_s
+      setlocal            10
+
+      jump                L307
+
+      ; 0xEF
+      ; 0x01
+      ; 0x02
+      ; 0x0B
+      ; 0x70
+      ; 0xEF
+      ; 0x01
+      ; 0x02
+      ; 0x0C
+      ; 0x71
+      ; 0xEF
+      ; 0x01
+      ; 0x02
+      ; 0x0D
+      ; 0x72
+      ; 0xEF
+      ; 0x01
+      ; 0x02
+      ; 0x0E
+      ; 0x73
+      ; 0xEF
+      ; 0x01
+      ; 0x02
+      ; 0x0F
+      ; 0x74
+      ; 0xEF
+      ; 0x01
+      ; 0x02
+      ; 0x10
+      ; 0x75
+      ; 0xEF
+      ; 0x01
+      ; 0x02
+      ; 0x11
+      ; 0x76
+      ; 0xF0
+      ; 0x6E
+L199:
+      getlocal            9
+      pushstring          "${avatareditor.effects.active.timeleft}"
+      setproperty         QName(Namespace("_-0jq"), "caption")
+
+      debugline           111
+      getlocal            9
+      getproperty         QName(Namespace("_-49x"), "text")
+      coerce_s
+      setlocal            10
+
+      debugline           112
+      getlocal1
+      convert_i
+      setlocal            12
+
+      debugline           113
+      getlex              QName(PackageNamespace(""), "Math")
+      getlocal            12
+      pushbyte            60
+      dup
+      multiply
+      divide
+      callproperty        QName(PackageNamespace(""), "floor"), 1
+      convert_i
+      setlocal            13
+
+      debugline           114
+      getlex              QName(PackageNamespace(""), "Math")
+      getlocal            12
+      pushbyte            60
+      divide
+      callproperty        QName(PackageNamespace(""), "floor"), 1
+      pushbyte            60
+      modulo
+      convert_i
+      setlocal            14
+
+      debugline           115
+      getlocal            12
+      pushbyte            60
+      modulo
+      convert_i
+      setlocal            15
+
+      debugline           116
+      getlocal            13
+      pushbyte            10
+      ifnlt               L243
+
+      pushstring          "0"
+      jump                L244
+
+L243:
+      pushstring          ""
+L244:
+      coerce_s
+      setlocal            16
+
+      debugline           117
+      getlocal            14
+      pushbyte            10
+      ifnlt               L252
+
+      pushstring          "0"
+      jump                L253
+
+L252:
+      pushstring          ""
+L253:
+      coerce_s
+      setlocal            17
+
+      debugline           118
+      getlocal            15
+      pushbyte            10
+      ifnlt               L261
+
+      pushstring          "0"
+      jump                L262
+
+L261:
+      pushstring          ""
+L262:
+      coerce_s
+      setlocal            18
+
+      debugline           119
+      getlocal            13
+      pushbyte            0
+      ifngt               L292
+
+      debugline           120
+      getlocal            10
+      pushstring          "%time_left%"
+      getlocal            16
+      getlocal            13
+      add
+      pushstring          ":"
+      add
+      getlocal            17
+      add
+      getlocal            14
+      add
+      pushstring          ":"
+      add
+      getlocal            18
+      add
+      getlocal            15
+      add
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "replace"), 2
+      coerce_s
+      setlocal            10
+
+      jump                L307
+
+      ; 0xF0
+      ; 0x7A
+L292:
+      getlocal            10
+      pushstring          "%time_left%"
+      getlocal            17
+      getlocal            14
+      add
+      pushstring          ":"
+      add
+      getlocal            18
+      add
+      getlocal            15
+      add
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "replace"), 2
+      coerce_s
+      setlocal            10
+
+      debugline           125
+L307:
+      getlocal            9
+      getlocal            10
+      setproperty         QName(Namespace("_-49x"), "text")
+
+      debugline           126
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-4ZY"), "_-Nl")
+   method
+    refid "_-5Zf:EffectsParamView/instance/_-5Zf:EffectsParamView/instance/_-Nl"
+    param QName(PackageNamespace("_-0eT"), "WindowMouseEvent")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           128
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 128
+      debugline           129
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4ZY"), "_-55I")
+      getproperty         QName(PackageNamespace(""), "controller")
+      getproperty         QName(PackageNamespace(""), "manager")
+      getproperty         QName(PackageNamespace(""), "catalog")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4ZY"), "_-2X4")
+      callpropvoid        Multiname("openCatalogPage", [PrivateNamespace("_-4ZY"), PackageNamespace(""), PackageNamespace("_-5Zf"), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("EffectsParamView.as$5141"), PackageInternalNs("_-5Zf"), ProtectedNamespace("_-4ZY"), StaticProtectedNs("_-4ZY")]), 1
+
+      debugline           130
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-4ZY"), "_-61c")
+   method
+    refid "_-5Zf:EffectsParamView/instance/_-5Zf:EffectsParamView/instance/_-61c"
+    param QName(PackageNamespace("flash.events"), "TimerEvent")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 4
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           132
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 132
+      debugline           133
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4ZY"), "_-3Mt")
+      pushnull
+      equals
+      not
+      dup
+      iffalse             L18
+
+      pop
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4ZY"), "_-3Mt")
+      getproperty         QName(Namespace("_-3cT"), "isActive")
+      convert_b
+L18:
+      iffalse             L41
+
+      debugline           134
+      getlocal0
+      getlocal0
+      dup
+      setlocal2
+
+      getproperty         QName(PrivateNamespace("_-4ZY"), "_-3NT")
+      dup
+      decrement_i
+      setlocal3
+
+      getlocal2
+      getlocal3
+      setproperty         QName(PrivateNamespace("_-4ZY"), "_-3NT")
+
+      kill                3
+      kill                2
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4ZY"), "_-3Mt")
+      getproperty         QName(Namespace("_-3cT"), "duration")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4ZY"), "_-3Mt")
+      getproperty         QName(Namespace("_-3cT"), "_-2s9")
+      callpropvoid        QName(PrivateNamespace("_-4ZY"), "_-TO"), 3
+
+      debugline           136
+L41:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-5Zf:EffectsParamView/class/init"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

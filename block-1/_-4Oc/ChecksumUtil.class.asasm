@@ -1,0 +1,427 @@
+class
+ refid "_-4Oc:ChecksumUtil"
+ instance QName(PackageNamespace("_-4Oc"), "ChecksumUtil")
+  extends QName(PackageNamespace("", "#0"), "Object")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-1Ur")
+  iinit
+   refid "_-4Oc:ChecksumUtil/instance/init"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     debugfile           "k"
+     debugline           82
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+ end ; instance
+ cinit
+  refid "_-4Oc:ChecksumUtil/class/init"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    debug               1, "k", 0, 10
+    findproperty        QName(PrivateNamespace("_-1Ur"), "_-53v")
+    findpropstrict      QName(PrivateNamespace("_-1Ur"), "_-28D")
+    callproperty        QName(PrivateNamespace("_-1Ur"), "_-28D"), 0
+    setproperty         QName(PrivateNamespace("_-1Ur"), "_-53v")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait slot QName(PrivateNamespace("_-1Ur"), "_-53v") slotid 1 type QName(PackageNamespace("", "#0"), "Array") end
+ trait method QName(PrivateNamespace("_-1Ur"), "_-28D") flag FINAL dispid 3
+  method
+   refid "_-4Oc:ChecksumUtil/class/_-4Oc:ChecksumUtil/class/_-28D"
+   returns QName(PackageNamespace("", "#0"), "Array")
+   body
+    maxstack 3
+    localcount 5
+    initscopedepth 3
+    maxscopedepth 4
+    code
+     debugfile           "k"
+     debugline           15
+     getlocal0
+     pushscope
+
+     pushbyte            0
+     convert_u
+     setlocal2
+
+     pushbyte            0
+     convert_u
+     setlocal3
+
+     pushbyte            0
+     convert_u
+     setlocal            4
+
+     debug               1, "k", 0, 16
+     debug               1, "k", 1, 17
+     debug               1, "k", 2, 18
+     debug               1, "k", 3, 19
+     debugline           16
+     newarray            0
+     coerce              QName(PackageNamespace("", "#0"), "Array")
+     setlocal1
+
+     debugline           20
+     pushbyte            0
+     convert_u
+     setlocal2
+
+     jump                L75
+
+L26:
+     label
+     debugline           21
+     getlocal2
+     convert_u
+     setlocal            4
+
+     debugline           22
+     pushbyte            0
+     convert_u
+     setlocal3
+
+     jump                L63
+
+L36:
+     label
+     debugline           23
+     getlocal            4
+     pushbyte            1
+     bitand
+     iffalse             L53
+
+     debugline           24
+     pushdouble          3988292384
+     getlocal            4
+     pushbyte            1
+     urshift
+     bitxor
+     convert_u
+     setlocal            4
+
+     jump                L59
+
+     ; 0xF0
+     ; 0x1A
+L53:
+     getlocal            4
+     pushbyte            1
+     urshift
+     convert_u
+     setlocal            4
+
+     debugline           22
+L59:
+     getlocal3
+     increment
+     convert_u
+     setlocal3
+
+L63:
+     getlocal3
+     pushbyte            8
+     iflt                L36
+
+     debugline           29
+     getlocal1
+     getlocal            4
+     callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+     debugline           20
+     getlocal2
+     increment
+     convert_u
+     setlocal2
+
+L75:
+     getlocal2
+     pushshort           256
+     iflt                L26
+
+     debugline           31
+     getlocal1
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PackageNamespace("", "#0"), "_-6IS") flag FINAL dispid 4
+  method
+   refid "_-4Oc:ChecksumUtil/class/_-6IS"
+   param QName(PackageNamespace("flash.utils"), "ByteArray")
+   param QName(PackageNamespace("", "#0"), "uint")
+   param QName(PackageNamespace("", "#0"), "uint")
+   returns QName(PackageNamespace("", "#0"), "uint")
+   flag HAS_OPTIONAL
+   optional Integer(0)
+   optional Integer(0)
+   body
+    maxstack 5
+    localcount 6
+    initscopedepth 3
+    maxscopedepth 4
+    code
+     debugfile           "k"
+     debugline           44
+     getlocal0
+     pushscope
+
+     pushbyte            0
+     convert_u
+     setlocal            4
+
+     debug               1, "k", 0, 44
+     debug               1, "k", 1, 44
+     debug               1, "k", 2, 44
+     debug               1, "k", 3, 48
+     debug               1, "k", 4, 49
+     debugline           45
+     getlocal2
+     getlocal1
+     getproperty         QName(PackageNamespace("", "#0"), "length")
+     ifnge               L22
+
+     getlocal1
+     getproperty         QName(PackageNamespace("", "#0"), "length")
+     convert_u
+     setlocal2
+
+     debugline           46
+L22:
+     getlocal3
+     pushbyte            0
+     ifne                L32
+
+     getlocal1
+     getproperty         QName(PackageNamespace("", "#0"), "length")
+     getlocal2
+     subtract
+     convert_u
+     setlocal3
+
+     debugline           47
+L32:
+     getlocal3
+     getlocal2
+     add
+     getlocal1
+     getproperty         QName(PackageNamespace("", "#0"), "length")
+     ifngt               L45
+
+     getlocal1
+     getproperty         QName(PackageNamespace("", "#0"), "length")
+     getlocal2
+     subtract
+     convert_u
+     setlocal3
+
+     debugline           49
+L45:
+     pushdouble          4294967295
+     convert_u
+     setlocal            5
+
+     debugline           50
+     getlocal2
+     convert_u
+     setlocal            4
+
+     jump                L77
+
+L53:
+     label
+     debugline           51
+     findpropstrict      QName(PackageNamespace("", "#0"), "uint")
+     getlex              QName(PrivateNamespace("_-1Ur"), "_-53v")
+     getlocal            5
+     getlocal1
+     getlocal            4
+     getproperty         MultinameL([PrivateNamespace("_-1Ur"), PackageNamespace("", "#0"), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("ChecksumUtil.as$512"), PackageNamespace("_-4Oc"), PackageInternalNs("_-4Oc"), ProtectedNamespace("_-1Ur"), StaticProtectedNs("_-1Ur")])
+     bitxor
+     pushshort           255
+     bitand
+     getproperty         MultinameL([PrivateNamespace("_-1Ur"), PackageNamespace("", "#0"), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("ChecksumUtil.as$512"), PackageNamespace("_-4Oc"), PackageInternalNs("_-4Oc"), ProtectedNamespace("_-1Ur"), StaticProtectedNs("_-1Ur")])
+     callproperty        QName(PackageNamespace("", "#0"), "uint"), 1
+     getlocal            5
+     pushbyte            8
+     urshift
+     bitxor
+     convert_u
+     setlocal            5
+
+     debugline           50
+     getlocal            4
+     increment
+     convert_u
+     setlocal            4
+
+L77:
+     getlocal            4
+     getlocal3
+     iflt                L53
+
+     debugline           53
+     getlocal            5
+     pushdouble          4294967295
+     bitxor
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PackageNamespace("", "#0"), "_-3-") flag FINAL dispid 5
+  method
+   refid "_-4Oc:ChecksumUtil/class/_-3-"
+   param QName(PackageNamespace("flash.utils"), "ByteArray")
+   param QName(PackageNamespace("", "#0"), "uint")
+   param QName(PackageNamespace("", "#0"), "uint")
+   returns QName(PackageNamespace("", "#0"), "uint")
+   flag HAS_OPTIONAL
+   optional Integer(0)
+   optional Integer(0)
+   body
+    maxstack 3
+    localcount 7
+    initscopedepth 3
+    maxscopedepth 4
+    code
+     debugfile           "k"
+     debugline           66
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 66
+     debug               1, "k", 1, 66
+     debug               1, "k", 2, 66
+     debug               1, "k", 3, 70
+     debug               1, "k", 4, 71
+     debug               1, "k", 5, 72
+     debugline           67
+     getlocal2
+     getlocal1
+     getproperty         QName(PackageNamespace("", "#0"), "length")
+     ifnge               L20
+
+     getlocal1
+     getproperty         QName(PackageNamespace("", "#0"), "length")
+     convert_u
+     setlocal2
+
+     debugline           68
+L20:
+     getlocal3
+     pushbyte            0
+     ifne                L30
+
+     getlocal1
+     getproperty         QName(PackageNamespace("", "#0"), "length")
+     getlocal2
+     subtract
+     convert_u
+     setlocal3
+
+     debugline           69
+L30:
+     getlocal3
+     getlocal2
+     add
+     getlocal1
+     getproperty         QName(PackageNamespace("", "#0"), "length")
+     ifngt               L43
+
+     getlocal1
+     getproperty         QName(PackageNamespace("", "#0"), "length")
+     getlocal2
+     subtract
+     convert_u
+     setlocal3
+
+     debugline           70
+L43:
+     getlocal2
+     convert_u
+     setlocal            4
+
+     debugline           71
+     pushbyte            1
+     convert_u
+     setlocal            5
+
+     debugline           72
+     pushbyte            0
+     convert_u
+     setlocal            6
+
+     jump                L80
+
+L55:
+     label
+     debugline           74
+     getlocal            5
+     getlocal1
+     getlocal            4
+     getproperty         MultinameL([PrivateNamespace("_-1Ur"), PackageNamespace("", "#0"), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("ChecksumUtil.as$512"), PackageNamespace("_-4Oc"), PackageInternalNs("_-4Oc"), ProtectedNamespace("_-1Ur"), StaticProtectedNs("_-1Ur")])
+     add
+     pushint             65521
+     modulo
+     convert_u
+     setlocal            5
+
+     debugline           75
+     getlocal            5
+     getlocal            6
+     add
+     pushint             65521
+     modulo
+     convert_u
+     setlocal            6
+
+     debugline           76
+     getlocal            4
+     increment
+     convert_u
+     setlocal            4
+
+     debugline           73
+L80:
+     getlocal            4
+     getlocal2
+     getlocal3
+     add
+     iflt                L55
+
+     debugline           78
+     getlocal            6
+     pushbyte            16
+     lshift
+     getlocal            5
+     bitor
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+end ; class

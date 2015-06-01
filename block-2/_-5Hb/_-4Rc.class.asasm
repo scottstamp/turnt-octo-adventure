@@ -1,0 +1,216 @@
+class
+ refid "_-5Hb:_-4Rc"
+ instance QName(PackageNamespace("_-5Hb"), "_-4Rc")
+  extends QName(PackageNamespace(""), "Object")
+  implements Multiname("_-4BI", [PackageNamespace("_-0XF")])
+  implements Multiname("_-FU", [PackageNamespace("_-5Hb")])
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-Nm")
+  iinit
+   refid "_-5Hb:_-4Rc/instance/init"
+   param QName(PackageNamespace("_-43b"), "_-5nc")
+   body
+    maxstack 3
+    localcount 4
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     debugfile           "k"
+     debugline           10
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 10
+     debugline           7
+     getlocal0
+     findpropstrict      QName(PackageNamespace(""), "Array")
+     constructprop       QName(PackageNamespace(""), "Array"), 0
+     initproperty        QName(PrivateNamespace("_-Nm"), "_-2eH")
+
+     debugline           10
+     getlocal0
+     constructsuper      0
+
+     debug               1, "k", 1, 11
+     debug               1, "k", 2, 12
+     debugline           11
+     getlocal1
+     callproperty        QName(Namespace("_-1mg"), "_-44H"), 0
+     convert_i
+     setlocal2
+
+     debugline           12
+     pushbyte            0
+     setlocal3
+
+     jump                L34
+
+L24:
+     label
+     debugline           13
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-Nm"), "_-2eH")
+     findpropstrict      QName(PackageNamespace("_-5Hb"), "_-3ur")
+     getlocal1
+     constructprop       QName(PackageNamespace("_-5Hb"), "_-3ur"), 1
+     callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+     debugline           12
+     inclocal_i          3
+L34:
+     getlocal3
+     getlocal2
+     iflt                L24
+
+     debugline           15
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-Nm"), "_-2eH") type QName(PackageNamespace(""), "Array") end
+  trait slot QName(PrivateNamespace("_-Nm"), "_disposed") type QName(PackageNamespace(""), "Boolean") end
+  trait method QName(PackageNamespace(""), "dispose")
+   method
+    refid "_-5Hb:_-4Rc/instance/dispose"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 4
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           20
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-5Hb"), "_-3ur")
+      setlocal1
+
+      debugline           21
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-Nm"), "_disposed")
+      iffalse             L15
+
+      debugline           22
+      returnvoid
+
+      ; 0xF0
+      ; 0x19
+L15:
+      getlocal0
+      pushtrue
+      initproperty        QName(PrivateNamespace("_-Nm"), "_disposed")
+
+      debugline           26
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-Nm"), "_-2eH")
+      pushnull
+      ifeq                L47
+
+      debug               1, "k", 0, 27
+      debugline           27
+      pushbyte            0
+      setlocal2
+
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-Nm"), "_-2eH")
+      coerce_a
+      setlocal3
+
+      jump                L42
+
+L32:
+      label
+      getlocal3
+      getlocal2
+      nextvalue
+      coerce              QName(PackageNamespace("_-5Hb"), "_-3ur")
+      setlocal1
+
+      debugline           28
+      getlocal1
+      callpropvoid        QName(PackageNamespace(""), "dispose"), 0
+
+      debugline           27
+L42:
+      hasnext2            3, 2
+      iftrue              L32
+
+      kill                3
+      kill                2
+      debugline           31
+L47:
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-Nm"), "_-2eH")
+
+      debugline           32
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "disposed")
+   method
+    refid "_-5Hb:_-4Rc/instance/disposed/getter"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           34
+      getlocal0
+      pushscope
+
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-Nm"), "_disposed")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "entries")
+   method
+    refid "_-5Hb:_-4Rc/instance/entries/getter"
+    returns QName(PackageNamespace(""), "Array")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           35
+      getlocal0
+      pushscope
+
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-Nm"), "_-2eH")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-5Hb:_-4Rc/class/init"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

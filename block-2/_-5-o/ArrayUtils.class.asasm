@@ -1,0 +1,282 @@
+class
+ refid "_-5-o:ArrayUtils"
+ instance QName(PackageNamespace("_-5-o"), "ArrayUtils")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-1of")
+  iinit
+   refid "_-5-o:ArrayUtils/instance/init"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     debugfile           "k"
+     debugline           27
+     getlocal0
+     pushscope
+
+     debugline           27
+     getlocal0
+     constructsuper      0
+
+     debugline           28
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+ end ; instance
+ cinit
+  refid "_-5-o:ArrayUtils/class/init"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait method QName(PackageNamespace(""), "_-2t9") flag FINAL dispid 3
+  method
+   refid "_-5-o:ArrayUtils/class/_-2t9"
+   param QName(PackageNamespace(""), "Object")
+   returns QName(PackageNamespace(""), "Array")
+   body
+    maxstack 3
+    localcount 3
+    initscopedepth 3
+    maxscopedepth 4
+    code
+     debugfile           "k"
+     debugline           30
+     getlocal0
+     pushscope
+
+     pushundefined
+     coerce_a
+     setlocal2
+
+     debug               1, "k", 0, 30
+     debugline           31
+     getlocal1
+     getlex              QName(PackageNamespace(""), "Array")
+     istypelate
+     iffalse             L20
+
+     debugline           32
+     getlocal1
+     getlex              QName(PackageNamespace(""), "Array")
+     astypelate
+     returnvalue
+
+     ; 0xF0
+     ; 0x23
+L20:
+     getlocal1
+     getlex              QName(PackageNamespace(""), "String")
+     istypelate
+     iffalse             L54
+
+     debug               1, "k", 1, 36
+     debugline           36
+     getlex              QName(PackageNamespace("adobe.serialization.json"), "JSON")
+     getlocal1
+     getlex              QName(PackageNamespace(""), "String")
+     astypelate
+     callproperty        QName(PackageNamespace(""), "decode"), 1
+     coerce_a
+     setlocal2
+
+     debugline           37
+     getlocal2
+     getlex              QName(PackageNamespace(""), "Array")
+     istypelate
+     iffalse             L43
+
+     debugline           38
+     getlocal2
+     returnvalue
+
+     ; 0xF0
+     ; 0x28
+L43:
+     getlocal2
+     getlex              QName(PackageNamespace(""), "String")
+     istypelate
+     iffalse             L54
+
+     debugline           41
+     getlocal2
+     pushstring          ","
+     callproperty        Multiname("split", [PrivateNamespace("_-1of"), PackageNamespace(""), PrivateNamespace("ArrayUtils.as$4986"), PackageNamespace("_-5-o"), PackageInternalNs("_-5-o"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-1of"), StaticProtectedNs("_-1of")]), 1
+     returnvalue
+
+     ; 0xF0
+     ; 0x2D
+L54:
+     findpropstrict      QName(PackageNamespace(""), "Array")
+     constructprop       QName(PackageNamespace(""), "Array"), 0
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PackageNamespace(""), "toUpperCase") flag FINAL dispid 4
+  method
+   refid "_-5-o:ArrayUtils/class/toUpperCase"
+   param QName(PackageNamespace(""), "Array")
+   returns QName(PackageNamespace(""), "Array")
+   body
+    maxstack 3
+    localcount 4
+    initscopedepth 3
+    maxscopedepth 4
+    code
+     debugfile           "k"
+     debugline           48
+     getlocal0
+     pushscope
+
+     pushbyte            0
+     setlocal3
+
+     debug               1, "k", 0, 48
+     debug               1, "k", 1, 49
+     debugline           49
+     findpropstrict      QName(PackageNamespace(""), "Array")
+     constructprop       QName(PackageNamespace(""), "Array"), 0
+     coerce              QName(PackageNamespace(""), "Array")
+     setlocal2
+
+     debugline           50
+     getlocal1
+     pushnull
+     ifeq                L53
+
+     debug               1, "k", 2, 51
+     debugline           51
+     pushbyte            0
+     setlocal3
+
+     jump                L48
+
+L22:
+     label
+     debugline           52
+     getlocal1
+     getlocal3
+     getproperty         MultinameL([PrivateNamespace("_-1of"), PackageNamespace(""), PrivateNamespace("ArrayUtils.as$4986"), PackageNamespace("_-5-o"), PackageInternalNs("_-5-o"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-1of"), StaticProtectedNs("_-1of")])
+     getlex              QName(PackageNamespace(""), "String")
+     istypelate
+     iffalse             L40
+
+     debugline           53
+     getlocal2
+     getlocal1
+     getlocal3
+     getproperty         MultinameL([PrivateNamespace("_-1of"), PackageNamespace(""), PrivateNamespace("ArrayUtils.as$4986"), PackageNamespace("_-5-o"), PackageInternalNs("_-5-o"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-1of"), StaticProtectedNs("_-1of")])
+     callproperty        Multiname("toUpperCase", [PrivateNamespace("_-1of"), PackageNamespace(""), PrivateNamespace("ArrayUtils.as$4986"), PackageNamespace("_-5-o"), PackageInternalNs("_-5-o"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-1of"), StaticProtectedNs("_-1of")]), 0
+     callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+     jump                L47
+
+     ; 0xF0
+     ; 0x37
+L40:
+     getlocal2
+     getlocal1
+     getlocal3
+     getproperty         MultinameL([PrivateNamespace("_-1of"), PackageNamespace(""), PrivateNamespace("ArrayUtils.as$4986"), PackageNamespace("_-5-o"), PackageInternalNs("_-5-o"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-1of"), StaticProtectedNs("_-1of")])
+     callproperty        Multiname("toJSObject", [PrivateNamespace("_-1of"), PackageNamespace(""), PrivateNamespace("ArrayUtils.as$4986"), PackageNamespace("_-5-o"), PackageInternalNs("_-5-o"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-1of"), StaticProtectedNs("_-1of")]), 0
+     callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+     debugline           51
+L47:
+     inclocal_i          3
+L48:
+     getlocal3
+     getlocal1
+     getproperty         QName(PackageNamespace(""), "length")
+     iflt                L22
+
+     debugline           58
+L53:
+     getlocal2
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PackageNamespace(""), "_-6L9") flag FINAL dispid 5
+  method
+   refid "_-5-o:ArrayUtils/class/_-6L9"
+   param QName(PackageNamespace(""), "Array")
+   returns QName(PackageNamespace(""), "Array")
+   body
+    maxstack 3
+    localcount 4
+    initscopedepth 3
+    maxscopedepth 4
+    code
+     debugfile           "k"
+     debugline           61
+     getlocal0
+     pushscope
+
+     pushbyte            0
+     setlocal3
+
+     debug               1, "k", 0, 61
+     debug               1, "k", 1, 62
+     debugline           62
+     findpropstrict      QName(PackageNamespace(""), "Array")
+     constructprop       QName(PackageNamespace(""), "Array"), 0
+     coerce              QName(PackageNamespace(""), "Array")
+     setlocal2
+
+     debugline           63
+     getlocal1
+     pushnull
+     ifeq                L37
+
+     debug               1, "k", 2, 64
+     debugline           64
+     pushbyte            0
+     setlocal3
+
+     jump                L32
+
+L22:
+     label
+     debugline           65
+     getlocal2
+     getlocal1
+     getlocal3
+     getproperty         MultinameL([PrivateNamespace("_-1of"), PackageNamespace(""), PrivateNamespace("ArrayUtils.as$4986"), PackageNamespace("_-5-o"), PackageInternalNs("_-5-o"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-1of"), StaticProtectedNs("_-1of")])
+     callproperty        Multiname("toJSObject", [PrivateNamespace("_-1of"), PackageNamespace(""), PrivateNamespace("ArrayUtils.as$4986"), PackageNamespace("_-5-o"), PackageInternalNs("_-5-o"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-1of"), StaticProtectedNs("_-1of")]), 0
+     callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+     debugline           64
+     inclocal_i          3
+L32:
+     getlocal3
+     getlocal1
+     getproperty         QName(PackageNamespace(""), "length")
+     iflt                L22
+
+     debugline           68
+L37:
+     getlocal2
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+end ; class

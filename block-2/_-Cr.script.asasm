@@ -1,0 +1,37 @@
+script ; 2420
+ sinit
+  refid "_-Cr/init"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 1
+   maxscopedepth 5
+   code
+    getlocal0
+    pushscope
+
+    getscopeobject      0
+    getlex              QName(PackageNamespace(""), "Object")
+    pushscope
+
+    getlex              QName(PackageNamespace("flash.utils"), "ByteArray")
+    pushscope
+
+    getlex              QName(PackageNamespace("mx.core"), "ByteArrayAsset")
+    pushscope
+
+    getlex              QName(PackageNamespace("mx.core"), "ByteArrayAsset")
+    newclass            "_-Cr"
+    popscope
+    popscope
+    popscope
+    initproperty        QName(PackageNamespace(""), "_-Cr")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait class QName(PackageNamespace(""), "_-Cr") slotid 1
+  #include "_-Cr.class.asasm"
+ end ; trait
+end ; script

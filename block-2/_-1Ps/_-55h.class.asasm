@@ -1,0 +1,309 @@
+class
+ refid "_-1Ps:_-55h"
+ instance QName(PackageNamespace("_-1Ps"), "_-55h")
+  extends QName(PackageNamespace("_-1Ps"), "_-5WF")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-EG")
+  iinit
+   refid "_-1Ps:_-55h/instance/init"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 8
+    maxscopedepth 9
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     debugfile           "k"
+     debugline           68
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-EG"), "_-39K") type QName(PackageNamespace(""), "String") value Null() end
+  trait method QName(ProtectedNamespace("_-EG"), "updateModel") flag OVERRIDE
+   method
+    refid "_-1Ps:_-55h/instance/_-EG:updateModel"
+    param QName(PackageNamespace(""), "Number")
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 3
+     localcount 5
+     initscopedepth 8
+     maxscopedepth 9
+     code
+      debugfile           "k"
+      debugline           21
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce_s
+      setlocal2
+
+      pushnull
+      coerce              QName(PackageNamespace("flash.display"), "Loader")
+      setlocal3
+
+      pushnull
+      coerce              QName(PackageNamespace("flash.system"), "LoaderContext")
+      setlocal            4
+
+      debug               1, "k", 0, 21
+      debugline           22
+      getlex              QName(PackageNamespace(""), "object")
+      pushnull
+      ifeq                L105
+
+      debug               1, "k", 1, 23
+      debugline           23
+      getlocal0
+      callproperty        QName(ProtectedNamespace("_-EG"), "getThumbnailURL"), 0
+      coerce_s
+      setlocal2
+
+      debugline           25
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-EG"), "_-39K")
+      getlocal2
+      ifeq                L105
+
+      debugline           26
+      getlocal0
+      getlocal2
+      initproperty        QName(PrivateNamespace("_-EG"), "_-39K")
+
+      debugline           27
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-EG"), "_-39K")
+      pushnull
+      equals
+      not
+      dup
+      iffalse             L47
+
+      pop
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-EG"), "_-39K")
+      pushstring          ""
+      equals
+      not
+L47:
+      iffalse             L101
+
+      debug               1, "k", 2, 28
+      debug               1, "k", 3, 33
+      debugline           28
+      findpropstrict      QName(PackageNamespace("flash.display"), "Loader")
+      constructprop       QName(PackageNamespace("flash.display"), "Loader"), 0
+      coerce              QName(PackageNamespace("flash.display"), "Loader")
+      setlocal3
+
+      debugline           29
+      getlocal3
+      getlocal2
+      setproperty         QName(PackageNamespace(""), "name")
+
+      debugline           30
+      getlocal3
+      getproperty         QName(PackageNamespace(""), "contentLoaderInfo")
+      getlex              QName(PackageNamespace("flash.events"), "Event")
+      getproperty         QName(PackageNamespace(""), "COMPLETE")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-EG"), "_-4hu")
+      callpropvoid        QName(PackageNamespace(""), "addEventListener"), 2
+
+      debugline           31
+      getlocal3
+      getproperty         QName(PackageNamespace(""), "contentLoaderInfo")
+      getlex              QName(PackageNamespace("flash.events"), "IOErrorEvent")
+      getproperty         QName(PackageNamespace(""), "IO_ERROR")
+      getlex              QName(PrivateNamespace("_-EG"), "_-2N6")
+      callpropvoid        QName(PackageNamespace(""), "addEventListener"), 2
+
+      debugline           32
+      getlocal3
+      getproperty         QName(PackageNamespace(""), "contentLoaderInfo")
+      getlex              QName(PackageNamespace("flash.events"), "SecurityErrorEvent")
+      getproperty         QName(PackageNamespace(""), "SECURITY_ERROR")
+      getlex              QName(PrivateNamespace("_-EG"), "_-2N6")
+      callpropvoid        QName(PackageNamespace(""), "addEventListener"), 2
+
+      debugline           33
+      findpropstrict      QName(PackageNamespace("flash.system"), "LoaderContext")
+      pushtrue
+      constructprop       QName(PackageNamespace("flash.system"), "LoaderContext"), 1
+      coerce              QName(PackageNamespace("flash.system"), "LoaderContext")
+      setlocal            4
+
+      debugline           34
+      getlocal            4
+      pushtrue
+      setproperty         QName(PackageNamespace(""), "checkPolicyFile")
+
+      debugline           35
+      getlocal3
+      findpropstrict      QName(PackageNamespace("flash.net"), "URLRequest")
+      getlocal2
+      constructprop       QName(PackageNamespace("flash.net"), "URLRequest"), 1
+      getlocal            4
+      callpropvoid        QName(PackageNamespace(""), "load"), 2
+
+      jump                L105
+
+      ; 0xF0
+      ; 0x26
+L101:
+      findpropstrict      QName(PackageNamespace(""), "_-2tb")
+      pushnull
+      callpropvoid        QName(PackageNamespace(""), "_-2tb"), 1
+
+      debugline           43
+L105:
+      getlocal0
+      getlocal1
+      callsuper           QName(ProtectedNamespace("_-10K"), "updateModel"), 1
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-EG"), "getThumbnailURL")
+   method
+    refid "_-1Ps:_-55h/instance/_-EG:getThumbnailURL"
+    returns QName(PackageNamespace(""), "String")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 8
+     maxscopedepth 9
+     code
+      debugfile           "k"
+      debugline           46
+      getlocal0
+      pushscope
+
+      debugline           47
+      findpropstrict      QName(PackageNamespace("_-2U9"), "Exception")
+      pushstring          "This method must be overridden!"
+      constructprop       QName(PackageNamespace("_-2U9"), "Exception"), 1
+      throw
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-EG"), "_-4hu")
+   method
+    refid "_-1Ps:_-55h/instance/_-1Ps:_-55h/instance/_-EG:updateModel/_-4hu"
+    param QName(PackageNamespace("flash.events"), "Event")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 4
+     initscopedepth 8
+     maxscopedepth 9
+     code
+      debugfile           "k"
+      debugline           54
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 54
+      debug               1, "k", 1, 55
+      debug               1, "k", 2, 56
+      debugline           55
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "target")
+      getlex              QName(PackageNamespace("flash.display"), "LoaderInfo")
+      astypelate
+      coerce              QName(PackageNamespace("flash.display"), "LoaderInfo")
+      setlocal2
+
+      debugline           56
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "content")
+      getlex              QName(PackageNamespace("flash.display"), "Bitmap")
+      astypelate
+      coerce              QName(PackageNamespace("flash.display"), "Bitmap")
+      setlocal3
+
+      debugline           57
+      getlocal3
+      pushnull
+      ifeq                L33
+
+      debugline           58
+      findpropstrict      QName(PackageNamespace(""), "_-2tb")
+      getlocal3
+      getproperty         QName(PackageNamespace(""), "bitmapData")
+      callpropvoid        QName(PackageNamespace(""), "_-2tb"), 1
+
+      jump                L37
+
+      ; 0xF0
+      ; 0x3D
+L33:
+      findpropstrict      QName(PackageNamespace(""), "_-2tb")
+      pushnull
+      callpropvoid        QName(PackageNamespace(""), "_-2tb"), 1
+
+      debugline           63
+L37:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-1Ps:_-55h/class/init"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 7
+   maxscopedepth 8
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait method QName(PrivateNamespace("_-EG"), "_-2N6") flag FINAL dispid 3
+  method
+   refid "_-1Ps:_-55h/class/_-1Ps:_-55h/instance/_-EG:updateModel/_-2N6"
+   param QName(PackageNamespace("flash.events"), "ErrorEvent")
+   returns QName(PackageNamespace(""), "void")
+   body
+    maxstack 3
+    localcount 2
+    initscopedepth 7
+    maxscopedepth 8
+    code
+     debugfile           "k"
+     debugline           50
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 50
+     debugline           51
+     getlex              QName(PackageNamespace(""), "_-Vz")
+     pushstring          "External Image thumbnail download error: "
+     getlocal1
+     callproperty        QName(PackageNamespace(""), "toString"), 0
+     add
+     callpropvoid        QName(PackageNamespace(""), "log"), 1
+
+     debugline           52
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+end ; class

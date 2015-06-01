@@ -1,0 +1,475 @@
+class
+ refid "_-5Ze:FocusManager"
+ instance QName(PackageNamespace("_-5Ze"), "FocusManager")
+  extends QName(PackageNamespace(""), "Object")
+  implements Multiname("_-5Cu", [PackageNamespace("_-5Ze")])
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-4rc")
+  iinit
+   refid "_-5Ze:FocusManager/instance/init"
+   param QName(PackageNamespace("flash.display"), "DisplayObject")
+   body
+    maxstack 3
+    localcount 2
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     debugfile           "k"
+     debugline           25
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 25
+     debugline           27
+     getlocal0
+     getlex              Multiname("Vector", [PrivateNamespace("_-4rc"), PackageNamespace(""), PrivateNamespace("FocusManager.as$2320"), PackageNamespace("_-5Ze"), PackageInternalNs("_-5Ze"), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-0S7"), ProtectedNamespace("_-4rc"), StaticProtectedNs("_-4rc"), PackageNamespace("__AS3__.vec")])
+     getlex              QName(PackageNamespace("_-2tk"), "_-5g0")
+     applytype           1
+     construct           0
+     initproperty        QName(PrivateNamespace("_-4rc"), "_-17x")
+
+     debugline           28
+     getlocal0
+     getlocal1
+     getproperty         QName(PackageNamespace(""), "stage")
+     initproperty        QName(PrivateNamespace("_-4rc"), "_-6X9")
+
+     debugline           29
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-4rc"), "_-6X9")
+     getlex              QName(PackageNamespace("flash.events"), "Event")
+     getproperty         QName(PackageNamespace(""), "ACTIVATE")
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-4rc"), "_-4I8")
+     callpropvoid        QName(PackageNamespace(""), "addEventListener"), 2
+
+     debugline           30
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-4rc"), "_-6X9")
+     getlex              QName(PackageNamespace("flash.events"), "FocusEvent")
+     getproperty         QName(PackageNamespace(""), "FOCUS_OUT")
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-4rc"), "_-2SE")
+     callpropvoid        QName(PackageNamespace(""), "addEventListener"), 2
+
+     debugline           31
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-4rc"), "_-6X9")
+     getlex              QName(PackageNamespace("flash.events"), "FocusEvent")
+     getproperty         QName(PackageNamespace(""), "KEY_FOCUS_CHANGE")
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-4rc"), "_-2SE")
+     callpropvoid        QName(PackageNamespace(""), "addEventListener"), 2
+
+     debugline           32
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-4rc"), "_-6X9")
+     getlex              QName(PackageNamespace("flash.events"), "FocusEvent")
+     getproperty         QName(PackageNamespace(""), "MOUSE_FOCUS_CHANGE")
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-4rc"), "_-2SE")
+     callpropvoid        QName(PackageNamespace(""), "addEventListener"), 2
+
+     debugline           33
+     getlocal0
+     constructsuper      0
+
+     debugline           34
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait getter QName(PackageNamespace(""), "disposed")
+   method
+    refid "_-5Ze:FocusManager/instance/disposed/getter"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           15
+      getlocal0
+      pushscope
+
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4rc"), "_disposed")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait slot QName(PrivateNamespace("_-4rc"), "_disposed") type QName(PackageNamespace(""), "Boolean") value False() end
+  trait slot QName(PrivateNamespace("_-4rc"), "_-6X9") type QName(PackageNamespace("flash.display"), "Stage") end
+  trait slot QName(PrivateNamespace("_-4rc"), "_-17x") type TypeName(QName(PackageNamespace("__AS3__.vec"), "Vector")<QName(PackageNamespace("_-2tk"), "_-5g0")>) end
+  trait method QName(PackageNamespace(""), "dispose")
+   method
+    refid "_-5Ze:FocusManager/instance/dispose"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           39
+      getlocal0
+      pushscope
+
+      debugline           41
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4rc"), "_disposed")
+      iftrue              L53
+
+      debugline           42
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4rc"), "_-6X9")
+      getlex              QName(PackageNamespace("flash.events"), "Event")
+      getproperty         QName(PackageNamespace(""), "ACTIVATE")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4rc"), "_-4I8")
+      callpropvoid        QName(PackageNamespace(""), "removeEventListener"), 2
+
+      debugline           43
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4rc"), "_-6X9")
+      getlex              QName(PackageNamespace("flash.events"), "FocusEvent")
+      getproperty         QName(PackageNamespace(""), "FOCUS_OUT")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4rc"), "_-2SE")
+      callpropvoid        QName(PackageNamespace(""), "removeEventListener"), 2
+
+      debugline           44
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4rc"), "_-6X9")
+      getlex              QName(PackageNamespace("flash.events"), "FocusEvent")
+      getproperty         QName(PackageNamespace(""), "KEY_FOCUS_CHANGE")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4rc"), "_-2SE")
+      callpropvoid        QName(PackageNamespace(""), "removeEventListener"), 2
+
+      debugline           45
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4rc"), "_-6X9")
+      getlex              QName(PackageNamespace("flash.events"), "FocusEvent")
+      getproperty         QName(PackageNamespace(""), "MOUSE_FOCUS_CHANGE")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4rc"), "_-2SE")
+      callpropvoid        QName(PackageNamespace(""), "removeEventListener"), 2
+
+      debugline           46
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-4rc"), "_-6X9")
+
+      debugline           47
+      getlocal0
+      pushtrue
+      initproperty        QName(PrivateNamespace("_-4rc"), "_disposed")
+
+      debugline           48
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-4rc"), "_-17x")
+
+      debugline           50
+L53:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "registerFocusWindow")
+   method
+    refid "_-5Ze:FocusManager/instance/registerFocusWindow"
+    param QName(PackageNamespace("_-2tk"), "_-5g0")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           52
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 52
+      debugline           54
+      getlocal1
+      pushnull
+      ifeq                L31
+
+      debugline           55
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4rc"), "_-17x")
+      getlocal1
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "indexOf"), 1
+      pushbyte            -1
+      ifne                L31
+
+      debugline           56
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4rc"), "_-17x")
+      getlocal1
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      debugline           57
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4rc"), "_-6X9")
+      getproperty         QName(PackageNamespace(""), "focus")
+      pushnull
+      ifne                L31
+
+      debugline           58
+      getlocal1
+      callpropvoid        QName(Namespace("_-2tZ"), "focus"), 0
+
+      debugline           62
+L31:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "removeFocusWindow")
+   method
+    refid "_-5Ze:FocusManager/instance/removeFocusWindow"
+    param QName(PackageNamespace("_-2tk"), "_-5g0")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           64
+      getlocal0
+      pushscope
+
+      pushbyte            0
+      setlocal2
+
+      debug               1, "k", 0, 64
+      debugline           66
+      getlocal1
+      pushnull
+      ifeq                L29
+
+      debug               1, "k", 1, 68
+      debugline           68
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4rc"), "_-17x")
+      getlocal1
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "indexOf"), 1
+      convert_i
+      setlocal2
+
+      debugline           70
+      getlocal2
+      pushbyte            -1
+      ifngt               L29
+
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4rc"), "_-17x")
+      getlocal2
+      pushbyte            1
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "splice"), 2
+
+      debugline           73
+L29:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4rc"), "_-6X9")
+      getproperty         QName(PackageNamespace(""), "focus")
+      pushnull
+      ifne                L37
+
+      getlocal0
+      callpropvoid        QName(PrivateNamespace("_-4rc"), "_-1u3"), 0
+
+      debugline           74
+L37:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-4rc"), "_-1u3")
+   method
+    refid "_-5Ze:FocusManager/instance/_-5Ze:FocusManager/instance/_-1u3"
+    returns QName(PackageNamespace("_-2tk"), "_-5g0")
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           76
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-2tk"), "_-5g0")
+      setlocal2
+
+      debug               1, "k", 0, 78
+      debug               1, "k", 1, 79
+      debugline           78
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4rc"), "_-17x")
+      getproperty         QName(PackageNamespace(""), "length")
+      convert_u
+      setlocal1
+
+      jump                L45
+
+L16:
+      label
+      debugline           82
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4rc"), "_-17x")
+      getlocal1
+      getproperty         MultinameL([PrivateNamespace("_-4rc"), PackageNamespace(""), PrivateNamespace("FocusManager.as$2320"), PackageNamespace("_-5Ze"), PackageInternalNs("_-5Ze"), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-0S7"), ProtectedNamespace("_-4rc"), StaticProtectedNs("_-4rc")])
+      getlex              QName(PackageNamespace("_-2tk"), "_-5g0")
+      astypelate
+      coerce              QName(PackageNamespace("_-2tk"), "_-5g0")
+      setlocal2
+
+      debugline           83
+      getlocal2
+      getproperty         QName(Namespace("_-0mn"), "disposed")
+      iffalse             L39
+
+      debugline           84
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4rc"), "_-17x")
+      getlocal1
+      pushbyte            1
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "splice"), 2
+
+      jump                L45
+
+      ; 0xF0
+      ; 0x56
+L39:
+      getlocal2
+      callpropvoid        QName(Namespace("_-2tZ"), "focus"), 0
+
+      debugline           87
+      jump                L54
+
+      ; 0xF0
+      ; 0x51
+L45:
+      getlocal1
+      convert_d
+      dup
+      decrement
+      convert_u
+      setlocal1
+
+      pushbyte            0
+      ifne                L16
+
+      debugline           91
+L54:
+      getlocal2
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-4rc"), "_-4I8")
+   method
+    refid "_-5Ze:FocusManager/instance/_-5Ze:FocusManager/instance/_-4I8"
+    param QName(PackageNamespace("flash.events"), "Event")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           94
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 94
+      debugline           96
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4rc"), "_-6X9")
+      getproperty         QName(PackageNamespace(""), "focus")
+      pushnull
+      ifne                L15
+
+      debugline           97
+      getlocal0
+      callpropvoid        QName(PrivateNamespace("_-4rc"), "_-1u3"), 0
+
+      debugline           99
+L15:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-4rc"), "_-2SE")
+   method
+    refid "_-5Ze:FocusManager/instance/_-5Ze:FocusManager/instance/_-2SE"
+    param QName(PackageNamespace("flash.events"), "FocusEvent")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           105
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 105
+      debugline           109
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4rc"), "_-6X9")
+      getproperty         QName(PackageNamespace(""), "focus")
+      pushnull
+      ifne                L15
+
+      debugline           110
+      getlocal0
+      callpropvoid        QName(PrivateNamespace("_-4rc"), "_-1u3"), 0
+
+      debugline           112
+L15:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-5Ze:FocusManager/class/init"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

@@ -1,0 +1,365 @@
+class
+ refid "_-5gc:FurnitureEditableInternalLinkLogic"
+ instance QName(PackageNamespace("_-5gc"), "FurnitureEditableInternalLinkLogic")
+  extends QName(PackageNamespace("_-5gc"), "FurnitureLogic")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-4m3")
+  iinit
+   refid "_-5gc:FurnitureEditableInternalLinkLogic/instance/init"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 7
+    maxscopedepth 8
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     debugfile           "k"
+     debugline           72
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-4m3"), "_-1cD") type QName(PackageNamespace(""), "Boolean") value False() end
+  trait slot QName(PrivateNamespace("_-4m3"), "_-3d8") type QName(PackageNamespace(""), "int") value Integer(0) end
+  trait method QName(PackageNamespace(""), "initialize") flag OVERRIDE
+   method
+    refid "_-5gc:FurnitureEditableInternalLinkLogic/instance/initialize"
+    param QName(PackageNamespace(""), "XML")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 3
+     initscopedepth 7
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           19
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 19
+      debug               1, "k", 1, 24
+      debugline           20
+      getlocal0
+      getlocal1
+      callsupervoid       QName(PackageNamespace(""), "initialize"), 1
+      debugline           21
+      getlocal1
+      pushnull
+      ifne                L18
+
+      debugline           22
+      returnvoid
+
+      ; 0xF0
+      ; 0x18
+L18:
+      getlocal1
+      getproperty         Multiname("action", [PrivateNamespace("_-4m3"), PackageNamespace(""), PrivateNamespace("FurnitureEditableInternalLinkLogic.as$2621"), PackageNamespace("_-5gc"), PackageInternalNs("_-5gc"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-4m3"), StaticProtectedNs("_-4m3"), StaticProtectedNs("_-5tD"), StaticProtectedNs("_-5Uv"), StaticProtectedNs("_-1db")])
+      coerce              QName(PackageNamespace(""), "XMLList")
+      setlocal2
+
+      debugline           25
+      getlocal2
+      callproperty        Multiname("length", [PrivateNamespace("_-4m3"), PackageNamespace(""), PrivateNamespace("FurnitureEditableInternalLinkLogic.as$2621"), PackageNamespace("_-5gc"), PackageInternalNs("_-5gc"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-4m3"), StaticProtectedNs("_-4m3"), StaticProtectedNs("_-5tD"), StaticProtectedNs("_-5Uv"), StaticProtectedNs("_-1db")]), 0
+      pushbyte            0
+      ifeq                L36
+
+      debugline           26
+      getlocal2
+      getproperty         MultinameA("startState", [PrivateNamespace("_-4m3"), PackageNamespace(""), PrivateNamespace("FurnitureEditableInternalLinkLogic.as$2621"), PackageNamespace("_-5gc"), PackageInternalNs("_-5gc"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-4m3"), StaticProtectedNs("_-4m3"), StaticProtectedNs("_-5tD"), StaticProtectedNs("_-5Uv"), StaticProtectedNs("_-1db")])
+      pushstring          "1"
+      ifne                L36
+
+      getlocal0
+      pushtrue
+      initproperty        QName(PrivateNamespace("_-4m3"), "_-1cD")
+
+      debugline           28
+L36:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "update") flag OVERRIDE
+   method
+    refid "_-5gc:FurnitureEditableInternalLinkLogic/instance/update"
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 4
+     initscopedepth 7
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           32
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 32
+      debugline           33
+      getlocal0
+      getlocal1
+      callsupervoid       QName(PackageNamespace(""), "update"), 1
+      debugline           34
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4m3"), "_-1cD")
+      iftrue              L17
+
+      debugline           35
+      returnvoid
+
+      ; 0xF0
+      ; 0x26
+L17:
+      getlocal0
+      dup
+      setlocal2
+
+      getproperty         QName(PrivateNamespace("_-4m3"), "_-3d8")
+      increment_i
+      setlocal3
+
+      getlocal2
+      getlocal3
+      setproperty         QName(PrivateNamespace("_-4m3"), "_-3d8")
+
+      kill                3
+      kill                2
+      debugline           39
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4m3"), "_-1cD")
+      convert_b
+      dup
+      iffalse             L39
+
+      pop
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4m3"), "_-3d8")
+      pushbyte            20
+      greaterthan
+L39:
+      iffalse             L49
+
+      debugline           40
+      getlocal0
+      pushbyte            1
+      callpropvoid        QName(PackageNamespace(""), "_-0Uu"), 1
+
+      debugline           41
+      getlocal0
+      pushfalse
+      initproperty        QName(PrivateNamespace("_-4m3"), "_-1cD")
+
+      debugline           43
+L49:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-0Uu")
+   method
+    refid "_-5gc:FurnitureEditableInternalLinkLogic/instance/_-0Uu"
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 3
+     initscopedepth 7
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           45
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 45
+      debug               1, "k", 1, 47
+      debugline           46
+      getlex              QName(PackageNamespace(""), "object")
+      pushnull
+      ifne                L13
+
+      returnvoid
+
+      ; 0xF0
+      ; 0x2F
+L13:
+      getlex              QName(PackageNamespace(""), "object")
+      callproperty        QName(Namespace("_-VG"), "getModelController"), 0
+      coerce              QName(PackageNamespace("_-6a0"), "_-1IC")
+      setlocal2
+
+      debugline           48
+      getlocal2
+      pushnull
+      ifeq                L29
+
+      debugline           49
+      getlocal2
+      getlex              QName(PackageNamespace("_-66k"), "_-1Zb")
+      getproperty         QName(PackageNamespace(""), "_-i8")
+      getlocal1
+      pushfalse
+      callpropvoid        QName(Namespace("_-CL"), "setNumber"), 3
+
+      debugline           51
+L29:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "mouseEvent") flag OVERRIDE
+   method
+    refid "_-5gc:FurnitureEditableInternalLinkLogic/instance/mouseEvent"
+    param QName(PackageNamespace("_-04S"), "_-4Vy")
+    param QName(PackageNamespace("_-3hA"), "_-1sj")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 7
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           53
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 53
+      debug               1, "k", 1, 53
+      debugline           54
+      getlocal1
+      pushnull
+      ifne                L13
+
+      returnvoid
+
+      ; 0xF0
+      ; 0x37
+L13:
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "type")
+      getlex              QName(PackageNamespace("flash.events"), "MouseEvent")
+      getproperty         QName(PackageNamespace(""), "DOUBLE_CLICK")
+      ifne                L23
+
+      debugline           56
+      getlocal0
+      pushbyte            0
+      callpropvoid        QName(PackageNamespace(""), "_-0Uu"), 1
+
+      debugline           58
+L23:
+      getlocal0
+      getlocal1
+      getlocal2
+      callsupervoid       QName(PackageNamespace(""), "mouseEvent"), 2
+      debugline           59
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "getEventTypes") flag OVERRIDE
+   method
+    refid "_-5gc:FurnitureEditableInternalLinkLogic/instance/getEventTypes"
+    returns QName(PackageNamespace(""), "Array")
+    body
+     maxstack 3
+     localcount 1
+     initscopedepth 7
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           61
+      getlocal0
+      pushscope
+
+      debugline           62
+      findpropstrict      QName(ProtectedNamespace("_-1db"), "_-2Cz")
+      getlocal0
+      callsuper           QName(PackageNamespace(""), "getEventTypes"), 0
+      getlex              QName(PackageNamespace("_-4LP"), "_-3eG")
+      getproperty         QName(PackageNamespace(""), "_-50d")
+      newarray            1
+      callproperty        QName(ProtectedNamespace("_-1db"), "_-2Cz"), 2
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "useObject") flag OVERRIDE
+   method
+    refid "_-5gc:FurnitureEditableInternalLinkLogic/instance/useObject"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 1
+     initscopedepth 7
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           65
+      getlocal0
+      pushscope
+
+      debugline           66
+      getlex              QName(PackageNamespace(""), "eventDispatcher")
+      pushnull
+      equals
+      not
+      dup
+      iffalse             L16
+
+      pop
+      getlex              QName(PackageNamespace(""), "object")
+      pushnull
+      equals
+      not
+L16:
+      iffalse             L26
+
+      debugline           67
+      getlex              QName(PackageNamespace(""), "eventDispatcher")
+      findpropstrict      QName(PackageNamespace("_-4LP"), "_-3eG")
+      getlex              QName(PackageNamespace("_-4LP"), "_-3eG")
+      getproperty         QName(PackageNamespace(""), "_-50d")
+      getlex              QName(PackageNamespace(""), "object")
+      constructprop       QName(PackageNamespace("_-4LP"), "_-3eG"), 2
+      callpropvoid        QName(Namespace("flash.events:IEventDispatcher"), "dispatchEvent"), 1
+
+      debugline           69
+L26:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-5gc:FurnitureEditableInternalLinkLogic/class/init"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 6
+   maxscopedepth 7
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

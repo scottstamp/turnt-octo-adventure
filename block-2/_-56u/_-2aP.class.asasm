@@ -1,0 +1,152 @@
+class
+ refid "_-56u:_-2aP"
+ instance QName(PackageNamespace("_-56u"), "_-2aP")
+  extends QName(PackageNamespace("_-6Y3"), "AdServerRequest")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-4nC")
+  iinit
+   refid "_-56u:_-2aP/instance/init"
+   param QName(PackageNamespace(""), "String")
+   param QName(PackageNamespace("_-1N-"), "AdServerConfig")
+   body
+    maxstack 3
+    localcount 3
+    initscopedepth 6
+    maxscopedepth 7
+    code
+     debugfile           "k"
+     debugline           28
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 28
+     debug               1, "k", 1, 28
+     debugline           29
+     getlocal0
+     findpropstrict      QName(PackageNamespace("_-56u"), "_-1hf")
+     getlocal2
+     constructprop       QName(PackageNamespace("_-56u"), "_-1hf"), 1
+     constructsuper      1
+
+     debugline           30
+     findpropstrict      QName(PackageNamespace(""), "parseWrappedAdTags")
+     callproperty        QName(PackageNamespace(""), "parseWrappedAdTags"), 0
+     iffalse             L25
+
+     debugline           31
+     getlocal0
+     findpropstrict      QName(ProtectedNamespace("_-68f"), "_-Au")
+     getlocal1
+     callproperty        QName(ProtectedNamespace("_-68f"), "_-Au"), 1
+     initproperty        QName(ProtectedNamespace("_-4nC"), "_-3oL")
+
+     jump                L29
+
+     ; 0xF0
+     ; 0x21
+L25:
+     getlocal0
+     getlocal1
+     initproperty        QName(ProtectedNamespace("_-4nC"), "_-3oL")
+
+     debugline           34
+L29:
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(ProtectedNamespace("_-4nC"), "_-3oL") type QName(PackageNamespace(""), "String") value Null() end
+  trait method QName(PackageNamespace(""), "isWrapped") flag OVERRIDE
+   method
+    refid "_-56u:_-2aP/instance/isWrapped"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           36
+      getlocal0
+      pushscope
+
+      debugline           37
+      pushtrue
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "formRequest") flag OVERRIDE
+   method
+    refid "_-56u:_-2aP/instance/formRequest"
+    param QName(PackageNamespace(""), "Array")
+    returns QName(PackageNamespace(""), "String")
+    flag HAS_OPTIONAL
+    optional Null()
+    body
+     maxstack 5
+     localcount 2
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           40
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 40
+      debugline           41
+      findpropstrict      QName(PackageNamespace(""), "_-2xp")
+      callproperty        QName(PackageNamespace(""), "_-2xp"), 0
+      iffalse             L23
+
+      debugline           43
+      findproperty        QName(ProtectedNamespace("_-68f"), "_-VZ")
+      getlex              QName(PackageNamespace("_-5-o"), "NetworkResource")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-4nC"), "_-3oL")
+      pushstring          "cache-buster="
+      getlex              QName(PackageNamespace(""), "Math")
+      callproperty        QName(PackageNamespace(""), "random"), 0
+      add
+      callproperty        QName(PackageNamespace(""), "_-5m8"), 2
+      initproperty        QName(ProtectedNamespace("_-68f"), "_-VZ")
+
+      jump                L28
+
+      ; 0xF0
+      ; 0x2D
+L23:
+      findproperty        QName(ProtectedNamespace("_-68f"), "_-VZ")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-4nC"), "_-3oL")
+      initproperty        QName(ProtectedNamespace("_-68f"), "_-VZ")
+
+      debugline           46
+L28:
+      getlex              QName(ProtectedNamespace("_-68f"), "_-VZ")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-56u:_-2aP/class/init"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 5
+   maxscopedepth 6
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

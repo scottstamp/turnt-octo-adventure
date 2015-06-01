@@ -1,0 +1,300 @@
+class
+ refid "_-5gc:_-1zt"
+ instance QName(PackageNamespace("_-5gc"), "_-1zt")
+  extends QName(PackageNamespace("_-5gc"), "_-Wz")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-5ZG")
+  iinit
+   refid "_-5gc:_-1zt/instance/init"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 8
+    maxscopedepth 9
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     debugfile           "k"
+     debugline           66
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-5ZG"), "_-4Kp") type QName(PackageNamespace(""), "int") value Integer(0) end
+  trait slot QName(PrivateNamespace("_-5ZG"), "_-2a8") type QName(PackageNamespace(""), "Number") value Double(0) end
+  trait slot QName(PrivateNamespace("_-5ZG"), "_-3Ip") type QName(PackageNamespace(""), "int") value Integer(0) end
+  trait method QName(PackageNamespace(""), "processUpdateMessage") flag OVERRIDE
+   method
+    refid "_-5gc:_-1zt/instance/processUpdateMessage"
+    param QName(PackageNamespace("_-z6"), "_-2bs")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 3
+     initscopedepth 8
+     maxscopedepth 9
+     code
+      debugfile           "k"
+      debugline           18
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 18
+      debug               1, "k", 1, 22
+      debugline           20
+      getlocal1
+      pushnull
+      ifne                L13
+
+      returnvoid
+
+      ; 0xF0
+      ; 0x16
+L13:
+      getlocal1
+      getlex              QName(PackageNamespace("_-sE"), "_-0Wh")
+      astypelate
+      coerce              QName(PackageNamespace("_-sE"), "_-0Wh")
+      setlocal2
+
+      debugline           23
+      getlocal2
+      pushnull
+      ifeq                L30
+
+      debugline           24
+      getlocal0
+      getlocal2
+      callpropvoid        QName(PrivateNamespace("_-5ZG"), "_-3v0"), 1
+
+      debugline           25
+      returnvoid
+
+      ; 0xF0
+      ; 0x1C
+L30:
+      getlocal0
+      getlocal1
+      callsupervoid       QName(PackageNamespace(""), "processUpdateMessage"), 1
+      debugline           29
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-5ZG"), "_-3v0")
+   method
+    refid "_-5gc:_-1zt/instance/_-5gc:_-1zt/instance/_-3v0"
+    param QName(PackageNamespace("_-sE"), "_-0Wh")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 5
+     initscopedepth 8
+     maxscopedepth 9
+     code
+      debugfile           "k"
+      debugline           31
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-41H"), "_-59h")
+      setlocal            4
+
+      debug               1, "k", 0, 31
+      debug               1, "k", 1, 32
+      debug               1, "k", 2, 33
+      debugline           32
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "state")
+      pushshort           1000
+      divide
+      convert_i
+      setlocal2
+
+      debugline           33
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "state")
+      pushshort           1000
+      modulo
+      convert_i
+      setlocal3
+
+      debugline           34
+      getlocal3
+      pushbyte            0
+      ifne                L60
+
+      debug               1, "k", 3, 36
+      debugline           35
+      getlocal0
+      pushbyte            0
+      initproperty        QName(PrivateNamespace("_-5ZG"), "_-3Ip")
+
+      debugline           36
+      findpropstrict      QName(PackageNamespace("_-41H"), "_-59h")
+      constructprop       QName(PackageNamespace("_-41H"), "_-59h"), 0
+      coerce              QName(PackageNamespace("_-41H"), "_-59h")
+      setlocal            4
+
+      debugline           37
+      getlocal            4
+      findpropstrict      QName(PackageNamespace(""), "String")
+      getlocal2
+      callproperty        QName(PackageNamespace(""), "String"), 1
+      callpropvoid        QName(PackageNamespace(""), "setString"), 1
+
+      debugline           38
+      findpropstrict      QName(PackageNamespace("_-sE"), "_-0Wh")
+      getlocal2
+      getlocal            4
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "_-0CX")
+      constructprop       QName(PackageNamespace("_-sE"), "_-0Wh"), 3
+      coerce              QName(PackageNamespace("_-sE"), "_-0Wh")
+      setlocal1
+
+      debugline           39
+      getlocal0
+      getlocal1
+      callsupervoid       QName(PackageNamespace(""), "processUpdateMessage"), 1
+      jump                L75
+
+      ; 0xF0
+      ; 0x29
+L60:
+      getlocal0
+      getlocal2
+      initproperty        QName(PrivateNamespace("_-5ZG"), "_-4Kp")
+
+      debugline           42
+      getlocal0
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "_-0CX")
+      initproperty        QName(PrivateNamespace("_-5ZG"), "_-2a8")
+
+      debugline           43
+      getlocal0
+      getlex              QName(ProtectedNamespace("_-5Uv"), "_-4tl")
+      getlocal3
+      add
+      initproperty        QName(PrivateNamespace("_-5ZG"), "_-3Ip")
+
+      debugline           45
+L75:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "update") flag OVERRIDE
+   method
+    refid "_-5gc:_-1zt/instance/update"
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 4
+     initscopedepth 8
+     maxscopedepth 9
+     code
+      debugfile           "k"
+      debugline           52
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-41H"), "_-59h")
+      setlocal2
+
+      pushnull
+      coerce              QName(PackageNamespace("_-sE"), "_-0Wh")
+      setlocal3
+
+      debug               1, "k", 0, 52
+      debugline           53
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5ZG"), "_-3Ip")
+      pushbyte            0
+      greaterthan
+      dup
+      iffalse             L23
+
+      pop
+      getlocal1
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5ZG"), "_-3Ip")
+      greaterequals
+L23:
+      iffalse             L57
+
+      debug               1, "k", 1, 55
+      debug               1, "k", 2, 57
+      debugline           54
+      getlocal0
+      pushbyte            0
+      initproperty        QName(PrivateNamespace("_-5ZG"), "_-3Ip")
+
+      debugline           55
+      findpropstrict      QName(PackageNamespace("_-41H"), "_-59h")
+      constructprop       QName(PackageNamespace("_-41H"), "_-59h"), 0
+      coerce              QName(PackageNamespace("_-41H"), "_-59h")
+      setlocal2
+
+      debugline           56
+      getlocal2
+      findpropstrict      QName(PackageNamespace(""), "String")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5ZG"), "_-4Kp")
+      callproperty        QName(PackageNamespace(""), "String"), 1
+      callpropvoid        QName(PackageNamespace(""), "setString"), 1
+
+      debugline           57
+      findpropstrict      QName(PackageNamespace("_-sE"), "_-0Wh")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5ZG"), "_-4Kp")
+      getlocal2
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5ZG"), "_-2a8")
+      constructprop       QName(PackageNamespace("_-sE"), "_-0Wh"), 3
+      coerce              QName(PackageNamespace("_-sE"), "_-0Wh")
+      setlocal3
+
+      debugline           58
+      getlocal0
+      getlocal3
+      callsupervoid       QName(PackageNamespace(""), "processUpdateMessage"), 1
+      debugline           61
+L57:
+      getlocal0
+      getlocal1
+      callsupervoid       QName(PackageNamespace(""), "update"), 1
+      debugline           62
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-5gc:_-1zt/class/init"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 7
+   maxscopedepth 8
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

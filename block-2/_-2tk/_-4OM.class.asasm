@@ -1,0 +1,3483 @@
+class
+ refid "_-2tk:_-4OM"
+ instance QName(PackageNamespace("_-2tk"), "_-4OM")
+  extends QName(PackageNamespace("_-2tk"), "_-5he")
+  implements Multiname("IItemGridWindow", [PackageNamespace("_-2tk")])
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-2WU")
+  iinit
+   refid "_-2tk:_-4OM/instance/init"
+   param QName(PackageNamespace(""), "String")
+   param QName(PackageNamespace(""), "uint")
+   param QName(PackageNamespace(""), "uint")
+   param QName(PackageNamespace(""), "uint")
+   param QName(PackageNamespace("_-2z-"), "WindowContext")
+   param QName(PackageNamespace("flash.geom"), "Rectangle")
+   param QName(PackageNamespace("_-2z-"), "IWindow")
+   param QName(PackageNamespace(""), "Function")
+   param QName(PackageNamespace(""), "Array")
+   param QName(PackageNamespace(""), "Array")
+   param QName(PackageNamespace(""), "uint")
+   flag HAS_OPTIONAL
+   optional Null()
+   optional Null()
+   optional Null()
+   optional Integer(0)
+   body
+    maxstack 12
+    localcount 12
+    initscopedepth 7
+    maxscopedepth 8
+    code
+     debugfile           "k"
+     debugline           119
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 119
+     debug               1, "k", 1, 119
+     debug               1, "k", 2, 119
+     debug               1, "k", 3, 119
+     debug               1, "k", 4, 119
+     debug               1, "k", 5, 119
+     debug               1, "k", 6, 119
+     debug               1, "k", 7, 119
+     debug               1, "k", 8, 119
+     debug               1, "k", 9, 119
+     debug               1, "k", 10, 119
+     debugline           121
+     getlocal0
+     getlocal1
+     getlocal2
+     getlocal3
+     getlocal            4
+     getlocal            5
+     getlocal            6
+     getlocal            7
+     getlocal            8
+     getlocal            9
+     getlocal            10
+     getlocal            11
+     constructsuper      11
+
+     debugline           123
+     findproperty        QName(ProtectedNamespace("_-4sT"), "_-079")
+     getlocal2
+     getlex              QName(PackageNamespace("_-02Q"), "WindowType")
+     getproperty         QName(PackageNamespace(""), "_-2SQ")
+     equals
+     not
+     initproperty        QName(ProtectedNamespace("_-4sT"), "_-079")
+
+     debugline           124
+     findproperty        QName(ProtectedNamespace("_-4sT"), "_-5o0")
+     pushtrue
+     initproperty        QName(ProtectedNamespace("_-4sT"), "_-5o0")
+
+     debugline           127
+     getlex              QName(ProtectedNamespace("_-4sT"), "_-079")
+     iftrue              L52
+
+     debugline           128
+     findpropstrict      QName(PackageNamespace(""), "Error")
+     pushstring          "Horizontal item grid not yet implemented!"
+     constructprop       QName(PackageNamespace(""), "Error"), 1
+     throw
+
+     ; 0xF0
+     ; 0x82
+     ; 0x01
+L52:
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-2WU"), "_-57B") type QName(PackageNamespace(""), "Boolean") value False() end
+  trait setter QName(PackageNamespace(""), "spacing") flag OVERRIDE
+   method
+    refid "_-2tk:_-4OM/instance/spacing/setter"
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 7
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           38
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 38
+      debug               1, "k", 1, 40
+      debugline           40
+      getlex              QName(PackageNamespace(""), "numListItems")
+      convert_u
+      setlocal2
+
+      jump                L21
+
+L11:
+      label
+      debugline           43
+      findpropstrict      QName(PackageNamespace("_-2tk"), "IItemListWindow")
+      findpropstrict      QName(PackageNamespace(""), "getListItemAt")
+      getlocal2
+      callproperty        QName(PackageNamespace(""), "getListItemAt"), 1
+      callproperty        QName(PackageNamespace("_-2tk"), "IItemListWindow"), 1
+      getlocal1
+      setproperty         QName(Namespace("_-00u"), "spacing")
+
+      debugline           42
+L21:
+      getlocal2
+      convert_d
+      dup
+      decrement
+      convert_u
+      setlocal2
+
+      pushbyte            0
+      ifgt                L11
+
+      debugline           46
+      getlocal0
+      getlocal1
+      setsuper            QName(PackageNamespace(""), "spacing")
+
+      debugline           47
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait setter QName(PackageNamespace(""), "background") flag OVERRIDE
+   method
+    refid "_-2tk:_-4OM/instance/background/setter"
+    param QName(PackageNamespace(""), "Boolean")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 3
+     initscopedepth 7
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           51
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 51
+      debug               1, "k", 1, 57
+      debugline           53
+      getlocal0
+      getlocal1
+      setsuper            QName(PackageNamespace(""), "background")
+
+      debugline           57
+      pushbyte            0
+      convert_u
+      setlocal2
+
+      jump                L27
+
+L15:
+      label
+      debugline           58
+      findpropstrict      QName(PackageNamespace(""), "getListItemAt")
+      getlocal2
+      callproperty        QName(PackageNamespace(""), "getListItemAt"), 1
+      getlocal1
+      setproperty         QName(Namespace("_-0jq"), "background")
+
+      debugline           57
+      getlocal2
+      increment
+      convert_u
+      setlocal2
+
+L27:
+      getlocal2
+      getlex              QName(PackageNamespace(""), "numListItems")
+      iflt                L15
+
+      debugline           60
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait setter QName(PackageNamespace(""), "color") flag OVERRIDE
+   method
+    refid "_-2tk:_-4OM/instance/color/setter"
+    param QName(PackageNamespace(""), "uint")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 3
+     initscopedepth 7
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           64
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 64
+      debug               1, "k", 1, 70
+      debugline           66
+      getlocal0
+      getlocal1
+      setsuper            QName(PackageNamespace(""), "color")
+
+      debugline           70
+      pushbyte            0
+      convert_u
+      setlocal2
+
+      jump                L27
+
+L15:
+      label
+      debugline           71
+      findpropstrict      QName(PackageNamespace(""), "getListItemAt")
+      getlocal2
+      callproperty        QName(PackageNamespace(""), "getListItemAt"), 1
+      getlocal1
+      setproperty         QName(Namespace("_-0jq"), "color")
+
+      debugline           70
+      getlocal2
+      increment
+      convert_u
+      setlocal2
+
+L27:
+      getlocal2
+      getlex              QName(PackageNamespace(""), "numListItems")
+      iflt                L15
+
+      debugline           73
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait setter QName(PackageNamespace(""), "autoArrangeItems") flag OVERRIDE
+   method
+    refid "_-2tk:_-4OM/instance/autoArrangeItems/setter"
+    param QName(PackageNamespace(""), "Boolean")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 7
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           75
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 75
+      debug               1, "k", 1, 79
+      debugline           77
+      getlocal0
+      getlocal1
+      setsuper            QName(PackageNamespace(""), "autoArrangeItems")
+
+      debugline           79
+      pushbyte            0
+      setlocal2
+
+      jump                L25
+
+L14:
+      label
+      debugline           80
+      findpropstrict      QName(PackageNamespace("_-2tk"), "IItemListWindow")
+      findpropstrict      QName(PackageNamespace(""), "getListItemAt")
+      getlocal2
+      callproperty        QName(PackageNamespace(""), "getListItemAt"), 1
+      callproperty        QName(PackageNamespace("_-2tk"), "IItemListWindow"), 1
+      getlocal1
+      setproperty         QName(Namespace("_-00u"), "autoArrangeItems")
+
+      debugline           79
+      inclocal_i          2
+L25:
+      getlocal2
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "_-0TM")
+      iflt                L14
+
+      debugline           82
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "scrollStepH") flag OVERRIDE
+   method
+    refid "_-2tk:_-4OM/instance/scrollStepH/getter"
+    returns QName(PackageNamespace(""), "Number")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 7
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           84
+      getlocal0
+      pushscope
+
+      debugline           86
+      getlex              QName(ProtectedNamespace("_-4sT"), "_-4NA")
+      pushbyte            0
+      ifnge               L13
+
+      debugline           87
+      getlex              QName(ProtectedNamespace("_-4sT"), "_-4NA")
+      returnvalue
+
+      ; 0xF0
+      ; 0x5A
+L13:
+      getlex              QName(ProtectedNamespace("_-4sT"), "_-079")
+      iffalse             L21
+
+      pushdouble          0.1
+      getlex              QName(PackageNamespace(""), "_-1Yw")
+      getproperty         QName(PackageNamespace(""), "height")
+      multiply
+      convert_d
+      jump                L27
+
+L21:
+      getlex              QName(PackageNamespace(""), "_-1Yw")
+      getproperty         QName(PackageNamespace(""), "width")
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "_-0TM")
+      divide
+      convert_d
+L27:
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "scrollStepV") flag OVERRIDE
+   method
+    refid "_-2tk:_-4OM/instance/scrollStepV/getter"
+    returns QName(PackageNamespace(""), "Number")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 7
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           94
+      getlocal0
+      pushscope
+
+      debugline           96
+      getlex              QName(ProtectedNamespace("_-4sT"), "_-1Du")
+      pushbyte            0
+      ifnge               L13
+
+      debugline           97
+      getlex              QName(ProtectedNamespace("_-4sT"), "_-1Du")
+      returnvalue
+
+      ; 0xF0
+      ; 0x64
+L13:
+      getlex              QName(ProtectedNamespace("_-4sT"), "_-079")
+      iffalse             L22
+
+      getlex              QName(PackageNamespace(""), "_-1Yw")
+      getproperty         QName(PackageNamespace(""), "height")
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "_-2nv")
+      divide
+      convert_d
+      jump                L27
+
+L22:
+      pushdouble          0.1
+      getlex              QName(PackageNamespace(""), "_-1Yw")
+      getproperty         QName(PackageNamespace(""), "width")
+      multiply
+      convert_d
+L27:
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "_-5oO")
+   method
+    refid "_-2tk:_-4OM/instance/_-5oO/getter"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 7
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           104
+      getlocal0
+      pushscope
+
+      debugline           105
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2WU"), "_-5EI")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait setter QName(PackageNamespace(""), "_-5oO")
+   method
+    refid "_-2tk:_-4OM/instance/_-5oO/setter"
+    param QName(PackageNamespace(""), "Boolean")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 7
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           108
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 108
+      debugline           109
+      getlocal0
+      getlocal1
+      initproperty        QName(PrivateNamespace("_-2WU"), "_-5EI")
+
+      debugline           110
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "iterator") flag OVERRIDE
+   method
+    refid "_-2tk:_-4OM/instance/iterator/getter"
+    returns QName(PackageNamespace("_-0S7"), "_-w3")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 7
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           112
+      getlocal0
+      pushscope
+
+      debugline           113
+      findpropstrict      QName(PackageNamespace("_-0qX"), "_-5PP")
+      getlocal0
+      constructprop       QName(PackageNamespace("_-0qX"), "_-5PP"), 1
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait slot QName(PrivateNamespace("_-2WU"), "_-5EI") type QName(PackageNamespace(""), "Boolean") value True() end
+  trait method QName(PackageNamespace(""), "update") flag OVERRIDE
+   method
+    refid "_-2tk:_-4OM/instance/update"
+    param QName(PackageNamespace("_-2z-"), "WindowController")
+    param QName(PackageNamespace("_-0eT"), "WindowEvent")
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 4
+     localcount 5
+     initscopedepth 7
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           139
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 139
+      debug               1, "k", 1, 139
+      debug               1, "k", 2, 141
+      debugline           141
+      getlocal0
+      getlocal1
+      getlocal2
+      callsuper           QName(PackageNamespace(""), "update"), 2
+      convert_b
+      setlocal3
+
+      jump                L64
+
+L15:
+      label
+      debugline           146
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2WU"), "_-5EI")
+      iffalse             L24
+
+      debugline           147
+      getlocal0
+      callpropvoid        QName(PackageNamespace(""), "_-4-g"), 0
+
+      debugline           149
+L24:
+      jump                L96
+
+L25:
+      label
+      debugline           152
+      getlex              QName(ProtectedNamespace("_-4sT"), "_-079")
+      iffalse             L44
+
+      debugline           153
+      findproperty        QName(PackageNamespace(""), "scrollV")
+      getlex              QName(PackageNamespace(""), "scrollV")
+      findpropstrict      QName(PackageNamespace("_-0eT"), "WindowMouseEvent")
+      getlocal2
+      callproperty        QName(PackageNamespace("_-0eT"), "WindowMouseEvent"), 1
+      getproperty         QName(PackageNamespace(""), "delta")
+      pushdouble          0.01
+      multiply
+      subtract
+      initproperty        QName(PackageNamespace(""), "scrollV")
+
+      jump                L55
+
+      ; 0xF0
+      ; 0x9C
+      ; 0x01
+L44:
+      findproperty        QName(PackageNamespace(""), "scrollH")
+      getlex              QName(PackageNamespace(""), "scrollH")
+      findpropstrict      QName(PackageNamespace("_-0eT"), "WindowMouseEvent")
+      getlocal2
+      callproperty        QName(PackageNamespace("_-0eT"), "WindowMouseEvent"), 1
+      getproperty         QName(PackageNamespace(""), "delta")
+      pushdouble          0.01
+      multiply
+      subtract
+      initproperty        QName(PackageNamespace(""), "scrollH")
+
+      debugline           158
+L55:
+      pushtrue
+      setlocal3
+
+      debugline           159
+      jump                L96
+
+L59:
+      label
+      jump                L96
+
+      ; 0xF0
+      ; 0x8F
+      ; 0x01
+L64:
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "type")
+      setlocal            4
+
+      debugline           145
+      getlex              QName(PackageNamespace("_-0eT"), "WindowEvent")
+      getproperty         QName(PackageNamespace(""), "_-3pW")
+      getlocal            4
+      ifstrictne          L77
+
+      pushbyte            0
+      jump                L91
+
+      ; 0xF0
+      ; 0x97
+      ; 0x01
+L77:
+      getlex              QName(PackageNamespace("_-0eT"), "WindowMouseEvent")
+      getproperty         QName(PackageNamespace(""), "_-61y")
+      getlocal            4
+      ifstrictne          L83
+
+      pushbyte            1
+      jump                L91
+
+L83:
+      jump                L90
+
+      ; 0x24
+      ; 0x02
+      ; 0x10
+      ; 0x02
+      ; 0x00
+      ; 0x00
+L90:
+      pushbyte            2
+L91:
+      kill                4
+      lookupswitch        L59, [L15, L25, L59]
+
+      ; 0xF0
+      ; 0xA2
+      ; 0x01
+L96:
+      getlocal3
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "numGridItems")
+   method
+    refid "_-2tk:_-4OM/instance/numGridItems/getter"
+    returns QName(PackageNamespace(""), "uint")
+    body
+     maxstack 4
+     localcount 3
+     initscopedepth 7
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           169
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 171
+      debug               1, "k", 1, 172
+      debugline           171
+      getlex              QName(PackageNamespace(""), "numListItems")
+      convert_u
+      setlocal1
+
+      debugline           172
+      pushbyte            0
+      convert_u
+      setlocal2
+
+      jump                L28
+
+L15:
+      label
+      debugline           175
+      getlocal2
+      findpropstrict      QName(PackageNamespace("_-2tk"), "IItemListWindow")
+      findpropstrict      QName(PackageNamespace(""), "getListItemAt")
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "getListItemAt"), 1
+      callproperty        QName(PackageNamespace("_-2tk"), "IItemListWindow"), 1
+      getproperty         QName(Namespace("_-00u"), "numListItems")
+      add
+      convert_u
+      setlocal2
+
+      debugline           174
+L28:
+      getlocal1
+      convert_d
+      dup
+      decrement
+      convert_u
+      setlocal1
+
+      pushbyte            0
+      ifgt                L15
+
+      debugline           178
+      getlocal2
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "_-0TM")
+   method
+    refid "_-2tk:_-4OM/instance/_-0TM/getter"
+    returns QName(PackageNamespace(""), "uint")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 7
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           185
+      getlocal0
+      pushscope
+
+      debugline           186
+      getlex              QName(PackageNamespace(""), "numListItems")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "_-2nv")
+   method
+    refid "_-2tk:_-4OM/instance/_-2nv/getter"
+    returns QName(PackageNamespace(""), "uint")
+    body
+     maxstack 5
+     localcount 4
+     initscopedepth 7
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           193
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 195
+      debug               1, "k", 1, 196
+      debug               1, "k", 2, 198
+      debugline           195
+      pushbyte            0
+      convert_u
+      setlocal1
+
+      debugline           196
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "_-0TM")
+      convert_u
+      setlocal2
+
+      debugline           198
+      pushbyte            0
+      convert_u
+      setlocal3
+
+      jump                L39
+
+L21:
+      label
+      debugline           199
+      getlex              QName(PackageNamespace(""), "Math")
+      getlocal1
+      findpropstrict      QName(PackageNamespace("_-2tk"), "IItemListWindow")
+      findpropstrict      QName(PackageNamespace(""), "getListItemAt")
+      getlocal3
+      callproperty        QName(PackageNamespace(""), "getListItemAt"), 1
+      callproperty        QName(PackageNamespace("_-2tk"), "IItemListWindow"), 1
+      getproperty         QName(Namespace("_-00u"), "numListItems")
+      callproperty        QName(PackageNamespace(""), "max"), 2
+      convert_u
+      setlocal1
+
+      debugline           198
+      getlocal3
+      increment
+      convert_u
+      setlocal3
+
+L39:
+      getlocal3
+      getlocal2
+      iflt                L21
+
+      debugline           202
+      getlocal1
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-3xi")
+   method
+    refid "_-2tk:_-4OM/instance/_-3xi"
+    param QName(PackageNamespace("_-2z-"), "IWindow")
+    returns QName(PackageNamespace("_-2z-"), "IWindow")
+    body
+     maxstack 2
+     localcount 3
+     initscopedepth 7
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           210
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 210
+      debug               1, "k", 1, 212
+      debugline           212
+      getlocal0
+      getlocal1
+      callproperty        QName(ProtectedNamespace("_-2WU"), "_-5zQ"), 1
+      coerce              QName(PackageNamespace("_-2tk"), "IItemListWindow")
+      setlocal2
+
+      debugline           216
+      getlocal1
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-2o0")
+   method
+    refid "_-2tk:_-4OM/instance/_-2o0"
+    param QName(PackageNamespace("_-2z-"), "IWindow")
+    param QName(PackageNamespace(""), "uint")
+    returns QName(PackageNamespace("_-2z-"), "IWindow")
+    body
+     maxstack 5
+     localcount 3
+     initscopedepth 7
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           225
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 225
+      debug               1, "k", 1, 225
+      debugline           227
+      getlocal0
+      getlocal1
+      getlex              QName(PackageNamespace(""), "Math")
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "numGridItems")
+      getlocal2
+      callproperty        QName(PackageNamespace(""), "min"), 2
+      callpropvoid        QName(ProtectedNamespace("_-2WU"), "_-2YN"), 2
+
+      debugline           231
+      getlocal1
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-0hT")
+   method
+    refid "_-2tk:_-4OM/instance/_-0hT"
+    param QName(PackageNamespace(""), "uint")
+    returns QName(PackageNamespace("_-2z-"), "IWindow")
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 7
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           239
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 239
+      debug               1, "k", 1, 241
+      debugline           241
+      getlocal0
+      getlocal1
+      callproperty        QName(ProtectedNamespace("_-2WU"), "_-4r9"), 1
+      coerce              QName(PackageNamespace("_-2tk"), "IItemListWindow")
+      setlocal2
+
+      debugline           242
+      getlocal2
+      pushnull
+      ifne                L22
+
+      debugline           243
+      pushnull
+      returnvalue
+
+      ; 0xF0
+      ; 0xF5
+      ; 0x01
+L22:
+      getlocal2
+      getlocal1
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "_-0TM")
+      divide
+      callproperty        QName(Namespace("_-00u"), "getListItemAt"), 1
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-5tm")
+   method
+    refid "_-2tk:_-4OM/instance/_-5tm"
+    param QName(PackageNamespace(""), "uint")
+    returns QName(PackageNamespace("_-2z-"), "IWindow")
+    body
+     maxstack 2
+     localcount 6
+     initscopedepth 7
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           253
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-2tk"), "IItemListWindow")
+      setlocal3
+
+      pushnull
+      coerce              QName(PackageNamespace("_-2z-"), "IWindow")
+      setlocal            4
+
+      pushbyte            0
+      convert_u
+      setlocal            5
+
+      debug               1, "k", 0, 253
+      debug               1, "k", 1, 255
+      debug               1, "k", 2, 256
+      debug               1, "k", 3, 257
+      debug               1, "k", 4, 258
+      debugline           255
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "_-0TM")
+      convert_u
+      setlocal2
+
+      debugline           260
+      pushbyte            0
+      convert_u
+      setlocal            5
+
+      jump                L56
+
+L28:
+      label
+      debugline           261
+      findpropstrict      QName(PackageNamespace(""), "getListItemAt")
+      getlocal            5
+      callproperty        QName(PackageNamespace(""), "getListItemAt"), 1
+      getlex              QName(PackageNamespace("_-2tk"), "IItemListWindow")
+      astypelate
+      coerce              QName(PackageNamespace("_-2tk"), "IItemListWindow")
+      setlocal3
+
+      debugline           262
+      getlocal3
+      getlocal1
+      callproperty        QName(Namespace("_-00u"), "_-3-W"), 1
+      coerce              QName(PackageNamespace("_-2z-"), "IWindow")
+      setlocal            4
+
+      debugline           263
+      getlocal            4
+      iffalse             L52
+
+      debugline           264
+      getlocal            4
+      returnvalue
+
+      ; 0xF0
+      ; 0x84
+      ; 0x02
+L52:
+      getlocal            5
+      increment
+      convert_u
+      setlocal            5
+
+L56:
+      getlocal            5
+      getlocal2
+      iflt                L28
+
+      debugline           268
+      pushnull
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-45l")
+   method
+    refid "_-2tk:_-4OM/instance/_-45l"
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace("_-2z-"), "IWindow")
+    body
+     maxstack 2
+     localcount 6
+     initscopedepth 7
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           276
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-2tk"), "IItemListWindow")
+      setlocal3
+
+      pushnull
+      coerce              QName(PackageNamespace("_-2z-"), "IWindow")
+      setlocal            4
+
+      pushbyte            0
+      convert_u
+      setlocal            5
+
+      debug               1, "k", 0, 276
+      debug               1, "k", 1, 278
+      debug               1, "k", 2, 279
+      debug               1, "k", 3, 280
+      debug               1, "k", 4, 281
+      debugline           278
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "_-0TM")
+      convert_u
+      setlocal2
+
+      debugline           283
+      pushbyte            0
+      convert_u
+      setlocal            5
+
+      jump                L56
+
+L28:
+      label
+      debugline           284
+      findpropstrict      QName(PackageNamespace(""), "getListItemAt")
+      getlocal            5
+      callproperty        QName(PackageNamespace(""), "getListItemAt"), 1
+      getlex              QName(PackageNamespace("_-2tk"), "IItemListWindow")
+      astypelate
+      coerce              QName(PackageNamespace("_-2tk"), "IItemListWindow")
+      setlocal3
+
+      debugline           285
+      getlocal3
+      getlocal1
+      callproperty        QName(Namespace("_-00u"), "getListItemByName"), 1
+      coerce              QName(PackageNamespace("_-2z-"), "IWindow")
+      setlocal            4
+
+      debugline           286
+      getlocal            4
+      iffalse             L52
+
+      debugline           287
+      getlocal            4
+      returnvalue
+
+      ; 0xF0
+      ; 0x9B
+      ; 0x02
+L52:
+      getlocal            5
+      increment
+      convert_u
+      setlocal            5
+
+L56:
+      getlocal            5
+      getlocal2
+      iflt                L28
+
+      debugline           291
+      pushnull
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-2SF")
+   method
+    refid "_-2tk:_-4OM/instance/_-2SF"
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace("_-2z-"), "IWindow")
+    body
+     maxstack 2
+     localcount 6
+     initscopedepth 7
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           299
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-2tk"), "IItemListWindow")
+      setlocal3
+
+      pushnull
+      coerce              QName(PackageNamespace("_-2z-"), "IWindow")
+      setlocal            4
+
+      pushbyte            0
+      convert_u
+      setlocal            5
+
+      debug               1, "k", 0, 299
+      debug               1, "k", 1, 301
+      debug               1, "k", 2, 302
+      debug               1, "k", 3, 303
+      debug               1, "k", 4, 304
+      debugline           301
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "_-0TM")
+      convert_u
+      setlocal2
+
+      debugline           306
+      pushbyte            0
+      convert_u
+      setlocal            5
+
+      jump                L56
+
+L28:
+      label
+      debugline           307
+      findpropstrict      QName(PackageNamespace(""), "getChildAt")
+      getlocal            5
+      callproperty        QName(PackageNamespace(""), "getChildAt"), 1
+      getlex              QName(PackageNamespace("_-2tk"), "IItemListWindow")
+      astypelate
+      coerce              QName(PackageNamespace("_-2tk"), "IItemListWindow")
+      setlocal3
+
+      debugline           308
+      getlocal3
+      getlocal1
+      callproperty        QName(Namespace("_-00u"), "_-15U"), 1
+      coerce              QName(PackageNamespace("_-2z-"), "IWindow")
+      setlocal            4
+
+      debugline           309
+      getlocal            4
+      iffalse             L52
+
+      debugline           310
+      getlocal            4
+      returnvalue
+
+      ; 0xF0
+      ; 0xB2
+      ; 0x02
+L52:
+      getlocal            5
+      increment
+      convert_u
+      setlocal            5
+
+L56:
+      getlocal            5
+      getlocal2
+      iflt                L28
+
+      debugline           314
+      pushnull
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-6YV")
+   method
+    refid "_-2tk:_-4OM/instance/_-6YV"
+    param QName(PackageNamespace("_-2z-"), "IWindow")
+    returns QName(PackageNamespace(""), "int")
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 7
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           322
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 322
+      debug               1, "k", 1, 324
+      debugline           324
+      getlocal0
+      getlocal1
+      callproperty        QName(ProtectedNamespace("_-2WU"), "_-2kh"), 1
+      coerce              QName(PackageNamespace("_-2tk"), "IItemListWindow")
+      setlocal2
+
+      debugline           325
+      getlocal2
+      pushnull
+      ifne                L22
+
+      debugline           326
+      pushbyte            -1
+      returnvalue
+
+      ; 0xF0
+      ; 0xC9
+      ; 0x02
+L22:
+      getlocal2
+      getlocal1
+      callproperty        QName(Namespace("_-00u"), "_-1pG"), 1
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "_-0TM")
+      multiply
+      getlocal0
+      getlocal2
+      callproperty        QName(ProtectedNamespace("_-2WU"), "_-5aZ"), 1
+      add
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-1Tl")
+   method
+    refid "_-2tk:_-4OM/instance/_-1Tl"
+    param QName(PackageNamespace("_-2z-"), "IWindow")
+    returns QName(PackageNamespace("_-2z-"), "IWindow")
+    body
+     maxstack 2
+     localcount 4
+     initscopedepth 7
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           337
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 337
+      debug               1, "k", 1, 341
+      debug               1, "k", 2, 350
+      debugline           341
+      getlocal0
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "_-6YV"), 1
+      convert_i
+      setlocal2
+
+      debugline           342
+      getlocal2
+      pushbyte            -1
+      ifne                L23
+
+      debugline           343
+      pushnull
+      returnvalue
+
+      ; 0xF0
+      ; 0xDA
+      ; 0x02
+L23:
+      getlocal0
+      getlocal2
+      callproperty        QName(ProtectedNamespace("_-2WU"), "_-5aO"), 1
+      getlocal1
+      ifeq                L36
+
+      debugline           347
+      findpropstrict      QName(PackageNamespace(""), "Error")
+      pushstring          "Item grid is out of order!"
+      constructprop       QName(PackageNamespace(""), "Error"), 1
+      throw
+
+      ; 0xF0
+      ; 0xDE
+      ; 0x02
+L36:
+      getlocal0
+      getlocal2
+      callproperty        QName(ProtectedNamespace("_-2WU"), "_-4r9"), 1
+      coerce              QName(PackageNamespace("_-2tk"), "IItemListWindow")
+      setlocal3
+
+      debugline           352
+      getlex              QName(ProtectedNamespace("_-4sT"), "_-079")
+      iftrue              L54
+
+      debugline           353
+      getlocal3
+      getlocal3
+      getproperty         QName(Namespace("_-63l"), "_-1Yw")
+      getproperty         QName(PackageNamespace(""), "width")
+      setproperty         QName(Namespace("_-0jq"), "width")
+
+      jump                L60
+
+      ; 0xF0
+      ; 0xE4
+      ; 0x02
+L54:
+      getlocal3
+      getlocal3
+      getproperty         QName(Namespace("_-63l"), "_-1Yw")
+      getproperty         QName(PackageNamespace(""), "height")
+      setproperty         QName(Namespace("_-0jq"), "height")
+
+      debugline           359
+L60:
+      getlocal1
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-0Bd")
+   method
+    refid "_-2tk:_-4OM/instance/_-0Bd"
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace("_-2z-"), "IWindow")
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 7
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           367
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 367
+      debugline           369
+      getlocal0
+      getlocal0
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "_-0hT"), 1
+      callproperty        QName(PackageNamespace(""), "_-1Tl"), 1
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-0kh")
+   method
+    refid "_-2tk:_-4OM/instance/_-0kh"
+    param QName(PackageNamespace("_-2z-"), "IWindow")
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 7
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           377
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 377
+      debug               1, "k", 1, 377
+      debugline           379
+      getlocal0
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "_-1Tl"), 1
+      pushnull
+      ifne                L20
+
+      debugline           380
+      findpropstrict      QName(PackageNamespace(""), "Error")
+      pushstring          "Item not found in grid!"
+      constructprop       QName(PackageNamespace(""), "Error"), 1
+      throw
+
+      ; 0xF0
+      ; 0xFF
+      ; 0x02
+L20:
+      findpropstrict      QName(PackageNamespace(""), "_-5-g")
+      getlocal1
+      getlocal2
+      callpropvoid        QName(PackageNamespace(""), "_-5-g"), 2
+
+      debugline           384
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-0JO")
+   method
+    refid "_-2tk:_-4OM/instance/_-0JO"
+    param QName(PackageNamespace("_-2z-"), "IWindow")
+    param QName(PackageNamespace("_-2z-"), "IWindow")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 3
+     initscopedepth 7
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           392
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 392
+      debug               1, "k", 1, 392
+      debugline           394
+      findpropstrict      QName(PackageNamespace(""), "Error")
+      pushstring          "ItemGridWindow / Unimplemented method!"
+      constructprop       QName(PackageNamespace(""), "Error"), 1
+      throw
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-0LB")
+   method
+    refid "_-2tk:_-4OM/instance/_-0LB"
+    param QName(PackageNamespace(""), "int")
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 3
+     initscopedepth 7
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           403
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 403
+      debug               1, "k", 1, 403
+      debugline           405
+      getlocal0
+      getlocal0
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "_-0hT"), 1
+      getlocal0
+      getlocal2
+      callproperty        QName(PackageNamespace(""), "_-0hT"), 1
+      callpropvoid        QName(PackageNamespace(""), "_-0JO"), 2
+
+      debugline           406
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-03j")
+   method
+    refid "_-2tk:_-4OM/instance/_-03j"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 4
+     initscopedepth 7
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           411
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-2tk"), "IItemListWindow")
+      setlocal2
+
+      debug               1, "k", 0, 413
+      debug               1, "k", 1, 414
+      debug               1, "k", 2, 416
+      debugline           413
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "_-0TM")
+      convert_u
+      setlocal1
+
+      debugline           416
+      pushbyte            0
+      convert_u
+      setlocal3
+
+      jump                L51
+
+L20:
+      label
+      debugline           417
+      findpropstrict      QName(PackageNamespace("_-2tk"), "IItemListWindow")
+      findpropstrict      QName(PackageNamespace(""), "getListItemAt")
+      getlocal3
+      callproperty        QName(PackageNamespace(""), "getListItemAt"), 1
+      callproperty        QName(PackageNamespace("_-2tk"), "IItemListWindow"), 1
+      coerce              QName(PackageNamespace("_-2tk"), "IItemListWindow")
+      setlocal2
+
+      debugline           418
+      getlocal2
+      callpropvoid        QName(Namespace("_-00u"), "_-508"), 0
+
+      debugline           419
+      getlex              QName(ProtectedNamespace("_-4sT"), "_-079")
+      iftrue              L43
+
+      debugline           420
+      getlocal2
+      pushbyte            0
+      setproperty         QName(Namespace("_-0jq"), "width")
+
+      jump                L47
+
+      ; 0xF0
+      ; 0xA7
+      ; 0x03
+L43:
+      getlocal2
+      pushbyte            0
+      setproperty         QName(Namespace("_-0jq"), "height")
+
+      debugline           416
+L47:
+      getlocal3
+      increment
+      convert_u
+      setlocal3
+
+L51:
+      getlocal3
+      getlocal1
+      iflt                L20
+
+      debugline           427
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "destroyGridItems")
+   method
+    refid "_-2tk:_-4OM/instance/destroyGridItems"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 4
+     initscopedepth 7
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           432
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-2tk"), "IItemListWindow")
+      setlocal2
+
+      debug               1, "k", 0, 434
+      debug               1, "k", 1, 435
+      debug               1, "k", 2, 437
+      debugline           434
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "_-0TM")
+      convert_u
+      setlocal1
+
+      debugline           437
+      pushbyte            0
+      convert_u
+      setlocal3
+
+      jump                L51
+
+L20:
+      label
+      debugline           438
+      findpropstrict      QName(PackageNamespace("_-2tk"), "IItemListWindow")
+      findpropstrict      QName(PackageNamespace(""), "getListItemAt")
+      getlocal3
+      callproperty        QName(PackageNamespace(""), "getListItemAt"), 1
+      callproperty        QName(PackageNamespace("_-2tk"), "IItemListWindow"), 1
+      coerce              QName(PackageNamespace("_-2tk"), "IItemListWindow")
+      setlocal2
+
+      debugline           439
+      getlocal2
+      callpropvoid        QName(Namespace("_-00u"), "_-wA"), 0
+
+      debugline           440
+      getlex              QName(ProtectedNamespace("_-4sT"), "_-079")
+      iftrue              L43
+
+      debugline           441
+      getlocal2
+      pushbyte            0
+      setproperty         QName(Namespace("_-0jq"), "width")
+
+      jump                L47
+
+      ; 0xF0
+      ; 0xBC
+      ; 0x03
+L43:
+      getlocal2
+      pushbyte            0
+      setproperty         QName(Namespace("_-0jq"), "height")
+
+      debugline           437
+L47:
+      getlocal3
+      increment
+      convert_u
+      setlocal3
+
+L51:
+      getlocal3
+      getlocal1
+      iflt                L20
+
+      debugline           448
+      findpropstrict      QName(PackageNamespace(""), "_-wA")
+      callpropvoid        QName(PackageNamespace(""), "_-wA"), 0
+
+      debugline           449
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-2WU"), "_-0cJ")
+   method
+    refid "_-2tk:_-4OM/instance/_-2WU:_-0cJ"
+    param QName(PackageNamespace("_-0eT"), "WindowEvent")
+    param QName(PackageNamespace("_-2z-"), "IWindow")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 1
+     localcount 3
+     initscopedepth 7
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           456
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 456
+      debug               1, "k", 1, 456
+      debugline           459
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-2WU"), "_-5XF")
+   method
+    refid "_-2tk:_-4OM/instance/_-2WU:_-5XF"
+    param QName(PackageNamespace("_-0eT"), "WindowEvent")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 3
+     initscopedepth 7
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           465
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-2z-"), "IWindow")
+      setlocal2
+
+      debug               1, "k", 0, 465
+      debugline           467
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "type")
+      getlex              QName(PackageNamespace("_-0eT"), "WindowEvent")
+      getproperty         QName(PackageNamespace(""), "_-1Jq")
+      ifne                L27
+
+      debug               1, "k", 1, 469
+      debugline           469
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "target")
+      getlex              QName(PackageNamespace("_-2z-"), "IWindow")
+      astypelate
+      coerce              QName(PackageNamespace("_-2z-"), "IWindow")
+      setlocal2
+
+      debugline           473
+      getlocal0
+      getlocal2
+      callpropvoid        QName(PackageNamespace(""), "_-1Tl"), 1
+
+      debugline           475
+L27:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-2WU"), "_-5aZ")
+   method
+    refid "_-2tk:_-4OM/instance/_-2WU:_-5aZ"
+    param QName(PackageNamespace("_-2tk"), "IItemListWindow")
+    returns QName(PackageNamespace(""), "int")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 7
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           481
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 481
+      debugline           483
+      findpropstrict      QName(PackageNamespace(""), "_-1pG")
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "_-1pG"), 1
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-2WU"), "_-4r9")
+   method
+    refid "_-2tk:_-4OM/instance/_-2WU:_-4r9"
+    param QName(PackageNamespace(""), "uint")
+    returns QName(PackageNamespace("_-2tk"), "IItemListWindow")
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 7
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           491
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 491
+      debugline           493
+      findpropstrict      QName(PackageNamespace(""), "getListItemAt")
+      getlocal1
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "_-0TM")
+      modulo
+      callproperty        QName(PackageNamespace(""), "getListItemAt"), 1
+      getlex              QName(PackageNamespace("_-2tk"), "IItemListWindow")
+      astypelate
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-4HC")
+   method
+    refid "_-2tk:_-4OM/instance/_-4HC"
+    param QName(PackageNamespace(""), "uint")
+    returns QName(PackageNamespace(""), "uint")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 7
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           501
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 501
+      debugline           503
+      getlocal1
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "_-0TM")
+      modulo
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-e8")
+   method
+    refid "_-2tk:_-4OM/instance/_-e8"
+    param QName(PackageNamespace(""), "uint")
+    returns QName(PackageNamespace(""), "uint")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 7
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           511
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 511
+      debugline           513
+      getlocal1
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "_-0TM")
+      divide
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "populate") flag OVERRIDE
+   method
+    refid "_-2tk:_-4OM/instance/populate"
+    param QName(PackageNamespace(""), "Array")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 13
+     initscopedepth 7
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           523
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-2tk"), "IItemListWindow")
+      setlocal            5
+
+      pushnull
+      coerce              QName(PackageNamespace("_-2z-"), "IWindow")
+      setlocal            7
+
+      pushnull
+      coerce              QName(PackageNamespace("_-2tk"), "IItemListWindow")
+      setlocal            8
+
+      pushbyte            0
+      setlocal            9
+
+      pushfalse
+      setlocal            10
+
+      debug               1, "k", 0, 523
+      debug               1, "k", 1, 525
+      debug               1, "k", 2, 528
+      debug               1, "k", 3, 529
+      debug               1, "k", 4, 530
+      debug               1, "k", 5, 531
+      debug               1, "k", 6, 533
+      debugline           525
+      getlex              QName(PackageNamespace(""), "autoArrangeItems")
+      convert_b
+      setlocal2
+
+      debugline           526
+      getlocal0
+      pushfalse
+      initproperty        QName(PackageNamespace(""), "autoArrangeItems")
+
+      debugline           528
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "numGridItems")
+      convert_i
+      setlocal3
+
+      debugline           529
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "_-0TM")
+      convert_i
+      setlocal            4
+
+      debugline           531
+      newarray            0
+      coerce              QName(PackageNamespace(""), "Array")
+      setlocal            6
+
+      debugline           533
+      pushbyte            0
+      setlocal            11
+
+      getlocal1
+      coerce_a
+      setlocal            12
+
+      jump                L194
+
+L53:
+      label
+      getlocal            12
+      getlocal            11
+      nextvalue
+      coerce              QName(PackageNamespace("_-2z-"), "IWindow")
+      setlocal            7
+
+      debugline           535
+      getlocal            4
+      pushbyte            0
+      ifne                L74
+
+      debugline           536
+      getlocal0
+      getlocal            7
+      callpropvoid        QName(ProtectedNamespace("_-2WU"), "_-jz"), 1
+
+      debugline           537
+      inclocal_i          4
+      debugline           538
+      jump                L194
+
+      ; 0xF0
+      ; 0x9D
+      ; 0x04
+L74:
+      getlocal3
+      pushbyte            0
+      ifngt               L158
+
+      debug               1, "k", 7, 543
+      debug               1, "k", 8, 544
+      debug               1, "k", 9, 545
+      debugline           543
+      getlocal0
+      getlocal3
+      pushbyte            0
+      greaterthan
+      iffalse             L90
+
+      getlocal3
+      decrement
+      convert_u
+      jump                L92
+
+L90:
+      pushbyte            0
+      convert_u
+L92:
+      callproperty        QName(ProtectedNamespace("_-2WU"), "_-4r9"), 1
+      coerce              QName(PackageNamespace("_-2tk"), "IItemListWindow")
+      setlocal            8
+
+      debugline           544
+      findpropstrict      QName(PackageNamespace(""), "_-1pG")
+      getlocal            8
+      callproperty        QName(PackageNamespace(""), "_-1pG"), 1
+      convert_i
+      setlocal            9
+
+      debugline           545
+      getlocal            9
+      pushbyte            -1
+      greaterthan
+      iffalse             L111
+
+      getlocal            9
+      getlocal            4
+      decrement
+      equals
+      jump                L112
+
+L111:
+      pushtrue
+L112:
+      convert_b
+      setlocal            10
+
+      debugline           549
+      getlocal            10
+      iffalse             L139
+
+      debugline           550
+      getlocal            8
+      getproperty         QName(Namespace("_-00u"), "numListItems")
+      pushbyte            1
+      ifne                L139
+
+      debugline           551
+      getlocal            8
+      getproperty         QName(Namespace("_-0jq"), "right")
+      getlocal            7
+      getproperty         QName(Namespace("_-0jq"), "width")
+      add
+      getlex              QName(ProtectedNamespace("_-6WA"), "_-1Cd")
+      ifnle               L139
+
+      debugline           552
+      getlocal0
+      getlocal            7
+      callpropvoid        QName(ProtectedNamespace("_-2WU"), "_-jz"), 1
+
+      debugline           553
+      jump                L194
+
+      ; 0xF0
+      ; 0xB0
+      ; 0x04
+L139:
+      findpropstrict      QName(PackageNamespace(""), "getListItemAt")
+      getlocal            10
+      iffalse             L145
+
+      pushbyte            0
+      convert_u
+      jump                L149
+
+L145:
+      getlocal            9
+      pushbyte            1
+      add
+      convert_u
+L149:
+      callproperty        QName(PackageNamespace(""), "getListItemAt"), 1
+      getlex              QName(PackageNamespace("_-2tk"), "IItemListWindow")
+      astypelate
+      coerce              QName(PackageNamespace("_-2tk"), "IItemListWindow")
+      setlocal            5
+
+      jump                L166
+
+      ; 0xF0
+      ; 0xB5
+      ; 0x04
+L158:
+      findpropstrict      QName(PackageNamespace(""), "getListItemAt")
+      pushbyte            0
+      callproperty        QName(PackageNamespace(""), "getListItemAt"), 1
+      getlex              QName(PackageNamespace("_-2tk"), "IItemListWindow")
+      astypelate
+      coerce              QName(PackageNamespace("_-2tk"), "IItemListWindow")
+      setlocal            5
+
+      debugline           568
+L166:
+      getlocal            5
+      getlocal            7
+      callpropvoid        QName(Namespace("_-00u"), "addListItem"), 1
+
+      debugline           569
+      inclocal_i          3
+      debugline           573
+      getlocal            7
+      getproperty         QName(Namespace("_-0jq"), "width")
+      getlocal            5
+      getproperty         QName(Namespace("_-0jq"), "width")
+      ifngt               L183
+
+      debugline           574
+      getlocal            5
+      getlocal            7
+      getproperty         QName(Namespace("_-0jq"), "width")
+      setproperty         QName(Namespace("_-0jq"), "width")
+
+      debugline           576
+L183:
+      getlocal            7
+      getproperty         QName(Namespace("_-0jq"), "bottom")
+      getlocal            5
+      getproperty         QName(Namespace("_-0jq"), "height")
+      ifngt               L194
+
+      debugline           577
+      getlocal            5
+      getlocal            7
+      getproperty         QName(Namespace("_-0jq"), "bottom")
+      setproperty         QName(Namespace("_-0jq"), "height")
+
+      debugline           533
+L194:
+      hasnext2            12, 11
+      iftrue              L53
+
+      kill                12
+      kill                11
+      debugline           581
+      getlocal0
+      getlocal2
+      initproperty        QName(PackageNamespace(""), "autoArrangeItems")
+
+      debugline           582
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-2WU"), "_-2kh")
+   method
+    refid "_-2tk:_-4OM/instance/_-2WU:_-2kh"
+    param QName(PackageNamespace("_-2z-"), "IWindow")
+    returns QName(PackageNamespace("_-2tk"), "IItemListWindow")
+    body
+     maxstack 3
+     localcount 4
+     initscopedepth 7
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           588
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-2tk"), "IItemListWindow")
+      setlocal3
+
+      debug               1, "k", 0, 588
+      debug               1, "k", 1, 590
+      debug               1, "k", 2, 591
+      debugline           590
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "_-0TM")
+      convert_u
+      setlocal2
+
+      jump                L37
+
+L16:
+      label
+      debugline           594
+      findpropstrict      QName(PackageNamespace("_-2tk"), "IItemListWindow")
+      findpropstrict      QName(PackageNamespace(""), "getListItemAt")
+      getlocal2
+      callproperty        QName(PackageNamespace(""), "getListItemAt"), 1
+      callproperty        QName(PackageNamespace("_-2tk"), "IItemListWindow"), 1
+      coerce              QName(PackageNamespace("_-2tk"), "IItemListWindow")
+      setlocal3
+
+      debugline           595
+      getlocal3
+      getlocal1
+      callproperty        QName(Namespace("_-00u"), "_-1pG"), 1
+      pushbyte            -1
+      ifngt               L37
+
+      debugline           596
+      getlocal3
+      returnvalue
+
+      ; 0xF0
+      ; 0xD1
+      ; 0x04
+L37:
+      getlocal2
+      convert_d
+      dup
+      decrement
+      convert_u
+      setlocal2
+
+      pushbyte            0
+      ifgt                L16
+
+      debugline           600
+      pushnull
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-2WU"), "_-5zQ")
+   method
+    refid "_-2tk:_-4OM/instance/_-2WU:_-5zQ"
+    param QName(PackageNamespace("_-2z-"), "IWindow")
+    returns QName(PackageNamespace("_-2tk"), "IItemListWindow")
+    body
+     maxstack 3
+     localcount 7
+     initscopedepth 7
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           608
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-2tk"), "IItemListWindow")
+      setlocal3
+
+      pushnull
+      coerce              QName(PackageNamespace("_-2tk"), "IItemListWindow")
+      setlocal            4
+
+      pushbyte            0
+      setlocal            5
+
+      pushfalse
+      setlocal            6
+
+      debug               1, "k", 0, 608
+      debug               1, "k", 1, 614
+      debug               1, "k", 2, 615
+      debugline           610
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "_-0TM")
+      pushbyte            0
+      ifne                L30
+
+      debugline           611
+      getlocal0
+      getlocal1
+      callproperty        QName(ProtectedNamespace("_-2WU"), "_-jz"), 1
+      returnvalue
+
+      ; 0xF0
+      ; 0xE6
+      ; 0x04
+L30:
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "numGridItems")
+      convert_u
+      setlocal2
+
+      debugline           617
+      getlocal2
+      pushbyte            0
+      ifngt               L119
+
+      debug               1, "k", 3, 619
+      debug               1, "k", 4, 620
+      debug               1, "k", 5, 621
+      debugline           619
+      getlocal0
+      getlocal2
+      pushbyte            0
+      greaterthan
+      iffalse             L51
+
+      getlocal2
+      decrement
+      convert_u
+      jump                L53
+
+L51:
+      pushbyte            0
+      convert_u
+L53:
+      callproperty        QName(ProtectedNamespace("_-2WU"), "_-4r9"), 1
+      coerce              QName(PackageNamespace("_-2tk"), "IItemListWindow")
+      setlocal            4
+
+      debugline           620
+      findpropstrict      QName(PackageNamespace(""), "_-1pG")
+      getlocal            4
+      callproperty        QName(PackageNamespace(""), "_-1pG"), 1
+      convert_i
+      setlocal            5
+
+      debugline           621
+      getlocal            5
+      pushbyte            -1
+      greaterthan
+      iffalse             L73
+
+      getlocal            5
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "_-0TM")
+      decrement
+      equals
+      jump                L74
+
+L73:
+      pushtrue
+L74:
+      convert_b
+      setlocal            6
+
+      debugline           625
+      getlocal            6
+      iffalse             L100
+
+      debugline           626
+      getlocal            4
+      getproperty         QName(Namespace("_-00u"), "numListItems")
+      pushbyte            1
+      ifne                L100
+
+      debugline           627
+      getlocal            4
+      getproperty         QName(Namespace("_-0jq"), "right")
+      getlocal1
+      getproperty         QName(Namespace("_-0jq"), "width")
+      add
+      getlex              QName(ProtectedNamespace("_-6WA"), "_-1Cd")
+      ifnle               L100
+
+      debugline           628
+      getlocal0
+      getlocal1
+      callproperty        QName(ProtectedNamespace("_-2WU"), "_-jz"), 1
+      returnvalue
+
+      ; 0xF0
+      ; 0xFB
+      ; 0x04
+L100:
+      findpropstrict      QName(PackageNamespace(""), "getListItemAt")
+      getlocal            6
+      iffalse             L106
+
+      pushbyte            0
+      convert_u
+      jump                L110
+
+L106:
+      getlocal            5
+      pushbyte            1
+      add
+      convert_u
+L110:
+      callproperty        QName(PackageNamespace(""), "getListItemAt"), 1
+      getlex              QName(PackageNamespace("_-2tk"), "IItemListWindow")
+      astypelate
+      coerce              QName(PackageNamespace("_-2tk"), "IItemListWindow")
+      setlocal3
+
+      jump                L127
+
+      ; 0xF0
+      ; 0x80
+      ; 0x05
+L119:
+      findpropstrict      QName(PackageNamespace(""), "getListItemAt")
+      pushbyte            0
+      callproperty        QName(PackageNamespace(""), "getListItemAt"), 1
+      getlex              QName(PackageNamespace("_-2tk"), "IItemListWindow")
+      astypelate
+      coerce              QName(PackageNamespace("_-2tk"), "IItemListWindow")
+      setlocal3
+
+      debugline           643
+L127:
+      getlocal3
+      getlocal1
+      callpropvoid        QName(Namespace("_-00u"), "addListItem"), 1
+
+      debugline           647
+      getlocal1
+      getproperty         QName(Namespace("_-0jq"), "width")
+      getlocal3
+      getproperty         QName(Namespace("_-0jq"), "width")
+      ifngt               L142
+
+      debugline           648
+      getlocal3
+      getlocal1
+      getproperty         QName(Namespace("_-0jq"), "width")
+      setproperty         QName(Namespace("_-0jq"), "width")
+
+      debugline           650
+L142:
+      getlocal1
+      getproperty         QName(Namespace("_-0jq"), "bottom")
+      getlocal3
+      getproperty         QName(Namespace("_-0jq"), "height")
+      ifngt               L153
+
+      debugline           651
+      getlocal3
+      getlocal1
+      getproperty         QName(Namespace("_-0jq"), "bottom")
+      setproperty         QName(Namespace("_-0jq"), "height")
+
+      debugline           653
+L153:
+      getlocal3
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-2WU"), "_-jz")
+   method
+    refid "_-2tk:_-4OM/instance/_-2WU:_-jz"
+    param QName(PackageNamespace("_-2z-"), "IWindow")
+    returns QName(PackageNamespace("_-2tk"), "IItemListWindow")
+    body
+     maxstack 14
+     localcount 3
+     initscopedepth 7
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           661
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 661
+      debug               1, "k", 1, 663
+      debugline           663
+      getlex              QName(ProtectedNamespace("_-6WA"), "_context")
+      debugline           664
+      getlex              QName(ProtectedNamespace("_-6WA"), "_name")
+      pushstring          "_COLUMN_"
+      add
+      getlex              QName(PackageNamespace(""), "numListItems")
+      add
+      debugline           665
+      pushnull
+      debugline           666
+      getlex              QName(PackageNamespace("_-02Q"), "WindowType")
+      getproperty         QName(PackageNamespace(""), "_-0AR")
+      debugline           667
+      getlex              QName(PackageNamespace("_-02Q"), "WindowStyle")
+      getproperty         QName(PackageNamespace(""), "_-5Cl")
+      debugline           668
+      getlex              QName(PackageNamespace("_-02Q"), "WindowParam")
+      getproperty         QName(PackageNamespace(""), "_-0OC")
+      debugline           669
+      getlex              QName(PackageNamespace("_-02Q"), "WindowParam")
+      getproperty         QName(PackageNamespace(""), "_-5QD")
+      bitor
+      debugline           670
+      findpropstrict      QName(PackageNamespace("flash.geom"), "Rectangle")
+      pushbyte            0
+      dup
+      getlex              QName(PackageNamespace(""), "Math")
+      getlocal1
+      getproperty         QName(Namespace("_-0jq"), "width")
+      pushbyte            0
+      callproperty        QName(PackageNamespace(""), "max"), 2
+      getlex              QName(PackageNamespace(""), "Math")
+      getlocal1
+      getproperty         QName(Namespace("_-0jq"), "height")
+      pushbyte            0
+      callproperty        QName(PackageNamespace(""), "max"), 2
+      constructprop       QName(PackageNamespace("flash.geom"), "Rectangle"), 4
+      debugline           671
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-2WU"), "_-0cJ")
+      debugline           672
+      pushnull
+      debugline           673
+      getlex              QName(PackageNamespace(""), "numListItems")
+      debugline           674
+      pushnull
+      pushstring          ""
+      debugline           676
+      getlex              QName(PackageNamespace("_-2z-"), "WindowController")
+      getproperty         QName(PackageNamespace(""), "TAG_INTERNAL")
+      getlex              QName(PackageNamespace("_-2z-"), "WindowController")
+      getproperty         QName(PackageNamespace(""), "TAG_EXCLUDE")
+      newarray            2
+      callproperty        QName(PackageNamespace(""), "create"), 12
+      getlex              QName(PackageNamespace("_-2tk"), "IItemListWindow")
+      astypelate
+      coerce              QName(PackageNamespace("_-2tk"), "IItemListWindow")
+      setlocal2
+
+      debugline           678
+      getlocal2
+      pushtrue
+      setproperty         QName(Namespace("_-00u"), "_-2k8")
+
+      debugline           679
+      getlocal2
+      getlex              QName(PackageNamespace(""), "background")
+      setproperty         QName(Namespace("_-0jq"), "background")
+
+      debugline           680
+      getlocal2
+      getlex              QName(PackageNamespace(""), "color")
+      setproperty         QName(Namespace("_-0jq"), "color")
+
+      debugline           681
+      getlocal2
+      getlex              QName(ProtectedNamespace("_-4sT"), "_-0e0")
+      setproperty         QName(Namespace("_-00u"), "spacing")
+
+      debugline           682
+      findpropstrict      QName(PackageNamespace(""), "addListItem")
+      getlocal2
+      callpropvoid        QName(PackageNamespace(""), "addListItem"), 1
+
+      debugline           683
+      getlocal2
+      getlocal1
+      callpropvoid        QName(Namespace("_-00u"), "addListItem"), 1
+
+      debugline           684
+      getlocal2
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-2WU"), "_-1kq")
+   method
+    refid "_-2tk:_-4OM/instance/_-2WU:_-1kq"
+    param QName(PackageNamespace(""), "uint")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 3
+     initscopedepth 7
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           691
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 691
+      debug               1, "k", 1, 693
+      debugline           693
+      findpropstrict      QName(PackageNamespace(""), "removeChildAt")
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "removeChildAt"), 1
+      getlex              QName(PackageNamespace("_-2tk"), "IItemListWindow")
+      astypelate
+      coerce              QName(PackageNamespace("_-2tk"), "IItemListWindow")
+      setlocal2
+
+      debugline           694
+      getlocal2
+      iffalse             L21
+
+      debugline           695
+      getlocal2
+      callpropvoid        QName(Namespace("_-0mn"), "dispose"), 0
+
+      debugline           697
+L21:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-2WU"), "_-2YN")
+   method
+    refid "_-2tk:_-4OM/instance/_-2WU:_-2YN"
+    param QName(PackageNamespace("_-2z-"), "IWindow")
+    param QName(PackageNamespace(""), "uint")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 11
+     initscopedepth 7
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           704
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-2tk"), "IItemListWindow")
+      setlocal            5
+
+      pushnull
+      coerce              QName(PackageNamespace("_-2z-"), "IWindow")
+      setlocal            7
+
+      pushbyte            0
+      convert_u
+      setlocal            8
+
+      debug               1, "k", 0, 704
+      debug               1, "k", 1, 704
+      debug               1, "k", 2, 708
+      debug               1, "k", 3, 709
+      debug               1, "k", 4, 710
+      debug               1, "k", 5, 711
+      debug               1, "k", 6, 712
+      debug               1, "k", 7, 713
+      debug               1, "k", 8, 717
+      debug               1, "k", 9, 756
+      debugline           708
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "numGridItems")
+      convert_u
+      setlocal3
+
+      debugline           709
+      getlocal3
+      decrement
+      convert_i
+      setlocal            4
+
+      debugline           711
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "_-0TM")
+      convert_u
+      setlocal            6
+
+      debugline           717
+      pushbyte            0
+      setlocal            9
+
+      jump                L53
+
+L42:
+      label
+      debugline           718
+      findpropstrict      QName(PackageNamespace("_-2tk"), "IItemListWindow")
+      findpropstrict      QName(PackageNamespace(""), "getListItemAt")
+      getlocal            9
+      callproperty        QName(PackageNamespace(""), "getListItemAt"), 1
+      callproperty        QName(PackageNamespace("_-2tk"), "IItemListWindow"), 1
+      pushfalse
+      setproperty         QName(Namespace("_-00u"), "autoArrangeItems")
+
+      debugline           717
+      inclocal_i          9
+L53:
+      getlocal            9
+      getlocal            6
+      iflt                L42
+
+      debugline           721
+      getlocal3
+      getlocal2
+      ifnle               L68
+
+      debugline           725
+      getlocal0
+      getlocal1
+      callpropvoid        QName(ProtectedNamespace("_-2WU"), "_-5zQ"), 1
+
+      jump                L136
+
+      ; 0xF0
+      ; 0xDC
+      ; 0x05
+L68:
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "_-2nv")
+      pushbyte            1
+      ifne                L88
+
+      debugline           733
+      getlocal0
+      getlocal            4
+      callproperty        QName(PackageNamespace(""), "_-0hT"), 1
+      coerce              QName(PackageNamespace("_-2z-"), "IWindow")
+      setlocal            7
+
+      debugline           734
+      getlocal0
+      getlocal            7
+      callproperty        QName(ProtectedNamespace("_-2WU"), "_-5zQ"), 1
+      coerce              QName(PackageNamespace("_-2tk"), "IItemListWindow")
+      setlocal            5
+
+      debugline           735
+      getlocal            4
+      decrement_i
+      setlocal            4
+
+L88:
+      jump                L122
+
+L89:
+      label
+      debugline           741
+      getlocal0
+      getlocal            4
+      callproperty        QName(PackageNamespace(""), "_-0hT"), 1
+      coerce              QName(PackageNamespace("_-2z-"), "IWindow")
+      setlocal            7
+
+      debugline           742
+      getlocal0
+      getlocal            4
+      pushbyte            1
+      add
+      callproperty        QName(PackageNamespace(""), "_-e8"), 1
+      convert_u
+      setlocal            8
+
+      debugline           743
+      getlocal0
+      getlocal            4
+      pushbyte            1
+      add
+      callproperty        QName(ProtectedNamespace("_-2WU"), "_-4r9"), 1
+      coerce              QName(PackageNamespace("_-2tk"), "IItemListWindow")
+      setlocal            5
+
+      debugline           744
+      getlocal            5
+      getlocal            7
+      getlocal            8
+      callpropvoid        QName(Namespace("_-00u"), "_-5-g"), 2
+
+      debugline           746
+      getlocal            4
+      decrement_i
+      setlocal            4
+
+      debugline           740
+L122:
+      getlocal            4
+      getlocal2
+      ifge                L89
+
+      debugline           751
+      getlocal0
+      getlocal2
+      callproperty        QName(ProtectedNamespace("_-2WU"), "_-4r9"), 1
+      getlocal1
+      getlocal2
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "_-0TM")
+      divide
+      callpropvoid        QName(Namespace("_-00u"), "_-5-g"), 2
+
+      debugline           756
+L136:
+      pushbyte            0
+      convert_u
+      setlocal            10
+
+      debugline           757
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "_-0TM")
+      convert_u
+      setlocal            6
+
+      debugline           759
+      pushbyte            0
+      setlocal            9
+
+      jump                L177
+
+L148:
+      label
+      debugline           760
+      findpropstrict      QName(PackageNamespace("_-2tk"), "IItemListWindow")
+      findpropstrict      QName(PackageNamespace(""), "getListItemAt")
+      getlocal            9
+      callproperty        QName(PackageNamespace(""), "getListItemAt"), 1
+      callproperty        QName(PackageNamespace("_-2tk"), "IItemListWindow"), 1
+      coerce              QName(PackageNamespace("_-2tk"), "IItemListWindow")
+      setlocal            5
+
+      debugline           761
+      getlocal            5
+      pushtrue
+      setproperty         QName(Namespace("_-00u"), "autoArrangeItems")
+
+      debugline           762
+      getlocal            5
+      getlocal            5
+      getproperty         QName(Namespace("_-63l"), "_-1Yw")
+      getproperty         QName(PackageNamespace(""), "height")
+      setproperty         QName(Namespace("_-0jq"), "height")
+
+      debugline           763
+      getlex              QName(PackageNamespace(""), "Math")
+      getlocal            10
+      getlocal            5
+      getproperty         QName(Namespace("_-0jq"), "height")
+      callproperty        QName(PackageNamespace(""), "max"), 2
+      convert_u
+      setlocal            10
+
+      debugline           759
+      inclocal_i          9
+L177:
+      getlocal            9
+      getlocal            6
+      iflt                L148
+
+      debugline           766
+      getlex              QName(ProtectedNamespace("_-4sT"), "_container")
+      getlocal            10
+      setproperty         QName(Namespace("_-0jq"), "height")
+
+      debugline           767
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-2WU"), "_-5aO")
+   method
+    refid "_-2tk:_-4OM/instance/_-2WU:_-5aO"
+    param QName(PackageNamespace(""), "uint")
+    returns QName(PackageNamespace("_-2z-"), "IWindow")
+    body
+     maxstack 3
+     localcount 10
+     initscopedepth 7
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           774
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-2z-"), "IWindow")
+      setlocal            7
+
+      debug               1, "k", 0, 774
+      debug               1, "k", 1, 776
+      debug               1, "k", 2, 777
+      debug               1, "k", 3, 778
+      debug               1, "k", 4, 779
+      debug               1, "k", 5, 780
+      debug               1, "k", 6, 781
+      debug               1, "k", 7, 787
+      debug               1, "k", 8, 799
+      debugline           776
+      getlocal0
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "_-e8"), 1
+      convert_u
+      setlocal2
+
+      debugline           777
+      getlocal0
+      getlocal1
+      callproperty        QName(ProtectedNamespace("_-2WU"), "_-4r9"), 1
+      coerce              QName(PackageNamespace("_-2tk"), "IItemListWindow")
+      setlocal3
+
+      debugline           778
+      getlocal3
+      getlocal2
+      callproperty        QName(Namespace("_-00u"), "_-5mB"), 1
+      coerce              QName(PackageNamespace("_-2z-"), "IWindow")
+      setlocal            4
+
+      debugline           779
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "numGridItems")
+      convert_u
+      setlocal            5
+
+      debugline           780
+      getlocal1
+      convert_u
+      setlocal            6
+
+      debugline           783
+      getlocal            4
+      pushnull
+      ifne                L53
+
+      debugline           784
+      pushnull
+      returnvalue
+
+      ; 0xF0
+      ; 0x93
+      ; 0x06
+L53:
+      pushbyte            0
+      setlocal            8
+
+      jump                L67
+
+L56:
+      label
+      debugline           788
+      findpropstrict      QName(PackageNamespace("_-2tk"), "IItemListWindow")
+      findpropstrict      QName(PackageNamespace(""), "getListItemAt")
+      getlocal            8
+      callproperty        QName(PackageNamespace(""), "getListItemAt"), 1
+      callproperty        QName(PackageNamespace("_-2tk"), "IItemListWindow"), 1
+      pushfalse
+      setproperty         QName(Namespace("_-00u"), "autoArrangeItems")
+
+      debugline           787
+      inclocal_i          8
+L67:
+      getlocal            8
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "_-0TM")
+      iflt                L56
+
+      jump                L104
+
+L72:
+      label
+      debugline           792
+      getlocal0
+      getlocal            6
+      callproperty        QName(PackageNamespace(""), "_-e8"), 1
+      convert_u
+      setlocal2
+
+      debugline           793
+      getlocal0
+      getlocal            6
+      pushbyte            1
+      add
+      callproperty        QName(PackageNamespace(""), "_-0hT"), 1
+      coerce              QName(PackageNamespace("_-2z-"), "IWindow")
+      setlocal            7
+
+      debugline           794
+      getlocal0
+      getlocal            6
+      callproperty        QName(ProtectedNamespace("_-2WU"), "_-4r9"), 1
+      coerce              QName(PackageNamespace("_-2tk"), "IItemListWindow")
+      setlocal3
+
+      debugline           795
+      getlocal3
+      getlocal            7
+      getlocal2
+      callpropvoid        QName(Namespace("_-00u"), "_-5-g"), 2
+
+      debugline           796
+      getlocal            6
+      increment
+      convert_u
+      setlocal            6
+
+      debugline           791
+L104:
+      getlocal            6
+      getlocal            5
+      iflt                L72
+
+      debugline           799
+      pushbyte            0
+      convert_u
+      setlocal            9
+
+      debugline           801
+      pushbyte            0
+      setlocal            8
+
+      jump                L144
+
+L115:
+      label
+      debugline           802
+      findpropstrict      QName(PackageNamespace("_-2tk"), "IItemListWindow")
+      findpropstrict      QName(PackageNamespace(""), "getListItemAt")
+      getlocal            8
+      callproperty        QName(PackageNamespace(""), "getListItemAt"), 1
+      callproperty        QName(PackageNamespace("_-2tk"), "IItemListWindow"), 1
+      coerce              QName(PackageNamespace("_-2tk"), "IItemListWindow")
+      setlocal3
+
+      debugline           803
+      getlocal3
+      pushtrue
+      setproperty         QName(Namespace("_-00u"), "autoArrangeItems")
+
+      debugline           804
+      getlocal3
+      getlocal3
+      getproperty         QName(Namespace("_-63l"), "_-1Yw")
+      getproperty         QName(PackageNamespace(""), "height")
+      setproperty         QName(Namespace("_-0jq"), "height")
+
+      debugline           805
+      getlex              QName(PackageNamespace(""), "Math")
+      getlocal            9
+      getlocal3
+      getproperty         QName(Namespace("_-0jq"), "height")
+      callproperty        QName(PackageNamespace(""), "max"), 2
+      convert_u
+      setlocal            9
+
+      debugline           801
+      inclocal_i          8
+L144:
+      getlocal            8
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "_-0TM")
+      iflt                L115
+
+      debugline           808
+      getlex              QName(ProtectedNamespace("_-4sT"), "_container")
+      getlocal            9
+      setproperty         QName(Namespace("_-0jq"), "height")
+
+      debugline           810
+      getlocal            4
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait slot QName(PrivateNamespace("_-2WU"), "_-3il") type QName(PackageNamespace(""), "Boolean") value False() end
+  trait method QName(PackageNamespace(""), "_-4-g")
+   method
+    refid "_-2tk:_-4OM/instance/_-4-g"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 11
+     initscopedepth 7
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           818
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-2tk"), "IItemListWindow")
+      setlocal            4
+
+      pushnull
+      coerce              QName(PackageNamespace("_-2z-"), "IWindow")
+      setlocal            5
+
+      pushbyte            0
+      setlocal            7
+
+      pushbyte            0
+      convert_u
+      setlocal            8
+
+      debug               1, "k", 0, 820
+      debug               1, "k", 1, 821
+      debug               1, "k", 2, 822
+      debug               1, "k", 3, 823
+      debug               1, "k", 4, 824
+      debug               1, "k", 5, 832
+      debugline           820
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "numGridItems")
+      convert_i
+      setlocal1
+
+      debugline           821
+      newarray            0
+      coerce              QName(PackageNamespace(""), "Array")
+      setlocal2
+
+      debugline           822
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "_-0TM")
+      convert_i
+      setlocal3
+
+      debugline           826
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2WU"), "_-3il")
+      iffalse             L44
+
+      debugline           827
+      returnvoid
+
+      ; 0xF0
+      ; 0xBE
+      ; 0x06
+L44:
+      getlocal0
+      pushtrue
+      initproperty        QName(PrivateNamespace("_-2WU"), "_-3il")
+
+      debugline           832
+      getlex              QName(PackageNamespace(""), "autoArrangeItems")
+      convert_b
+      setlocal            6
+
+      debugline           833
+      getlocal0
+      pushfalse
+      initproperty        QName(PackageNamespace(""), "autoArrangeItems")
+
+      jump                L99
+
+L56:
+      label
+      debug               1, "k", 6, 836
+      debugline           836
+      pushbyte            0
+      setlocal            7
+
+      jump                L95
+
+L62:
+      label
+      debugline           837
+      findpropstrict      QName(PackageNamespace(""), "getListItemAt")
+      getlocal            7
+      callproperty        QName(PackageNamespace(""), "getListItemAt"), 1
+      getlex              QName(PackageNamespace("_-2tk"), "IItemListWindow")
+      astypelate
+      coerce              QName(PackageNamespace("_-2tk"), "IItemListWindow")
+      setlocal            4
+
+      debugline           838
+      getlocal            4
+      pushbyte            0
+      callproperty        QName(Namespace("_-00u"), "_-5mB"), 1
+      coerce              QName(PackageNamespace("_-2z-"), "IWindow")
+      setlocal            5
+
+      debugline           839
+      getlocal2
+      getlocal            5
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      debugline           840
+      getlocal1
+      decrement_i
+      dup
+      convert_i
+      setlocal1
+
+      pushbyte            1
+      ifnlt               L94
+
+      debugline           841
+      jump                L99
+
+      ; 0xF0
+      ; 0xC4
+      ; 0x06
+L94:
+      inclocal_i          7
+L95:
+      getlocal            7
+      getlocal3
+      iflt                L62
+
+      debugline           835
+L99:
+      getlocal1
+      pushbyte            0
+      ifgt                L56
+
+      debugline           848
+      findpropstrict      QName(PackageNamespace(""), "_-wA")
+      callpropvoid        QName(PackageNamespace(""), "_-wA"), 0
+
+      debugline           850
+      getlocal0
+      getlocal            6
+      initproperty        QName(PackageNamespace(""), "autoArrangeItems")
+
+      debugline           854
+      pushbyte            0
+      setlocal            9
+
+      getlocal2
+      coerce_a
+      setlocal            10
+
+      jump                L127
+
+L116:
+      label
+      getlocal            10
+      getlocal            9
+      nextvalue
+      coerce              QName(PackageNamespace("_-2z-"), "IWindow")
+      setlocal            5
+
+      debugline           855
+      getlocal0
+      getlocal            5
+      callpropvoid        QName(PackageNamespace(""), "_-3xi"), 1
+
+      debugline           854
+L127:
+      hasnext2            10, 9
+      iftrue              L116
+
+      kill                10
+      kill                9
+      debugline           860
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2WU"), "_-57B")
+      iffalse             L182
+
+      debug               1, "k", 7, 861
+      debugline           861
+      pushbyte            0
+      convert_u
+      setlocal            8
+
+      debugline           862
+      pushbyte            0
+      setlocal            7
+
+      jump                L173
+
+L144:
+      label
+      debugline           863
+      findpropstrict      QName(PackageNamespace("_-2tk"), "IItemListWindow")
+      findpropstrict      QName(PackageNamespace(""), "getListItemAt")
+      getlocal            7
+      callproperty        QName(PackageNamespace(""), "getListItemAt"), 1
+      callproperty        QName(PackageNamespace("_-2tk"), "IItemListWindow"), 1
+      coerce              QName(PackageNamespace("_-2tk"), "IItemListWindow")
+      setlocal            4
+
+      debugline           864
+      getlocal            4
+      pushtrue
+      setproperty         QName(Namespace("_-00u"), "autoArrangeItems")
+
+      debugline           865
+      getlocal            4
+      getlocal            4
+      getproperty         QName(Namespace("_-63l"), "_-1Yw")
+      getproperty         QName(PackageNamespace(""), "height")
+      setproperty         QName(Namespace("_-0jq"), "height")
+
+      debugline           866
+      getlex              QName(PackageNamespace(""), "Math")
+      getlocal            8
+      getlocal            4
+      getproperty         QName(Namespace("_-0jq"), "height")
+      callproperty        QName(PackageNamespace(""), "max"), 2
+      convert_u
+      setlocal            8
+
+      debugline           862
+      inclocal_i          7
+L173:
+      getlocal            7
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "_-0TM")
+      iflt                L144
+
+      debugline           868
+      getlex              QName(ProtectedNamespace("_-4sT"), "_container")
+      getlocal            8
+      setproperty         QName(Namespace("_-0jq"), "height")
+
+      debugline           870
+L182:
+      getlocal0
+      pushfalse
+      initproperty        QName(PrivateNamespace("_-2WU"), "_-3il")
+
+      debugline           871
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait setter QName(PackageNamespace(""), "_-27q")
+   method
+    refid "_-2tk:_-4OM/instance/_-27q/setter"
+    param QName(PackageNamespace(""), "Boolean")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 7
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           873
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 873
+      debugline           874
+      getlocal0
+      getlocal1
+      initproperty        QName(PrivateNamespace("_-2WU"), "_-57B")
+
+      debugline           875
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "_-27q")
+   method
+    refid "_-2tk:_-4OM/instance/_-27q/getter"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 7
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           877
+      getlocal0
+      pushscope
+
+      debugline           878
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2WU"), "_-57B")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "properties") flag OVERRIDE
+   method
+    refid "_-2tk:_-4OM/instance/properties/getter"
+    returns QName(PackageNamespace(""), "Array")
+    body
+     maxstack 4
+     localcount 2
+     initscopedepth 7
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           881
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 882
+      debugline           882
+      getlocal0
+      getsuper            QName(PackageNamespace(""), "properties")
+      coerce              QName(PackageNamespace(""), "Array")
+      setlocal1
+
+      debugline           883
+      getlocal1
+      findpropstrict      QName(PackageNamespace(""), "_-4nS")
+      getlex              QName(PackageNamespace("_-2RU"), "_-4pj")
+      getproperty         QName(PackageNamespace(""), "_-4HG")
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "_-27q")
+      callproperty        QName(PackageNamespace(""), "_-4nS"), 2
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      debugline           884
+      getlocal1
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait setter QName(PackageNamespace(""), "properties") flag OVERRIDE
+   method
+    refid "_-2tk:_-4OM/instance/properties/setter"
+    param QName(PackageNamespace(""), "Array")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 6
+     initscopedepth 7
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           887
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-0S7"), "PropertyStruct")
+      setlocal2
+
+      debug               1, "k", 0, 887
+      debug               1, "k", 1, 888
+      debugline           888
+      pushbyte            0
+      setlocal3
+
+      getlocal1
+      coerce_a
+      setlocal            4
+
+      jump                L61
+
+L16:
+      label
+      getlocal            4
+      getlocal3
+      nextvalue
+      coerce              QName(PackageNamespace("_-0S7"), "PropertyStruct")
+      setlocal2
+
+      jump                L38
+
+L23:
+      label
+      debugline           891
+      getlocal0
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "value")
+      getlex              QName(PackageNamespace(""), "Boolean")
+      astypelate
+      initproperty        QName(PackageNamespace(""), "_-27q")
+
+      debugline           892
+      jump                L61
+
+L33:
+      label
+      jump                L61
+
+      ; 0xF0
+      ; 0xF9
+      ; 0x06
+L38:
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "key")
+      setlocal            5
+
+      debugline           890
+      getlex              QName(PackageNamespace("_-2RU"), "_-4pj")
+      getproperty         QName(PackageNamespace(""), "_-4HG")
+      getlocal            5
+      ifstrictne          L48
+
+      pushbyte            0
+      jump                L56
+
+L48:
+      jump                L55
+
+      ; 0x24
+      ; 0x01
+      ; 0x10
+      ; 0x02
+      ; 0x00
+      ; 0x00
+L55:
+      pushbyte            1
+L56:
+      kill                5
+      lookupswitch        L33, [L23, L33]
+
+      ; 0xF0
+      ; 0xF8
+      ; 0x06
+L61:
+      hasnext2            4, 3
+      iftrue              L16
+
+      kill                4
+      kill                3
+      debugline           895
+      getlocal0
+      getlocal1
+      setsuper            QName(PackageNamespace(""), "properties")
+
+      debugline           896
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-2tk:_-4OM/class/init"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 6
+   maxscopedepth 7
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

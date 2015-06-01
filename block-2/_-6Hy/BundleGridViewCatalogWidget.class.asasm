@@ -1,0 +1,684 @@
+class
+ refid "_-6Hy:BundleGridViewCatalogWidget"
+ instance QName(PackageNamespace("_-6Hy"), "BundleGridViewCatalogWidget")
+  extends QName(PackageNamespace("_-6Hy"), "_-65W")
+  implements Multiname("_-wt", [PackageNamespace("_-6Hy")])
+  implements Multiname("_-24-", [PackageNamespace("_-3jE")])
+  implements Multiname("_-410", [PackageNamespace("_-3jE")])
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-2Cc")
+  iinit
+   refid "_-6Hy:BundleGridViewCatalogWidget/instance/init#0"
+   param QName(PackageNamespace("_-2z-"), "IWindowContainer")
+   body
+    maxstack 2
+    localcount 2
+    initscopedepth 5
+    maxscopedepth 6
+    code
+     debugfile           "k"
+     debugline           30
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 30
+     debugline           31
+     getlocal0
+     getlocal1
+     constructsuper      1
+
+     debugline           32
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-2Cc"), "_-6U-") type QName(PackageNamespace("_-0ce"), "_-0OB") end
+  trait slot QName(PrivateNamespace("_-2Cc"), "_-2LE") type QName(PackageNamespace(""), "XML") end
+  trait slot QName(PrivateNamespace("_-2Cc"), "_-4BT") type QName(PackageNamespace("_-2tk"), "IItemGridWindow") end
+  trait method QName(PackageNamespace(""), "init") flag OVERRIDE
+   method
+    refid "_-6Hy:BundleGridViewCatalogWidget/instance/init#1"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 4
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           34
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 41
+      debugline           35
+      getlocal0
+      callsuper           QName(PackageNamespace(""), "init"), 0
+      iftrue              L14
+
+      debugline           36
+      pushfalse
+      returnvalue
+
+      ; 0xF0
+      ; 0x26
+L14:
+      getlex              QName(PackageNamespace(""), "events")
+      getlex              QName(PackageNamespace("_-1SS"), "_-4Jg")
+      getproperty         QName(PackageNamespace(""), "SELECT_PRODUCT")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2Cc"), "_-1Hp")
+      callpropvoid        QName(Namespace("flash.events:IEventDispatcher"), "addEventListener"), 2
+
+      debugline           39
+      getlex              QName(PackageNamespace(""), "events")
+      getlex              QName(PackageNamespace("_-1SS"), "_-4Jg")
+      getproperty         QName(PackageNamespace(""), "WIDGETS_INITIALIZED")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2Cc"), "_-3fe")
+      callpropvoid        QName(Namespace("flash.events:IEventDispatcher"), "addEventListener"), 2
+
+      debugline           41
+      getlex              QName(PackageNamespace(""), "page")
+      getproperty         QName(Namespace("_-35M"), "viewer")
+      getproperty         QName(Namespace("_-3cL"), "catalog")
+      getproperty         QName(Namespace("_-621"), "assets")
+      pushstring          "gridItem"
+      callproperty        QName(Namespace("_-14k"), "getAssetByName"), 1
+      getlex              QName(PackageNamespace("_-475"), "XmlAsset")
+      astypelate
+      coerce              QName(PackageNamespace("_-475"), "XmlAsset")
+      setlocal1
+
+      debugline           42
+      getlocal0
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "content")
+      getlex              QName(PackageNamespace(""), "XML")
+      astypelate
+      initproperty        QName(PrivateNamespace("_-2Cc"), "_-2LE")
+
+      debugline           44
+      getlocal0
+      findpropstrict      QName(PackageNamespace("_-2tk"), "IItemGridWindow")
+      getlex              QName(ProtectedNamespace("_-18j"), "_-36K")
+      pushstring          "bundleGrid"
+      callproperty        QName(Namespace("_-7H"), "findChildByName"), 1
+      callproperty        QName(PackageNamespace("_-2tk"), "IItemGridWindow"), 1
+      initproperty        QName(PrivateNamespace("_-2Cc"), "_-4BT")
+
+      debugline           45
+      pushtrue
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "dispose") flag OVERRIDE
+   method
+    refid "_-6Hy:BundleGridViewCatalogWidget/instance/dispose"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           49
+      getlocal0
+      pushscope
+
+      debugline           50
+      getlex              QName(PackageNamespace(""), "disposed")
+      iftrue              L25
+
+      debugline           51
+      getlex              QName(PackageNamespace(""), "events")
+      getlex              QName(PackageNamespace("_-1SS"), "_-4Jg")
+      getproperty         QName(PackageNamespace(""), "SELECT_PRODUCT")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2Cc"), "_-1Hp")
+      callpropvoid        QName(Namespace("flash.events:IEventDispatcher"), "removeEventListener"), 2
+
+      debugline           52
+      getlex              QName(PackageNamespace(""), "events")
+      getlex              QName(PackageNamespace("_-1SS"), "_-4Jg")
+      getproperty         QName(PackageNamespace(""), "WIDGETS_INITIALIZED")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2Cc"), "_-3fe")
+      callpropvoid        QName(Namespace("flash.events:IEventDispatcher"), "removeEventListener"), 2
+
+      debugline           53
+      getlocal0
+      callsupervoid       QName(PackageNamespace(""), "dispose"), 0
+      debugline           55
+L25:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-2Cc"), "_-3fe")
+   method
+    refid "_-6Hy:BundleGridViewCatalogWidget/instance/_-6Hy:BundleGridViewCatalogWidget/instance/_-3fe"
+    param QName(PackageNamespace("_-1SS"), "_-5hl")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           57
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-0ce"), "_-0OB")
+      setlocal2
+
+      debug               1, "k", 0, 57
+      debugline           59
+      getlex              QName(PackageNamespace(""), "page")
+      getproperty         QName(Namespace("_-35M"), "offers")
+      getproperty         QName(PackageNamespace(""), "length")
+      pushbyte            1
+      ifne                L33
+
+      debug               1, "k", 1, 60
+      debugline           60
+      getlex              QName(PackageNamespace(""), "page")
+      getproperty         QName(Namespace("_-35M"), "offers")
+      pushbyte            0
+      getproperty         MultinameL([PrivateNamespace("_-2Cc"), PackageNamespace(""), PrivateNamespace("BundleGridViewCatalogWidget.as$3698"), PackageNamespace("_-6Hy"), PackageInternalNs("_-6Hy"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-2Cc"), StaticProtectedNs("_-2Cc"), StaticProtectedNs("_-18j")])
+      coerce              QName(PackageNamespace("_-0ce"), "_-0OB")
+      setlocal2
+
+      debugline           61
+      getlocal2
+      pushnull
+      ifeq                L33
+
+      debugline           62
+      getlex              QName(PackageNamespace(""), "events")
+      findpropstrict      QName(PackageNamespace("_-1SS"), "_-Sw")
+      getlocal2
+      constructprop       QName(PackageNamespace("_-1SS"), "_-Sw"), 1
+      callpropvoid        QName(Namespace("flash.events:IEventDispatcher"), "dispatchEvent"), 1
+
+      debugline           65
+L33:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-2Cc"), "_-1Hp")
+   method
+    refid "_-6Hy:BundleGridViewCatalogWidget/instance/_-6Hy:BundleGridViewCatalogWidget/instance/_-1Hp"
+    param QName(PackageNamespace("_-1SS"), "_-Sw")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           67
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 67
+      debugline           68
+      getlocal0
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "offer")
+      initproperty        QName(PrivateNamespace("_-2Cc"), "_-6U-")
+
+      debugline           69
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2Cc"), "_-4BT")
+      callpropvoid        QName(Namespace("_-59S"), "destroyGridItems"), 0
+
+      debugline           70
+      getlocal0
+      callpropvoid        QName(ProtectedNamespace("_-2Cc"), "_-5Q8"), 0
+
+      debugline           71
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-2Cc"), "_-5Q8")
+   method
+    refid "_-6Hy:BundleGridViewCatalogWidget/instance/_-2Cc:_-5Q8"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 8
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           73
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-3jE"), "_-2Lm")
+      setlocal2
+
+      pushnull
+      coerce              QName(PackageNamespace("_-2z-"), "IWindowContainer")
+      setlocal3
+
+      pushnull
+      coerce              QName(PackageNamespace("_-2z-"), "IWindow")
+      setlocal            4
+
+      pushnull
+      coerce              QName(PackageNamespace("flash.display"), "BitmapData")
+      setlocal            5
+
+      debug               1, "k", 0, 74
+      debug               1, "k", 1, 75
+      debugline           74
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2Cc"), "_-6U-")
+      getproperty         QName(Namespace("_-4tr"), "page")
+      getproperty         QName(Namespace("_-35M"), "viewer")
+      getproperty         QName(Namespace("_-3cL"), "catalog")
+      getproperty         QName(Namespace("_-621"), "windowManager")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2Cc"), "_-2LE")
+      callproperty        QName(Namespace("_-40D"), "buildFromXML"), 1
+      getlex              QName(PackageNamespace("_-2z-"), "IWindowContainer")
+      astypelate
+      coerce              QName(PackageNamespace("_-2z-"), "IWindowContainer")
+      setlocal1
+
+      debugline           75
+      pushbyte            0
+      setlocal            6
+
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2Cc"), "_-6U-")
+      getproperty         QName(Namespace("_-4tr"), "productContainer")
+      getproperty         QName(Namespace("_-5pS"), "products")
+      coerce_a
+      setlocal            7
+
+      jump                L108
+
+L42:
+      label
+      getlocal            7
+      getlocal            6
+      nextvalue
+      coerce              QName(PackageNamespace("_-3jE"), "_-2Lm")
+      setlocal2
+
+      debug               1, "k", 2, 82
+      debug               1, "k", 3, 83
+      debug               1, "k", 4, 91
+      debugline           77
+      getlocal2
+      getproperty         QName(Namespace("_-3Ee"), "_-2Vm")
+      getlex              QName(PackageNamespace("_-5ud"), "_-d8")
+      getproperty         QName(PackageNamespace(""), "_-4nv")
+      ifne                L61
+
+      debugline           78
+      jump                L108
+
+      ; 0xF0
+      ; 0x52
+L61:
+      getlocal1
+      callproperty        QName(Namespace("_-0jq"), "clone"), 0
+      getlex              QName(PackageNamespace("_-2z-"), "IWindowContainer")
+      astypelate
+      coerce              QName(PackageNamespace("_-2z-"), "IWindowContainer")
+      setlocal3
+
+      debugline           83
+      getlocal3
+      pushstring          "clubLevelIcon"
+      callproperty        QName(Namespace("_-7H"), "findChildByName"), 1
+      coerce              QName(PackageNamespace("_-2z-"), "IWindow")
+      setlocal            4
+
+      debugline           84
+      getlocal            4
+      pushnull
+      ifeq                L82
+
+      debugline           85
+      getlocal            4
+      pushfalse
+      setproperty         QName(Namespace("_-0jq"), "visible")
+
+      debugline           89
+L82:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2Cc"), "_-4BT")
+      getlocal3
+      callpropvoid        QName(Namespace("_-59S"), "_-3xi"), 1
+
+      debugline           90
+      getlocal2
+      getlocal3
+      setproperty         QName(Namespace("_-3Ee"), "view")
+
+      debugline           91
+      getlocal2
+      getlocal0
+      callproperty        QName(Namespace("_-3Ee"), "_-0TS"), 1
+      coerce              QName(PackageNamespace("flash.display"), "BitmapData")
+      setlocal            5
+
+      debugline           92
+      getlocal            5
+      pushnull
+      ifeq                L104
+
+      debugline           93
+      getlocal            5
+      callpropvoid        QName(PackageNamespace(""), "dispose"), 0
+
+      debugline           96
+L104:
+      getlocal2
+      getlocal0
+      setproperty         QName(Namespace("_-3Ee"), "grid")
+
+      debugline           75
+L108:
+      hasnext2            7, 6
+      iftrue              L42
+
+      kill                7
+      kill                6
+      debugline           98
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "offer")
+   method
+    refid "_-6Hy:BundleGridViewCatalogWidget/instance/offer/getter"
+    returns QName(PackageNamespace("_-0ce"), "_-0OB")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           101
+      getlocal0
+      pushscope
+
+      debugline           102
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2Cc"), "_-6U-")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "select")
+   method
+    refid "_-6Hy:BundleGridViewCatalogWidget/instance/select"
+    param QName(PackageNamespace("_-3jE"), "_-53q")
+    param QName(PackageNamespace(""), "Boolean")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 1
+     localcount 3
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           105
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 105
+      debug               1, "k", 1, 105
+      debugline           107
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-4SX")
+   method
+    refid "_-6Hy:BundleGridViewCatalogWidget/instance/_-4SX"
+    param QName(PackageNamespace("_-3jE"), "_-53q")
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 1
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           109
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 109
+      debugline           110
+      pushfalse
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "initProductIcon")
+   method
+    refid "_-6Hy:BundleGridViewCatalogWidget/instance/initProductIcon"
+    param QName(PackageNamespace("_-5VW"), "_-1G0")
+    param QName(PackageNamespace("_-5VW"), "_-5bh")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_OPTIONAL
+    optional Null()
+    body
+     maxstack 1
+     localcount 3
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           113
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 113
+      debug               1, "k", 1, 113
+      debugline           114
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "activate")
+   method
+    refid "_-6Hy:BundleGridViewCatalogWidget/instance/activate"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           116
+      getlocal0
+      pushscope
+
+      debugline           117
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "products")
+   method
+    refid "_-6Hy:BundleGridViewCatalogWidget/instance/products/getter"
+    returns TypeName(QName(PackageNamespace("__AS3__.vec"), "Vector")<QName(PackageNamespace("_-3jE"), "_-2Lm")>)
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           119
+      getlocal0
+      pushscope
+
+      debugline           120
+      pushnull
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "_-Sg")
+   method
+    refid "_-6Hy:BundleGridViewCatalogWidget/instance/_-Sg/getter"
+    returns QName(PackageNamespace("_-3jE"), "_-2Lm")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           123
+      getlocal0
+      pushscope
+
+      debugline           124
+      pushnull
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait setter QName(PackageNamespace(""), "view")
+   method
+    refid "_-6Hy:BundleGridViewCatalogWidget/instance/view/setter"
+    param QName(PackageNamespace("_-2z-"), "IWindowContainer")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 1
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           127
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 127
+      debugline           128
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "view")
+   method
+    refid "_-6Hy:BundleGridViewCatalogWidget/instance/view/getter"
+    returns QName(PackageNamespace("_-2z-"), "IWindowContainer")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           130
+      getlocal0
+      pushscope
+
+      debugline           131
+      pushnull
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait setter QName(PackageNamespace(""), "grid")
+   method
+    refid "_-6Hy:BundleGridViewCatalogWidget/instance/grid/setter"
+    param QName(PackageNamespace("_-3jE"), "_-24-")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 1
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           134
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 134
+      debugline           135
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-5t")
+   method
+    refid "_-6Hy:BundleGridViewCatalogWidget/instance/_-5t"
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 1
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           137
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 137
+      debugline           138
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-6Hy:BundleGridViewCatalogWidget/class/init"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 4
+   maxscopedepth 5
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

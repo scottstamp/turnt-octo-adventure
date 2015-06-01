@@ -1,0 +1,351 @@
+class
+ refid "_-36:CameraFxPreloader"
+ instance QName(PackageNamespace("_-36"), "CameraFxPreloader")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-0KJ")
+  iinit
+   refid "_-36:CameraFxPreloader/instance/init"
+   body
+    maxstack 3
+    localcount 1
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     debugfile           "k"
+     debugline           21
+     getlocal0
+     pushscope
+
+     debugline           21
+     getlocal0
+     constructsuper      0
+
+     debugline           22
+     getlocal0
+     findpropstrict      QName(PackageNamespace("flash.display"), "Loader")
+     constructprop       QName(PackageNamespace("flash.display"), "Loader"), 0
+     initproperty        QName(PrivateNamespace("_-0KJ"), "_-zC")
+
+     debugline           23
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-0KJ"), "_-zC")
+     getproperty         QName(PackageNamespace(""), "contentLoaderInfo")
+     getlex              QName(PackageNamespace("flash.events"), "Event")
+     getproperty         QName(PackageNamespace(""), "COMPLETE")
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-0KJ"), "_-2M")
+     callpropvoid        QName(PackageNamespace(""), "addEventListener"), 2
+
+     debugline           24
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-0KJ"), "_-zC")
+     getproperty         QName(PackageNamespace(""), "contentLoaderInfo")
+     getlex              QName(PackageNamespace("flash.events"), "IOErrorEvent")
+     getproperty         QName(PackageNamespace(""), "IO_ERROR")
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-0KJ"), "_-3sB")
+     callpropvoid        QName(PackageNamespace(""), "addEventListener"), 2
+
+     debugline           25
+     getlocal0
+     callpropvoid        QName(PrivateNamespace("_-0KJ"), "_-2hl"), 0
+
+     debugline           26
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-0KJ"), "_-zC") type QName(PackageNamespace("flash.display"), "Loader") end
+  trait slot QName(PrivateNamespace("_-0KJ"), "_-6QA") type QName(PackageNamespace(""), "Boolean") value False() end
+  trait method QName(PrivateNamespace("_-0KJ"), "_-2hl")
+   method
+    refid "_-36:CameraFxPreloader/instance/_-36:CameraFxPreloader/_-2hl"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           42
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce_s
+      setlocal1
+
+      debugline           43
+      getlex              QName(PrivateNamespace("_-0KJ"), "_-0YL")
+      getproperty         QName(PackageNamespace(""), "length")
+      pushbyte            0
+      ifngt               L34
+
+      debug               1, "k", 0, 44
+      debugline           44
+      getlex              QName(PrivateNamespace("_-0KJ"), "_-t2")
+      pushstring          "Habbo-Stories/"
+      add
+      getlex              QName(PrivateNamespace("_-0KJ"), "_-0YL")
+      pushbyte            0
+      getproperty         MultinameL([PrivateNamespace("_-0KJ"), PackageNamespace(""), PrivateNamespace("CameraFxPreloader.as$4973"), PackageNamespace("_-36"), PackageInternalNs("_-36"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-0KJ"), StaticProtectedNs("_-0KJ")])
+      add
+      pushstring          ".png"
+      add
+      setlocal1
+
+      debugline           45
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0KJ"), "_-zC")
+      findpropstrict      QName(PackageNamespace("flash.net"), "URLRequest")
+      getlocal1
+      constructprop       QName(PackageNamespace("flash.net"), "URLRequest"), 1
+      callpropvoid        QName(PackageNamespace(""), "load"), 1
+
+      jump                L38
+
+      ; 0xF0
+      ; 0x2F
+L34:
+      getlocal0
+      pushtrue
+      initproperty        QName(PrivateNamespace("_-0KJ"), "_-6QA")
+
+      debugline           49
+L38:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-0KJ"), "_-2M")
+   method
+    refid "_-36:CameraFxPreloader/instance/_-36:CameraFxPreloader/_-2M"
+    param QName(PackageNamespace("flash.events"), "Event")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           51
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 51
+      debugline           52
+      getlex              QName(PrivateNamespace("_-0KJ"), "_-Iy")
+      getlex              QName(PrivateNamespace("_-0KJ"), "_-0YL")
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "shift"), 0
+      findpropstrict      QName(PackageNamespace("flash.display"), "Bitmap")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0KJ"), "_-zC")
+      getproperty         QName(PackageNamespace(""), "content")
+      callproperty        QName(PackageNamespace("flash.display"), "Bitmap"), 1
+      getproperty         QName(PackageNamespace(""), "bitmapData")
+      callproperty        QName(PackageNamespace(""), "clone"), 0
+      setproperty         MultinameL([PrivateNamespace("_-0KJ"), PackageNamespace(""), PrivateNamespace("CameraFxPreloader.as$4973"), PackageNamespace("_-36"), PackageInternalNs("_-36"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-0KJ"), StaticProtectedNs("_-0KJ")])
+
+      debugline           53
+      getlocal0
+      callpropvoid        QName(PrivateNamespace("_-0KJ"), "_-2hl"), 0
+
+      debugline           54
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-0KJ"), "_-3sB")
+   method
+    refid "_-36:CameraFxPreloader/instance/_-36:CameraFxPreloader/_-3sB"
+    param QName(PackageNamespace("flash.events"), "Event")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           56
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 56
+      debugline           57
+      getlex              QName(PackageNamespace(""), "_-Vz")
+      pushstring          "Camera Fx preloading failed for "
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0KJ"), "_-zC")
+      getproperty         QName(PackageNamespace(""), "contentLoaderInfo")
+      getproperty         QName(PackageNamespace(""), "loaderURL")
+      add
+      callpropvoid        QName(PackageNamespace(""), "log"), 1
+
+      debugline           58
+      getlex              QName(PrivateNamespace("_-0KJ"), "_-0YL")
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "shift"), 0
+
+      debugline           59
+      getlocal0
+      callpropvoid        QName(PrivateNamespace("_-0KJ"), "_-2hl"), 0
+
+      debugline           60
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-36:CameraFxPreloader/class/init#0"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    debug               1, "k", 0, 14
+    debug               1, "k", 1, 15
+    debug               1, "k", 2, 16
+    debug               1, "k", 3, 17
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait slot QName(PrivateNamespace("_-0KJ"), "_-Iy") slotid 1 type QName(PackageNamespace("flash.utils"), "Dictionary") end
+ trait slot QName(PrivateNamespace("_-0KJ"), "_-AS") slotid 2 type QName(PackageNamespace("_-36"), "CameraFxPreloader") end
+ trait slot QName(PrivateNamespace("_-0KJ"), "_-0YL") slotid 3 type QName(PackageNamespace(""), "Array") end
+ trait slot QName(PrivateNamespace("_-0KJ"), "_-t2") slotid 4 type QName(PackageNamespace(""), "String") end
+ trait method QName(PackageNamespace(""), "init") flag FINAL dispid 3
+  method
+   refid "_-36:CameraFxPreloader/class/init#1"
+   param QName(PackageNamespace(""), "String")
+   param QName(PackageNamespace(""), "Array")
+   returns QName(PackageNamespace(""), "void")
+   body
+    maxstack 2
+    localcount 3
+    initscopedepth 3
+    maxscopedepth 4
+    code
+     debugfile           "k"
+     debugline           28
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 28
+     debug               1, "k", 1, 28
+     debugline           30
+     getlex              QName(PrivateNamespace("_-0KJ"), "_-AS")
+     iftrue              L28
+
+     debugline           31
+     findproperty        QName(PrivateNamespace("_-0KJ"), "_-Iy")
+     findpropstrict      QName(PackageNamespace("flash.utils"), "Dictionary")
+     constructprop       QName(PackageNamespace("flash.utils"), "Dictionary"), 0
+     setproperty         QName(PrivateNamespace("_-0KJ"), "_-Iy")
+
+     debugline           32
+     findproperty        QName(PrivateNamespace("_-0KJ"), "_-t2")
+     getlocal1
+     setproperty         QName(PrivateNamespace("_-0KJ"), "_-t2")
+
+     debugline           33
+     findproperty        QName(PrivateNamespace("_-0KJ"), "_-0YL")
+     getlocal2
+     setproperty         QName(PrivateNamespace("_-0KJ"), "_-0YL")
+
+     debugline           34
+     findproperty        QName(PrivateNamespace("_-0KJ"), "_-AS")
+     getlocal0
+     construct           0
+     setproperty         QName(PrivateNamespace("_-0KJ"), "_-AS")
+
+     debugline           36
+L28:
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PackageNamespace(""), "_-5CP") flag FINAL dispid 4
+  method
+   refid "_-36:CameraFxPreloader/class/_-5CP"
+   returns QName(PackageNamespace(""), "Boolean")
+   body
+    maxstack 2
+    localcount 1
+    initscopedepth 3
+    maxscopedepth 4
+    code
+     debugfile           "k"
+     debugline           38
+     getlocal0
+     pushscope
+
+     debugline           39
+     getlex              QName(PrivateNamespace("_-0KJ"), "_-AS")
+     pushnull
+     ifeq                L12
+
+     getlex              QName(PrivateNamespace("_-0KJ"), "_-AS")
+     getproperty         QName(PrivateNamespace("_-0KJ"), "_-6QA")
+     convert_b
+     jump                L13
+
+L12:
+     pushfalse
+L13:
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PackageNamespace(""), "getImage") flag FINAL dispid 5
+  method
+   refid "_-36:CameraFxPreloader/class/getImage"
+   param QName(PackageNamespace(""), "String")
+   returns QName(PackageNamespace("flash.display"), "BitmapData")
+   body
+    maxstack 2
+    localcount 2
+    initscopedepth 3
+    maxscopedepth 4
+    code
+     debugfile           "k"
+     debugline           62
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 62
+     debugline           64
+     getlex              QName(PrivateNamespace("_-0KJ"), "_-Iy")
+     pushnull
+     ifeq                L14
+
+     getlex              QName(PrivateNamespace("_-0KJ"), "_-Iy")
+     getlocal1
+     getproperty         MultinameL([PrivateNamespace("_-0KJ"), PackageNamespace(""), PrivateNamespace("CameraFxPreloader.as$4973"), PackageNamespace("_-36"), PackageInternalNs("_-36"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-0KJ"), StaticProtectedNs("_-0KJ")])
+     coerce              QName(PackageNamespace("flash.display"), "BitmapData")
+     jump                L16
+
+L14:
+     pushnull
+     coerce              QName(PackageNamespace("flash.display"), "BitmapData")
+L16:
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+end ; class

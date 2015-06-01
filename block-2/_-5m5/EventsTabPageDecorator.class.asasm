@@ -1,0 +1,664 @@
+class
+ refid "_-5m5:EventsTabPageDecorator"
+ instance QName(PackageNamespace("_-5m5"), "EventsTabPageDecorator")
+  extends QName(PackageNamespace(""), "Object")
+  implements Multiname("_-2qd", [PackageNamespace("_-5m5")])
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-4VX")
+  iinit
+   refid "_-5m5:EventsTabPageDecorator/instance/init"
+   param QName(PackageNamespace("_-5bO"), "HabboNavigator")
+   body
+    maxstack 2
+    localcount 2
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     debugfile           "k"
+     debugline           19
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 19
+     debugline           19
+     getlocal0
+     constructsuper      0
+
+     debugline           20
+     getlocal0
+     getlocal1
+     initproperty        QName(PrivateNamespace("_-4VX"), "_-2ld")
+
+     debugline           21
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-4VX"), "_-2ld") type QName(PackageNamespace("_-5bO"), "HabboNavigator") end
+  trait slot QName(PrivateNamespace("_-4VX"), "_-0Lb") type QName(PackageNamespace("_-2tk"), "IDropMenuWindow") end
+  trait method QName(PackageNamespace(""), "_-3S-")
+   method
+    refid "_-5m5:EventsTabPageDecorator/instance/_-3S-"
+    param QName(PackageNamespace("_-2z-"), "IWindowContainer")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           26
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 26
+      debug               1, "k", 1, 27
+      debugline           27
+      getlocal1
+      pushstring          "room_ad_header"
+      callproperty        QName(Namespace("_-7H"), "getChildByName"), 1
+      getlex              QName(PackageNamespace("_-2z-"), "IWindowContainer")
+      astypelate
+      coerce              QName(PackageNamespace("_-2z-"), "IWindowContainer")
+      setlocal2
+
+      debugline           28
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4VX"), "_-0Lb")
+      pushnull
+      equals
+      dup
+      iftrue              L26
+
+      pop
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4VX"), "_-0Lb")
+      getproperty         QName(Namespace("_-0mn"), "disposed")
+      convert_b
+L26:
+      iffalse             L47
+
+      debugline           29
+      getlocal0
+      getlocal2
+      pushstring          "roomAdFilter"
+      callproperty        QName(Namespace("_-7H"), "getChildByName"), 1
+      getlex              QName(PackageNamespace("_-2tk"), "IDropMenuWindow")
+      astypelate
+      initproperty        QName(PrivateNamespace("_-4VX"), "_-0Lb")
+
+      debugline           31
+      getlocal0
+      callpropvoid        QName(PrivateNamespace("_-4VX"), "_-22v"), 0
+
+      debugline           32
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4VX"), "_-0Lb")
+      getlex              QName(PackageNamespace("_-0eT"), "WindowEvent")
+      getproperty         QName(PackageNamespace(""), "_-5N7")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4VX"), "_-0oV")
+      callpropvoid        QName(Namespace("_-0jq"), "addEventListener"), 2
+
+      debugline           35
+L47:
+      getlocal2
+      pushtrue
+      setproperty         QName(Namespace("_-0jq"), "visible")
+
+      debugline           36
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-6GW")
+   method
+    refid "_-5m5:EventsTabPageDecorator/instance/_-6GW"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           41
+      getlocal0
+      pushscope
+
+      debugline           42
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4VX"), "_-0Lb")
+      pushnull
+      equals
+      not
+      dup
+      iffalse             L17
+
+      pop
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4VX"), "_-0Lb")
+      getproperty         QName(Namespace("_-0mn"), "disposed")
+      not
+L17:
+      iffalse             L40
+
+      debugline           43
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4VX"), "_-0Lb")
+      getlex              QName(PackageNamespace("_-0eT"), "WindowEvent")
+      getproperty         QName(PackageNamespace(""), "_-5N7")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4VX"), "_-0oV")
+      callpropvoid        QName(Namespace("_-0jq"), "removeEventListener"), 2
+
+      debugline           44
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4VX"), "_-0Lb")
+      pushbyte            0
+      setproperty         QName(Namespace("_-d6"), "selection")
+
+      debugline           45
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4VX"), "_-0Lb")
+      getlex              QName(PackageNamespace("_-0eT"), "WindowEvent")
+      getproperty         QName(PackageNamespace(""), "_-5N7")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4VX"), "_-0oV")
+      callpropvoid        QName(Namespace("_-0jq"), "addEventListener"), 2
+
+      debugline           47
+L40:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-20F")
+   method
+    refid "_-5m5:EventsTabPageDecorator/instance/_-20F"
+    param QName(PackageNamespace("_-2z-"), "IWindowContainer")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 4
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           52
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 52
+      debug               1, "k", 1, 53
+      debug               1, "k", 2, 54
+      debugline           53
+      getlocal1
+      pushstring          "room_ads_footer"
+      callproperty        QName(Namespace("_-7H"), "getChildByName"), 1
+      getlex              QName(PackageNamespace("_-2z-"), "IWindowContainer")
+      astypelate
+      coerce              QName(PackageNamespace("_-2z-"), "IWindowContainer")
+      setlocal2
+
+      debugline           54
+      getlocal2
+      pushstring          "get_event_but"
+      callproperty        QName(Namespace("_-7H"), "findChildByName"), 1
+      coerce              QName(PackageNamespace("_-2z-"), "IWindow")
+      setlocal3
+
+      debugline           55
+      getlocal3
+      pushnull
+      ifeq                L33
+
+      debugline           56
+      getlocal3
+      getlex              QName(PackageNamespace("_-0eT"), "WindowMouseEvent")
+      getproperty         QName(PackageNamespace(""), "CLICK")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4VX"), "_-1Aj")
+      callpropvoid        QName(Namespace("_-0jq"), "addEventListener"), 2
+
+      debugline           58
+L33:
+      getlocal2
+      pushtrue
+      setproperty         QName(Namespace("_-0jq"), "visible")
+
+      debugline           59
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-15E")
+   method
+    refid "_-5m5:EventsTabPageDecorator/instance/_-15E"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           64
+      getlocal0
+      pushscope
+
+      debugline           65
+      getlocal0
+      callpropvoid        QName(PrivateNamespace("_-4VX"), "_-4AZ"), 0
+
+      debugline           66
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-4VX"), "_-22v")
+   method
+    refid "_-5m5:EventsTabPageDecorator/instance/_-5m5:EventsTabPageDecorator/instance/_-22v"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           68
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 73
+      debugline           69
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4VX"), "_-0Lb")
+      pushnull
+      equals
+      dup
+      iftrue              L17
+
+      pop
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4VX"), "_-0Lb")
+      getproperty         QName(Namespace("_-0mn"), "disposed")
+      convert_b
+L17:
+      iffalse             L22
+
+      debugline           70
+      returnvoid
+
+      ; 0xF0
+      ; 0x49
+L22:
+      findpropstrict      QName(PackageNamespace(""), "Array")
+      constructprop       QName(PackageNamespace(""), "Array"), 0
+      coerce              QName(PackageNamespace(""), "Array")
+      setlocal1
+
+      debugline           74
+      getlocal1
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4VX"), "_-2ld")
+      pushstring          "navigator.roomad.topads"
+      callproperty        QName(PackageNamespace(""), "getText"), 1
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      debugline           75
+      getlocal1
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4VX"), "_-2ld")
+      pushstring          "navigator.roomad.newads"
+      callproperty        QName(PackageNamespace(""), "getText"), 1
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      debugline           77
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4VX"), "_-0Lb")
+      getlocal1
+      callpropvoid        QName(Namespace("_-d6"), "populate"), 1
+
+      debugline           78
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4VX"), "_-0Lb")
+      pushbyte            0
+      setproperty         QName(Namespace("_-d6"), "selection")
+
+      debugline           79
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-4VX"), "_-0oV")
+   method
+    refid "_-5m5:EventsTabPageDecorator/instance/_-5m5:EventsTabPageDecorator/instance/_-0oV"
+    param QName(PackageNamespace("_-0eT"), "WindowEvent")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 1
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           81
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 81
+      debugline           82
+      getlocal0
+      callpropvoid        QName(PrivateNamespace("_-4VX"), "_-4AZ"), 0
+
+      debugline           83
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-4VX"), "_-1Aj")
+   method
+    refid "_-5m5:EventsTabPageDecorator/instance/_-5m5:EventsTabPageDecorator/instance/_-1Aj"
+    param QName(PackageNamespace("_-0eT"), "WindowEvent")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 1
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           85
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 85
+      debugline           86
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4VX"), "_-2ld")
+      callpropvoid        QName(PackageNamespace(""), "_-1D2"), 0
+
+      debugline           87
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-4VX"), "_-4AZ")
+   method
+    refid "_-5m5:EventsTabPageDecorator/instance/_-5m5:EventsTabPageDecorator/instance/_-4AZ"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           89
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 90
+      debugline           90
+      getlex              QName(PackageNamespace("_-4z4"), "Tabs")
+      getproperty         QName(PackageNamespace(""), "_-5DD")
+      convert_i
+      setlocal1
+
+      debugline           91
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4VX"), "_-0Lb")
+      pushnull
+      equals
+      not
+      dup
+      iffalse             L23
+
+      pop
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4VX"), "_-0Lb")
+      getproperty         QName(Namespace("_-0mn"), "disposed")
+      not
+L23:
+      iffalse             L33
+
+      debugline           92
+      getlocal0
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4VX"), "_-0Lb")
+      getproperty         QName(Namespace("_-d6"), "selection")
+      callproperty        QName(PrivateNamespace("_-4VX"), "_-2P0"), 1
+      convert_i
+      setlocal1
+
+      debugline           94
+L33:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4VX"), "_-2ld")
+      getproperty         QName(PackageNamespace(""), "_-mS")
+      getlex              QName(PackageNamespace("_-4z4"), "Tabs")
+      getproperty         QName(PackageNamespace(""), "_-3CG")
+      getlocal1
+      callpropvoid        QName(Namespace("_-5Bk"), "_-4AZ"), 2
+
+      debugline           95
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-4VX"), "_-2P0")
+   method
+    refid "_-5m5:EventsTabPageDecorator/instance/_-5m5:EventsTabPageDecorator/instance/_-2P0"
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "int")
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           97
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 97
+      jump                L20
+
+L6:
+      label
+      debugline           100
+      getlex              QName(PackageNamespace("_-4z4"), "Tabs")
+      getproperty         QName(PackageNamespace(""), "_-5DD")
+      returnvalue
+
+L11:
+      label
+      debugline           103
+      getlex              QName(PackageNamespace("_-4z4"), "Tabs")
+      getproperty         QName(PackageNamespace(""), "_-0vy")
+      returnvalue
+
+L16:
+      label
+      jump                L47
+
+      ; 0xF0
+      ; 0x62
+L20:
+      getlocal1
+      setlocal2
+
+      debugline           99
+      pushbyte            0
+      getlocal2
+      ifstrictne          L30
+
+      pushbyte            0
+      jump                L43
+
+      ; 0xF0
+      ; 0x66
+L30:
+      pushbyte            1
+      getlocal2
+      ifstrictne          L35
+
+      pushbyte            1
+      jump                L43
+
+L35:
+      jump                L42
+
+      ; 0x24
+      ; 0x02
+      ; 0x10
+      ; 0x02
+      ; 0x00
+      ; 0x00
+L42:
+      pushbyte            2
+L43:
+      kill                2
+      lookupswitch        L16, [L6, L11, L16]
+
+      ; 0xF0
+      ; 0x6A
+L47:
+      getlex              QName(PackageNamespace(""), "_-Vz")
+      pushstring          "Invalid index when searching Room ad search type: "
+      getlocal1
+      add
+      callpropvoid        QName(PackageNamespace(""), "log"), 1
+
+      debugline           107
+      pushbyte            0
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "_-58X")
+   method
+    refid "_-5m5:EventsTabPageDecorator/instance/_-58X/getter"
+    returns QName(PackageNamespace(""), "String")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           110
+      getlocal0
+      pushscope
+
+      debugline           111
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4VX"), "_-0Lb")
+      pushnull
+      equals
+      dup
+      iftrue              L16
+
+      pop
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4VX"), "_-0Lb")
+      getproperty         QName(Namespace("_-0mn"), "disposed")
+      convert_b
+L16:
+      iffalse             L21
+
+      pushnull
+      returnvalue
+
+      ; 0xF0
+      ; 0x71
+L21:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4VX"), "_-0Lb")
+      callproperty        QName(Namespace("_-d6"), "_-2Ne"), 0
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4VX"), "_-0Lb")
+      getproperty         QName(Namespace("_-d6"), "selection")
+      getproperty         MultinameL([PrivateNamespace("_-4VX"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("EventsTabPageDecorator.as$2538"), PackageNamespace("_-5m5"), PackageInternalNs("_-5m5"), ProtectedNamespace("_-4VX"), StaticProtectedNs("_-4VX")])
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-6Ew")
+   method
+    refid "_-5m5:EventsTabPageDecorator/instance/_-6Ew"
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 1
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           116
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 116
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-6Ku")
+   method
+    refid "_-5m5:EventsTabPageDecorator/instance/_-6Ku"
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace(""), "String")
+    body
+     maxstack 1
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           118
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 118
+      debugline           119
+      getlocal1
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-5m5:EventsTabPageDecorator/class/init"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

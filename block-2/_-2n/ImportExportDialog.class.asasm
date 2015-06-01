@@ -1,0 +1,389 @@
+class
+ refid "_-2n:ImportExportDialog"
+ instance QName(PackageNamespace("_-2n"), "ImportExportDialog")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-4O3")
+  iinit
+   refid "_-2n:ImportExportDialog/instance/init"
+   param QName(PackageNamespace("_-2n"), "BCFloorPlanEditor")
+   param QName(PackageNamespace(""), "XML")
+   body
+    maxstack 2
+    localcount 3
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     debugfile           "k"
+     debugline           18
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 18
+     debug               1, "k", 1, 18
+     debugline           18
+     getlocal0
+     constructsuper      0
+
+     debugline           19
+     getlocal0
+     getlocal1
+     initproperty        QName(PrivateNamespace("_-4O3"), "_-4c3")
+
+     debugline           20
+     getlocal0
+     getlocal2
+     initproperty        QName(PrivateNamespace("_-4O3"), "_-0Jb")
+
+     debugline           21
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-4O3"), "_-4c3") type QName(PackageNamespace("_-2n"), "BCFloorPlanEditor") end
+  trait slot QName(PrivateNamespace("_-4O3"), "_-0Jb") type QName(PackageNamespace(""), "XML") end
+  trait slot QName(PrivateNamespace("_-4O3"), "_-36K") type QName(PackageNamespace("_-2tk"), "IFrameWindow") value Null() end
+  trait setter QName(PackageNamespace(""), "visible")
+   method
+    refid "_-2n:ImportExportDialog/instance/visible/setter"
+    param QName(PackageNamespace(""), "Boolean")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           23
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 23
+      debugline           24
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4O3"), "_-36K")
+      pushnull
+      ifne                L32
+
+      debugline           25
+      getlocal0
+      findpropstrict      QName(PackageNamespace("_-2tk"), "IFrameWindow")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4O3"), "_-4c3")
+      getproperty         QName(PackageNamespace(""), "windowManager")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4O3"), "_-0Jb")
+      callproperty        QName(PackageNamespace(""), "buildFromXML"), 1
+      callproperty        QName(PackageNamespace("_-2tk"), "IFrameWindow"), 1
+      initproperty        QName(PrivateNamespace("_-4O3"), "_-36K")
+
+      debugline           26
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4O3"), "_-36K")
+      callpropvoid        QName(Namespace("_-0jq"), "center"), 0
+
+      debugline           27
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4O3"), "_-36K")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4O3"), "_-5Nf")
+      setproperty         QName(Namespace("_-0jq"), "procedure")
+
+      debugline           29
+L32:
+      getlocal1
+      iffalse             L88
+
+      debugline           30
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4O3"), "_-36K")
+      pushtrue
+      setproperty         QName(Namespace("_-0jq"), "visible")
+
+      debugline           31
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4O3"), "_-36K")
+      pushstring          "data"
+      callproperty        QName(Namespace("_-7H"), "findChildByName"), 1
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4O3"), "_-4c3")
+      getproperty         QName(PackageNamespace(""), "_-2L9")
+      callproperty        QName(PackageNamespace(""), "_-wJ"), 0
+      setproperty         QName(Namespace("_-0jq"), "caption")
+
+      debugline           32
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4O3"), "_-4c3")
+      getproperty         QName(PackageNamespace(""), "_-4S7")
+      pushbyte            0
+      greaterthan
+      dup
+      iftrue              L66
+
+      pop
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4O3"), "_-4c3")
+      getproperty         QName(PackageNamespace(""), "windowManager")
+      getproperty         QName(PackageNamespace(""), "sessionDataManager")
+      getlex              QName(PackageNamespace("_-0ys"), "_-27L")
+      getproperty         QName(PackageNamespace(""), "_-5Yd")
+      callproperty        Multiname("hasSecurity", [PrivateNamespace("_-4O3"), PackageNamespace("_-2n"), PackageNamespace(""), PrivateNamespace("ImportExportDialog.as$2118"), PackageInternalNs("_-2n"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-4O3"), StaticProtectedNs("_-4O3")]), 1
+      convert_b
+L66:
+      iffalse             L76
+
+      debugline           33
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4O3"), "_-36K")
+      pushstring          "save"
+      callproperty        QName(Namespace("_-7H"), "findChildByName"), 1
+      callpropvoid        QName(Namespace("_-0jq"), "enable"), 0
+
+      jump                L82
+
+      ; 0xF0
+      ; 0x23
+L76:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4O3"), "_-36K")
+      pushstring          "save"
+      callproperty        QName(Namespace("_-7H"), "findChildByName"), 1
+      callpropvoid        QName(Namespace("_-0jq"), "disable"), 0
+
+      debugline           37
+L82:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4O3"), "_-36K")
+      callpropvoid        QName(Namespace("_-0jq"), "activate"), 0
+
+      jump                L93
+
+      ; 0xF0
+      ; 0x27
+L88:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4O3"), "_-36K")
+      pushfalse
+      setproperty         QName(Namespace("_-0jq"), "visible")
+
+      debugline           41
+L93:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "visible")
+   method
+    refid "_-2n:ImportExportDialog/instance/visible/getter"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           43
+      getlocal0
+      pushscope
+
+      debugline           44
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4O3"), "_-36K")
+      iftrue              L12
+
+      pushfalse
+      returnvalue
+
+      ; 0xF0
+      ; 0x2D
+L12:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4O3"), "_-36K")
+      getproperty         QName(Namespace("_-0jq"), "visible")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-4O3"), "_-5Nf")
+   method
+    refid "_-2n:ImportExportDialog/instance/_-2n:ImportExportDialog/instance/_-5Nf"
+    param QName(PackageNamespace("_-0eT"), "WindowEvent")
+    param QName(PackageNamespace("_-2z-"), "IWindow")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 9
+     localcount 4
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           48
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 48
+      debug               1, "k", 1, 48
+      debugline           49
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "type")
+      getlex              QName(PackageNamespace("_-0eT"), "WindowMouseEvent")
+      getproperty         QName(PackageNamespace(""), "CLICK")
+      ifne                L114
+
+      jump                L81
+
+L13:
+      label
+      debugline           52
+      getlocal0
+      pushfalse
+      initproperty        QName(PackageNamespace(""), "visible")
+
+      debugline           53
+      jump                L114
+
+L20:
+      label
+      debugline           55
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4O3"), "_-36K")
+      pushstring          "data"
+      callproperty        QName(Namespace("_-7H"), "findChildByName"), 1
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4O3"), "_-4c3")
+      getproperty         QName(PackageNamespace(""), "_-43R")
+      setproperty         QName(Namespace("_-0jq"), "caption")
+
+      debugline           56
+      jump                L114
+
+L32:
+      label
+      debugline           58
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4O3"), "_-4c3")
+      getproperty         QName(PackageNamespace(""), "windowManager")
+      getproperty         QName(PackageNamespace(""), "communication")
+      getproperty         Multiname("connection", [PrivateNamespace("_-4O3"), PackageNamespace("_-2n"), PackageNamespace(""), PrivateNamespace("ImportExportDialog.as$2118"), PackageInternalNs("_-2n"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-4O3"), StaticProtectedNs("_-4O3")])
+      findpropstrict      QName(PackageNamespace("_-0fj"), "_-1H6")
+      debugline           58
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4O3"), "_-36K")
+      pushstring          "data"
+      callproperty        QName(Namespace("_-7H"), "findChildByName"), 1
+      getproperty         QName(Namespace("_-0jq"), "caption")
+      debugline           59
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4O3"), "_-4c3")
+      getproperty         QName(PackageNamespace(""), "_-2L9")
+      getproperty         QName(PackageNamespace(""), "_-49O")
+      getproperty         QName(PackageNamespace(""), "x")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4O3"), "_-4c3")
+      getproperty         QName(PackageNamespace(""), "_-2L9")
+      getproperty         QName(PackageNamespace(""), "_-49O")
+      getproperty         QName(PackageNamespace(""), "y")
+      debugline           60
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4O3"), "_-4c3")
+      getproperty         QName(PackageNamespace(""), "_-2L9")
+      getproperty         QName(PackageNamespace(""), "_-4lh")
+      getlex              QName(PackageNamespace("_-2n"), "BCFloorPlanEditor")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4O3"), "_-4c3")
+      getproperty         QName(PackageNamespace(""), "_-3tm")
+      callproperty        QName(PackageNamespace(""), "_-AU"), 1
+      debugline           61
+      getlex              QName(PackageNamespace("_-2n"), "BCFloorPlanEditor")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4O3"), "_-4c3")
+      getproperty         QName(PackageNamespace(""), "_-5Dr")
+      callproperty        QName(PackageNamespace(""), "_-AU"), 1
+      constructprop       QName(PackageNamespace("_-0fj"), "_-1H6"), 6
+      callpropvoid        Multiname("send", [PrivateNamespace("_-4O3"), PackageNamespace("_-2n"), PackageNamespace(""), PrivateNamespace("ImportExportDialog.as$2118"), PackageInternalNs("_-2n"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-4O3"), StaticProtectedNs("_-4O3")]), 1
+
+      debugline           62
+      jump                L114
+
+L77:
+      label
+      jump                L114
+
+      ; 0xF0
+      ; 0x32
+L81:
+      getlocal2
+      getproperty         QName(Namespace("_-0jq"), "name")
+      setlocal3
+
+      pushstring          "header_button_close"
+      debugline           51
+      getlocal3
+      ifstrictne          L90
+
+      pushbyte            0
+      jump                L110
+
+L90:
+      pushstring          "revert"
+      debugline           54
+      getlocal3
+      ifstrictne          L96
+
+      pushbyte            1
+      jump                L110
+
+L96:
+      pushstring          "save"
+      debugline           57
+      getlocal3
+      ifstrictne          L102
+
+      pushbyte            2
+      jump                L110
+
+L102:
+      jump                L109
+
+      ; 0x24
+      ; 0x03
+      ; 0x10
+      ; 0x02
+      ; 0x00
+      ; 0x00
+L109:
+      pushbyte            3
+L110:
+      kill                3
+      lookupswitch        L77, [L13, L20, L32, L77]
+
+      ; 0xF0
+      ; 0x41
+L114:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-2n:ImportExportDialog/class/init"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

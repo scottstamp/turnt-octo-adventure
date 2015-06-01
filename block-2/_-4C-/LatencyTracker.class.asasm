@@ -1,0 +1,626 @@
+class
+ refid "_-4C-:LatencyTracker"
+ instance QName(PackageNamespace("_-4C-"), "LatencyTracker")
+  extends QName(PackageNamespace(""), "Object")
+  implements Multiname("_-4BI", [PackageNamespace("_-0XF")])
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-2JS")
+  iinit
+   refid "_-4C-:LatencyTracker/instance/init#0"
+   param QName(PackageNamespace("_-4C-"), "HabboTracking")
+   body
+    maxstack 2
+    localcount 2
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     debugfile           "k"
+     debugline           26
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 26
+     debugline           26
+     getlocal0
+     constructsuper      0
+
+     debugline           27
+     getlocal0
+     getlocal1
+     initproperty        QName(PrivateNamespace("_-2JS"), "_-5sf")
+
+     debugline           28
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-2JS"), "_-40c") type QName(PackageNamespace(""), "Boolean") value False() end
+  trait slot QName(PrivateNamespace("_-2JS"), "_-1bv") type QName(PackageNamespace(""), "int") value Integer(0) end
+  trait slot QName(PrivateNamespace("_-2JS"), "_-46u") type QName(PackageNamespace(""), "int") value Integer(0) end
+  trait slot QName(PrivateNamespace("_-2JS"), "_-492") type QName(PackageNamespace(""), "int") value Integer(0) end
+  trait slot QName(PrivateNamespace("_-2JS"), "_-2xw") type QName(PackageNamespace(""), "int") value Integer(0) end
+  trait slot QName(PrivateNamespace("_-2JS"), "_-6BC") type QName(PackageNamespace(""), "int") value Integer(0) end
+  trait slot QName(PrivateNamespace("_-2JS"), "_-Gc") type QName(PackageNamespace(""), "int") value Integer(0) end
+  trait slot QName(PrivateNamespace("_-2JS"), "_-13K") type QName(PackageNamespace(""), "Array") end
+  trait slot QName(PrivateNamespace("_-2JS"), "_-2v7") type QName(PackageNamespace("_-67e"), "Map") end
+  trait slot QName(PrivateNamespace("_-2JS"), "_-5sf") type QName(PackageNamespace("_-4C-"), "HabboTracking") end
+  trait method QName(PackageNamespace(""), "dispose")
+   method
+    refid "_-4C-:LatencyTracker/instance/dispose"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           30
+      getlocal0
+      pushscope
+
+      debugline           31
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "disposed")
+      iffalse             L12
+
+      debugline           32
+      returnvoid
+
+      ; 0xF0
+      ; 0x23
+L12:
+      getlocal0
+      pushfalse
+      initproperty        QName(PrivateNamespace("_-2JS"), "_-40c")
+
+      debugline           37
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2JS"), "_-2v7")
+      pushnull
+      ifeq                L29
+
+      debugline           38
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2JS"), "_-2v7")
+      callpropvoid        QName(PackageNamespace(""), "dispose"), 0
+
+      debugline           39
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-2JS"), "_-2v7")
+
+      debugline           42
+L29:
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-2JS"), "_-13K")
+
+      debugline           43
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-2JS"), "_-5sf")
+
+      debugline           44
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "init")
+   method
+    refid "_-4C-:LatencyTracker/instance/init#1"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           46
+      getlocal0
+      pushscope
+
+      debugline           47
+      getlocal0
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2JS"), "_-5sf")
+      pushstring          "latencytest.interval"
+      pushshort           20000
+      callproperty        QName(PackageNamespace(""), "getInteger"), 2
+      initproperty        QName(PrivateNamespace("_-2JS"), "_-46u")
+
+      debugline           48
+      getlocal0
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2JS"), "_-5sf")
+      pushstring          "latencytest.report.index"
+      pushbyte            100
+      callproperty        QName(PackageNamespace(""), "getInteger"), 2
+      initproperty        QName(PrivateNamespace("_-2JS"), "_-492")
+
+      debugline           49
+      getlocal0
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2JS"), "_-5sf")
+      pushstring          "latencytest.report.delta"
+      pushbyte            3
+      callproperty        QName(PackageNamespace(""), "getInteger"), 2
+      initproperty        QName(PrivateNamespace("_-2JS"), "_-2xw")
+
+      debugline           51
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2JS"), "_-46u")
+      pushbyte            1
+      ifnlt               L37
+
+      debugline           52
+      returnvoid
+
+      ; 0xF0
+      ; 0x37
+L37:
+      getlocal0
+      findpropstrict      QName(PackageNamespace("_-67e"), "Map")
+      constructprop       QName(PackageNamespace("_-67e"), "Map"), 0
+      initproperty        QName(PrivateNamespace("_-2JS"), "_-2v7")
+
+      debugline           56
+      getlocal0
+      newarray            0
+      initproperty        QName(PrivateNamespace("_-2JS"), "_-13K")
+
+      debugline           57
+      getlocal0
+      pushtrue
+      initproperty        QName(PrivateNamespace("_-2JS"), "_-40c")
+
+      debugline           58
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "update")
+   method
+    refid "_-4C-:LatencyTracker/instance/update"
+    param QName(PackageNamespace(""), "uint")
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 3
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           60
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 60
+      debug               1, "k", 1, 60
+      debugline           61
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2JS"), "_-40c")
+      iftrue              L14
+
+      debugline           62
+      returnvoid
+
+      ; 0xF0
+      ; 0x41
+L14:
+      getlocal2
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2JS"), "_-6BC")
+      subtract
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2JS"), "_-46u")
+      ifngt               L25
+
+      debugline           66
+      getlocal0
+      callpropvoid        QName(PrivateNamespace("_-2JS"), "_-0bx"), 0
+
+      debugline           68
+L25:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-2JS"), "_-0bx")
+   method
+    refid "_-4C-:LatencyTracker/instance/_-4C-:LatencyTracker/instance/_-0bx"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           70
+      getlocal0
+      pushscope
+
+      debugline           71
+      getlocal0
+      findpropstrict      QName(PackageNamespace("flash.utils"), "getTimer")
+      callproperty        QName(PackageNamespace("flash.utils"), "getTimer"), 0
+      initproperty        QName(PrivateNamespace("_-2JS"), "_-6BC")
+
+      debugline           72
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2JS"), "_-2v7")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2JS"), "_-1bv")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2JS"), "_-6BC")
+      callpropvoid        QName(PackageNamespace(""), "add"), 2
+
+      debugline           73
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2JS"), "_-5sf")
+      findpropstrict      QName(PackageNamespace("_-3nB"), "_-5-U")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2JS"), "_-1bv")
+      constructprop       QName(PackageNamespace("_-3nB"), "_-5-U"), 1
+      callpropvoid        QName(PackageNamespace(""), "send"), 1
+
+      debugline           74
+      getlocal0
+      dup
+      setlocal1
+
+      getproperty         QName(PrivateNamespace("_-2JS"), "_-1bv")
+      increment_i
+      setlocal2
+
+      getlocal1
+      getlocal2
+      setproperty         QName(PrivateNamespace("_-2JS"), "_-1bv")
+
+      kill                2
+      kill                1
+      debugline           75
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-14")
+   method
+    refid "_-4C-:LatencyTracker/instance/_-14"
+    param QName(PackageNamespace("_-4y9"), "_-6DS")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 12
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           77
+      getlocal0
+      pushscope
+
+      pushbyte            0
+      setlocal            5
+
+      pushbyte            0
+      setlocal            6
+
+      pushbyte            0
+      setlocal            7
+
+      pushbyte            0
+      setlocal            8
+
+      pushbyte            0
+      setlocal            9
+
+      pushbyte            0
+      setlocal            10
+
+      pushnull
+      coerce              QName(PackageNamespace("_-3nB"), "_-256")
+      setlocal            11
+
+      debug               1, "k", 0, 77
+      debug               1, "k", 1, 82
+      debug               1, "k", 2, 83
+      debug               1, "k", 3, 89
+      debugline           78
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2JS"), "_-2v7")
+      pushnull
+      equals
+      dup
+      iftrue              L35
+
+      pop
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2JS"), "_-13K")
+      pushnull
+      equals
+L35:
+      iffalse             L40
+
+      debugline           79
+      returnvoid
+
+      ; 0xF0
+      ; 0x52
+L40:
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "_-Gq"), 0
+      coerce              QName(PackageNamespace("_-3YA"), "_-3pd")
+      setlocal2
+
+      debugline           83
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2JS"), "_-2v7")
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "_-0Zv")
+      callproperty        QName(PackageNamespace(""), "getValue"), 1
+      convert_i
+      setlocal3
+
+      debugline           86
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2JS"), "_-2v7")
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "_-0Zv")
+      callpropvoid        QName(PackageNamespace(""), "remove"), 1
+
+      debugline           89
+      findpropstrict      QName(PackageNamespace("flash.utils"), "getTimer")
+      callproperty        QName(PackageNamespace("flash.utils"), "getTimer"), 0
+      getlocal3
+      subtract
+      convert_i
+      setlocal            4
+
+      debugline           92
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2JS"), "_-13K")
+      getlocal            4
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      debugline           95
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2JS"), "_-13K")
+      getproperty         QName(PackageNamespace(""), "length")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2JS"), "_-492")
+      equals
+      dup
+      iffalse             L84
+
+      pop
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2JS"), "_-492")
+      pushbyte            0
+      greaterthan
+L84:
+      iffalse             L221
+
+      debug               1, "k", 4, 97
+      debug               1, "k", 5, 98
+      debug               1, "k", 6, 99
+      debug               1, "k", 7, 100
+      debug               1, "k", 8, 108
+      debug               1, "k", 9, 123
+      debugline           97
+      pushbyte            0
+      setlocal            5
+
+      debugline           98
+      pushbyte            0
+      setlocal            6
+
+      debugline           99
+      pushbyte            0
+      setlocal            7
+
+      debugline           103
+      pushbyte            0
+      setlocal            8
+
+      jump                L116
+
+L104:
+      label
+      debugline           104
+      getlocal            5
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2JS"), "_-13K")
+      getlocal            8
+      getproperty         MultinameL([PrivateNamespace("_-2JS"), PackageNamespace("_-4C-"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("LatencyTracker.as$1782"), PackageInternalNs("_-4C-"), ProtectedNamespace("_-2JS"), StaticProtectedNs("_-2JS")])
+      add
+      convert_i
+      setlocal            5
+
+      debugline           103
+      inclocal_i          8
+L116:
+      getlocal            8
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2JS"), "_-13K")
+      getproperty         QName(PackageNamespace(""), "length")
+      iflt                L104
+
+      debugline           108
+      getlocal            5
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2JS"), "_-13K")
+      getproperty         QName(PackageNamespace(""), "length")
+      divide
+      convert_i
+      setlocal            9
+
+      debugline           111
+      pushbyte            0
+      setlocal            8
+
+      jump                L156
+
+L133:
+      label
+      debugline           112
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2JS"), "_-13K")
+      getlocal            8
+      getproperty         MultinameL([PrivateNamespace("_-2JS"), PackageNamespace("_-4C-"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("LatencyTracker.as$1782"), PackageInternalNs("_-4C-"), ProtectedNamespace("_-2JS"), StaticProtectedNs("_-2JS")])
+      getlocal            9
+      pushbyte            2
+      multiply
+      ifnlt               L155
+
+      debugline           113
+      getlocal            6
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2JS"), "_-13K")
+      getlocal            8
+      getproperty         MultinameL([PrivateNamespace("_-2JS"), PackageNamespace("_-4C-"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("LatencyTracker.as$1782"), PackageInternalNs("_-4C-"), ProtectedNamespace("_-2JS"), StaticProtectedNs("_-2JS")])
+      add
+      convert_i
+      setlocal            6
+
+      debugline           114
+      inclocal_i          7
+      debugline           111
+L155:
+      inclocal_i          8
+L156:
+      getlocal            8
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2JS"), "_-13K")
+      getproperty         QName(PackageNamespace(""), "length")
+      iflt                L133
+
+      debugline           119
+      getlocal            7
+      pushbyte            0
+      ifne                L173
+
+      debugline           120
+      getlocal0
+      newarray            0
+      initproperty        QName(PrivateNamespace("_-2JS"), "_-13K")
+
+      debugline           121
+      returnvoid
+
+      ; 0xF0
+      ; 0x7B
+L173:
+      getlocal            6
+      getlocal            7
+      divide
+      convert_i
+      setlocal            10
+
+      debugline           126
+      getlex              QName(PackageNamespace(""), "Math")
+      getlocal            9
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2JS"), "_-Gc")
+      subtract
+      callproperty        QName(PackageNamespace(""), "abs"), 1
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2JS"), "_-2xw")
+      greaterthan
+      dup
+      iftrue              L195
+
+      pop
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2JS"), "_-Gc")
+      pushbyte            0
+      equals
+L195:
+      iffalse             L217
+
+      debug               1, "k", 10, 130
+      debugline           129
+      getlocal0
+      getlocal            9
+      initproperty        QName(PrivateNamespace("_-2JS"), "_-Gc")
+
+      debugline           130
+      findpropstrict      QName(PackageNamespace("_-3nB"), "_-256")
+      getlocal            9
+      getlocal            10
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2JS"), "_-13K")
+      getproperty         QName(PackageNamespace(""), "length")
+      constructprop       QName(PackageNamespace("_-3nB"), "_-256"), 3
+      coerce              QName(PackageNamespace("_-3nB"), "_-256")
+      setlocal            11
+
+      debugline           131
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2JS"), "_-5sf")
+      getlocal            11
+      callpropvoid        QName(PackageNamespace(""), "send"), 1
+
+      debugline           134
+L217:
+      getlocal0
+      newarray            0
+      initproperty        QName(PrivateNamespace("_-2JS"), "_-13K")
+
+      debugline           136
+L221:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "disposed")
+   method
+    refid "_-4C-:LatencyTracker/instance/disposed/getter"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           138
+      getlocal0
+      pushscope
+
+      debugline           139
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2JS"), "_-5sf")
+      pushnull
+      equals
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-4C-:LatencyTracker/class/init"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

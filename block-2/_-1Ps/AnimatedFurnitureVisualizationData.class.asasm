@@ -1,0 +1,601 @@
+class
+ refid "_-1Ps:AnimatedFurnitureVisualizationData"
+ instance QName(PackageNamespace("_-1Ps"), "AnimatedFurnitureVisualizationData")
+  extends QName(PackageNamespace("_-1Ps"), "FurnitureVisualizationData")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-kC")
+  iinit
+   refid "_-1Ps:AnimatedFurnitureVisualizationData/instance/init"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 5
+    maxscopedepth 6
+    code
+     debugfile           "k"
+     debugline           19
+     getlocal0
+     pushscope
+
+     debugline           20
+     getlocal0
+     constructsuper      0
+
+     debugline           21
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait method QName(ProtectedNamespace("_-kC"), "createSizeData") flag OVERRIDE
+   method
+    refid "_-1Ps:AnimatedFurnitureVisualizationData/instance/_-kC:createSizeData"
+    param QName(PackageNamespace(""), "int")
+    param QName(PackageNamespace(""), "int")
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace("_-4uj"), "SizeData")
+    body
+     maxstack 3
+     localcount 5
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           30
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 30
+      debug               1, "k", 1, 30
+      debug               1, "k", 2, 30
+      debug               1, "k", 3, 31
+      debugline           31
+      pushnull
+      coerce              QName(PackageNamespace("_-4uj"), "SizeData")
+      setlocal            4
+
+      debugline           32
+      findpropstrict      QName(PackageNamespace("_-4uj"), "AnimationSizeData")
+      getlocal2
+      getlocal3
+      constructprop       QName(PackageNamespace("_-4uj"), "AnimationSizeData"), 2
+      coerce              QName(PackageNamespace("_-4uj"), "SizeData")
+      setlocal            4
+
+      debugline           33
+      getlocal            4
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-kC"), "processVisualizationElement") flag OVERRIDE
+   method
+    refid "_-1Ps:AnimatedFurnitureVisualizationData/instance/_-kC:processVisualizationElement"
+    param QName(PackageNamespace("_-4uj"), "SizeData")
+    param QName(PackageNamespace(""), "XML")
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 3
+     localcount 5
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           43
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-4uj"), "AnimationSizeData")
+      setlocal3
+
+      debug               1, "k", 0, 43
+      debug               1, "k", 1, 43
+      debugline           45
+      getlocal1
+      pushnull
+      equals
+      dup
+      iftrue              L19
+
+      pop
+      getlocal2
+      pushnull
+      equals
+L19:
+      iffalse             L22
+
+      pushfalse
+      returnvalue
+
+L22:
+      jump                L69
+
+      ; 0xEF
+      ; 0x01
+      ; 0x02
+      ; 0x02
+      ; 0x32
+L28:
+      label
+      debugline           50
+      getlocal1
+      getlex              QName(PackageNamespace("_-4uj"), "AnimationSizeData")
+      astypelate
+      coerce              QName(PackageNamespace("_-4uj"), "AnimationSizeData")
+      setlocal3
+
+      debugline           51
+      getlocal3
+      pushnull
+      ifeq                L49
+
+      debugline           52
+      getlocal3
+      getlocal2
+      callproperty        QName(PackageNamespace(""), "_-38Z"), 1
+      iftrue              L49
+
+      debugline           53
+      pushfalse
+      returnvalue
+
+      ; 0xF0
+      ; 0x38
+L49:
+      jump                L92
+
+L50:
+      label
+      debugline           60
+      getlocal0
+      getlocal1
+      getlocal2
+      callsuper           QName(ProtectedNamespace("_-5EY"), "processVisualizationElement"), 2
+      iftrue              L62
+
+      debugline           61
+      pushfalse
+      returnvalue
+
+      ; 0xF0
+      ; 0x3F
+L62:
+      jump                L92
+
+      ; 0x10
+      ; 0x3C
+      ; 0x00
+      ; 0x00
+      ; 0xF0
+      ; 0x2F
+L69:
+      findpropstrict      QName(PackageNamespace(""), "String")
+      getlocal2
+      callproperty        Multiname("name", [PrivateNamespace("_-kC"), PackageNamespace(""), PrivateNamespace("AnimatedFurnitureVisualizationData.as$4208"), PackageNamespace("_-1Ps"), PackageInternalNs("_-1Ps"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-kC"), StaticProtectedNs("_-kC"), StaticProtectedNs("_-5EY")]), 0
+      callproperty        QName(PackageNamespace(""), "String"), 1
+      setlocal            4
+
+      pushstring          "animations"
+      debugline           48
+      getlocal            4
+      ifstrictne          L80
+
+      pushbyte            0
+      jump                L88
+
+L80:
+      jump                L87
+
+      ; 0x24
+      ; 0x01
+      ; 0x10
+      ; 0x02
+      ; 0x00
+      ; 0x00
+L87:
+      pushbyte            1
+L88:
+      kill                4
+      lookupswitch        L50, [L28, L50]
+
+      ; 0xF0
+      ; 0x42
+L92:
+      pushtrue
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-5HM")
+   method
+    refid "_-1Ps:AnimatedFurnitureVisualizationData/instance/_-5HM"
+    param QName(PackageNamespace(""), "int")
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 2
+     localcount 4
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           75
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 75
+      debug               1, "k", 1, 75
+      debug               1, "k", 2, 76
+      debugline           76
+      findpropstrict      QName(ProtectedNamespace("_-5EY"), "_-4pA")
+      getlocal1
+      callproperty        QName(ProtectedNamespace("_-5EY"), "_-4pA"), 1
+      getlex              QName(PackageNamespace("_-4uj"), "AnimationSizeData")
+      astypelate
+      coerce              QName(PackageNamespace("_-4uj"), "AnimationSizeData")
+      setlocal3
+
+      debugline           77
+      getlocal3
+      pushnull
+      ifeq                L26
+
+      debugline           78
+      getlocal3
+      getlocal2
+      callproperty        QName(PackageNamespace(""), "_-5HM"), 1
+      returnvalue
+
+      ; 0xF0
+      ; 0x51
+L26:
+      pushfalse
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-06D")
+   method
+    refid "_-1Ps:AnimatedFurnitureVisualizationData/instance/_-06D"
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "int")
+    body
+     maxstack 2
+     localcount 3
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           89
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 89
+      debug               1, "k", 1, 90
+      debugline           90
+      findpropstrict      QName(ProtectedNamespace("_-5EY"), "_-4pA")
+      getlocal1
+      callproperty        QName(ProtectedNamespace("_-5EY"), "_-4pA"), 1
+      getlex              QName(PackageNamespace("_-4uj"), "AnimationSizeData")
+      astypelate
+      coerce              QName(PackageNamespace("_-4uj"), "AnimationSizeData")
+      setlocal2
+
+      debugline           91
+      getlocal2
+      pushnull
+      ifeq                L24
+
+      debugline           92
+      getlocal2
+      callproperty        QName(PackageNamespace(""), "_-06D"), 0
+      returnvalue
+
+      ; 0xF0
+      ; 0x5F
+L24:
+      pushbyte            0
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "getAnimationId")
+   method
+    refid "_-1Ps:AnimatedFurnitureVisualizationData/instance/getAnimationId"
+    param QName(PackageNamespace(""), "int")
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "int")
+    body
+     maxstack 2
+     localcount 4
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           103
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 103
+      debug               1, "k", 1, 103
+      debug               1, "k", 2, 104
+      debugline           104
+      findpropstrict      QName(ProtectedNamespace("_-5EY"), "_-4pA")
+      getlocal1
+      callproperty        QName(ProtectedNamespace("_-5EY"), "_-4pA"), 1
+      getlex              QName(PackageNamespace("_-4uj"), "AnimationSizeData")
+      astypelate
+      coerce              QName(PackageNamespace("_-4uj"), "AnimationSizeData")
+      setlocal3
+
+      debugline           105
+      getlocal3
+      pushnull
+      ifeq                L26
+
+      debugline           106
+      getlocal3
+      getlocal2
+      callproperty        QName(PackageNamespace(""), "getAnimationId"), 1
+      returnvalue
+
+      ; 0xF0
+      ; 0x6D
+L26:
+      pushbyte            0
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-2lS")
+   method
+    refid "_-1Ps:AnimatedFurnitureVisualizationData/instance/_-2lS"
+    param QName(PackageNamespace(""), "int")
+    param QName(PackageNamespace(""), "int")
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 3
+     localcount 5
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           120
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 120
+      debug               1, "k", 1, 120
+      debug               1, "k", 2, 120
+      debug               1, "k", 3, 121
+      debugline           121
+      findpropstrict      QName(ProtectedNamespace("_-5EY"), "_-4pA")
+      getlocal1
+      callproperty        QName(ProtectedNamespace("_-5EY"), "_-4pA"), 1
+      getlex              QName(PackageNamespace("_-4uj"), "AnimationSizeData")
+      astypelate
+      coerce              QName(PackageNamespace("_-4uj"), "AnimationSizeData")
+      setlocal            4
+
+      debugline           122
+      getlocal            4
+      pushnull
+      ifeq                L28
+
+      debugline           123
+      getlocal            4
+      getlocal2
+      getlocal3
+      callproperty        QName(PackageNamespace(""), "_-2lS"), 2
+      returnvalue
+
+      ; 0xF0
+      ; 0x7E
+L28:
+      pushfalse
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-7J")
+   method
+    refid "_-1Ps:AnimatedFurnitureVisualizationData/instance/_-7J"
+    param QName(PackageNamespace(""), "int")
+    param QName(PackageNamespace(""), "int")
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "int")
+    body
+     maxstack 3
+     localcount 5
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           136
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 136
+      debug               1, "k", 1, 136
+      debug               1, "k", 2, 136
+      debug               1, "k", 3, 138
+      debugline           138
+      findpropstrict      QName(ProtectedNamespace("_-5EY"), "_-4pA")
+      getlocal1
+      callproperty        QName(ProtectedNamespace("_-5EY"), "_-4pA"), 1
+      getlex              QName(PackageNamespace("_-4uj"), "AnimationSizeData")
+      astypelate
+      coerce              QName(PackageNamespace("_-4uj"), "AnimationSizeData")
+      setlocal            4
+
+      debugline           139
+      getlocal            4
+      pushnull
+      ifeq                L29
+
+      debugline           140
+      getlocal            4
+      getlocal2
+      getlocal3
+      callproperty        QName(PackageNamespace(""), "_-7J"), 2
+      returnvalue
+
+      ; 0xF0
+      ; 0x8F
+      ; 0x01
+L29:
+      pushbyte            0
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-6Ux")
+   method
+    refid "_-1Ps:AnimatedFurnitureVisualizationData/instance/_-6Ux"
+    param QName(PackageNamespace(""), "int")
+    param QName(PackageNamespace(""), "int")
+    param QName(PackageNamespace(""), "int")
+    param QName(PackageNamespace(""), "int")
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace("_-4uj"), "AnimationFrame")
+    body
+     maxstack 5
+     localcount 7
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           155
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 155
+      debug               1, "k", 1, 155
+      debug               1, "k", 2, 155
+      debug               1, "k", 3, 155
+      debug               1, "k", 4, 155
+      debug               1, "k", 5, 157
+      debugline           157
+      findpropstrict      QName(ProtectedNamespace("_-5EY"), "_-4pA")
+      getlocal1
+      callproperty        QName(ProtectedNamespace("_-5EY"), "_-4pA"), 1
+      getlex              QName(PackageNamespace("_-4uj"), "AnimationSizeData")
+      astypelate
+      coerce              QName(PackageNamespace("_-4uj"), "AnimationSizeData")
+      setlocal            6
+
+      debugline           158
+      getlocal            6
+      pushnull
+      ifeq                L33
+
+      debugline           159
+      getlocal            6
+      getlocal2
+      getlocal3
+      getlocal            4
+      getlocal            5
+      callproperty        QName(PackageNamespace(""), "_-6Ux"), 4
+      returnvalue
+
+      ; 0xF0
+      ; 0xA2
+      ; 0x01
+L33:
+      pushnull
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-3iq")
+   method
+    refid "_-1Ps:AnimatedFurnitureVisualizationData/instance/_-3iq"
+    param QName(PackageNamespace(""), "int")
+    param QName(PackageNamespace(""), "int")
+    param QName(PackageNamespace(""), "int")
+    param QName(PackageNamespace(""), "int")
+    param QName(PackageNamespace(""), "int")
+    param QName(PackageNamespace(""), "int")
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace("_-4uj"), "AnimationFrame")
+    body
+     maxstack 7
+     localcount 9
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           179
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 179
+      debug               1, "k", 1, 179
+      debug               1, "k", 2, 179
+      debug               1, "k", 3, 179
+      debug               1, "k", 4, 179
+      debug               1, "k", 5, 179
+      debug               1, "k", 6, 179
+      debug               1, "k", 7, 181
+      debugline           181
+      findpropstrict      QName(ProtectedNamespace("_-5EY"), "_-4pA")
+      getlocal1
+      callproperty        QName(ProtectedNamespace("_-5EY"), "_-4pA"), 1
+      getlex              QName(PackageNamespace("_-4uj"), "AnimationSizeData")
+      astypelate
+      coerce              QName(PackageNamespace("_-4uj"), "AnimationSizeData")
+      setlocal            8
+
+      debugline           182
+      getlocal            8
+      pushnull
+      ifeq                L37
+
+      debugline           183
+      getlocal            8
+      getlocal2
+      getlocal3
+      getlocal            4
+      getlocal            5
+      getlocal            6
+      getlocal            7
+      callproperty        QName(PackageNamespace(""), "_-3iq"), 6
+      returnvalue
+
+      ; 0xF0
+      ; 0xBA
+      ; 0x01
+L37:
+      pushnull
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-1Ps:AnimatedFurnitureVisualizationData/class/init"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 4
+   maxscopedepth 5
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

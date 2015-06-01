@@ -1,0 +1,33 @@
+script ; 5500
+ sinit
+  refid "_-66k:_-5ui/init"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 1
+   maxscopedepth 3
+   code
+    getlocal0
+    pushscope
+
+    debugfile           "k"
+    debugline           9
+    findpropstrict      Multiname("_-5ui", [PackageNamespace("_-66k")])
+    getlex              QName(PackageNamespace(""), "Object")
+    pushscope
+
+    getlex              QName(PackageNamespace(""), "Object")
+    newclass            "_-66k:_-5ui"
+    popscope
+    initproperty        QName(PackageNamespace("_-66k"), "_-5ui")
+
+    debugfile           "k"
+    debugline           8
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait class QName(PackageNamespace("_-66k"), "_-5ui")
+  #include "_-5ui.class.asasm"
+ end ; trait
+end ; script
