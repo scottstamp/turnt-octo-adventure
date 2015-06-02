@@ -56,10 +56,10 @@ class
     param QName(PackageNamespace("_-43b"), "_-5nc")
     returns QName(PackageNamespace(""), "Boolean")
     body
-     maxstack 2
-     localcount 2
-     initscopedepth 4
-     maxscopedepth 5
+     maxstack 4
+     localcount 4
+     initscopedepth 5
+     maxscopedepth 7
      code
       debugfile           "k"
       debugline           17
@@ -78,6 +78,12 @@ class
       getlocal1
       callproperty        QName(Namespace("_-1mg"), "readString"), 0
       initproperty        QName(PrivateNamespace("_-jG"), "_-4PF")
+
+      getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+      pushstring          "Trafficker.logIncoming"
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-jG"), "_-4PF")
+      callpropvoid        QName(PackageNamespace(""), "call"), 2
 
       debugline           20
       pushtrue
