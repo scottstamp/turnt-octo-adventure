@@ -1047,6 +1047,13 @@ L213:
       iffalse             L215
 
       debugline           237
+L214:
+      getlex QName(PackageNamespace("flash.external"), "ExternalInterface")
+      pushstring "Trafficker.logOutgoing"
+      getlocal2
+      getlocal3
+      callpropvoid QName(PackageNamespace(""), "call"), 3
+      jump L215
 L215:
       getlocal0
       getproperty         QName(PrivateNamespace("_-4J9"), "_-2Kz")
