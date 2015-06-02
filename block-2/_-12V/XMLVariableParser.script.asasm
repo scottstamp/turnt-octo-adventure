@@ -1,0 +1,33 @@
+script ; 3859
+ sinit
+  refid "_-12V:XMLVariableParser/init"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 1
+   maxscopedepth 3
+   code
+    getlocal0
+    pushscope
+
+    debugfile           "k"
+    debugline           41
+    findpropstrict      Multiname("XMLVariableParser", [PackageNamespace("_-12V")])
+    getlex              QName(PackageNamespace(""), "Object")
+    pushscope
+
+    getlex              QName(PackageNamespace(""), "Object")
+    newclass            "_-12V:XMLVariableParser"
+    popscope
+    initproperty        QName(PackageNamespace("_-12V"), "XMLVariableParser")
+
+    debugfile           "k"
+    debugline           1
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait class QName(PackageNamespace("_-12V"), "XMLVariableParser")
+  #include "XMLVariableParser.class.asasm"
+ end ; trait
+end ; script

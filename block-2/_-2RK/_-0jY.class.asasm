@@ -1,0 +1,402 @@
+class
+ refid "_-2RK:_-0jY"
+ instance QName(PackageNamespace("_-2RK"), "_-0jY")
+  extends QName(PackageNamespace("_-2RK"), "OfferView")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-6G6")
+  iinit
+   refid "_-2RK:_-0jY/instance/init"
+   param QName(PackageNamespace("_-2RK"), "_-4dN")
+   param QName(PackageNamespace("_-3q-"), "TargetedOffer")
+   param QName(PackageNamespace(""), "int")
+   body
+    maxstack 6
+    localcount 7
+    initscopedepth 5
+    maxscopedepth 6
+    code
+     debugfile           "k"
+     debugline           19
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 19
+     debug               1, "k", 1, 19
+     debug               1, "k", 2, 19
+     debug               1, "k", 3, 25
+     debug               1, "k", 4, 36
+     debug               1, "k", 5, 39
+     debugline           20
+     getlocal0
+     getlocal1
+     getlocal2
+     constructsuper      2
+
+     debugline           22
+     getlocal0
+     getlocal3
+     initproperty        QName(PrivateNamespace("_-6G6"), "_-5NM")
+
+     debugline           24
+     findproperty        QName(ProtectedNamespace("_-4JF"), "_-04A")
+     findpropstrict      QName(PackageNamespace("_-1rh"), "IWindowContainer")
+     getlex              QName(ProtectedNamespace("_-4JF"), "_-6SE")
+     getproperty         QName(PackageNamespace(""), "catalog")
+     getproperty         QName(PackageNamespace(""), "windowManager")
+     findpropstrict      QName(PackageNamespace(""), "XML")
+     getlex              QName(ProtectedNamespace("_-4JF"), "_-6SE")
+     getproperty         QName(PackageNamespace(""), "catalog")
+     getproperty         QName(PackageNamespace(""), "assets")
+     pushstring          "targeted_offer_purchase_confirmation_xml"
+     callproperty        QName(Namespace("_-6V0"), "getAssetByName"), 1
+     getproperty         QName(Namespace("_-6LB"), "content")
+     callproperty        QName(PackageNamespace(""), "XML"), 1
+     callproperty        QName(Namespace("_-110"), "buildFromXML"), 1
+     callproperty        QName(PackageNamespace("_-1rh"), "IWindowContainer"), 1
+     initproperty        QName(ProtectedNamespace("_-4JF"), "_-04A")
+
+     debugline           25
+     getlex              QName(ProtectedNamespace("_-4JF"), "_-6SE")
+     getproperty         QName(PackageNamespace(""), "catalog")
+     getlex              QName(PackageNamespace("_-5le"), "HabboCatalog")
+     astypelate
+     coerce              QName(PackageNamespace("_-5le"), "HabboCatalog")
+     setlocal            4
+
+     debugline           27
+     getlocal            4
+     pushstring          "disclaimer.credit_spending.enabled"
+     callproperty        QName(PackageNamespace(""), "getBoolean"), 1
+     iffalse             L55
+
+     debugline           28
+     getlocal0
+     pushfalse
+     callpropvoid        QName(PrivateNamespace("_-6G6"), "_-6MO"), 1
+
+     jump                L64
+
+     ; 0xF0
+     ; 0x1E
+L55:
+     getlex              QName(ProtectedNamespace("_-4JF"), "_-04A")
+     pushstring          "disclaimer"
+     callproperty        QName(Namespace("_-0zV"), "findChildByName"), 1
+     callpropvoid        QName(Namespace("_-1Dt"), "dispose"), 0
+
+     debugline           31
+     getlocal0
+     pushtrue
+     callpropvoid        QName(PrivateNamespace("_-6G6"), "_-6MO"), 1
+
+     debugline           34
+L64:
+     findpropstrict      QName(PackageNamespace("_-3yU"), "ITextWindow")
+     getlex              QName(ProtectedNamespace("_-4JF"), "_-04A")
+     pushstring          "product_name"
+     callproperty        QName(Namespace("_-0zV"), "findChildByName"), 1
+     callproperty        QName(PackageNamespace("_-3yU"), "ITextWindow"), 1
+     findpropstrict      QName(ProtectedNamespace("_-4JF"), "getLocalization")
+     getlocal2
+     getproperty         QName(PackageNamespace(""), "title")
+     callproperty        QName(ProtectedNamespace("_-4JF"), "getLocalization"), 1
+     setproperty         QName(Namespace("_-4Mp"), "text")
+
+     debugline           36
+     getlex              QName(ProtectedNamespace("_-4JF"), "_-04A")
+     pushstring          "purchase_cost_box"
+     callproperty        QName(Namespace("_-0zV"), "findChildByName"), 1
+     getlex              QName(PackageNamespace("_-1rh"), "IWindowContainer")
+     astypelate
+     coerce              QName(PackageNamespace("_-1rh"), "IWindowContainer")
+     setlocal            5
+
+     debugline           37
+     getlocal            4
+     getproperty         QName(PackageNamespace(""), "utils")
+     getlocal            5
+     getlocal2
+     getlocal3
+     callpropvoid        QName(PackageNamespace(""), "_-3cu"), 3
+
+     debugline           39
+     getlex              QName(ProtectedNamespace("_-4JF"), "_-04A")
+     pushstring          "quantity"
+     callproperty        QName(Namespace("_-0zV"), "findChildByName"), 1
+     getlex              QName(PackageNamespace("_-3yU"), "ITextWindow")
+     astypelate
+     coerce              QName(PackageNamespace("_-3yU"), "ITextWindow")
+     setlocal            6
+
+     debugline           40
+     getlocal            6
+     pushnull
+     ifeq                L122
+
+     debugline           41
+     getlocal1
+     getproperty         QName(PackageNamespace(""), "catalog")
+     getproperty         QName(PackageNamespace(""), "_-0JP")
+     convert_b
+     dup
+     iffalse             L113
+
+     pop
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-6G6"), "_-5NM")
+     pushbyte            1
+     greaterthan
+L113:
+     iffalse             L122
+
+     debugline           42
+     getlocal            6
+     pushstring          "X "
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-6G6"), "_-5NM")
+     add
+     setproperty         QName(Namespace("_-4Mp"), "text")
+
+     debugline           46
+L122:
+     getlex              QName(ProtectedNamespace("_-4JF"), "_-04A")
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-6G6"), "_-3o5")
+     setproperty         QName(Namespace("_-6Dt"), "procedure")
+
+     debugline           47
+     getlex              QName(ProtectedNamespace("_-4JF"), "_-04A")
+     callpropvoid        QName(Namespace("_-6Dt"), "center"), 0
+
+     debugline           48
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-6G6"), "_-5NM") type QName(PackageNamespace(""), "int") end
+  trait method QName(PrivateNamespace("_-6G6"), "_-6MO")
+   method
+    refid "_-2RK:_-0jY/instance/_-2RK:_-0jY/instance/_-6MO"
+    param QName(PackageNamespace(""), "Boolean")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 3
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           50
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 50
+      debug               1, "k", 1, 55
+      debugline           51
+      getlex              QName(ProtectedNamespace("_-4JF"), "_-04A")
+      pushnull
+      ifne                L14
+
+      debugline           52
+      returnvoid
+
+      ; 0xF0
+      ; 0x37
+L14:
+      getlex              QName(ProtectedNamespace("_-4JF"), "_-04A")
+      pushstring          "select_button"
+      callproperty        QName(Namespace("_-0zV"), "findChildByName"), 1
+      coerce              QName(PackageNamespace("_-1rh"), "IWindow")
+      setlocal2
+
+      debugline           56
+      getlocal2
+      pushnull
+      ifne                L27
+
+      debugline           57
+      returnvoid
+
+      ; 0xF0
+      ; 0x3C
+L27:
+      getlocal1
+      iffalse             L35
+
+      debugline           61
+      getlocal2
+      callpropvoid        QName(Namespace("_-6Dt"), "enable"), 0
+
+      jump                L38
+
+      ; 0xF0
+      ; 0x3F
+L35:
+      getlocal2
+      callpropvoid        QName(Namespace("_-6Dt"), "disable"), 0
+
+      debugline           65
+L38:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-6G6"), "_-3o5")
+   method
+    refid "_-2RK:_-0jY/instance/_-2RK:_-0jY/instance/_-3o5"
+    param QName(PackageNamespace("_-5-S"), "WindowEvent")
+    param QName(PackageNamespace("_-1rh"), "IWindow")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 4
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           67
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 67
+      debug               1, "k", 1, 67
+      debugline           68
+      getlex              QName(ProtectedNamespace("_-4JF"), "_-6SE")
+      iftrue              L12
+
+      returnvoid
+
+      ; 0xF0
+      ; 0x46
+L12:
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "type")
+      getlex              QName(PackageNamespace("_-5-S"), "WindowMouseEvent")
+      getproperty         QName(PackageNamespace(""), "DOWN")
+      ifne                L87
+
+      jump                L48
+
+L18:
+      label
+      debugline           73
+      getlocal0
+      findpropstrict      QName(PackageNamespace("_-3yU"), "ICheckBoxWindow")
+      getlocal2
+      callproperty        QName(PackageNamespace("_-3yU"), "ICheckBoxWindow"), 1
+      getproperty         QName(Namespace("_-3si"), "_-47r")
+      callpropvoid        QName(PrivateNamespace("_-6G6"), "_-6MO"), 1
+
+      debugline           74
+      jump                L87
+
+L28:
+      label
+      debugline           79
+      getlex              QName(ProtectedNamespace("_-4JF"), "_-6SE")
+      getlex              QName(ProtectedNamespace("_-4JF"), "_-MR")
+      callpropvoid        QName(PackageNamespace(""), "maximizeOffer"), 1
+
+      debugline           80
+      jump                L87
+
+L35:
+      label
+      debugline           82
+      getlex              QName(ProtectedNamespace("_-4JF"), "_-6SE")
+      getlex              QName(ProtectedNamespace("_-4JF"), "_-MR")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-6G6"), "_-5NM")
+      callpropvoid        QName(PackageNamespace(""), "purchaseTargetedOffer"), 2
+
+      debugline           83
+      jump                L87
+
+L44:
+      label
+      jump                L87
+
+      ; 0xF0
+      ; 0x47
+L48:
+      getlocal2
+      getproperty         QName(Namespace("_-6Dt"), "name")
+      setlocal3
+
+      pushstring          "spending_disclaimer"
+      debugline           72
+      getlocal3
+      ifstrictne          L57
+
+      pushbyte            0
+      jump                L83
+
+L57:
+      pushstring          "header_button_close"
+      debugline           75
+      getlocal3
+      ifstrictne          L63
+
+      pushbyte            1
+      jump                L83
+
+L63:
+      pushstring          "cancel_button"
+      debugline           78
+      getlocal3
+      ifstrictne          L69
+
+      pushbyte            2
+      jump                L83
+
+L69:
+      pushstring          "buy_button"
+      debugline           81
+      getlocal3
+      ifstrictne          L75
+
+      pushbyte            3
+      jump                L83
+
+L75:
+      jump                L82
+
+      ; 0x24
+      ; 0x04
+      ; 0x10
+      ; 0x02
+      ; 0x00
+      ; 0x00
+L82:
+      pushbyte            4
+L83:
+      kill                3
+      lookupswitch        L44, [L18, L28, L28, L35, L44]
+
+      ; 0xF0
+      ; 0x56
+L87:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-2RK:_-0jY/class/init"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 4
+   maxscopedepth 5
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

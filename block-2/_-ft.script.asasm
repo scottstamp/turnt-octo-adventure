@@ -1,0 +1,49 @@
+script ; 989
+ sinit
+  refid "_-ft/init"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 1
+   maxscopedepth 8
+   code
+    getlocal0
+    pushscope
+
+    findpropstrict      Multiname("_-ft", [PackageNamespace("")])
+    getlex              QName(PackageNamespace(""), "Object")
+    pushscope
+
+    getlex              QName(PackageNamespace("flash.events"), "EventDispatcher")
+    pushscope
+
+    getlex              QName(PackageNamespace("flash.display"), "DisplayObject")
+    pushscope
+
+    getlex              QName(PackageNamespace("flash.display"), "Bitmap")
+    pushscope
+
+    getlex              QName(PackageNamespace("mx.core"), "FlexBitmap")
+    pushscope
+
+    getlex              QName(PackageNamespace("mx.core"), "BitmapAsset")
+    pushscope
+
+    getlex              QName(PackageNamespace("mx.core"), "BitmapAsset")
+    newclass            "_-ft"
+    popscope
+    popscope
+    popscope
+    popscope
+    popscope
+    popscope
+    initproperty        QName(PackageNamespace(""), "_-ft")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait class QName(PackageNamespace(""), "_-ft")
+  #include "_-ft.class.asasm"
+ end ; trait
+end ; script

@@ -1,0 +1,37 @@
+script ; 574
+ sinit
+  refid "_-Y2/init"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 1
+   maxscopedepth 5
+   code
+    getlocal0
+    pushscope
+
+    findpropstrict      Multiname("_-Y2", [PackageNamespace("")])
+    getlex              QName(PackageNamespace(""), "Object")
+    pushscope
+
+    getlex              QName(PackageNamespace("flash.text"), "Font")
+    pushscope
+
+    getlex              QName(PackageNamespace("mx.core"), "FontAsset")
+    pushscope
+
+    getlex              QName(PackageNamespace("mx.core"), "FontAsset")
+    newclass            "_-Y2"
+    popscope
+    popscope
+    popscope
+    initproperty        QName(PackageNamespace(""), "_-Y2")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait class QName(PackageNamespace(""), "_-Y2")
+  #include "_-Y2.class.asasm"
+ end ; trait
+end ; script

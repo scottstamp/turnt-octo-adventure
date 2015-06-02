@@ -1,0 +1,136 @@
+class
+ refid "_-3x8:GameCenterButtonElementHandler"
+ instance QName(PackageNamespace("_-3x8"), "GameCenterButtonElementHandler")
+  extends QName(PackageNamespace("_-3x8"), "AbstractButtonElementHandler")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-058")
+  iinit
+   refid "_-3x8:GameCenterButtonElementHandler/instance/init"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 5
+    maxscopedepth 6
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     debugfile           "k"
+     debugline           24
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-058"), "_-55K") type QName(PackageNamespace(""), "String") end
+  trait method QName(PackageNamespace(""), "initialize") flag OVERRIDE
+   method
+    refid "_-3x8:GameCenterButtonElementHandler/instance/initialize"
+    param QName(PackageNamespace("_-4CO"), "HabboLandingView")
+    param QName(PackageNamespace("_-1rh"), "IWindow")
+    param QName(PackageNamespace(""), "Array")
+    param QName(PackageNamespace("_-293"), "GenericWidget")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 5
+     localcount 5
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           9
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 9
+      debug               1, "k", 1, 9
+      debug               1, "k", 2, 9
+      debug               1, "k", 3, 9
+      debugline           10
+      getlocal0
+      getlocal1
+      getlocal2
+      getlocal3
+      getlocal            4
+      callsupervoid       QName(PackageNamespace(""), "initialize"), 4
+      debugline           11
+      getlocal0
+      getlocal3
+      pushbyte            2
+      getproperty         MultinameL([PrivateNamespace("_-058"), PackageNamespace(""), PrivateNamespace("GameCenterButtonElementHandler.as$2466"), PackageNamespace("_-3x8"), PackageInternalNs("_-3x8"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-058"), StaticProtectedNs("_-058"), StaticProtectedNs("_-sT")])
+      initproperty        QName(PrivateNamespace("_-058"), "_-55K")
+
+      debugline           12
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-058"), "onClick") flag OVERRIDE
+   method
+    refid "_-3x8:GameCenterButtonElementHandler/instance/_-058:onClick"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           14
+      getlocal0
+      pushscope
+
+      debugline           15
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-058"), "_-55K")
+      iffalse             L16
+
+      debugline           16
+      getlex              QName(PackageNamespace(""), "landingView")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-058"), "_-55K")
+      callpropvoid        QName(PackageNamespace(""), "openGameCenterByGameName"), 1
+
+      jump                L19
+
+      ; 0xF0
+      ; 0x12
+L16:
+      getlex              QName(PackageNamespace(""), "landingView")
+      callpropvoid        QName(PackageNamespace(""), "openGameCenter"), 0
+
+      debugline           20
+L19:
+      getlex              QName(PackageNamespace(""), "landingView")
+      getproperty         QName(PackageNamespace(""), "tracking")
+      pushstring          "landingView"
+      pushstring          "click_gamecenter"
+      callpropvoid        QName(Namespace("_-fX"), "trackGoogle"), 2
+
+      debugline           21
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-3x8:GameCenterButtonElementHandler/class/init"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 4
+   maxscopedepth 5
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

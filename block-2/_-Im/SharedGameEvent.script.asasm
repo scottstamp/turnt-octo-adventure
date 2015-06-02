@@ -1,0 +1,37 @@
+script ; 5020
+ sinit
+  refid "_-Im:SharedGameEvent/init"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 1
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    debugfile           "k"
+    debugline           13
+    findpropstrict      Multiname("SharedGameEvent", [PackageNamespace("_-Im")])
+    getlex              QName(PackageNamespace(""), "Object")
+    pushscope
+
+    getlex              QName(PackageNamespace("flash.events"), "Event")
+    pushscope
+
+    getlex              QName(PackageNamespace("flash.events"), "Event")
+    newclass            "_-Im:SharedGameEvent"
+    popscope
+    popscope
+    initproperty        QName(PackageNamespace("_-Im"), "SharedGameEvent")
+
+    debugfile           "k"
+    debugline           5
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait class QName(PackageNamespace("_-Im"), "SharedGameEvent")
+  #include "SharedGameEvent.class.asasm"
+ end ; trait
+end ; script

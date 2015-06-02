@@ -1,0 +1,303 @@
+class
+ refid "_-558:_-5P1"
+ instance QName(PackageNamespace("_-558"), "_-5P1")
+  extends QName(PackageNamespace("_-558"), "_-3Hd")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-0VV")
+  iinit
+   refid "_-558:_-5P1/instance/init"
+   param QName(PackageNamespace(""), "String")
+   param QName(PackageNamespace(""), "String")
+   flag HAS_OPTIONAL
+   optional Utf8("flash")
+   optional Null()
+   body
+    maxstack 4
+    localcount 3
+    initscopedepth 6
+    maxscopedepth 7
+    code
+     debugfile           "k"
+     debugline           27
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 27
+     debug               1, "k", 1, 27
+     debugline           28
+     getlocal0
+     getlocal1
+     getlocal2
+     pushnull
+     ifeq                L17
+
+     getlocal2
+     coerce_s
+     jump                L29
+
+     ; 0xF0
+     ; 0x1D
+L17:
+     getlocal1
+     pushstring          "html5"
+     equals
+     iffalse             L26
+
+     debugline           30
+     getlocal0
+     callproperty        QName(ProtectedNamespace("_-0VV"), "_-0sl"), 0
+     coerce_s
+     jump                L29
+
+L26:
+     pushstring          ""
+     debugline           31
+     coerce_s
+L29:
+     constructsuper      2
+
+     debugline           34
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait method QName(ProtectedNamespace("_-0VV"), "_-0sl")
+   method
+    refid "_-558:_-5P1/instance/_-0VV:_-0sl"
+    returns QName(PackageNamespace(""), "String")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           36
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 37
+      pushstring          ""
+      debugline           37
+      coerce_s
+      setlocal1
+
+      pushstring          "<object codebase=\"http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0\" _dimensions_ id=\"non-linear-_id_\">"
+      debugline           38
+      coerce_s
+      setlocal1
+
+      debugline           39
+      getlocal1
+      pushstring          "<param name=\"movie\" value=\"_url_\">"
+      add
+      setlocal1
+
+      debugline           40
+      getlocal1
+      pushstring          "<param name=\"allowScriptAccess\" value=\"always\">"
+      add
+      setlocal1
+
+      debugline           41
+      getlocal1
+      pushstring          "<param name=\"FlashVars\" value=\"clickTag=_clickTag_&clickTAG=_clickTag_&clicktag=_clickTag_\"/>"
+      add
+      setlocal1
+
+      debugline           42
+      getlocal1
+      pushstring          "<embed name=\"non-linear_id_\" src=\"_url_\" _dimensions_ allowScriptAccess=\"always\" allowFullScreen=\"true\""
+      add
+      setlocal1
+
+      debugline           43
+      getlocal1
+      pushstring          " pluginspage=\"http://www.macromedia.com/go/getflashplayer\""
+      add
+      setlocal1
+
+      debugline           44
+      getlocal1
+      pushstring          " flashvars=\"clickTag=_clickTag_&clickTAG=_clickTag_&clicktag=_clickTag_\">"
+      add
+      setlocal1
+
+      debugline           45
+      getlocal1
+      pushstring          "</embed>"
+      add
+      setlocal1
+
+      debugline           46
+      getlocal1
+      pushstring          "</object>"
+      add
+      setlocal1
+
+      debugline           47
+      getlocal1
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "getContent") flag OVERRIDE
+   method
+    refid "_-558:_-5P1/instance/getContent"
+    param QName(PackageNamespace("_-0yR"), "NonLinearVideoAd")
+    returns QName(PackageNamespace(""), "String")
+    body
+     maxstack 4
+     localcount 4
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           50
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce_s
+      setlocal2
+
+      pushnull
+      coerce_s
+      setlocal3
+
+      debug               1, "k", 0, 50
+      debugline           51
+      getlocal1
+      pushnull
+      ifeq                L100
+
+      debugline           52
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "_-3HG"), 0
+      iffalse             L25
+
+      debugline           53
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "codeBlock")
+      returnvalue
+
+      ; 0xF0
+      ; 0x39
+L25:
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "url")
+      pushnull
+      ifeq                L97
+
+      debug               1, "k", 1, 58
+      debug               1, "k", 2, 59
+      debugline           58
+      findpropstrict      QName(ProtectedNamespace("_-3OF"), "replace")
+      getlex              QName(ProtectedNamespace("_-3OF"), "_-3U-")
+      pushstring          "url"
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "url")
+      getproperty         QName(PackageNamespace(""), "url")
+      callproperty        QName(ProtectedNamespace("_-3OF"), "replace"), 3
+      coerce_s
+      setlocal2
+
+      pushstring          ""
+      debugline           59
+      coerce_s
+      setlocal3
+
+      debugline           60
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "_-5J4"), 0
+      convert_b
+      dup
+      iffalse             L55
+
+      pop
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "_-4it"), 0
+      convert_b
+L55:
+      iffalse             L70
+
+      pushstring          "width=\""
+      debugline           61
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "width")
+      add
+      pushstring          "\" height=\""
+      add
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "height")
+      add
+      pushstring          "\""
+      add
+      setlocal3
+
+      debugline           63
+L70:
+      findpropstrict      QName(ProtectedNamespace("_-3OF"), "replace")
+      getlocal2
+      pushstring          "dimensions"
+      getlocal3
+      callproperty        QName(ProtectedNamespace("_-3OF"), "replace"), 3
+      coerce_s
+      setlocal2
+
+      debugline           64
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "_-4jC"), 0
+      iffalse             L91
+
+      debugline           65
+      findpropstrict      QName(ProtectedNamespace("_-3OF"), "replace")
+      getlocal2
+      pushstring          "clicktag"
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "getClickThroughURLString"), 0
+      callproperty        QName(ProtectedNamespace("_-3OF"), "replace"), 3
+      coerce_s
+      setlocal2
+
+      debugline           67
+L91:
+      getlocal2
+      returnvalue
+
+      ; 0x10
+      ; 0x05
+      ; 0x00
+      ; 0x00
+L97:
+      pushstring          ""
+      debugline           69
+      returnvalue
+
+L100:
+      pushstring          "Non-linear video ad not available"
+      debugline           72
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-558:_-5P1/class/init"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 5
+   maxscopedepth 6
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

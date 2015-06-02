@@ -1,0 +1,678 @@
+class
+ refid "_-5um:TeaserView"
+ instance QName(PackageNamespace("_-5um"), "TeaserView")
+  extends QName(PackageNamespace(""), "Object")
+  implements Multiname("_-2jC", [PackageNamespace("_-6Sg")])
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-2ba")
+  iinit
+   refid "_-5um:TeaserView/instance/init"
+   param QName(PackageNamespace("_-5um"), "_-57a")
+   body
+    maxstack 2
+    localcount 2
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     debugfile           "k"
+     debugline           34
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 34
+     debugline           34
+     getlocal0
+     constructsuper      0
+
+     debugline           35
+     getlocal0
+     getlocal1
+     initproperty        QName(PrivateNamespace("_-2ba"), "_-N3")
+
+     debugline           36
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-2ba"), "_disposed") type QName(PackageNamespace(""), "Boolean") end
+  trait slot QName(PrivateNamespace("_-2ba"), "_-N3") type QName(PackageNamespace("_-5um"), "_-57a") end
+  trait slot QName(PrivateNamespace("_-2ba"), "_-5Fk") type QName(PackageNamespace("_-1a1"), "_-0Q2") end
+  trait slot QName(PrivateNamespace("_-2ba"), "_-2zx") type QName(PackageNamespace("_-1rh"), "IWindowContainer") end
+  trait slot QName(PrivateNamespace("_-2ba"), "_-Dv") type QName(PackageNamespace("_-3yU"), "IDisplayObjectWrapper") end
+  trait slot QName(PrivateNamespace("_-2ba"), "_-6EZ") type QName(PackageNamespace(""), "Object") end
+  trait slot QName(PrivateNamespace("_-2ba"), "_-0Ao") type QName(PackageNamespace(""), "int") end
+  trait getter QName(PackageNamespace(""), "disposed")
+   method
+    refid "_-5um:TeaserView/instance/disposed/getter"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           32
+      getlocal0
+      pushscope
+
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2ba"), "_disposed")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "dispose")
+   method
+    refid "_-5um:TeaserView/instance/dispose"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           38
+      getlocal0
+      pushscope
+
+      debugline           39
+      getlocal0
+      callpropvoid        QName(PackageNamespace(""), "disable"), 0
+
+      debugline           40
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-2ba"), "_-N3")
+
+      debugline           41
+      getlocal0
+      pushtrue
+      initproperty        QName(PrivateNamespace("_-2ba"), "_disposed")
+
+      debugline           42
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "activate")
+   method
+    refid "_-5um:TeaserView/instance/activate"
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           44
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 44
+      debugline           45
+      getlocal0
+      getlocal1
+      initproperty        QName(PrivateNamespace("_-2ba"), "_-0Ao")
+
+      debugline           46
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2ba"), "_-5Fk")
+      iftrue              L17
+
+      debugline           47
+      getlocal0
+      callpropvoid        QName(PrivateNamespace("_-2ba"), "createWindow"), 0
+
+      debugline           49
+L17:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2ba"), "_-2zx")
+      callpropvoid        QName(Namespace("_-6Dt"), "invalidate"), 0
+
+      debugline           50
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2ba"), "_-2zx")
+      pushtrue
+      setproperty         QName(Namespace("_-6Dt"), "visible")
+
+      debugline           52
+      getlocal0
+      callpropvoid        QName(PrivateNamespace("_-2ba"), "_-3Sj"), 0
+
+      debugline           53
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "disable")
+   method
+    refid "_-5um:TeaserView/instance/disable"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           55
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("flash.display"), "Loader")
+      setlocal1
+
+      debugline           56
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2ba"), "_-Dv")
+      iffalse             L43
+
+      debug               1, "k", 0, 61
+      debugline           57
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2ba"), "_-6EZ")
+      iffalse             L25
+
+      debugline           58
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2ba"), "_-6EZ")
+      callpropvoid        Multiname("destroy", [PrivateNamespace("_-2ba"), PackageNamespace(""), PackageNamespace("_-5um"), PrivateNamespace("TeaserView.as$6327"), PackageInternalNs("_-5um"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-2ba"), StaticProtectedNs("_-2ba")]), 0
+
+      debugline           59
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-2ba"), "_-6EZ")
+
+      debugline           61
+L25:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2ba"), "_-Dv")
+      callproperty        QName(Namespace("_-ma"), "getDisplayObject"), 0
+      getlex              QName(PackageNamespace("flash.display"), "Loader")
+      astypelate
+      coerce              QName(PackageNamespace("flash.display"), "Loader")
+      setlocal1
+
+      debugline           62
+      getlocal1
+      iffalse             L39
+
+      debugline           63
+      getlocal1
+      callpropvoid        QName(PackageNamespace(""), "unloadAndStop"), 0
+
+      debugline           65
+L39:
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-2ba"), "_-Dv")
+
+      debugline           67
+L43:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2ba"), "_-5Fk")
+      iffalse             L55
+
+      debugline           68
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2ba"), "_-5Fk")
+      callpropvoid        QName(Namespace("_-1Dt"), "dispose"), 0
+
+      debugline           69
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-2ba"), "_-5Fk")
+
+      debugline           71
+L55:
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-2ba"), "_-2zx")
+
+      debugline           72
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-2ba"), "_-1Em")
+   method
+    refid "_-5um:TeaserView/instance/_-5um:TeaserView/_-1Em"
+    param QName(PackageNamespace("_-5-S"), "WindowMouseEvent")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 1
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           74
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 74
+      debugline           75
+      getlocal0
+      callpropvoid        QName(PackageNamespace(""), "disable"), 0
+
+      debugline           76
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-2ba"), "createWindow")
+   method
+    refid "_-5um:TeaserView/instance/_-5um:TeaserView/createWindow"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 3
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           78
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 79
+      debug               1, "k", 1, 80
+      debugline           79
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2ba"), "_-N3")
+      getproperty         QName(PackageNamespace(""), "assets")
+      getlex              QName(PrivateNamespace("_-2ba"), "_-4L-")
+      callproperty        QName(Namespace("_-6V0"), "getAssetByName"), 1
+      coerce              QName(PackageNamespace("_-1t2"), "if ")
+      setlocal1
+
+      debugline           80
+      findpropstrict      QName(PackageNamespace("_-1t2"), "XmlAsset")
+      getlocal1
+      callproperty        QName(PackageNamespace("_-1t2"), "XmlAsset"), 1
+      coerce              QName(PackageNamespace("_-1t2"), "XmlAsset")
+      setlocal2
+
+      debugline           81
+      getlocal0
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2ba"), "_-N3")
+      getproperty         QName(PackageNamespace(""), "windowManager")
+      findpropstrict      QName(PackageNamespace(""), "XML")
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "content")
+      callproperty        QName(PackageNamespace(""), "XML"), 1
+      callproperty        QName(Namespace("_-0XZ"), "buildModalDialogFromXML"), 1
+      initproperty        QName(PrivateNamespace("_-2ba"), "_-5Fk")
+
+      debugline           82
+      getlocal0
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2ba"), "_-5Fk")
+      getproperty         QName(Namespace("_-3mQ"), "_-2sH")
+      getlex              QName(PackageNamespace("_-1rh"), "IWindowContainer")
+      astypelate
+      initproperty        QName(PrivateNamespace("_-2ba"), "_-2zx")
+
+      debugline           83
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2ba"), "_-2zx")
+      pushstring          "close"
+      callproperty        QName(Namespace("_-0zV"), "findChildByTag"), 1
+      getlex              QName(PackageNamespace("_-5-S"), "WindowMouseEvent")
+      getproperty         QName(PackageNamespace(""), "CLICK")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2ba"), "_-1Em")
+      callpropvoid        QName(Namespace("_-6Dt"), "addEventListener"), 2
+
+      debugline           84
+      getlocal0
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2ba"), "_-2zx")
+      pushstring          "teaser_wrapper"
+      callproperty        QName(Namespace("_-0zV"), "findChildByName"), 1
+      getlex              QName(PackageNamespace("_-3yU"), "IDisplayObjectWrapper")
+      astypelate
+      initproperty        QName(PrivateNamespace("_-2ba"), "_-Dv")
+
+      debugline           85
+      getlocal0
+      callpropvoid        QName(PrivateNamespace("_-2ba"), "_-31x"), 0
+
+      debugline           86
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-2ba"), "_-31x")
+   method
+    refid "_-5um:TeaserView/instance/_-5um:TeaserView/_-31x"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           88
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 90
+      debugline           89
+      getlex              QName(PackageNamespace("flash.system"), "Security")
+      pushstring          "www.youtube.com"
+      callpropvoid        QName(PackageNamespace(""), "allowDomain"), 1
+
+      debugline           90
+      findpropstrict      QName(PackageNamespace("flash.display"), "Loader")
+      constructprop       QName(PackageNamespace("flash.display"), "Loader"), 0
+      coerce              QName(PackageNamespace("flash.display"), "Loader")
+      setlocal1
+
+      debugline           91
+      getlocal1
+      findpropstrict      QName(PackageNamespace("flash.net"), "URLRequest")
+      pushstring          "http://www.youtube.com/v/"
+      getlocal0
+      callproperty        QName(PrivateNamespace("_-2ba"), "_-2e5"), 0
+      add
+      pushstring          "?version=3&autoplay=1"
+      add
+      constructprop       QName(PackageNamespace("flash.net"), "URLRequest"), 1
+      callpropvoid        QName(PackageNamespace(""), "load"), 1
+
+      debugline           92
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "contentLoaderInfo")
+      getlex              QName(PackageNamespace("flash.events"), "Event")
+      getproperty         QName(PackageNamespace(""), "INIT")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2ba"), "_-5LO")
+      callpropvoid        QName(PackageNamespace(""), "addEventListener"), 2
+
+      debugline           93
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "contentLoaderInfo")
+      getlex              QName(PackageNamespace("flash.events"), "IOErrorEvent")
+      getproperty         QName(PackageNamespace(""), "IO_ERROR")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2ba"), "_-5w-")
+      callpropvoid        QName(PackageNamespace(""), "addEventListener"), 2
+
+      debugline           94
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-2ba"), "_-3Sj")
+   method
+    refid "_-5um:TeaserView/instance/_-5um:TeaserView/_-3Sj"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           96
+      getlocal0
+      pushscope
+
+      debugline           97
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2ba"), "_-N3")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2ba"), "_-0Ao")
+      pushstring          "gamecenter.teaser_title"
+      callpropvoid        QName(PackageNamespace(""), "registerParameter"), 2
+
+      debugline           98
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-2ba"), "_-5LO")
+   method
+    refid "_-5um:TeaserView/instance/_-5um:TeaserView/_-5LO"
+    param QName(PackageNamespace("flash.events"), "Event")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 4
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           100
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("flash.display"), "Loader")
+      setlocal3
+
+      debug               1, "k", 0, 100
+      debug               1, "k", 1, 101
+      debugline           101
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "target")
+      getlex              QName(PackageNamespace("flash.display"), "LoaderInfo")
+      astypelate
+      coerce              QName(PackageNamespace("flash.display"), "LoaderInfo")
+      setlocal2
+
+      debugline           102
+      getlocal2
+      iffalse             L38
+
+      debug               1, "k", 2, 103
+      debugline           103
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "loader")
+      coerce              QName(PackageNamespace("flash.display"), "Loader")
+      setlocal3
+
+      debugline           104
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2ba"), "_-Dv")
+      getlocal3
+      callpropvoid        QName(Namespace("_-ma"), "setDisplayObject"), 1
+
+      debugline           105
+      getlocal3
+      getproperty         QName(PackageNamespace(""), "content")
+      pushstring          "onReady"
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2ba"), "_-3nk")
+      callpropvoid        QName(PackageNamespace(""), "addEventListener"), 2
+
+      debugline           107
+L38:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-2ba"), "_-2e5")
+   method
+    refid "_-5um:TeaserView/instance/_-5um:TeaserView/_-2e5"
+    returns QName(PackageNamespace(""), "String")
+    body
+     maxstack 4
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           109
+      getlocal0
+      pushscope
+
+      debugline           110
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2ba"), "_-N3")
+      getproperty         QName(PackageNamespace(""), "_-1Wl")
+      pushstring          "gamecenter.teaser."
+      getlex              QName(PackageNamespace("_-5um"), "GameConfigurations")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2ba"), "_-0Ao")
+      callproperty        QName(PackageNamespace(""), "_-3ww"), 1
+      add
+      callproperty        QName(PackageNamespace(""), "getProperty"), 1
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-2ba"), "_-5w-")
+   method
+    refid "_-5um:TeaserView/instance/_-5um:TeaserView/_-5w-"
+    param QName(PackageNamespace("flash.events"), "IOErrorEvent")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 3
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           113
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce_s
+      setlocal2
+
+      debug               1, "k", 0, 113
+      debugline           114
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2ba"), "_-N3")
+      getproperty         QName(PackageNamespace(""), "_-1Wl")
+      convert_b
+      dup
+      iffalse             L21
+
+      pop
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2ba"), "_-N3")
+      getproperty         QName(PackageNamespace(""), "_-1Wl")
+      getproperty         QName(PackageNamespace(""), "context")
+      convert_b
+L21:
+      iffalse             L48
+
+      debug               1, "k", 1, 115
+      pushstring          "Failed to load teaser "
+      debugline           115
+      getlocal0
+      callproperty        QName(PrivateNamespace("_-2ba"), "_-2e5"), 0
+      add
+      pushstring          " for game "
+      add
+      getlex              QName(PackageNamespace("_-5um"), "GameConfigurations")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2ba"), "_-0Ao")
+      callproperty        QName(PackageNamespace(""), "_-3ww"), 1
+      add
+      coerce_s
+      setlocal2
+
+      debugline           116
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2ba"), "_-N3")
+      getproperty         QName(PackageNamespace(""), "_-1Wl")
+      getproperty         QName(PackageNamespace(""), "context")
+      getlocal2
+      pushfalse
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "errorID")
+      callpropvoid        QName(Namespace("_-4eL"), "error"), 3
+
+      debugline           118
+L48:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-2ba"), "_-3nk")
+   method
+    refid "_-5um:TeaserView/instance/_-5um:TeaserView/_-3nk"
+    param QName(PackageNamespace("flash.events"), "Event")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           120
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 120
+      debugline           121
+      getlocal0
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "target")
+      initproperty        QName(PrivateNamespace("_-2ba"), "_-6EZ")
+
+      debugline           122
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2ba"), "_-6EZ")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2ba"), "_-Dv")
+      getproperty         QName(Namespace("_-6Dt"), "width")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2ba"), "_-Dv")
+      getproperty         QName(Namespace("_-6Dt"), "height")
+      callpropvoid        Multiname("setSize", [PrivateNamespace("_-2ba"), PackageNamespace(""), PackageNamespace("_-5um"), PrivateNamespace("TeaserView.as$6327"), PackageInternalNs("_-5um"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-2ba"), StaticProtectedNs("_-2ba")]), 2
+
+      debugline           123
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-5um:TeaserView/class/init"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    debug               1, "k", 0, 20
+    findproperty        QName(PrivateNamespace("_-2ba"), "_-4L-")
+    pushstring          "game_center_teaser_view_xml"
+    initproperty        QName(PrivateNamespace("_-2ba"), "_-4L-")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait const QName(PrivateNamespace("_-2ba"), "_-4L-") slotid 1 type QName(PackageNamespace(""), "String") value Utf8("game_center_teaser_view_xml") end
+end ; class

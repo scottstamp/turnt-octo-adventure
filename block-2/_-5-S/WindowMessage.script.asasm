@@ -1,0 +1,37 @@
+script ; 2918
+ sinit
+  refid "_-5-S:WindowMessage/init"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 1
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    debugfile           "k"
+    debugline           11
+    findpropstrict      Multiname("WindowMessage", [PackageNamespace("_-5-S")])
+    getlex              QName(PackageNamespace(""), "Object")
+    pushscope
+
+    getlex              QName(PackageNamespace("_-5-S"), "WindowEvent")
+    pushscope
+
+    getlex              QName(PackageNamespace("_-5-S"), "WindowEvent")
+    newclass            "_-5-S:WindowMessage"
+    popscope
+    popscope
+    initproperty        QName(PackageNamespace("_-5-S"), "WindowMessage")
+
+    debugfile           "k"
+    debugline           1
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait class QName(PackageNamespace("_-5-S"), "WindowMessage")
+  #include "WindowMessage.class.asasm"
+ end ; trait
+end ; script

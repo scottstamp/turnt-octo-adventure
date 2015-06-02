@@ -1,0 +1,41 @@
+script ; 6061
+ sinit
+  refid "_-02-:Stream/init"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 1
+   maxscopedepth 5
+   code
+    getlocal0
+    pushscope
+
+    debugfile           "k"
+    debugline           36
+    findpropstrict      Multiname("Stream", [PackageNamespace("_-02-")])
+    getlex              QName(PackageNamespace(""), "Object")
+    pushscope
+
+    getlex              QName(PackageNamespace("_-56f"), "Debuggable")
+    pushscope
+
+    getlex              QName(PackageNamespace("_-56f"), "_-za")
+    pushscope
+
+    getlex              QName(PackageNamespace("_-56f"), "_-za")
+    newclass            "_-02-:Stream"
+    popscope
+    popscope
+    popscope
+    initproperty        QName(PackageNamespace("_-02-"), "Stream")
+
+    debugfile           "k"
+    debugline           19
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait class QName(PackageNamespace("_-02-"), "Stream")
+  #include "Stream.class.asasm"
+ end ; trait
+end ; script

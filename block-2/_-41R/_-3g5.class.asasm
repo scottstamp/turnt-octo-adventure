@@ -1,0 +1,977 @@
+class
+ refid "_-41R:_-3g5"
+ instance QName(PackageNamespace("_-41R"), "_-3g5")
+  extends QName(PackageNamespace(""), "Object")
+  implements Multiname("_-0Uy", [PackageNamespace("_-41R")])
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-0EY")
+  iinit
+   refid "_-41R:_-3g5/instance/init"
+   param QName(PackageNamespace("_-41R"), "OfferCenter")
+   returns QName(PackageNamespace(""), "void")
+   body
+    maxstack 4
+    localcount 2
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     debugfile           "k"
+     debugline           25
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 25
+     debugline           25
+     getlocal0
+     constructsuper      0
+
+     debugline           26
+     getlocal0
+     getlocal1
+     initproperty        QName(PrivateNamespace("_-0EY"), "_-2tY")
+
+     debugline           28
+     getlocal0
+     getproperty         QName(PackageNamespace(""), "enabled")
+     iftrue              L20
+
+     debugline           29
+     returnvoid
+
+     ; 0xF0
+     ; 0x20
+L20:
+     getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+     getlex              QName(PrivateNamespace("_-0EY"), "_-OZ")
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-0EY"), "sponsorPayLoaded")
+     callpropvoid        QName(PackageNamespace(""), "addCallback"), 2
+
+     debugline           33
+     getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+     getlex              QName(PrivateNamespace("_-0EY"), "_-5BO")
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-0EY"), "sponsorPayOnStart")
+     callpropvoid        QName(PackageNamespace(""), "addCallback"), 2
+
+     debugline           34
+     getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+     getlex              QName(PrivateNamespace("_-0EY"), "_-4YE")
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-0EY"), "sponsorPayNoOffers")
+     callpropvoid        QName(PackageNamespace(""), "addCallback"), 2
+
+     debugline           35
+     getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+     getlex              QName(PrivateNamespace("_-0EY"), "_-1fG")
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-0EY"), "sponsorPayOnClose")
+     callpropvoid        QName(PackageNamespace(""), "addCallback"), 2
+
+     debugline           36
+     getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+     getlex              QName(PrivateNamespace("_-0EY"), "_-2qu")
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-0EY"), "sponsorPayOnConversion")
+     callpropvoid        QName(PackageNamespace(""), "addCallback"), 2
+
+     debugline           38
+     getlocal0
+     findpropstrict      QName(PackageNamespace("flash.utils"), "Timer")
+     getlex              QName(PrivateNamespace("_-0EY"), "_-65L")
+     pushbyte            1
+     constructprop       QName(PackageNamespace("flash.utils"), "Timer"), 2
+     initproperty        QName(PrivateNamespace("_-0EY"), "_-3ny")
+
+     debugline           39
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-0EY"), "_-3ny")
+     getlex              QName(PackageNamespace("flash.events"), "TimerEvent")
+     getproperty         QName(PackageNamespace(""), "TIMER")
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-0EY"), "_-60u")
+     callpropvoid        QName(PackageNamespace(""), "addEventListener"), 2
+
+     debugline           40
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-0EY"), "_disposed") type QName(PackageNamespace(""), "Boolean") end
+  trait slot QName(PrivateNamespace("_-0EY"), "_-2tY") type QName(PackageNamespace("_-41R"), "OfferCenter") end
+  trait slot QName(PrivateNamespace("_-0EY"), "_-1V1") type QName(PackageNamespace(""), "Boolean") end
+  trait slot QName(PrivateNamespace("_-0EY"), "_-0OJ") type QName(PackageNamespace(""), "Boolean") end
+  trait slot QName(PrivateNamespace("_-0EY"), "_-3XA") type QName(PackageNamespace(""), "Boolean") end
+  trait slot QName(PrivateNamespace("_-0EY"), "_-3ny") type QName(PackageNamespace("flash.utils"), "Timer") end
+  trait method QName(PrivateNamespace("_-0EY"), "_-60u")
+   method
+    refid "_-41R:_-3g5/instance/_-41R:_-3g5/_-60u"
+    param QName(PackageNamespace("flash.events"), "TimerEvent")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 1
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           42
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 42
+      debugline           43
+      getlocal0
+      callpropvoid        QName(PrivateNamespace("_-0EY"), "sponsorPayOnClose"), 0
+
+      debugline           44
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "load")
+   method
+    refid "_-41R:_-3g5/instance/load"
+    returns QName(PackageNamespace(""), "void")
+    flag NEED_ACTIVATION
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 5
+     maxscopedepth 10
+     code
+      debugfile           "k"
+      debugline           46
+      getlocal0
+      pushscope
+
+      newactivation
+      dup
+      setlocal1
+
+      pushscope
+
+      debug               1, "k", 0, 46
+      debugline           47
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0EY"), "_-1V1")
+      iffalse             L20
+
+      debugline           48
+      getlocal0
+      callpropvoid        QName(PrivateNamespace("_-0EY"), "sponsorPayLoaded"), 0
+
+      debugline           49
+      returnvoid
+
+      ; 0xF0
+      ; 0x34
+L20:
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "enabled")
+      iffalse             L60
+
+      debugline           54
+L24:
+      getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+      getlex              QName(PrivateNamespace("_-0EY"), "_-0L9")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0EY"), "_-0KF")
+      callpropvoid        QName(PackageNamespace(""), "call"), 2
+
+      debugline           55
+      getlocal0
+      pushtrue
+      initproperty        QName(PrivateNamespace("_-0EY"), "_-1V1")
+
+      debugline           56
+L34:
+      jump                L60
+
+L35:
+      getlocal0
+      pushscope
+
+      getlocal1
+      pushscope
+
+      newcatch            0
+      dup
+      setlocal2
+
+      dup
+      pushscope
+
+      swap
+      setslot             1
+
+      debugline           57
+      getlex              QName(PackageNamespace(""), "_-1pV")
+      pushstring          "External interface not working. Could not call "
+      getlex              QName(PrivateNamespace("_-0EY"), "_-0L9")
+      add
+      pushstring          ": "
+      add
+      getscopeobject      2
+      getslot             1
+      add
+      callpropvoid        QName(PackageNamespace(""), "log"), 1
+
+      popscope
+      kill                2
+      debugline           60
+L60:
+      returnvoid
+     end ; code
+     try from L24 to L34 target L35 type QName(PackageNamespace(""), "Error") name QName(PackageNamespace(""), "e") end
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PrivateNamespace("_-0EY"), "_-0KF")
+   method
+    refid "_-41R:_-3g5/instance/_-41R:_-3g5/_-0KF/getter"
+    returns QName(PackageNamespace(""), "String")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           62
+      getlocal0
+      pushscope
+
+      debugline           63
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0EY"), "_-2tY")
+      getproperty         QName(PackageNamespace(""), "configuration")
+      pushstring          "offers.sponsorpay.appid"
+      callproperty        QName(Namespace("_-aX"), "getProperty"), 1
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "showVideo")
+   method
+    refid "_-41R:_-3g5/instance/showVideo"
+    returns QName(PackageNamespace(""), "void")
+    flag NEED_ACTIVATION
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 5
+     maxscopedepth 10
+     code
+      debugfile           "k"
+      debugline           66
+      getlocal0
+      pushscope
+
+      newactivation
+      dup
+      setlocal1
+
+      pushscope
+
+      debug               1, "k", 0, 66
+      debugline           67
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0EY"), "_-1V1")
+      convert_b
+      dup
+      iffalse             L19
+
+      pop
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "enabled")
+      convert_b
+L19:
+      iffalse             L66
+
+      debugline           69
+L21:
+      getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+      getlex              QName(PrivateNamespace("_-0EY"), "_-3La")
+      callpropvoid        QName(PackageNamespace(""), "call"), 1
+
+      debugline           70
+      getlocal0
+      pushtrue
+      initproperty        QName(PrivateNamespace("_-0EY"), "_-3XA")
+
+      debugline           71
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0EY"), "_-3ny")
+      callpropvoid        QName(PackageNamespace(""), "reset"), 0
+
+      debugline           72
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0EY"), "_-3ny")
+      callpropvoid        QName(PackageNamespace(""), "start"), 0
+
+      debugline           73
+      getlocal0
+      callpropvoid        QName(PrivateNamespace("_-0EY"), "_-DK"), 0
+
+      debugline           74
+L40:
+      jump                L66
+
+L41:
+      getlocal0
+      pushscope
+
+      getlocal1
+      pushscope
+
+      newcatch            0
+      dup
+      setlocal2
+
+      dup
+      pushscope
+
+      swap
+      setslot             1
+
+      debugline           75
+      getlex              QName(PackageNamespace(""), "_-1pV")
+      pushstring          "External interface not working. Could not call "
+      getlex              QName(PrivateNamespace("_-0EY"), "_-3La")
+      add
+      pushstring          ": "
+      add
+      getscopeobject      2
+      getslot             1
+      add
+      callpropvoid        QName(PackageNamespace(""), "log"), 1
+
+      popscope
+      kill                2
+      debugline           78
+L66:
+      returnvoid
+     end ; code
+     try from L21 to L40 target L41 type QName(PackageNamespace(""), "Error") name QName(PackageNamespace(""), "e") end
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-0EY"), "sponsorPayLoaded")
+   method
+    refid "_-41R:_-3g5/instance/_-41R:_-3g5/sponsorPayLoaded"
+    returns QName(PackageNamespace(""), "void")
+    flag NEED_ACTIVATION
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 5
+     maxscopedepth 10
+     code
+      debugfile           "k"
+      debugline           80
+      getlocal0
+      pushscope
+
+      newactivation
+      dup
+      setlocal1
+
+      pushscope
+
+      debug               1, "k", 0, 80
+      debugline           81
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0EY"), "_-3XA")
+      iffalse             L17
+
+      debugline           82
+      returnvoid
+
+      ; 0xF0
+      ; 0x55
+L17:
+      getlocal0
+      pushfalse
+      initproperty        QName(PrivateNamespace("_-0EY"), "_-0OJ")
+
+      debugline           87
+L21:
+      getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+      getproperty         QName(PackageNamespace(""), "available")
+      iffalse             L31
+
+      debugline           88
+      getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+      getlex              QName(PrivateNamespace("_-0EY"), "_-su")
+      callpropvoid        QName(PackageNamespace(""), "call"), 1
+
+      jump                L39
+
+      ; 0xF0
+      ; 0x5A
+L31:
+      getlex              QName(PackageNamespace(""), "_-1pV")
+      pushstring          "External interface not available. Could not call "
+      getlex              QName(PrivateNamespace("_-0EY"), "_-su")
+      add
+      pushstring          "."
+      add
+      callpropvoid        QName(PackageNamespace(""), "log"), 1
+
+      debugline           92
+L39:
+      jump                L65
+
+L40:
+      getlocal0
+      pushscope
+
+      getlocal1
+      pushscope
+
+      newcatch            0
+      dup
+      setlocal2
+
+      dup
+      pushscope
+
+      swap
+      setslot             1
+
+      debugline           93
+      getlex              QName(PackageNamespace(""), "_-1pV")
+      pushstring          "External interface not working. Could not call "
+      getlex              QName(PrivateNamespace("_-0EY"), "_-su")
+      add
+      pushstring          ": "
+      add
+      getscopeobject      2
+      getslot             1
+      add
+      callpropvoid        QName(PackageNamespace(""), "log"), 1
+
+      popscope
+      kill                2
+      debugline           95
+L65:
+      returnvoid
+     end ; code
+     try from L21 to L39 target L40 type QName(PackageNamespace(""), "Error") name QName(PackageNamespace(""), "e") end
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-0EY"), "sponsorPayOnStart")
+   method
+    refid "_-41R:_-3g5/instance/_-41R:_-3g5/sponsorPayOnStart"
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           97
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 97
+      debugline           98
+      getlocal0
+      pushtrue
+      initproperty        QName(PrivateNamespace("_-0EY"), "_-0OJ")
+
+      debugline           99
+      getlocal0
+      callpropvoid        QName(PrivateNamespace("_-0EY"), "_-DK"), 0
+
+      debugline           100
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-0EY"), "sponsorPayNoOffers")
+   method
+    refid "_-41R:_-3g5/instance/_-41R:_-3g5/sponsorPayNoOffers"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           102
+      getlocal0
+      pushscope
+
+      debugline           103
+      getlocal0
+      pushfalse
+      initproperty        QName(PrivateNamespace("_-0EY"), "_-0OJ")
+
+      debugline           104
+      getlocal0
+      callpropvoid        QName(PrivateNamespace("_-0EY"), "_-DK"), 0
+
+      debugline           105
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-0EY"), "sponsorPayOnClose")
+   method
+    refid "_-41R:_-3g5/instance/_-41R:_-3g5/sponsorPayOnClose"
+    returns QName(PackageNamespace(""), "void")
+    flag NEED_ACTIVATION
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 5
+     maxscopedepth 10
+     code
+      debugfile           "k"
+      debugline           107
+      getlocal0
+      pushscope
+
+      newactivation
+      dup
+      setlocal1
+
+      pushscope
+
+      debug               1, "k", 0, 107
+      debugline           109
+L10:
+      getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+      getproperty         QName(PackageNamespace(""), "available")
+      iffalse             L31
+
+      debugline           110
+      getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+      getlex              QName(PrivateNamespace("_-0EY"), "_-su")
+      callpropvoid        QName(PackageNamespace(""), "call"), 1
+
+      debugline           111
+      getlocal0
+      pushfalse
+      initproperty        QName(PrivateNamespace("_-0EY"), "_-3XA")
+
+      debugline           112
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0EY"), "_-3ny")
+      callpropvoid        QName(PackageNamespace(""), "stop"), 0
+
+      debugline           113
+      getlocal0
+      callpropvoid        QName(PrivateNamespace("_-0EY"), "_-DK"), 0
+
+      jump                L39
+
+      ; 0xF0
+      ; 0x73
+L31:
+      getlex              QName(PackageNamespace(""), "_-1pV")
+      pushstring          "External interface not available. Could not call "
+      getlex              QName(PrivateNamespace("_-0EY"), "_-su")
+      add
+      pushstring          "."
+      add
+      callpropvoid        QName(PackageNamespace(""), "log"), 1
+
+      debugline           117
+L39:
+      jump                L65
+
+L40:
+      getlocal0
+      pushscope
+
+      getlocal1
+      pushscope
+
+      newcatch            0
+      dup
+      setlocal2
+
+      dup
+      pushscope
+
+      swap
+      setslot             1
+
+      debugline           118
+      getlex              QName(PackageNamespace(""), "_-1pV")
+      pushstring          "External interface not working. Could not call "
+      getlex              QName(PrivateNamespace("_-0EY"), "_-su")
+      add
+      pushstring          ": "
+      add
+      getscopeobject      2
+      getslot             1
+      add
+      callpropvoid        QName(PackageNamespace(""), "log"), 1
+
+      popscope
+      kill                2
+      debugline           120
+L65:
+      returnvoid
+     end ; code
+     try from L10 to L39 target L40 type QName(PackageNamespace(""), "Error") name QName(PackageNamespace(""), "e") end
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-0EY"), "sponsorPayOnConversion")
+   method
+    refid "_-41R:_-3g5/instance/_-41R:_-3g5/sponsorPayOnConversion"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           122
+      getlocal0
+      pushscope
+
+      debugline           123
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0EY"), "_-2tY")
+      pushnull
+      ifeq                L14
+
+      debugline           124
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0EY"), "_-2tY")
+      callpropvoid        QName(PackageNamespace(""), "_-w2"), 0
+
+      debugline           126
+L14:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-0EY"), "_-DK")
+   method
+    refid "_-41R:_-3g5/instance/_-41R:_-3g5/_-DK"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           128
+      getlocal0
+      pushscope
+
+      debugline           129
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0EY"), "_-2tY")
+      pushnull
+      ifeq                L14
+
+      debugline           130
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0EY"), "_-2tY")
+      callpropvoid        QName(PackageNamespace(""), "_-DK"), 0
+
+      debugline           132
+L14:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "dispose")
+   method
+    refid "_-41R:_-3g5/instance/dispose"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           134
+      getlocal0
+      pushscope
+
+      debugline           135
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0EY"), "_disposed")
+      iffalse             L13
+
+      debugline           136
+      returnvoid
+
+      ; 0xF0
+      ; 0x8B
+      ; 0x01
+L13:
+      getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+      getproperty         QName(PackageNamespace(""), "available")
+      iffalse             L42
+
+      debugline           140
+      getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+      getlex              QName(PrivateNamespace("_-0EY"), "_-OZ")
+      pushnull
+      callpropvoid        QName(PackageNamespace(""), "addCallback"), 2
+
+      debugline           141
+      getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+      getlex              QName(PrivateNamespace("_-0EY"), "_-5BO")
+      pushnull
+      callpropvoid        QName(PackageNamespace(""), "addCallback"), 2
+
+      debugline           142
+      getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+      getlex              QName(PrivateNamespace("_-0EY"), "_-4YE")
+      pushnull
+      callpropvoid        QName(PackageNamespace(""), "addCallback"), 2
+
+      debugline           143
+      getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+      getlex              QName(PrivateNamespace("_-0EY"), "_-1fG")
+      pushnull
+      callpropvoid        QName(PackageNamespace(""), "addCallback"), 2
+
+      debugline           144
+      getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+      getlex              QName(PrivateNamespace("_-0EY"), "_-2qu")
+      pushnull
+      callpropvoid        QName(PackageNamespace(""), "addCallback"), 2
+
+      debugline           147
+L42:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0EY"), "_-3ny")
+      pushnull
+      ifeq                L63
+
+      debugline           148
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0EY"), "_-3ny")
+      getlex              QName(PackageNamespace("flash.events"), "TimerEvent")
+      getproperty         QName(PackageNamespace(""), "TIMER")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0EY"), "_-60u")
+      callpropvoid        QName(PackageNamespace(""), "removeEventListener"), 2
+
+      debugline           149
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0EY"), "_-3ny")
+      callpropvoid        QName(PackageNamespace(""), "stop"), 0
+
+      debugline           150
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-0EY"), "_-3ny")
+
+      debugline           153
+L63:
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-0EY"), "_-2tY")
+
+      debugline           154
+      getlocal0
+      pushtrue
+      initproperty        QName(PrivateNamespace("_-0EY"), "_disposed")
+
+      debugline           155
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "disposed")
+   method
+    refid "_-41R:_-3g5/instance/disposed/getter"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           157
+      getlocal0
+      pushscope
+
+      debugline           158
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0EY"), "_disposed")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "_-0S0")
+   method
+    refid "_-41R:_-3g5/instance/_-0S0/getter"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           161
+      getlocal0
+      pushscope
+
+      debugline           162
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0EY"), "_-0OJ")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "_-0gg")
+   method
+    refid "_-41R:_-3g5/instance/_-0gg/getter"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           165
+      getlocal0
+      pushscope
+
+      debugline           166
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0EY"), "_-3XA")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "enabled")
+   method
+    refid "_-41R:_-3g5/instance/enabled/getter"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           169
+      getlocal0
+      pushscope
+
+      debugline           170
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0EY"), "_-0KF")
+      pushstring          ""
+      equals
+      not
+      dup
+      iffalse             L16
+
+      pop
+      getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+      getproperty         QName(PackageNamespace(""), "available")
+      convert_b
+L16:
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-41R:_-3g5/class/init"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    debug               1, "k", 0, 7
+    findproperty        QName(PrivateNamespace("_-0EY"), "_-OZ")
+    pushstring          "sponsorPayLoaded"
+    initproperty        QName(PrivateNamespace("_-0EY"), "_-OZ")
+
+    debug               1, "k", 1, 8
+    findproperty        QName(PrivateNamespace("_-0EY"), "_-5BO")
+    pushstring          "sponsorPayOnStart"
+    initproperty        QName(PrivateNamespace("_-0EY"), "_-5BO")
+
+    debug               1, "k", 2, 9
+    findproperty        QName(PrivateNamespace("_-0EY"), "_-4YE")
+    pushstring          "sponsorPayNoOffers"
+    initproperty        QName(PrivateNamespace("_-0EY"), "_-4YE")
+
+    debug               1, "k", 3, 10
+    findproperty        QName(PrivateNamespace("_-0EY"), "_-1fG")
+    pushstring          "sponsorPayOnClose"
+    initproperty        QName(PrivateNamespace("_-0EY"), "_-1fG")
+
+    debug               1, "k", 4, 11
+    findproperty        QName(PrivateNamespace("_-0EY"), "_-2qu")
+    pushstring          "sponsorPayOnConversion"
+    initproperty        QName(PrivateNamespace("_-0EY"), "_-2qu")
+
+    debug               1, "k", 5, 12
+    findproperty        QName(PrivateNamespace("_-0EY"), "_-0L9")
+    pushstring          "SponsorPay.loadIntegration"
+    initproperty        QName(PrivateNamespace("_-0EY"), "_-0L9")
+
+    debug               1, "k", 6, 13
+    findproperty        QName(PrivateNamespace("_-0EY"), "_-3La")
+    pushstring          "SponsorPay.showVideo"
+    initproperty        QName(PrivateNamespace("_-0EY"), "_-3La")
+
+    debug               1, "k", 7, 14
+    findproperty        QName(PrivateNamespace("_-0EY"), "_-su")
+    pushstring          "SponsorPay.backgroundLoad"
+    initproperty        QName(PrivateNamespace("_-0EY"), "_-su")
+
+    debug               1, "k", 8, 23
+    findproperty        QName(PrivateNamespace("_-0EY"), "_-65L")
+    pushint             150000
+    initproperty        QName(PrivateNamespace("_-0EY"), "_-65L")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait const QName(PrivateNamespace("_-0EY"), "_-OZ") slotid 1 type QName(PackageNamespace(""), "String") value Utf8("sponsorPayLoaded") end
+ trait const QName(PrivateNamespace("_-0EY"), "_-5BO") slotid 2 type QName(PackageNamespace(""), "String") value Utf8("sponsorPayOnStart") end
+ trait const QName(PrivateNamespace("_-0EY"), "_-4YE") slotid 3 type QName(PackageNamespace(""), "String") value Utf8("sponsorPayNoOffers") end
+ trait const QName(PrivateNamespace("_-0EY"), "_-1fG") slotid 4 type QName(PackageNamespace(""), "String") value Utf8("sponsorPayOnClose") end
+ trait const QName(PrivateNamespace("_-0EY"), "_-2qu") slotid 5 type QName(PackageNamespace(""), "String") value Utf8("sponsorPayOnConversion") end
+ trait const QName(PrivateNamespace("_-0EY"), "_-0L9") slotid 6 type QName(PackageNamespace(""), "String") value Utf8("SponsorPay.loadIntegration") end
+ trait const QName(PrivateNamespace("_-0EY"), "_-3La") slotid 7 type QName(PackageNamespace(""), "String") value Utf8("SponsorPay.showVideo") end
+ trait const QName(PrivateNamespace("_-0EY"), "_-su") slotid 8 type QName(PackageNamespace(""), "String") value Utf8("SponsorPay.backgroundLoad") end
+ trait const QName(PrivateNamespace("_-0EY"), "_-65L") slotid 9 type QName(PackageNamespace(""), "int") value Integer(150000) end
+end ; class

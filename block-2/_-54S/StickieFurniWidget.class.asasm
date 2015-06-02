@@ -1,0 +1,1474 @@
+class
+ refid "_-54S:StickieFurniWidget"
+ instance QName(PackageNamespace("_-54S"), "StickieFurniWidget")
+  extends QName(PackageNamespace("_-05P"), "_-17P")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-01u")
+  iinit
+   refid "_-54S:StickieFurniWidget/instance/init"
+   param QName(PackageNamespace("_-jx"), "_-2Sk")
+   param QName(PackageNamespace("_-6AR"), "_-6Ja")
+   param QName(PackageNamespace("_-1t2"), "_-1Xk")
+   flag HAS_OPTIONAL
+   optional Null()
+   body
+    maxstack 4
+    localcount 4
+    initscopedepth 5
+    maxscopedepth 6
+    code
+     debugfile           "k"
+     debugline           53
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 53
+     debug               1, "k", 1, 53
+     debug               1, "k", 2, 53
+     debugline           55
+     getlocal0
+     getlocal1
+     getlocal2
+     getlocal3
+     constructsuper      3
+
+     debugline           56
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-01u"), "_-04A") type QName(PackageNamespace("_-1rh"), "IWindowContainer") end
+  trait slot QName(ProtectedNamespace("_-01u"), "_-0ga") type QName(PackageNamespace(""), "int") value Integer(-1) end
+  trait slot QName(ProtectedNamespace("_-01u"), "_-5A2") type QName(PackageNamespace(""), "String") end
+  trait slot QName(ProtectedNamespace("_-01u"), "_text") type QName(PackageNamespace(""), "String") end
+  trait slot QName(ProtectedNamespace("_-01u"), "_-4KK") type QName(PackageNamespace(""), "String") end
+  trait slot QName(ProtectedNamespace("_-01u"), "_-6SE") type QName(PackageNamespace(""), "Boolean") end
+  trait slot QName(PrivateNamespace("_-01u"), "_-1SP") type QName(PackageNamespace("flash.display"), "BitmapData") end
+  trait slot QName(ProtectedNamespace("_-01u"), "_-4rn") type QName(PackageNamespace(""), "String") value Utf8("stickieui_container") end
+  trait getter QName(ProtectedNamespace("_-01u"), "window")
+   method
+    refid "_-54S:StickieFurniWidget/instance/_-01u:window/getter"
+    returns QName(PackageNamespace("_-1rh"), "IWindowContainer")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           45
+      getlocal0
+      pushscope
+
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-01u"), "_-04A")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "dispose") flag OVERRIDE
+   method
+    refid "_-54S:StickieFurniWidget/instance/dispose"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           61
+      getlocal0
+      pushscope
+
+      debugline           62
+      getlex              QName(PackageNamespace(""), "disposed")
+      iffalse             L11
+
+      debugline           63
+      returnvoid
+
+      ; 0xF0
+      ; 0x41
+L11:
+      getlocal0
+      callpropvoid        QName(ProtectedNamespace("_-01u"), "_-66l"), 0
+
+      debugline           66
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-01u"), "_-1SP")
+      iffalse             L21
+
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-01u"), "_-1SP")
+      callpropvoid        QName(PackageNamespace(""), "dispose"), 0
+
+      debugline           67
+L21:
+      getlocal0
+      callsupervoid       QName(PackageNamespace(""), "dispose"), 0
+      debugline           68
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "registerUpdateEvents") flag OVERRIDE
+   method
+    refid "_-54S:StickieFurniWidget/instance/registerUpdateEvents"
+    param QName(PackageNamespace("flash.events"), "IEventDispatcher")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           74
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 74
+      debugline           75
+      getlocal1
+      pushnull
+      ifne                L12
+
+      returnvoid
+
+      ; 0xF0
+      ; 0x4C
+L12:
+      getlocal1
+      getlex              QName(PackageNamespace("_-0bw"), "_-2rv")
+      getproperty         QName(PackageNamespace(""), "_-3qC")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-01u"), "onObjectUpdate")
+      callpropvoid        QName(Namespace("flash.events:IEventDispatcher"), "addEventListener"), 2
+
+      debugline           79
+      getlocal0
+      getlocal1
+      callsupervoid       QName(PackageNamespace(""), "registerUpdateEvents"), 1
+      debugline           80
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "unregisterUpdateEvents") flag OVERRIDE
+   method
+    refid "_-54S:StickieFurniWidget/instance/unregisterUpdateEvents"
+    param QName(PackageNamespace("flash.events"), "IEventDispatcher")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           86
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 86
+      debugline           87
+      getlocal1
+      pushnull
+      ifne                L12
+
+      returnvoid
+
+      ; 0xF0
+      ; 0x58
+L12:
+      getlocal1
+      getlex              QName(PackageNamespace("_-0bw"), "_-2rv")
+      getproperty         QName(PackageNamespace(""), "_-3qC")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-01u"), "onObjectUpdate")
+      callpropvoid        QName(Namespace("flash.events:IEventDispatcher"), "removeEventListener"), 2
+
+      debugline           89
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-01u"), "onObjectUpdate")
+   method
+    refid "_-54S:StickieFurniWidget/instance/_-01u:onObjectUpdate"
+    param QName(PackageNamespace("_-0bw"), "_-2rv")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           95
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 95
+      debugline           96
+      getlocal0
+      pushfalse
+      callpropvoid        QName(ProtectedNamespace("_-01u"), "_-66l"), 1
+
+      debugline           98
+      getlocal0
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "_-6ST")
+      initproperty        QName(ProtectedNamespace("_-01u"), "_-0ga")
+
+      debugline           99
+      getlocal0
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "_-5Wi")
+      initproperty        QName(ProtectedNamespace("_-01u"), "_-5A2")
+
+      debugline           100
+      getlocal0
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "text")
+      initproperty        QName(ProtectedNamespace("_-01u"), "_text")
+
+      debugline           101
+      getlocal0
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "_-6QD")
+      initproperty        QName(ProtectedNamespace("_-01u"), "_-4KK")
+
+      debugline           102
+      getlocal0
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "controller")
+      initproperty        QName(ProtectedNamespace("_-01u"), "_-6SE")
+
+      debugline           104
+      getlocal0
+      callpropvoid        QName(ProtectedNamespace("_-01u"), "_-08-"), 0
+
+      debugline           105
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-01u"), "_-08-")
+   method
+    refid "_-54S:StickieFurniWidget/instance/_-01u:_-08-"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 12
+     localcount 8
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           111
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-3yU"), "ITextFieldWindow")
+      setlocal3
+
+      pushnull
+      coerce              QName(PackageNamespace("_-1t2"), "BitmapDataAsset")
+      setlocal            4
+
+      pushnull
+      coerce              QName(PackageNamespace("flash.display"), "BitmapData")
+      setlocal            5
+
+      pushnull
+      coerce              QName(PackageNamespace("_-3yU"), "IBitmapWrapperWindow")
+      setlocal            6
+
+      pushnull
+      coerce_s
+      setlocal            7
+
+      debug               1, "k", 0, 114
+      debug               1, "k", 1, 117
+      debug               1, "k", 2, 139
+      debug               1, "k", 3, 146
+      debug               1, "k", 4, 147
+      debug               1, "k", 5, 148
+      debugline           112
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-01u"), "_-0ga")
+      pushbyte            -1
+      ifne                L33
+
+      returnvoid
+
+      ; 0xF0
+      ; 0x72
+L33:
+      getlex              QName(PackageNamespace(""), "assets")
+      pushstring          "stickie"
+      callproperty        QName(Namespace("_-6V0"), "getAssetByName"), 1
+      coerce              QName(PackageNamespace("_-1t2"), "if ")
+      setlocal1
+
+      debugline           115
+      getlocal1
+      pushnull
+      ifne                L45
+
+      returnvoid
+
+      ; 0xF0
+      ; 0x75
+L45:
+      findpropstrict      QName(PackageNamespace("_-1t2"), "XmlAsset")
+      getlocal1
+      callproperty        QName(PackageNamespace("_-1t2"), "XmlAsset"), 1
+      coerce              QName(PackageNamespace("_-1t2"), "XmlAsset")
+      setlocal2
+
+      debugline           118
+      getlocal2
+      pushnull
+      ifne                L57
+
+      returnvoid
+
+      ; 0xF0
+      ; 0x78
+L57:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-01u"), "_-04A")
+      pushnull
+      ifne                L105
+
+      debugline           121
+      getlocal0
+      getlex              QName(PackageNamespace(""), "windowManager")
+      debugline           122
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-01u"), "_-4rn")
+      pushstring          ""
+      debugline           124
+      getlex              QName(PackageNamespace("_-51B"), "_-2K6")
+      getproperty         QName(PackageNamespace(""), "_-00P")
+      debugline           125
+      getlex              QName(PackageNamespace("_-51B"), "_-4Lo")
+      getproperty         QName(PackageNamespace(""), "DEFAULT")
+      debugline           126
+      getlex              QName(PackageNamespace("_-51B"), "_-07w")
+      getproperty         QName(PackageNamespace(""), "_-26Z")
+      debugline           127
+      getlex              QName(PackageNamespace("_-51B"), "_-07w")
+      getproperty         QName(PackageNamespace(""), "_-J9")
+      bitor
+      debugline           128
+      findpropstrict      QName(PackageNamespace("flash.geom"), "Rectangle")
+      getlex              QName(PrivateNamespace("_-01u"), "_-0Wg")
+      getlex              QName(PrivateNamespace("_-01u"), "_-5oy")
+      pushbyte            2
+      dup
+      constructprop       QName(PackageNamespace("flash.geom"), "Rectangle"), 4
+      debugline           129
+      pushnull
+      debugline           130
+      pushbyte            0
+      callproperty        QName(Namespace("_-0XZ"), "createWindow"), 8
+      getlex              QName(PackageNamespace("_-1rh"), "IWindowContainer")
+      astypelate
+      initproperty        QName(PrivateNamespace("_-01u"), "_-04A")
+
+      debugline           132
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-01u"), "_-04A")
+      findpropstrict      QName(PackageNamespace(""), "XML")
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "content")
+      callproperty        QName(PackageNamespace(""), "XML"), 1
+      callpropvoid        QName(Namespace("_-6Dt"), "buildFromXML"), 1
+
+      debugline           140
+L105:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-01u"), "_-04A")
+      pushstring          "text"
+      callproperty        QName(Namespace("_-0zV"), "findChildByName"), 1
+      getlex              QName(PackageNamespace("_-3yU"), "ITextFieldWindow")
+      astypelate
+      coerce              QName(PackageNamespace("_-3yU"), "ITextFieldWindow")
+      setlocal3
+
+      debugline           141
+      getlocal3
+      pushnull
+      ifeq                L130
+
+      debugline           142
+      getlocal3
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-01u"), "_text")
+      setproperty         QName(Namespace("_-4Mp"), "text")
+
+      debugline           143
+      getlocal3
+      getlex              QName(PackageNamespace("_-5-S"), "WindowEvent")
+      getproperty         QName(PackageNamespace(""), "_-01S")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-01u"), "_-5zx")
+      callpropvoid        QName(Namespace("_-6Dt"), "addEventListener"), 2
+
+      debugline           150
+L130:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-01u"), "_-04A")
+      pushstring          "bg"
+      callproperty        QName(Namespace("_-0zV"), "findChildByTag"), 1
+      getlex              QName(PackageNamespace("_-3yU"), "IBitmapWrapperWindow")
+      astypelate
+      coerce              QName(PackageNamespace("_-3yU"), "IBitmapWrapperWindow")
+      setlocal            6
+
+      debugline           151
+      getlocal            6
+      pushnull
+      ifeq                L231
+
+      debug               1, "k", 6, 152
+      debugline           152
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-01u"), "_-5A2")
+      pushstring          "post_it"
+      pushstring          "stickie"
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "replace"), 2
+      coerce_s
+      setlocal            7
+
+      debugline           153
+      getlex              QName(PackageNamespace(""), "assets")
+      getlocal            7
+      callproperty        QName(Namespace("_-6V0"), "hasAsset"), 1
+      convert_b
+      dup
+      iffalse             L164
+
+      pop
+      getlex              QName(PackageNamespace(""), "assets")
+      getlocal            7
+      callproperty        QName(Namespace("_-6V0"), "getAssetByName"), 1
+      getlex              QName(PackageNamespace("_-1t2"), "BitmapDataAsset")
+      istypelate
+L164:
+      iffalse             L177
+
+      debugline           154
+      getlex              QName(PackageNamespace(""), "assets")
+      getlocal            7
+      callproperty        QName(Namespace("_-6V0"), "getAssetByName"), 1
+      getlex              QName(PackageNamespace("_-1t2"), "BitmapDataAsset")
+      astypelate
+      coerce              QName(PackageNamespace("_-1t2"), "BitmapDataAsset")
+      setlocal            4
+
+      jump                L194
+
+      ; 0xF0
+      ; 0x9F
+      ; 0x01
+L177:
+      getlex              QName(PackageNamespace(""), "assets")
+      pushstring          "stickie_blanco"
+      callproperty        QName(Namespace("_-6V0"), "getAssetByName"), 1
+      getlex              QName(PackageNamespace("_-1t2"), "BitmapDataAsset")
+      astypelate
+      coerce              QName(PackageNamespace("_-1t2"), "BitmapDataAsset")
+      setlocal            4
+
+      debugline           160
+      getlocal            6
+      findpropstrict      QName(PackageNamespace(""), "uint")
+      pushstring          "0xFF"
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-01u"), "_-4KK")
+      add
+      callproperty        QName(PackageNamespace(""), "uint"), 1
+      setproperty         QName(Namespace("_-6Dt"), "color")
+
+      debugline           163
+L194:
+      getlocal            4
+      getproperty         QName(PackageNamespace(""), "content")
+      getlex              QName(PackageNamespace("flash.display"), "BitmapData")
+      astypelate
+      coerce              QName(PackageNamespace("flash.display"), "BitmapData")
+      setlocal            5
+
+      debugline           164
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-01u"), "_-1SP")
+      iffalse             L209
+
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-01u"), "_-1SP")
+      coerce              QName(PackageNamespace("flash.display"), "BitmapData")
+      setlocal            5
+
+      debugline           166
+L209:
+      getlocal            6
+      findpropstrict      QName(PackageNamespace("flash.display"), "BitmapData")
+      getlocal            6
+      getproperty         QName(Namespace("_-6Dt"), "width")
+      getlocal            6
+      getproperty         QName(Namespace("_-6Dt"), "height")
+      pushtrue
+      pushbyte            0
+      constructprop       QName(PackageNamespace("flash.display"), "BitmapData"), 4
+      setproperty         QName(Namespace("_-E9"), "bitmap")
+
+      debugline           167
+      getlocal            6
+      getproperty         QName(Namespace("_-E9"), "bitmap")
+      getlocal            5
+      getlocal            5
+      getproperty         QName(PackageNamespace(""), "rect")
+      findpropstrict      QName(PackageNamespace("flash.geom"), "Point")
+      pushbyte            0
+      dup
+      constructprop       QName(PackageNamespace("flash.geom"), "Point"), 2
+      callpropvoid        QName(PackageNamespace(""), "copyPixels"), 3
+
+      debugline           170
+L231:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-01u"), "_-04A")
+      pushstring          "close_button"
+      callproperty        QName(Namespace("_-0zV"), "findChildByTag"), 1
+      getlex              QName(PackageNamespace("_-3yU"), "IBitmapWrapperWindow")
+      astypelate
+      coerce              QName(PackageNamespace("_-3yU"), "IBitmapWrapperWindow")
+      setlocal            6
+
+      debugline           171
+      getlocal            6
+      pushnull
+      ifeq                L288
+
+      debugline           172
+      getlex              QName(PackageNamespace(""), "assets")
+      pushstring          "stickie_close"
+      callproperty        QName(Namespace("_-6V0"), "getAssetByName"), 1
+      getlex              QName(PackageNamespace("_-1t2"), "BitmapDataAsset")
+      astypelate
+      coerce              QName(PackageNamespace("_-1t2"), "BitmapDataAsset")
+      setlocal            4
+
+      debugline           173
+      getlocal            4
+      getproperty         QName(PackageNamespace(""), "content")
+      getlex              QName(PackageNamespace("flash.display"), "BitmapData")
+      astypelate
+      coerce              QName(PackageNamespace("flash.display"), "BitmapData")
+      setlocal            5
+
+      debugline           174
+      getlocal            6
+      findpropstrict      QName(PackageNamespace("flash.display"), "BitmapData")
+      getlocal            6
+      getproperty         QName(Namespace("_-6Dt"), "width")
+      getlocal            6
+      getproperty         QName(Namespace("_-6Dt"), "height")
+      pushtrue
+      pushbyte            0
+      constructprop       QName(PackageNamespace("flash.display"), "BitmapData"), 4
+      setproperty         QName(Namespace("_-E9"), "bitmap")
+
+      debugline           175
+      getlocal            6
+      getproperty         QName(Namespace("_-E9"), "bitmap")
+      getlocal            5
+      getlocal            5
+      getproperty         QName(PackageNamespace(""), "rect")
+      findpropstrict      QName(PackageNamespace("flash.geom"), "Point")
+      pushbyte            0
+      dup
+      constructprop       QName(PackageNamespace("flash.geom"), "Point"), 2
+      callpropvoid        QName(PackageNamespace(""), "copyPixels"), 3
+
+      debugline           177
+      getlocal            6
+      getlex              QName(PackageNamespace("_-5-S"), "WindowMouseEvent")
+      getproperty         QName(PackageNamespace(""), "CLICK")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-01u"), "_-59U")
+      callpropvoid        QName(Namespace("_-6Dt"), "addEventListener"), 2
+
+      debugline           180
+L288:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-01u"), "_-04A")
+      pushstring          "delete_button"
+      callproperty        QName(Namespace("_-0zV"), "findChildByTag"), 1
+      getlex              QName(PackageNamespace("_-3yU"), "IBitmapWrapperWindow")
+      astypelate
+      coerce              QName(PackageNamespace("_-3yU"), "IBitmapWrapperWindow")
+      setlocal            6
+
+      debugline           181
+      getlocal            6
+      pushnull
+      equals
+      not
+      dup
+      iffalse             L307
+
+      pop
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-01u"), "_-6SE")
+      convert_b
+L307:
+      iffalse             L353
+
+      debugline           182
+      getlex              QName(PackageNamespace(""), "assets")
+      pushstring          "stickie_remove"
+      callproperty        QName(Namespace("_-6V0"), "getAssetByName"), 1
+      getlex              QName(PackageNamespace("_-1t2"), "BitmapDataAsset")
+      astypelate
+      coerce              QName(PackageNamespace("_-1t2"), "BitmapDataAsset")
+      setlocal            4
+
+      debugline           183
+      getlocal            4
+      getproperty         QName(PackageNamespace(""), "content")
+      getlex              QName(PackageNamespace("flash.display"), "BitmapData")
+      astypelate
+      coerce              QName(PackageNamespace("flash.display"), "BitmapData")
+      setlocal            5
+
+      debugline           184
+      getlocal            6
+      findpropstrict      QName(PackageNamespace("flash.display"), "BitmapData")
+      getlocal            6
+      getproperty         QName(Namespace("_-6Dt"), "width")
+      getlocal            6
+      getproperty         QName(Namespace("_-6Dt"), "height")
+      pushtrue
+      pushbyte            0
+      constructprop       QName(PackageNamespace("flash.display"), "BitmapData"), 4
+      setproperty         QName(Namespace("_-E9"), "bitmap")
+
+      debugline           185
+      getlocal            6
+      getproperty         QName(Namespace("_-E9"), "bitmap")
+      getlocal            5
+      getlocal            5
+      getproperty         QName(PackageNamespace(""), "rect")
+      findpropstrict      QName(PackageNamespace("flash.geom"), "Point")
+      pushbyte            0
+      dup
+      constructprop       QName(PackageNamespace("flash.geom"), "Point"), 2
+      callpropvoid        QName(PackageNamespace(""), "copyPixels"), 3
+
+      debugline           187
+      getlocal            6
+      getlex              QName(PackageNamespace("_-5-S"), "WindowMouseEvent")
+      getproperty         QName(PackageNamespace(""), "CLICK")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-01u"), "_-59U")
+      callpropvoid        QName(Namespace("_-6Dt"), "addEventListener"), 2
+
+      debugline           191
+L353:
+      getlocal0
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-01u"), "_-6SE")
+      convert_b
+      dup
+      iffalse             L364
+
+      pop
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-01u"), "_-5A2")
+      pushstring          "post_it"
+      equals
+L364:
+      callpropvoid        QName(PrivateNamespace("_-01u"), "_-3Or"), 1
+
+      debugline           192
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-01u"), "_-66l")
+   method
+    refid "_-54S:StickieFurniWidget/instance/_-01u:_-66l"
+    param QName(PackageNamespace(""), "Boolean")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_OPTIONAL
+    optional True()
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           198
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 198
+      debugline           200
+      getlocal1
+      iffalse             L12
+
+      debugline           201
+      getlocal0
+      callpropvoid        QName(ProtectedNamespace("_-01u"), "sendUpdate"), 0
+
+      debugline           204
+L12:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-01u"), "_-04A")
+      pushnull
+      ifeq                L25
+
+      debugline           205
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-01u"), "_-04A")
+      callpropvoid        QName(Namespace("_-1Dt"), "dispose"), 0
+
+      debugline           206
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-01u"), "_-04A")
+
+      debugline           209
+L25:
+      getlocal0
+      pushbyte            -1
+      initproperty        QName(ProtectedNamespace("_-01u"), "_-0ga")
+
+      debugline           210
+      getlocal0
+      pushnull
+      initproperty        QName(ProtectedNamespace("_-01u"), "_text")
+
+      debugline           211
+      getlocal0
+      pushfalse
+      initproperty        QName(ProtectedNamespace("_-01u"), "_-6SE")
+
+      debugline           212
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-01u"), "_-3Or")
+   method
+    refid "_-54S:StickieFurniWidget/instance/_-54S:StickieFurniWidget/_-3Or"
+    param QName(PackageNamespace(""), "Boolean")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 5
+     localcount 5
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           218
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-1rh"), "IWindow")
+      setlocal2
+
+      debug               1, "k", 0, 218
+      debug               1, "k", 1, 220
+      debug               1, "k", 2, 223
+      debug               1, "k", 3, 224
+      debugline           223
+      findpropstrict      QName(PackageNamespace(""), "Array")
+      pushstring          "blue"
+      pushstring          "purple"
+      pushstring          "green"
+      pushstring          "yellow"
+      constructprop       QName(PackageNamespace(""), "Array"), 4
+      coerce              QName(PackageNamespace(""), "Array")
+      setlocal3
+
+      debugline           224
+      pushbyte            0
+      setlocal            4
+
+      jump                L61
+
+L24:
+      label
+      debugline           225
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-01u"), "_-04A")
+      getlocal3
+      getlocal            4
+      getproperty         MultinameL([PrivateNamespace("_-01u"), PackageNamespace(""), ProtectedNamespace("_-01u"), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("StickieFurniWidget.as$4587"), PackageNamespace("_-54S"), PackageInternalNs("_-54S"), StaticProtectedNs("_-01u"), StaticProtectedNs("_-15E")])
+      callproperty        QName(Namespace("_-0zV"), "findChildByName"), 1
+      coerce              QName(PackageNamespace("_-1rh"), "IWindow")
+      setlocal2
+
+      debugline           226
+      getlocal2
+      pushnull
+      ifeq                L60
+
+      debugline           227
+      getlocal1
+      iffalse             L56
+
+      debugline           228
+      getlocal2
+      pushtrue
+      setproperty         QName(Namespace("_-6Dt"), "visible")
+
+      debugline           229
+      getlocal2
+      getlex              QName(PackageNamespace("_-5-S"), "WindowMouseEvent")
+      getproperty         QName(PackageNamespace(""), "CLICK")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-01u"), "_-59U")
+      callpropvoid        QName(Namespace("_-6Dt"), "addEventListener"), 2
+
+      jump                L60
+
+      ; 0xF0
+      ; 0xE7
+      ; 0x01
+L56:
+      getlocal2
+      pushfalse
+      setproperty         QName(Namespace("_-6Dt"), "visible")
+
+      debugline           224
+L60:
+      inclocal_i          4
+L61:
+      getlocal            4
+      getlocal3
+      getproperty         QName(PackageNamespace(""), "length")
+      ifle                L24
+
+      debugline           235
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-01u"), "_-2rV")
+   method
+    refid "_-54S:StickieFurniWidget/instance/_-01u:_-2rV"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           242
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 244
+      debugline           244
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-01u"), "_-04A")
+      pushstring          "text"
+      callproperty        QName(Namespace("_-0zV"), "findChildByName"), 1
+      getlex              QName(PackageNamespace("_-3yU"), "ITextFieldWindow")
+      astypelate
+      coerce              QName(PackageNamespace("_-3yU"), "ITextFieldWindow")
+      setlocal1
+
+      debugline           245
+      getlocal1
+      pushnull
+      ifne                L23
+
+      pushfalse
+      returnvalue
+
+      ; 0xF0
+      ; 0xF6
+      ; 0x01
+L23:
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-01u"), "_text")
+      getlocal1
+      getproperty         QName(Namespace("_-4Mp"), "text")
+      ifne                L33
+
+      pushfalse
+      returnvalue
+
+      ; 0xF0
+      ; 0xF9
+      ; 0x01
+L33:
+      getlocal0
+      getlocal1
+      getproperty         QName(Namespace("_-4Mp"), "text")
+      initproperty        QName(ProtectedNamespace("_-01u"), "_text")
+
+      debugline           250
+      pushtrue
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-01u"), "sendUpdate")
+   method
+    refid "_-54S:StickieFurniWidget/instance/_-01u:sendUpdate"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 5
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           256
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-6Vs"), "_-4Ut")
+      setlocal1
+
+      debugline           257
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-01u"), "_-0ga")
+      pushbyte            -1
+      ifne                L16
+
+      returnvoid
+
+      ; 0xF0
+      ; 0x83
+      ; 0x02
+L16:
+      getlocal0
+      callproperty        QName(ProtectedNamespace("_-01u"), "_-2rV"), 0
+      iftrue              L23
+
+      returnvoid
+
+      ; 0xF0
+      ; 0x85
+      ; 0x02
+L23:
+      getlex              QName(PackageNamespace(""), "messageListener")
+      pushnull
+      ifeq                L45
+
+      debug               1, "k", 0, 263
+      debugline           263
+      findpropstrict      QName(PackageNamespace("_-6Vs"), "_-4Ut")
+      getlex              QName(PackageNamespace("_-6Vs"), "_-4Ut")
+      getproperty         QName(PackageNamespace(""), "_-Do")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-01u"), "_-0ga")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-01u"), "_text")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-01u"), "_-4KK")
+      constructprop       QName(PackageNamespace("_-6Vs"), "_-4Ut"), 4
+      coerce              QName(PackageNamespace("_-6Vs"), "_-4Ut")
+      setlocal1
+
+      debugline           264
+      getlex              QName(PackageNamespace(""), "messageListener")
+      getlocal1
+      callpropvoid        QName(Namespace("_-22v"), "processWidgetMessage"), 1
+
+      debugline           266
+L45:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-01u"), "sendSetColor")
+   method
+    refid "_-54S:StickieFurniWidget/instance/_-01u:sendSetColor"
+    param QName(PackageNamespace(""), "uint")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 5
+     localcount 4
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           272
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-6Vs"), "_-4Ut")
+      setlocal3
+
+      debug               1, "k", 0, 272
+      debug               1, "k", 1, 279
+      debugline           273
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-01u"), "_-0ga")
+      pushbyte            -1
+      ifne                L18
+
+      returnvoid
+
+      ; 0xF0
+      ; 0x94
+      ; 0x02
+L18:
+      getlocal0
+      callpropvoid        QName(ProtectedNamespace("_-01u"), "_-2rV"), 0
+
+      debugline           279
+      getlocal1
+      pushbyte            16
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "toString"), 1
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "toUpperCase"), 0
+      coerce_s
+      setlocal2
+
+      debugline           280
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "length")
+      pushbyte            6
+      ifngt               L44
+
+      debugline           281
+      getlocal2
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "length")
+      pushbyte            6
+      subtract
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "length")
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "slice"), 2
+      coerce_s
+      setlocal2
+
+      debugline           284
+L44:
+      getlocal2
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-01u"), "_-4KK")
+      ifne                L52
+
+      returnvoid
+
+      ; 0xF0
+      ; 0x9D
+      ; 0x02
+L52:
+      getlocal0
+      getlocal2
+      initproperty        QName(ProtectedNamespace("_-01u"), "_-4KK")
+
+      debugline           287
+      getlex              QName(PackageNamespace(""), "messageListener")
+      pushnull
+      ifeq                L78
+
+      debug               1, "k", 2, 289
+      debugline           289
+      findpropstrict      QName(PackageNamespace("_-6Vs"), "_-4Ut")
+      getlex              QName(PackageNamespace("_-6Vs"), "_-4Ut")
+      getproperty         QName(PackageNamespace(""), "_-Do")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-01u"), "_-0ga")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-01u"), "_text")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-01u"), "_-4KK")
+      constructprop       QName(PackageNamespace("_-6Vs"), "_-4Ut"), 4
+      coerce              QName(PackageNamespace("_-6Vs"), "_-4Ut")
+      setlocal3
+
+      debugline           290
+      getlex              QName(PackageNamespace(""), "messageListener")
+      getlocal3
+      callpropvoid        QName(Namespace("_-22v"), "processWidgetMessage"), 1
+
+      debugline           294
+L78:
+      getlocal0
+      callpropvoid        QName(ProtectedNamespace("_-01u"), "_-08-"), 0
+
+      debugline           295
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-01u"), "sendDelete")
+   method
+    refid "_-54S:StickieFurniWidget/instance/_-01u:sendDelete"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           300
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-6Vs"), "_-4Ut")
+      setlocal1
+
+      debugline           301
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-01u"), "_-0ga")
+      pushbyte            -1
+      ifne                L16
+
+      returnvoid
+
+      ; 0xF0
+      ; 0xAF
+      ; 0x02
+L16:
+      getlex              QName(PackageNamespace(""), "messageListener")
+      pushnull
+      equals
+      not
+      dup
+      iffalse             L26
+
+      pop
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-01u"), "_-6SE")
+      convert_b
+L26:
+      iffalse             L42
+
+      debug               1, "k", 0, 305
+      debugline           305
+      findpropstrict      QName(PackageNamespace("_-6Vs"), "_-4Ut")
+      getlex              QName(PackageNamespace("_-6Vs"), "_-4Ut")
+      getproperty         QName(PackageNamespace(""), "_-636")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-01u"), "_-0ga")
+      constructprop       QName(PackageNamespace("_-6Vs"), "_-4Ut"), 2
+      coerce              QName(PackageNamespace("_-6Vs"), "_-4Ut")
+      setlocal1
+
+      debugline           306
+      getlex              QName(PackageNamespace(""), "messageListener")
+      getlocal1
+      callpropvoid        QName(Namespace("_-22v"), "processWidgetMessage"), 1
+
+      debugline           308
+L42:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-01u"), "_-5zx")
+   method
+    refid "_-54S:StickieFurniWidget/instance/_-54S:StickieFurniWidget/_-5zx"
+    param QName(PackageNamespace("_-5-S"), "WindowEvent")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 5
+     localcount 3
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           314
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-3yU"), "ITextFieldWindow")
+      setlocal2
+
+      debug               1, "k", 0, 314
+      debug               1, "k", 1, 315
+      debugline           316
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-01u"), "_-04A")
+      pushstring          "text"
+      callproperty        QName(Namespace("_-0zV"), "findChildByName"), 1
+      getlex              QName(PackageNamespace("_-3yU"), "ITextFieldWindow")
+      astypelate
+      coerce              QName(PackageNamespace("_-3yU"), "ITextFieldWindow")
+      setlocal2
+
+      debugline           317
+      getlocal2
+      pushnull
+      ifne                L26
+
+      returnvoid
+
+      ; 0xF0
+      ; 0xBF
+      ; 0x02
+L26:
+      getlocal2
+      getlex              QName(PrivateNamespace("_-01u"), "_-1d4")
+      setproperty         QName(Namespace("_-4Mp"), "maxChars")
+
+      debugline           320
+      getlocal2
+      getproperty         QName(Namespace("_-4Mp"), "numLines")
+      getlex              QName(PrivateNamespace("_-01u"), "_-4gq")
+      ifnlt               L38
+
+      returnvoid
+
+      ; 0xF0
+      ; 0xC3
+      ; 0x02
+L38:
+      getlocal2
+      getlocal2
+      getproperty         QName(Namespace("_-4Mp"), "text")
+      pushbyte            0
+      getlocal2
+      getproperty         QName(Namespace("_-4Mp"), "text")
+      getproperty         QName(PackageNamespace(""), "length")
+      decrement
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "slice"), 2
+      setproperty         QName(Namespace("_-4Mp"), "text")
+
+      debugline           324
+      getlocal2
+      getlocal2
+      getproperty         QName(Namespace("_-4Mp"), "length")
+      setproperty         QName(Namespace("_-4Mp"), "maxChars")
+
+      debugline           325
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-01u"), "_-59U")
+   method
+    refid "_-54S:StickieFurniWidget/instance/_-01u:_-59U"
+    param QName(PackageNamespace("_-5-S"), "WindowMouseEvent")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 5
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           331
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 331
+      debug               1, "k", 1, 333
+      debug               1, "k", 2, 334
+      debugline           333
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "target")
+      getlex              QName(PackageNamespace("_-1rh"), "IWindow")
+      astypelate
+      coerce              QName(PackageNamespace("_-1rh"), "IWindow")
+      setlocal2
+
+      debugline           334
+      getlocal2
+      getproperty         QName(Namespace("_-6Dt"), "name")
+      coerce_s
+      setlocal3
+
+      jump                L49
+
+L20:
+      label
+      debugline           341
+      getlocal0
+      getlocal2
+      getproperty         QName(Namespace("_-6Dt"), "color")
+      callpropvoid        QName(ProtectedNamespace("_-01u"), "sendSetColor"), 1
+
+      debugline           342
+      jump                L100
+
+L28:
+      label
+      debugline           344
+      getlocal0
+      callpropvoid        QName(ProtectedNamespace("_-01u"), "_-66l"), 0
+
+      debugline           345
+      jump                L100
+
+L34:
+      label
+      debugline           347
+      getlocal0
+      callpropvoid        QName(ProtectedNamespace("_-01u"), "sendDelete"), 0
+
+      debugline           348
+      getlocal0
+      pushfalse
+      callpropvoid        QName(ProtectedNamespace("_-01u"), "_-66l"), 1
+
+      debugline           349
+      jump                L100
+
+L44:
+      label
+      jump                L100
+
+      ; 0xF0
+      ; 0xD0
+      ; 0x02
+L49:
+      getlocal3
+      setlocal            4
+
+      pushstring          "blue"
+      debugline           337
+      getlocal            4
+      ifstrictne          L57
+
+      pushbyte            0
+      jump                L95
+
+L57:
+      pushstring          "purple"
+      debugline           338
+      getlocal            4
+      ifstrictne          L63
+
+      pushbyte            1
+      jump                L95
+
+L63:
+      pushstring          "green"
+      debugline           339
+      getlocal            4
+      ifstrictne          L69
+
+      pushbyte            2
+      jump                L95
+
+L69:
+      pushstring          "yellow"
+      debugline           340
+      getlocal            4
+      ifstrictne          L75
+
+      pushbyte            3
+      jump                L95
+
+L75:
+      pushstring          "close"
+      debugline           343
+      getlocal            4
+      ifstrictne          L81
+
+      pushbyte            4
+      jump                L95
+
+L81:
+      pushstring          "delete"
+      debugline           346
+      getlocal            4
+      ifstrictne          L87
+
+      pushbyte            5
+      jump                L95
+
+L87:
+      jump                L94
+
+      ; 0x24
+      ; 0x06
+      ; 0x10
+      ; 0x02
+      ; 0x00
+      ; 0x00
+L94:
+      pushbyte            6
+L95:
+      kill                4
+      lookupswitch        L44, [L20, L20, L20, L20, L28, L34, L44]
+
+      ; 0xF0
+      ; 0xDF
+      ; 0x02
+L100:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-54S:StickieFurniWidget/class/init"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 4
+   maxscopedepth 5
+   code
+    getlocal0
+    pushscope
+
+    debug               1, "k", 0, 39
+    findproperty        QName(PrivateNamespace("_-01u"), "_-4gq")
+    pushbyte            14
+    initproperty        QName(PrivateNamespace("_-01u"), "_-4gq")
+
+    debug               1, "k", 1, 40
+    findproperty        QName(PrivateNamespace("_-01u"), "_-1d4")
+    pushshort           500
+    initproperty        QName(PrivateNamespace("_-01u"), "_-1d4")
+
+    debug               1, "k", 2, 42
+    findproperty        QName(PrivateNamespace("_-01u"), "_-0Wg")
+    pushbyte            100
+    initproperty        QName(PrivateNamespace("_-01u"), "_-0Wg")
+
+    debug               1, "k", 3, 43
+    findproperty        QName(PrivateNamespace("_-01u"), "_-5oy")
+    pushbyte            100
+    initproperty        QName(PrivateNamespace("_-01u"), "_-5oy")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait const QName(PrivateNamespace("_-01u"), "_-4gq") slotid 1 type QName(PackageNamespace(""), "int") value Integer(14) end
+ trait const QName(PrivateNamespace("_-01u"), "_-1d4") slotid 2 type QName(PackageNamespace(""), "int") value Integer(500) end
+ trait const QName(PrivateNamespace("_-01u"), "_-0Wg") slotid 3 type QName(PackageNamespace(""), "Number") value Integer(100) end
+ trait const QName(PrivateNamespace("_-01u"), "_-5oy") slotid 4 type QName(PackageNamespace(""), "Number") value Integer(100) end
+end ; class

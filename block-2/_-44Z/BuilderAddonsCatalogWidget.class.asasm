@@ -1,0 +1,290 @@
+class
+ refid "_-44Z:BuilderAddonsCatalogWidget"
+ instance QName(PackageNamespace("_-44Z"), "BuilderAddonsCatalogWidget")
+  extends QName(PackageNamespace("_-44Z"), "CatalogWidget")
+  implements Multiname("_-23L", [PackageNamespace("_-44Z")])
+  implements Multiname("_-2jC", [PackageNamespace("_-6Sg")])
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-0ZP")
+  iinit
+   refid "_-44Z:BuilderAddonsCatalogWidget/instance/init#0"
+   param QName(PackageNamespace("_-1rh"), "IWindowContainer")
+   param QName(PackageNamespace("_-5le"), "HabboCatalog")
+   body
+    maxstack 2
+    localcount 3
+    initscopedepth 5
+    maxscopedepth 6
+    code
+     debugfile           "k"
+     debugline           15
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 15
+     debug               1, "k", 1, 15
+     debugline           16
+     getlocal0
+     getlocal1
+     constructsuper      1
+
+     debugline           17
+     getlocal0
+     getlocal2
+     initproperty        QName(PrivateNamespace("_-0ZP"), "_-sQ")
+
+     debugline           18
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-0ZP"), "_-sQ") type QName(PackageNamespace("_-5le"), "HabboCatalog") end
+  trait method QName(PackageNamespace(""), "init") flag OVERRIDE
+   method
+    refid "_-44Z:BuilderAddonsCatalogWidget/instance/init#1"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 3
+     localcount 9
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           20
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-5le"), "_-50Q")
+      setlocal            5
+
+      pushnull
+      coerce              QName(PackageNamespace("_-1rh"), "IWindowContainer")
+      setlocal            6
+
+      debug               1, "k", 0, 26
+      debug               1, "k", 1, 27
+      debug               1, "k", 2, 28
+      debug               1, "k", 3, 29
+      debug               1, "k", 4, 31
+      debugline           21
+      getlocal0
+      callsuper           QName(PackageNamespace(""), "init"), 0
+      iftrue              L24
+
+      debugline           22
+      pushfalse
+      returnvalue
+
+      ; 0xF0
+      ; 0x19
+L24:
+      getlex              QName(ProtectedNamespace("_-1BS"), "_-04A")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0ZP"), "_-2o8")
+      setproperty         QName(Namespace("_-6Dt"), "procedure")
+
+      debugline           26
+      getlex              QName(ProtectedNamespace("_-1BS"), "_-04A")
+      pushstring          "addons_list"
+      callproperty        QName(Namespace("_-0zV"), "findChildByName"), 1
+      getlex              QName(PackageNamespace("_-3yU"), "IItemListWindow")
+      astypelate
+      coerce              QName(PackageNamespace("_-3yU"), "IItemListWindow")
+      setlocal1
+
+      debugline           27
+      getlocal1
+      pushbyte            0
+      callproperty        QName(Namespace("_-LC"), "_-30H"), 1
+      coerce              QName(PackageNamespace("_-1rh"), "IWindow")
+      setlocal2
+
+      debugline           28
+      pushbyte            0
+      setlocal3
+
+      debugline           29
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0ZP"), "_-sQ")
+      getproperty         QName(PackageNamespace(""), "_-3pd")
+      pushbyte            0
+      greaterthan
+      setlocal            4
+
+      debugline           30
+      getlex              QName(ProtectedNamespace("_-1BS"), "_-04A")
+      pushstring          "trial_warning"
+      callproperty        QName(Namespace("_-0zV"), "findChildByName"), 1
+      getlocal            4
+      not
+      setproperty         QName(Namespace("_-6Dt"), "visible")
+
+      debugline           31
+      pushbyte            0
+      setlocal            7
+
+      getlex              QName(PackageNamespace(""), "page")
+      getproperty         QName(Namespace("_-5W6"), "offers")
+      coerce_a
+      setlocal            8
+
+      jump                L126
+
+L67:
+      label
+      getlocal            8
+      getlocal            7
+      nextvalue
+      coerce              QName(PackageNamespace("_-5le"), "_-50Q")
+      setlocal            5
+
+      debug               1, "k", 5, 32
+      debugline           32
+      getlocal2
+      callproperty        QName(Namespace("_-6Dt"), "clone"), 0
+      getlex              QName(PackageNamespace("_-1rh"), "IWindowContainer")
+      astypelate
+      coerce              QName(PackageNamespace("_-1rh"), "IWindowContainer")
+      setlocal            6
+
+      debugline           33
+      getlocal            6
+      pushstring          "item_header"
+      callproperty        QName(Namespace("_-0zV"), "findChildByName"), 1
+      getlocal            5
+      getproperty         QName(Namespace("_-HR"), "_-6Sm")
+      setproperty         QName(Namespace("_-6Dt"), "caption")
+
+      debugline           34
+      getlocal            6
+      pushstring          "item_price"
+      callproperty        QName(Namespace("_-0zV"), "findChildByName"), 1
+      getlocal            5
+      getproperty         QName(Namespace("_-HR"), "priceInCredits")
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "toString"), 0
+      setproperty         QName(Namespace("_-6Dt"), "caption")
+
+      debugline           35
+      getlocal            6
+      pushstring          "item_buy"
+      callproperty        QName(Namespace("_-0zV"), "findChildByName"), 1
+      getlocal            5
+      getproperty         QName(Namespace("_-HR"), "_-0VX")
+      setproperty         QName(Namespace("_-6Dt"), "caption")
+
+      debugline           36
+      getlocal            6
+      pushstring          "item_buy"
+      callproperty        QName(Namespace("_-0zV"), "findChildByName"), 1
+      getlocal3
+      setproperty         QName(Namespace("_-6Dt"), "id")
+
+      debugline           37
+      getlocal            4
+      iftrue              L120
+
+      debugline           38
+      findpropstrict      QName(PackageNamespace("_-3yU"), "IButtonWindow")
+      getlocal            6
+      pushstring          "item_buy"
+      callproperty        QName(Namespace("_-0zV"), "findChildByName"), 1
+      callproperty        QName(PackageNamespace("_-3yU"), "IButtonWindow"), 1
+      callpropvoid        QName(Namespace("_-6Dt"), "disable"), 0
+
+      debugline           40
+L120:
+      inclocal_i          3
+      debugline           41
+      getlocal1
+      getlocal            6
+      callpropvoid        QName(Namespace("_-LC"), "addListItem"), 1
+
+      debugline           31
+L126:
+      hasnext2            8, 7
+      iftrue              L67
+
+      kill                8
+      kill                7
+      debugline           43
+      pushtrue
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-0ZP"), "_-2o8")
+   method
+    refid "_-44Z:BuilderAddonsCatalogWidget/instance/_-44Z:BuilderAddonsCatalogWidget/instance/_-2o8"
+    param QName(PackageNamespace("_-5-S"), "WindowEvent")
+    param QName(PackageNamespace("_-1rh"), "IWindow")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           46
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 46
+      debug               1, "k", 1, 46
+      debugline           47
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "type")
+      getlex              QName(PackageNamespace("_-5-S"), "WindowMouseEvent")
+      getproperty         QName(PackageNamespace(""), "CLICK")
+      ifeq                L16
+
+      debugline           48
+      returnvoid
+
+      ; 0xF0
+      ; 0x33
+L16:
+      getlocal2
+      getproperty         QName(Namespace("_-6Dt"), "name")
+      pushstring          "item_buy"
+      ifne                L32
+
+      debugline           52
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0ZP"), "_-sQ")
+      getlex              QName(PackageNamespace(""), "page")
+      getproperty         QName(Namespace("_-5W6"), "offers")
+      getlocal2
+      getproperty         QName(Namespace("_-6Dt"), "id")
+      getproperty         MultinameL([PrivateNamespace("_-0ZP"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("BuilderAddonsCatalogWidget.as$3274"), PackageNamespace("_-44Z"), PackageInternalNs("_-44Z"), ProtectedNamespace("_-0ZP"), StaticProtectedNs("_-0ZP"), StaticProtectedNs("_-1BS")])
+      getlex              QName(PackageNamespace(""), "page")
+      getproperty         QName(Namespace("_-5W6"), "pageId")
+      callpropvoid        QName(PackageNamespace(""), "_-1wX"), 2
+
+      debugline           54
+L32:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-44Z:BuilderAddonsCatalogWidget/class/init"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 4
+   maxscopedepth 5
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

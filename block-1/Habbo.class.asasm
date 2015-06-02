@@ -1,0 +1,2425 @@
+class
+ refid "Habbo"
+ instance QName(PackageNamespace("", "#0"), "Habbo")
+  extends QName(PackageNamespace("flash.display"), "MovieClip")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("Habbo")
+  iinit
+   refid "Habbo/instance/init"
+   body
+    maxstack 4
+    localcount 3
+    initscopedepth 10
+    maxscopedepth 11
+    code
+     debugfile           "k"
+     debugline           135
+     getlex              QName(PackageNamespace("_-4xD"), "_-6Ce")
+     getlocal0
+     callproperty        QName(PackageNamespace("", "Habbo/instance/init#1"), "_-2Ps"), 1
+     iftrue              L7
+
+     returnvoid
+
+L7:
+     getlocal0
+     pushscope
+
+     pushnull
+     coerce_s
+     setlocal2
+
+     debugline           135
+     getlocal0
+     constructsuper      0
+
+     debug               1, "k", 0, 141
+     debugline           136
+     findpropstrict      QName(PackageNamespace("", "#0"), "stop")
+     callpropvoid        QName(PackageNamespace("", "#0"), "stop"), 0
+
+     debugline           138
+     findproperty        QName(PrivateNamespace("Habbo"), "_isSpaWeb")
+     getlex              QName(PackageNamespace("", "#0"), "stage")
+     getproperty         QName(PackageNamespace("", "#0"), "loaderInfo")
+     getproperty         QName(PackageNamespace("", "#0"), "parameters")
+     pushstring          "spaweb"
+     getproperty         MultinameL([PrivateNamespace("Habbo"), PackageNamespace("", "#0"), StaticProtectedNs("Habbo"), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("Habbo.as$36"), PackageInternalNs(""), ProtectedNamespace("Habbo"), StaticProtectedNs("flash.display:MovieClip"), StaticProtectedNs("flash.display:Sprite"), StaticProtectedNs("flash.display:DisplayObjectContainer"), StaticProtectedNs("flash.display:InteractiveObject"), StaticProtectedNs("flash.display:DisplayObject"), StaticProtectedNs("flash.events:EventDispatcher")])
+     pushstring          "1"
+     equals
+     setproperty         QName(PrivateNamespace("Habbo"), "_isSpaWeb")
+
+     debugline           139
+     getlex              QName(PackageNamespace("_-524"), "_-2uY")
+     getlex              QName(PrivateNamespace("Habbo"), "_isSpaWeb")
+     setproperty         QName(PackageNamespace("", "#0"), "_-3Au")
+
+     debugline           141
+     getlex              QName(PackageNamespace("", "#0"), "root")
+     getproperty         QName(PackageNamespace("", "#0"), "loaderInfo")
+     getproperty         QName(PackageNamespace("", "#0"), "parameters")
+     pushstring          "client.fatal.error.url"
+     getproperty         MultinameL([PrivateNamespace("Habbo"), PackageNamespace("", "#0"), StaticProtectedNs("Habbo"), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("Habbo.as$36"), PackageInternalNs(""), ProtectedNamespace("Habbo"), StaticProtectedNs("flash.display:MovieClip"), StaticProtectedNs("flash.display:Sprite"), StaticProtectedNs("flash.display:DisplayObjectContainer"), StaticProtectedNs("flash.display:InteractiveObject"), StaticProtectedNs("flash.display:DisplayObject"), StaticProtectedNs("flash.events:EventDispatcher")])
+     coerce_s
+     setlocal1
+
+     debugline           142
+     getlocal1
+     pushnull
+     ifeq                L60
+
+     debugline           143
+     getglobalscope
+     getslot             1
+     getlocal1
+     setproperty         QName(PrivateNamespace("Habbo"), "_crashURL")
+
+     jump                L79
+
+     ; 0xEF
+     ; 0x01
+     ; 0x71
+     ; 0x01
+     ; 0x92
+     ; 0x01
+     ; 0xF0
+     ; 0x92
+     ; 0x01
+L60:
+     getlex              QName(PackageNamespace("", "#0"), "root")
+     getproperty         QName(PackageNamespace("", "#0"), "loaderInfo")
+     getproperty         QName(PackageNamespace("", "#0"), "parameters")
+     pushstring          "url.prefix"
+     getproperty         MultinameL([PrivateNamespace("Habbo"), PackageNamespace("", "#0"), StaticProtectedNs("Habbo"), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("Habbo.as$36"), PackageInternalNs(""), ProtectedNamespace("Habbo"), StaticProtectedNs("flash.display:MovieClip"), StaticProtectedNs("flash.display:Sprite"), StaticProtectedNs("flash.display:DisplayObjectContainer"), StaticProtectedNs("flash.display:InteractiveObject"), StaticProtectedNs("flash.display:DisplayObject"), StaticProtectedNs("flash.events:EventDispatcher")])
+     coerce_s
+     setlocal2
+
+     debugline           147
+     getlocal2
+     pushnull
+     ifeq                L79
+
+     debugline           148
+     getglobalscope
+     getslot             1
+     getlocal2
+     pushstring          "/flash_client_error"
+     add
+     setproperty         QName(PrivateNamespace("Habbo"), "_crashURL")
+
+     debugline           152
+L79:
+     getlex              QName(PackageNamespace("", "#0"), "stage")
+     iffalse             L87
+
+     getlocal0
+     callpropvoid        QName(PrivateNamespace("Habbo"), "onAddedToStage"), 0
+
+     jump                L94
+
+     ; 0xF0
+     ; 0x9A
+     ; 0x01
+L87:
+     getlocal0
+     getlex              QName(PackageNamespace("flash.events"), "Event")
+     getproperty         QName(PackageNamespace("", "#0"), "ADDED_TO_STAGE")
+     getlocal0
+     getproperty         QName(PrivateNamespace("Habbo"), "onAddedToStage")
+     callpropvoid        QName(PackageNamespace("", "#0"), "addEventListener"), 2
+
+     debugline           156
+L94:
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("Habbo"), "_cacheIsDirty") type QName(PackageNamespace("", "#0"), "Boolean") end
+  trait slot QName(PrivateNamespace("Habbo"), "_cachedBytesTotal") type QName(PackageNamespace("", "#0"), "uint") end
+  trait slot QName(PrivateNamespace("Habbo"), "_cachedBytesLoaded") type QName(PackageNamespace("", "#0"), "uint") end
+  trait slot QName(PrivateNamespace("Habbo"), "_httpStatus") type QName(PackageNamespace("", "#0"), "int") end
+  trait slot QName(PrivateNamespace("Habbo"), "_disposed") type QName(PackageNamespace("", "#0"), "Boolean") value False() end
+  trait slot QName(PrivateNamespace("Habbo"), "_loaderCompleted") type QName(PackageNamespace("", "#0"), "Boolean") end
+  trait slot QName(PrivateNamespace("Habbo"), "_loadingScreen") type QName(PackageNamespace("", "#0"), "IHabboLoadingScreen") end
+  trait slot QName(PrivateNamespace("Habbo"), "_onBoardingHc") type QName(PackageNamespace("", "#0"), "OnBoardingHcFlow") value Null() end
+  trait method QName(PrivateNamespace("Habbo"), "onAddedToStage")
+   method
+    refid "Habbo/instance/Habbo/onAddedToStage"
+    param QName(PackageNamespace("flash.events"), "Event")
+    returns QName(PackageNamespace("", "#0"), "void")
+    flag NEED_ACTIVATION
+    flag HAS_OPTIONAL
+    optional Null()
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 11
+     maxscopedepth 13
+     code
+      debugfile           "k"
+      debugline           158
+      getlocal0
+      pushscope
+
+      newactivation
+      dup
+      setlocal2
+
+      pushscope
+
+      debug               1, "k", 1, 158
+      getscopeobject      1
+      getlocal1
+      setslot             1
+
+      debug               1, "k", 0, 158
+      debugline           159
+      findpropstrict      QName(PackageNamespace("", "#0"), "removeEventListener")
+      getlex              QName(PackageNamespace("flash.events"), "Event")
+      getproperty         QName(PackageNamespace("", "#0"), "ADDED_TO_STAGE")
+      getlocal0
+      getproperty         QName(PrivateNamespace("Habbo"), "onAddedToStage")
+      callpropvoid        QName(PackageNamespace("", "#0"), "removeEventListener"), 2
+
+      debugline           161
+      getlocal0
+      callpropvoid        QName(PrivateNamespace("Habbo"), "enableAccessFromJavascript"), 0
+
+      debugline           163
+      getglobalscope
+      getslot             1
+      getlex              QName(PackageNamespace("", "#0"), "stage")
+      getproperty         QName(PackageNamespace("", "#0"), "loaderInfo")
+      getproperty         QName(PackageNamespace("", "#0"), "parameters")
+      pushstring          "processlog.enabled"
+      getproperty         MultinameL([PrivateNamespace("Habbo"), PackageNamespace("", "#0"), StaticProtectedNs("Habbo"), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("Habbo.as$36"), PackageInternalNs(""), ProtectedNamespace("Habbo"), StaticProtectedNs("flash.display:MovieClip"), StaticProtectedNs("flash.display:Sprite"), StaticProtectedNs("flash.display:DisplayObjectContainer"), StaticProtectedNs("flash.display:InteractiveObject"), StaticProtectedNs("flash.display:DisplayObject"), StaticProtectedNs("flash.events:EventDispatcher")])
+      pushstring          "1"
+      equals
+      setproperty         QName(StaticProtectedNs("Habbo"), "PROCESSLOG_ENABLED")
+
+      debugline           164
+      findpropstrict      QName(PackageNamespace("", "#0"), "trackLoginStep")
+      getlex              QName(PackageNamespace("", "#0"), "_-0uT")
+      getproperty         QName(PackageNamespace("", "#0"), "_-4Cd")
+      callpropvoid        QName(PackageNamespace("", "#0"), "trackLoginStep"), 1
+
+      debugline           166
+      getlex              QName(PackageNamespace("", "#0"), "stage")
+      getlex              QName(PackageNamespace("flash.display"), "StageScaleMode")
+      getproperty         QName(PackageNamespace("", "#0"), "NO_SCALE")
+      setproperty         QName(PackageNamespace("", "#0"), "scaleMode")
+
+      debugline           167
+      getlex              QName(PackageNamespace("", "#0"), "stage")
+      getlex              QName(PackageNamespace("flash.display"), "StageQuality")
+      getproperty         QName(PackageNamespace("", "#0"), "LOW")
+      setproperty         QName(PackageNamespace("", "#0"), "quality")
+
+      debugline           168
+      getlex              QName(PackageNamespace("", "#0"), "stage")
+      getlex              QName(PackageNamespace("flash.display"), "StageAlign")
+      getproperty         QName(PackageNamespace("", "#0"), "TOP_LEFT")
+      setproperty         QName(PackageNamespace("", "#0"), "align")
+
+      debugline           170
+      getlex              QName(PackageNamespace("", "#0"), "root")
+      getproperty         QName(PackageNamespace("", "#0"), "loaderInfo")
+      getlex              QName(PackageNamespace("flash.events"), "ProgressEvent")
+      getproperty         QName(PackageNamespace("", "#0"), "PROGRESS")
+      getlocal0
+      getproperty         QName(PrivateNamespace("Habbo"), "onPreLoadingProgress")
+      callpropvoid        QName(PackageNamespace("", "#0"), "addEventListener"), 2
+
+      debugline           171
+      getlex              QName(PackageNamespace("", "#0"), "root")
+      getproperty         QName(PackageNamespace("", "#0"), "loaderInfo")
+      getlex              QName(PackageNamespace("flash.events"), "HTTPStatusEvent")
+      getproperty         QName(PackageNamespace("", "#0"), "HTTP_STATUS")
+      getlocal0
+      getproperty         QName(PrivateNamespace("Habbo"), "onPreLoadingStatus")
+      callpropvoid        QName(PackageNamespace("", "#0"), "addEventListener"), 2
+
+      debugline           172
+      getlex              QName(PackageNamespace("", "#0"), "root")
+      getproperty         QName(PackageNamespace("", "#0"), "loaderInfo")
+      getlex              QName(PackageNamespace("flash.events"), "Event")
+      getproperty         QName(PackageNamespace("", "#0"), "COMPLETE")
+      getlocal0
+      getproperty         QName(PrivateNamespace("Habbo"), "onPreLoadingCompleted")
+      callpropvoid        QName(PackageNamespace("", "#0"), "addEventListener"), 2
+
+      debugline           173
+      getlex              QName(PackageNamespace("", "#0"), "root")
+      getproperty         QName(PackageNamespace("", "#0"), "loaderInfo")
+      getlex              QName(PackageNamespace("flash.events"), "IOErrorEvent")
+      getproperty         QName(PackageNamespace("", "#0"), "IO_ERROR")
+      getlocal0
+      getproperty         QName(PrivateNamespace("Habbo"), "onPreLoadingFailed")
+      callpropvoid        QName(PackageNamespace("", "#0"), "addEventListener"), 2
+
+      debugline           174
+      getlex              QName(PackageNamespace("", "#0"), "root")
+      getproperty         QName(PackageNamespace("", "#0"), "loaderInfo")
+      getproperty         QName(PackageNamespace("", "#0"), "uncaughtErrorEvents")
+      getlex              QName(PackageNamespace("flash.events"), "UncaughtErrorEvent")
+      getproperty         QName(PackageNamespace("", "#0"), "UNCAUGHT_ERROR")
+      newfunction         "Habbo/instance/Habbo/onAddedToStage/inline_method"
+      callpropvoid        QName(PackageNamespace("", "#0"), "addEventListener"), 2
+
+      debugfile           "k"
+      debugline           178
+      getlocal0
+      callpropvoid        QName(PrivateNamespace("Habbo"), "createNewUserLobbyOrLoadingScreen"), 0
+
+      debugline           181
+      getlocal0
+      callpropvoid        QName(PrivateNamespace("Habbo"), "checkPreLoadingStatus"), 0
+
+      debugline           183
+      getlex              QName(PackageNamespace("_-12V"), "MouseWheelEnabler")
+      getlex              QName(PackageNamespace("", "#0"), "stage")
+      callpropvoid        QName(PackageNamespace("", "#0"), "init"), 1
+
+      debugline           184
+      returnvoid
+     end ; code
+     trait slot QName(PackageInternalNs(""), "e") slotid 1 type QName(PackageNamespace("flash.events"), "Event") value Null() end
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("Habbo"), "onPreLoadingStatus")
+   method
+    refid "Habbo/instance/Habbo/onPreLoadingStatus"
+    param QName(PackageNamespace("flash.events"), "HTTPStatusEvent")
+    returns QName(PackageNamespace("", "#0"), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 10
+     maxscopedepth 11
+     code
+      debugfile           "k"
+      debugline           186
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 186
+      debugline           187
+      getlocal0
+      getlocal1
+      getproperty         QName(PackageNamespace("", "#0"), "status")
+      initproperty        QName(PrivateNamespace("Habbo"), "_httpStatus")
+
+      debugline           188
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("Habbo"), "onPreLoadingProgress")
+   method
+    refid "Habbo/instance/Habbo/onPreLoadingProgress"
+    param QName(PackageNamespace("flash.events"), "Event")
+    returns QName(PackageNamespace("", "#0"), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 10
+     maxscopedepth 11
+     code
+      debugfile           "k"
+      debugline           190
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 190
+      debugline           191
+      getlocal0
+      callpropvoid        QName(PrivateNamespace("Habbo"), "checkPreLoadingStatus"), 0
+
+      debugline           192
+      getlocal0
+      callpropvoid        QName(PrivateNamespace("Habbo"), "updateLoadingBarProgress"), 0
+
+      debugline           193
+      getlocal0
+      pushtrue
+      initproperty        QName(PrivateNamespace("Habbo"), "_cacheIsDirty")
+
+      debugline           194
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("Habbo"), "onPreLoadingCompleted")
+   method
+    refid "Habbo/instance/Habbo/onPreLoadingCompleted"
+    param QName(PackageNamespace("flash.events"), "Event")
+    returns QName(PackageNamespace("", "#0"), "void")
+    flag NEED_ACTIVATION
+    body
+     maxstack 5
+     localcount 4
+     initscopedepth 11
+     maxscopedepth 16
+     code
+      debugfile           "k"
+      debugline           196
+      getlocal0
+      pushscope
+
+      newactivation
+      dup
+      setlocal2
+
+      pushscope
+
+      debug               1, "k", 1, 196
+      getscopeobject      1
+      getlocal1
+      setslot             1
+
+      debug               1, "k", 0, 196
+      debugline           198
+L14:
+      getlocal0
+      pushtrue
+      initproperty        QName(PrivateNamespace("Habbo"), "_loaderCompleted")
+
+      debugline           199
+      getlocal0
+      callpropvoid        QName(PrivateNamespace("Habbo"), "checkPreLoadingStatus"), 0
+
+      debugline           201
+L21:
+      jump                L53
+
+L22:
+      getlocal0
+      pushscope
+
+      getlocal2
+      pushscope
+
+      newcatch            0
+      dup
+      setlocal3
+
+      dup
+      pushscope
+
+      swap
+      setslot             1
+
+      debugline           202
+      findpropstrict      QName(PackageNamespace("", "#0"), "trackLoginStep")
+      getlex              QName(PackageNamespace("", "#0"), "_-0uT")
+      getproperty         QName(PackageNamespace("", "#0"), "_-1MJ")
+      callpropvoid        QName(PackageNamespace("", "#0"), "trackLoginStep"), 1
+
+      debugline           204
+      findpropstrict      QName(PackageNamespace("", "#0"), "reportCrash")
+      pushstring          "Failed to finalize main swf preloading: "
+      getscopeobject      2
+      getslot             1
+      getproperty         QName(PackageNamespace("", "#0"), "message")
+      add
+      getlex              QName(PackageNamespace("", "#0"), "ERROR_CATEGORY_FINALIZE_PRELOADING")
+      pushtrue
+      getscopeobject      2
+      getslot             1
+      callpropvoid        QName(PackageNamespace("", "#0"), "reportCrash"), 4
+
+      popscope
+      kill                3
+      debugline           206
+L53:
+      returnvoid
+     end ; code
+     try from L14 to L21 target L22 type QName(PackageNamespace("", "#0"), "Error") name QName(PackageNamespace("", "#0"), "error") end
+     trait slot QName(PackageInternalNs(""), "event") slotid 1 type QName(PackageNamespace("flash.events"), "Event") end
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("Habbo"), "onPreLoadingFailed")
+   method
+    refid "Habbo/instance/Habbo/onPreLoadingFailed"
+    param QName(PackageNamespace("flash.events"), "IOErrorEvent")
+    returns QName(PackageNamespace("", "#0"), "void")
+    flag NEED_ACTIVATION
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 11
+     maxscopedepth 13
+     code
+      debugfile           "k"
+      debugline           208
+      getlocal0
+      pushscope
+
+      newactivation
+      dup
+      setlocal2
+
+      pushscope
+
+      debug               1, "k", 1, 208
+      getscopeobject      1
+      getlocal1
+      setslot             1
+
+      debug               1, "k", 0, 208
+      debugline           210
+      findpropstrict      QName(PackageNamespace("flash.utils"), "setTimeout")
+      debugfile           "k"
+      debugline           210
+      newfunction         "Habbo/instance/Habbo/onPreLoadingFailed/inline_method"
+      debugline           214
+      pushshort           5000
+      callpropvoid        QName(PackageNamespace("flash.utils"), "setTimeout"), 2
+
+      debugline           215
+      returnvoid
+     end ; code
+     trait slot QName(PackageInternalNs(""), "event") slotid 1 type QName(PackageNamespace("flash.events"), "IOErrorEvent") end
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("Habbo"), "checkPreLoadingStatus")
+   method
+    refid "Habbo/instance/Habbo/checkPreLoadingStatus"
+    returns QName(PackageNamespace("", "#0"), "void")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 10
+     maxscopedepth 11
+     code
+      debugfile           "k"
+      debugline           217
+      getlocal0
+      pushscope
+
+      debugline           220
+      getlocal0
+      getproperty         QName(PrivateNamespace("Habbo"), "_onBoardingHc")
+      pushnull
+      ifeq                L14
+
+      debugline           221
+      returnvoid
+
+      ; 0xF0
+      ; 0xE1
+      ; 0x01
+L14:
+      getlocal0
+      getproperty         QName(PrivateNamespace("Habbo"), "_loaderCompleted")
+      convert_b
+      dup
+      iffalse             L24
+
+      pop
+      getlocal0
+      getproperty         QName(PackageNamespace("", "#0"), "progress")
+      pushbyte            1
+      equals
+L24:
+      iffalse             L51
+
+      debugline           226
+      getlocal0
+      getproperty         QName(PrivateNamespace("Habbo"), "newUserOnboardingEnabled")
+      not
+      dup
+      iftrue              L42
+
+      pop
+      getlocal0
+      getproperty         QName(PrivateNamespace("Habbo"), "newUserOnboardingEnabled")
+      convert_b
+      dup
+      iffalse             L42
+
+      pop
+      getlocal0
+      getproperty         QName(PrivateNamespace("Habbo"), "_onBoardingHc")
+      pushnull
+      equals
+L42:
+      iffalse             L51
+
+      debugline           227
+      getlocal0
+      callpropvoid        QName(PrivateNamespace("Habbo"), "finalizePreloading"), 0
+
+      debugline           228
+      returnvoid
+
+      ; 0xF0
+      ; 0xE7
+      ; 0x01
+L51:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("Habbo"), "calculateProgress")
+   method
+    refid "Habbo/instance/Habbo/calculateProgress"
+    returns QName(PackageNamespace("", "#0"), "void")
+    body
+     maxstack 4
+     localcount 1
+     initscopedepth 10
+     maxscopedepth 11
+     code
+      debugfile           "k"
+      debugline           233
+      getlocal0
+      pushscope
+
+      debugline           234
+      getlocal0
+      getlex              QName(PackageNamespace("", "#0"), "root")
+      getproperty         QName(PackageNamespace("", "#0"), "loaderInfo")
+      getproperty         QName(PackageNamespace("", "#0"), "bytesLoaded")
+      initproperty        QName(PrivateNamespace("Habbo"), "_cachedBytesLoaded")
+
+      debugline           237
+      getlex              QName(PackageNamespace("", "#0"), "root")
+      getproperty         QName(PackageNamespace("", "#0"), "loaderInfo")
+      getproperty         QName(PackageNamespace("", "#0"), "bytesTotal")
+      pushbyte            0
+      ifeq                L23
+
+      debugline           238
+      getlocal0
+      getlex              QName(PackageNamespace("", "#0"), "root")
+      getproperty         QName(PackageNamespace("", "#0"), "loaderInfo")
+      getproperty         QName(PackageNamespace("", "#0"), "bytesTotal")
+      initproperty        QName(PrivateNamespace("Habbo"), "_cachedBytesTotal")
+
+      debugline           243
+L23:
+      getlocal0
+      getproperty         QName(PrivateNamespace("Habbo"), "_cachedBytesTotal")
+      getlocal0
+      getproperty         QName(PrivateNamespace("Habbo"), "_cachedBytesLoaded")
+      lessthan
+      dup
+      iftrue              L34
+
+      pop
+      getlocal0
+      getproperty         QName(PrivateNamespace("Habbo"), "_loaderCompleted")
+      convert_b
+L34:
+      iffalse             L41
+
+      debugline           244
+      getlocal0
+      getlocal0
+      getproperty         QName(PrivateNamespace("Habbo"), "_cachedBytesLoaded")
+      initproperty        QName(PrivateNamespace("Habbo"), "_cachedBytesTotal")
+
+      debugline           247
+L41:
+      getlex              QName(PrivateNamespace("Habbo"), "APPROXIMATE_SWF_SIZE")
+      getlocal0
+      getproperty         QName(PrivateNamespace("Habbo"), "_cachedBytesLoaded")
+      greaterthan
+      dup
+      iffalse             L51
+
+      pop
+      getlocal0
+      getproperty         QName(PrivateNamespace("Habbo"), "_loaderCompleted")
+      not
+L51:
+      iffalse             L59
+
+      debugline           248
+      getlocal0
+      findpropstrict      QName(PackageNamespace("", "#0"), "uint")
+      getlex              QName(PrivateNamespace("Habbo"), "APPROXIMATE_SWF_SIZE")
+      callproperty        QName(PackageNamespace("", "#0"), "uint"), 1
+      initproperty        QName(PrivateNamespace("Habbo"), "_cachedBytesTotal")
+
+      debugline           251
+L59:
+      getlocal0
+      getproperty         QName(PrivateNamespace("Habbo"), "_loaderCompleted")
+      not
+      dup
+      iffalse             L70
+
+      pop
+      getlocal0
+      getproperty         QName(PrivateNamespace("Habbo"), "_cachedBytesLoaded")
+      getlocal0
+      getproperty         QName(PrivateNamespace("Habbo"), "_cachedBytesTotal")
+      equals
+L70:
+      iffalse             L81
+
+      debugline           252
+      getlocal0
+      findpropstrict      QName(PackageNamespace("", "#0"), "int")
+      getlocal0
+      getproperty         QName(PrivateNamespace("Habbo"), "_cachedBytesLoaded")
+      pushdouble          0.99
+      multiply
+      callproperty        QName(PackageNamespace("", "#0"), "int"), 1
+      initproperty        QName(PrivateNamespace("Habbo"), "_cachedBytesLoaded")
+
+      debugline           255
+L81:
+      getlocal0
+      pushfalse
+      initproperty        QName(PrivateNamespace("Habbo"), "_cacheIsDirty")
+
+      debugline           256
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("Habbo"), "createNewUserLobbyOrLoadingScreen")
+   method
+    refid "Habbo/instance/Habbo/createNewUserLobbyOrLoadingScreen"
+    returns QName(PackageNamespace("", "#0"), "void")
+    body
+     maxstack 3
+     localcount 1
+     initscopedepth 10
+     maxscopedepth 11
+     code
+      debugfile           "k"
+      debugline           258
+      getlocal0
+      pushscope
+
+      debugline           260
+      getlocal0
+      getproperty         QName(PrivateNamespace("Habbo"), "newUserReceptionEnabled")
+      iffalse             L54
+
+      debugline           262
+      getlocal0
+      getproperty         QName(PrivateNamespace("Habbo"), "newUserOnboardingEnabled")
+      iffalse             L50
+
+      debugline           263
+      getlocal0
+      findpropstrict      QName(PackageNamespace("", "#0"), "OnBoardingHcFlow")
+      constructprop       QName(PackageNamespace("", "#0"), "OnBoardingHcFlow"), 0
+      initproperty        QName(PrivateNamespace("Habbo"), "_onBoardingHc")
+
+      debugline           264
+      getlocal0
+      getproperty         QName(PrivateNamespace("Habbo"), "_onBoardingHc")
+      getlex              QName(PackageNamespace("", "#0"), "OnBoardingHcFlow")
+      getproperty         QName(PackageNamespace("", "#0"), "_-F7")
+      getlocal0
+      getproperty         QName(PrivateNamespace("Habbo"), "onNewUserReceptionFinished")
+      callpropvoid        QName(PackageNamespace("", "#0"), "addEventListener"), 2
+
+      debugline           265
+      getlex              QName(PackageNamespace("", "#0"), "stage")
+      getlocal0
+      getproperty         QName(PrivateNamespace("Habbo"), "_onBoardingHc")
+      callpropvoid        QName(PackageNamespace("", "#0"), "addChild"), 1
+
+      debugline           266
+      getlocal0
+      getproperty         QName(PrivateNamespace("Habbo"), "_onBoardingHc")
+      getlocal0
+      getproperty         QName(PrivateNamespace("Habbo"), "showHcItemDuringOnboarding")
+      callpropvoid        QName(PackageNamespace("", "#0"), "_-3UM"), 1
+
+      debugline           267
+      getlocal0
+      getproperty         QName(PrivateNamespace("Habbo"), "_onBoardingHc")
+      getlocal0
+      getproperty         QName(PrivateNamespace("Habbo"), "onboardingGoToPage")
+      callpropvoid        QName(PackageNamespace("", "#0"), "init"), 1
+
+      debugline           269
+      getlocal0
+      callpropvoid        QName(PrivateNamespace("Habbo"), "updateLoadingBarProgress"), 0
+
+      debugline           270
+      getlocal0
+      getlex              QName(PrivateNamespace("Habbo"), "STEP_NUX_ENTERED")
+      callpropvoid        QName(PrivateNamespace("Habbo"), "trackNewReceptionStep"), 1
+
+      debugline           272
+L50:
+      returnvoid
+
+      ; 0xF0
+      ; 0x93
+      ; 0x02
+L54:
+      getlocal0
+      callpropvoid        QName(PackageNamespace("", "#0"), "createLoadingScreen"), 0
+
+      debugline           276
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace("", "#0"), "createLoadingScreen")
+   method
+    refid "Habbo/instance/createLoadingScreen"
+    returns QName(PackageNamespace("", "#0"), "void")
+    body
+     maxstack 5
+     localcount 2
+     initscopedepth 10
+     maxscopedepth 11
+     code
+      debugfile           "k"
+      debugline           278
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 279
+      debugline           279
+      getlex              QName(PackageNamespace("", "#0"), "stage")
+      getproperty         QName(PackageNamespace("", "#0"), "loaderInfo")
+      getproperty         QName(PackageNamespace("", "#0"), "parameters")
+      getlex              QName(PrivateNamespace("Habbo"), "CLIENT_STARTING")
+      getproperty         MultinameL([PrivateNamespace("Habbo"), PackageNamespace("", "#0"), StaticProtectedNs("Habbo"), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("Habbo.as$36"), PackageInternalNs(""), ProtectedNamespace("Habbo"), StaticProtectedNs("flash.display:MovieClip"), StaticProtectedNs("flash.display:Sprite"), StaticProtectedNs("flash.display:DisplayObjectContainer"), StaticProtectedNs("flash.display:InteractiveObject"), StaticProtectedNs("flash.display:DisplayObject"), StaticProtectedNs("flash.events:EventDispatcher")])
+      coerce_s
+      setlocal1
+
+      debugline           280
+      getlocal1
+      pushnull
+      ifne                L22
+
+      debugline           281
+      getlex              QName(PrivateNamespace("Habbo"), "CLIENT_STARTING")
+      coerce_s
+      setlocal1
+
+      debugline           284
+L22:
+      getlocal0
+      findpropstrict      QName(PackageNamespace("", "#0"), "HabboLoadingScreen")
+      getlex              QName(PackageNamespace("", "#0"), "stage")
+      getproperty         QName(PackageNamespace("", "#0"), "stageWidth")
+      getlex              QName(PackageNamespace("", "#0"), "stage")
+      getproperty         QName(PackageNamespace("", "#0"), "stageHeight")
+      getlocal1
+      constructprop       QName(PackageNamespace("", "#0"), "HabboLoadingScreen"), 3
+      initproperty        QName(PrivateNamespace("Habbo"), "_loadingScreen")
+
+      debugline           286
+      getlocal0
+      callpropvoid        QName(PrivateNamespace("Habbo"), "updateLoadingBarProgress"), 0
+
+      debugline           287
+      getlex              QName(PackageNamespace("", "#0"), "stage")
+      findpropstrict      QName(PackageNamespace("flash.display"), "DisplayObject")
+      getlocal0
+      getproperty         QName(PrivateNamespace("Habbo"), "_loadingScreen")
+      callproperty        QName(PackageNamespace("flash.display"), "DisplayObject"), 1
+      callpropvoid        QName(PackageNamespace("", "#0"), "addChild"), 1
+
+      debugline           288
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("Habbo"), "updateLoadingBarProgress")
+   method
+    refid "Habbo/instance/Habbo/updateLoadingBarProgress"
+    returns QName(PackageNamespace("", "#0"), "void")
+    body
+     maxstack 2
+     localcount 3
+     initscopedepth 10
+     maxscopedepth 11
+     code
+      debugfile           "k"
+      debugline           290
+      getlocal0
+      pushscope
+
+      pushnan
+      setlocal1
+
+      pushnan
+      setlocal2
+
+      debugline           291
+      getlocal0
+      getproperty         QName(PrivateNamespace("Habbo"), "_loadingScreen")
+      pushnull
+      ifeq                L48
+
+      debug               1, "k", 0, 292
+      debug               1, "k", 1, 293
+      debugline           293
+      getlocal0
+      getproperty         QName(PackageNamespace("", "#0"), "progress")
+      convert_d
+      setlocal2
+
+      debugline           296
+      getlocal2
+      pushbyte            0
+      ifne                L37
+
+      debugline           297
+      getlocal0
+      getproperty         QName(PrivateNamespace("Habbo"), "_cachedBytesLoaded")
+      getlex              QName(PrivateNamespace("Habbo"), "APPROXIMATE_SWF_SIZE")
+      divide
+      getlex              QName(PackageNamespace("", "#0"), "CORE_RATIO")
+      multiply
+      convert_d
+      setlocal1
+
+      jump                L43
+
+      ; 0xF0
+      ; 0xAB
+      ; 0x02
+L37:
+      getlocal2
+      getlex              QName(PackageNamespace("", "#0"), "CORE_RATIO")
+      multiply
+      convert_d
+      setlocal1
+
+      debugline           301
+L43:
+      getlocal0
+      getproperty         QName(PrivateNamespace("Habbo"), "_loadingScreen")
+      getlocal1
+      callpropvoid        QName(Namespace("IHabboLoadingScreen"), "_-6Ma"), 1
+
+      debugline           303
+L48:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("Habbo"), "finalizePreloading")
+   method
+    refid "Habbo/instance/Habbo/finalizePreloading"
+    returns QName(PackageNamespace("", "#0"), "void")
+    body
+     maxstack 6
+     localcount 3
+     initscopedepth 10
+     maxscopedepth 11
+     code
+      debugfile           "k"
+      debugline           305
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("", "#0"), "Class")
+      setlocal1
+
+      pushnull
+      coerce              QName(PackageNamespace("flash.display"), "DisplayObject")
+      setlocal2
+
+      debug               1, "k", 0, 317
+      debugline           307
+      getlocal0
+      getlex              QName(PrivateNamespace("Habbo"), "STEP_CLIENT_LOADED")
+      callpropvoid        QName(PrivateNamespace("Habbo"), "trackNewReceptionStep"), 1
+
+      debugline           309
+      findpropstrict      QName(PackageNamespace("", "#0"), "trackLoginStep")
+      getlex              QName(PackageNamespace("", "#0"), "_-0uT")
+      getproperty         QName(PackageNamespace("", "#0"), "_-67I")
+      callpropvoid        QName(PackageNamespace("", "#0"), "trackLoginStep"), 1
+
+      debugline           311
+      getlex              QName(PackageNamespace("", "#0"), "root")
+      getproperty         QName(PackageNamespace("", "#0"), "loaderInfo")
+      getlex              QName(PackageNamespace("flash.events"), "ProgressEvent")
+      getproperty         QName(PackageNamespace("", "#0"), "PROGRESS")
+      getlocal0
+      getproperty         QName(PrivateNamespace("Habbo"), "onPreLoadingProgress")
+      callpropvoid        QName(PackageNamespace("", "#0"), "removeEventListener"), 2
+
+      debugline           312
+      getlex              QName(PackageNamespace("", "#0"), "root")
+      getproperty         QName(PackageNamespace("", "#0"), "loaderInfo")
+      getlex              QName(PackageNamespace("flash.events"), "HTTPStatusEvent")
+      getproperty         QName(PackageNamespace("", "#0"), "HTTP_STATUS")
+      getlocal0
+      getproperty         QName(PrivateNamespace("Habbo"), "onPreLoadingStatus")
+      callpropvoid        QName(PackageNamespace("", "#0"), "removeEventListener"), 2
+
+      debugline           313
+      getlex              QName(PackageNamespace("", "#0"), "root")
+      getproperty         QName(PackageNamespace("", "#0"), "loaderInfo")
+      getlex              QName(PackageNamespace("flash.events"), "Event")
+      getproperty         QName(PackageNamespace("", "#0"), "COMPLETE")
+      getlocal0
+      getproperty         QName(PrivateNamespace("Habbo"), "onPreLoadingCompleted")
+      callpropvoid        QName(PackageNamespace("", "#0"), "removeEventListener"), 2
+
+      debugline           314
+      getlex              QName(PackageNamespace("", "#0"), "root")
+      getproperty         QName(PackageNamespace("", "#0"), "loaderInfo")
+      getlex              QName(PackageNamespace("flash.events"), "IOErrorEvent")
+      getproperty         QName(PackageNamespace("", "#0"), "IO_ERROR")
+      getlocal0
+      getproperty         QName(PrivateNamespace("Habbo"), "onPreLoadingFailed")
+      callpropvoid        QName(PackageNamespace("", "#0"), "removeEventListener"), 2
+
+      debugline           315
+      findpropstrict      QName(PackageNamespace("", "#0"), "nextFrame")
+      callpropvoid        QName(PackageNamespace("", "#0"), "nextFrame"), 0
+
+      debugline           322
+      findpropstrict      QName(PackageNamespace("", "#0"), "Class")
+      findpropstrict      QName(PackageNamespace("flash.utils"), "getDefinitionByName")
+      pushstring          "HabboMain"
+      callproperty        QName(PackageNamespace("flash.utils"), "getDefinitionByName"), 1
+      callproperty        QName(PackageNamespace("", "#0"), "Class"), 1
+      coerce              QName(PackageNamespace("", "#0"), "Class")
+      setlocal1
+
+      debugline           325
+      getlocal1
+      iffalse             L94
+
+      debug               1, "k", 1, 326
+      debugline           326
+      getlocal1
+      getlocal0
+      getproperty         QName(PrivateNamespace("Habbo"), "_loadingScreen")
+      construct           1
+      getlex              QName(PackageNamespace("flash.display"), "DisplayObject")
+      astypelate
+      coerce              QName(PackageNamespace("flash.display"), "DisplayObject")
+      setlocal2
+
+      debugline           327
+      getlocal2
+      iffalse             L94
+
+      debugline           328
+      getlocal2
+      getlex              QName(PackageNamespace("flash.events"), "Event")
+      getproperty         QName(PackageNamespace("", "#0"), "REMOVED")
+      getlocal0
+      getproperty         QName(PrivateNamespace("Habbo"), "onMainRemoved")
+      pushfalse
+      pushbyte            0
+      pushtrue
+      callpropvoid        QName(PackageNamespace("", "#0"), "addEventListener"), 5
+
+      debugline           329
+      findpropstrict      QName(PackageNamespace("", "#0"), "addChild")
+      getlocal2
+      callpropvoid        QName(PackageNamespace("", "#0"), "addChild"), 1
+
+      debugline           332
+L94:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("Habbo"), "enableAccessFromJavascript")
+   method
+    refid "Habbo/instance/Habbo/enableAccessFromJavascript"
+    returns QName(PackageNamespace("", "#0"), "void")
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 10
+     maxscopedepth 11
+     code
+      debugfile           "k"
+      debugline           334
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce_s
+      setlocal1
+
+      pushbyte            0
+      setlocal2
+
+      debugline           335
+      getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+      getproperty         QName(PackageNamespace("", "#0"), "available")
+      iffalse             L78
+
+      debug               1, "k", 0, 336
+      debugline           336
+      getlex              QName(PackageNamespace("", "#0"), "stage")
+      getproperty         QName(PackageNamespace("", "#0"), "loaderInfo")
+      getproperty         QName(PackageNamespace("", "#0"), "parameters")
+      pushstring          "url.prefix"
+      getproperty         MultinameL([PrivateNamespace("Habbo"), PackageNamespace("", "#0"), StaticProtectedNs("Habbo"), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("Habbo.as$36"), PackageInternalNs(""), ProtectedNamespace("Habbo"), StaticProtectedNs("flash.display:MovieClip"), StaticProtectedNs("flash.display:Sprite"), StaticProtectedNs("flash.display:DisplayObjectContainer"), StaticProtectedNs("flash.display:InteractiveObject"), StaticProtectedNs("flash.display:DisplayObject"), StaticProtectedNs("flash.events:EventDispatcher")])
+      coerce_s
+      setlocal1
+
+      debugline           337
+      getlocal1
+      pushnull
+      ifeq                L71
+
+      debug               1, "k", 1, 339
+      debugline           338
+      getlocal1
+      pushstring          "http://"
+      pushstring          ""
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "replace"), 2
+      pushstring          "https://"
+      pushstring          ""
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "replace"), 2
+      coerce_s
+      setlocal1
+
+      debugline           339
+      getlocal1
+      pushstring          ":"
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "indexOf"), 1
+      convert_i
+      setlocal2
+
+      debugline           340
+      getlocal2
+      pushbyte            -1
+      ifeq                L55
+
+      debugline           341
+      getlocal1
+      pushbyte            0
+      getlocal2
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "substring"), 2
+      coerce_s
+      setlocal1
+
+      debugline           343
+L55:
+      findpropstrict      QName(PrivateNamespace("Habbo"), "isValidHabboDomain")
+      getlocal1
+      callproperty        QName(PrivateNamespace("Habbo"), "isValidHabboDomain"), 1
+      iffalse             L67
+
+      debugline           347
+      getlex              QName(PackageNamespace("flash.system"), "Security")
+      getlocal1
+      callpropvoid        QName(PackageNamespace("", "#0"), "allowDomain"), 1
+
+      jump                L67
+
+      ; 0xF0
+      ; 0xDF
+      ; 0x02
+L67:
+      jump                L71
+
+      ; 0xF0
+      ; 0xE5
+      ; 0x02
+L71:
+      jump                L78
+
+      ; 0xF0
+      ; 0xEB
+      ; 0x02
+      ; 0xF0
+      ; 0xEE
+      ; 0x02
+L78:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("Habbo"), "onMainRemoved")
+   method
+    refid "Habbo/instance/Habbo/onMainRemoved"
+    param QName(PackageNamespace("flash.events"), "Event")
+    returns QName(PackageNamespace("", "#0"), "void")
+    body
+     maxstack 1
+     localcount 2
+     initscopedepth 10
+     maxscopedepth 11
+     code
+      debugfile           "k"
+      debugline           368
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 368
+      debugline           369
+      getlocal0
+      callpropvoid        QName(PrivateNamespace("Habbo"), "dispose"), 0
+
+      debugline           370
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("Habbo"), "dispose")
+   method
+    refid "Habbo/instance/Habbo/dispose"
+    returns QName(PackageNamespace("", "#0"), "void")
+    body
+     maxstack 3
+     localcount 1
+     initscopedepth 10
+     maxscopedepth 11
+     code
+      debugfile           "k"
+      debugline           372
+      getlocal0
+      pushscope
+
+      debugline           373
+      findpropstrict      QName(PackageNamespace("", "#0"), "removeEventListener")
+      getlex              QName(PackageNamespace("flash.events"), "Event")
+      getproperty         QName(PackageNamespace("", "#0"), "ADDED_TO_STAGE")
+      getlocal0
+      getproperty         QName(PrivateNamespace("Habbo"), "onAddedToStage")
+      callpropvoid        QName(PackageNamespace("", "#0"), "removeEventListener"), 2
+
+      debugline           375
+      getlocal0
+      getproperty         QName(PrivateNamespace("Habbo"), "_disposed")
+      iftrue              L36
+
+      debugline           376
+      getlocal0
+      pushtrue
+      initproperty        QName(PrivateNamespace("Habbo"), "_disposed")
+
+      debugline           377
+      getlocal0
+      getproperty         QName(PrivateNamespace("Habbo"), "_loadingScreen")
+      pushnull
+      ifeq                L29
+
+      debugline           379
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("Habbo"), "_loadingScreen")
+
+      debugline           381
+L29:
+      getlex              QName(PackageNamespace("", "#0"), "parent")
+      iffalse             L36
+
+      debugline           382
+      getlex              QName(PackageNamespace("", "#0"), "parent")
+      getlocal0
+      callpropvoid        QName(PackageNamespace("", "#0"), "removeChild"), 1
+
+      debugline           385
+L36:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace("", "#0"), "progress")
+   method
+    refid "Habbo/instance/progress/getter"
+    returns QName(PackageNamespace("", "#0"), "Number")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 10
+     maxscopedepth 11
+     code
+      debugfile           "k"
+      debugline           387
+      getlocal0
+      pushscope
+
+      debugline           388
+      getlocal0
+      getproperty         QName(PackageNamespace("", "#0"), "bytesTotal")
+      pushbyte            0
+      ifeq                L16
+
+      getlocal0
+      getproperty         QName(PrivateNamespace("Habbo"), "_cachedBytesLoaded")
+      getlocal0
+      getproperty         QName(PrivateNamespace("Habbo"), "_cachedBytesTotal")
+      divide
+      convert_d
+      jump                L24
+
+L16:
+      getlocal0
+      getproperty         QName(PrivateNamespace("Habbo"), "_loaderCompleted")
+      iffalse             L22
+
+      pushbyte            1
+      convert_d
+      jump                L24
+
+L22:
+      pushbyte            0
+      convert_d
+L24:
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace("", "#0"), "bytesLoaded")
+   method
+    refid "Habbo/instance/bytesLoaded/getter"
+    returns QName(PackageNamespace("", "#0"), "uint")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 10
+     maxscopedepth 11
+     code
+      debugfile           "k"
+      debugline           391
+      getlocal0
+      pushscope
+
+      debugline           392
+      getlocal0
+      getproperty         QName(PrivateNamespace("Habbo"), "_cacheIsDirty")
+      iffalse             L12
+
+      debugline           393
+      getlocal0
+      callpropvoid        QName(PrivateNamespace("Habbo"), "calculateProgress"), 0
+
+      debugline           395
+L12:
+      getlocal0
+      getproperty         QName(PrivateNamespace("Habbo"), "_cachedBytesLoaded")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace("", "#0"), "bytesTotal")
+   method
+    refid "Habbo/instance/bytesTotal/getter"
+    returns QName(PackageNamespace("", "#0"), "uint")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 10
+     maxscopedepth 11
+     code
+      debugfile           "k"
+      debugline           398
+      getlocal0
+      pushscope
+
+      debugline           399
+      getlocal0
+      getproperty         QName(PrivateNamespace("Habbo"), "_cacheIsDirty")
+      iffalse             L12
+
+      debugline           400
+      getlocal0
+      callpropvoid        QName(PrivateNamespace("Habbo"), "calculateProgress"), 0
+
+      debugline           402
+L12:
+      getlocal0
+      getproperty         QName(PrivateNamespace("Habbo"), "_cachedBytesTotal")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PrivateNamespace("Habbo"), "newUserReceptionEnabled")
+   method
+    refid "Habbo/instance/Habbo/newUserReceptionEnabled/getter"
+    returns QName(PackageNamespace("", "#0"), "Boolean")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 10
+     maxscopedepth 11
+     code
+      debugfile           "k"
+      debugline           405
+      getlocal0
+      pushscope
+
+      debugline           406
+      getlex              QName(PackageNamespace("", "#0"), "stage")
+      getproperty         QName(PackageNamespace("", "#0"), "loaderInfo")
+      getproperty         QName(PackageNamespace("", "#0"), "parameters")
+      getlex              QName(PrivateNamespace("Habbo"), "NEW_USER_FLOW_ENABLED")
+      getproperty         MultinameL([PrivateNamespace("Habbo"), PackageNamespace("", "#0"), StaticProtectedNs("Habbo"), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("Habbo.as$36"), PackageInternalNs(""), ProtectedNamespace("Habbo"), StaticProtectedNs("flash.display:MovieClip"), StaticProtectedNs("flash.display:Sprite"), StaticProtectedNs("flash.display:DisplayObjectContainer"), StaticProtectedNs("flash.display:InteractiveObject"), StaticProtectedNs("flash.display:DisplayObject"), StaticProtectedNs("flash.events:EventDispatcher")])
+      pushstring          "true"
+      equals
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PrivateNamespace("Habbo"), "newUserOnboardingEnabled")
+   method
+    refid "Habbo/instance/Habbo/newUserOnboardingEnabled/getter"
+    returns QName(PackageNamespace("", "#0"), "Boolean")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 10
+     maxscopedepth 11
+     code
+      debugfile           "k"
+      debugline           409
+      getlocal0
+      pushscope
+
+      debugline           410
+      getlex              QName(PackageNamespace("", "#0"), "stage")
+      getproperty         QName(PackageNamespace("", "#0"), "loaderInfo")
+      getproperty         QName(PackageNamespace("", "#0"), "parameters")
+      getlex              QName(PrivateNamespace("Habbo"), "NEW_USER_ONBOARDING_HC_FLOW_ENABLED")
+      getproperty         MultinameL([PrivateNamespace("Habbo"), PackageNamespace("", "#0"), StaticProtectedNs("Habbo"), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("Habbo.as$36"), PackageInternalNs(""), ProtectedNamespace("Habbo"), StaticProtectedNs("flash.display:MovieClip"), StaticProtectedNs("flash.display:Sprite"), StaticProtectedNs("flash.display:DisplayObjectContainer"), StaticProtectedNs("flash.display:InteractiveObject"), StaticProtectedNs("flash.display:DisplayObject"), StaticProtectedNs("flash.events:EventDispatcher")])
+      pushstring          "true"
+      equals
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PrivateNamespace("Habbo"), "showHcItemDuringOnboarding")
+   method
+    refid "Habbo/instance/Habbo/showHcItemDuringOnboarding/getter"
+    returns QName(PackageNamespace("", "#0"), "Boolean")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 10
+     maxscopedepth 11
+     code
+      debugfile           "k"
+      debugline           413
+      getlocal0
+      pushscope
+
+      debugline           414
+      getlex              QName(PackageNamespace("", "#0"), "stage")
+      getproperty         QName(PackageNamespace("", "#0"), "loaderInfo")
+      getproperty         QName(PackageNamespace("", "#0"), "parameters")
+      getlex              QName(PrivateNamespace("Habbo"), "NEW_USER_ONBOARDING_SHOW_HC_ITEMS")
+      getproperty         MultinameL([PrivateNamespace("Habbo"), PackageNamespace("", "#0"), StaticProtectedNs("Habbo"), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("Habbo.as$36"), PackageInternalNs(""), ProtectedNamespace("Habbo"), StaticProtectedNs("flash.display:MovieClip"), StaticProtectedNs("flash.display:Sprite"), StaticProtectedNs("flash.display:DisplayObjectContainer"), StaticProtectedNs("flash.display:InteractiveObject"), StaticProtectedNs("flash.display:DisplayObject"), StaticProtectedNs("flash.events:EventDispatcher")])
+      pushstring          "true"
+      equals
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PrivateNamespace("Habbo"), "onboardingGoToPage")
+   method
+    refid "Habbo/instance/Habbo/onboardingGoToPage/getter"
+    returns QName(PackageNamespace("", "#0"), "String")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 10
+     maxscopedepth 11
+     code
+      debugfile           "k"
+      debugline           417
+      getlocal0
+      pushscope
+
+      debugline           418
+      getlex              QName(PackageNamespace("", "#0"), "stage")
+      getproperty         QName(PackageNamespace("", "#0"), "loaderInfo")
+      getproperty         QName(PackageNamespace("", "#0"), "parameters")
+      getlex              QName(PrivateNamespace("Habbo"), "NEW_USER_ONBOARDING_PAGE_TO_SHOW")
+      getproperty         MultinameL([PrivateNamespace("Habbo"), PackageNamespace("", "#0"), StaticProtectedNs("Habbo"), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("Habbo.as$36"), PackageInternalNs(""), ProtectedNamespace("Habbo"), StaticProtectedNs("flash.display:MovieClip"), StaticProtectedNs("flash.display:Sprite"), StaticProtectedNs("flash.display:DisplayObjectContainer"), StaticProtectedNs("flash.display:InteractiveObject"), StaticProtectedNs("flash.display:DisplayObject"), StaticProtectedNs("flash.events:EventDispatcher")])
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PrivateNamespace("Habbo"), "processLogEnabled")
+   method
+    refid "Habbo/instance/Habbo/processLogEnabled/getter"
+    returns QName(PackageNamespace("", "#0"), "Boolean")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 10
+     maxscopedepth 11
+     code
+      debugfile           "k"
+      debugline           421
+      getlocal0
+      pushscope
+
+      debugline           422
+      getlex              QName(PackageNamespace("", "#0"), "stage")
+      getproperty         QName(PackageNamespace("", "#0"), "loaderInfo")
+      getproperty         QName(PackageNamespace("", "#0"), "parameters")
+      getlex              QName(PrivateNamespace("Habbo"), "PROCESSLOG_ENABLED_KEY")
+      getproperty         MultinameL([PrivateNamespace("Habbo"), PackageNamespace("", "#0"), StaticProtectedNs("Habbo"), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("Habbo.as$36"), PackageInternalNs(""), ProtectedNamespace("Habbo"), StaticProtectedNs("flash.display:MovieClip"), StaticProtectedNs("flash.display:Sprite"), StaticProtectedNs("flash.display:DisplayObjectContainer"), StaticProtectedNs("flash.display:InteractiveObject"), StaticProtectedNs("flash.display:DisplayObject"), StaticProtectedNs("flash.events:EventDispatcher")])
+      pushstring          "1"
+      equals
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("Habbo"), "onNewUserReceptionFinished")
+   method
+    refid "Habbo/instance/Habbo/onNewUserReceptionFinished"
+    param QName(PackageNamespace("flash.events"), "Event")
+    returns QName(PackageNamespace("", "#0"), "void")
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 10
+     maxscopedepth 11
+     code
+      debugfile           "k"
+      debugline           97
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 97
+      debugline           102
+      getlocal0
+      getproperty         QName(PrivateNamespace("Habbo"), "newUserReceptionEnabled")
+      iffalse             L38
+
+      debugline           103
+      getlocal0
+      getproperty         QName(PrivateNamespace("Habbo"), "newUserOnboardingEnabled")
+      iffalse             L38
+
+      debugline           104
+      getlocal0
+      getproperty         QName(PrivateNamespace("Habbo"), "_onBoardingHc")
+      getlex              QName(PackageNamespace("", "#0"), "OnBoardingHcFlow")
+      getproperty         QName(PackageNamespace("", "#0"), "_-F7")
+      getlocal0
+      getproperty         QName(PrivateNamespace("Habbo"), "onNewUserReceptionFinished")
+      callpropvoid        QName(PackageNamespace("", "#0"), "removeEventListener"), 2
+
+      debugline           105
+      getlocal0
+      getproperty         QName(PrivateNamespace("Habbo"), "_onBoardingHc")
+      callpropvoid        QName(PackageNamespace("", "#0"), "dispose"), 0
+
+      debugline           106
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("Habbo"), "_onBoardingHc")
+
+      debugline           107
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("Habbo"), "_loadingScreen")
+
+      debugline           108
+      getlocal0
+      getlex              QName(PrivateNamespace("Habbo"), "STEP_NUX_EXITED")
+      callpropvoid        QName(PrivateNamespace("Habbo"), "trackNewReceptionStep"), 1
+
+      debugline           112
+L38:
+      getlocal0
+      callpropvoid        QName(PackageNamespace("", "#0"), "createLoadingScreen"), 0
+
+      debugline           113
+      getlocal0
+      callpropvoid        QName(PrivateNamespace("Habbo"), "checkPreLoadingStatus"), 0
+
+      debugline           114
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("Habbo"), "trackNewReceptionStep")
+   method
+    refid "Habbo/instance/Habbo/trackNewReceptionStep"
+    param QName(PackageNamespace("", "#0"), "String")
+    returns QName(PackageNamespace("", "#0"), "void")
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 10
+     maxscopedepth 13
+     code
+      debugfile           "k"
+      debugline           116
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 116
+      debugline           117
+      getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+      getproperty         QName(PackageNamespace("", "#0"), "available")
+      convert_b
+      dup
+      iffalse             L15
+
+      pop
+      getlocal0
+      getproperty         QName(PrivateNamespace("Habbo"), "newUserReceptionEnabled")
+      convert_b
+L15:
+      iffalse             L44
+
+      debugline           119
+L17:
+      getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+      getproperty         QName(PackageNamespace("", "#0"), "available")
+      iffalse             L31
+
+      debugline           120
+      getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+      getlex              QName(PrivateNamespace("Habbo"), "RECEPTION_LOG_STEP_FUNCTION")
+      getlocal1
+      callpropvoid        QName(PackageNamespace("", "#0"), "call"), 2
+
+      jump                L31
+
+      ; 0xF0
+      ; 0x7C
+      ; 0xF0
+      ; 0x80
+      ; 0x01
+L31:
+      jump                L44
+
+L32:
+      getlocal0
+      pushscope
+
+      newcatch            0
+      dup
+      setlocal2
+
+      dup
+      pushscope
+
+      swap
+      setslot             1
+
+      popscope
+      kill                2
+      debugline           132
+L44:
+      returnvoid
+     end ; code
+     try from L17 to L31 target L32 type QName(PackageNamespace("", "#0"), "Error") name QName(PackageNamespace("", "#0"), "e") end
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "Habbo/class/init"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 9
+   maxscopedepth 10
+   code
+    getlocal0
+    pushscope
+
+    debug               1, "k", 0, 45
+    findproperty        QName(PackageNamespace("", "#0"), "CORE_RATIO")
+    pushdouble          0.6
+    initproperty        QName(PackageNamespace("", "#0"), "CORE_RATIO")
+
+    debug               1, "k", 1, 46
+    findproperty        QName(PrivateNamespace("Habbo"), "APPROXIMATE_SWF_SIZE")
+    pushint             5000000
+    initproperty        QName(PrivateNamespace("Habbo"), "APPROXIMATE_SWF_SIZE")
+
+    debug               1, "k", 2, 47
+    findproperty        QName(StaticProtectedNs("Habbo"), "PROCESSLOG_ENABLED")
+    pushfalse
+    setproperty         QName(StaticProtectedNs("Habbo"), "PROCESSLOG_ENABLED")
+
+    debug               1, "k", 3, 50
+    findproperty        QName(PackageNamespace("", "#0"), "ERROR_VARIABLE_IS_FATAL")
+    pushstring          "is_fatal"
+    initproperty        QName(PackageNamespace("", "#0"), "ERROR_VARIABLE_IS_FATAL")
+
+    debug               1, "k", 4, 51
+    findproperty        QName(PackageNamespace("", "#0"), "ERROR_VARIABLE_CLIENT_CRASH_TIME")
+    pushstring          "crash_time"
+    initproperty        QName(PackageNamespace("", "#0"), "ERROR_VARIABLE_CLIENT_CRASH_TIME")
+
+    debug               1, "k", 5, 52
+    findproperty        QName(PackageNamespace("", "#0"), "ERROR_VARIABLE_CONTEXT")
+    pushstring          "error_ctx"
+    initproperty        QName(PackageNamespace("", "#0"), "ERROR_VARIABLE_CONTEXT")
+
+    debug               1, "k", 6, 53
+    findproperty        QName(PackageNamespace("", "#0"), "ERROR_VARIABLE_FLASH_VERSION")
+    pushstring          "flash_version"
+    initproperty        QName(PackageNamespace("", "#0"), "ERROR_VARIABLE_FLASH_VERSION")
+
+    debug               1, "k", 7, 54
+    findproperty        QName(PackageNamespace("", "#0"), "ERROR_VARIABLE_AVERAGE_UPDATE_INTERVAL")
+    pushstring          "avg_update"
+    initproperty        QName(PackageNamespace("", "#0"), "ERROR_VARIABLE_AVERAGE_UPDATE_INTERVAL")
+
+    debug               1, "k", 8, 55
+    findproperty        QName(PackageNamespace("", "#0"), "ERROR_VARIABLE_DEBUG")
+    pushstring          "debug"
+    initproperty        QName(PackageNamespace("", "#0"), "ERROR_VARIABLE_DEBUG")
+
+    debug               1, "k", 9, 56
+    findproperty        QName(PackageNamespace("", "#0"), "ERROR_VARIABLE_DESCRIPTION")
+    pushstring          "error_desc"
+    initproperty        QName(PackageNamespace("", "#0"), "ERROR_VARIABLE_DESCRIPTION")
+
+    debug               1, "k", 10, 57
+    findproperty        QName(PackageNamespace("", "#0"), "ERROR_VARIABLE_CATEGORY")
+    pushstring          "error_cat"
+    initproperty        QName(PackageNamespace("", "#0"), "ERROR_VARIABLE_CATEGORY")
+
+    debug               1, "k", 11, 58
+    findproperty        QName(PackageNamespace("", "#0"), "ERROR_VARIABLE_DATA")
+    pushstring          "error_data"
+    initproperty        QName(PackageNamespace("", "#0"), "ERROR_VARIABLE_DATA")
+
+    debug               1, "k", 12, 60
+    findproperty        QName(PrivateNamespace("Habbo"), "CLIENT_STARTING")
+    pushstring          "client.starting"
+    initproperty        QName(PrivateNamespace("Habbo"), "CLIENT_STARTING")
+
+    debug               1, "k", 13, 61
+    findproperty        QName(PrivateNamespace("Habbo"), "PROCESSLOG_ENABLED_KEY")
+    pushstring          "processlog.enabled"
+    initproperty        QName(PrivateNamespace("Habbo"), "PROCESSLOG_ENABLED_KEY")
+
+    debug               1, "k", 14, 62
+    findproperty        QName(PrivateNamespace("Habbo"), "NEW_USER_FLOW_ENABLED")
+    pushstring          "new.user.flow.enabled"
+    initproperty        QName(PrivateNamespace("Habbo"), "NEW_USER_FLOW_ENABLED")
+
+    debug               1, "k", 15, 63
+    findproperty        QName(PrivateNamespace("Habbo"), "NEW_USER_ONBOARDING_HC_FLOW_ENABLED")
+    pushstring          "new.user.onboarding.hc.flow.enabled"
+    initproperty        QName(PrivateNamespace("Habbo"), "NEW_USER_ONBOARDING_HC_FLOW_ENABLED")
+
+    debug               1, "k", 16, 64
+    findproperty        QName(PrivateNamespace("Habbo"), "NEW_USER_ONBOARDING_SHOW_HC_ITEMS")
+    pushstring          "new.user.onboarding.show.hc.items"
+    initproperty        QName(PrivateNamespace("Habbo"), "NEW_USER_ONBOARDING_SHOW_HC_ITEMS")
+
+    debug               1, "k", 17, 65
+    findproperty        QName(PrivateNamespace("Habbo"), "NEW_USER_ONBOARDING_PAGE_TO_SHOW")
+    pushstring          "new.user.flow.page"
+    initproperty        QName(PrivateNamespace("Habbo"), "NEW_USER_ONBOARDING_PAGE_TO_SHOW")
+
+    debug               1, "k", 18, 67
+    findproperty        QName(PrivateNamespace("Habbo"), "RECEPTION_LOG_STEP_FUNCTION")
+    pushstring          "NewUserReception.logStep"
+    initproperty        QName(PrivateNamespace("Habbo"), "RECEPTION_LOG_STEP_FUNCTION")
+
+    debug               1, "k", 19, 68
+    findproperty        QName(PrivateNamespace("Habbo"), "STEP_NUX_ENTERED")
+    pushstring          "NUX_ENTERED"
+    initproperty        QName(PrivateNamespace("Habbo"), "STEP_NUX_ENTERED")
+
+    debug               1, "k", 20, 69
+    findproperty        QName(PrivateNamespace("Habbo"), "STEP_RECEPTION_EXITED")
+    pushstring          "RECEPTION_EXITED"
+    initproperty        QName(PrivateNamespace("Habbo"), "STEP_RECEPTION_EXITED")
+
+    debug               1, "k", 21, 70
+    findproperty        QName(PrivateNamespace("Habbo"), "STEP_NUX_EXITED")
+    pushstring          "NUX_EXITED"
+    initproperty        QName(PrivateNamespace("Habbo"), "STEP_NUX_EXITED")
+
+    debug               1, "k", 22, 71
+    findproperty        QName(PrivateNamespace("Habbo"), "STEP_CLIENT_LOADED")
+    pushstring          "CLIENT_LOADED"
+    initproperty        QName(PrivateNamespace("Habbo"), "STEP_CLIENT_LOADED")
+
+    debug               1, "k", 23, 74
+    findproperty        QName(PackageNamespace("", "#0"), "ERROR_CATEGORY_FINALIZE_PRELOADING")
+    pushbyte            9
+    initproperty        QName(PackageNamespace("", "#0"), "ERROR_CATEGORY_FINALIZE_PRELOADING")
+
+    debug               1, "k", 24, 75
+    findproperty        QName(PackageNamespace("", "#0"), "ERROR_CATEGORY_DOWNLOAD_FONT")
+    pushbyte            11
+    initproperty        QName(PackageNamespace("", "#0"), "ERROR_CATEGORY_DOWNLOAD_FONT")
+
+    debug               1, "k", 25, 76
+    findproperty        QName(PackageNamespace("", "#0"), "ERROR_UNCAUGHT_ERROR")
+    pushbyte            40
+    initproperty        QName(PackageNamespace("", "#0"), "ERROR_UNCAUGHT_ERROR")
+
+    debug               1, "k", 26, 86
+    findproperty        QName(PrivateNamespace("Habbo"), "_crashURL")
+    pushstring          ""
+    setproperty         QName(PrivateNamespace("Habbo"), "_crashURL")
+
+    debug               1, "k", 27, 87
+    findproperty        QName(PrivateNamespace("Habbo"), "_crashed")
+    pushfalse
+    setproperty         QName(PrivateNamespace("Habbo"), "_crashed")
+
+    debug               1, "k", 28, 88
+    findproperty        QName(PrivateNamespace("Habbo"), "_isSpaWeb")
+    pushfalse
+    setproperty         QName(PrivateNamespace("Habbo"), "_isSpaWeb")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait const QName(PackageNamespace("", "#0"), "CORE_RATIO") slotid 1 type QName(PackageNamespace("", "#0"), "Number") value Double(0.6) end
+ trait const QName(PrivateNamespace("Habbo"), "APPROXIMATE_SWF_SIZE") slotid 2 type QName(PackageNamespace("", "#0"), "int") value Integer(5000000) end
+ trait slot QName(StaticProtectedNs("Habbo"), "PROCESSLOG_ENABLED") slotid 3 type QName(PackageNamespace("", "#0"), "Boolean") value False() end
+ trait const QName(PackageNamespace("", "#0"), "ERROR_VARIABLE_IS_FATAL") slotid 4 type QName(PackageNamespace("", "#0"), "String") value Utf8("is_fatal") end
+ trait const QName(PackageNamespace("", "#0"), "ERROR_VARIABLE_CLIENT_CRASH_TIME") slotid 5 type QName(PackageNamespace("", "#0"), "String") value Utf8("crash_time") end
+ trait const QName(PackageNamespace("", "#0"), "ERROR_VARIABLE_CONTEXT") slotid 6 type QName(PackageNamespace("", "#0"), "String") value Utf8("error_ctx") end
+ trait const QName(PackageNamespace("", "#0"), "ERROR_VARIABLE_FLASH_VERSION") slotid 7 type QName(PackageNamespace("", "#0"), "String") value Utf8("flash_version") end
+ trait const QName(PackageNamespace("", "#0"), "ERROR_VARIABLE_AVERAGE_UPDATE_INTERVAL") slotid 8 type QName(PackageNamespace("", "#0"), "String") value Utf8("avg_update") end
+ trait const QName(PackageNamespace("", "#0"), "ERROR_VARIABLE_DEBUG") slotid 9 type QName(PackageNamespace("", "#0"), "String") value Utf8("debug") end
+ trait const QName(PackageNamespace("", "#0"), "ERROR_VARIABLE_DESCRIPTION") slotid 10 type QName(PackageNamespace("", "#0"), "String") value Utf8("error_desc") end
+ trait const QName(PackageNamespace("", "#0"), "ERROR_VARIABLE_CATEGORY") slotid 11 type QName(PackageNamespace("", "#0"), "String") value Utf8("error_cat") end
+ trait const QName(PackageNamespace("", "#0"), "ERROR_VARIABLE_DATA") slotid 12 type QName(PackageNamespace("", "#0"), "String") value Utf8("error_data") end
+ trait const QName(PrivateNamespace("Habbo"), "CLIENT_STARTING") slotid 13 type QName(PackageNamespace("", "#0"), "String") value Utf8("client.starting") end
+ trait const QName(PrivateNamespace("Habbo"), "PROCESSLOG_ENABLED_KEY") slotid 14 type QName(PackageNamespace("", "#0"), "String") value Utf8("processlog.enabled") end
+ trait const QName(PrivateNamespace("Habbo"), "NEW_USER_FLOW_ENABLED") slotid 15 type QName(PackageNamespace("", "#0"), "String") value Utf8("new.user.flow.enabled") end
+ trait const QName(PrivateNamespace("Habbo"), "NEW_USER_ONBOARDING_HC_FLOW_ENABLED") slotid 16 type QName(PackageNamespace("", "#0"), "String") value Utf8("new.user.onboarding.hc.flow.enabled") end
+ trait const QName(PrivateNamespace("Habbo"), "NEW_USER_ONBOARDING_SHOW_HC_ITEMS") slotid 17 type QName(PackageNamespace("", "#0"), "String") value Utf8("new.user.onboarding.show.hc.items") end
+ trait const QName(PrivateNamespace("Habbo"), "NEW_USER_ONBOARDING_PAGE_TO_SHOW") slotid 18 type QName(PackageNamespace("", "#0"), "String") value Utf8("new.user.flow.page") end
+ trait const QName(PrivateNamespace("Habbo"), "RECEPTION_LOG_STEP_FUNCTION") slotid 19 type QName(PackageNamespace("", "#0"), "String") value Utf8("NewUserReception.logStep") end
+ trait const QName(PrivateNamespace("Habbo"), "STEP_NUX_ENTERED") slotid 20 type QName(PackageNamespace("", "#0"), "String") value Utf8("NUX_ENTERED") end
+ trait const QName(PrivateNamespace("Habbo"), "STEP_RECEPTION_EXITED") slotid 21 type QName(PackageNamespace("", "#0"), "String") value Utf8("RECEPTION_EXITED") end
+ trait const QName(PrivateNamespace("Habbo"), "STEP_NUX_EXITED") slotid 22 type QName(PackageNamespace("", "#0"), "String") value Utf8("NUX_EXITED") end
+ trait const QName(PrivateNamespace("Habbo"), "STEP_CLIENT_LOADED") slotid 23 type QName(PackageNamespace("", "#0"), "String") value Utf8("CLIENT_LOADED") end
+ trait const QName(PackageNamespace("", "#0"), "ERROR_CATEGORY_FINALIZE_PRELOADING") slotid 24 type QName(PackageNamespace("", "#0"), "int") value Integer(9) end
+ trait const QName(PackageNamespace("", "#0"), "ERROR_CATEGORY_DOWNLOAD_FONT") slotid 25 type QName(PackageNamespace("", "#0"), "int") value Integer(11) end
+ trait const QName(PackageNamespace("", "#0"), "ERROR_UNCAUGHT_ERROR") slotid 26 type QName(PackageNamespace("", "#0"), "int") value Integer(40) end
+ trait slot QName(PrivateNamespace("Habbo"), "_crashURL") slotid 27 type QName(PackageNamespace("", "#0"), "String") value Utf8("") end
+ trait slot QName(PrivateNamespace("Habbo"), "_crashed") slotid 28 type QName(PackageNamespace("", "#0"), "Boolean") value False() end
+ trait slot QName(PrivateNamespace("Habbo"), "_isSpaWeb") slotid 29 type QName(PackageNamespace("", "#0"), "Boolean") value False() end
+ trait method QName(PackageNamespace("", "#0"), "trackLoginStep") flag FINAL dispid 3
+  method
+   refid "Habbo/class/trackLoginStep"
+   param QName(PackageNamespace("", "#0"), "String")
+   param QName(PackageNamespace("", "#0"), "String")
+   returns QName(PackageNamespace("", "#0"), "void")
+   flag HAS_OPTIONAL
+   optional Null()
+   body
+    maxstack 4
+    localcount 4
+    initscopedepth 9
+    maxscopedepth 12
+    code
+     debugfile           "k"
+     debugline           425
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 425
+     debug               1, "k", 1, 425
+     debugline           426
+     getlex              QName(PackageNamespace("", "#0"), "_-1pV")
+     pushstring          "* HabboMain Login Step: "
+     getlocal1
+     add
+     callpropvoid        QName(PackageNamespace("", "#0"), "log"), 1
+
+     debugline           428
+     getglobalscope
+     getslot             1
+     getproperty         QName(StaticProtectedNs("Habbo"), "PROCESSLOG_ENABLED")
+     iffalse             L60
+
+     debugline           430
+L18:
+     getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+     getproperty         QName(PackageNamespace("", "#0"), "available")
+     iffalse             L43
+
+     debugline           431
+     getlocal2
+     pushnull
+     ifeq                L35
+
+     debugline           432
+     getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+     pushstring          "FlashExternalInterface.logLoginStep"
+     getlocal1
+     getlocal2
+     callpropvoid        QName(PackageNamespace("", "#0"), "call"), 3
+
+     jump                L39
+
+     ; 0xF0
+     ; 0xB3
+     ; 0x03
+L35:
+     getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+     pushstring          "FlashExternalInterface.logLoginStep"
+     getlocal1
+     callpropvoid        QName(PackageNamespace("", "#0"), "call"), 2
+
+L39:
+     jump                L47
+
+     ; 0xF0
+     ; 0xB7
+     ; 0x03
+L43:
+     getlex              QName(PackageNamespace("", "#0"), "_-1pV")
+     pushstring          "ExternalInterface is not available, tracking is disabled"
+     callpropvoid        QName(PackageNamespace("", "#0"), "log"), 1
+
+     debugline           442
+L47:
+     jump                L60
+
+L48:
+     getlocal0
+     pushscope
+
+     newcatch            0
+     dup
+     setlocal3
+
+     dup
+     pushscope
+
+     swap
+     setslot             1
+
+     popscope
+     kill                3
+     debugline           446
+L60:
+     returnvoid
+    end ; code
+    try from L18 to L47 target L48 type QName(PackageNamespace("", "#0"), "Error") name QName(PackageNamespace("", "#0"), "e") end
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PackageNamespace("", "#0"), "reportCrash") flag FINAL dispid 4
+  method
+   refid "Habbo/class/reportCrash"
+   param QName(PackageNamespace("", "#0"), "String")
+   param QName(PackageNamespace("", "#0"), "int")
+   param QName(PackageNamespace("", "#0"), "Boolean")
+   param QName(PackageNamespace("", "#0"), "Error")
+   returns QName(PackageNamespace("", "#0"), "void")
+   flag NEED_ACTIVATION
+   flag HAS_OPTIONAL
+   optional Null()
+   body
+    maxstack 7
+    localcount 7
+    initscopedepth 10
+    maxscopedepth 15
+    code
+     debugfile           "k"
+     debugline           448
+     getlocal0
+     pushscope
+
+     newactivation
+     dup
+     setlocal            5
+
+     pushscope
+
+     debug               1, "k", 4, 448
+     getscopeobject      1
+     getlocal1
+     setslot             1
+
+     getscopeobject      1
+     getlocal2
+     setslot             2
+
+     getscopeobject      1
+     getlocal3
+     setslot             3
+
+     getscopeobject      1
+     getlocal            4
+     setslot             4
+
+     debug               1, "k", 0, 448
+     debug               1, "k", 1, 448
+     debug               1, "k", 2, 448
+     debug               1, "k", 3, 448
+     debugline           449
+     getscopeobject      1
+     findpropstrict      QName(PackageNamespace("flash.net"), "URLRequest")
+     getglobalscope
+     getslot             1
+     getproperty         QName(PrivateNamespace("Habbo"), "_crashURL")
+     constructprop       QName(PackageNamespace("flash.net"), "URLRequest"), 1
+     coerce              QName(PackageNamespace("flash.net"), "URLRequest")
+     setslot             5
+
+     debugline           450
+     getscopeobject      1
+     findpropstrict      QName(PackageNamespace("flash.net"), "URLVariables")
+     constructprop       QName(PackageNamespace("flash.net"), "URLVariables"), 0
+     coerce              QName(PackageNamespace("flash.net"), "URLVariables")
+     setslot             6
+
+     debugline           453
+     getscopeobject      1
+     getslot             6
+     getlex              QName(PackageNamespace("", "#0"), "ERROR_VARIABLE_CLIENT_CRASH_TIME")
+     findpropstrict      QName(PackageNamespace("", "#0"), "Date")
+     constructprop       QName(PackageNamespace("", "#0"), "Date"), 0
+     callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "getTime"), 0
+     callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "toString"), 0
+     setproperty         MultinameL([PrivateNamespace("Habbo"), PackageNamespace("", "#0"), StaticProtectedNs("Habbo"), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("Habbo.as$36"), PackageInternalNs(""), ProtectedNamespace("Habbo"), StaticProtectedNs("flash.display:MovieClip"), StaticProtectedNs("flash.display:Sprite"), StaticProtectedNs("flash.display:DisplayObjectContainer"), StaticProtectedNs("flash.display:InteractiveObject"), StaticProtectedNs("flash.display:DisplayObject"), StaticProtectedNs("flash.events:EventDispatcher")])
+
+     debugline           455
+     getscopeobject      1
+     getslot             6
+     getlex              QName(PackageNamespace("", "#0"), "ERROR_VARIABLE_IS_FATAL")
+     getscopeobject      1
+     getslot             3
+     callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "toString"), 0
+     setproperty         MultinameL([PrivateNamespace("Habbo"), PackageNamespace("", "#0"), StaticProtectedNs("Habbo"), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("Habbo.as$36"), PackageInternalNs(""), ProtectedNamespace("Habbo"), StaticProtectedNs("flash.display:MovieClip"), StaticProtectedNs("flash.display:Sprite"), StaticProtectedNs("flash.display:DisplayObjectContainer"), StaticProtectedNs("flash.display:InteractiveObject"), StaticProtectedNs("flash.display:DisplayObject"), StaticProtectedNs("flash.events:EventDispatcher")])
+
+     debugline           457
+     getscopeobject      1
+     getslot             6
+     getlex              QName(PackageNamespace("", "#0"), "ERROR_VARIABLE_CONTEXT")
+     pushstring          ""
+     setproperty         MultinameL([PrivateNamespace("Habbo"), PackageNamespace("", "#0"), StaticProtectedNs("Habbo"), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("Habbo.as$36"), PackageInternalNs(""), ProtectedNamespace("Habbo"), StaticProtectedNs("flash.display:MovieClip"), StaticProtectedNs("flash.display:Sprite"), StaticProtectedNs("flash.display:DisplayObjectContainer"), StaticProtectedNs("flash.display:InteractiveObject"), StaticProtectedNs("flash.display:DisplayObject"), StaticProtectedNs("flash.events:EventDispatcher")])
+
+     debugline           460
+     getscopeobject      1
+     getslot             6
+     getlex              QName(PackageNamespace("", "#0"), "ERROR_VARIABLE_FLASH_VERSION")
+     getlex              QName(PackageNamespace("flash.system"), "Capabilities")
+     getproperty         QName(PackageNamespace("", "#0"), "version")
+     setproperty         MultinameL([PrivateNamespace("Habbo"), PackageNamespace("", "#0"), StaticProtectedNs("Habbo"), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("Habbo.as$36"), PackageInternalNs(""), ProtectedNamespace("Habbo"), StaticProtectedNs("flash.display:MovieClip"), StaticProtectedNs("flash.display:Sprite"), StaticProtectedNs("flash.display:DisplayObjectContainer"), StaticProtectedNs("flash.display:InteractiveObject"), StaticProtectedNs("flash.display:DisplayObject"), StaticProtectedNs("flash.events:EventDispatcher")])
+
+     debugline           461
+     getscopeobject      1
+     getslot             6
+     getlex              QName(PackageNamespace("", "#0"), "ERROR_VARIABLE_AVERAGE_UPDATE_INTERVAL")
+     pushbyte            0
+     setproperty         MultinameL([PrivateNamespace("Habbo"), PackageNamespace("", "#0"), StaticProtectedNs("Habbo"), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("Habbo.as$36"), PackageInternalNs(""), ProtectedNamespace("Habbo"), StaticProtectedNs("flash.display:MovieClip"), StaticProtectedNs("flash.display:Sprite"), StaticProtectedNs("flash.display:DisplayObjectContainer"), StaticProtectedNs("flash.display:InteractiveObject"), StaticProtectedNs("flash.display:DisplayObject"), StaticProtectedNs("flash.events:EventDispatcher")])
+
+     debugline           464
+     getscopeobject      1
+     getslot             6
+     getlex              QName(PackageNamespace("", "#0"), "ERROR_VARIABLE_DESCRIPTION")
+     getscopeobject      1
+     getslot             1
+     setproperty         MultinameL([PrivateNamespace("Habbo"), PackageNamespace("", "#0"), StaticProtectedNs("Habbo"), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("Habbo.as$36"), PackageInternalNs(""), ProtectedNamespace("Habbo"), StaticProtectedNs("flash.display:MovieClip"), StaticProtectedNs("flash.display:Sprite"), StaticProtectedNs("flash.display:DisplayObjectContainer"), StaticProtectedNs("flash.display:InteractiveObject"), StaticProtectedNs("flash.display:DisplayObject"), StaticProtectedNs("flash.events:EventDispatcher")])
+
+     debugline           465
+     getscopeobject      1
+     getslot             6
+     getlex              QName(PackageNamespace("", "#0"), "ERROR_VARIABLE_CATEGORY")
+     findpropstrict      QName(PackageNamespace("", "#0"), "String")
+     getscopeobject      1
+     getslot             2
+     callproperty        QName(PackageNamespace("", "#0"), "String"), 1
+     setproperty         MultinameL([PrivateNamespace("Habbo"), PackageNamespace("", "#0"), StaticProtectedNs("Habbo"), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("Habbo.as$36"), PackageInternalNs(""), ProtectedNamespace("Habbo"), StaticProtectedNs("flash.display:MovieClip"), StaticProtectedNs("flash.display:Sprite"), StaticProtectedNs("flash.display:DisplayObjectContainer"), StaticProtectedNs("flash.display:InteractiveObject"), StaticProtectedNs("flash.display:DisplayObject"), StaticProtectedNs("flash.events:EventDispatcher")])
+
+     debugline           467
+     getscopeobject      1
+     getslot             4
+     pushnull
+     ifeq                L108
+
+     debugline           468
+     getscopeobject      1
+     getslot             6
+     getlex              QName(PackageNamespace("", "#0"), "ERROR_VARIABLE_DATA")
+     findpropstrict      QName(PackageNamespace("", "#0"), "String")
+     getscopeobject      1
+     getslot             4
+     callproperty        QName(PackageNamespace("", "#0"), "getStackTrace"), 0
+     callproperty        QName(PackageNamespace("", "#0"), "String"), 1
+     setproperty         MultinameL([PrivateNamespace("Habbo"), PackageNamespace("", "#0"), StaticProtectedNs("Habbo"), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("Habbo.as$36"), PackageInternalNs(""), ProtectedNamespace("Habbo"), StaticProtectedNs("flash.display:MovieClip"), StaticProtectedNs("flash.display:Sprite"), StaticProtectedNs("flash.display:DisplayObjectContainer"), StaticProtectedNs("flash.display:InteractiveObject"), StaticProtectedNs("flash.display:DisplayObject"), StaticProtectedNs("flash.events:EventDispatcher")])
+
+     debugline           472
+L108:
+     getscopeobject      1
+     getslot             6
+     getlex              QName(PackageNamespace("", "#0"), "ERROR_VARIABLE_DEBUG")
+     pushstring          "Memory usage: "
+     getlex              QName(PackageNamespace("", "#0"), "Math")
+     getlex              QName(PackageNamespace("flash.system"), "System")
+     getproperty         QName(PackageNamespace("", "#0"), "totalMemory")
+     pushshort           1024
+     pushshort           1024
+     multiply
+     divide
+     callproperty        QName(PackageNamespace("", "#0"), "round"), 1
+     add
+     pushstring          " MB"
+     add
+     setproperty         MultinameL([PrivateNamespace("Habbo"), PackageNamespace("", "#0"), StaticProtectedNs("Habbo"), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("Habbo.as$36"), PackageInternalNs(""), ProtectedNamespace("Habbo"), StaticProtectedNs("flash.display:MovieClip"), StaticProtectedNs("flash.display:Sprite"), StaticProtectedNs("flash.display:DisplayObjectContainer"), StaticProtectedNs("flash.display:InteractiveObject"), StaticProtectedNs("flash.display:DisplayObject"), StaticProtectedNs("flash.events:EventDispatcher")])
+
+     debugline           475
+     getscopeobject      1
+     getlex              QName(PackageNamespace("_-12V"), "ErrorReportStorage")
+     callproperty        QName(PackageNamespace("", "#0"), "_-146"), 0
+     coerce              QName(PackageNamespace("", "#0"), "Array")
+     setslot             7
+
+     debugline           476
+     getscopeobject      1
+     getscopeobject      1
+     getslot             7
+     getproperty         QName(PackageNamespace("", "#0"), "length")
+     convert_i
+     setslot             8
+
+     debugline           478
+     getscopeobject      1
+     pushbyte            0
+     setslot             9
+
+     jump                L166
+
+L142:
+     label
+     debugline           479
+     getscopeobject      1
+     getslot             6
+     getscopeobject      1
+     getslot             7
+     getscopeobject      1
+     getslot             9
+     getproperty         MultinameL([PrivateNamespace("Habbo"), PackageNamespace("", "#0"), StaticProtectedNs("Habbo"), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("Habbo.as$36"), PackageInternalNs(""), ProtectedNamespace("Habbo"), StaticProtectedNs("flash.display:MovieClip"), StaticProtectedNs("flash.display:Sprite"), StaticProtectedNs("flash.display:DisplayObjectContainer"), StaticProtectedNs("flash.display:InteractiveObject"), StaticProtectedNs("flash.display:DisplayObject"), StaticProtectedNs("flash.events:EventDispatcher")])
+     getlex              QName(PackageNamespace("_-12V"), "ErrorReportStorage")
+     getscopeobject      1
+     getslot             7
+     getscopeobject      1
+     getslot             9
+     getproperty         MultinameL([PrivateNamespace("Habbo"), PackageNamespace("", "#0"), StaticProtectedNs("Habbo"), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("Habbo.as$36"), PackageInternalNs(""), ProtectedNamespace("Habbo"), StaticProtectedNs("flash.display:MovieClip"), StaticProtectedNs("flash.display:Sprite"), StaticProtectedNs("flash.display:DisplayObjectContainer"), StaticProtectedNs("flash.display:InteractiveObject"), StaticProtectedNs("flash.display:DisplayObject"), StaticProtectedNs("flash.events:EventDispatcher")])
+     callproperty        QName(PackageNamespace("", "#0"), "_-1G3"), 1
+     setproperty         MultinameL([PrivateNamespace("Habbo"), PackageNamespace("", "#0"), StaticProtectedNs("Habbo"), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("Habbo.as$36"), PackageInternalNs(""), ProtectedNamespace("Habbo"), StaticProtectedNs("flash.display:MovieClip"), StaticProtectedNs("flash.display:Sprite"), StaticProtectedNs("flash.display:DisplayObjectContainer"), StaticProtectedNs("flash.display:InteractiveObject"), StaticProtectedNs("flash.display:DisplayObject"), StaticProtectedNs("flash.events:EventDispatcher")])
+
+     debugline           478
+     getscopeobject      1
+     getslot             9
+     increment_i
+     getscopeobject      1
+     swap
+     setslot             9
+
+L166:
+     getscopeobject      1
+     getslot             9
+     getscopeobject      1
+     getslot             8
+     iflt                L142
+
+     debugline           483
+     getscopeobject      1
+     getslot             6
+     getlex              QName(PackageNamespace("", "#0"), "ERROR_VARIABLE_DEBUG")
+     getlex              QName(PackageNamespace("_-12V"), "ErrorReportStorage")
+     callproperty        QName(PackageNamespace("", "#0"), "_-3tA"), 0
+     setproperty         MultinameL([PrivateNamespace("Habbo"), PackageNamespace("", "#0"), StaticProtectedNs("Habbo"), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("Habbo.as$36"), PackageInternalNs(""), ProtectedNamespace("Habbo"), StaticProtectedNs("flash.display:MovieClip"), StaticProtectedNs("flash.display:Sprite"), StaticProtectedNs("flash.display:DisplayObjectContainer"), StaticProtectedNs("flash.display:InteractiveObject"), StaticProtectedNs("flash.display:DisplayObject"), StaticProtectedNs("flash.events:EventDispatcher")])
+
+     debugline           485
+     getscopeobject      1
+     getslot             5
+     getscopeobject      1
+     getslot             6
+     setproperty         QName(PackageNamespace("", "#0"), "data")
+
+     debugline           486
+     getscopeobject      1
+     getslot             5
+     getlex              QName(PackageNamespace("flash.net"), "URLRequestMethod")
+     getproperty         QName(PackageNamespace("", "#0"), "POST")
+     setproperty         QName(PackageNamespace("", "#0"), "method")
+
+     debugline           488
+     getscopeobject      1
+     getslot             3
+     iffalse             L226
+
+     debugline           489
+     getglobalscope
+     getslot             1
+     getproperty         QName(PrivateNamespace("Habbo"), "_crashed")
+     iftrue              L222
+
+     debugline           490
+     getglobalscope
+     getslot             1
+     pushtrue
+     setproperty         QName(PrivateNamespace("Habbo"), "_crashed")
+
+     debugline           491
+     getlex              QName(PrivateNamespace("Habbo"), "_isSpaWeb")
+     iffalse             L217
+
+     debugline           492
+     findpropstrict      QName(PrivateNamespace("Habbo"), "logSpaWeb")
+     pushstring          "FlashExternalInterface.logCrash"
+     getscopeobject      1
+     getslot             6
+     callpropvoid        QName(PrivateNamespace("Habbo"), "logSpaWeb"), 2
+
+     jump                L222
+
+     ; 0xF0
+     ; 0xEE
+     ; 0x03
+L217:
+     findpropstrict      QName(PackageNamespace("flash.net"), "navigateToURL")
+     getscopeobject      1
+     getslot             5
+     pushstring          "_self"
+     callpropvoid        QName(PackageNamespace("flash.net"), "navigateToURL"), 2
+
+L222:
+     jump                L266
+
+     ; 0xF0
+     ; 0xF4
+     ; 0x03
+L226:
+     getlex              QName(PrivateNamespace("Habbo"), "_isSpaWeb")
+     iffalse             L238
+
+     debugline           501
+     findpropstrict      QName(PrivateNamespace("Habbo"), "logSpaWeb")
+     pushstring          "FlashExternalInterface.logError"
+     getscopeobject      1
+     getslot             6
+     callpropvoid        QName(PrivateNamespace("Habbo"), "logSpaWeb"), 2
+
+     jump                L243
+
+     ; 0xF0
+     ; 0xF7
+     ; 0x03
+L238:
+     findpropstrict      QName(PackageNamespace("flash.net"), "sendToURL")
+     getscopeobject      1
+     getslot             5
+     callpropvoid        QName(PackageNamespace("flash.net"), "sendToURL"), 1
+
+     debugline           506
+L243:
+     jump                L266
+
+L244:
+     getlocal0
+     pushscope
+
+     getlocal            5
+     pushscope
+
+     newcatch            0
+     dup
+     setlocal            6
+
+     dup
+     pushscope
+
+     swap
+     setslot             1
+
+     debugline           507
+     getlex              QName(PackageNamespace("", "#0"), "_-1pV")
+     pushstring          "Error while sending error report: "
+     getscopeobject      2
+     getslot             1
+     getproperty         QName(PackageNamespace("", "#0"), "message")
+     add
+     callpropvoid        QName(PackageNamespace("", "#0"), "log"), 1
+
+     popscope
+     kill                6
+     debugline           510
+L266:
+     returnvoid
+    end ; code
+    try from L226 to L243 target L244 type QName(PackageNamespace("", "#0"), "Error") name QName(PackageNamespace("", "#0"), "e") end
+    trait slot QName(PackageInternalNs(""), "errorMessage") slotid 1 type QName(PackageNamespace("", "#0"), "String") end
+    trait slot QName(PackageInternalNs(""), "crashCategory") slotid 2 type QName(PackageNamespace("", "#0"), "int") end
+    trait slot QName(PackageInternalNs(""), "critical") slotid 3 type QName(PackageNamespace("", "#0"), "Boolean") end
+    trait slot QName(PackageInternalNs(""), "error") slotid 4 type QName(PackageNamespace("", "#0"), "Error") value Null() end
+    trait slot QName(PackageInternalNs(""), "request") slotid 5 type QName(PackageNamespace("flash.net"), "URLRequest") end
+    trait slot QName(PackageInternalNs(""), "variables") slotid 6 type QName(PackageNamespace("flash.net"), "URLVariables") end
+    trait slot QName(PackageInternalNs(""), "keys") slotid 7 type QName(PackageNamespace("", "#0"), "Array") end
+    trait slot QName(PackageInternalNs(""), "length") slotid 8 type QName(PackageNamespace("", "#0"), "int") end
+    trait slot QName(PackageInternalNs(""), "i") slotid 9 type QName(PackageNamespace("", "#0"), "int") end
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PrivateNamespace("Habbo"), "logSpaWeb") flag FINAL dispid 5
+  method
+   refid "Habbo/class/Habbo/logSpaWeb"
+   param QName(PackageNamespace("", "#0"), "String")
+   param QName(PackageNamespace("flash.net"), "URLVariables")
+   returns QName(PackageNamespace("", "#0"), "void")
+   body
+    maxstack 3
+    localcount 4
+    initscopedepth 9
+    maxscopedepth 12
+    code
+     debugfile           "k"
+     debugline           512
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 512
+     debug               1, "k", 1, 512
+     debugline           514
+L7:
+     getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+     getproperty         QName(PackageNamespace("", "#0"), "available")
+     iffalse             L17
+
+     debugline           515
+     getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+     getlocal1
+     getlocal2
+     callproperty        QName(PackageNamespace("", "#0"), "toString"), 0
+     callpropvoid        QName(PackageNamespace("", "#0"), "call"), 2
+
+     debugline           517
+L17:
+     jump                L30
+
+L18:
+     getlocal0
+     pushscope
+
+     newcatch            0
+     dup
+     setlocal3
+
+     dup
+     pushscope
+
+     swap
+     setslot             1
+
+     popscope
+     kill                3
+     debugline           519
+L30:
+     returnvoid
+    end ; code
+    try from L7 to L17 target L18 type QName(PackageNamespace("", "#0"), "Error") name QName(PackageNamespace("", "#0"), "e") end
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PrivateNamespace("Habbo"), "isValidHabboDomain") flag FINAL dispid 6
+  method
+   refid "Habbo/class/Habbo/isValidHabboDomain"
+   param QName(PackageNamespace("", "#0"), "String")
+   returns QName(PackageNamespace("", "#0"), "Boolean")
+   body
+    maxstack 3
+    localcount 2
+    initscopedepth 9
+    maxscopedepth 10
+    code
+     debugfile           "k"
+     debugline           521
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 521
+     debugline           522
+     getlocal1
+     getlex              QName(PackageNamespace("", "#0"), "RegExp")
+     pushstring          "^([\\-a-z0-9.]+\\.)?sulake\\.com$"
+     construct           1
+     callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "match"), 1
+     pushnull
+     equals
+     not
+     dup
+     iftrue              L26
+
+     pop
+     debugline           523
+     getlocal1
+     getlex              QName(PackageNamespace("", "#0"), "RegExp")
+     pushstring          "^([\\-a-z0-9.]+\\.)?varoke\\.net$"
+     construct           1
+     callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "match"), 1
+     pushnull
+     equals
+     not
+L26:
+     dup
+     iftrue              L38
+
+     pop
+     debugline           524
+     getlocal1
+     getlex              QName(PackageNamespace("", "#0"), "RegExp")
+     pushstring          "^([\\-a-z0-9.]+\\.)?habbo\\.(com|de|dk|es|fi|fr|it|nl|no|se)$"
+     construct           1
+     callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "match"), 1
+     pushnull
+     equals
+     not
+L38:
+     dup
+     iftrue              L50
+
+     pop
+     debugline           525
+     getlocal1
+     getlex              QName(PackageNamespace("", "#0"), "RegExp")
+     pushstring          "^([\\-a-z0-9.]+\\.)?habbo\\.com\\.(br|es|tr)$"
+     construct           1
+     callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "match"), 1
+     pushnull
+     equals
+     not
+L50:
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+end ; class

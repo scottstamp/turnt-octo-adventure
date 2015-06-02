@@ -1,0 +1,176 @@
+class
+ refid "_-5-S:_-5ZA"
+ instance QName(PackageNamespace("_-5-S"), "_-5ZA")
+  extends QName(PackageNamespace("_-5-S"), "WindowEvent")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-32x")
+  iinit
+   refid "_-5-S:_-5ZA/instance/init"
+   body
+    maxstack 2
+    localcount 1
+    initscopedepth 5
+    maxscopedepth 6
+    code
+     debugfile           "k"
+     debugline           35
+     getlocal0
+     pushscope
+
+     debugline           35
+     getlocal0
+     constructsuper      0
+
+     debugline           37
+     findproperty        QName(ProtectedNamespace("_-2Ry"), "_-6Q2")
+     getlex              QName(PackageNamespace(""), "_-3dl")
+     initproperty        QName(ProtectedNamespace("_-2Ry"), "_-6Q2")
+
+     debugline           38
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait method QName(PackageNamespace(""), "clone") flag OVERRIDE
+   method
+    refid "_-5-S:_-5ZA/instance/clone"
+    returns QName(PackageNamespace("_-5-S"), "WindowEvent")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           44
+      getlocal0
+      pushscope
+
+      debugline           46
+      findpropstrict      QName(PackageNamespace(""), "_-10C")
+      getlex              QName(PackageNamespace(""), "window")
+      callproperty        QName(PackageNamespace(""), "_-10C"), 1
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "toString") flag OVERRIDE
+   method
+    refid "_-5-S:_-5ZA/instance/toString"
+    returns QName(PackageNamespace(""), "String")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           53
+      getlocal0
+      pushscope
+
+      pushstring          "WindowDisposeEvent { type: "
+      debugline           55
+      getlex              QName(ProtectedNamespace("_-2Ry"), "_-6Q2")
+      add
+      pushstring          " window: "
+      add
+      getlex              QName(ProtectedNamespace("_-2Ry"), "_-04A")
+      add
+      pushstring          " }"
+      add
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-5-S:_-5ZA/class/init"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 4
+   maxscopedepth 5
+   code
+    getlocal0
+    pushscope
+
+    debug               1, "k", 0, 9
+    findproperty        QName(PackageNamespace(""), "_-3dl")
+    pushstring          "WINDOW_DISPOSE_EVENT"
+    initproperty        QName(PackageNamespace(""), "_-3dl")
+
+    debug               1, "k", 1, 13
+    findproperty        QName(PrivateNamespace("_-32x"), "_-5m6")
+    newarray            0
+    initproperty        QName(PrivateNamespace("_-32x"), "_-5m6")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait const QName(PackageNamespace(""), "_-3dl") slotid 1 type QName(PackageNamespace(""), "String") value Utf8("WINDOW_DISPOSE_EVENT") end
+ trait const QName(PrivateNamespace("_-32x"), "_-5m6") slotid 2 type QName(PackageNamespace(""), "Array") end
+ trait method QName(PackageNamespace(""), "_-10C") flag FINAL dispid 3
+  method
+   refid "_-5-S:_-5ZA/class/_-10C"
+   param QName(PackageNamespace("_-1rh"), "IWindow")
+   returns QName(PackageNamespace("_-5-S"), "_-5ZA")
+   body
+    maxstack 2
+    localcount 3
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     debugfile           "k"
+     debugline           20
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 20
+     debug               1, "k", 1, 22
+     debugline           22
+     getlex              QName(PrivateNamespace("_-32x"), "_-5m6")
+     getproperty         QName(PackageNamespace(""), "length")
+     pushbyte            0
+     ifngt               L15
+
+     getlex              QName(PrivateNamespace("_-32x"), "_-5m6")
+     callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "pop"), 0
+     coerce              QName(PackageNamespace("_-5-S"), "_-5ZA")
+     jump                L18
+
+L15:
+     getlocal0
+     construct           0
+     coerce              QName(PackageNamespace("_-5-S"), "_-5ZA")
+L18:
+     coerce              QName(PackageNamespace("_-5-S"), "_-5ZA")
+     setlocal2
+
+     debugline           24
+     getlocal2
+     getlocal1
+     setproperty         QName(ProtectedNamespace("_-2Ry"), "_-04A")
+
+     debugline           25
+     getlocal2
+     pushfalse
+     setproperty         QName(ProtectedNamespace("_-2Ry"), "_-3g1")
+
+     debugline           26
+     getlocal2
+     getlex              QName(PrivateNamespace("_-32x"), "_-5m6")
+     setproperty         QName(ProtectedNamespace("_-2Ry"), "_-63P")
+
+     debugline           29
+     getlocal2
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+end ; class

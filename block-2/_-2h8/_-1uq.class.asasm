@@ -1,0 +1,906 @@
+class
+ refid "_-2h8:_-1uq"
+ instance QName(PackageNamespace("_-2h8"), "_-1uq")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-6Nu")
+  iinit
+   refid "_-2h8:_-1uq/instance/init"
+   param QName(PackageNamespace("_-2h8"), "HabboTracking")
+   body
+    maxstack 3
+    localcount 3
+    initscopedepth 4
+    maxscopedepth 7
+    code
+     debugfile           "k"
+     debugline           41
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 41
+     debugline           41
+     getlocal0
+     constructsuper      0
+
+     debugline           42
+     getlocal0
+     getlocal1
+     initproperty        QName(PrivateNamespace("_-6Nu"), "_-67V")
+
+     debugline           44
+     getlocal0
+     getlex              QName(PackageNamespace("flash.system"), "Capabilities")
+     getproperty         QName(PackageNamespace(""), "version")
+     initproperty        QName(PrivateNamespace("_-6Nu"), "_-5F-")
+
+     debugline           45
+     getlocal0
+     getlex              QName(PackageNamespace("flash.system"), "Capabilities")
+     getproperty         QName(PackageNamespace(""), "os")
+     initproperty        QName(PrivateNamespace("_-6Nu"), "_-42H")
+
+     debugline           47
+     getlocal0
+     getlex              QName(PackageNamespace("flash.system"), "Capabilities")
+     getproperty         QName(PackageNamespace(""), "isDebugger")
+     initproperty        QName(PrivateNamespace("_-6Nu"), "_-6Rb")
+
+     debugline           50
+L28:
+     getlocal0
+     getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+     getproperty         QName(PackageNamespace(""), "available")
+     iffalse             L37
+
+     getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+     pushstring          "window.navigator.userAgent.toString"
+     callproperty        QName(PackageNamespace(""), "call"), 1
+     coerce_s
+     jump                L38
+
+L37:
+     pushstring          "unknown"
+L38:
+     initproperty        QName(PrivateNamespace("_-6Nu"), "_-4HU")
+
+     debugline           51
+L40:
+     jump                L53
+
+L41:
+     getlocal0
+     pushscope
+
+     newcatch            0
+     dup
+     setlocal2
+
+     dup
+     pushscope
+
+     swap
+     setslot             1
+
+     popscope
+     kill                2
+     debugline           55
+L53:
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-6Nu"), "_-4HU")
+     pushnull
+     ifne                L62
+
+     debugline           56
+     getlocal0
+     pushstring          "unknown"
+     initproperty        QName(PrivateNamespace("_-6Nu"), "_-4HU")
+
+     debugline           60
+L62:
+     getlocal0
+     findpropstrict      QName(PackageNamespace("_-239"), "GarbageMonitor")
+     constructprop       QName(PackageNamespace("_-239"), "GarbageMonitor"), 0
+     initproperty        QName(PrivateNamespace("_-6Nu"), "_-6ZM")
+
+     debugline           63
+     getlocal0
+     callpropvoid        QName(PrivateNamespace("_-6Nu"), "_-19V"), 0
+
+     debugline           66
+     getlocal0
+     findpropstrict      QName(PackageNamespace("flash.utils"), "getTimer")
+     callproperty        QName(PackageNamespace("flash.utils"), "getTimer"), 0
+     initproperty        QName(PrivateNamespace("_-6Nu"), "_-1wZ")
+
+     debugline           67
+     returnvoid
+    end ; code
+    try from L28 to L40 target L41 type QName(PackageNamespace(""), "Error") name QName(PackageNamespace(""), "e") end
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-6Nu"), "_-6Qq") type QName(PackageNamespace(""), "int") value Integer(0) end
+  trait slot QName(PrivateNamespace("_-6Nu"), "_-276") type QName(PackageNamespace(""), "Number") value Integer(0) end
+  trait slot QName(PrivateNamespace("_-6Nu"), "_-4HU") type QName(PackageNamespace(""), "String") value Utf8("") end
+  trait slot QName(PrivateNamespace("_-6Nu"), "_-5F-") type QName(PackageNamespace(""), "String") value Utf8("") end
+  trait slot QName(PrivateNamespace("_-6Nu"), "_-42H") type QName(PackageNamespace(""), "String") value Utf8("") end
+  trait slot QName(PrivateNamespace("_-6Nu"), "_-2Wb") type QName(PackageNamespace(""), "String") value Utf8("") end
+  trait slot QName(PrivateNamespace("_-6Nu"), "_-6Rb") type QName(PackageNamespace(""), "Boolean") value False() end
+  trait slot QName(PrivateNamespace("_-6Nu"), "_-6ZM") type QName(PackageNamespace("_-239"), "GarbageMonitor") value Null() end
+  trait slot QName(PrivateNamespace("_-6Nu"), "_-0ps") type QName(PackageNamespace(""), "int") value Integer(0) end
+  trait slot QName(PrivateNamespace("_-6Nu"), "_-6Ge") type QName(PackageNamespace(""), "int") value Integer(0) end
+  trait slot QName(PrivateNamespace("_-6Nu"), "_-1wZ") type QName(PackageNamespace(""), "int") value Integer(0) end
+  trait slot QName(PrivateNamespace("_-6Nu"), "_-2zE") type QName(PackageNamespace(""), "int") value Integer(0) end
+  trait slot QName(PrivateNamespace("_-6Nu"), "_-1F6") type QName(PackageNamespace(""), "Number") value Integer(0) end
+  trait slot QName(PrivateNamespace("_-6Nu"), "_-67V") type QName(PackageNamespace("_-2h8"), "HabboTracking") end
+  trait getter QName(PackageNamespace(""), "flashVersion")
+   method
+    refid "_-2h8:_-1uq/instance/flashVersion/getter"
+    returns QName(PackageNamespace(""), "String")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           33
+      getlocal0
+      pushscope
+
+      debugline           34
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-6Nu"), "_-5F-")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "_-5lc")
+   method
+    refid "_-2h8:_-1uq/instance/_-5lc/getter"
+    returns QName(PackageNamespace(""), "int")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           37
+      getlocal0
+      pushscope
+
+      debugline           38
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-6Nu"), "_-276")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-6Nu"), "_-19V")
+   method
+    refid "_-2h8:_-1uq/instance/_-2h8:_-1uq/instance/_-19V"
+    returns QName(PackageNamespace(""), "Object")
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           69
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace(""), "Object")
+      setlocal2
+
+      debug               1, "k", 0, 70
+      debugline           70
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-6Nu"), "_-6ZM")
+      getproperty         QName(PackageNamespace(""), "list")
+      coerce              QName(PackageNamespace(""), "Array")
+      setlocal1
+
+      debugline           71
+      getlocal1
+      pushnull
+      equals
+      dup
+      iftrue              L25
+
+      pop
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "length")
+      pushbyte            0
+      equals
+L25:
+      iffalse             L44
+
+      debug               1, "k", 1, 72
+      debugline           72
+      findpropstrict      QName(PackageNamespace("_-2h8"), "_-3xR")
+      pushstring          "tester"
+      constructprop       QName(PackageNamespace("_-2h8"), "_-3xR"), 1
+      coerce              QName(PackageNamespace(""), "Object")
+      setlocal2
+
+      debugline           73
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-6Nu"), "_-6ZM")
+      getlocal2
+      pushstring          "tester"
+      callpropvoid        QName(PackageNamespace(""), "insert"), 2
+
+      debugline           74
+      getlocal2
+      returnvalue
+
+      ; 0xF0
+      ; 0x4D
+L44:
+      pushnull
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "update")
+   method
+    refid "_-2h8:_-1uq/instance/update"
+    param QName(PackageNamespace(""), "uint")
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 11
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           80
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace(""), "Object")
+      setlocal            4
+
+      pushnan
+      setlocal            5
+
+      pushbyte            0
+      convert_u
+      setlocal            6
+
+      pushfalse
+      setlocal            7
+
+      pushnan
+      setlocal            8
+
+      debug               1, "k", 0, 80
+      debug               1, "k", 1, 80
+      debug               1, "k", 2, 106
+      debugline           97
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-6Nu"), "_-33W")
+      iffalse             L50
+
+      debug               1, "k", 3, 99
+      debugline           99
+      getlocal0
+      callproperty        QName(PrivateNamespace("_-6Nu"), "_-19V"), 0
+      coerce              QName(PackageNamespace(""), "Object")
+      setlocal            4
+
+      debugline           100
+      getlocal            4
+      pushnull
+      ifeq                L50
+
+      debugline           101
+      getlocal0
+      dup
+      setlocal            9
+
+      getproperty         QName(PrivateNamespace("_-6Nu"), "_-0ps")
+      increment_i
+      setlocal            10
+
+      getlocal            9
+      getlocal            10
+      setproperty         QName(PrivateNamespace("_-6Nu"), "_-0ps")
+
+      kill                10
+      kill                9
+      debugline           102
+      getlex              QName(PackageNamespace(""), "_-1pV")
+      pushstring          "Garbage collection"
+      callpropvoid        QName(PackageNamespace(""), "log"), 1
+
+      debugline           106
+L50:
+      pushfalse
+      setlocal3
+
+      debugline           110
+      getlocal1
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-6Nu"), "_-2xX")
+      ifngt               L75
+
+      debugline           111
+      getlocal0
+      dup
+      setlocal            9
+
+      getproperty         QName(PrivateNamespace("_-6Nu"), "_-6Ge")
+      increment_i
+      setlocal            10
+
+      getlocal            9
+      getlocal            10
+      setproperty         QName(PrivateNamespace("_-6Nu"), "_-6Ge")
+
+      kill                10
+      kill                9
+      debugline           112
+      pushtrue
+      setlocal3
+
+      jump                L126
+
+      ; 0xF0
+      ; 0x73
+L75:
+      getlocal0
+      dup
+      setlocal            9
+
+      getproperty         QName(PrivateNamespace("_-6Nu"), "_-6Qq")
+      increment_i
+      setlocal            10
+
+      getlocal            9
+      getlocal            10
+      setproperty         QName(PrivateNamespace("_-6Nu"), "_-6Qq")
+
+      kill                10
+      kill                9
+      debugline           119
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-6Nu"), "_-6Qq")
+      pushbyte            1
+      ifnle               L103
+
+      debugline           120
+      getlocal0
+      getlocal1
+      initproperty        QName(PrivateNamespace("_-6Nu"), "_-276")
+
+      jump                L126
+
+      ; 0xEF
+      ; 0x01
+      ; 0x02
+      ; 0x04
+      ; 0x7A
+      ; 0xF0
+      ; 0x7A
+L103:
+      findpropstrict      QName(PackageNamespace(""), "Number")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-6Nu"), "_-6Qq")
+      callproperty        QName(PackageNamespace(""), "Number"), 1
+      convert_d
+      setlocal            5
+
+      debugline           123
+      getlocal0
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-6Nu"), "_-276")
+      getlocal            5
+      decrement
+      multiply
+      getlocal            5
+      divide
+      findpropstrict      QName(PackageNamespace(""), "Number")
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "Number"), 1
+      getlocal            5
+      divide
+      add
+      initproperty        QName(PrivateNamespace("_-6Nu"), "_-276")
+
+      debugline           129
+L126:
+      getlocal2
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-6Nu"), "_-1wZ")
+      subtract
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-6Nu"), "reportInterval")
+      pushshort           1000
+      multiply
+      greaterthan
+      dup
+      iffalse             L143
+
+      pop
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-6Nu"), "_-2zE")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-6Nu"), "_-4fu")
+      lessthan
+L143:
+      iffalse             L234
+
+      debug               1, "k", 5, 131
+      debug               1, "k", 6, 134
+      debugline           131
+      getlex              QName(PackageNamespace("flash.system"), "System")
+      getproperty         QName(PackageNamespace(""), "totalMemory")
+      convert_u
+      setlocal            6
+
+      debugline           133
+      getlex              QName(PackageNamespace(""), "_-1pV")
+      pushstring          "*** Performance tracker: average frame rate "
+      pushshort           1000
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-6Nu"), "_-276")
+      divide
+      add
+      pushstring          "/s, system memory usage : "
+      add
+      getlocal            6
+      add
+      pushstring          " bytes"
+      add
+      callpropvoid        QName(PackageNamespace(""), "log"), 1
+
+      debugline           134
+      pushtrue
+      setlocal            7
+
+      debugline           137
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-6Nu"), "_-2u")
+      convert_b
+      dup
+      iffalse             L180
+
+      pop
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-6Nu"), "_-2zE")
+      pushbyte            0
+      greaterthan
+L180:
+      iffalse             L200
+
+      debug               1, "k", 7, 138
+      debugline           138
+      findpropstrict      QName(PrivateNamespace("_-6Nu"), "_-6VA")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-6Nu"), "_-1F6")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-6Nu"), "_-276")
+      callproperty        QName(PrivateNamespace("_-6Nu"), "_-6VA"), 2
+      convert_d
+      setlocal            8
+
+      debugline           139
+      getlocal            8
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-6Nu"), "_-3eb")
+      ifnlt               L200
+
+      debugline           140
+      pushfalse
+      setlocal            7
+
+      debugline           145
+L200:
+      getlocal0
+      getlocal2
+      initproperty        QName(PrivateNamespace("_-6Nu"), "_-1wZ")
+
+      debugline           148
+      getlocal            7
+      convert_b
+      dup
+      iftrue              L211
+
+      pop
+      getlocal3
+      convert_b
+L211:
+      iffalse             L234
+
+      debugline           150
+      getlocal0
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-6Nu"), "_-276")
+      initproperty        QName(PrivateNamespace("_-6Nu"), "_-1F6")
+
+      debugline           151
+      getlocal0
+      getlocal2
+      callpropvoid        QName(PrivateNamespace("_-6Nu"), "_-3lL"), 1
+
+      debugline           152
+      getlocal0
+      dup
+      setlocal            9
+
+      getproperty         QName(PrivateNamespace("_-6Nu"), "_-2zE")
+      increment_i
+      setlocal            10
+
+      getlocal            9
+      getlocal            10
+      setproperty         QName(PrivateNamespace("_-6Nu"), "_-2zE")
+
+      kill                10
+      kill                9
+      debugline           155
+L234:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-6Nu"), "_-3lL")
+   method
+    refid "_-2h8:_-1uq/instance/_-2h8:_-1uq/instance/_-3lL"
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 13
+     localcount 5
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           157
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 157
+      debug               1, "k", 1, 158
+      debug               1, "k", 2, 159
+      debug               1, "k", 3, 160
+      debugline           158
+      getlocal1
+      pushshort           1000
+      divide
+      convert_i
+      setlocal2
+
+      debugline           159
+      pushbyte            -1
+      setlocal3
+
+      debugline           160
+      getlex              QName(PackageNamespace("flash.system"), "System")
+      getproperty         QName(PackageNamespace(""), "totalMemory")
+      pushshort           1024
+      divide
+      convert_i
+      setlocal            4
+
+      debugline           161
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-6Nu"), "_-67V")
+      findpropstrict      QName(PackageNamespace("_-2TX"), "_-dy")
+      getlocal2
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-6Nu"), "_-4HU")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-6Nu"), "_-5F-")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-6Nu"), "_-42H")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-6Nu"), "_-2Wb")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-6Nu"), "_-6Rb")
+      getlocal            4
+      getlocal3
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-6Nu"), "_-0ps")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-6Nu"), "_-276")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-6Nu"), "_-6Ge")
+      constructprop       QName(PackageNamespace("_-2TX"), "_-dy"), 11
+      callpropvoid        QName(PackageNamespace(""), "send"), 1
+
+      debugline           164
+      getlocal0
+      pushbyte            0
+      initproperty        QName(PrivateNamespace("_-6Nu"), "_-0ps")
+
+      debugline           165
+      getlocal0
+      pushbyte            0
+      initproperty        QName(PrivateNamespace("_-6Nu"), "_-276")
+
+      debugline           166
+      getlocal0
+      pushbyte            0
+      initproperty        QName(PrivateNamespace("_-6Nu"), "_-6Qq")
+
+      debugline           167
+      getlocal0
+      pushbyte            0
+      initproperty        QName(PrivateNamespace("_-6Nu"), "_-6Ge")
+
+      debugline           168
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PrivateNamespace("_-6Nu"), "_-33W")
+   method
+    refid "_-2h8:_-1uq/instance/_-2h8:_-1uq/instance/_-33W/getter"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           184
+      getlocal0
+      pushscope
+
+      debugline           185
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-6Nu"), "_-67V")
+      pushstring          "monitor.garbage.collection"
+      callproperty        QName(PackageNamespace(""), "getBoolean"), 1
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PrivateNamespace("_-6Nu"), "_-2xX")
+   method
+    refid "_-2h8:_-1uq/instance/_-2h8:_-1uq/instance/_-2xX/getter"
+    returns QName(PackageNamespace(""), "int")
+    body
+     maxstack 3
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           188
+      getlocal0
+      pushscope
+
+      debugline           189
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-6Nu"), "_-67V")
+      pushstring          "performancetest.slowupdatelimit"
+      pushshort           1000
+      callproperty        QName(PackageNamespace(""), "getInteger"), 2
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PrivateNamespace("_-6Nu"), "reportInterval")
+   method
+    refid "_-2h8:_-1uq/instance/_-2h8:_-1uq/instance/reportInterval/getter"
+    returns QName(PackageNamespace(""), "int")
+    body
+     maxstack 3
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           192
+      getlocal0
+      pushscope
+
+      debugline           193
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-6Nu"), "_-67V")
+      pushstring          "performancetest.interval"
+      pushbyte            60
+      callproperty        QName(PackageNamespace(""), "getInteger"), 2
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PrivateNamespace("_-6Nu"), "_-4fu")
+   method
+    refid "_-2h8:_-1uq/instance/_-2h8:_-1uq/instance/_-4fu/getter"
+    returns QName(PackageNamespace(""), "int")
+    body
+     maxstack 3
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           196
+      getlocal0
+      pushscope
+
+      debugline           197
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-6Nu"), "_-67V")
+      pushstring          "performancetest.reportlimit"
+      pushbyte            10
+      callproperty        QName(PackageNamespace(""), "getInteger"), 2
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PrivateNamespace("_-6Nu"), "_-3eb")
+   method
+    refid "_-2h8:_-1uq/instance/_-2h8:_-1uq/instance/_-3eb/getter"
+    returns QName(PackageNamespace(""), "Number")
+    body
+     maxstack 3
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           200
+      getlocal0
+      pushscope
+
+      debugline           201
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-6Nu"), "_-67V")
+      pushstring          "performancetest.distribution.deviancelimit.percent"
+      callproperty        QName(PackageNamespace(""), "propertyExists"), 1
+      iffalse             L18
+
+      findpropstrict      QName(PackageNamespace(""), "Number")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-6Nu"), "_-67V")
+      pushstring          "performancetest.distribution.deviancelimit.percent"
+      callproperty        QName(PackageNamespace(""), "getProperty"), 1
+      callproperty        QName(PackageNamespace(""), "Number"), 1
+      convert_d
+      jump                L20
+
+L18:
+      pushbyte            10
+      convert_d
+L20:
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PrivateNamespace("_-6Nu"), "_-2u")
+   method
+    refid "_-2h8:_-1uq/instance/_-2h8:_-1uq/instance/_-2u/getter"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           204
+      getlocal0
+      pushscope
+
+      debugline           205
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-6Nu"), "_-67V")
+      pushstring          "performancetest.distribution.enabled"
+      callproperty        QName(PackageNamespace(""), "getBoolean"), 1
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-2h8:_-1uq/class/init"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait method QName(PrivateNamespace("_-6Nu"), "_-6VA") flag FINAL dispid 3
+  method
+   refid "_-2h8:_-1uq/class/_-2h8:_-1uq/instance/_-6VA"
+   param QName(PackageNamespace(""), "Number")
+   param QName(PackageNamespace(""), "Number")
+   returns QName(PackageNamespace(""), "Number")
+   body
+    maxstack 4
+    localcount 5
+    initscopedepth 3
+    maxscopedepth 4
+    code
+     debugfile           "k"
+     debugline           170
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 170
+     debug               1, "k", 1, 170
+     debug               1, "k", 2, 175
+     debug               1, "k", 3, 176
+     debugline           171
+     getlocal1
+     getlocal2
+     ifne                L18
+
+     debugline           172
+     pushdouble          0
+     returnvalue
+
+     ; 0xF0
+     ; 0xAF
+     ; 0x01
+L18:
+     getlocal1
+     convert_d
+     setlocal3
+
+     debugline           176
+     getlocal2
+     convert_d
+     setlocal            4
+
+     debugline           177
+     getlocal2
+     getlocal1
+     ifngt               L38
+
+     debugline           178
+     getlocal2
+     convert_d
+     setlocal3
+
+     debugline           179
+     getlocal1
+     convert_d
+     setlocal            4
+
+     debugline           181
+L38:
+     pushbyte            100
+     pushbyte            1
+     getlocal            4
+     getlocal3
+     divide
+     subtract
+     multiply
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+end ; class

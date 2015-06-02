@@ -1,0 +1,33 @@
+script ; 5933
+ sinit
+  refid "_-bf:PlaneTexture/init"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 1
+   maxscopedepth 3
+   code
+    getlocal0
+    pushscope
+
+    debugfile           "k"
+    debugline           14
+    findpropstrict      Multiname("PlaneTexture", [PackageNamespace("_-bf")])
+    getlex              QName(PackageNamespace(""), "Object")
+    pushscope
+
+    getlex              QName(PackageNamespace(""), "Object")
+    newclass            "_-bf:PlaneTexture"
+    popscope
+    initproperty        QName(PackageNamespace("_-bf"), "PlaneTexture")
+
+    debugfile           "k"
+    debugline           1
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait class QName(PackageNamespace("_-bf"), "PlaneTexture")
+  #include "PlaneTexture.class.asasm"
+ end ; trait
+end ; script

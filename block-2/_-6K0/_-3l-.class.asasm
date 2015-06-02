@@ -1,0 +1,95 @@
+class
+ refid "_-6K0:_-3l-"
+ instance QName(PackageNamespace("_-6K0"), "_-3l-")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-6aJ")
+  iinit
+   refid "_-6K0:_-3l-/instance/init"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     debugfile           "k"
+     debugline           101
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+ end ; instance
+ cinit
+  refid "_-6K0:_-3l-/class/init"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    debug               1, "k", 0, 39
+    findproperty        QName(PackageNamespace(""), "_-4MI")
+    pushstring          "DIRECT"
+    initproperty        QName(PackageNamespace(""), "_-4MI")
+
+    debug               1, "k", 1, 40
+    findproperty        QName(PackageNamespace(""), "_-47k")
+    pushstring          "INJECT"
+    initproperty        QName(PackageNamespace(""), "_-47k")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait const QName(PackageNamespace(""), "_-4MI") slotid 1 type QName(PackageNamespace(""), "String") value Utf8("DIRECT") end
+ trait const QName(PackageNamespace(""), "_-47k") slotid 2 type QName(PackageNamespace(""), "String") value Utf8("INJECT") end
+ trait method QName(PackageNamespace(""), "create") flag FINAL dispid 3
+  method
+   refid "_-6K0:_-3l-/class/create"
+   param QName(PackageNamespace(""), "String")
+   returns QName(PackageNamespace("_-6K0"), "AdServerRequest")
+   body
+    maxstack 3
+    localcount 2
+    initscopedepth 3
+    maxscopedepth 4
+    code
+     debugfile           "k"
+     debugline           56
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 56
+     debugline           57
+     getlex              QName(PackageNamespace("_-0UB"), "StringUtils")
+     getlocal1
+     getlex              QName(PackageNamespace(""), "_-47k")
+     callproperty        QName(PackageNamespace(""), "_-11m"), 2
+     iffalse             L17
+
+     debugline           58
+     findpropstrict      QName(PackageNamespace("_-SG"), "_-3Fb")
+     constructprop       QName(PackageNamespace("_-SG"), "_-3Fb"), 0
+     returnvalue
+
+     ; 0xF0
+     ; 0x61
+L17:
+     findpropstrict      QName(PackageNamespace("_-Td"), "_-2kO")
+     constructprop       QName(PackageNamespace("_-Td"), "_-2kO"), 0
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+end ; class

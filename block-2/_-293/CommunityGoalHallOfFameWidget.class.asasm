@@ -1,0 +1,623 @@
+class
+ refid "_-293:CommunityGoalHallOfFameWidget"
+ instance QName(PackageNamespace("_-293"), "CommunityGoalHallOfFameWidget")
+  extends QName(PackageNamespace("_-293"), "UserListWidget")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-1BL")
+  iinit
+   refid "_-293:CommunityGoalHallOfFameWidget/instance/init"
+   param QName(PackageNamespace("_-4CO"), "HabboLandingView")
+   body
+    maxstack 2
+    localcount 2
+    initscopedepth 5
+    maxscopedepth 6
+    code
+     debugfile           "k"
+     debugline           17
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 17
+     debugline           18
+     getlocal0
+     getlocal1
+     constructsuper      1
+
+     debugline           19
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-1BL"), "_-4u1") type QName(PackageNamespace("_-56g"), "_-5YM") end
+  trait slot QName(PrivateNamespace("_-1BL"), "_-1vI") type QName(PackageNamespace(""), "String") end
+  trait method QName(PackageNamespace(""), "initialize") flag OVERRIDE
+   method
+    refid "_-293:CommunityGoalHallOfFameWidget/instance/initialize"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           22
+      getlocal0
+      pushscope
+
+      debugline           23
+      getlocal0
+      callsupervoid       QName(PackageNamespace(""), "initialize"), 0
+      debugline           24
+      getlocal0
+      getlex              QName(ProtectedNamespace("_-1zU"), "landingView")
+      pushstring          "landing.view.dynamic.slot.6.conf"
+      callproperty        QName(PackageNamespace(""), "getProperty"), 1
+      initproperty        QName(PrivateNamespace("_-1BL"), "_-1vI")
+
+      debugline           25
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-1BL"), "registerMessageListeners") flag OVERRIDE
+   method
+    refid "_-293:CommunityGoalHallOfFameWidget/instance/_-1BL:registerMessageListeners"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           27
+      getlocal0
+      pushscope
+
+      debugline           28
+      getlex              QName(ProtectedNamespace("_-1zU"), "landingView")
+      getproperty         QName(PackageNamespace(""), "communicationManager")
+      findpropstrict      QName(PackageNamespace("_-56g"), "_-5em")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1BL"), "_-49o")
+      constructprop       QName(PackageNamespace("_-56g"), "_-5em"), 1
+      callpropvoid        QName(Namespace("_-7I"), "addHabboConnectionMessageEvent"), 1
+
+      debugline           29
+      getlex              QName(ProtectedNamespace("_-1zU"), "landingView")
+      getproperty         QName(PackageNamespace(""), "communicationManager")
+      findpropstrict      QName(PackageNamespace("_-0Gr"), "_-5Ka")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1BL"), "_-31X")
+      constructprop       QName(PackageNamespace("_-0Gr"), "_-5Ka"), 1
+      callpropvoid        QName(Namespace("_-7I"), "addHabboConnectionMessageEvent"), 1
+
+      debugline           30
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "refresh") flag OVERRIDE
+   method
+    refid "_-293:CommunityGoalHallOfFameWidget/instance/refresh"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           32
+      getlocal0
+      pushscope
+
+      debugline           33
+      getlex              QName(ProtectedNamespace("_-1zU"), "landingView")
+      findpropstrict      QName(PackageNamespace("_-5ZR"), "_-5Sv")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1BL"), "_-1vI")
+      constructprop       QName(PackageNamespace("_-5ZR"), "_-5Sv"), 1
+      callpropvoid        QName(PackageNamespace(""), "send"), 1
+
+      debugline           34
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(ProtectedNamespace("_-1BL"), "users") flag OVERRIDE
+   method
+    refid "_-293:CommunityGoalHallOfFameWidget/instance/_-1BL:users/getter"
+    returns QName(PackageNamespace(""), "Array")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           36
+      getlocal0
+      pushscope
+
+      debugline           37
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1BL"), "_-4u1")
+      pushnull
+      equals
+      iffalse             L13
+
+      pushnull
+      coerce              QName(PackageNamespace(""), "Array")
+      jump                L17
+
+L13:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1BL"), "_-4u1")
+      getproperty         QName(PackageNamespace(""), "hof")
+      coerce              QName(PackageNamespace(""), "Array")
+L17:
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-1BL"), "refreshPopup") flag OVERRIDE
+   method
+    refid "_-293:CommunityGoalHallOfFameWidget/instance/_-1BL:refreshPopup"
+    param QName(PackageNamespace("_-56g"), "_-1eq")
+    param QName(PackageNamespace("_-1rh"), "IWindowContainer")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 5
+     localcount 5
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           40
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 40
+      debug               1, "k", 1, 40
+      debug               1, "k", 2, 41
+      debug               1, "k", 3, 44
+      debugline           41
+      findpropstrict      QName(PackageNamespace("_-56g"), "_-ib")
+      getlocal1
+      callproperty        QName(PackageNamespace("_-56g"), "_-ib"), 1
+      coerce              QName(PackageNamespace("_-56g"), "_-ib")
+      setlocal3
+
+      debugline           42
+      getlocal2
+      pushstring          "user_name_txt"
+      callproperty        QName(Namespace("_-0zV"), "findChildByName"), 1
+      getlocal3
+      getproperty         QName(PackageNamespace(""), "userName")
+      setproperty         QName(Namespace("_-6Dt"), "caption")
+
+      pushstring          "landing.view.competition.hof.points"
+      debugline           44
+      coerce_s
+      setlocal            4
+
+      debugline           45
+      getlex              QName(ProtectedNamespace("_-1zU"), "landingView")
+      getproperty         QName(PackageNamespace(""), "localizationManager")
+      getlocal            4
+      pushstring          "points"
+      pushstring          ""
+      getlocal3
+      getproperty         QName(PackageNamespace(""), "_-5Pl")
+      add
+      callpropvoid        QName(Namespace("_-3wf"), "registerParameter"), 3
+
+      debugline           46
+      getlocal2
+      pushstring          "score_txt"
+      callproperty        QName(Namespace("_-0zV"), "findChildByName"), 1
+      findpropstrict      QName(ProtectedNamespace("_-1zU"), "getText")
+      getlocal            4
+      callproperty        QName(ProtectedNamespace("_-1zU"), "getText"), 1
+      setproperty         QName(Namespace("_-6Dt"), "caption")
+
+      debugline           48
+      getlocal2
+      pushstring          "rank_desc_txt"
+      callproperty        QName(Namespace("_-0zV"), "findChildByName"), 1
+      findpropstrict      QName(ProtectedNamespace("_-1zU"), "getText")
+      pushstring          "landing.view.competition.hof."
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1BL"), "_-4u1")
+      getproperty         QName(PackageNamespace(""), "_-1fJ")
+      add
+      pushstring          ".rankdesc.leader"
+      add
+      callproperty        QName(ProtectedNamespace("_-1zU"), "getText"), 1
+      setproperty         QName(Namespace("_-6Dt"), "caption")
+
+      debugline           49
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-1BL"), "getPopupXml") flag OVERRIDE
+   method
+    refid "_-293:CommunityGoalHallOfFameWidget/instance/_-1BL:getPopupXml"
+    returns QName(PackageNamespace(""), "String")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           51
+      getlocal0
+      pushscope
+
+      pushstring          "competition_user_popup"
+      debugline           52
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-1BL"), "_-49o")
+   method
+    refid "_-293:CommunityGoalHallOfFameWidget/instance/_-293:CommunityGoalHallOfFameWidget/instance/_-49o"
+    param QName(PackageNamespace("_-56g"), "_-5em")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           55
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 55
+      debugline           56
+      getlocal0
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "_-p9"), 0
+      getproperty         QName(PackageNamespace(""), "data")
+      initproperty        QName(PrivateNamespace("_-1BL"), "_-4u1")
+
+      debugline           57
+      findpropstrict      QName(PackageNamespace(""), "refreshContent")
+      callpropvoid        QName(PackageNamespace(""), "refreshContent"), 0
+
+      debugline           58
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-1BL"), "hasExtraLink") flag OVERRIDE
+   method
+    refid "_-293:CommunityGoalHallOfFameWidget/instance/_-1BL:hasExtraLink"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           60
+      getlocal0
+      pushscope
+
+      debugline           61
+      getlex              QName(ProtectedNamespace("_-1zU"), "landingView")
+      pushstring          "landing.view.communitygoalhof.hasroomlink"
+      callproperty        QName(PackageNamespace(""), "getBoolean"), 1
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-1BL"), "extraLinkClicked") flag OVERRIDE
+   method
+    refid "_-293:CommunityGoalHallOfFameWidget/instance/_-1BL:extraLinkClicked"
+    param QName(PackageNamespace("_-56g"), "_-1eq")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           64
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 64
+      debugline           65
+      getlex              QName(ProtectedNamespace("_-1zU"), "landingView")
+      findpropstrict      QName(PackageNamespace("_-5ZR"), "_-5h2")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1BL"), "_-4u1")
+      getproperty         QName(PackageNamespace(""), "_-1fJ")
+      getlocal1
+      getproperty         QName(Namespace("_-29N"), "userId")
+      constructprop       QName(PackageNamespace("_-5ZR"), "_-5h2"), 2
+      callpropvoid        QName(PackageNamespace(""), "send"), 1
+
+      debugline           66
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-1BL"), "_-31X")
+   method
+    refid "_-293:CommunityGoalHallOfFameWidget/instance/_-293:CommunityGoalHallOfFameWidget/instance/_-31X"
+    param QName(PackageNamespace("_-0Gr"), "_-5Ka")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           68
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 68
+      debug               1, "k", 1, 69
+      debugline           69
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "_-p9"), 0
+      getproperty         QName(PackageNamespace(""), "code")
+      coerce_s
+      setlocal2
+
+      debugline           70
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "_-p9"), 0
+      getproperty         QName(PackageNamespace(""), "_-3Ng")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1BL"), "_-1vI")
+      equals
+      dup
+      iffalse             L26
+
+      pop
+      getlocal2
+      pushstring          ""
+      equals
+      not
+L26:
+      dup
+      iffalse             L31
+
+      pop
+      getlex              QName(PackageNamespace(""), "disposed")
+      not
+L31:
+      iffalse             L45
+
+      debugline           71
+      getlocal0
+      getlocal2
+      callpropvoid        QName(PrivateNamespace("_-1BL"), "_-43n"), 1
+
+      debugline           72
+      getlex              QName(ProtectedNamespace("_-1zU"), "landingView")
+      findpropstrict      QName(PackageNamespace("_-0zw"), "_-2xB")
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "_-p9"), 0
+      getproperty         QName(PackageNamespace(""), "code")
+      constructprop       QName(PackageNamespace("_-0zw"), "_-2xB"), 1
+      callpropvoid        QName(PackageNamespace(""), "send"), 1
+
+      debugline           74
+L45:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-1BL"), "_-43n")
+   method
+    refid "_-293:CommunityGoalHallOfFameWidget/instance/_-293:CommunityGoalHallOfFameWidget/instance/_-43n"
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 5
+     localcount 7
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           76
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace(""), "Array")
+      setlocal3
+
+      pushbyte            0
+      setlocal            6
+
+      debug               1, "k", 0, 76
+      debug               1, "k", 1, 77
+      debug               1, "k", 2, 78
+      debug               1, "k", 3, 86
+      debug               1, "k", 4, 94
+      pushstring          "landing.view."
+      debugline           77
+      getlocal1
+      add
+      pushstring          ".avatarlist.yoffsets.array"
+      add
+      setlocal2
+
+      debugline           79
+      getlex              QName(ProtectedNamespace("_-1zU"), "landingView")
+      getlocal2
+      callproperty        QName(PackageNamespace(""), "propertyExists"), 1
+      iffalse             L59
+
+      debug               1, "k", 5, 81
+      debugline           80
+      getlex              QName(ProtectedNamespace("_-1zU"), "landingView")
+      getlocal2
+      callproperty        QName(PackageNamespace(""), "getProperty"), 1
+      pushstring          ","
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "split"), 1
+      coerce              QName(PackageNamespace(""), "Array")
+      setlocal3
+
+      debugline           81
+      pushbyte            0
+      setlocal            6
+
+      jump                L51
+
+L39:
+      label
+      debugline           82
+      getlocal3
+      getlocal            6
+      findpropstrict      QName(PackageNamespace(""), "parseInt")
+      getlocal3
+      getlocal            6
+      getproperty         MultinameL([PrivateNamespace("_-1BL"), PackageNamespace("_-4CO"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("CommunityGoalHallOfFameWidget.as$2174"), PackageNamespace("_-293"), PackageInternalNs("_-293"), ProtectedNamespace("_-1BL"), StaticProtectedNs("_-1BL"), StaticProtectedNs("_-1zU")])
+      callproperty        QName(PackageNamespace(""), "parseInt"), 1
+      setproperty         MultinameL([PrivateNamespace("_-1BL"), PackageNamespace("_-4CO"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("CommunityGoalHallOfFameWidget.as$2174"), PackageNamespace("_-293"), PackageInternalNs("_-293"), ProtectedNamespace("_-1BL"), StaticProtectedNs("_-1BL"), StaticProtectedNs("_-1zU")])
+
+      debugline           81
+      inclocal_i          6
+L51:
+      getlocal            6
+      getlocal3
+      getproperty         QName(PackageNamespace(""), "length")
+      iflt                L39
+
+      debugline           84
+      findproperty        QName(ProtectedNamespace("_-1zU"), "_-ow")
+      getlocal3
+      initproperty        QName(ProtectedNamespace("_-1zU"), "_-ow")
+
+L59:
+      pushstring          "landing.view."
+      debugline           86
+      getlocal1
+      add
+      pushstring          ".avatarlist.widths.array"
+      add
+      setlocal            4
+
+      debugline           87
+      getlex              QName(ProtectedNamespace("_-1zU"), "landingView")
+      getlocal            4
+      callproperty        QName(PackageNamespace(""), "propertyExists"), 1
+      iffalse             L103
+
+      debugline           88
+      getlex              QName(ProtectedNamespace("_-1zU"), "landingView")
+      getlocal            4
+      callproperty        QName(PackageNamespace(""), "getProperty"), 1
+      pushstring          ","
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "split"), 1
+      coerce              QName(PackageNamespace(""), "Array")
+      setlocal3
+
+      debugline           89
+      pushbyte            0
+      setlocal            6
+
+      jump                L95
+
+L83:
+      label
+      debugline           90
+      getlocal3
+      getlocal            6
+      findpropstrict      QName(PackageNamespace(""), "parseInt")
+      getlocal3
+      getlocal            6
+      getproperty         MultinameL([PrivateNamespace("_-1BL"), PackageNamespace("_-4CO"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("CommunityGoalHallOfFameWidget.as$2174"), PackageNamespace("_-293"), PackageInternalNs("_-293"), ProtectedNamespace("_-1BL"), StaticProtectedNs("_-1BL"), StaticProtectedNs("_-1zU")])
+      callproperty        QName(PackageNamespace(""), "parseInt"), 1
+      setproperty         MultinameL([PrivateNamespace("_-1BL"), PackageNamespace("_-4CO"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("CommunityGoalHallOfFameWidget.as$2174"), PackageNamespace("_-293"), PackageInternalNs("_-293"), ProtectedNamespace("_-1BL"), StaticProtectedNs("_-1BL"), StaticProtectedNs("_-1zU")])
+
+      debugline           89
+      inclocal_i          6
+L95:
+      getlocal            6
+      getlocal3
+      getproperty         QName(PackageNamespace(""), "length")
+      iflt                L83
+
+      debugline           92
+      findproperty        QName(ProtectedNamespace("_-1zU"), "_-0DV")
+      getlocal3
+      initproperty        QName(ProtectedNamespace("_-1zU"), "_-0DV")
+
+L103:
+      pushstring          "landing.view."
+      debugline           94
+      getlocal1
+      add
+      pushstring          ".avatarlist.startoffset"
+      add
+      setlocal            5
+
+      debugline           95
+      getlex              QName(ProtectedNamespace("_-1zU"), "landingView")
+      getlocal            5
+      callproperty        QName(PackageNamespace(""), "propertyExists"), 1
+      iffalse             L124
+
+      debugline           96
+      findproperty        QName(PackageNamespace(""), "_-25e")
+      findpropstrict      QName(PackageNamespace(""), "parseInt")
+      getlex              QName(ProtectedNamespace("_-1zU"), "landingView")
+      getlocal            5
+      callproperty        QName(PackageNamespace(""), "getProperty"), 1
+      callproperty        QName(PackageNamespace(""), "parseInt"), 1
+      initproperty        QName(PackageNamespace(""), "_-25e")
+
+      debugline           98
+L124:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-293:CommunityGoalHallOfFameWidget/class/init"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 4
+   maxscopedepth 5
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

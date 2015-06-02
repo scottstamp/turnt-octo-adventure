@@ -1,0 +1,33 @@
+script ; 5402
+ sinit
+  refid "_-41R:OfferCenter/init"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 1
+   maxscopedepth 3
+   code
+    getlocal0
+    pushscope
+
+    debugfile           "k"
+    debugline           20
+    findpropstrict      Multiname("OfferCenter", [PackageNamespace("_-41R")])
+    getlex              QName(PackageNamespace(""), "Object")
+    pushscope
+
+    getlex              QName(PackageNamespace(""), "Object")
+    newclass            "_-41R:OfferCenter"
+    popscope
+    initproperty        QName(PackageNamespace("_-41R"), "OfferCenter")
+
+    debugfile           "k"
+    debugline           1
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait class QName(PackageNamespace("_-41R"), "OfferCenter")
+  #include "OfferCenter.class.asasm"
+ end ; trait
+end ; script

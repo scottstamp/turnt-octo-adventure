@@ -1,0 +1,100 @@
+class
+ refid "_-4m5:_-3fd"
+ instance QName(PackageNamespace("_-4m5"), "_-3fd")
+  extends QName(PackageNamespace("flash.events"), "Event")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-2H-")
+  iinit
+   refid "_-4m5:_-3fd/instance/init"
+   param QName(PackageNamespace(""), "String")
+   param QName(PackageNamespace(""), "int")
+   param QName(PackageNamespace(""), "Boolean")
+   param QName(PackageNamespace(""), "Boolean")
+   flag HAS_OPTIONAL
+   optional False()
+   optional False()
+   body
+    maxstack 4
+    localcount 5
+    initscopedepth 5
+    maxscopedepth 6
+    code
+     debugfile           "k"
+     debugline           12
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 12
+     debug               1, "k", 1, 12
+     debug               1, "k", 2, 12
+     debug               1, "k", 3, 12
+     debugline           14
+     getlocal0
+     getlocal1
+     getlocal3
+     getlocal            4
+     constructsuper      3
+
+     debugline           15
+     getlocal0
+     getlocal2
+     initproperty        QName(PrivateNamespace("_-2H-"), "_-5T3")
+
+     debugline           16
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-2H-"), "_-5T3") type QName(PackageNamespace(""), "int") end
+  trait getter QName(PackageNamespace(""), "id")
+   method
+    refid "_-4m5:_-3fd/instance/id/getter"
+    returns QName(PackageNamespace(""), "int")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           18
+      getlocal0
+      pushscope
+
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2H-"), "_-5T3")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-4m5:_-3fd/class/init"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 4
+   maxscopedepth 5
+   code
+    getlocal0
+    pushscope
+
+    debug               1, "k", 0, 7
+    findproperty        QName(PackageNamespace(""), "_-5GW")
+    pushstring          "TSLE_TRAX_LOAD_COMPLETE"
+    initproperty        QName(PackageNamespace(""), "_-5GW")
+
+    debug               1, "k", 1, 8
+    findproperty        QName(PackageNamespace(""), "_-1Rj")
+    pushstring          "TSLE_TRAX_LOAD_FAILED"
+    initproperty        QName(PackageNamespace(""), "_-1Rj")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait const QName(PackageNamespace(""), "_-5GW") slotid 1 type QName(PackageNamespace(""), "String") value Utf8("TSLE_TRAX_LOAD_COMPLETE") end
+ trait const QName(PackageNamespace(""), "_-1Rj") slotid 2 type QName(PackageNamespace(""), "String") value Utf8("TSLE_TRAX_LOAD_FAILED") end
+end ; class

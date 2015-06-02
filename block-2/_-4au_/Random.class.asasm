@@ -1,0 +1,715 @@
+class
+ refid "_-4au:Random"
+ instance QName(PackageNamespace("_-4au"), "Random")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-2Dm")
+  iinit
+   refid "_-4au:Random/instance/init"
+   param QName(PackageNamespace(""), "Class")
+   flag HAS_OPTIONAL
+   optional Null()
+   body
+    maxstack 4
+    localcount 7
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     debugfile           "k"
+     debugline           30
+     getlocal0
+     pushscope
+
+     pushbyte            0
+     convert_u
+     setlocal2
+
+     debug               1, "k", 0, 30
+     debugline           30
+     getlocal0
+     constructsuper      0
+
+     debugline           31
+     getlocal1
+     pushnull
+     ifne                L19
+
+     getlex              QName(PackageNamespace("_-4au"), "ARC4")
+     coerce              QName(PackageNamespace(""), "Class")
+     setlocal1
+
+     debugline           32
+L19:
+     getlocal0
+     getlocal1
+     construct           0
+     getlex              QName(PackageNamespace("_-4au"), "_-4Zj")
+     astypelate
+     initproperty        QName(PrivateNamespace("_-2Dm"), "state")
+
+     debugline           33
+     getlocal0
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-2Dm"), "state")
+     callproperty        QName(Namespace("_-rQ"), "_-1Gv"), 0
+     initproperty        QName(PrivateNamespace("_-2Dm"), "_-3Fx")
+
+     debugline           34
+     getlocal0
+     findpropstrict      QName(PackageNamespace("flash.utils"), "ByteArray")
+     constructprop       QName(PackageNamespace("flash.utils"), "ByteArray"), 0
+     initproperty        QName(PrivateNamespace("_-2Dm"), "_-0xF")
+
+     debugline           35
+     getlocal0
+     pushbyte            0
+     initproperty        QName(PrivateNamespace("_-2Dm"), "_-3HD")
+
+     jump                L95
+
+L41:
+     label
+     debug               1, "k", 1, 37
+     debugline           37
+     pushint             65536
+     getlex              QName(PackageNamespace(""), "Math")
+     callproperty        QName(PackageNamespace(""), "random"), 0
+     multiply
+     convert_u
+     setlocal2
+
+     debugline           38
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-2Dm"), "_-0xF")
+     getlocal0
+     dup
+     setlocal            4
+
+     getproperty         QName(PrivateNamespace("_-2Dm"), "_-3HD")
+     dup
+     increment_i
+     setlocal            5
+
+     getlocal            4
+     getlocal            5
+     setproperty         QName(PrivateNamespace("_-2Dm"), "_-3HD")
+
+     kill                5
+     kill                4
+     setlocal3
+
+     getlocal3
+     getlocal2
+     pushbyte            8
+     urshift
+     setproperty         MultinameL([PrivateNamespace("_-2Dm"), PackageNamespace("_-4au"), PackageNamespace(""), PrivateNamespace("Random.as$3921"), PackageInternalNs("_-4au"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-2Dm"), StaticProtectedNs("_-2Dm")])
+
+     debugline           39
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-2Dm"), "_-0xF")
+     getlocal0
+     dup
+     setlocal            5
+
+     getproperty         QName(PrivateNamespace("_-2Dm"), "_-3HD")
+     dup
+     increment_i
+     setlocal            6
+
+     getlocal            5
+     getlocal            6
+     setproperty         QName(PrivateNamespace("_-2Dm"), "_-3HD")
+
+     kill                6
+     kill                5
+     dup
+     setlocal            4
+
+     getlocal2
+     pushshort           255
+     bitand
+     setproperty         MultinameL([PrivateNamespace("_-2Dm"), PackageNamespace("_-4au"), PackageNamespace(""), PrivateNamespace("Random.as$3921"), PackageInternalNs("_-4au"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-2Dm"), StaticProtectedNs("_-2Dm")])
+
+     kill                4
+     kill                3
+     debugline           36
+L95:
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-2Dm"), "_-3HD")
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-2Dm"), "_-3Fx")
+     iflt                L41
+
+     debugline           41
+     getlocal0
+     pushbyte            0
+     initproperty        QName(PrivateNamespace("_-2Dm"), "_-3HD")
+
+     debugline           42
+     getlocal0
+     callpropvoid        QName(PackageNamespace(""), "_-1Eq"), 0
+
+     debugline           43
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-2Dm"), "state") type QName(PackageNamespace("_-4au"), "_-4Zj") end
+  trait slot QName(PrivateNamespace("_-2Dm"), "ready") type QName(PackageNamespace(""), "Boolean") value False() end
+  trait slot QName(PrivateNamespace("_-2Dm"), "_-0xF") type QName(PackageNamespace("flash.utils"), "ByteArray") end
+  trait slot QName(PrivateNamespace("_-2Dm"), "_-3Fx") type QName(PackageNamespace(""), "int") end
+  trait slot QName(PrivateNamespace("_-2Dm"), "_-3HD") type QName(PackageNamespace(""), "int") end
+  trait slot QName(PrivateNamespace("_-2Dm"), "_-4gE") type QName(PackageNamespace(""), "Boolean") value False() end
+  trait method QName(PackageNamespace(""), "_-1Eq")
+   method
+    refid "_-4au:Random/instance/_-1Eq"
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_OPTIONAL
+    optional Integer(0)
+    body
+     maxstack 5
+     localcount 8
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           45
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 45
+      debugline           46
+      getlocal1
+      pushbyte            0
+      ifne                L16
+
+      debugline           47
+      findpropstrict      QName(PackageNamespace(""), "Date")
+      constructprop       QName(PackageNamespace(""), "Date"), 0
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "getTime"), 0
+      convert_i
+      setlocal1
+
+      debugline           49
+L16:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2Dm"), "_-0xF")
+      getlocal0
+      dup
+      setlocal3
+
+      getproperty         QName(PrivateNamespace("_-2Dm"), "_-3HD")
+      dup
+      increment_i
+      setlocal            4
+
+      getlocal3
+      getlocal            4
+      setproperty         QName(PrivateNamespace("_-2Dm"), "_-3HD")
+
+      kill                4
+      kill                3
+      setlocal2
+
+      getlocal2
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2Dm"), "_-0xF")
+      getlocal2
+      getproperty         MultinameL([PrivateNamespace("_-2Dm"), PackageNamespace("_-4au"), PackageNamespace(""), PrivateNamespace("Random.as$3921"), PackageInternalNs("_-4au"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-2Dm"), StaticProtectedNs("_-2Dm")])
+      getlocal1
+      pushshort           255
+      bitand
+      bitxor
+      setproperty         MultinameL([PrivateNamespace("_-2Dm"), PackageNamespace("_-4au"), PackageNamespace(""), PrivateNamespace("Random.as$3921"), PackageInternalNs("_-4au"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-2Dm"), StaticProtectedNs("_-2Dm")])
+
+      debugline           50
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2Dm"), "_-0xF")
+      getlocal0
+      dup
+      setlocal            4
+
+      getproperty         QName(PrivateNamespace("_-2Dm"), "_-3HD")
+      dup
+      increment_i
+      setlocal            5
+
+      getlocal            4
+      getlocal            5
+      setproperty         QName(PrivateNamespace("_-2Dm"), "_-3HD")
+
+      kill                5
+      kill                4
+      setlocal3
+
+      getlocal3
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2Dm"), "_-0xF")
+      getlocal3
+      getproperty         MultinameL([PrivateNamespace("_-2Dm"), PackageNamespace("_-4au"), PackageNamespace(""), PrivateNamespace("Random.as$3921"), PackageInternalNs("_-4au"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-2Dm"), StaticProtectedNs("_-2Dm")])
+      getlocal1
+      pushbyte            8
+      rshift
+      pushshort           255
+      bitand
+      bitxor
+      setproperty         MultinameL([PrivateNamespace("_-2Dm"), PackageNamespace("_-4au"), PackageNamespace(""), PrivateNamespace("Random.as$3921"), PackageInternalNs("_-4au"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-2Dm"), StaticProtectedNs("_-2Dm")])
+
+      debugline           51
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2Dm"), "_-0xF")
+      getlocal0
+      dup
+      setlocal            5
+
+      getproperty         QName(PrivateNamespace("_-2Dm"), "_-3HD")
+      dup
+      increment_i
+      setlocal            6
+
+      getlocal            5
+      getlocal            6
+      setproperty         QName(PrivateNamespace("_-2Dm"), "_-3HD")
+
+      kill                6
+      kill                5
+      dup
+      setlocal            4
+
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2Dm"), "_-0xF")
+      getlocal            4
+      getproperty         MultinameL([PrivateNamespace("_-2Dm"), PackageNamespace("_-4au"), PackageNamespace(""), PrivateNamespace("Random.as$3921"), PackageInternalNs("_-4au"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-2Dm"), StaticProtectedNs("_-2Dm")])
+      getlocal1
+      pushbyte            16
+      rshift
+      pushshort           255
+      bitand
+      bitxor
+      setproperty         MultinameL([PrivateNamespace("_-2Dm"), PackageNamespace("_-4au"), PackageNamespace(""), PrivateNamespace("Random.as$3921"), PackageInternalNs("_-4au"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-2Dm"), StaticProtectedNs("_-2Dm")])
+
+      debugline           52
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2Dm"), "_-0xF")
+      getlocal0
+      dup
+      setlocal            6
+
+      getproperty         QName(PrivateNamespace("_-2Dm"), "_-3HD")
+      dup
+      increment_i
+      setlocal            7
+
+      getlocal            6
+      getlocal            7
+      setproperty         QName(PrivateNamespace("_-2Dm"), "_-3HD")
+
+      kill                7
+      kill                6
+      dup
+      setlocal            5
+
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2Dm"), "_-0xF")
+      getlocal            5
+      getproperty         MultinameL([PrivateNamespace("_-2Dm"), PackageNamespace("_-4au"), PackageNamespace(""), PrivateNamespace("Random.as$3921"), PackageInternalNs("_-4au"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-2Dm"), StaticProtectedNs("_-2Dm")])
+      getlocal1
+      pushbyte            24
+      rshift
+      pushshort           255
+      bitand
+      bitxor
+      setproperty         MultinameL([PrivateNamespace("_-2Dm"), PackageNamespace("_-4au"), PackageNamespace(""), PrivateNamespace("Random.as$3921"), PackageInternalNs("_-4au"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-2Dm"), StaticProtectedNs("_-2Dm")])
+
+      debugline           53
+      getlocal0
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2Dm"), "_-3HD")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2Dm"), "_-3Fx")
+      modulo
+      initproperty        QName(PrivateNamespace("_-2Dm"), "_-3HD")
+
+      debugline           54
+      getlocal0
+      pushtrue
+      initproperty        QName(PrivateNamespace("_-2Dm"), "_-4gE")
+
+      debugline           55
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-0SH")
+   method
+    refid "_-4au:Random/instance/_-0SH"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 6
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           64
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("flash.text"), "Font")
+      setlocal3
+
+      debug               1, "k", 0, 65
+      debug               1, "k", 1, 70
+      debug               1, "k", 2, 71
+      debugline           65
+      findpropstrict      QName(PackageNamespace("flash.utils"), "ByteArray")
+      constructprop       QName(PackageNamespace("flash.utils"), "ByteArray"), 0
+      coerce              QName(PackageNamespace("flash.utils"), "ByteArray")
+      setlocal1
+
+      debugline           66
+      getlocal1
+      getlex              QName(PackageNamespace("flash.system"), "System")
+      getproperty         QName(PackageNamespace(""), "totalMemory")
+      callpropvoid        QName(PackageNamespace(""), "writeUnsignedInt"), 1
+
+      debugline           67
+      getlocal1
+      getlex              QName(PackageNamespace("flash.system"), "Capabilities")
+      getproperty         QName(PackageNamespace(""), "serverString")
+      callpropvoid        QName(PackageNamespace(""), "writeUTF"), 1
+
+      debugline           68
+      getlocal1
+      findpropstrict      QName(PackageNamespace("flash.utils"), "getTimer")
+      callproperty        QName(PackageNamespace("flash.utils"), "getTimer"), 0
+      callpropvoid        QName(PackageNamespace(""), "writeUnsignedInt"), 1
+
+      debugline           69
+      getlocal1
+      findpropstrict      QName(PackageNamespace(""), "Date")
+      constructprop       QName(PackageNamespace(""), "Date"), 0
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "getTime"), 0
+      callpropvoid        QName(PackageNamespace(""), "writeUnsignedInt"), 1
+
+      debugline           70
+      getlex              QName(PackageNamespace("flash.text"), "Font")
+      pushtrue
+      callproperty        QName(PackageNamespace(""), "enumerateFonts"), 1
+      coerce              QName(PackageNamespace(""), "Array")
+      setlocal2
+
+      debugline           71
+      pushbyte            0
+      setlocal            4
+
+      getlocal2
+      coerce_a
+      setlocal            5
+
+      jump                L71
+
+L49:
+      label
+      getlocal            5
+      getlocal            4
+      nextvalue
+      coerce              QName(PackageNamespace("flash.text"), "Font")
+      setlocal3
+
+      debugline           72
+      getlocal1
+      getlocal3
+      getproperty         QName(PackageNamespace(""), "fontName")
+      callpropvoid        QName(PackageNamespace(""), "writeUTF"), 1
+
+      debugline           73
+      getlocal1
+      getlocal3
+      getproperty         QName(PackageNamespace(""), "fontStyle")
+      callpropvoid        QName(PackageNamespace(""), "writeUTF"), 1
+
+      debugline           74
+      getlocal1
+      getlocal3
+      getproperty         QName(PackageNamespace(""), "fontType")
+      callpropvoid        QName(PackageNamespace(""), "writeUTF"), 1
+
+      debugline           71
+L71:
+      hasnext2            5, 4
+      iftrue              L49
+
+      kill                5
+      kill                4
+      debugline           76
+      getlocal1
+      pushbyte            0
+      setproperty         QName(PackageNamespace(""), "position")
+
+      jump                L87
+
+L80:
+      label
+      debugline           78
+      getlocal0
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "readUnsignedInt"), 0
+      callpropvoid        QName(PackageNamespace(""), "_-1Eq"), 1
+
+      debugline           77
+L87:
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "bytesAvailable")
+      pushbyte            4
+      ifge                L80
+
+      debugline           80
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-4QK")
+   method
+    refid "_-4au:Random/instance/_-4QK"
+    param QName(PackageNamespace("flash.utils"), "ByteArray")
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 3
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           83
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 83
+      debug               1, "k", 1, 83
+      jump                L14
+
+L7:
+      label
+      debugline           85
+      getlocal1
+      getlocal0
+      callproperty        QName(PackageNamespace(""), "_-UE"), 0
+      callpropvoid        QName(PackageNamespace(""), "writeByte"), 1
+
+      debugline           84
+L14:
+      getlocal2
+      dup
+      decrement_i
+      setlocal2
+
+      iftrue              L7
+
+      debugline           87
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-UE")
+   method
+    refid "_-4au:Random/instance/_-UE"
+    returns QName(PackageNamespace(""), "int")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           88
+      getlocal0
+      pushscope
+
+      debugline           89
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2Dm"), "ready")
+      iftrue              L35
+
+      debugline           90
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2Dm"), "_-4gE")
+      iftrue              L16
+
+      debugline           91
+      getlocal0
+      callpropvoid        QName(PackageNamespace(""), "_-0SH"), 0
+
+      debugline           93
+L16:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2Dm"), "state")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2Dm"), "_-0xF")
+      callpropvoid        QName(Namespace("_-rQ"), "init"), 1
+
+      debugline           94
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2Dm"), "_-0xF")
+      pushbyte            0
+      setproperty         QName(PackageNamespace(""), "length")
+
+      debugline           95
+      getlocal0
+      pushbyte            0
+      initproperty        QName(PrivateNamespace("_-2Dm"), "_-3HD")
+
+      debugline           96
+      getlocal0
+      pushtrue
+      initproperty        QName(PrivateNamespace("_-2Dm"), "ready")
+
+      debugline           98
+L35:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2Dm"), "state")
+      callproperty        QName(Namespace("_-rQ"), "next"), 0
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "dispose")
+   method
+    refid "_-4au:Random/instance/dispose"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           100
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 101
+      debugline           101
+      pushbyte            0
+      convert_u
+      setlocal1
+
+      jump                L25
+
+L10:
+      label
+      debugline           102
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2Dm"), "_-0xF")
+      getlocal1
+      getlex              QName(PackageNamespace(""), "Math")
+      callproperty        QName(PackageNamespace(""), "random"), 0
+      pushshort           256
+      multiply
+      setproperty         MultinameL([PrivateNamespace("_-2Dm"), PackageNamespace("_-4au"), PackageNamespace(""), PrivateNamespace("Random.as$3921"), PackageInternalNs("_-4au"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-2Dm"), StaticProtectedNs("_-2Dm")])
+
+      debugline           101
+      getlocal1
+      increment
+      convert_u
+      setlocal1
+
+L25:
+      getlocal1
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2Dm"), "_-0xF")
+      getproperty         QName(PackageNamespace(""), "length")
+      iflt                L10
+
+      debugline           104
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2Dm"), "_-0xF")
+      pushbyte            0
+      setproperty         QName(PackageNamespace(""), "length")
+
+      debugline           105
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-2Dm"), "_-0xF")
+
+      debugline           106
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2Dm"), "state")
+      callpropvoid        QName(Namespace("_-rQ"), "dispose"), 0
+
+      debugline           107
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-2Dm"), "state")
+
+      debugline           108
+      getlocal0
+      pushbyte            0
+      initproperty        QName(PrivateNamespace("_-2Dm"), "_-3Fx")
+
+      debugline           109
+      getlocal0
+      pushbyte            0
+      initproperty        QName(PrivateNamespace("_-2Dm"), "_-3HD")
+
+      debugline           110
+      getlex              QName(PackageNamespace("_-1dz"), "_-52b")
+      callpropvoid        QName(PackageNamespace(""), "_-0r6"), 0
+
+      debugline           111
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "toString")
+   method
+    refid "_-4au:Random/instance/toString"
+    returns QName(PackageNamespace(""), "String")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           112
+      getlocal0
+      pushscope
+
+      pushstring          "random-"
+      debugline           113
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2Dm"), "state")
+      callproperty        QName(Namespace("_-rQ"), "toString"), 0
+      add
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-4au:Random/class/init"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

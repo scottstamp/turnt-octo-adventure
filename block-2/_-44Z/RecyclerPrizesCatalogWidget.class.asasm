@@ -1,0 +1,770 @@
+class
+ refid "_-44Z:RecyclerPrizesCatalogWidget"
+ instance QName(PackageNamespace("_-44Z"), "RecyclerPrizesCatalogWidget")
+  extends QName(PackageNamespace("_-44Z"), "CatalogWidget")
+  implements Multiname("_-23L", [PackageNamespace("_-44Z")])
+  implements Multiname("_-6YO", [PackageNamespace("_-0Cr")])
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-1LR")
+  iinit
+   refid "_-44Z:RecyclerPrizesCatalogWidget/instance/init#0"
+   param QName(PackageNamespace("_-1rh"), "IWindowContainer")
+   body
+    maxstack 2
+    localcount 2
+    initscopedepth 5
+    maxscopedepth 6
+    code
+     debugfile           "k"
+     debugline           27
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 27
+     debugline           28
+     getlocal0
+     getlocal1
+     constructsuper      1
+
+     debugline           29
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-1LR"), "_-6Q-") type QName(PackageNamespace(""), "Array") end
+  trait slot QName(PrivateNamespace("_-1LR"), "_-2db") type QName(PackageNamespace("_-6ZW"), "PrizeViewer") end
+  trait slot QName(PrivateNamespace("_-1LR"), "_-2Z8") type QName(PackageNamespace("_-3yU"), "IItemListWindow") end
+  trait slot QName(PrivateNamespace("_-1LR"), "_-0tT") type QName(PackageNamespace(""), "XML") end
+  trait slot QName(PrivateNamespace("_-1LR"), "_-0hr") type QName(PackageNamespace(""), "XML") end
+  trait slot QName(PrivateNamespace("_-1LR"), "_-H") type QName(PackageNamespace("_-0Cr"), "_-38C") end
+  trait method QName(PackageNamespace(""), "dispose") flag OVERRIDE
+   method
+    refid "_-44Z:RecyclerPrizesCatalogWidget/instance/dispose"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           31
+      getlocal0
+      pushscope
+
+      debugline           32
+      getlocal0
+      callsupervoid       QName(PackageNamespace(""), "dispose"), 0
+      debugline           33
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1LR"), "_-2db")
+      pushnull
+      ifeq                L21
+
+      debugline           34
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1LR"), "_-2db")
+      callpropvoid        QName(PackageNamespace(""), "dispose"), 0
+
+      debugline           35
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-1LR"), "_-2db")
+
+      debugline           37
+L21:
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-1LR"), "_-6Q-")
+
+      debugline           38
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-1LR"), "_-2Z8")
+
+      debugline           39
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-1LR"), "_-0tT")
+
+      debugline           40
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-1LR"), "_-0hr")
+
+      debugline           41
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-1LR"), "_-H")
+
+      debugline           42
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "init") flag OVERRIDE
+   method
+    refid "_-44Z:RecyclerPrizesCatalogWidget/instance/init#1"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           44
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-1t2"), "XmlAsset")
+      setlocal1
+
+      debug               1, "k", 0, 58
+      debugline           45
+      getlocal0
+      callsuper           QName(PackageNamespace(""), "init"), 0
+      iftrue              L17
+
+      debugline           46
+      pushfalse
+      returnvalue
+
+      ; 0xF0
+      ; 0x31
+L17:
+      getlocal0
+      findpropstrict      QName(PackageNamespace("_-6ZW"), "PrizeViewer")
+      constructprop       QName(PackageNamespace("_-6ZW"), "PrizeViewer"), 0
+      initproperty        QName(PrivateNamespace("_-1LR"), "_-2db")
+
+      debugline           51
+      getlocal0
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1LR"), "recycler")
+      callproperty        QName(Namespace("_-3CB"), "_-0-H"), 0
+      initproperty        QName(PrivateNamespace("_-1LR"), "_-6Q-")
+
+      debugline           52
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1LR"), "_-6Q-")
+      pushnull
+      ifne                L37
+
+      debugline           53
+      pushfalse
+      returnvalue
+
+      ; 0xF0
+      ; 0x38
+L37:
+      getlocal0
+      getlex              QName(ProtectedNamespace("_-1BS"), "_-04A")
+      pushstring          "itemList"
+      callproperty        QName(Namespace("_-0zV"), "findChildByName"), 1
+      getlex              QName(PackageNamespace("_-3yU"), "IItemListWindow")
+      astypelate
+      initproperty        QName(PrivateNamespace("_-1LR"), "_-2Z8")
+
+      debugline           60
+      getlex              QName(PackageNamespace(""), "page")
+      getproperty         QName(Namespace("_-5W6"), "viewer")
+      getproperty         QName(Namespace("_-5tj"), "catalog")
+      getproperty         QName(Namespace("_-5qx"), "assets")
+      pushstring          "gridItem"
+      callproperty        Multiname("getAssetByName", [PrivateNamespace("_-1LR"), PackageNamespace(""), PrivateNamespace("RecyclerPrizesCatalogWidget.as$3260"), PackageNamespace("_-44Z"), PackageInternalNs("_-44Z"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-1LR"), StaticProtectedNs("_-1LR"), StaticProtectedNs("_-1BS")]), 1
+      getlex              QName(PackageNamespace("_-1t2"), "XmlAsset")
+      astypelate
+      coerce              QName(PackageNamespace("_-1t2"), "XmlAsset")
+      setlocal1
+
+      debugline           61
+      getlocal0
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "content")
+      getlex              QName(PackageNamespace(""), "XML")
+      astypelate
+      initproperty        QName(PrivateNamespace("_-1LR"), "_-0tT")
+
+      debugline           63
+      getlex              QName(PackageNamespace(""), "page")
+      getproperty         QName(Namespace("_-5W6"), "viewer")
+      getproperty         QName(Namespace("_-5tj"), "catalog")
+      getproperty         QName(Namespace("_-5qx"), "assets")
+      pushstring          "recyclerPrizesWidgetLevelItem"
+      callproperty        Multiname("getAssetByName", [PrivateNamespace("_-1LR"), PackageNamespace(""), PrivateNamespace("RecyclerPrizesCatalogWidget.as$3260"), PackageNamespace("_-44Z"), PackageInternalNs("_-44Z"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-1LR"), StaticProtectedNs("_-1LR"), StaticProtectedNs("_-1BS")]), 1
+      getlex              QName(PackageNamespace("_-1t2"), "XmlAsset")
+      astypelate
+      coerce              QName(PackageNamespace("_-1t2"), "XmlAsset")
+      setlocal1
+
+      debugline           64
+      getlocal0
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "content")
+      getlex              QName(PackageNamespace(""), "XML")
+      astypelate
+      initproperty        QName(PrivateNamespace("_-1LR"), "_-0hr")
+
+      debugline           67
+      getlocal0
+      callpropvoid        QName(PrivateNamespace("_-1LR"), "_-31r"), 0
+
+      debugline           69
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1LR"), "_-6Q-")
+      getproperty         QName(PackageNamespace(""), "length")
+      pushbyte            0
+      greaterthan
+      dup
+      iffalse             L100
+
+      pop
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1LR"), "_-6Q-")
+      pushbyte            0
+      getproperty         MultinameL([PrivateNamespace("_-1LR"), PackageNamespace(""), PrivateNamespace("RecyclerPrizesCatalogWidget.as$3260"), PackageNamespace("_-44Z"), PackageInternalNs("_-44Z"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-1LR"), StaticProtectedNs("_-1LR"), StaticProtectedNs("_-1BS")])
+      getproperty         Multiname("prizes", [PrivateNamespace("_-1LR"), PackageNamespace(""), PrivateNamespace("RecyclerPrizesCatalogWidget.as$3260"), PackageNamespace("_-44Z"), PackageInternalNs("_-44Z"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-1LR"), StaticProtectedNs("_-1LR"), StaticProtectedNs("_-1BS")])
+      getproperty         Multiname("length", [PrivateNamespace("_-1LR"), PackageNamespace(""), PrivateNamespace("RecyclerPrizesCatalogWidget.as$3260"), PackageNamespace("_-44Z"), PackageInternalNs("_-44Z"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-1LR"), StaticProtectedNs("_-1LR"), StaticProtectedNs("_-1BS")])
+      pushbyte            0
+      greaterthan
+L100:
+      iffalse             L115
+
+      debugline           70
+      getlocal0
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1LR"), "_-6Q-")
+      pushbyte            0
+      getproperty         MultinameL([PrivateNamespace("_-1LR"), PackageNamespace(""), PrivateNamespace("RecyclerPrizesCatalogWidget.as$3260"), PackageNamespace("_-44Z"), PackageInternalNs("_-44Z"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-1LR"), StaticProtectedNs("_-1LR"), StaticProtectedNs("_-1BS")])
+      getproperty         Multiname("prizes", [PrivateNamespace("_-1LR"), PackageNamespace(""), PrivateNamespace("RecyclerPrizesCatalogWidget.as$3260"), PackageNamespace("_-44Z"), PackageInternalNs("_-44Z"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-1LR"), StaticProtectedNs("_-1LR"), StaticProtectedNs("_-1BS")])
+      pushbyte            0
+      getproperty         MultinameL([PrivateNamespace("_-1LR"), PackageNamespace(""), PrivateNamespace("RecyclerPrizesCatalogWidget.as$3260"), PackageNamespace("_-44Z"), PackageInternalNs("_-44Z"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-1LR"), StaticProtectedNs("_-1LR"), StaticProtectedNs("_-1BS")])
+      getlex              QName(PackageNamespace("_-0Cr"), "_-38C")
+      astypelate
+      pushfalse
+      callpropvoid        QName(PackageNamespace(""), "select"), 2
+
+      debugline           72
+L115:
+      pushtrue
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-1LR"), "_-31r")
+   method
+    refid "_-44Z:RecyclerPrizesCatalogWidget/instance/_-44Z:RecyclerPrizesCatalogWidget/instance/_-31r"
+    param QName(PackageNamespace("flash.events"), "TimerEvent")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_OPTIONAL
+    optional Null()
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           75
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 75
+      debug               1, "k", 1, 76
+      debugline           76
+      pushbyte            0
+      setlocal2
+
+      jump                L20
+
+L10:
+      label
+      debugline           77
+      getlocal0
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1LR"), "_-6Q-")
+      getlocal2
+      getproperty         MultinameL([PrivateNamespace("_-1LR"), PackageNamespace(""), PrivateNamespace("RecyclerPrizesCatalogWidget.as$3260"), PackageNamespace("_-44Z"), PackageInternalNs("_-44Z"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-1LR"), StaticProtectedNs("_-1LR"), StaticProtectedNs("_-1BS")])
+      callpropvoid        QName(PrivateNamespace("_-1LR"), "_-0kH"), 1
+
+      debugline           76
+      inclocal_i          2
+L20:
+      getlocal2
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1LR"), "_-6Q-")
+      getproperty         QName(PackageNamespace(""), "length")
+      iflt                L10
+
+      debugline           79
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-1LR"), "_-0kH")
+   method
+    refid "_-44Z:RecyclerPrizesCatalogWidget/instance/_-44Z:RecyclerPrizesCatalogWidget/instance/_-0kH"
+    param QName(PackageNamespace("_-6ZW"), "PrizeLevelContainer")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 7
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           81
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-6ZW"), "_-67J")
+      setlocal            6
+
+      debug               1, "k", 0, 81
+      debug               1, "k", 1, 82
+      debug               1, "k", 2, 85
+      debug               1, "k", 3, 90
+      debug               1, "k", 4, 92
+      debugline           82
+      getlex              QName(PackageNamespace(""), "page")
+      getproperty         QName(Namespace("_-5W6"), "viewer")
+      getproperty         QName(Namespace("_-5tj"), "catalog")
+      getproperty         QName(Namespace("_-5qx"), "windowManager")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1LR"), "_-0hr")
+      callproperty        Multiname("buildFromXML", [PrivateNamespace("_-1LR"), PackageNamespace(""), PrivateNamespace("RecyclerPrizesCatalogWidget.as$3260"), PackageNamespace("_-44Z"), PackageInternalNs("_-44Z"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-1LR"), StaticProtectedNs("_-1LR"), StaticProtectedNs("_-1BS")]), 1
+      getlex              QName(PackageNamespace("_-1rh"), "IWindowContainer")
+      astypelate
+      coerce              QName(PackageNamespace("_-1rh"), "IWindowContainer")
+      setlocal2
+
+      debugline           83
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1LR"), "_-2Z8")
+      getlocal2
+      callpropvoid        QName(Namespace("_-LC"), "addListItem"), 1
+
+      debugline           85
+      getlocal2
+      pushstring          "headerText"
+      callproperty        QName(Namespace("_-0zV"), "findChildByName"), 1
+      coerce              QName(PackageNamespace("_-1rh"), "IWindow")
+      setlocal3
+
+      debugline           86
+      getlocal3
+      pushnull
+      ifeq                L52
+
+      debugline           87
+      getlocal3
+      getlex              QName(PackageNamespace(""), "page")
+      getproperty         QName(Namespace("_-5W6"), "viewer")
+      getproperty         QName(Namespace("_-5tj"), "catalog")
+      getproperty         QName(Namespace("_-5qx"), "localization")
+      pushstring          "recycler.prizes.category."
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "_-0qo")
+      add
+      callproperty        Multiname("getLocalization", [PrivateNamespace("_-1LR"), PackageNamespace(""), PrivateNamespace("RecyclerPrizesCatalogWidget.as$3260"), PackageNamespace("_-44Z"), PackageInternalNs("_-44Z"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-1LR"), StaticProtectedNs("_-1LR"), StaticProtectedNs("_-1BS")]), 1
+      setproperty         QName(Namespace("_-6Dt"), "caption")
+
+      debugline           90
+L52:
+      getlocal2
+      pushstring          "itemGrid"
+      callproperty        QName(Namespace("_-0zV"), "findChildByName"), 1
+      getlex              QName(PackageNamespace("_-3yU"), "IItemGridWindow")
+      astypelate
+      coerce              QName(PackageNamespace("_-3yU"), "IItemGridWindow")
+      setlocal            4
+
+      debugline           92
+      pushbyte            0
+      setlocal            5
+
+      jump                L79
+
+L63:
+      label
+      debug               1, "k", 5, 93
+      debugline           93
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "prizes")
+      getlocal            5
+      getproperty         MultinameL([PrivateNamespace("_-1LR"), PackageNamespace(""), PrivateNamespace("RecyclerPrizesCatalogWidget.as$3260"), PackageNamespace("_-44Z"), PackageInternalNs("_-44Z"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-1LR"), StaticProtectedNs("_-1LR"), StaticProtectedNs("_-1BS")])
+      coerce              QName(PackageNamespace("_-6ZW"), "_-67J")
+      setlocal            6
+
+      debugline           94
+      getlocal0
+      getlocal            6
+      getlocal            4
+      callpropvoid        QName(PrivateNamespace("_-1LR"), "_-ds"), 2
+
+      debugline           92
+      inclocal_i          5
+L79:
+      getlocal            5
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "prizes")
+      getproperty         QName(PackageNamespace(""), "length")
+      iflt                L63
+
+      debugline           96
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-1LR"), "_-ds")
+   method
+    refid "_-44Z:RecyclerPrizesCatalogWidget/instance/_-44Z:RecyclerPrizesCatalogWidget/instance/_-ds"
+    param QName(PackageNamespace("_-6ZW"), "_-67J")
+    param QName(PackageNamespace("_-3yU"), "IItemGridWindow")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 4
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           98
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 98
+      debug               1, "k", 1, 98
+      debug               1, "k", 2, 102
+      debugline           99
+      getlocal1
+      pushnull
+      equals
+      dup
+      iftrue              L17
+
+      pop
+      getlocal2
+      pushnull
+      equals
+L17:
+      dup
+      iftrue              L23
+
+      pop
+      getlocal2
+      getproperty         QName(Namespace("_-1Dt"), "disposed")
+      convert_b
+L23:
+      iffalse             L28
+
+      debugline           100
+      returnvoid
+
+      ; 0xF0
+      ; 0x66
+L28:
+      getlex              QName(PackageNamespace(""), "page")
+      getproperty         QName(Namespace("_-5W6"), "viewer")
+      getproperty         QName(Namespace("_-5tj"), "catalog")
+      getproperty         QName(Namespace("_-5qx"), "windowManager")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1LR"), "_-0tT")
+      callproperty        Multiname("buildFromXML", [PrivateNamespace("_-1LR"), PackageNamespace(""), PrivateNamespace("RecyclerPrizesCatalogWidget.as$3260"), PackageNamespace("_-44Z"), PackageInternalNs("_-44Z"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-1LR"), StaticProtectedNs("_-1LR"), StaticProtectedNs("_-1BS")]), 1
+      getlex              QName(PackageNamespace("_-1rh"), "IWindowContainer")
+      astypelate
+      coerce              QName(PackageNamespace("_-1rh"), "IWindowContainer")
+      setlocal3
+
+      debugline           103
+      getlocal3
+      pushstring          "clubLevelIcon"
+      callproperty        QName(Namespace("_-0zV"), "findChildByName"), 1
+      pushfalse
+      setproperty         QName(Namespace("_-6Dt"), "visible")
+
+      debugline           104
+      getlocal1
+      getlocal3
+      setproperty         QName(PackageNamespace(""), "view")
+
+      debugline           105
+      getlocal1
+      getlocal0
+      setproperty         QName(PackageNamespace(""), "grid")
+
+      debugline           106
+      getlocal1
+      getlex              QName(PackageNamespace(""), "page")
+      getproperty         QName(Namespace("_-5W6"), "viewer")
+      getproperty         QName(Namespace("_-5tj"), "roomEngine")
+      callpropvoid        QName(PackageNamespace(""), "setIcon"), 1
+
+      debugline           108
+      getlocal2
+      getlocal3
+      callpropvoid        QName(Namespace("_-1IN"), "_-2Qw"), 1
+
+      debugline           110
+      getlocal2
+      getlocal2
+      getproperty         QName(Namespace("_-1U"), "_-4pC")
+      getproperty         QName(PackageNamespace(""), "height")
+      setproperty         QName(Namespace("_-6Dt"), "height")
+
+      debugline           111
+      getlocal1
+      getlex              QName(PackageNamespace("_-6ZW"), "DealPrizeContainer")
+      istypelate
+      iffalse             L81
+
+      debugline           112
+      getlocal2
+      getlocal2
+      getproperty         QName(Namespace("_-1U"), "_-4pC")
+      getproperty         QName(PackageNamespace(""), "width")
+      setproperty         QName(Namespace("_-6Dt"), "width")
+
+      debugline           115
+L81:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "select")
+   method
+    refid "_-44Z:RecyclerPrizesCatalogWidget/instance/select"
+    param QName(PackageNamespace("_-0Cr"), "_-38C")
+    param QName(PackageNamespace(""), "Boolean")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 8
+     localcount 7
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           117
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 117
+      debug               1, "k", 1, 117
+      debug               1, "k", 2, 127
+      debug               1, "k", 3, 128
+      debug               1, "k", 4, 129
+      debug               1, "k", 5, 130
+      debugline           118
+      getlocal1
+      pushnull
+      ifne                L18
+
+      debugline           119
+      returnvoid
+
+      ; 0xF0
+      ; 0x79
+L18:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1LR"), "_-H")
+      pushnull
+      ifeq                L27
+
+      debugline           122
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1LR"), "_-H")
+      callpropvoid        QName(Namespace("_-5WU"), "deactivate"), 0
+
+      debugline           124
+L27:
+      getlocal0
+      getlocal1
+      initproperty        QName(PrivateNamespace("_-1LR"), "_-H")
+
+      debugline           125
+      getlocal1
+      callpropvoid        QName(Namespace("_-5WU"), "activate"), 0
+
+      debugline           127
+      getlex              QName(PackageNamespace(""), "window")
+      pushstring          "productView"
+      callproperty        QName(Namespace("_-0zV"), "findChildByName"), 1
+      getlex              QName(PackageNamespace("_-1rh"), "IWindowContainer")
+      astypelate
+      coerce              QName(PackageNamespace("_-1rh"), "IWindowContainer")
+      setlocal3
+
+      debugline           128
+      getlocal1
+      getlex              QName(PackageNamespace("_-6ZW"), "_-67J")
+      astypelate
+      coerce              QName(PackageNamespace("_-6ZW"), "_-67J")
+      setlocal            4
+
+      debugline           129
+      getlocal1
+      getlex              QName(PackageNamespace("_-6ZW"), "DealPrizeContainer")
+      astypelate
+      coerce              QName(PackageNamespace("_-6ZW"), "DealPrizeContainer")
+      setlocal            5
+
+      pushstring          ""
+      debugline           130
+      coerce_s
+      setlocal            6
+
+      debugline           131
+      getlocal            5
+      pushnull
+      ifeq                L92
+
+      debugline           132
+      getlex              QName(PackageNamespace(""), "page")
+      getproperty         QName(Namespace("_-5W6"), "viewer")
+      getproperty         QName(Namespace("_-5tj"), "catalog")
+      getproperty         QName(Namespace("_-5qx"), "localization")
+      pushstring          "recycler.prizes.odds."
+      getlocal            4
+      getproperty         QName(PackageNamespace(""), "_-32I")
+      add
+      callproperty        Multiname("getLocalization", [PrivateNamespace("_-1LR"), PackageNamespace(""), PrivateNamespace("RecyclerPrizesCatalogWidget.as$3260"), PackageNamespace("_-44Z"), PackageInternalNs("_-44Z"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-1LR"), StaticProtectedNs("_-1LR"), StaticProtectedNs("_-1BS")]), 1
+      coerce_s
+      setlocal            6
+
+      debugline           133
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1LR"), "_-2db")
+      getlex              QName(PackageNamespace(""), "page")
+      getproperty         QName(Namespace("_-5W6"), "viewer")
+      getproperty         QName(Namespace("_-5tj"), "roomEngine")
+      getlex              QName(PackageNamespace(""), "page")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1LR"), "_-0tT")
+      getlocal3
+      getlocal            5
+      getlocal            4
+      getproperty         QName(PackageNamespace(""), "title")
+      getlocal            6
+      callpropvoid        QName(PackageNamespace(""), "_-2Y0"), 7
+
+      jump                L123
+
+      ; 0xF0
+      ; 0x86
+      ; 0x01
+L92:
+      getlocal            4
+      pushnull
+      ifeq                L123
+
+      debugline           135
+      getlex              QName(PackageNamespace(""), "page")
+      getproperty         QName(Namespace("_-5W6"), "viewer")
+      getproperty         QName(Namespace("_-5tj"), "catalog")
+      getproperty         QName(Namespace("_-5qx"), "localization")
+      pushstring          "recycler.prizes.odds."
+      getlocal            4
+      getproperty         QName(PackageNamespace(""), "_-32I")
+      add
+      callproperty        Multiname("getLocalization", [PrivateNamespace("_-1LR"), PackageNamespace(""), PrivateNamespace("RecyclerPrizesCatalogWidget.as$3260"), PackageNamespace("_-44Z"), PackageInternalNs("_-44Z"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-1LR"), StaticProtectedNs("_-1LR"), StaticProtectedNs("_-1BS")]), 1
+      coerce_s
+      setlocal            6
+
+      debugline           136
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1LR"), "_-2db")
+      getlex              QName(PackageNamespace(""), "page")
+      getproperty         QName(Namespace("_-5W6"), "viewer")
+      getproperty         QName(Namespace("_-5tj"), "roomEngine")
+      getlocal3
+      getlocal            4
+      getproperty         QName(PackageNamespace(""), "_-jQ")
+      getlocal            4
+      getproperty         QName(PackageNamespace(""), "_-1KR")
+      getlocal            4
+      getproperty         QName(PackageNamespace(""), "title")
+      getlocal            6
+      callpropvoid        QName(PackageNamespace(""), "_-13n"), 6
+
+      debugline           138
+L123:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-4a3")
+   method
+    refid "_-44Z:RecyclerPrizesCatalogWidget/instance/_-4a3"
+    param QName(PackageNamespace("_-0Cr"), "_-38C")
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 1
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           140
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 140
+      debugline           141
+      pushfalse
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PrivateNamespace("_-1LR"), "recycler")
+   method
+    refid "_-44Z:RecyclerPrizesCatalogWidget/instance/_-44Z:RecyclerPrizesCatalogWidget/instance/recycler/getter"
+    returns QName(PackageNamespace("_-6ZW"), "_-2bz")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           144
+      getlocal0
+      pushscope
+
+      debugline           145
+      getlex              QName(PackageNamespace(""), "page")
+      getproperty         QName(Namespace("_-5W6"), "viewer")
+      getproperty         QName(Namespace("_-5tj"), "catalog")
+      callproperty        QName(Namespace("_-5qx"), "getRecycler"), 0
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-44Z:RecyclerPrizesCatalogWidget/class/init"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 4
+   maxscopedepth 5
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

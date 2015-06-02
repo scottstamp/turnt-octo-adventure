@@ -1,0 +1,4679 @@
+class
+ refid "_-2h8:HabboTracking"
+ instance QName(PackageNamespace("_-2h8"), "HabboTracking")
+  extends QName(PackageNamespace("_-6Sg"), "Component")
+  implements Multiname("_-5oj", [PackageNamespace("_-2h8")])
+  implements Multiname("_-6Uo", [PackageNamespace("_-6Sg")])
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-4eA")
+  iinit
+   refid "_-2h8:HabboTracking/instance/init"
+   param QName(PackageNamespace("_-6Sg"), "_-5Ub")
+   param QName(PackageNamespace(""), "uint")
+   param QName(PackageNamespace("_-1t2"), "_-1Xk")
+   flag HAS_OPTIONAL
+   optional Integer(0)
+   optional Null()
+   body
+    maxstack 4
+    localcount 6
+    initscopedepth 5
+    maxscopedepth 6
+    code
+     debugfile           "k"
+     debugline           83
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 83
+     debug               1, "k", 1, 83
+     debug               1, "k", 2, 83
+     debugline           673
+     getlocal0
+     getlex              Multiname("Vector", [PrivateNamespace("_-4eA"), PackageNamespace("_-2h8"), PrivateNamespace("HabboTracking.as$1702"), PackageNamespace(""), PackageInternalNs("_-2h8"), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("com.sulake.iid"), ProtectedNamespace("_-4eA"), StaticProtectedNs("_-4eA"), StaticProtectedNs("_-5gL"), PackageNamespace("__AS3__.vec")])
+     getlex              QName(PackageNamespace(""), "String")
+     applytype           1
+     pushbyte            0
+     construct           1
+     initproperty        QName(PrivateNamespace("_-4eA"), "_-0e7")
+
+     debug               1, "k", 3, 89
+     debug               1, "k", 4, 95
+     debugline           84
+     getlex              QName(PrivateNamespace("_-4eA"), "_-0ZW")
+     pushnull
+     ifne                L26
+
+     debugline           85
+     findproperty        QName(PrivateNamespace("_-4eA"), "_-0ZW")
+     getlocal0
+     setproperty         QName(PrivateNamespace("_-4eA"), "_-0ZW")
+
+     debugline           88
+L26:
+     getlocal0
+     findpropstrict      QName(PackageNamespace(""), "Array")
+     getlex              QName(PrivateNamespace("_-4eA"), "_-3bZ")
+     constructprop       QName(PackageNamespace(""), "Array"), 1
+     initproperty        QName(PrivateNamespace("_-4eA"), "_-5uZ")
+
+     debugline           89
+     pushbyte            0
+     convert_u
+     setlocal            4
+
+     jump                L48
+
+L36:
+     label
+     debugline           90
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-4eA"), "_-5uZ")
+     getlocal            4
+     pushbyte            0
+     setproperty         MultinameL([PrivateNamespace("_-4eA"), PackageNamespace("_-2h8"), PrivateNamespace("HabboTracking.as$1702"), PackageNamespace(""), PackageInternalNs("_-2h8"), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("com.sulake.iid"), ProtectedNamespace("_-4eA"), StaticProtectedNs("_-4eA"), StaticProtectedNs("_-5gL")])
+
+     debugline           89
+     getlocal            4
+     increment
+     convert_u
+     setlocal            4
+
+L48:
+     getlocal            4
+     getlex              QName(PrivateNamespace("_-4eA"), "_-3bZ")
+     iflt                L36
+
+     debugline           93
+     getlocal0
+     getlocal1
+     getlocal2
+     getlocal3
+     constructsuper      3
+
+     debugline           95
+     getlocal1
+     getproperty         QName(Namespace("_-4eL"), "root")
+     coerce              QName(PackageNamespace("_-6Sg"), "_-5Ub")
+     setlocal            5
+
+     debugline           96
+     getlocal            5
+     pushnull
+     ifeq                L121
+
+     debugline           97
+     getlocal            5
+     getproperty         QName(Namespace("_-4eL"), "events")
+     getlex              QName(PackageNamespace("_-6Sg"), "Component")
+     getproperty         QName(PackageNamespace(""), "COMPONENT_EVENT_ERROR")
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-4eA"), "onError")
+     callpropvoid        QName(Namespace("flash.events:IEventDispatcher"), "addEventListener"), 2
+
+     debugline           98
+     getlex              QName(PackageNamespace("_-12V"), "ErrorReportStorage")
+     getlex              QName(PackageNamespace("_-2h8"), "_-1NW")
+     getproperty         QName(PackageNamespace(""), "_-15X")
+     findpropstrict      QName(PackageNamespace(""), "Date")
+     constructprop       QName(PackageNamespace(""), "Date"), 0
+     callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "getTime"), 0
+     callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "toString"), 0
+     callpropvoid        QName(PackageNamespace(""), "_-2bD"), 2
+
+     debugline           99
+     getlex              QName(PackageNamespace("_-12V"), "ErrorReportStorage")
+     getlex              QName(PackageNamespace("_-2h8"), "_-1NW")
+     getproperty         QName(PackageNamespace(""), "_-dg")
+     getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+     getproperty         QName(PackageNamespace(""), "available")
+     iffalse             L95
+
+     getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+     pushstring          "window.navigator.userAgent.toString"
+     callproperty        QName(PackageNamespace(""), "call"), 1
+     coerce_s
+     jump                L96
+
+L95:
+     pushstring          "unknown"
+L96:
+     callpropvoid        QName(PackageNamespace(""), "_-2bD"), 2
+
+     debugline           100
+     getlex              QName(PackageNamespace("_-12V"), "ErrorReportStorage")
+     getlex              QName(PackageNamespace("_-2h8"), "_-1NW")
+     getproperty         QName(PackageNamespace(""), "_-4Y1")
+     getlex              QName(PackageNamespace("flash.system"), "Capabilities")
+     getproperty         QName(PackageNamespace(""), "serverString")
+     callpropvoid        QName(PackageNamespace(""), "_-2bD"), 2
+
+     debugline           101
+     getlex              QName(PackageNamespace("_-12V"), "ErrorReportStorage")
+     getlex              QName(PackageNamespace("_-2h8"), "_-1NW")
+     getproperty         QName(PackageNamespace(""), "_-4NZ")
+     findpropstrict      QName(PackageNamespace(""), "String")
+     pushfalse
+     callproperty        QName(PackageNamespace(""), "String"), 1
+     callpropvoid        QName(PackageNamespace(""), "_-2bD"), 2
+
+     debugline           102
+     getlex              QName(PackageNamespace("_-12V"), "ErrorReportStorage")
+     getlex              QName(PackageNamespace("_-2h8"), "_-1NW")
+     getproperty         QName(PackageNamespace(""), "_-27X")
+     findpropstrict      QName(PackageNamespace(""), "String")
+     pushbyte            0
+     callproperty        QName(PackageNamespace(""), "String"), 1
+     callpropvoid        QName(PackageNamespace(""), "_-2bD"), 2
+
+     debugline           105
+L121:
+     findpropstrict      QName(PackageNamespace(""), "registerUpdateReceiver")
+     getlocal0
+     pushbyte            1
+     callpropvoid        QName(PackageNamespace(""), "registerUpdateReceiver"), 2
+
+     debugline           106
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-4eA"), "_-25l") type QName(PackageNamespace("_-5Pr"), "_-2rB") end
+  trait slot QName(PrivateNamespace("_-4eA"), "_-5uZ") type QName(PackageNamespace(""), "Array") end
+  trait slot QName(PrivateNamespace("_-4eA"), "_crashed") type QName(PackageNamespace(""), "Boolean") value False() end
+  trait slot QName(PrivateNamespace("_-4eA"), "_-0dc") type TypeName(QName(PackageNamespace("__AS3__.vec"), "Vector")<QName(PackageNamespace("_-5YP"), "_-3ZW")>) end
+  trait slot QName(PrivateNamespace("_-4eA"), "_-6Vu") type QName(PackageNamespace("_-2h8"), "_-1uq") value Null() end
+  trait slot QName(PrivateNamespace("_-4eA"), "_-4MO") type QName(PackageNamespace("_-2h8"), "_-0GK") value Null() end
+  trait slot QName(PrivateNamespace("_-4eA"), "_-1Bt") type QName(PackageNamespace("_-2h8"), "LatencyTracker") value Null() end
+  trait slot QName(PrivateNamespace("_-4eA"), "_-6Kr") type QName(PackageNamespace("_-2h8"), "_-5ih") value Null() end
+  trait slot QName(PrivateNamespace("_-4eA"), "_-4HS") type QName(PackageNamespace("_-2h8"), "_-lj") value Null() end
+  trait slot QName(PrivateNamespace("_-4eA"), "_-4dS") type QName(PackageNamespace("_-5rP"), "_-3o8") value Null() end
+  trait slot QName(PrivateNamespace("_-4eA"), "_-2m4") type QName(PackageNamespace(""), "Boolean") value False() end
+  trait slot QName(PrivateNamespace("_-4eA"), "_-3Dn") type QName(PackageNamespace(""), "int") value Integer(-1) end
+  trait slot QName(PrivateNamespace("_-4eA"), "_-6Nl") type QName(PackageNamespace(""), "int") value Integer(0) end
+  trait slot QName(PrivateNamespace("_-4eA"), "_-5Hu") type QName(PackageNamespace(""), "int") value Integer(0) end
+  trait slot QName(PrivateNamespace("_-4eA"), "_-12E") type QName(PackageNamespace("flash.utils"), "Timer") end
+  trait slot QName(PrivateNamespace("_-4eA"), "_-5u5") type QName(PackageNamespace(""), "int") value Integer(0) end
+  trait slot QName(PrivateNamespace("_-4eA"), "_-5fh") type QName(PackageNamespace(""), "int") value Integer(-1) end
+  trait getter QName(ProtectedNamespace("_-4eA"), "dependencies") flag OVERRIDE
+   method
+    refid "_-2h8:HabboTracking/instance/_-4eA:dependencies/getter"
+    returns TypeName(QName(PackageNamespace("__AS3__.vec"), "Vector")<QName(PackageNamespace("_-6Sg"), "_-3fe")>)
+    flag NEED_ACTIVATION
+    body
+     maxstack 32
+     localcount 2
+     initscopedepth 6
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           108
+      getlocal0
+      pushscope
+
+      newactivation
+      dup
+      setlocal1
+
+      pushscope
+
+      debug               1, "k", 0, 108
+      debugline           109
+      getlocal0
+      getsuper            QName(ProtectedNamespace("_-5gL"), "dependencies")
+      findpropstrict      Multiname("Vector", [PackageNamespace("__AS3__.vec")])
+      getproperty         Multiname("Vector", [PrivateNamespace("_-4eA"), PackageNamespace("_-2h8"), PrivateNamespace("HabboTracking.as$1702"), PackageNamespace(""), PackageInternalNs("_-2h8"), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("com.sulake.iid"), ProtectedNamespace("_-4eA"), StaticProtectedNs("_-4eA"), StaticProtectedNs("_-5gL"), PackageNamespace("__AS3__.vec")])
+      getlex              QName(PackageNamespace("_-6Sg"), "_-3fe")
+      applytype           1
+      pushbyte            12
+      construct           1
+      dup
+      pushbyte            0
+      debugline           110
+      findpropstrict      QName(PackageNamespace("_-6Sg"), "_-3fe")
+      findpropstrict      QName(PackageNamespace("com.sulake.iid"), "IIDHabboCommunicationManager")
+      constructprop       QName(PackageNamespace("com.sulake.iid"), "IIDHabboCommunicationManager"), 0
+      newfunction         "_-2h8:HabboTracking/instance/_-4eA:dependencies/getter/inline_method#0"
+      constructprop       QName(PackageNamespace("_-6Sg"), "_-3fe"), 2
+      setproperty         MultinameL([PackageNamespace("")])
+
+      dup
+      pushbyte            1
+      debugfile           "k"
+      debugline           113
+      findpropstrict      QName(PackageNamespace("_-6Sg"), "_-3fe")
+      debugline           113
+      findpropstrict      QName(PackageNamespace("com.sulake.iid"), "IIDHabboConfigurationManager")
+      constructprop       QName(PackageNamespace("com.sulake.iid"), "IIDHabboConfigurationManager"), 0
+      newfunction         "_-2h8:HabboTracking/instance/_-4eA:dependencies/getter/inline_method#1"
+      debugfile           "k"
+      debugline           117
+      pushfalse
+      pushstring          "type"
+      debugline           118
+      getlex              QName(PackageNamespace("flash.events"), "Event")
+      getproperty         QName(PackageNamespace(""), "COMPLETE")
+      pushstring          "callback"
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "onConfigurationComplete")
+      newobject           2
+      newarray            1
+      constructprop       QName(PackageNamespace("_-6Sg"), "_-3fe"), 4
+      setproperty         MultinameL([PackageNamespace("")])
+
+      dup
+      pushbyte            2
+      debugline           120
+      findpropstrict      QName(PackageNamespace("_-6Sg"), "_-3fe")
+      debugline           120
+      findpropstrict      QName(PackageNamespace("com.sulake.iid"), "IIDHabboLocalizationManager")
+      constructprop       QName(PackageNamespace("com.sulake.iid"), "IIDHabboLocalizationManager"), 0
+      newfunction         "_-2h8:HabboTracking/instance/_-4eA:dependencies/getter/inline_method#2"
+      debugfile           "k"
+      debugline           124
+      pushfalse
+      constructprop       QName(PackageNamespace("_-6Sg"), "_-3fe"), 3
+      setproperty         MultinameL([PackageNamespace("")])
+
+      dup
+      pushbyte            3
+      debugline           125
+      findpropstrict      QName(PackageNamespace("_-6Sg"), "_-3fe")
+      findpropstrict      QName(PackageNamespace("com.sulake.iid"), "IIDHabboWindowManager")
+      constructprop       QName(PackageNamespace("com.sulake.iid"), "IIDHabboWindowManager"), 0
+      pushnull
+      pushfalse
+      pushstring          "type"
+      debugline           126
+      getlex              QName(PackageNamespace("_-51B"), "_-292")
+      getproperty         QName(PackageNamespace(""), "HABBO_WINDOW_TRACKING_EVENT_INPUT")
+      pushstring          "callback"
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-5Os")
+      newobject           2
+      pushstring          "type"
+      debugline           127
+      getlex              QName(PackageNamespace("_-51B"), "_-292")
+      getproperty         QName(PackageNamespace(""), "HABBO_WINDOW_TRACKING_EVENT_RENDER")
+      pushstring          "callback"
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-5Os")
+      newobject           2
+      pushstring          "type"
+      debugline           128
+      getlex              QName(PackageNamespace("_-51B"), "_-292")
+      getproperty         QName(PackageNamespace(""), "HABBO_WINDOW_TRACKING_EVENT_SLEEP")
+      pushstring          "callback"
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-5Os")
+      newobject           2
+      newarray            3
+      constructprop       QName(PackageNamespace("_-6Sg"), "_-3fe"), 4
+      setproperty         MultinameL([PackageNamespace("")])
+
+      dup
+      pushbyte            4
+      debugline           130
+      findpropstrict      QName(PackageNamespace("_-6Sg"), "_-3fe")
+      findpropstrict      QName(PackageNamespace("com.sulake.iid"), "IIDHabboNavigator")
+      constructprop       QName(PackageNamespace("com.sulake.iid"), "IIDHabboNavigator"), 0
+      pushnull
+      pushfalse
+      pushstring          "type"
+      debugline           131
+      getlex              QName(PackageNamespace("_-4Rx"), "_-3Bi")
+      getproperty         QName(PackageNamespace(""), "HABBO_NAVIGATOR_TRACKING_EVENT_CLOSED")
+      pushstring          "callback"
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-SL")
+      newobject           2
+      pushstring          "type"
+      debugline           132
+      getlex              QName(PackageNamespace("_-4Rx"), "_-3Bi")
+      getproperty         QName(PackageNamespace(""), "HABBO_NAVIGATOR_TRACKING_EVENT_EVENTS")
+      pushstring          "callback"
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-SL")
+      newobject           2
+      pushstring          "type"
+      debugline           133
+      getlex              QName(PackageNamespace("_-4Rx"), "_-3Bi")
+      getproperty         QName(PackageNamespace(""), "HABBO_NAVIGATOR_TRACKING_EVENT_ROOMS")
+      pushstring          "callback"
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-SL")
+      newobject           2
+      pushstring          "type"
+      debugline           134
+      getlex              QName(PackageNamespace("_-4Rx"), "_-3Bi")
+      getproperty         QName(PackageNamespace(""), "HABBO_NAVIGATOR_TRACKING_EVENT_ME")
+      pushstring          "callback"
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-SL")
+      newobject           2
+      pushstring          "type"
+      debugline           135
+      getlex              QName(PackageNamespace("_-4Rx"), "_-3Bi")
+      getproperty         QName(PackageNamespace(""), "HABBO_NAVIGATOR_TRACKING_EVENT_SEARCH")
+      pushstring          "callback"
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-SL")
+      newobject           2
+      pushstring          "type"
+      debugline           136
+      getlex              QName(PackageNamespace("_-4Rx"), "_-3Bi")
+      getproperty         QName(PackageNamespace(""), "HABBO_NAVIGATOR_TRACKING_EVENT_OFFICIAL")
+      pushstring          "callback"
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-SL")
+      newobject           2
+      pushstring          "type"
+      debugline           137
+      getlex              QName(PackageNamespace("_-4Rx"), "_-3Bi")
+      getproperty         QName(PackageNamespace(""), "HABBO_NAVIGATOR_TRACKING_EVENT_SEARCHTYPE_MY_FAVOURITES")
+      pushstring          "callback"
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-SL")
+      newobject           2
+      pushstring          "type"
+      debugline           138
+      getlex              QName(PackageNamespace("_-4Rx"), "_-3Bi")
+      getproperty         QName(PackageNamespace(""), "HABBO_NAVIGATOR_TRACKING_EVENT_SEARCHTYPE_MY_FRIENDS_ROOMS")
+      pushstring          "callback"
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-SL")
+      newobject           2
+      pushstring          "type"
+      debugline           139
+      getlex              QName(PackageNamespace("_-4Rx"), "_-3Bi")
+      getproperty         QName(PackageNamespace(""), "HABBO_NAVIGATOR_TRACKING_EVENT_SEARCHTYPE_MY_HISTORY")
+      pushstring          "callback"
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-SL")
+      newobject           2
+      pushstring          "type"
+      debugline           140
+      getlex              QName(PackageNamespace("_-4Rx"), "_-3Bi")
+      getproperty         QName(PackageNamespace(""), "HABBO_NAVIGATOR_TRACKING_EVENT_SEARCHTYPE_MY_ROOMS")
+      pushstring          "callback"
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-SL")
+      newobject           2
+      pushstring          "type"
+      debugline           141
+      getlex              QName(PackageNamespace("_-4Rx"), "_-3Bi")
+      getproperty         QName(PackageNamespace(""), "HABBO_NAVIGATOR_TRACKING_EVENT_SEARCHTYPE_OFFICIALROOMS")
+      pushstring          "callback"
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-SL")
+      newobject           2
+      pushstring          "type"
+      debugline           142
+      getlex              QName(PackageNamespace("_-4Rx"), "_-3Bi")
+      getproperty         QName(PackageNamespace(""), "HABBO_NAVIGATOR_TRACKING_EVENT_SEARCHTYPE_POPULAR_ROOMS")
+      pushstring          "callback"
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-SL")
+      newobject           2
+      pushstring          "type"
+      debugline           143
+      getlex              QName(PackageNamespace("_-4Rx"), "_-3Bi")
+      getproperty         QName(PackageNamespace(""), "HABBO_NAVIGATOR_TRACKING_EVENT_SEARCHTYPE_ROOMS_WHERE_MY_FRIENDS_ARE")
+      pushstring          "callback"
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-SL")
+      newobject           2
+      pushstring          "type"
+      debugline           144
+      getlex              QName(PackageNamespace("_-4Rx"), "_-3Bi")
+      getproperty         QName(PackageNamespace(""), "HABBO_NAVIGATOR_TRACKING_EVENT_SEARCHTYPE_ROOMS_WITH_HIGHEST_SCORE")
+      pushstring          "callback"
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-SL")
+      newobject           2
+      pushstring          "type"
+      debugline           145
+      getlex              QName(PackageNamespace("_-4Rx"), "_-3Bi")
+      getproperty         QName(PackageNamespace(""), "HABBO_NAVIGATOR_TRACKING_EVENT_SEARCHTYPE_TAG_SEARCH")
+      pushstring          "callback"
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-SL")
+      newobject           2
+      pushstring          "type"
+      debugline           146
+      getlex              QName(PackageNamespace("_-4Rx"), "_-3Bi")
+      getproperty         QName(PackageNamespace(""), "HABBO_NAVIGATOR_TRACKING_EVENT_SEARCHTYPE_TEXT_SEARCH")
+      pushstring          "callback"
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-SL")
+      newobject           2
+      pushstring          "type"
+      debugline           147
+      getlex              QName(PackageNamespace("_-4Rx"), "_-4dk")
+      getproperty         QName(PackageNamespace(""), "HABBO_ROOM_SETTINGS_TRACKING_EVENT_CLOSED")
+      pushstring          "callback"
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-10K")
+      newobject           2
+      pushstring          "type"
+      debugline           148
+      getlex              QName(PackageNamespace("_-4Rx"), "_-4dk")
+      getproperty         QName(PackageNamespace(""), "HABBO_ROOM_SETTINGS_TRACKING_EVENT_DEFAULT")
+      pushstring          "callback"
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-10K")
+      newobject           2
+      pushstring          "type"
+      debugline           149
+      getlex              QName(PackageNamespace("_-4Rx"), "_-4dk")
+      getproperty         QName(PackageNamespace(""), "HABBO_ROOM_SETTINGS_TRACKING_EVENT_ADVANCED")
+      pushstring          "callback"
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-10K")
+      newobject           2
+      pushstring          "type"
+      debugline           150
+      getlex              QName(PackageNamespace("_-4Rx"), "_-4dk")
+      getproperty         QName(PackageNamespace(""), "HABBO_ROOM_SETTINGS_TRACKING_EVENT_THUMBS")
+      pushstring          "callback"
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-10K")
+      newobject           2
+      pushstring          "type"
+      debugline           151
+      getlex              QName(PackageNamespace("_-5b7"), "_-4dt")
+      getproperty         QName(PackageNamespace(""), "_-5yE")
+      pushstring          "callback"
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-YA")
+      newobject           2
+      newarray            21
+      constructprop       QName(PackageNamespace("_-6Sg"), "_-3fe"), 4
+      setproperty         MultinameL([PackageNamespace("")])
+
+      dup
+      pushbyte            5
+      debugline           153
+      findpropstrict      QName(PackageNamespace("_-6Sg"), "_-3fe")
+      findpropstrict      QName(PackageNamespace("com.sulake.iid"), "IIDHabboCatalog")
+      constructprop       QName(PackageNamespace("com.sulake.iid"), "IIDHabboCatalog"), 0
+      pushnull
+      pushfalse
+      pushstring          "type"
+      debugline           154
+      getlex              QName(PackageNamespace("_-5mx"), "_-0Er")
+      getproperty         QName(PackageNamespace(""), "CATALOG_PAGE_OPENED")
+      pushstring          "callback"
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-6T5")
+      newobject           2
+      pushstring          "type"
+      debugline           155
+      getlex              QName(PackageNamespace("_-4I-"), "_-45W")
+      getproperty         QName(PackageNamespace(""), "HABBO_CATALOG_TRACKING_EVENT_OPEN")
+      pushstring          "callback"
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-8G")
+      newobject           2
+      pushstring          "type"
+      debugline           156
+      getlex              QName(PackageNamespace("_-4I-"), "_-45W")
+      getproperty         QName(PackageNamespace(""), "HABBO_CATALOG_TRACKING_EVENT_CLOSE")
+      pushstring          "callback"
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-8G")
+      newobject           2
+      pushstring          "type"
+      debugline           157
+      getlex              QName(PackageNamespace("_-5mx"), "_-1Mx")
+      getproperty         QName(PackageNamespace(""), "CATALOG_FURNI_PURCHASE")
+      pushstring          "callback"
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-8G")
+      newobject           2
+      newarray            4
+      constructprop       QName(PackageNamespace("_-6Sg"), "_-3fe"), 4
+      setproperty         MultinameL([PackageNamespace("")])
+
+      dup
+      pushbyte            6
+      debugline           159
+      findpropstrict      QName(PackageNamespace("_-6Sg"), "_-3fe")
+      findpropstrict      QName(PackageNamespace("com.sulake.iid"), "IIDHabboInventory")
+      constructprop       QName(PackageNamespace("com.sulake.iid"), "IIDHabboInventory"), 0
+      pushnull
+      pushfalse
+      pushstring          "type"
+      debugline           160
+      getlex              QName(PackageNamespace("_-1Ef"), "_-5Du")
+      getproperty         QName(PackageNamespace(""), "HABBO_INVENTORY_TRACKING_EVENT_CLOSED")
+      pushstring          "callback"
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-2V-")
+      newobject           2
+      pushstring          "type"
+      debugline           161
+      getlex              QName(PackageNamespace("_-1Ef"), "_-5Du")
+      getproperty         QName(PackageNamespace(""), "HABBO_INVENTORY_TRACKING_EVENT_FURNI")
+      pushstring          "callback"
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-2V-")
+      newobject           2
+      pushstring          "type"
+      debugline           162
+      getlex              QName(PackageNamespace("_-1Ef"), "_-5Du")
+      getproperty         QName(PackageNamespace(""), "HABBO_INVENTORY_TRACKING_EVENT_POSTERS")
+      pushstring          "callback"
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-2V-")
+      newobject           2
+      pushstring          "type"
+      debugline           163
+      getlex              QName(PackageNamespace("_-1Ef"), "_-5Du")
+      getproperty         QName(PackageNamespace(""), "HABBO_INVENTORY_TRACKING_EVENT_BADGES")
+      pushstring          "callback"
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-2V-")
+      newobject           2
+      pushstring          "type"
+      debugline           164
+      getlex              QName(PackageNamespace("_-1Ef"), "_-5Du")
+      getproperty         QName(PackageNamespace(""), "HABBO_INVENTORY_TRACKING_EVENT_ACHIEVEMENTS")
+      pushstring          "callback"
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-2V-")
+      newobject           2
+      pushstring          "type"
+      debugline           165
+      getlex              QName(PackageNamespace("_-1Ef"), "_-5Du")
+      getproperty         QName(PackageNamespace(""), "HABBO_INVENTORY_TRACKING_EVENT_TRADING")
+      pushstring          "callback"
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-2V-")
+      newobject           2
+      newarray            6
+      constructprop       QName(PackageNamespace("_-6Sg"), "_-3fe"), 4
+      setproperty         MultinameL([PackageNamespace("")])
+
+      dup
+      pushbyte            7
+      debugline           167
+      findpropstrict      QName(PackageNamespace("_-6Sg"), "_-3fe")
+      findpropstrict      QName(PackageNamespace("com.sulake.iid"), "IIDHabboFriendList")
+      constructprop       QName(PackageNamespace("com.sulake.iid"), "IIDHabboFriendList"), 0
+      pushnull
+      pushfalse
+      pushstring          "type"
+      debugline           168
+      getlex              QName(PackageNamespace("_-2jZ"), "_-3pm")
+      getproperty         QName(PackageNamespace(""), "HABBO_FRIENDLIST_TRACKING_EVENT_CLOSED")
+      pushstring          "callback"
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-1uh")
+      newobject           2
+      pushstring          "type"
+      debugline           169
+      getlex              QName(PackageNamespace("_-2jZ"), "_-3pm")
+      getproperty         QName(PackageNamespace(""), "HABBO_FRIENDLIST_TRACKING_EVENT_FRIENDS")
+      pushstring          "callback"
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-1uh")
+      newobject           2
+      pushstring          "type"
+      debugline           170
+      getlex              QName(PackageNamespace("_-2jZ"), "_-3pm")
+      getproperty         QName(PackageNamespace(""), "HABBO_FRIENDLIST_TRACKING_EVENT_SEARCH")
+      pushstring          "callback"
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-1uh")
+      newobject           2
+      pushstring          "type"
+      debugline           171
+      getlex              QName(PackageNamespace("_-2jZ"), "_-3pm")
+      getproperty         QName(PackageNamespace(""), "HABBO_FRIENDLIST_TRACKING_EVENT_REQUEST")
+      pushstring          "callback"
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-1uh")
+      newobject           2
+      pushstring          "type"
+      debugline           172
+      getlex              QName(PackageNamespace("_-2jZ"), "_-3pm")
+      getproperty         QName(PackageNamespace(""), "_-3Ga")
+      pushstring          "callback"
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-1uh")
+      newobject           2
+      newarray            5
+      constructprop       QName(PackageNamespace("_-6Sg"), "_-3fe"), 4
+      setproperty         MultinameL([PackageNamespace("")])
+
+      dup
+      pushbyte            8
+      debugline           174
+      findpropstrict      QName(PackageNamespace("_-6Sg"), "_-3fe")
+      findpropstrict      QName(PackageNamespace("com.sulake.iid"), "IIDHabboHelp")
+      constructprop       QName(PackageNamespace("com.sulake.iid"), "IIDHabboHelp"), 0
+      pushnull
+      pushfalse
+      pushstring          "type"
+      debugline           175
+      getlex              QName(PackageNamespace("_-1py"), "_-1c2")
+      getproperty         QName(PackageNamespace(""), "HABBO_HELP_TRACKING_EVENT_CLOSED")
+      pushstring          "callback"
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-4QO")
+      newobject           2
+      pushstring          "type"
+      debugline           176
+      getlex              QName(PackageNamespace("_-1py"), "_-1c2")
+      getproperty         QName(PackageNamespace(""), "HABBO_HELP_TRACKING_EVENT_DEFAULT")
+      pushstring          "callback"
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-4QO")
+      newobject           2
+      newarray            2
+      constructprop       QName(PackageNamespace("_-6Sg"), "_-3fe"), 4
+      setproperty         MultinameL([PackageNamespace("")])
+
+      dup
+      pushbyte            9
+      debugline           178
+      findpropstrict      QName(PackageNamespace("_-6Sg"), "_-3fe")
+      debugline           178
+      findpropstrict      QName(PackageNamespace("com.sulake.iid"), "IIDRoomEngine")
+      constructprop       QName(PackageNamespace("com.sulake.iid"), "IIDRoomEngine"), 0
+      newfunction         "_-2h8:HabboTracking/instance/_-4eA:dependencies/getter/inline_method#3"
+      debugfile           "k"
+      debugline           180
+      pushfalse
+      pushstring          "type"
+      debugline           181
+      getlex              QName(PackageNamespace("_-0B-"), "_-62-")
+      getproperty         QName(PackageNamespace(""), "_-1sk")
+      pushstring          "callback"
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-4D2")
+      newobject           2
+      pushstring          "type"
+      debugline           182
+      getlex              QName(PackageNamespace("_-0B-"), "_-303")
+      getproperty         QName(PackageNamespace(""), "_-51Z")
+      pushstring          "callback"
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-2cQ")
+      newobject           2
+      pushstring          "type"
+      debugline           183
+      getlex              QName(PackageNamespace("_-0B-"), "_-303")
+      getproperty         QName(PackageNamespace(""), "_-190")
+      pushstring          "callback"
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-2cQ")
+      newobject           2
+      newarray            3
+      constructprop       QName(PackageNamespace("_-6Sg"), "_-3fe"), 4
+      setproperty         MultinameL([PackageNamespace("")])
+
+      dup
+      pushbyte            10
+      debugline           185
+      findpropstrict      QName(PackageNamespace("_-6Sg"), "_-3fe")
+      findpropstrict      QName(PackageNamespace("com.sulake.iid"), "IIDHabboAdManager")
+      constructprop       QName(PackageNamespace("com.sulake.iid"), "IIDHabboAdManager"), 0
+      pushnull
+      pushfalse
+      pushstring          "type"
+      debugline           186
+      getlex              QName(PackageNamespace("_-3mO"), "_-4bt")
+      getproperty         QName(PackageNamespace(""), "_-4ZB")
+      pushstring          "callback"
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-0ZX")
+      newobject           2
+      newarray            1
+      constructprop       QName(PackageNamespace("_-6Sg"), "_-3fe"), 4
+      setproperty         MultinameL([PackageNamespace("")])
+
+      dup
+      pushbyte            11
+      debugline           188
+      findpropstrict      QName(PackageNamespace("_-6Sg"), "_-3fe")
+      findpropstrict      QName(PackageNamespace("com.sulake.iid"), "IIDHabboToolbar")
+      constructprop       QName(PackageNamespace("com.sulake.iid"), "IIDHabboToolbar"), 0
+      pushnull
+      pushfalse
+      pushstring          "type"
+      debugline           189
+      getlex              QName(PackageNamespace("_-5b7"), "_-4dt")
+      getproperty         QName(PackageNamespace(""), "_-5m4")
+      pushstring          "callback"
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-16V")
+      newobject           2
+      newarray            1
+      constructprop       QName(PackageNamespace("_-6Sg"), "_-3fe"), 4
+      setproperty         MultinameL([PackageNamespace("")])
+
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "concat"), 1
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-4eA"), "initComponent") flag OVERRIDE
+   method
+    refid "_-2h8:HabboTracking/instance/_-4eA:initComponent"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           194
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 207
+      debugline           195
+      getlocal0
+      findpropstrict      QName(PackageNamespace("_-2h8"), "LatencyTracker")
+      getlocal0
+      constructprop       QName(PackageNamespace("_-2h8"), "LatencyTracker"), 1
+      initproperty        QName(PrivateNamespace("_-4eA"), "_-1Bt")
+
+      debugline           196
+      getlocal0
+      findpropstrict      QName(PackageNamespace("_-2h8"), "_-1uq")
+      getlocal0
+      constructprop       QName(PackageNamespace("_-2h8"), "_-1uq"), 1
+      initproperty        QName(PrivateNamespace("_-4eA"), "_-6Vu")
+
+      debugline           197
+      getlocal0
+      findpropstrict      QName(PackageNamespace("_-2h8"), "_-0GK")
+      getlocal0
+      constructprop       QName(PackageNamespace("_-2h8"), "_-0GK"), 1
+      initproperty        QName(PrivateNamespace("_-4eA"), "_-4MO")
+
+      debugline           198
+      getlocal0
+      findpropstrict      QName(PackageNamespace("_-2h8"), "_-5ih")
+      getlocal0
+      constructprop       QName(PackageNamespace("_-2h8"), "_-5ih"), 1
+      initproperty        QName(PrivateNamespace("_-4eA"), "_-6Kr")
+
+      debugline           199
+      getlocal0
+      findpropstrict      QName(PackageNamespace("_-2h8"), "_-lj")
+      getlocal0
+      constructprop       QName(PackageNamespace("_-2h8"), "_-lj"), 1
+      initproperty        QName(PrivateNamespace("_-4eA"), "_-4HS")
+
+      debugline           201
+      getlocal0
+      findpropstrict      Multiname("Vector", [PackageNamespace("__AS3__.vec")])
+      getproperty         Multiname("Vector", [PrivateNamespace("_-4eA"), PackageNamespace("_-2h8"), PrivateNamespace("HabboTracking.as$1702"), PackageNamespace(""), PackageInternalNs("_-2h8"), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("com.sulake.iid"), ProtectedNamespace("_-4eA"), StaticProtectedNs("_-4eA"), StaticProtectedNs("_-5gL"), PackageNamespace("__AS3__.vec")])
+      getlex              QName(PackageNamespace("_-5YP"), "_-3ZW")
+      applytype           1
+      pushbyte            0
+      construct           1
+      initproperty        QName(PrivateNamespace("_-4eA"), "_-0dc")
+
+      debugline           202
+      getlocal0
+      findpropstrict      QName(PackageNamespace("_-DZ"), "_-01f")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-1zV")
+      constructprop       QName(PackageNamespace("_-DZ"), "_-01f"), 1
+      callpropvoid        QName(PrivateNamespace("_-4eA"), "addMessageEvent"), 1
+
+      debugline           203
+      getlocal0
+      findpropstrict      QName(PackageNamespace("_-qS"), "_-3o9")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-PA")
+      constructprop       QName(PackageNamespace("_-qS"), "_-3o9"), 1
+      callpropvoid        QName(PrivateNamespace("_-4eA"), "addMessageEvent"), 1
+
+      debugline           204
+      getlocal0
+      findpropstrict      QName(PackageNamespace("_-3VM"), "_-4jW")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-2a0")
+      constructprop       QName(PackageNamespace("_-3VM"), "_-4jW"), 1
+      callpropvoid        QName(PrivateNamespace("_-4eA"), "addMessageEvent"), 1
+
+      debugline           205
+      getlocal0
+      findpropstrict      QName(PackageNamespace("_-5n-"), "_-OX")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-3PC")
+      constructprop       QName(PackageNamespace("_-5n-"), "_-OX"), 1
+      callpropvoid        QName(PrivateNamespace("_-4eA"), "addMessageEvent"), 1
+
+      debugline           207
+      findpropstrict      QName(PackageNamespace("_-6Sg"), "Component")
+      getlex              QName(PackageNamespace(""), "context")
+      callproperty        QName(PackageNamespace("_-6Sg"), "Component"), 1
+      getproperty         QName(PackageNamespace(""), "events")
+      coerce              QName(PackageNamespace("flash.events"), "IEventDispatcher")
+      setlocal1
+
+      debugline           208
+      getlocal1
+      getlex              QName(PackageNamespace("_-5el"), "_-4Kh")
+      getproperty         QName(PackageNamespace(""), "INIT")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-1ec")
+      callpropvoid        QName(Namespace("flash.events:IEventDispatcher"), "addEventListener"), 2
+
+      debugline           209
+      getlocal1
+      getlex              QName(PackageNamespace("_-5el"), "_-4Kh")
+      getproperty         QName(PackageNamespace(""), "_-6UU")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-1ec")
+      callpropvoid        QName(Namespace("flash.events:IEventDispatcher"), "addEventListener"), 2
+
+      debugline           210
+      getlocal1
+      getlex              QName(PackageNamespace("_-5el"), "_-4Kh")
+      getproperty         QName(PackageNamespace(""), "_-1Zc")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-1ec")
+      callpropvoid        QName(Namespace("flash.events:IEventDispatcher"), "addEventListener"), 2
+
+      debugline           211
+      getlocal1
+      getlex              QName(PackageNamespace("_-5el"), "_-4Kh")
+      getproperty         QName(PackageNamespace(""), "_-3Ne")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-1ec")
+      callpropvoid        QName(Namespace("flash.events:IEventDispatcher"), "addEventListener"), 2
+
+      debugline           212
+      getlocal1
+      getlex              QName(PackageNamespace("_-5el"), "_-4Kh")
+      getproperty         QName(PackageNamespace(""), "_-48d")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-1ec")
+      callpropvoid        QName(Namespace("flash.events:IEventDispatcher"), "addEventListener"), 2
+
+      debugline           213
+      getlocal1
+      getlex              QName(PackageNamespace("_-5el"), "_-4Kh")
+      getproperty         QName(PackageNamespace(""), "_-3OT")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-1ec")
+      callpropvoid        QName(Namespace("flash.events:IEventDispatcher"), "addEventListener"), 2
+
+      debugline           214
+      getlocal1
+      getlex              QName(PackageNamespace("_-5el"), "_-1LO")
+      getproperty         QName(PackageNamespace(""), "_-0EJ")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-27p")
+      callpropvoid        QName(Namespace("flash.events:IEventDispatcher"), "addEventListener"), 2
+
+      debugline           215
+      getlocal1
+      getlex              QName(PackageNamespace("_-5el"), "_-1LO")
+      getproperty         QName(PackageNamespace(""), "ERROR")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-27p")
+      callpropvoid        QName(Namespace("flash.events:IEventDispatcher"), "addEventListener"), 2
+
+      debugline           216
+      getlocal1
+      getlex              QName(PackageNamespace("_-5el"), "_-1LO")
+      getproperty         QName(PackageNamespace(""), "_-56n")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-27p")
+      callpropvoid        QName(Namespace("flash.events:IEventDispatcher"), "addEventListener"), 2
+
+      debugline           217
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-4eA"), "addMessageEvent")
+   method
+    refid "_-2h8:HabboTracking/instance/_-2h8:HabboTracking/addMessageEvent"
+    param QName(PackageNamespace("_-5YP"), "_-3ZW")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           219
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 219
+      debugline           220
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-0dc")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-25l")
+      getlocal1
+      callproperty        QName(Namespace("_-7I"), "addHabboConnectionMessageEvent"), 1
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      debugline           221
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "dispose") flag OVERRIDE
+   method
+    refid "_-2h8:HabboTracking/instance/dispose"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 4
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           223
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-5YP"), "_-3ZW")
+      setlocal1
+
+      debugline           224
+      getlex              QName(PackageNamespace(""), "disposed")
+      iffalse             L15
+
+      debugline           225
+      returnvoid
+
+      ; 0xF0
+      ; 0xE4
+      ; 0x01
+L15:
+      getlex              QName(PrivateNamespace("_-4eA"), "_-0ZW")
+      getlocal0
+      ifne                L23
+
+      debugline           229
+      findproperty        QName(PrivateNamespace("_-4eA"), "_-0ZW")
+      pushnull
+      setproperty         QName(PrivateNamespace("_-4eA"), "_-0ZW")
+
+      debugline           232
+L23:
+      findpropstrict      QName(PackageNamespace(""), "removeUpdateReceiver")
+      getlocal0
+      callpropvoid        QName(PackageNamespace(""), "removeUpdateReceiver"), 1
+
+      debugline           234
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-0dc")
+      pushnull
+      equals
+      not
+      dup
+      iffalse             L40
+
+      pop
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-25l")
+      pushnull
+      equals
+      not
+L40:
+      iffalse             L67
+
+      debug               1, "k", 0, 235
+      debugline           235
+      pushbyte            0
+      setlocal2
+
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-0dc")
+      coerce_a
+      setlocal3
+
+      jump                L62
+
+L50:
+      label
+      getlocal3
+      getlocal2
+      nextvalue
+      coerce              QName(PackageNamespace("_-5YP"), "_-3ZW")
+      setlocal1
+
+      debugline           236
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-25l")
+      getlocal1
+      callpropvoid        QName(Namespace("_-7I"), "_-1Yi"), 1
+
+      debugline           235
+L62:
+      hasnext2            3, 2
+      iftrue              L50
+
+      kill                3
+      kill                2
+      debugline           240
+L67:
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-4eA"), "_-6Vu")
+
+      debugline           241
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-4eA"), "_-4MO")
+
+      debugline           242
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-4eA"), "_-4HS")
+
+      debugline           244
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-1Bt")
+      pushnull
+      ifeq                L92
+
+      debugline           245
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-1Bt")
+      callpropvoid        QName(PackageNamespace(""), "dispose"), 0
+
+      debugline           246
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-4eA"), "_-1Bt")
+
+      debugline           249
+L92:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-12E")
+      iffalse             L112
+
+      debugline           250
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-12E")
+      callpropvoid        QName(PackageNamespace(""), "stop"), 0
+
+      debugline           251
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-12E")
+      getlex              QName(PackageNamespace("flash.events"), "TimerEvent")
+      getproperty         QName(PackageNamespace(""), "TIMER")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-1Al")
+      callpropvoid        QName(PackageNamespace(""), "removeEventListener"), 2
+
+      debugline           252
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-4eA"), "_-12E")
+
+      debugline           255
+L112:
+      getlocal0
+      callsupervoid       QName(PackageNamespace(""), "dispose"), 0
+      debugline           256
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-4eA"), "_-0Qp")
+   method
+    refid "_-2h8:HabboTracking/instance/_-2h8:HabboTracking/_-0Qp"
+    param QName(PackageNamespace(""), "uint")
+    param QName(PackageNamespace(""), "uint")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           258
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 258
+      debug               1, "k", 1, 258
+      debugline           259
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-5uZ")
+      getlocal2
+      getlocal1
+      setproperty         MultinameL([PrivateNamespace("_-4eA"), PackageNamespace("_-2h8"), PrivateNamespace("HabboTracking.as$1702"), PackageNamespace(""), PackageInternalNs("_-2h8"), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("com.sulake.iid"), ProtectedNamespace("_-4eA"), StaticProtectedNs("_-4eA"), StaticProtectedNs("_-5gL")])
+
+      debugline           260
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-4eA"), "_-27p")
+   method
+    refid "_-2h8:HabboTracking/instance/_-2h8:HabboTracking/_-27p"
+    param QName(PackageNamespace("flash.events"), "Event")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 3
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           262
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 262
+      jump                L35
+
+L6:
+      label
+      debugline           265
+      getlocal0
+      getlex              QName(PackageNamespace("_-2h8"), "_-07G")
+      getproperty         QName(PackageNamespace(""), "_-22w")
+      callpropvoid        QName(PackageNamespace(""), "trackLoginStep"), 1
+
+      debugline           266
+      jump                L76
+
+L14:
+      label
+      debugline           268
+      getlocal0
+      getlex              QName(PackageNamespace("_-2h8"), "_-07G")
+      getproperty         QName(PackageNamespace(""), "_-6NW")
+      callpropvoid        QName(PackageNamespace(""), "trackLoginStep"), 1
+
+      debugline           269
+      jump                L76
+
+L22:
+      label
+      debugline           271
+      getlocal0
+      getlex              QName(PackageNamespace("_-2h8"), "_-07G")
+      getproperty         QName(PackageNamespace(""), "_-4ru")
+      callpropvoid        QName(PackageNamespace(""), "trackLoginStep"), 1
+
+      debugline           272
+      jump                L76
+
+L30:
+      label
+      jump                L76
+
+      ; 0xF0
+      ; 0x87
+      ; 0x02
+L35:
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "type")
+      setlocal2
+
+      debugline           264
+      getlex              QName(PackageNamespace("_-5el"), "_-1LO")
+      getproperty         QName(PackageNamespace(""), "_-0EJ")
+      getlocal2
+      ifstrictne          L48
+
+      pushbyte            0
+      jump                L71
+
+      ; 0xF0
+      ; 0x8B
+      ; 0x02
+L48:
+      getlex              QName(PackageNamespace("_-5el"), "_-1LO")
+      getproperty         QName(PackageNamespace(""), "_-56n")
+      getlocal2
+      ifstrictne          L57
+
+      pushbyte            1
+      jump                L71
+
+      ; 0xF0
+      ; 0x8E
+      ; 0x02
+L57:
+      getlex              QName(PackageNamespace("_-5el"), "_-1LO")
+      getproperty         QName(PackageNamespace(""), "ERROR")
+      getlocal2
+      ifstrictne          L63
+
+      pushbyte            2
+      jump                L71
+
+L63:
+      jump                L70
+
+      ; 0x24
+      ; 0x03
+      ; 0x10
+      ; 0x02
+      ; 0x00
+      ; 0x00
+L70:
+      pushbyte            3
+L71:
+      kill                2
+      lookupswitch        L30, [L6, L14, L22, L30]
+
+      ; 0xF0
+      ; 0x92
+      ; 0x02
+L76:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-4eA"), "_-1ec")
+   method
+    refid "_-2h8:HabboTracking/instance/_-2h8:HabboTracking/_-1ec"
+    param QName(PackageNamespace("flash.events"), "Event")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 3
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           276
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 276
+      jump                L77
+
+L6:
+      label
+      debugline           279
+      getlocal0
+      getlex              QName(PackageNamespace("_-2h8"), "_-07G")
+      getproperty         QName(PackageNamespace(""), "_-fJ")
+      callpropvoid        QName(PackageNamespace(""), "trackLoginStep"), 1
+
+      debugline           280
+      jump                L145
+
+L14:
+      label
+      debugline           282
+      getlocal0
+      getlex              QName(PackageNamespace("_-2h8"), "_-07G")
+      getproperty         QName(PackageNamespace(""), "_-4X3")
+      findpropstrict      QName(PackageNamespace(""), "String")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-25l")
+      getproperty         QName(Namespace("_-7I"), "port")
+      callproperty        QName(PackageNamespace(""), "String"), 1
+      callpropvoid        QName(PackageNamespace(""), "trackLoginStep"), 2
+
+      debugline           283
+      jump                L145
+
+L27:
+      label
+      debugline           285
+      getlocal0
+      getlex              QName(PackageNamespace("_-2h8"), "_-07G")
+      getproperty         QName(PackageNamespace(""), "_-1Zc")
+      callpropvoid        QName(PackageNamespace(""), "trackLoginStep"), 1
+
+      debugline           286
+      jump                L145
+
+L35:
+      label
+      debugline           288
+      getlocal0
+      getlex              QName(PackageNamespace("_-2h8"), "_-07G")
+      getproperty         QName(PackageNamespace(""), "_-48d")
+      callpropvoid        QName(PackageNamespace(""), "trackLoginStep"), 1
+
+      debugline           289
+      jump                L145
+
+L43:
+      label
+      debugline           291
+      getlocal0
+      pushbyte            2
+      pushbyte            0
+      callpropvoid        QName(PrivateNamespace("_-4eA"), "_-0Qp"), 2
+
+      debugline           292
+      getlocal0
+      getlex              QName(PackageNamespace("_-2h8"), "_-07G")
+      getproperty         QName(PackageNamespace(""), "_-3Ne")
+      callpropvoid        QName(PackageNamespace(""), "trackLoginStep"), 1
+
+      debugline           293
+      jump                L145
+
+L56:
+      label
+      debugline           295
+      getlocal0
+      pushbyte            3
+      pushbyte            0
+      callpropvoid        QName(PrivateNamespace("_-4eA"), "_-0Qp"), 2
+
+      debugline           296
+      getlocal0
+      callpropvoid        QName(PrivateNamespace("_-4eA"), "loadConversionTrackingFrame"), 0
+
+      debugline           297
+      getlocal0
+      getlex              QName(PackageNamespace("_-2h8"), "_-07G")
+      getproperty         QName(PackageNamespace(""), "_-3OT")
+      callpropvoid        QName(PackageNamespace(""), "trackLoginStep"), 1
+
+      debugline           298
+      jump                L145
+
+L72:
+      label
+      jump                L145
+
+      ; 0xF0
+      ; 0x95
+      ; 0x02
+L77:
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "type")
+      setlocal2
+
+      debugline           278
+      getlex              QName(PackageNamespace("_-5el"), "_-4Kh")
+      getproperty         QName(PackageNamespace(""), "INIT")
+      getlocal2
+      ifstrictne          L90
+
+      pushbyte            0
+      jump                L140
+
+      ; 0xF0
+      ; 0x99
+      ; 0x02
+L90:
+      getlex              QName(PackageNamespace("_-5el"), "_-4Kh")
+      getproperty         QName(PackageNamespace(""), "_-6UU")
+      getlocal2
+      ifstrictne          L99
+
+      pushbyte            1
+      jump                L140
+
+      ; 0xF0
+      ; 0x9C
+      ; 0x02
+L99:
+      getlex              QName(PackageNamespace("_-5el"), "_-4Kh")
+      getproperty         QName(PackageNamespace(""), "_-1Zc")
+      getlocal2
+      ifstrictne          L108
+
+      pushbyte            2
+      jump                L140
+
+      ; 0xF0
+      ; 0x9F
+      ; 0x02
+L108:
+      getlex              QName(PackageNamespace("_-5el"), "_-4Kh")
+      getproperty         QName(PackageNamespace(""), "_-48d")
+      getlocal2
+      ifstrictne          L117
+
+      pushbyte            3
+      jump                L140
+
+      ; 0xF0
+      ; 0xA2
+      ; 0x02
+L117:
+      getlex              QName(PackageNamespace("_-5el"), "_-4Kh")
+      getproperty         QName(PackageNamespace(""), "_-3Ne")
+      getlocal2
+      ifstrictne          L126
+
+      pushbyte            4
+      jump                L140
+
+      ; 0xF0
+      ; 0xA6
+      ; 0x02
+L126:
+      getlex              QName(PackageNamespace("_-5el"), "_-4Kh")
+      getproperty         QName(PackageNamespace(""), "_-3OT")
+      getlocal2
+      ifstrictne          L132
+
+      pushbyte            5
+      jump                L140
+
+L132:
+      jump                L139
+
+      ; 0x24
+      ; 0x06
+      ; 0x10
+      ; 0x02
+      ; 0x00
+      ; 0x00
+L139:
+      pushbyte            6
+L140:
+      kill                2
+      lookupswitch        L72, [L6, L14, L27, L35, L43, L56, L72]
+
+      ; 0xF0
+      ; 0xAC
+      ; 0x02
+L145:
+      findpropstrict      QName(PackageNamespace("_-6Sg"), "Component")
+      getlex              QName(PackageNamespace(""), "context")
+      callproperty        QName(PackageNamespace("_-6Sg"), "Component"), 1
+      getproperty         QName(PackageNamespace(""), "events")
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "type")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-1ec")
+      callpropvoid        QName(Namespace("flash.events:IEventDispatcher"), "removeEventListener"), 2
+
+      debugline           301
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-4eA"), "_-5Os")
+   method
+    refid "_-2h8:HabboTracking/instance/_-2h8:HabboTracking/_-5Os"
+    param QName(PackageNamespace("flash.events"), "Event")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           303
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 303
+      jump                L35
+
+L6:
+      label
+      debugline           306
+      getlocal0
+      pushbyte            0
+      pushbyte            3
+      callpropvoid        QName(PrivateNamespace("_-4eA"), "_-0Qp"), 2
+
+      debugline           307
+      jump                L76
+
+L14:
+      label
+      debugline           309
+      getlocal0
+      pushbyte            1
+      pushbyte            3
+      callpropvoid        QName(PrivateNamespace("_-4eA"), "_-0Qp"), 2
+
+      debugline           310
+      jump                L76
+
+L22:
+      label
+      debugline           312
+      getlocal0
+      pushbyte            2
+      pushbyte            3
+      callpropvoid        QName(PrivateNamespace("_-4eA"), "_-0Qp"), 2
+
+      debugline           313
+      jump                L76
+
+L30:
+      label
+      jump                L76
+
+      ; 0xF0
+      ; 0xB0
+      ; 0x02
+L35:
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "type")
+      setlocal2
+
+      debugline           305
+      getlex              QName(PackageNamespace("_-51B"), "_-292")
+      getproperty         QName(PackageNamespace(""), "HABBO_WINDOW_TRACKING_EVENT_SLEEP")
+      getlocal2
+      ifstrictne          L48
+
+      pushbyte            0
+      jump                L71
+
+      ; 0xF0
+      ; 0xB4
+      ; 0x02
+L48:
+      getlex              QName(PackageNamespace("_-51B"), "_-292")
+      getproperty         QName(PackageNamespace(""), "HABBO_WINDOW_TRACKING_EVENT_RENDER")
+      getlocal2
+      ifstrictne          L57
+
+      pushbyte            1
+      jump                L71
+
+      ; 0xF0
+      ; 0xB7
+      ; 0x02
+L57:
+      getlex              QName(PackageNamespace("_-51B"), "_-292")
+      getproperty         QName(PackageNamespace(""), "HABBO_WINDOW_TRACKING_EVENT_INPUT")
+      getlocal2
+      ifstrictne          L63
+
+      pushbyte            2
+      jump                L71
+
+L63:
+      jump                L70
+
+      ; 0x24
+      ; 0x03
+      ; 0x10
+      ; 0x02
+      ; 0x00
+      ; 0x00
+L70:
+      pushbyte            3
+L71:
+      kill                2
+      lookupswitch        L30, [L6, L14, L22, L30]
+
+      ; 0xF0
+      ; 0xBB
+      ; 0x02
+L76:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-4eA"), "onError")
+   method
+    refid "_-2h8:HabboTracking/instance/_-2h8:HabboTracking/onError"
+    param QName(PackageNamespace("_-3Fd"), "ErrorEvent")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           317
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 317
+      debugline           318
+      getlocal0
+      getlocal1
+      callpropvoid        QName(PrivateNamespace("_-4eA"), "_-42O"), 1
+
+      debugline           320
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "critical")
+      iffalse             L18
+
+      debugline           321
+      getlocal0
+      pushtrue
+      initproperty        QName(PrivateNamespace("_-4eA"), "_crashed")
+
+      debugline           324
+L18:
+      getlocal0
+      getlex              QName(PackageNamespace(""), "context")
+      getproperty         QName(Namespace("_-4eL"), "root")
+      callproperty        QName(Namespace("_-4eL"), "getLastErrorMessage"), 0
+      callpropvoid        QName(PackageNamespace(""), "logError"), 1
+
+      debugline           325
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-4eA"), "_-42O")
+   method
+    refid "_-2h8:HabboTracking/instance/_-2h8:HabboTracking/_-42O"
+    param QName(PackageNamespace("_-3Fd"), "ErrorEvent")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 7
+     localcount 7
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           327
+      getlocal0
+      pushscope
+
+      pushbyte            0
+      convert_u
+      setlocal3
+
+      pushnull
+      coerce_s
+      setlocal            4
+
+      debug               1, "k", 0, 327
+      debug               1, "k", 1, 331
+      debug               1, "k", 2, 332
+      debugline           328
+      getlex              QName(PackageNamespace("_-12V"), "ErrorReportStorage")
+      getlex              QName(PackageNamespace("_-2h8"), "_-1NW")
+      getproperty         QName(PackageNamespace(""), "ERROR_VARIABLE_IS_FATAL")
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "critical")
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "toString"), 0
+      callpropvoid        QName(PackageNamespace(""), "_-2bD"), 2
+
+      debugline           329
+      getlex              QName(PackageNamespace("_-12V"), "ErrorReportStorage")
+      getlex              QName(PackageNamespace("_-2h8"), "_-1NW")
+      getproperty         QName(PackageNamespace(""), "ERROR_VARIABLE_CLIENT_CRASH_TIME")
+      findpropstrict      QName(PackageNamespace(""), "Date")
+      constructprop       QName(PackageNamespace(""), "Date"), 0
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "getTime"), 0
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "toString"), 0
+      callpropvoid        QName(PackageNamespace(""), "_-2bD"), 2
+
+      pushstring          ""
+      debugline           331
+      coerce_s
+      setlocal2
+
+      debugline           332
+      pushbyte            0
+      setlocal            5
+
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-5uZ")
+      coerce_a
+      setlocal            6
+
+      jump                L57
+
+L42:
+      label
+      getlocal            6
+      getlocal            5
+      nextvalue
+      convert_u
+      setlocal3
+
+      debugline           333
+      getlocal2
+      findpropstrict      QName(PackageNamespace(""), "String")
+      getlocal3
+      callproperty        QName(PackageNamespace(""), "String"), 1
+      add
+      coerce_s
+      setlocal2
+
+      debugline           332
+L57:
+      hasnext2            6, 5
+      iftrue              L42
+
+      kill                6
+      kill                5
+      debugline           335
+      getlex              QName(PackageNamespace("_-12V"), "ErrorReportStorage")
+      getlex              QName(PackageNamespace("_-2h8"), "_-1NW")
+      getproperty         QName(PackageNamespace(""), "ERROR_VARIABLE_CONTEXT")
+      getlocal2
+      callpropvoid        QName(PackageNamespace(""), "_-2bD"), 2
+
+      debugline           337
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-6Vu")
+      pushnull
+      ifeq                L91
+
+      debugline           338
+      getlex              QName(PackageNamespace("_-12V"), "ErrorReportStorage")
+      getlex              QName(PackageNamespace("_-2h8"), "_-1NW")
+      getproperty         QName(PackageNamespace(""), "ERROR_VARIABLE_FLASH_VERSION")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-6Vu")
+      getproperty         QName(PackageNamespace(""), "flashVersion")
+      callpropvoid        QName(PackageNamespace(""), "_-2bD"), 2
+
+      debugline           339
+      getlex              QName(PackageNamespace("_-12V"), "ErrorReportStorage")
+      getlex              QName(PackageNamespace("_-2h8"), "_-1NW")
+      getproperty         QName(PackageNamespace(""), "ERROR_VARIABLE_AVERAGE_UPDATE_INTERVAL")
+      findpropstrict      QName(PackageNamespace(""), "String")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-6Vu")
+      getproperty         QName(PackageNamespace(""), "_-5lc")
+      callproperty        QName(PackageNamespace(""), "String"), 1
+      callpropvoid        QName(PackageNamespace(""), "_-2bD"), 2
+
+      debugline           342
+L91:
+      getlex              QName(PackageNamespace("_-12V"), "ErrorReportStorage")
+      getlex              QName(PackageNamespace("_-2h8"), "_-1NW")
+      getproperty         QName(PackageNamespace(""), "_-2Ww")
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "message")
+      callpropvoid        QName(PackageNamespace(""), "_-2bD"), 2
+
+      debugline           343
+      getlex              QName(PackageNamespace("_-12V"), "ErrorReportStorage")
+      getlex              QName(PackageNamespace("_-2h8"), "_-1NW")
+      getproperty         QName(PackageNamespace(""), "_-5Vc")
+      findpropstrict      QName(PackageNamespace(""), "String")
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "category")
+      callproperty        QName(PackageNamespace(""), "String"), 1
+      callpropvoid        QName(PackageNamespace(""), "_-2bD"), 2
+
+      debugline           345
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "error")
+      pushnull
+      ifeq                L130
+
+      debug               1, "k", 3, 346
+      debugline           346
+      getlex              QName(PackageNamespace("_-1jv"), "Exception")
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "error")
+      callproperty        QName(PackageNamespace(""), "_-5kz"), 1
+      coerce_s
+      setlocal            4
+
+      debugline           347
+      getlocal            4
+      pushnull
+      ifeq                L130
+
+      debugline           348
+      getlex              QName(PackageNamespace("_-12V"), "ErrorReportStorage")
+      getlex              QName(PackageNamespace("_-2h8"), "_-1NW")
+      getproperty         QName(PackageNamespace(""), "_-1pM")
+      getlocal            4
+      callpropvoid        QName(PackageNamespace(""), "_-2bD"), 2
+
+      debugline           352
+L130:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-25l")
+      callpropvoid        QName(Namespace("_-7I"), "_-0pR"), 0
+
+      debugline           354
+      getlex              QName(PackageNamespace("_-12V"), "ErrorReportStorage")
+      pushstring          "Flash memory usage"
+      pushstring          "Memory usage: "
+      getlex              QName(PackageNamespace(""), "Math")
+      getlex              QName(PackageNamespace("flash.system"), "System")
+      getproperty         QName(PackageNamespace(""), "totalMemory")
+      pushshort           1024
+      pushshort           1024
+      multiply
+      divide
+      callproperty        QName(PackageNamespace(""), "round"), 1
+      add
+      pushstring          " MB"
+      add
+      callpropvoid        QName(PackageNamespace(""), "_-1l7"), 2
+
+      debugline           355
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-4eA"), "_-SL")
+   method
+    refid "_-2h8:HabboTracking/instance/_-2h8:HabboTracking/_-SL"
+    param QName(PackageNamespace("flash.events"), "Event")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           357
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 357
+      jump                L139
+
+L6:
+      label
+      debugline           360
+      getlocal0
+      pushbyte            0
+      pushbyte            4
+      callpropvoid        QName(PrivateNamespace("_-4eA"), "_-0Qp"), 2
+
+      debugline           361
+      jump                L297
+
+L14:
+      label
+      debugline           363
+      getlocal0
+      pushbyte            1
+      pushbyte            4
+      callpropvoid        QName(PrivateNamespace("_-4eA"), "_-0Qp"), 2
+
+      debugline           364
+      jump                L297
+
+L22:
+      label
+      debugline           366
+      getlocal0
+      pushbyte            2
+      pushbyte            4
+      callpropvoid        QName(PrivateNamespace("_-4eA"), "_-0Qp"), 2
+
+      debugline           367
+      jump                L297
+
+L30:
+      label
+      debugline           369
+      getlocal0
+      pushbyte            3
+      pushbyte            4
+      callpropvoid        QName(PrivateNamespace("_-4eA"), "_-0Qp"), 2
+
+      debugline           370
+      jump                L297
+
+L38:
+      label
+      debugline           372
+      getlocal0
+      pushbyte            4
+      dup
+      callpropvoid        QName(PrivateNamespace("_-4eA"), "_-0Qp"), 2
+
+      debugline           373
+      jump                L297
+
+L46:
+      label
+      debugline           375
+      getlocal0
+      pushbyte            5
+      pushbyte            4
+      callpropvoid        QName(PrivateNamespace("_-4eA"), "_-0Qp"), 2
+
+      debugline           376
+      jump                L297
+
+L54:
+      label
+      debugline           378
+      getlocal0
+      pushstring          "navigator"
+      pushstring          "my_favorites"
+      callpropvoid        QName(PackageNamespace(""), "_-3gT"), 2
+
+      debugline           379
+      jump                L297
+
+L62:
+      label
+      debugline           381
+      getlocal0
+      pushstring          "navigator"
+      pushstring          "my_friends_rooms"
+      callpropvoid        QName(PackageNamespace(""), "_-3gT"), 2
+
+      debugline           382
+      jump                L297
+
+L70:
+      label
+      debugline           384
+      getlocal0
+      pushstring          "navigator"
+      pushstring          "my_history"
+      callpropvoid        QName(PackageNamespace(""), "_-3gT"), 2
+
+      debugline           385
+      jump                L297
+
+L78:
+      label
+      debugline           387
+      getlocal0
+      pushstring          "navigator"
+      pushstring          "my_rooms"
+      callpropvoid        QName(PackageNamespace(""), "_-3gT"), 2
+
+      debugline           388
+      jump                L297
+
+L86:
+      label
+      debugline           390
+      getlocal0
+      pushstring          "navigator"
+      pushstring          "official_rooms"
+      callpropvoid        QName(PackageNamespace(""), "_-3gT"), 2
+
+      debugline           391
+      jump                L297
+
+L94:
+      label
+      debugline           393
+      getlocal0
+      pushstring          "navigator"
+      pushstring          "popular_rooms"
+      callpropvoid        QName(PackageNamespace(""), "_-3gT"), 2
+
+      debugline           394
+      jump                L297
+
+L102:
+      label
+      debugline           396
+      getlocal0
+      pushstring          "navigator"
+      pushstring          "rooms_where_my_friends_are"
+      callpropvoid        QName(PackageNamespace(""), "_-3gT"), 2
+
+      debugline           397
+      jump                L297
+
+L110:
+      label
+      debugline           399
+      getlocal0
+      pushstring          "navigator"
+      pushstring          "highest_score"
+      callpropvoid        QName(PackageNamespace(""), "_-3gT"), 2
+
+      debugline           400
+      jump                L297
+
+L118:
+      label
+      debugline           402
+      getlocal0
+      pushstring          "navigator"
+      pushstring          "tag_search"
+      callpropvoid        QName(PackageNamespace(""), "_-3gT"), 2
+
+      debugline           403
+      jump                L297
+
+L126:
+      label
+      debugline           405
+      getlocal0
+      pushstring          "navigator"
+      pushstring          "text_search"
+      callpropvoid        QName(PackageNamespace(""), "_-3gT"), 2
+
+      debugline           406
+      jump                L297
+
+L134:
+      label
+      jump                L297
+
+      ; 0xF0
+      ; 0xE6
+      ; 0x02
+L139:
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "type")
+      setlocal2
+
+      debugline           359
+      getlex              QName(PackageNamespace("_-4Rx"), "_-3Bi")
+      getproperty         QName(PackageNamespace(""), "HABBO_NAVIGATOR_TRACKING_EVENT_CLOSED")
+      getlocal2
+      ifstrictne          L152
+
+      pushbyte            0
+      jump                L292
+
+      ; 0xF0
+      ; 0xEA
+      ; 0x02
+L152:
+      getlex              QName(PackageNamespace("_-4Rx"), "_-3Bi")
+      getproperty         QName(PackageNamespace(""), "HABBO_NAVIGATOR_TRACKING_EVENT_EVENTS")
+      getlocal2
+      ifstrictne          L161
+
+      pushbyte            1
+      jump                L292
+
+      ; 0xF0
+      ; 0xED
+      ; 0x02
+L161:
+      getlex              QName(PackageNamespace("_-4Rx"), "_-3Bi")
+      getproperty         QName(PackageNamespace(""), "HABBO_NAVIGATOR_TRACKING_EVENT_ROOMS")
+      getlocal2
+      ifstrictne          L170
+
+      pushbyte            2
+      jump                L292
+
+      ; 0xF0
+      ; 0xF0
+      ; 0x02
+L170:
+      getlex              QName(PackageNamespace("_-4Rx"), "_-3Bi")
+      getproperty         QName(PackageNamespace(""), "HABBO_NAVIGATOR_TRACKING_EVENT_ME")
+      getlocal2
+      ifstrictne          L179
+
+      pushbyte            3
+      jump                L292
+
+      ; 0xF0
+      ; 0xF3
+      ; 0x02
+L179:
+      getlex              QName(PackageNamespace("_-4Rx"), "_-3Bi")
+      getproperty         QName(PackageNamespace(""), "HABBO_NAVIGATOR_TRACKING_EVENT_OFFICIAL")
+      getlocal2
+      ifstrictne          L188
+
+      pushbyte            4
+      jump                L292
+
+      ; 0xF0
+      ; 0xF6
+      ; 0x02
+L188:
+      getlex              QName(PackageNamespace("_-4Rx"), "_-3Bi")
+      getproperty         QName(PackageNamespace(""), "HABBO_NAVIGATOR_TRACKING_EVENT_SEARCH")
+      getlocal2
+      ifstrictne          L197
+
+      pushbyte            5
+      jump                L292
+
+      ; 0xF0
+      ; 0xF9
+      ; 0x02
+L197:
+      getlex              QName(PackageNamespace("_-4Rx"), "_-3Bi")
+      getproperty         QName(PackageNamespace(""), "HABBO_NAVIGATOR_TRACKING_EVENT_SEARCHTYPE_MY_FAVOURITES")
+      getlocal2
+      ifstrictne          L206
+
+      pushbyte            6
+      jump                L292
+
+      ; 0xF0
+      ; 0xFC
+      ; 0x02
+L206:
+      getlex              QName(PackageNamespace("_-4Rx"), "_-3Bi")
+      getproperty         QName(PackageNamespace(""), "HABBO_NAVIGATOR_TRACKING_EVENT_SEARCHTYPE_MY_FRIENDS_ROOMS")
+      getlocal2
+      ifstrictne          L215
+
+      pushbyte            7
+      jump                L292
+
+      ; 0xF0
+      ; 0xFF
+      ; 0x02
+L215:
+      getlex              QName(PackageNamespace("_-4Rx"), "_-3Bi")
+      getproperty         QName(PackageNamespace(""), "HABBO_NAVIGATOR_TRACKING_EVENT_SEARCHTYPE_MY_HISTORY")
+      getlocal2
+      ifstrictne          L224
+
+      pushbyte            8
+      jump                L292
+
+      ; 0xF0
+      ; 0x82
+      ; 0x03
+L224:
+      getlex              QName(PackageNamespace("_-4Rx"), "_-3Bi")
+      getproperty         QName(PackageNamespace(""), "HABBO_NAVIGATOR_TRACKING_EVENT_SEARCHTYPE_MY_ROOMS")
+      getlocal2
+      ifstrictne          L233
+
+      pushbyte            9
+      jump                L292
+
+      ; 0xF0
+      ; 0x85
+      ; 0x03
+L233:
+      getlex              QName(PackageNamespace("_-4Rx"), "_-3Bi")
+      getproperty         QName(PackageNamespace(""), "HABBO_NAVIGATOR_TRACKING_EVENT_SEARCHTYPE_OFFICIALROOMS")
+      getlocal2
+      ifstrictne          L242
+
+      pushbyte            10
+      jump                L292
+
+      ; 0xF0
+      ; 0x88
+      ; 0x03
+L242:
+      getlex              QName(PackageNamespace("_-4Rx"), "_-3Bi")
+      getproperty         QName(PackageNamespace(""), "HABBO_NAVIGATOR_TRACKING_EVENT_SEARCHTYPE_POPULAR_ROOMS")
+      getlocal2
+      ifstrictne          L251
+
+      pushbyte            11
+      jump                L292
+
+      ; 0xF0
+      ; 0x8B
+      ; 0x03
+L251:
+      getlex              QName(PackageNamespace("_-4Rx"), "_-3Bi")
+      getproperty         QName(PackageNamespace(""), "HABBO_NAVIGATOR_TRACKING_EVENT_SEARCHTYPE_ROOMS_WHERE_MY_FRIENDS_ARE")
+      getlocal2
+      ifstrictne          L260
+
+      pushbyte            12
+      jump                L292
+
+      ; 0xF0
+      ; 0x8E
+      ; 0x03
+L260:
+      getlex              QName(PackageNamespace("_-4Rx"), "_-3Bi")
+      getproperty         QName(PackageNamespace(""), "HABBO_NAVIGATOR_TRACKING_EVENT_SEARCHTYPE_ROOMS_WITH_HIGHEST_SCORE")
+      getlocal2
+      ifstrictne          L269
+
+      pushbyte            13
+      jump                L292
+
+      ; 0xF0
+      ; 0x91
+      ; 0x03
+L269:
+      getlex              QName(PackageNamespace("_-4Rx"), "_-3Bi")
+      getproperty         QName(PackageNamespace(""), "HABBO_NAVIGATOR_TRACKING_EVENT_SEARCHTYPE_TAG_SEARCH")
+      getlocal2
+      ifstrictne          L278
+
+      pushbyte            14
+      jump                L292
+
+      ; 0xF0
+      ; 0x94
+      ; 0x03
+L278:
+      getlex              QName(PackageNamespace("_-4Rx"), "_-3Bi")
+      getproperty         QName(PackageNamespace(""), "HABBO_NAVIGATOR_TRACKING_EVENT_SEARCHTYPE_TEXT_SEARCH")
+      getlocal2
+      ifstrictne          L284
+
+      pushbyte            15
+      jump                L292
+
+L284:
+      jump                L291
+
+      ; 0x24
+      ; 0x10
+      ; 0x10
+      ; 0x02
+      ; 0x00
+      ; 0x00
+L291:
+      pushbyte            16
+L292:
+      kill                2
+      lookupswitch        L134, [L6, L14, L22, L30, L38, L46, L54, L62, L70, L78, L86, L94, L102, L110, L118, L126, L134]
+
+      ; 0xF0
+      ; 0x98
+      ; 0x03
+L297:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-4eA"), "_-10K")
+   method
+    refid "_-2h8:HabboTracking/instance/_-2h8:HabboTracking/_-10K"
+    param QName(PackageNamespace("flash.events"), "Event")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           410
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 410
+      jump                L35
+
+L6:
+      label
+      debugline           413
+      getlocal0
+      pushbyte            0
+      pushbyte            7
+      callpropvoid        QName(PrivateNamespace("_-4eA"), "_-0Qp"), 2
+
+      debugline           414
+      jump                L76
+
+L14:
+      label
+      debugline           416
+      getlocal0
+      pushbyte            1
+      pushbyte            7
+      callpropvoid        QName(PrivateNamespace("_-4eA"), "_-0Qp"), 2
+
+      debugline           417
+      jump                L76
+
+L22:
+      label
+      debugline           419
+      getlocal0
+      pushbyte            2
+      pushbyte            7
+      callpropvoid        QName(PrivateNamespace("_-4eA"), "_-0Qp"), 2
+
+      debugline           420
+      jump                L76
+
+L30:
+      label
+      jump                L76
+
+      ; 0xF0
+      ; 0x9B
+      ; 0x03
+L35:
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "type")
+      setlocal2
+
+      debugline           412
+      getlex              QName(PackageNamespace("_-4Rx"), "_-4dk")
+      getproperty         QName(PackageNamespace(""), "HABBO_ROOM_SETTINGS_TRACKING_EVENT_CLOSED")
+      getlocal2
+      ifstrictne          L48
+
+      pushbyte            0
+      jump                L71
+
+      ; 0xF0
+      ; 0x9F
+      ; 0x03
+L48:
+      getlex              QName(PackageNamespace("_-4Rx"), "_-4dk")
+      getproperty         QName(PackageNamespace(""), "HABBO_ROOM_SETTINGS_TRACKING_EVENT_DEFAULT")
+      getlocal2
+      ifstrictne          L57
+
+      pushbyte            1
+      jump                L71
+
+      ; 0xF0
+      ; 0xA2
+      ; 0x03
+L57:
+      getlex              QName(PackageNamespace("_-4Rx"), "_-4dk")
+      getproperty         QName(PackageNamespace(""), "HABBO_ROOM_SETTINGS_TRACKING_EVENT_ADVANCED")
+      getlocal2
+      ifstrictne          L63
+
+      pushbyte            2
+      jump                L71
+
+L63:
+      jump                L70
+
+      ; 0x24
+      ; 0x03
+      ; 0x10
+      ; 0x02
+      ; 0x00
+      ; 0x00
+L70:
+      pushbyte            3
+L71:
+      kill                2
+      lookupswitch        L30, [L6, L14, L22, L30]
+
+      ; 0xF0
+      ; 0xA6
+      ; 0x03
+L76:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-4eA"), "_-2V-")
+   method
+    refid "_-2h8:HabboTracking/instance/_-2h8:HabboTracking/_-2V-"
+    param QName(PackageNamespace("flash.events"), "Event")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           424
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 424
+      jump                L59
+
+L6:
+      label
+      debugline           427
+      getlocal0
+      pushbyte            0
+      pushbyte            5
+      callpropvoid        QName(PrivateNamespace("_-4eA"), "_-0Qp"), 2
+
+      debugline           428
+      jump                L127
+
+L14:
+      label
+      debugline           430
+      getlocal0
+      pushbyte            1
+      pushbyte            5
+      callpropvoid        QName(PrivateNamespace("_-4eA"), "_-0Qp"), 2
+
+      debugline           431
+      jump                L127
+
+L22:
+      label
+      debugline           433
+      getlocal0
+      pushbyte            2
+      pushbyte            5
+      callpropvoid        QName(PrivateNamespace("_-4eA"), "_-0Qp"), 2
+
+      debugline           434
+      jump                L127
+
+L30:
+      label
+      debugline           436
+      getlocal0
+      pushbyte            3
+      pushbyte            5
+      callpropvoid        QName(PrivateNamespace("_-4eA"), "_-0Qp"), 2
+
+      debugline           437
+      jump                L127
+
+L38:
+      label
+      debugline           439
+      getlocal0
+      pushbyte            4
+      pushbyte            5
+      callpropvoid        QName(PrivateNamespace("_-4eA"), "_-0Qp"), 2
+
+      debugline           440
+      jump                L127
+
+L46:
+      label
+      debugline           442
+      getlocal0
+      pushbyte            5
+      dup
+      callpropvoid        QName(PrivateNamespace("_-4eA"), "_-0Qp"), 2
+
+      debugline           443
+      jump                L127
+
+L54:
+      label
+      jump                L127
+
+      ; 0xF0
+      ; 0xA9
+      ; 0x03
+L59:
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "type")
+      setlocal2
+
+      debugline           426
+      getlex              QName(PackageNamespace("_-1Ef"), "_-5Du")
+      getproperty         QName(PackageNamespace(""), "HABBO_INVENTORY_TRACKING_EVENT_CLOSED")
+      getlocal2
+      ifstrictne          L72
+
+      pushbyte            0
+      jump                L122
+
+      ; 0xF0
+      ; 0xAD
+      ; 0x03
+L72:
+      getlex              QName(PackageNamespace("_-1Ef"), "_-5Du")
+      getproperty         QName(PackageNamespace(""), "HABBO_INVENTORY_TRACKING_EVENT_FURNI")
+      getlocal2
+      ifstrictne          L81
+
+      pushbyte            1
+      jump                L122
+
+      ; 0xF0
+      ; 0xB0
+      ; 0x03
+L81:
+      getlex              QName(PackageNamespace("_-1Ef"), "_-5Du")
+      getproperty         QName(PackageNamespace(""), "HABBO_INVENTORY_TRACKING_EVENT_POSTERS")
+      getlocal2
+      ifstrictne          L90
+
+      pushbyte            2
+      jump                L122
+
+      ; 0xF0
+      ; 0xB3
+      ; 0x03
+L90:
+      getlex              QName(PackageNamespace("_-1Ef"), "_-5Du")
+      getproperty         QName(PackageNamespace(""), "HABBO_INVENTORY_TRACKING_EVENT_BADGES")
+      getlocal2
+      ifstrictne          L99
+
+      pushbyte            3
+      jump                L122
+
+      ; 0xF0
+      ; 0xB6
+      ; 0x03
+L99:
+      getlex              QName(PackageNamespace("_-1Ef"), "_-5Du")
+      getproperty         QName(PackageNamespace(""), "HABBO_INVENTORY_TRACKING_EVENT_ACHIEVEMENTS")
+      getlocal2
+      ifstrictne          L108
+
+      pushbyte            4
+      jump                L122
+
+      ; 0xF0
+      ; 0xB9
+      ; 0x03
+L108:
+      getlex              QName(PackageNamespace("_-1Ef"), "_-5Du")
+      getproperty         QName(PackageNamespace(""), "HABBO_INVENTORY_TRACKING_EVENT_TRADING")
+      getlocal2
+      ifstrictne          L114
+
+      pushbyte            5
+      jump                L122
+
+L114:
+      jump                L121
+
+      ; 0x24
+      ; 0x06
+      ; 0x10
+      ; 0x02
+      ; 0x00
+      ; 0x00
+L121:
+      pushbyte            6
+L122:
+      kill                2
+      lookupswitch        L54, [L6, L14, L22, L30, L38, L46, L54]
+
+      ; 0xF0
+      ; 0xBD
+      ; 0x03
+L127:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-4eA"), "_-2a0")
+   method
+    refid "_-2h8:HabboTracking/instance/_-2h8:HabboTracking/_-2a0"
+    param QName(PackageNamespace("_-3VM"), "_-4jW")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 3
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           447
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 447
+      debug               1, "k", 1, 448
+      debugline           448
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "_-p9"), 0
+      coerce              QName(PackageNamespace("_-4DY"), "_-5pg")
+      setlocal2
+
+      debugline           449
+      getlocal0
+      pushstring          "achievement"
+      pushstring          "achievement"
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "data")
+      getproperty         QName(PackageNamespace(""), "_-1yx")
+      newarray            1
+      callpropvoid        QName(PackageNamespace(""), "_-3gT"), 3
+
+      debugline           450
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-4eA"), "_-6T5")
+   method
+    refid "_-2h8:HabboTracking/instance/_-2h8:HabboTracking/_-6T5"
+    param QName(PackageNamespace("_-5mx"), "_-0Er")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           452
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 452
+      debugline           453
+      getlocal0
+      pushstring          "catalogue"
+      pushstring          "page"
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "_-19t")
+      newarray            1
+      callpropvoid        QName(PackageNamespace(""), "_-3gT"), 3
+
+      debugline           454
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-4eA"), "_-8G")
+   method
+    refid "_-2h8:HabboTracking/instance/_-2h8:HabboTracking/_-8G"
+    param QName(PackageNamespace("flash.events"), "Event")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           456
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 456
+      jump                L27
+
+L6:
+      label
+      debugline           459
+      getlocal0
+      pushbyte            1
+      pushbyte            9
+      callpropvoid        QName(PrivateNamespace("_-4eA"), "_-0Qp"), 2
+
+      debugline           460
+      jump                L59
+
+L14:
+      label
+      debugline           462
+      getlocal0
+      pushbyte            0
+      pushbyte            9
+      callpropvoid        QName(PrivateNamespace("_-4eA"), "_-0Qp"), 2
+
+      debugline           463
+      jump                L59
+
+L22:
+      label
+      jump                L59
+
+      ; 0xF0
+      ; 0xC9
+      ; 0x03
+L27:
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "type")
+      setlocal2
+
+      debugline           458
+      getlex              QName(PackageNamespace("_-4I-"), "_-45W")
+      getproperty         QName(PackageNamespace(""), "HABBO_CATALOG_TRACKING_EVENT_OPEN")
+      getlocal2
+      ifstrictne          L40
+
+      pushbyte            0
+      jump                L54
+
+      ; 0xF0
+      ; 0xCD
+      ; 0x03
+L40:
+      getlex              QName(PackageNamespace("_-4I-"), "_-45W")
+      getproperty         QName(PackageNamespace(""), "HABBO_CATALOG_TRACKING_EVENT_CLOSE")
+      getlocal2
+      ifstrictne          L46
+
+      pushbyte            1
+      jump                L54
+
+L46:
+      jump                L53
+
+      ; 0x24
+      ; 0x02
+      ; 0x10
+      ; 0x02
+      ; 0x00
+      ; 0x00
+L53:
+      pushbyte            2
+L54:
+      kill                2
+      lookupswitch        L22, [L6, L14, L22]
+
+      ; 0xF0
+      ; 0xD1
+      ; 0x03
+L59:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-4eA"), "_-1uh")
+   method
+    refid "_-2h8:HabboTracking/instance/_-2h8:HabboTracking/_-1uh"
+    param QName(PackageNamespace("flash.events"), "Event")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           467
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 467
+      jump                L51
+
+L6:
+      label
+      debugline           470
+      getlocal0
+      pushbyte            0
+      pushbyte            6
+      callpropvoid        QName(PrivateNamespace("_-4eA"), "_-0Qp"), 2
+
+      debugline           471
+      jump                L110
+
+L14:
+      label
+      debugline           473
+      getlocal0
+      pushbyte            1
+      pushbyte            6
+      callpropvoid        QName(PrivateNamespace("_-4eA"), "_-0Qp"), 2
+
+      debugline           474
+      jump                L110
+
+L22:
+      label
+      debugline           476
+      getlocal0
+      pushbyte            2
+      pushbyte            6
+      callpropvoid        QName(PrivateNamespace("_-4eA"), "_-0Qp"), 2
+
+      debugline           477
+      jump                L110
+
+L30:
+      label
+      debugline           479
+      getlocal0
+      pushbyte            3
+      pushbyte            6
+      callpropvoid        QName(PrivateNamespace("_-4eA"), "_-0Qp"), 2
+
+      debugline           480
+      jump                L110
+
+L38:
+      label
+      debugline           482
+      getlocal0
+      pushbyte            4
+      pushbyte            6
+      callpropvoid        QName(PrivateNamespace("_-4eA"), "_-0Qp"), 2
+
+      debugline           483
+      jump                L110
+
+L46:
+      label
+      jump                L110
+
+      ; 0xF0
+      ; 0xD4
+      ; 0x03
+L51:
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "type")
+      setlocal2
+
+      debugline           469
+      getlex              QName(PackageNamespace("_-2jZ"), "_-3pm")
+      getproperty         QName(PackageNamespace(""), "HABBO_FRIENDLIST_TRACKING_EVENT_CLOSED")
+      getlocal2
+      ifstrictne          L64
+
+      pushbyte            0
+      jump                L105
+
+      ; 0xF0
+      ; 0xD8
+      ; 0x03
+L64:
+      getlex              QName(PackageNamespace("_-2jZ"), "_-3pm")
+      getproperty         QName(PackageNamespace(""), "HABBO_FRIENDLIST_TRACKING_EVENT_FRIENDS")
+      getlocal2
+      ifstrictne          L73
+
+      pushbyte            1
+      jump                L105
+
+      ; 0xF0
+      ; 0xDB
+      ; 0x03
+L73:
+      getlex              QName(PackageNamespace("_-2jZ"), "_-3pm")
+      getproperty         QName(PackageNamespace(""), "HABBO_FRIENDLIST_TRACKING_EVENT_SEARCH")
+      getlocal2
+      ifstrictne          L82
+
+      pushbyte            2
+      jump                L105
+
+      ; 0xF0
+      ; 0xDE
+      ; 0x03
+L82:
+      getlex              QName(PackageNamespace("_-2jZ"), "_-3pm")
+      getproperty         QName(PackageNamespace(""), "HABBO_FRIENDLIST_TRACKING_EVENT_REQUEST")
+      getlocal2
+      ifstrictne          L91
+
+      pushbyte            3
+      jump                L105
+
+      ; 0xF0
+      ; 0xE1
+      ; 0x03
+L91:
+      getlex              QName(PackageNamespace("_-2jZ"), "_-3pm")
+      getproperty         QName(PackageNamespace(""), "_-3Ga")
+      getlocal2
+      ifstrictne          L97
+
+      pushbyte            4
+      jump                L105
+
+L97:
+      jump                L104
+
+      ; 0x24
+      ; 0x05
+      ; 0x10
+      ; 0x02
+      ; 0x00
+      ; 0x00
+L104:
+      pushbyte            5
+L105:
+      kill                2
+      lookupswitch        L46, [L6, L14, L22, L30, L38, L46]
+
+      ; 0xF0
+      ; 0xE8
+      ; 0x03
+L110:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-4eA"), "_-4QO")
+   method
+    refid "_-2h8:HabboTracking/instance/_-2h8:HabboTracking/_-4QO"
+    param QName(PackageNamespace("flash.events"), "Event")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           490
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 490
+      jump                L27
+
+L6:
+      label
+      debugline           493
+      getlocal0
+      pushbyte            0
+      pushbyte            10
+      callpropvoid        QName(PrivateNamespace("_-4eA"), "_-0Qp"), 2
+
+      debugline           494
+      jump                L59
+
+L14:
+      label
+      debugline           496
+      getlocal0
+      pushbyte            1
+      pushbyte            10
+      callpropvoid        QName(PrivateNamespace("_-4eA"), "_-0Qp"), 2
+
+      debugline           497
+      jump                L59
+
+L22:
+      label
+      jump                L59
+
+      ; 0xF0
+      ; 0xEB
+      ; 0x03
+L27:
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "type")
+      setlocal2
+
+      debugline           492
+      getlex              QName(PackageNamespace("_-1py"), "_-1c2")
+      getproperty         QName(PackageNamespace(""), "HABBO_HELP_TRACKING_EVENT_CLOSED")
+      getlocal2
+      ifstrictne          L40
+
+      pushbyte            0
+      jump                L54
+
+      ; 0xF0
+      ; 0xEF
+      ; 0x03
+L40:
+      getlex              QName(PackageNamespace("_-1py"), "_-1c2")
+      getproperty         QName(PackageNamespace(""), "HABBO_HELP_TRACKING_EVENT_DEFAULT")
+      getlocal2
+      ifstrictne          L46
+
+      pushbyte            1
+      jump                L54
+
+L46:
+      jump                L53
+
+      ; 0x24
+      ; 0x02
+      ; 0x10
+      ; 0x02
+      ; 0x00
+      ; 0x00
+L53:
+      pushbyte            2
+L54:
+      kill                2
+      lookupswitch        L22, [L6, L14, L22]
+
+      ; 0xF0
+      ; 0xF3
+      ; 0x03
+L59:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-4eA"), "_-1zV")
+   method
+    refid "_-2h8:HabboTracking/instance/_-2h8:HabboTracking/_-1zV"
+    param QName(PackageNamespace("_-5YP"), "_-3ZW")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           501
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 501
+      debugline           502
+      getlocal0
+      pushstring          "authentication"
+      pushstring          "authok"
+      callpropvoid        QName(PackageNamespace(""), "_-3gT"), 2
+
+      debugline           503
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-4eA"), "_-3PC")
+   method
+    refid "_-2h8:HabboTracking/instance/_-2h8:HabboTracking/_-3PC"
+    param QName(PackageNamespace("_-5n-"), "_-OX")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           505
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 505
+      debugline           506
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-1Bt")
+      pushnull
+      ifeq                L16
+
+      debugline           507
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-1Bt")
+      getlocal1
+      callpropvoid        QName(PackageNamespace(""), "_-3PC"), 1
+
+      debugline           509
+L16:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-4eA"), "_-PA")
+   method
+    refid "_-2h8:HabboTracking/instance/_-2h8:HabboTracking/_-PA"
+    param QName(PackageNamespace("_-5YP"), "_-3ZW")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 3
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           511
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 511
+      debug               1, "k", 1, 517
+      debugline           512
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-2m4")
+      iftrue              L20
+
+      debugline           513
+      getlocal0
+      getlex              QName(PackageNamespace("_-2h8"), "_-07G")
+      getproperty         QName(PackageNamespace(""), "_-1cZ")
+      callpropvoid        QName(PackageNamespace(""), "trackLoginStep"), 1
+
+      debugline           514
+      getlocal0
+      pushtrue
+      initproperty        QName(PrivateNamespace("_-4eA"), "_-2m4")
+
+      debugline           517
+L20:
+      findpropstrict      QName(PackageNamespace("_-qS"), "_-3o9")
+      getlocal1
+      callproperty        QName(PackageNamespace("_-qS"), "_-3o9"), 1
+      callproperty        QName(PackageNamespace(""), "_-p9"), 0
+      coerce              QName(PackageNamespace("_-64v"), "_-2sf")
+      setlocal2
+
+      debugline           518
+      getlex              QName(PackageNamespace("_-12V"), "ErrorReportStorage")
+      getlex              QName(PackageNamespace("_-2h8"), "_-1NW")
+      getproperty         QName(PackageNamespace(""), "_-27X")
+      findpropstrict      QName(PackageNamespace(""), "String")
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "_-2BN")
+      callproperty        QName(PackageNamespace(""), "String"), 1
+      callpropvoid        QName(PackageNamespace(""), "_-2bD"), 2
+
+      debugline           519
+      getlex              QName(PackageNamespace("_-12V"), "ErrorReportStorage")
+      getlex              QName(PackageNamespace("_-2h8"), "_-1NW")
+      getproperty         QName(PackageNamespace(""), "_-4NZ")
+      findpropstrict      QName(PackageNamespace(""), "String")
+      pushtrue
+      callproperty        QName(PackageNamespace(""), "String"), 1
+      callpropvoid        QName(PackageNamespace(""), "_-2bD"), 2
+
+      debugline           520
+      getlocal0
+      pushstring          "navigator"
+      pushstring          "private"
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "_-2BN")
+      newarray            1
+      callpropvoid        QName(PackageNamespace(""), "_-3gT"), 3
+
+      debugline           521
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-4eA"), "onConfigurationComplete")
+   method
+    refid "_-2h8:HabboTracking/instance/_-2h8:HabboTracking/onConfigurationComplete"
+    param QName(PackageNamespace("flash.events"), "Event")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           523
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 523
+      debugline           525
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-1Bt")
+      pushnull
+      ifeq                L15
+
+      debugline           526
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-1Bt")
+      callpropvoid        QName(PackageNamespace(""), "init"), 0
+
+      debugline           528
+L15:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-4eA"), "_-0ZX")
+   method
+    refid "_-2h8:HabboTracking/instance/_-2h8:HabboTracking/_-0ZX"
+    param QName(PackageNamespace("_-3mO"), "_-4bt")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 5
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           530
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 530
+      debugline           531
+      getlocal0
+      pushstring          "room_ad"
+      pushstring          "show"
+      getlocal0
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "clickUrl")
+      callproperty        QName(PrivateNamespace("_-4eA"), "_-5DB"), 1
+      newarray            1
+      callpropvoid        QName(PackageNamespace(""), "_-3gT"), 3
+
+      debugline           532
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-4eA"), "_-4D2")
+   method
+    refid "_-2h8:HabboTracking/instance/_-2h8:HabboTracking/_-4D2"
+    param QName(PackageNamespace("_-0B-"), "_-62-")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 5
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           534
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 534
+      debugline           535
+      getlocal0
+      pushstring          "room_ad"
+      pushstring          "click"
+      getlocal0
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "clickUrl")
+      callproperty        QName(PrivateNamespace("_-4eA"), "_-5DB"), 1
+      newarray            1
+      callpropvoid        QName(PackageNamespace(""), "_-3gT"), 3
+
+      debugline           536
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-4eA"), "_-5DB")
+   method
+    refid "_-2h8:HabboTracking/instance/_-2h8:HabboTracking/_-5DB"
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace(""), "String")
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           538
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 538
+      debug               1, "k", 1, 539
+      debugline           539
+      getlocal1
+      getlex              QName(PackageNamespace(""), "RegExp")
+      pushstring          ";alias=([^;]+)"
+      construct           1
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "match"), 1
+      coerce              QName(PackageNamespace(""), "Array")
+      setlocal2
+
+      debugline           540
+      getlocal2
+      pushnull
+      equals
+      not
+      dup
+      iffalse             L26
+
+      pop
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "length")
+      pushbyte            1
+      greaterthan
+L26:
+      iffalse             L32
+
+      debugline           541
+      getlocal2
+      pushbyte            1
+      getproperty         MultinameL([PrivateNamespace("_-4eA"), PackageNamespace("_-2h8"), PrivateNamespace("HabboTracking.as$1702"), PackageNamespace(""), PackageInternalNs("_-2h8"), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("com.sulake.iid"), ProtectedNamespace("_-4eA"), StaticProtectedNs("_-4eA"), StaticProtectedNs("_-5gL")])
+      returnvalue
+
+L32:
+      pushstring          "unknown"
+      debugline           543
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-4eA"), "_-2cQ")
+   method
+    refid "_-2h8:HabboTracking/instance/_-2h8:HabboTracking/_-2cQ"
+    param QName(PackageNamespace("_-0B-"), "_-303")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           546
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 546
+      debugline           549
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "type")
+      getlex              QName(PackageNamespace("_-0B-"), "_-303")
+      getproperty         QName(PackageNamespace(""), "_-51Z")
+      ifne                L45
+
+      debugline           551
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-12E")
+      iftrue              L41
+
+      debugline           552
+      getlocal0
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "roomId")
+      initproperty        QName(PrivateNamespace("_-4eA"), "_-5fh")
+
+      debugline           553
+      getlocal0
+      findpropstrict      QName(PackageNamespace("flash.utils"), "Timer")
+      pushbyte            60
+      pushshort           1000
+      multiply
+      pushbyte            1
+      constructprop       QName(PackageNamespace("flash.utils"), "Timer"), 2
+      initproperty        QName(PrivateNamespace("_-4eA"), "_-12E")
+
+      debugline           554
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-12E")
+      getlex              QName(PackageNamespace("flash.events"), "TimerEvent")
+      getproperty         QName(PackageNamespace(""), "TIMER")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-1Al")
+      callpropvoid        QName(PackageNamespace(""), "addEventListener"), 2
+
+      debugline           555
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-12E")
+      callpropvoid        QName(PackageNamespace(""), "start"), 0
+
+L41:
+      jump                L75
+
+      ; 0xF0
+      ; 0xAF
+      ; 0x04
+L45:
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "type")
+      getlex              QName(PackageNamespace("_-0B-"), "_-303")
+      getproperty         QName(PackageNamespace(""), "_-190")
+      ifne                L75
+
+      debugline           560
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-12E")
+      iffalse             L75
+
+      debugline           561
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-12E")
+      getlex              QName(PackageNamespace("flash.events"), "TimerEvent")
+      getproperty         QName(PackageNamespace(""), "TIMER")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-1Al")
+      callpropvoid        QName(PackageNamespace(""), "removeEventListener"), 2
+
+      debugline           562
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-12E")
+      callpropvoid        QName(PackageNamespace(""), "stop"), 0
+
+      debugline           563
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-4eA"), "_-12E")
+
+      debugline           564
+      getlocal0
+      pushbyte            -1
+      initproperty        QName(PrivateNamespace("_-4eA"), "_-5fh")
+
+      debugline           567
+L75:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-4eA"), "_-1Al")
+   method
+    refid "_-2h8:HabboTracking/instance/_-2h8:HabboTracking/_-1Al"
+    param QName(PackageNamespace("flash.events"), "TimerEvent")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 6
+     localcount 7
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           572
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce_s
+      setlocal2
+
+      pushbyte            0
+      setlocal3
+
+      pushbyte            0
+      setlocal            4
+
+      debug               1, "k", 0, 572
+      debugline           573
+      getlex              QName(PackageNamespace(""), "disposed")
+      not
+      dup
+      iffalse             L21
+
+      pop
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_crashed")
+      not
+L21:
+      dup
+      iffalse             L29
+
+      pop
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-25l")
+      pushnull
+      equals
+      not
+L29:
+      dup
+      iffalse             L35
+
+      pop
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-4MO")
+      convert_b
+L35:
+      iffalse             L116
+
+      debug               1, "k", 1, 574
+      debugline           574
+      pushnull
+      coerce_s
+      setlocal2
+
+      debugline           575
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-4dS")
+      pushnull
+      ifeq                L91
+
+      debug               1, "k", 2, 576
+      debug               1, "k", 3, 577
+      debugline           576
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-4dS")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-4dS")
+      getproperty         QName(Namespace("_-1-k"), "activeRoomId")
+      getlex              QName(PackageNamespace("_-Rk"), "_-4dV")
+      getproperty         QName(PackageNamespace(""), "_-2-N")
+      callproperty        QName(Namespace("_-1-k"), "_-5qX"), 2
+      convert_i
+      setlocal3
+
+      debugline           577
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-4dS")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-4dS")
+      getproperty         QName(Namespace("_-1-k"), "activeRoomId")
+      getlex              QName(PackageNamespace("_-Rk"), "_-4dV")
+      getproperty         QName(PackageNamespace(""), "_-3aq")
+      callproperty        QName(Namespace("_-1-k"), "_-5qX"), 2
+      debugline           578
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-4dS")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-4dS")
+      getproperty         QName(Namespace("_-1-k"), "activeRoomId")
+      getlex              QName(PackageNamespace("_-Rk"), "_-4dV")
+      getproperty         QName(PackageNamespace(""), "_-1Zr")
+      callproperty        QName(Namespace("_-1-k"), "_-5qX"), 2
+      add
+      convert_i
+      setlocal            4
+
+      pushstring          "Avatars: "
+      debugline           579
+      getlocal3
+      add
+      pushstring          ", Objects: "
+      add
+      getlocal            4
+      add
+      coerce_s
+      setlocal2
+
+      debugline           581
+L91:
+      getlocal0
+      pushstring          "ClientPerformance"
+      findpropstrict      QName(PackageNamespace(""), "String")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-4MO")
+      getproperty         QName(PackageNamespace(""), "frameRate")
+      callproperty        QName(PackageNamespace(""), "String"), 1
+      pushstring          "fps"
+      getlocal2
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-5fh")
+      callpropvoid        QName(PackageNamespace(""), "trackEventLog"), 5
+
+      debugline           582
+      getlocal0
+      dup
+      setlocal            5
+
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-5u5")
+      increment_i
+      setlocal            6
+
+      getlocal            5
+      getlocal            6
+      setproperty         QName(PrivateNamespace("_-4eA"), "_-5u5")
+
+      kill                6
+      kill                5
+      debugline           584
+L116:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-4eA"), "_-16V")
+   method
+    refid "_-2h8:HabboTracking/instance/_-2h8:HabboTracking/_-16V"
+    param QName(PackageNamespace("_-5b7"), "_-4dt")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           586
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 586
+      debugline           587
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-4HS")
+      iffalse             L16
+
+      debugline           588
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-4HS")
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "_-4wt")
+      callpropvoid        QName(PackageNamespace(""), "track"), 1
+
+      debugline           590
+L16:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-4eA"), "_-YA")
+   method
+    refid "_-2h8:HabboTracking/instance/_-2h8:HabboTracking/_-YA"
+    param QName(PackageNamespace("_-5b7"), "_-4dt")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           592
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 592
+      debugline           593
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-4HS")
+      iffalse             L16
+
+      debugline           594
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-4HS")
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "type")
+      callpropvoid        QName(PackageNamespace(""), "track"), 1
+
+      debugline           596
+L16:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-3gT")
+   method
+    refid "_-2h8:HabboTracking/instance/_-3gT"
+    param QName(PackageNamespace(""), "String")
+    param QName(PackageNamespace(""), "String")
+    param QName(PackageNamespace(""), "Array")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_OPTIONAL
+    optional Null()
+    body
+     maxstack 6
+     localcount 5
+     initscopedepth 5
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           598
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 598
+      debug               1, "k", 1, 598
+      debug               1, "k", 2, 598
+      debugline           599
+      getlex              QName(PackageNamespace(""), "_-1pV")
+      pushstring          "legacyTrackGoogle("
+      getlocal1
+      add
+      pushstring          ", "
+      add
+      getlocal2
+      add
+      pushstring          ", "
+      add
+      getlocal3
+      add
+      pushstring          ")"
+      add
+      callpropvoid        QName(PackageNamespace(""), "log"), 1
+
+      debugline           601
+L24:
+      getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+      getproperty         QName(PackageNamespace(""), "available")
+      iffalse             L46
+
+      debugline           602
+      getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+      pushstring          "FlashExternalInterface.legacyTrack"
+      getlocal1
+      getlocal2
+      getlocal3
+      pushnull
+      equals
+      iffalse             L39
+
+      newarray            0
+      coerce_a
+      jump                L41
+
+L39:
+      getlocal3
+      coerce_a
+L41:
+      callpropvoid        QName(PackageNamespace(""), "call"), 4
+
+      jump                L50
+
+      ; 0xF0
+      ; 0xDD
+      ; 0x04
+L46:
+      getlex              QName(PackageNamespace(""), "_-1pV")
+      pushstring          "ExternalInterface is not available, tracking is disabled"
+      callpropvoid        QName(PackageNamespace(""), "log"), 1
+
+      debugline           608
+L50:
+      jump                L63
+
+L51:
+      getlocal0
+      pushscope
+
+      newcatch            0
+      dup
+      setlocal            4
+
+      dup
+      pushscope
+
+      swap
+      setslot             1
+
+      popscope
+      kill                4
+      debugline           611
+L63:
+      returnvoid
+     end ; code
+     try from L24 to L50 target L51 type QName(PackageNamespace(""), "Error") name QName(PackageNamespace(""), "e") end
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "trackGoogle")
+   method
+    refid "_-2h8:HabboTracking/instance/trackGoogle"
+    param QName(PackageNamespace(""), "String")
+    param QName(PackageNamespace(""), "String")
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_OPTIONAL
+    optional Integer(-1)
+    body
+     maxstack 5
+     localcount 5
+     initscopedepth 5
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           613
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 613
+      debug               1, "k", 1, 613
+      debug               1, "k", 2, 613
+      debugline           614
+      getlex              QName(PackageNamespace(""), "_-1pV")
+      pushstring          "trackGoogle("
+      getlocal1
+      add
+      pushstring          ", "
+      add
+      getlocal2
+      add
+      pushstring          ", "
+      add
+      getlocal3
+      add
+      pushstring          ")"
+      add
+      callpropvoid        QName(PackageNamespace(""), "log"), 1
+
+      debugline           616
+L24:
+      getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+      getproperty         QName(PackageNamespace(""), "available")
+      iffalse             L38
+
+      debugline           617
+      getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+      pushstring          "FlashExternalInterface.track"
+      getlocal1
+      getlocal2
+      getlocal3
+      callpropvoid        QName(PackageNamespace(""), "call"), 4
+
+      jump                L42
+
+      ; 0xF0
+      ; 0xEC
+      ; 0x04
+L38:
+      getlex              QName(PackageNamespace(""), "_-1pV")
+      pushstring          "ExternalInterface is not available, tracking is disabled"
+      callpropvoid        QName(PackageNamespace(""), "log"), 1
+
+      debugline           623
+L42:
+      jump                L55
+
+L43:
+      getlocal0
+      pushscope
+
+      newcatch            0
+      dup
+      setlocal            4
+
+      dup
+      pushscope
+
+      swap
+      setslot             1
+
+      popscope
+      kill                4
+      debugline           626
+L55:
+      returnvoid
+     end ; code
+     try from L24 to L42 target L43 type QName(PackageNamespace(""), "Error") name QName(PackageNamespace(""), "e") end
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-4eA"), "loadConversionTrackingFrame")
+   method
+    refid "_-2h8:HabboTracking/instance/_-2h8:HabboTracking/loadConversionTrackingFrame"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           628
+      getlocal0
+      pushscope
+
+      debugline           630
+L5:
+      getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+      getproperty         QName(PackageNamespace(""), "available")
+      iffalse             L16
+
+      debugline           631
+      getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+      pushstring          "FlashExternalInterface.loadConversionTrackingFrame"
+      callpropvoid        QName(PackageNamespace(""), "call"), 1
+
+      jump                L20
+
+      ; 0xF0
+      ; 0xFA
+      ; 0x04
+L16:
+      getlex              QName(PackageNamespace(""), "_-1pV")
+      pushstring          "ExternalInterface is not available!"
+      callpropvoid        QName(PackageNamespace(""), "log"), 1
+
+      debugline           637
+L20:
+      jump                L33
+
+L21:
+      getlocal0
+      pushscope
+
+      newcatch            0
+      dup
+      setlocal1
+
+      dup
+      pushscope
+
+      swap
+      setslot             1
+
+      popscope
+      kill                1
+      debugline           640
+L33:
+      returnvoid
+     end ; code
+     try from L5 to L20 target L21 type QName(PackageNamespace(""), "Error") name QName(PackageNamespace(""), "e") end
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "trackLoginStep")
+   method
+    refid "_-2h8:HabboTracking/instance/trackLoginStep"
+    param QName(PackageNamespace(""), "String")
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_OPTIONAL
+    optional Null()
+    body
+     maxstack 4
+     localcount 4
+     initscopedepth 5
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           642
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 642
+      debug               1, "k", 1, 642
+      debugline           643
+      getlex              QName(PackageNamespace(""), "_-1pV")
+      pushstring          "* Track Login Step: "
+      getlocal1
+      add
+      callpropvoid        QName(PackageNamespace(""), "log"), 1
+
+      debugline           645
+      findpropstrict      QName(PackageNamespace(""), "getBoolean")
+      pushstring          "processlog.enabled"
+      callproperty        QName(PackageNamespace(""), "getBoolean"), 1
+      iftrue              L22
+
+      debugline           646
+      returnvoid
+
+      ; 0xF0
+      ; 0x8A
+      ; 0x05
+L22:
+      getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+      getproperty         QName(PackageNamespace(""), "available")
+      iffalse             L47
+
+      debugline           651
+      getlocal2
+      pushnull
+      ifeq                L39
+
+      debugline           652
+      getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+      pushstring          "FlashExternalInterface.logLoginStep"
+      getlocal1
+      getlocal2
+      callpropvoid        QName(PackageNamespace(""), "call"), 3
+
+      jump                L43
+
+      ; 0xF0
+      ; 0x8F
+      ; 0x05
+L39:
+      getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+      pushstring          "FlashExternalInterface.logLoginStep"
+      getlocal1
+      callpropvoid        QName(PackageNamespace(""), "call"), 2
+
+L43:
+      jump                L51
+
+      ; 0xF0
+      ; 0x93
+      ; 0x05
+L47:
+      getlex              QName(PackageNamespace(""), "_-1pV")
+      pushstring          "ExternalInterface is not available, tracking is disabled"
+      callpropvoid        QName(PackageNamespace(""), "log"), 1
+
+      debugline           662
+L51:
+      jump                L64
+
+L52:
+      getlocal0
+      pushscope
+
+      newcatch            0
+      dup
+      setlocal3
+
+      dup
+      pushscope
+
+      swap
+      setslot             1
+
+      popscope
+      kill                3
+      debugline           665
+L64:
+      returnvoid
+     end ; code
+     try from L22 to L51 target L52 type QName(PackageNamespace(""), "Error") name QName(PackageNamespace(""), "e") end
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "trackEventLog")
+   method
+    refid "_-2h8:HabboTracking/instance/trackEventLog"
+    param QName(PackageNamespace(""), "String")
+    param QName(PackageNamespace(""), "String")
+    param QName(PackageNamespace(""), "String")
+    param QName(PackageNamespace(""), "String")
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_OPTIONAL
+    optional Utf8("")
+    optional Integer(0)
+    body
+     maxstack 7
+     localcount 6
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           667
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 667
+      debug               1, "k", 1, 667
+      debug               1, "k", 2, 667
+      debug               1, "k", 3, 667
+      debug               1, "k", 4, 667
+      debugline           668
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-25l")
+      pushnull
+      equals
+      not
+      dup
+      iffalse             L24
+
+      pop
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-25l")
+      getproperty         QName(Namespace("_-7I"), "connection")
+      pushnull
+      equals
+      not
+L24:
+      dup
+      iffalse             L32
+
+      pop
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-25l")
+      getproperty         QName(Namespace("_-7I"), "connection")
+      getproperty         QName(Namespace("_-1p"), "connected")
+      convert_b
+L32:
+      iffalse             L46
+
+      debugline           669
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-25l")
+      getproperty         QName(Namespace("_-7I"), "connection")
+      findpropstrict      QName(PackageNamespace("_-2TX"), "_-4ex")
+      getlocal1
+      getlocal2
+      getlocal3
+      getlocal            4
+      getlocal            5
+      constructprop       QName(PackageNamespace("_-2TX"), "_-4ex"), 5
+      callpropvoid        QName(Namespace("_-1p"), "send"), 1
+
+      debugline           671
+L46:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait slot QName(PrivateNamespace("_-4eA"), "_-0e7") type TypeName(QName(PackageNamespace("__AS3__.vec"), "Vector")<QName(PackageNamespace(""), "String")>) end
+  trait method QName(PackageNamespace(""), "_-5-C")
+   method
+    refid "_-2h8:HabboTracking/instance/_-5-C"
+    param QName(PackageNamespace(""), "String")
+    param QName(PackageNamespace(""), "String")
+    param QName(PackageNamespace(""), "String")
+    param QName(PackageNamespace(""), "String")
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_OPTIONAL
+    optional Utf8("")
+    optional Integer(0)
+    body
+     maxstack 6
+     localcount 9
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           674
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 674
+      debug               1, "k", 1, 674
+      debug               1, "k", 2, 674
+      debug               1, "k", 3, 674
+      debug               1, "k", 4, 674
+      debug               1, "k", 5, 675
+      debug               1, "k", 6, 676
+      debug               1, "k", 7, 677
+      debugline           675
+      getlocal1
+      getlocal2
+      add
+      getlocal3
+      add
+      coerce_s
+      setlocal            6
+
+      debugline           676
+      pushfalse
+      setlocal            7
+
+      debugline           677
+      pushbyte            0
+      convert_u
+      setlocal            8
+
+      jump                L48
+
+L28:
+      label
+      debugline           678
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-0e7")
+      getlocal            8
+      getproperty         MultinameL([PrivateNamespace("_-4eA"), PackageNamespace("_-2h8"), PrivateNamespace("HabboTracking.as$1702"), PackageNamespace(""), PackageInternalNs("_-2h8"), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("com.sulake.iid"), ProtectedNamespace("_-4eA"), StaticProtectedNs("_-4eA"), StaticProtectedNs("_-5gL")])
+      getlocal            6
+      ifne                L44
+
+      debugline           679
+      pushtrue
+      setlocal            7
+
+      debugline           680
+      jump                L54
+
+      ; 0xF0
+      ; 0xA5
+      ; 0x05
+L44:
+      getlocal            8
+      increment
+      convert_u
+      setlocal            8
+
+L48:
+      getlocal            8
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-0e7")
+      getproperty         QName(PackageNamespace(""), "length")
+      iflt                L28
+
+      debugline           684
+L54:
+      getlocal            7
+      iftrue              L70
+
+      debugline           685
+      getlocal0
+      getlocal1
+      getlocal2
+      getlocal3
+      getlocal            4
+      getlocal            5
+      callpropvoid        QName(PackageNamespace(""), "trackEventLog"), 5
+
+      debugline           686
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-0e7")
+      getlocal            6
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      debugline           688
+L70:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "trackTalentTrackOpen")
+   method
+    refid "_-2h8:HabboTracking/instance/trackTalentTrackOpen"
+    param QName(PackageNamespace(""), "String")
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 5
+     localcount 3
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           690
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 690
+      debug               1, "k", 1, 690
+      debugline           691
+      getlocal0
+      pushstring          "Talent"
+      getlocal1
+      pushstring          "talent.open"
+      getlocal2
+      callpropvoid        QName(PackageNamespace(""), "trackEventLog"), 4
+
+      debugline           692
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "logError")
+   method
+    refid "_-2h8:HabboTracking/instance/logError"
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 5
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           694
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 694
+      debugline           695
+      getlex              QName(PackageNamespace(""), "_-1pV")
+      pushstring          "logError("
+      getlocal1
+      add
+      pushstring          ")"
+      add
+      callpropvoid        QName(PackageNamespace(""), "log"), 1
+
+      debugline           697
+L14:
+      getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+      getproperty         QName(PackageNamespace(""), "available")
+      iffalse             L26
+
+      debugline           698
+      getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+      pushstring          "FlashExternalInterface.logError"
+      getlocal1
+      callpropvoid        QName(PackageNamespace(""), "call"), 2
+
+      jump                L30
+
+      ; 0xF0
+      ; 0xBD
+      ; 0x05
+L26:
+      getlex              QName(PackageNamespace(""), "_-1pV")
+      pushstring          "ExternalInterface is not available, tracking is disabled"
+      callpropvoid        QName(PackageNamespace(""), "log"), 1
+
+      debugline           704
+L30:
+      jump                L43
+
+L31:
+      getlocal0
+      pushscope
+
+      newcatch            0
+      dup
+      setlocal2
+
+      dup
+      pushscope
+
+      swap
+      setslot             1
+
+      popscope
+      kill                2
+      debugline           707
+L43:
+      returnvoid
+     end ; code
+     try from L14 to L30 target L31 type QName(PackageNamespace(""), "Error") name QName(PackageNamespace(""), "e") end
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-5FX")
+   method
+    refid "_-2h8:HabboTracking/instance/_-5FX"
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           709
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 709
+      debugline           710
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-6Kr")
+      getlocal1
+      callpropvoid        QName(PackageNamespace(""), "_-5FX"), 1
+
+      debugline           711
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "update")
+   method
+    refid "_-2h8:HabboTracking/instance/update"
+    param QName(PackageNamespace(""), "uint")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 5
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           713
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 713
+      debug               1, "k", 1, 716
+      debugline           716
+      findpropstrict      QName(PackageNamespace("flash.utils"), "getTimer")
+      callproperty        QName(PackageNamespace("flash.utils"), "getTimer"), 0
+      convert_i
+      setlocal2
+
+      debugline           717
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-3Dn")
+      pushbyte            -1
+      greaterthan
+      dup
+      iffalse             L23
+
+      pop
+      getlocal2
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-3Dn")
+      lessthan
+L23:
+      iffalse             L45
+
+      debugline           721
+      getlocal0
+      dup
+      setlocal3
+
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-6Nl")
+      increment_i
+      setlocal            4
+
+      getlocal3
+      getlocal            4
+      setproperty         QName(PrivateNamespace("_-4eA"), "_-6Nl")
+
+      kill                4
+      kill                3
+      debugline           722
+      getlex              QName(PackageNamespace("_-12V"), "ErrorReportStorage")
+      pushstring          "Invalid time counter"
+      pushstring          "Invalid times: "
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-6Nl")
+      add
+      callpropvoid        QName(PackageNamespace(""), "_-1l7"), 2
+
+      debugline           726
+L45:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-3Dn")
+      pushbyte            -1
+      greaterthan
+      dup
+      iffalse             L60
+
+      pop
+      getlocal2
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-3Dn")
+      subtract
+      pushbyte            15
+      pushshort           1000
+      multiply
+      greaterthan
+L60:
+      iffalse             L82
+
+      debugline           730
+      getlocal0
+      dup
+      setlocal3
+
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-5Hu")
+      increment_i
+      setlocal            4
+
+      getlocal3
+      getlocal            4
+      setproperty         QName(PrivateNamespace("_-4eA"), "_-5Hu")
+
+      kill                4
+      kill                3
+      debugline           731
+      getlex              QName(PackageNamespace("_-12V"), "ErrorReportStorage")
+      pushstring          "Time leap counter"
+      pushstring          "Time leaps: "
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-5Hu")
+      add
+      callpropvoid        QName(PackageNamespace(""), "_-1l7"), 2
+
+      debugline           735
+L82:
+      getlocal0
+      getlocal2
+      initproperty        QName(PrivateNamespace("_-4eA"), "_-3Dn")
+
+      debugline           737
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-6Vu")
+      pushnull
+      ifeq                L98
+
+      debugline           738
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-6Vu")
+      getlocal1
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-3Dn")
+      callpropvoid        QName(PackageNamespace(""), "update"), 2
+
+      debugline           741
+L98:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-1Bt")
+      pushnull
+      ifeq                L110
+
+      debugline           742
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-1Bt")
+      getlocal1
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-3Dn")
+      callpropvoid        QName(PackageNamespace(""), "update"), 2
+
+      debugline           745
+L110:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-4MO")
+      pushnull
+      ifeq                L122
+
+      debugline           746
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-4MO")
+      getlocal1
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-3Dn")
+      callpropvoid        QName(PackageNamespace(""), "_-0pq"), 2
+
+      debugline           749
+L122:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-6Kr")
+      pushnull
+      ifeq                L133
+
+      debugline           750
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-6Kr")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-3Dn")
+      callpropvoid        QName(PackageNamespace(""), "update"), 1
+
+      debugline           752
+L133:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "communication")
+   method
+    refid "_-2h8:HabboTracking/instance/communication/getter"
+    returns QName(PackageNamespace("_-5Pr"), "_-2rB")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           754
+      getlocal0
+      pushscope
+
+      debugline           755
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-25l")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "send")
+   method
+    refid "_-2h8:HabboTracking/instance/send"
+    param QName(PackageNamespace("_-5YP"), "_-1FO")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           758
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 758
+      debugline           759
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-25l")
+      pushnull
+      equals
+      not
+      dup
+      iffalse             L20
+
+      pop
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-25l")
+      getproperty         QName(Namespace("_-7I"), "connection")
+      pushnull
+      equals
+      not
+L20:
+      dup
+      iffalse             L28
+
+      pop
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-25l")
+      getproperty         QName(Namespace("_-7I"), "connection")
+      getproperty         QName(Namespace("_-1p"), "connected")
+      convert_b
+L28:
+      iffalse             L36
+
+      debugline           760
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4eA"), "_-25l")
+      getproperty         QName(Namespace("_-7I"), "connection")
+      getlocal1
+      callpropvoid        QName(Namespace("_-1p"), "send"), 1
+
+      debugline           762
+L36:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-2h8:HabboTracking/class/init"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 4
+   maxscopedepth 5
+   code
+    getlocal0
+    pushscope
+
+    debug               1, "k", 0, 53
+    findproperty        QName(PrivateNamespace("_-4eA"), "_-3bZ")
+    pushbyte            11
+    initproperty        QName(PrivateNamespace("_-4eA"), "_-3bZ")
+
+    debug               1, "k", 1, 80
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait const QName(PrivateNamespace("_-4eA"), "_-3bZ") slotid 1 type QName(PackageNamespace(""), "uint") value Integer(11) end
+ trait method QName(PackageNamespace(""), "getInstance") flag FINAL dispid 3
+  method
+   refid "_-2h8:HabboTracking/class/getInstance"
+   returns QName(PackageNamespace("_-2h8"), "HabboTracking")
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     debugfile           "k"
+     debugline           76
+     getlocal0
+     pushscope
+
+     debugline           77
+     getlex              QName(PrivateNamespace("_-4eA"), "_-0ZW")
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+ trait slot QName(PrivateNamespace("_-4eA"), "_-0ZW") slotid 2 type QName(PackageNamespace("_-2h8"), "HabboTracking") end
+end ; class

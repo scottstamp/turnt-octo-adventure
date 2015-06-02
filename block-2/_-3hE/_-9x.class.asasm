@@ -1,0 +1,192 @@
+class
+ refid "_-3hE:_-9x"
+ instance QName(PackageNamespace("_-3hE"), "_-9x")
+  extends QName(PackageNamespace(""), "Object")
+  implements Multiname("_-6MY", [PackageNamespace("_-3hE")])
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-qA")
+  iinit
+   refid "_-3hE:_-9x/instance/init"
+   param QName(PackageNamespace("_-3hE"), "IssueManager")
+   param QName(PackageNamespace("_-3hE"), "_-3oG")
+   param QName(PackageNamespace("_-1rh"), "IWindowContainer")
+   body
+    maxstack 6
+    localcount 5
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     debugfile           "k"
+     debugline           18
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 18
+     debug               1, "k", 1, 18
+     debug               1, "k", 2, 18
+     debugline           18
+     getlocal0
+     constructsuper      0
+
+     debug               1, "k", 3, 27
+     debugline           20
+     getlocal0
+     getlocal1
+     initproperty        QName(PrivateNamespace("_-qA"), "_-2C-")
+
+     debugline           21
+     getlocal0
+     getlocal2
+     initproperty        QName(PrivateNamespace("_-qA"), "_-0Lu")
+
+     debugline           23
+     getlocal0
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-qA"), "_-0Lu")
+     pushstring          "picked_issues_xml"
+     callproperty        QName(PackageNamespace(""), "createWindow"), 1
+     getlex              QName(PackageNamespace("_-1rh"), "IWindowContainer")
+     astypelate
+     initproperty        QName(PrivateNamespace("_-qA"), "_-04A")
+
+     debugline           25
+     getlocal3
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-qA"), "_-04A")
+     callpropvoid        QName(Namespace("_-0zV"), "addChild"), 1
+
+     debugline           27
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-qA"), "_-04A")
+     pushstring          "issue_list"
+     callproperty        QName(Namespace("_-0zV"), "findChildByName"), 1
+     getlex              QName(PackageNamespace("_-3yU"), "IItemListWindow")
+     astypelate
+     coerce              QName(PackageNamespace("_-3yU"), "IItemListWindow")
+     setlocal            4
+
+     debugline           29
+     getlocal0
+     findpropstrict      QName(PackageNamespace("_-3hE"), "_-4tT")
+     getlocal1
+     getlocal2
+     getlocal            4
+     pushstring          "picked_issues_list_item_xml"
+     constructprop       QName(PackageNamespace("_-3hE"), "_-4tT"), 4
+     initproperty        QName(PrivateNamespace("_-qA"), "_-6Dp")
+
+     debugline           31
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-qA"), "_-2C-") type QName(PackageNamespace("_-3hE"), "IssueManager") end
+  trait slot QName(PrivateNamespace("_-qA"), "_-0Lu") type QName(PackageNamespace("_-3hE"), "_-3oG") end
+  trait slot QName(PrivateNamespace("_-qA"), "_-04A") type QName(PackageNamespace("_-1rh"), "IWindowContainer") end
+  trait slot QName(PrivateNamespace("_-qA"), "_-6Dp") type QName(PackageNamespace("_-3hE"), "_-4tT") end
+  trait getter QName(PackageNamespace(""), "view")
+   method
+    refid "_-3hE:_-9x/instance/view/getter"
+    returns QName(PackageNamespace("_-1rh"), "IWindowContainer")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           16
+      getlocal0
+      pushscope
+
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-qA"), "_-04A")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait setter QName(PackageNamespace(""), "visible")
+   method
+    refid "_-3hE:_-9x/instance/visible/setter"
+    param QName(PackageNamespace(""), "Boolean")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           33
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 33
+      debugline           34
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-qA"), "_-04A")
+      getlocal1
+      setproperty         QName(Namespace("_-6Dt"), "visible")
+
+      debugline           35
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "update")
+   method
+    refid "_-3hE:_-9x/instance/update"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           37
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 39
+      debugline           39
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-qA"), "_-2C-")
+      getlex              QName(PackageNamespace("_-3hE"), "IssueManager")
+      getproperty         QName(PackageNamespace(""), "_-nC")
+      callproperty        QName(PackageNamespace(""), "_-0cY"), 1
+      coerce              QName(PackageNamespace(""), "Array")
+      setlocal1
+
+      debugline           40
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-qA"), "_-6Dp")
+      getlocal1
+      callpropvoid        QName(PackageNamespace(""), "update"), 1
+
+      debugline           41
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-3hE:_-9x/class/init"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

@@ -1,0 +1,225 @@
+class
+ refid "_-5-S:_-2Rt"
+ instance QName(PackageNamespace("_-5-S"), "_-2Rt")
+  extends QName(PackageNamespace("_-5-S"), "WindowEvent")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-4E9")
+  iinit
+   refid "_-5-S:_-2Rt/instance/init"
+   body
+    maxstack 2
+    localcount 1
+    initscopedepth 5
+    maxscopedepth 6
+    code
+     debugfile           "k"
+     debugline           42
+     getlocal0
+     pushscope
+
+     debugline           42
+     getlocal0
+     constructsuper      0
+
+     debugline           44
+     findproperty        QName(ProtectedNamespace("_-2Ry"), "_-6Q2")
+     getlex              QName(PackageNamespace(""), "_-0C5")
+     initproperty        QName(ProtectedNamespace("_-2Ry"), "_-6Q2")
+
+     debugline           45
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait getter QName(PackageNamespace(""), "link")
+   method
+    refid "_-5-S:_-2Rt/instance/link/getter"
+    returns QName(PackageNamespace(""), "String")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           11
+      getlocal0
+      pushscope
+
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4E9"), "_-38D")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait slot QName(PrivateNamespace("_-4E9"), "_-38D") type QName(PackageNamespace(""), "String") end
+  trait method QName(PackageNamespace(""), "clone") flag OVERRIDE
+   method
+    refid "_-5-S:_-2Rt/instance/clone"
+    returns QName(PackageNamespace("_-5-S"), "WindowEvent")
+    body
+     maxstack 4
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           51
+      getlocal0
+      pushscope
+
+      debugline           53
+      findpropstrict      QName(PackageNamespace(""), "_-10C")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4E9"), "_-38D")
+      getlex              QName(PackageNamespace(""), "window")
+      getlex              QName(PackageNamespace(""), "_-6UB")
+      callproperty        QName(PackageNamespace(""), "_-10C"), 3
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "toString") flag OVERRIDE
+   method
+    refid "_-5-S:_-2Rt/instance/toString"
+    returns QName(PackageNamespace(""), "String")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           60
+      getlocal0
+      pushscope
+
+      pushstring          "WindowLinkEvent { type: "
+      debugline           62
+      getlex              QName(ProtectedNamespace("_-2Ry"), "_-6Q2")
+      add
+      pushstring          " link: "
+      add
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "link")
+      add
+      pushstring          " cancelable: "
+      add
+      getlex              QName(ProtectedNamespace("_-2Ry"), "_-6QL")
+      add
+      pushstring          " window: "
+      add
+      getlex              QName(ProtectedNamespace("_-2Ry"), "_-04A")
+      add
+      pushstring          " }"
+      add
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-5-S:_-2Rt/class/init"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 4
+   maxscopedepth 5
+   code
+    getlocal0
+    pushscope
+
+    debug               1, "k", 0, 9
+    findproperty        QName(PackageNamespace(""), "_-0C5")
+    pushstring          "WE_LINK"
+    initproperty        QName(PackageNamespace(""), "_-0C5")
+
+    debug               1, "k", 1, 16
+    findproperty        QName(PrivateNamespace("_-4E9"), "_-5m6")
+    newarray            0
+    initproperty        QName(PrivateNamespace("_-4E9"), "_-5m6")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait const QName(PackageNamespace(""), "_-0C5") slotid 1 type QName(PackageNamespace(""), "String") value Utf8("WE_LINK") end
+ trait const QName(PrivateNamespace("_-4E9"), "_-5m6") slotid 2 type QName(PackageNamespace(""), "Array") end
+ trait method QName(PackageNamespace(""), "_-10C") flag FINAL dispid 3
+  method
+   refid "_-5-S:_-2Rt/class/_-10C"
+   param QName(PackageNamespace(""), "String")
+   param QName(PackageNamespace("_-1rh"), "IWindow")
+   param QName(PackageNamespace("_-1rh"), "IWindow")
+   returns QName(PackageNamespace("_-5-S"), "WindowEvent")
+   body
+    maxstack 2
+    localcount 5
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     debugfile           "k"
+     debugline           25
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 25
+     debug               1, "k", 1, 25
+     debug               1, "k", 2, 25
+     debug               1, "k", 3, 27
+     debugline           27
+     getlex              QName(PrivateNamespace("_-4E9"), "_-5m6")
+     getproperty         QName(PackageNamespace(""), "length")
+     pushbyte            0
+     ifngt               L17
+
+     getlex              QName(PrivateNamespace("_-4E9"), "_-5m6")
+     callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "pop"), 0
+     coerce              QName(PackageNamespace("_-5-S"), "_-2Rt")
+     jump                L20
+
+L17:
+     getlocal0
+     construct           0
+     coerce              QName(PackageNamespace("_-5-S"), "_-2Rt")
+L20:
+     coerce              QName(PackageNamespace("_-5-S"), "_-2Rt")
+     setlocal            4
+
+     debugline           29
+     getlocal            4
+     getlocal1
+     setproperty         QName(PrivateNamespace("_-4E9"), "_-38D")
+
+     debugline           30
+     getlocal            4
+     getlocal2
+     setproperty         QName(ProtectedNamespace("_-2Ry"), "_-04A")
+
+     debugline           31
+     getlocal            4
+     getlocal3
+     setproperty         QName(ProtectedNamespace("_-2Ry"), "_-Lo")
+
+     debugline           32
+     getlocal            4
+     pushfalse
+     setproperty         QName(ProtectedNamespace("_-2Ry"), "_-3g1")
+
+     debugline           33
+     getlocal            4
+     getlex              QName(PrivateNamespace("_-4E9"), "_-5m6")
+     setproperty         QName(ProtectedNamespace("_-2Ry"), "_-63P")
+
+     debugline           36
+     getlocal            4
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+end ; class

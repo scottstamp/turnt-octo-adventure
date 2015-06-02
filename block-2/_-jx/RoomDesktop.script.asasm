@@ -1,0 +1,33 @@
+script ; 3269
+ sinit
+  refid "_-jx:RoomDesktop/init"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 1
+   maxscopedepth 3
+   code
+    getlocal0
+    pushscope
+
+    debugfile           "k"
+    debugline           123
+    findpropstrict      Multiname("RoomDesktop", [PackageNamespace("_-jx")])
+    getlex              QName(PackageNamespace(""), "Object")
+    pushscope
+
+    getlex              QName(PackageNamespace(""), "Object")
+    newclass            "_-jx:RoomDesktop"
+    popscope
+    initproperty        QName(PackageNamespace("_-jx"), "RoomDesktop")
+
+    debugfile           "k"
+    debugline           1
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait class QName(PackageNamespace("_-jx"), "RoomDesktop")
+  #include "RoomDesktop.class.asasm"
+ end ; trait
+end ; script

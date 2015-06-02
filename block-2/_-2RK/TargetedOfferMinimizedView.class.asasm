@@ -1,0 +1,303 @@
+class
+ refid "_-2RK:TargetedOfferMinimizedView"
+ instance QName(PackageNamespace("_-2RK"), "TargetedOfferMinimizedView")
+  extends QName(PackageNamespace("_-2RK"), "OfferView")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-6Pl")
+  iinit
+   refid "_-2RK:TargetedOfferMinimizedView/instance/init"
+   param QName(PackageNamespace("_-2RK"), "_-4dN")
+   param QName(PackageNamespace("_-3q-"), "TargetedOffer")
+   body
+    maxstack 6
+    localcount 7
+    initscopedepth 5
+    maxscopedepth 6
+    code
+     debugfile           "k"
+     debugline           20
+     getlocal0
+     pushscope
+
+     pushnull
+     coerce              QName(PackageNamespace("_-3yU"), "IItemListWindow")
+     setlocal            6
+
+     debug               1, "k", 0, 20
+     debug               1, "k", 1, 20
+     debug               1, "k", 2, 25
+     debug               1, "k", 3, 30
+     debug               1, "k", 4, 32
+     debugline           21
+     getlocal0
+     getlocal1
+     getlocal2
+     constructsuper      2
+
+     debugline           23
+     findproperty        QName(ProtectedNamespace("_-4JF"), "_-04A")
+     findpropstrict      QName(PackageNamespace("_-1rh"), "IWindowContainer")
+     getlex              QName(ProtectedNamespace("_-4JF"), "_-6SE")
+     getproperty         QName(PackageNamespace(""), "catalog")
+     getproperty         QName(PackageNamespace(""), "windowManager")
+     findpropstrict      QName(PackageNamespace(""), "XML")
+     getlex              QName(ProtectedNamespace("_-4JF"), "_-6SE")
+     getproperty         QName(PackageNamespace(""), "catalog")
+     getproperty         QName(PackageNamespace(""), "assets")
+     pushstring          "targeted_offer_minimized_xml"
+     callproperty        QName(Namespace("_-6V0"), "getAssetByName"), 1
+     getproperty         QName(Namespace("_-6LB"), "content")
+     callproperty        QName(PackageNamespace(""), "XML"), 1
+     callproperty        Multiname("buildFromXML", [PrivateNamespace("_-6Pl"), PackageNamespace(""), PrivateNamespace("TargetedOfferMinimizedView.as$3189"), PackageNamespace("_-2RK"), PackageInternalNs("_-2RK"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-6Pl"), StaticProtectedNs("_-6Pl"), StaticProtectedNs("_-4JF")]), 1
+     callproperty        QName(PackageNamespace("_-1rh"), "IWindowContainer"), 1
+     initproperty        QName(ProtectedNamespace("_-4JF"), "_-04A")
+
+     debugline           25
+     findpropstrict      QName(PackageNamespace("_-3yU"), "ITextWindow")
+     getlex              QName(ProtectedNamespace("_-4JF"), "_-04A")
+     pushstring          "txt_title"
+     callproperty        QName(Namespace("_-0zV"), "findChildByName"), 1
+     callproperty        QName(PackageNamespace("_-3yU"), "ITextWindow"), 1
+     coerce              QName(PackageNamespace("_-3yU"), "ITextWindow")
+     setlocal3
+
+     debugline           26
+     getlocal3
+     iffalse             L53
+
+     debugline           27
+     getlocal3
+     findpropstrict      QName(ProtectedNamespace("_-4JF"), "getLocalization")
+     getlocal2
+     getproperty         QName(PackageNamespace(""), "title")
+     callproperty        QName(ProtectedNamespace("_-4JF"), "getLocalization"), 1
+     setproperty         QName(Namespace("_-4Mp"), "text")
+
+     debugline           30
+L53:
+     getlex              QName(ProtectedNamespace("_-4JF"), "_-6SE")
+     getproperty         QName(PackageNamespace(""), "catalog")
+     getlex              QName(PackageNamespace("_-6Sg"), "_-3lI")
+     astypelate
+     pushstring          "image.library.url"
+     callproperty        QName(Namespace("_-aX"), "getProperty"), 1
+     coerce_s
+     setlocal            4
+
+     debugline           32
+     getlocal2
+     getproperty         QName(PackageNamespace(""), "_-yg")
+     convert_b
+     dup
+     iffalse             L73
+
+     pop
+     getlocal2
+     getproperty         QName(PackageNamespace(""), "_-yg")
+     getproperty         QName(PackageNamespace(""), "length")
+     pushbyte            0
+     greaterthan
+L73:
+     iffalse             L78
+
+     getlocal2
+     getproperty         QName(PackageNamespace(""), "_-yg")
+     coerce_s
+     jump                L80
+
+L78:
+     getlex              QName(PrivateNamespace("_-6Pl"), "_-03x")
+     coerce_s
+L80:
+     coerce_s
+     setlocal            5
+
+     debugline           33
+     findpropstrict      QName(PackageNamespace("_-3yU"), "_-an")
+     getlex              QName(ProtectedNamespace("_-4JF"), "_-04A")
+     pushstring          "bmp_icon"
+     callproperty        QName(Namespace("_-0zV"), "findChildByName"), 1
+     callproperty        QName(PackageNamespace("_-3yU"), "_-an"), 1
+     getlocal            4
+     getlocal            5
+     add
+     setproperty         QName(Namespace("_-6Yo"), "assetUri")
+
+     debugline           35
+     findproperty        QName(ProtectedNamespace("_-4JF"), "_-3Rp")
+     findpropstrict      QName(ProtectedNamespace("_-4JF"), "getLocalization")
+     pushstring          "targeted.offer.minimized.timeleft"
+     pushstring          ""
+     callproperty        QName(ProtectedNamespace("_-4JF"), "getLocalization"), 2
+     initproperty        QName(ProtectedNamespace("_-4JF"), "_-3Rp")
+
+     debugline           37
+     getlex              QName(ProtectedNamespace("_-4JF"), "_-MR")
+     getproperty         QName(PackageNamespace(""), "expirationTime")
+     pushbyte            0
+     ifne                L124
+
+     debug               1, "k", 5, 38
+     debugline           38
+     getlex              QName(ProtectedNamespace("_-4JF"), "_-04A")
+     pushstring          "itemlist"
+     callproperty        QName(Namespace("_-0zV"), "findChildByName"), 1
+     getlex              QName(PackageNamespace("_-3yU"), "IItemListWindow")
+     astypelate
+     coerce              QName(PackageNamespace("_-3yU"), "IItemListWindow")
+     setlocal            6
+
+     debugline           39
+     getlocal            6
+     iffalse             L121
+
+     getlocal            6
+     getlex              QName(ProtectedNamespace("_-4JF"), "_-04A")
+     pushstring          "cnt_time_left"
+     callproperty        QName(Namespace("_-0zV"), "findChildByName"), 1
+     callpropvoid        QName(Namespace("_-LC"), "_-2Cc"), 1
+
+L121:
+     jump                L127
+
+     ; 0xF0
+     ; 0x2B
+L124:
+     findpropstrict      QName(ProtectedNamespace("_-4JF"), "_-pd")
+     callpropvoid        QName(ProtectedNamespace("_-4JF"), "_-pd"), 0
+
+     debugline           46
+L127:
+     getlex              QName(ProtectedNamespace("_-4JF"), "_-04A")
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-6Pl"), "_-3o5")
+     setproperty         QName(Namespace("_-6Dt"), "procedure")
+
+     debugline           47
+     getlex              QName(ProtectedNamespace("_-4JF"), "_-6SE")
+     getlex              QName(ProtectedNamespace("_-4JF"), "_-04A")
+     callpropvoid        QName(PackageNamespace(""), "attachExtension"), 1
+
+     debugline           48
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait method QName(PrivateNamespace("_-6Pl"), "_-3o5")
+   method
+    refid "_-2RK:TargetedOfferMinimizedView/instance/_-2RK:TargetedOfferMinimizedView/_-3o5"
+    param QName(PackageNamespace("_-5-S"), "WindowEvent")
+    param QName(PackageNamespace("_-1rh"), "IWindow")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 4
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           50
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 50
+      debug               1, "k", 1, 50
+      debugline           51
+      getlex              QName(ProtectedNamespace("_-4JF"), "_-6SE")
+      iftrue              L12
+
+      returnvoid
+
+      ; 0xF0
+      ; 0x35
+L12:
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "type")
+      getlex              QName(PackageNamespace("_-5-S"), "WindowMouseEvent")
+      getproperty         QName(PackageNamespace(""), "DOWN")
+      ifne                L40
+
+      debugline           54
+      getlex              QName(ProtectedNamespace("_-4JF"), "_-6SE")
+      getlex              QName(ProtectedNamespace("_-4JF"), "_-MR")
+      callpropvoid        QName(PackageNamespace(""), "maximizeOffer"), 1
+
+      jump                L25
+
+L22:
+      label
+      debugline           56
+      jump                L40
+
+L25:
+      getlocal2
+      getproperty         QName(Namespace("_-6Dt"), "name")
+      setlocal3
+
+      jump                L35
+
+      ; 0x24
+      ; 0x00
+      ; 0x10
+      ; 0x02
+      ; 0x00
+      ; 0x00
+L35:
+      pushbyte            0
+      kill                3
+      lookupswitch        L22, [L22]
+
+      ; 0xF0
+      ; 0x3B
+L40:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "window")
+   method
+    refid "_-2RK:TargetedOfferMinimizedView/instance/window/getter"
+    returns QName(PackageNamespace("_-1rh"), "IWindow")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           61
+      getlocal0
+      pushscope
+
+      debugline           62
+      getlex              QName(ProtectedNamespace("_-4JF"), "_-04A")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-2RK:TargetedOfferMinimizedView/class/init"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 4
+   maxscopedepth 5
+   code
+    getlocal0
+    pushscope
+
+    debug               1, "k", 0, 18
+    findproperty        QName(PrivateNamespace("_-6Pl"), "_-03x")
+    pushstring          "targetedoffers/offer_default_icon.png"
+    initproperty        QName(PrivateNamespace("_-6Pl"), "_-03x")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait const QName(PrivateNamespace("_-6Pl"), "_-03x") slotid 1 type QName(PackageNamespace(""), "String") value Utf8("targetedoffers/offer_default_icon.png") end
+end ; class

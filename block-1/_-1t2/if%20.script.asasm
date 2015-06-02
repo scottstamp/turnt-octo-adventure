@@ -1,0 +1,28 @@
+script ; 60
+ sinit
+  refid "_-1t2:if /init"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 1
+   maxscopedepth 2
+   code
+    getlocal0
+    pushscope
+
+    debugfile           "k"
+    debugline           9
+    findpropstrict      Multiname("if ", [PackageNamespace("_-1t2")])
+    pushnull
+    newclass            "_-1t2:if "
+    initproperty        QName(PackageNamespace("_-1t2"), "if ")
+
+    debugline           1
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait class QName(PackageNamespace("_-1t2"), "if ")
+  #include "if%20.class.asasm"
+ end ; trait
+end ; script

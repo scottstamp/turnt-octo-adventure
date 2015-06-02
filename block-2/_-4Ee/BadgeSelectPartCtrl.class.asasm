@@ -1,0 +1,1324 @@
+class
+ refid "_-4Ee:BadgeSelectPartCtrl"
+ instance QName(PackageNamespace("_-4Ee"), "BadgeSelectPartCtrl")
+  extends QName(PackageNamespace(""), "Object")
+  implements Multiname("_-2jC", [PackageNamespace("_-6Sg")])
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-5g2")
+  iinit
+   refid "_-4Ee:BadgeSelectPartCtrl/instance/init"
+   param QName(PackageNamespace("_-5Tz"), "HabboGroupsManager")
+   param QName(PackageNamespace("_-4Ee"), "BadgeEditorCtrl")
+   body
+    maxstack 2
+    localcount 3
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     debugfile           "k"
+     debugline           30
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 30
+     debug               1, "k", 1, 30
+     debugline           30
+     getlocal0
+     constructsuper      0
+
+     debugline           31
+     getlocal0
+     getlocal1
+     initproperty        QName(PrivateNamespace("_-5g2"), "_-bg")
+
+     debugline           32
+     getlocal0
+     getlocal2
+     initproperty        QName(PrivateNamespace("_-5g2"), "_-5BC")
+
+     debugline           33
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait getter QName(PackageNamespace(""), "layerOptions")
+   method
+    refid "_-4Ee:BadgeSelectPartCtrl/instance/layerOptions/getter"
+    returns QName(PackageNamespace("_-4Ee"), "_-2cS")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           18
+      getlocal0
+      pushscope
+
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5g2"), "_-1fY")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait setter QName(PackageNamespace(""), "layerOptions")
+   method
+    refid "_-4Ee:BadgeSelectPartCtrl/instance/layerOptions/setter"
+    param QName(PackageNamespace("_-4Ee"), "_-2cS")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           19
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 19
+      getlocal0
+      getlocal1
+      initproperty        QName(PrivateNamespace("_-5g2"), "_-1fY")
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait slot QName(PrivateNamespace("_-5g2"), "_-bg") type QName(PackageNamespace("_-5Tz"), "HabboGroupsManager") end
+  trait slot QName(PrivateNamespace("_-5g2"), "_-5BC") type QName(PackageNamespace("_-4Ee"), "BadgeEditorCtrl") end
+  trait slot QName(PrivateNamespace("_-5g2"), "_-1ro") type TypeName(QName(PackageNamespace("__AS3__.vec"), "Vector")<QName(PackageNamespace("_-4Ee"), "BadgeEditorPartItem")>) end
+  trait slot QName(PrivateNamespace("_-5g2"), "_-6So") type TypeName(QName(PackageNamespace("__AS3__.vec"), "Vector")<QName(PackageNamespace("_-4Ee"), "BadgeEditorPartItem")>) end
+  trait slot QName(PrivateNamespace("_-5g2"), "_-1fY") type QName(PackageNamespace("_-4Ee"), "_-2cS") end
+  trait slot QName(PrivateNamespace("_-5g2"), "_-5SB") type QName(PackageNamespace("_-1rh"), "IWindowContainer") end
+  trait slot QName(PrivateNamespace("_-5g2"), "_-5Bn") type QName(PackageNamespace("_-3yU"), "IBitmapWrapperWindow") end
+  trait slot QName(PrivateNamespace("_-5g2"), "_disposed") type QName(PackageNamespace(""), "Boolean") value False() end
+  trait method QName(PackageNamespace(""), "dispose")
+   method
+    refid "_-4Ee:BadgeSelectPartCtrl/instance/dispose"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 4
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           35
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-4Ee"), "BadgeEditorPartItem")
+      setlocal1
+
+      debug               1, "k", 0, 36
+      debugline           38
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5g2"), "_disposed")
+      iftrue              L115
+
+      debugline           39
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5g2"), "_-5BC")
+      getproperty         QName(PackageNamespace(""), "_-6By")
+      pushnull
+      equals
+      not
+      dup
+      iffalse             L28
+
+      pop
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5g2"), "_-5BC")
+      getproperty         QName(PackageNamespace(""), "_-6By")
+      getproperty         QName(Namespace("_-1IN"), "numGridItems")
+      pushbyte            0
+      greaterthan
+L28:
+      iffalse             L35
+
+      debugline           40
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5g2"), "_-5BC")
+      getproperty         QName(PackageNamespace(""), "_-6By")
+      callpropvoid        QName(Namespace("_-1IN"), "destroyGridItems"), 0
+
+      debugline           42
+L35:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5g2"), "_-6So")
+      iffalse             L63
+
+      debugline           43
+      pushbyte            0
+      setlocal2
+
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5g2"), "_-6So")
+      coerce_a
+      setlocal3
+
+      jump                L54
+
+L46:
+      label
+      getlocal3
+      getlocal2
+      nextvalue
+      coerce              QName(PackageNamespace("_-4Ee"), "BadgeEditorPartItem")
+      setlocal1
+
+      getlocal1
+      callpropvoid        QName(PackageNamespace(""), "dispose"), 0
+
+L54:
+      hasnext2            3, 2
+      iftrue              L46
+
+      kill                3
+      kill                2
+      debugline           44
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-5g2"), "_-6So")
+
+      debugline           46
+L63:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5g2"), "_-1ro")
+      iffalse             L91
+
+      debugline           47
+      pushbyte            0
+      setlocal2
+
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5g2"), "_-1ro")
+      coerce_a
+      setlocal3
+
+      jump                L82
+
+L74:
+      label
+      getlocal3
+      getlocal2
+      nextvalue
+      coerce              QName(PackageNamespace("_-4Ee"), "BadgeEditorPartItem")
+      setlocal1
+
+      getlocal1
+      callpropvoid        QName(PackageNamespace(""), "dispose"), 0
+
+L82:
+      hasnext2            3, 2
+      iftrue              L74
+
+      kill                3
+      kill                2
+      debugline           48
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-5g2"), "_-1ro")
+
+      debugline           50
+L91:
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-5g2"), "_-1fY")
+
+      debugline           51
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-5g2"), "_-5Bn")
+
+      debugline           52
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-5g2"), "_-5SB")
+
+      debugline           53
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-5g2"), "_-5BC")
+
+      debugline           54
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-5g2"), "_-bg")
+
+      debugline           55
+      getlocal0
+      pushtrue
+      initproperty        QName(PrivateNamespace("_-5g2"), "_disposed")
+
+      debugline           57
+L115:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "disposed")
+   method
+    refid "_-4Ee:BadgeSelectPartCtrl/instance/disposed/getter"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           59
+      getlocal0
+      pushscope
+
+      debugline           60
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5g2"), "_disposed")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-F3")
+   method
+    refid "_-4Ee:BadgeSelectPartCtrl/instance/_-F3"
+    returns QName(PackageNamespace(""), "int")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           63
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 64
+      debugline           64
+      pushbyte            -1
+      setlocal1
+
+      debugline           65
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5g2"), "_-1fY")
+      pushnull
+      equals
+      not
+      dup
+      iffalse             L23
+
+      pop
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5g2"), "_-5BC")
+      getproperty         QName(PackageNamespace(""), "_-6By")
+      pushnull
+      equals
+      not
+L23:
+      dup
+      iffalse             L31
+
+      pop
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5g2"), "_-5SB")
+      pushnull
+      equals
+      not
+L31:
+      iffalse             L63
+
+      debugline           66
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5g2"), "_-5BC")
+      getproperty         QName(PackageNamespace(""), "_-6By")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5g2"), "_-5SB")
+      callproperty        QName(Namespace("_-1IN"), "_-XH"), 1
+      convert_i
+      setlocal1
+
+      debugline           67
+      getlocal1
+      pushbyte            -1
+      equals
+      not
+      dup
+      iffalse             L56
+
+      pop
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5g2"), "_-1fY")
+      getproperty         QName(PackageNamespace(""), "_-6S5")
+      getlex              QName(PackageNamespace("_-4Ee"), "_-4mc")
+      getproperty         QName(PackageNamespace(""), "_-3--")
+      equals
+      not
+L56:
+      iffalse             L63
+
+      debugline           68
+      getlocal1
+      decrement
+      convert_i
+      setlocal1
+
+      debugline           71
+L63:
+      getlocal1
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-2v")
+   method
+    refid "_-4Ee:BadgeSelectPartCtrl/instance/_-2v"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 7
+     localcount 4
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           74
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-66-"), "_-1SR")
+      setlocal1
+
+      debug               1, "k", 0, 75
+      debugline           76
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5g2"), "_-6So")
+      pushnull
+      equals
+      not
+      dup
+      iftrue              L22
+
+      pop
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5g2"), "_-1ro")
+      pushnull
+      equals
+      not
+L22:
+      iffalse             L27
+
+      debugline           77
+      returnvoid
+
+      ; 0xF0
+      ; 0x50
+L27:
+      getlocal0
+      getlex              Multiname("Vector", [PrivateNamespace("_-5g2"), PackageNamespace("_-4Ee"), PackageNamespace(""), PrivateNamespace("BadgeSelectPartCtrl.as$4677"), PackageInternalNs("_-4Ee"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-5g2"), StaticProtectedNs("_-5g2"), PackageNamespace("__AS3__.vec")])
+      getlex              QName(PackageNamespace("_-4Ee"), "BadgeEditorPartItem")
+      applytype           1
+      construct           0
+      initproperty        QName(PrivateNamespace("_-5g2"), "_-6So")
+
+      debugline           81
+      pushbyte            0
+      setlocal2
+
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5g2"), "_-bg")
+      getproperty         QName(PackageNamespace(""), "_-15P")
+      getproperty         QName(PackageNamespace(""), "_-4Ar")
+      coerce_a
+      setlocal3
+
+      jump                L65
+
+L43:
+      label
+      getlocal3
+      getlocal2
+      nextvalue
+      coerce              QName(PackageNamespace("_-66-"), "_-1SR")
+      setlocal1
+
+      debugline           82
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5g2"), "_-6So")
+      findpropstrict      QName(PackageNamespace("_-4Ee"), "BadgeEditorPartItem")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5g2"), "_-bg")
+      getlocal0
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5g2"), "_-6So")
+      getproperty         QName(PackageNamespace(""), "length")
+      getlex              QName(PackageNamespace("_-4Ee"), "BadgeEditorPartItem")
+      getproperty         QName(PackageNamespace(""), "_-6WL")
+      getlocal1
+      constructprop       QName(PackageNamespace("_-4Ee"), "BadgeEditorPartItem"), 5
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      debugline           81
+L65:
+      hasnext2            3, 2
+      iftrue              L43
+
+      kill                3
+      kill                2
+      debugline           85
+      getlocal0
+      getlex              Multiname("Vector", [PrivateNamespace("_-5g2"), PackageNamespace("_-4Ee"), PackageNamespace(""), PrivateNamespace("BadgeSelectPartCtrl.as$4677"), PackageInternalNs("_-4Ee"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-5g2"), StaticProtectedNs("_-5g2"), PackageNamespace("__AS3__.vec")])
+      getlex              QName(PackageNamespace("_-4Ee"), "BadgeEditorPartItem")
+      applytype           1
+      construct           0
+      initproperty        QName(PrivateNamespace("_-5g2"), "_-1ro")
+
+      debugline           86
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5g2"), "_-1ro")
+      findpropstrict      QName(PackageNamespace("_-4Ee"), "BadgeEditorPartItem")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5g2"), "_-bg")
+      getlocal0
+      pushbyte            -1
+      getlex              QName(PackageNamespace("_-4Ee"), "BadgeEditorPartItem")
+      getproperty         QName(PackageNamespace(""), "_-6-1")
+      constructprop       QName(PackageNamespace("_-4Ee"), "BadgeEditorPartItem"), 4
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      debugline           87
+      pushbyte            0
+      setlocal2
+
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5g2"), "_-bg")
+      getproperty         QName(PackageNamespace(""), "_-15P")
+      getproperty         QName(PackageNamespace(""), "_-0sf")
+      coerce_a
+      setlocal3
+
+      jump                L121
+
+L98:
+      label
+      getlocal3
+      getlocal2
+      nextvalue
+      coerce              QName(PackageNamespace("_-66-"), "_-1SR")
+      setlocal1
+
+      debugline           88
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5g2"), "_-1ro")
+      findpropstrict      QName(PackageNamespace("_-4Ee"), "BadgeEditorPartItem")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5g2"), "_-bg")
+      getlocal0
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5g2"), "_-1ro")
+      getproperty         QName(PackageNamespace(""), "length")
+      decrement
+      getlex              QName(PackageNamespace("_-4Ee"), "BadgeEditorPartItem")
+      getproperty         QName(PackageNamespace(""), "_-6-1")
+      getlocal1
+      constructprop       QName(PackageNamespace("_-4Ee"), "BadgeEditorPartItem"), 5
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      debugline           87
+L121:
+      hasnext2            3, 2
+      iftrue              L98
+
+      kill                3
+      kill                2
+      debugline           90
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-1ke")
+   method
+    refid "_-4Ee:BadgeSelectPartCtrl/instance/_-1ke"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 4
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           92
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-4Ee"), "BadgeEditorPartItem")
+      setlocal1
+
+      debug               1, "k", 0, 93
+      debugline           94
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-5g2"), "_-5SB")
+
+      debugline           95
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-5g2"), "_-5Bn")
+
+      debugline           96
+      getlocal0
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5g2"), "_-5BC")
+      getproperty         QName(PackageNamespace(""), "_-60d")
+      callproperty        QName(PackageNamespace(""), "clone"), 0
+      initproperty        QName(PrivateNamespace("_-5g2"), "_-1fY")
+
+      debugline           97
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5g2"), "_-5BC")
+      getproperty         QName(PackageNamespace(""), "_-6By")
+      callpropvoid        QName(Namespace("_-1IN"), "destroyGridItems"), 0
+
+      debugline           99
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5g2"), "_-1fY")
+      getproperty         QName(PackageNamespace(""), "_-6S5")
+      getlex              QName(PackageNamespace("_-4Ee"), "_-4mc")
+      getproperty         QName(PackageNamespace(""), "_-3--")
+      ifne                L65
+
+      debugline           100
+      pushbyte            0
+      setlocal2
+
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5g2"), "_-6So")
+      coerce_a
+      setlocal3
+
+      jump                L58
+
+L43:
+      label
+      getlocal3
+      getlocal2
+      nextvalue
+      coerce              QName(PackageNamespace("_-4Ee"), "BadgeEditorPartItem")
+      setlocal1
+
+      debugline           101
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5g2"), "_-5BC")
+      getproperty         QName(PackageNamespace(""), "_-6By")
+      getlocal0
+      getlocal1
+      callproperty        QName(PrivateNamespace("_-5g2"), "_-3te"), 1
+      callpropvoid        QName(Namespace("_-1IN"), "_-2Qw"), 1
+
+      debugline           100
+L58:
+      hasnext2            3, 2
+      iftrue              L43
+
+      kill                3
+      kill                2
+      jump                L92
+
+      ; 0xF0
+      ; 0x68
+L65:
+      pushbyte            0
+      setlocal2
+
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5g2"), "_-1ro")
+      coerce_a
+      setlocal3
+
+      jump                L87
+
+L72:
+      label
+      getlocal3
+      getlocal2
+      nextvalue
+      coerce              QName(PackageNamespace("_-4Ee"), "BadgeEditorPartItem")
+      setlocal1
+
+      debugline           105
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5g2"), "_-5BC")
+      getproperty         QName(PackageNamespace(""), "_-6By")
+      getlocal0
+      getlocal1
+      callproperty        QName(PrivateNamespace("_-5g2"), "_-3te"), 1
+      callpropvoid        QName(Namespace("_-1IN"), "_-2Qw"), 1
+
+      debugline           104
+L87:
+      hasnext2            3, 2
+      iftrue              L72
+
+      kill                3
+      kill                2
+      debugline           108
+L92:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-5g2"), "_-3te")
+   method
+    refid "_-4Ee:BadgeSelectPartCtrl/instance/_-4Ee:BadgeSelectPartCtrl/instance/_-3te"
+    param QName(PackageNamespace("_-4Ee"), "BadgeEditorPartItem")
+    returns QName(PackageNamespace("_-1rh"), "IWindowContainer")
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           110
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 110
+      debug               1, "k", 1, 111
+      debugline           111
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5g2"), "_-bg")
+      pushstring          "badge_part_item"
+      callproperty        QName(PackageNamespace(""), "getXmlWindow"), 1
+      getlex              QName(PackageNamespace("_-1rh"), "IWindowContainer")
+      astypelate
+      coerce              QName(PackageNamespace("_-1rh"), "IWindowContainer")
+      setlocal2
+
+      debugline           112
+      getlocal2
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5g2"), "_-3gY")
+      setproperty         QName(Namespace("_-6Dt"), "procedure")
+
+      debugline           113
+      getlocal0
+      getlocal2
+      getlocal1
+      callpropvoid        QName(PrivateNamespace("_-5g2"), "_-25Q"), 2
+
+      debugline           114
+      getlocal2
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-0RE")
+   method
+    refid "_-4Ee:BadgeSelectPartCtrl/instance/_-0RE"
+    param QName(PackageNamespace("_-4Ee"), "BadgeEditorPartItem")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           118
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-1rh"), "IWindowContainer")
+      setlocal2
+
+      debug               1, "k", 0, 118
+      debugline           119
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5g2"), "_-1fY")
+      pushnull
+      equals
+      not
+      dup
+      iffalse             L23
+
+      pop
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5g2"), "_-1fY")
+      getproperty         QName(PackageNamespace(""), "_-6S5")
+      getlex              QName(PackageNamespace("_-4Ee"), "_-4mc")
+      getproperty         QName(PackageNamespace(""), "_-3--")
+      equals
+L23:
+      dup
+      iffalse             L31
+
+      pop
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5g2"), "_-5BC")
+      getproperty         QName(PackageNamespace(""), "_-Is")
+      getproperty         QName(Namespace("_-6Dt"), "visible")
+      convert_b
+L31:
+      iffalse             L50
+
+      debug               1, "k", 1, 120
+      debugline           120
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5g2"), "_-5BC")
+      getproperty         QName(PackageNamespace(""), "_-6By")
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "_-2Jt")
+      callproperty        QName(Namespace("_-1IN"), "_-1aY"), 1
+      getlex              QName(PackageNamespace("_-1rh"), "IWindowContainer")
+      astypelate
+      coerce              QName(PackageNamespace("_-1rh"), "IWindowContainer")
+      setlocal2
+
+      debugline           121
+      getlocal0
+      getlocal2
+      getlocal1
+      callpropvoid        QName(PrivateNamespace("_-5g2"), "_-25Q"), 2
+
+      debugline           123
+L50:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-1iu")
+   method
+    refid "_-4Ee:BadgeSelectPartCtrl/instance/_-1iu"
+    param QName(PackageNamespace("_-4Ee"), "BadgeEditorPartItem")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           125
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-1rh"), "IWindowContainer")
+      setlocal2
+
+      debug               1, "k", 0, 125
+      debugline           126
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5g2"), "_-1fY")
+      pushnull
+      equals
+      not
+      dup
+      iffalse             L24
+
+      pop
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5g2"), "_-1fY")
+      getproperty         QName(PackageNamespace(""), "_-6S5")
+      getlex              QName(PackageNamespace("_-4Ee"), "_-4mc")
+      getproperty         QName(PackageNamespace(""), "_-3--")
+      equals
+      not
+L24:
+      dup
+      iffalse             L32
+
+      pop
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5g2"), "_-5BC")
+      getproperty         QName(PackageNamespace(""), "_-Is")
+      getproperty         QName(Namespace("_-6Dt"), "visible")
+      convert_b
+L32:
+      iffalse             L53
+
+      debug               1, "k", 1, 127
+      debugline           127
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5g2"), "_-5BC")
+      getproperty         QName(PackageNamespace(""), "_-6By")
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "_-2Jt")
+      pushbyte            1
+      add
+      callproperty        QName(Namespace("_-1IN"), "_-1aY"), 1
+      getlex              QName(PackageNamespace("_-1rh"), "IWindowContainer")
+      astypelate
+      coerce              QName(PackageNamespace("_-1rh"), "IWindowContainer")
+      setlocal2
+
+      debugline           128
+      getlocal0
+      getlocal2
+      getlocal1
+      callpropvoid        QName(PrivateNamespace("_-5g2"), "_-25Q"), 2
+
+      debugline           130
+L53:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-5g2"), "_-25Q")
+   method
+    refid "_-4Ee:BadgeSelectPartCtrl/instance/_-4Ee:BadgeSelectPartCtrl/instance/_-25Q"
+    param QName(PackageNamespace("_-1rh"), "IWindowContainer")
+    param QName(PackageNamespace("_-4Ee"), "BadgeEditorPartItem")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 6
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           132
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-3yU"), "IBitmapWrapperWindow")
+      setlocal            5
+
+      debug               1, "k", 0, 132
+      debug               1, "k", 1, 132
+      debug               1, "k", 2, 133
+      debug               1, "k", 3, 140
+      debugline           133
+      getlocal2
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5g2"), "_-1fY")
+      callproperty        QName(PackageNamespace(""), "getComposite"), 1
+      coerce              QName(PackageNamespace("flash.display"), "BitmapData")
+      setlocal3
+
+      debugline           134
+      getlocal3
+      pushnull
+      ifeq                L50
+
+      debug               1, "k", 4, 135
+      debugline           135
+      getlocal1
+      pushstring          "part"
+      callproperty        QName(Namespace("_-0zV"), "findChildByName"), 1
+      getlex              QName(PackageNamespace("_-3yU"), "IBitmapWrapperWindow")
+      astypelate
+      coerce              QName(PackageNamespace("_-3yU"), "IBitmapWrapperWindow")
+      setlocal            5
+
+      debugline           136
+      getlocal            5
+      findpropstrict      QName(PackageNamespace("flash.display"), "BitmapData")
+      getlocal3
+      getproperty         QName(PackageNamespace(""), "width")
+      getlocal3
+      getproperty         QName(PackageNamespace(""), "height")
+      constructprop       QName(PackageNamespace("flash.display"), "BitmapData"), 2
+      setproperty         QName(Namespace("_-E9"), "bitmap")
+
+      debugline           137
+      getlocal            5
+      getproperty         QName(Namespace("_-E9"), "bitmap")
+      getlocal3
+      getlocal3
+      getproperty         QName(PackageNamespace(""), "rect")
+      findpropstrict      QName(PackageNamespace("flash.geom"), "Point")
+      constructprop       QName(PackageNamespace("flash.geom"), "Point"), 0
+      callpropvoid        QName(PackageNamespace(""), "copyPixels"), 3
+
+      debugline           140
+L50:
+      getlocal1
+      pushstring          "selected"
+      callproperty        QName(Namespace("_-0zV"), "findChildByName"), 1
+      getlex              QName(PackageNamespace("_-3yU"), "IBitmapWrapperWindow")
+      astypelate
+      coerce              QName(PackageNamespace("_-3yU"), "IBitmapWrapperWindow")
+      setlocal            4
+
+      debugline           141
+      getlocal            4
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5g2"), "_-bg")
+      pushstring          "badge_part_picker"
+      callproperty        QName(PackageNamespace(""), "_-1bA"), 1
+      setproperty         QName(Namespace("_-E9"), "bitmap")
+
+      debugline           142
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "_-2Jt")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5g2"), "_-1fY")
+      getproperty         QName(PackageNamespace(""), "_-2Jt")
+      ifne                L83
+
+      debugline           143
+      getlocal            4
+      pushtrue
+      setproperty         QName(Namespace("_-6Dt"), "visible")
+
+      debugline           144
+      getlocal0
+      getlocal            4
+      initproperty        QName(PrivateNamespace("_-5g2"), "_-5Bn")
+
+      jump                L87
+
+      ; 0xF0
+      ; 0x92
+      ; 0x01
+L83:
+      getlocal            4
+      pushfalse
+      setproperty         QName(Namespace("_-6Dt"), "visible")
+
+      debugline           148
+L87:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-5g2"), "_-3gY")
+   method
+    refid "_-4Ee:BadgeSelectPartCtrl/instance/_-4Ee:BadgeSelectPartCtrl/instance/_-3gY"
+    param QName(PackageNamespace("_-5-S"), "WindowEvent")
+    param QName(PackageNamespace("_-1rh"), "IWindow")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 5
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           150
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-3yU"), "IBorderWindow")
+      setlocal3
+
+      pushnull
+      coerce              QName(PackageNamespace("_-1rh"), "IWindowContainer")
+      setlocal            4
+
+      debug               1, "k", 0, 150
+      debug               1, "k", 1, 150
+      debugline           151
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "type")
+      getlex              QName(PackageNamespace("_-5-S"), "WindowMouseEvent")
+      getproperty         QName(PackageNamespace(""), "_-5Ek")
+      ifne                L86
+
+      debugline           152
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5g2"), "_-5SB")
+      getlocal2
+      ifeq                L86
+
+      debug               1, "k", 2, 153
+      debugline           154
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5g2"), "_-5SB")
+      pushnull
+      ifeq                L47
+
+      debugline           155
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5g2"), "_-5SB")
+      pushstring          "background"
+      callproperty        QName(Namespace("_-0zV"), "findChildByName"), 1
+      getlex              QName(PackageNamespace("_-3yU"), "IBorderWindow")
+      astypelate
+      coerce              QName(PackageNamespace("_-3yU"), "IBorderWindow")
+      setlocal3
+
+      debugline           156
+      getlocal3
+      pushnull
+      ifeq                L47
+
+      debugline           157
+      getlocal3
+      pushint             15329761
+      setproperty         QName(Namespace("_-6Dt"), "color")
+
+      debugline           160
+L47:
+      getlocal0
+      getlocal2
+      getlex              QName(PackageNamespace("_-1rh"), "IWindowContainer")
+      astypelate
+      initproperty        QName(PrivateNamespace("_-5g2"), "_-5SB")
+
+      debugline           161
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5g2"), "_-5SB")
+      pushnull
+      ifeq                L86
+
+      debugline           162
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5g2"), "_-5SB")
+      pushstring          "background"
+      callproperty        QName(Namespace("_-0zV"), "findChildByName"), 1
+      getlex              QName(PackageNamespace("_-3yU"), "IBorderWindow")
+      astypelate
+      coerce              QName(PackageNamespace("_-3yU"), "IBorderWindow")
+      setlocal3
+
+      debugline           163
+      getlocal3
+      pushnull
+      ifeq                L75
+
+      debugline           164
+      getlocal3
+      pushint             14210761
+      setproperty         QName(Namespace("_-6Dt"), "color")
+
+      debugline           166
+L75:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5g2"), "_-1fY")
+      getlocal0
+      callproperty        QName(PackageNamespace(""), "_-F3"), 0
+      setproperty         QName(PackageNamespace(""), "_-2Jt")
+
+      debugline           167
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5g2"), "_-5BC")
+      getlocal0
+      callpropvoid        QName(PackageNamespace(""), "_-2PI"), 1
+
+      debugline           171
+L86:
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "type")
+      getlex              QName(PackageNamespace("_-5-S"), "WindowMouseEvent")
+      getproperty         QName(PackageNamespace(""), "CLICK")
+      ifne                L131
+
+      debug               1, "k", 3, 175
+      debugline           172
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5g2"), "_-5Bn")
+      pushnull
+      ifeq                L103
+
+      debugline           173
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5g2"), "_-5Bn")
+      pushfalse
+      setproperty         QName(Namespace("_-6Dt"), "visible")
+
+      debugline           175
+L103:
+      getlocal2
+      getlex              QName(PackageNamespace("_-1rh"), "IWindowContainer")
+      astypelate
+      coerce              QName(PackageNamespace("_-1rh"), "IWindowContainer")
+      setlocal            4
+
+      debugline           176
+      getlocal            4
+      pushnull
+      ifeq                L126
+
+      debugline           177
+      getlocal0
+      getlocal            4
+      pushstring          "selected"
+      callproperty        QName(Namespace("_-0zV"), "findChildByName"), 1
+      getlex              QName(PackageNamespace("_-3yU"), "IBitmapWrapperWindow")
+      astypelate
+      initproperty        QName(PrivateNamespace("_-5g2"), "_-5Bn")
+
+      debugline           178
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5g2"), "_-5Bn")
+      pushtrue
+      setproperty         QName(Namespace("_-6Dt"), "visible")
+
+      debugline           180
+L126:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5g2"), "_-5BC")
+      getlocal0
+      callpropvoid        QName(PackageNamespace(""), "_-2M3"), 1
+
+      debugline           182
+L131:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-3kC")
+   method
+    refid "_-4Ee:BadgeSelectPartCtrl/instance/_-3kC"
+    param QName(PackageNamespace("_-4Ee"), "_-2cS")
+    returns QName(PackageNamespace("flash.display"), "BitmapData")
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           184
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 184
+      debugline           185
+      getlocal1
+      pushnull
+      equals
+      dup
+      iftrue              L16
+
+      pop
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "_-2Jt")
+      pushbyte            0
+      lessthan
+L16:
+      iffalse             L23
+
+      debugline           186
+      pushnull
+      returnvalue
+
+      ; 0xF0
+      ; 0xBD
+      ; 0x01
+L23:
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "_-6S5")
+      getlex              QName(PackageNamespace("_-4Ee"), "_-4mc")
+      getproperty         QName(PackageNamespace(""), "_-3--")
+      ifne                L57
+
+      debugline           190
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5g2"), "_-6So")
+      pushnull
+      equals
+      not
+      dup
+      iffalse             L43
+
+      pop
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "_-2Jt")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5g2"), "_-6So")
+      getproperty         QName(PackageNamespace(""), "length")
+      lessthan
+L43:
+      iffalse             L53
+
+      debugline           191
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5g2"), "_-6So")
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "_-2Jt")
+      getproperty         MultinameL([PrivateNamespace("_-5g2"), PackageNamespace("_-4Ee"), PackageNamespace(""), PrivateNamespace("BadgeSelectPartCtrl.as$4677"), PackageInternalNs("_-4Ee"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-5g2"), StaticProtectedNs("_-5g2")])
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "getComposite"), 1
+      returnvalue
+
+L53:
+      jump                L88
+
+      ; 0xF0
+      ; 0xC2
+      ; 0x01
+L57:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5g2"), "_-1ro")
+      pushnull
+      equals
+      not
+      dup
+      iffalse             L73
+
+      pop
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "_-2Jt")
+      pushbyte            1
+      add
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5g2"), "_-1ro")
+      getproperty         QName(PackageNamespace(""), "length")
+      lessthan
+L73:
+      iffalse             L88
+
+      debugline           195
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5g2"), "_-1ro")
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "_-2Jt")
+      pushbyte            1
+      add
+      getproperty         MultinameL([PrivateNamespace("_-5g2"), PackageNamespace("_-4Ee"), PackageNamespace(""), PrivateNamespace("BadgeSelectPartCtrl.as$4677"), PackageInternalNs("_-4Ee"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-5g2"), StaticProtectedNs("_-5g2")])
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "getComposite"), 1
+      returnvalue
+
+      ; 0xF0
+      ; 0xC6
+      ; 0x01
+L88:
+      pushnull
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-4Ee:BadgeSelectPartCtrl/class/init"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

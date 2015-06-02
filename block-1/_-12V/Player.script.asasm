@@ -1,0 +1,33 @@
+script ; 415
+ sinit
+  refid "_-12V:Player/init"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 1
+   maxscopedepth 3
+   code
+    getlocal0
+    pushscope
+
+    debugfile           "k"
+    debugline           5
+    findpropstrict      Multiname("Player", [PackageNamespace("_-12V")])
+    getlex              QName(PackageNamespace("", "#0"), "Object")
+    pushscope
+
+    getlex              QName(PackageNamespace("", "#0"), "Object")
+    newclass            "_-12V:Player"
+    popscope
+    initproperty        QName(PackageNamespace("_-12V"), "Player")
+
+    debugfile           "k"
+    debugline           1
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait class QName(PackageNamespace("_-12V"), "Player")
+  #include "Player.class.asasm"
+ end ; trait
+end ; script

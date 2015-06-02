@@ -1,0 +1,386 @@
+class
+ refid "_-1qK:BotTalkDirectToAvatar"
+ instance QName(PackageNamespace("_-1qK"), "BotTalkDirectToAvatar")
+  extends QName(PackageNamespace("_-1qK"), "_-54t")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-QO")
+  iinit
+   refid "_-1qK:BotTalkDirectToAvatar/instance/init"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 6
+    maxscopedepth 7
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     debugfile           "k"
+     debugline           58
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait getter QName(PackageNamespace(""), "code") flag OVERRIDE
+   method
+    refid "_-1qK:BotTalkDirectToAvatar/instance/code/getter"
+    returns QName(PackageNamespace(""), "int")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           15
+      getlocal0
+      pushscope
+
+      debugline           16
+      getlex              QName(PackageNamespace("_-1qK"), "_-4VM")
+      getproperty         QName(PackageNamespace(""), "_-55z")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "requiresFurni") flag OVERRIDE
+   method
+    refid "_-1qK:BotTalkDirectToAvatar/instance/requiresFurni/getter"
+    returns QName(PackageNamespace(""), "int")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           19
+      getlocal0
+      pushscope
+
+      debugline           20
+      getlex              QName(PackageNamespace("_-6NJ"), "UserDefinedRoomEventsCtrl")
+      getproperty         QName(PackageNamespace(""), "_-5LB")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "readStringParamFromForm") flag OVERRIDE
+   method
+    refid "_-1qK:BotTalkDirectToAvatar/instance/readStringParamFromForm"
+    param QName(PackageNamespace("_-1rh"), "IWindowContainer")
+    returns QName(PackageNamespace(""), "String")
+    body
+     maxstack 3
+     localcount 4
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           23
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 23
+      debug               1, "k", 1, 24
+      debug               1, "k", 2, 25
+      debugline           24
+      getlocal0
+      getlocal1
+      pushstring          "bot_name"
+      callproperty        QName(PrivateNamespace("_-QO"), "_-5lD"), 2
+      getproperty         QName(Namespace("_-4Mp"), "text")
+      coerce_s
+      setlocal2
+
+      debugline           25
+      getlocal0
+      getlocal1
+      pushstring          "chat_message"
+      callproperty        QName(PrivateNamespace("_-QO"), "_-5lD"), 2
+      getproperty         QName(Namespace("_-4Mp"), "text")
+      coerce_s
+      setlocal3
+
+      debugline           26
+      getlocal2
+      getlex              QName(PrivateNamespace("_-QO"), "_-3EW")
+      add
+      getlocal3
+      add
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "onEditStart") flag OVERRIDE
+   method
+    refid "_-1qK:BotTalkDirectToAvatar/instance/onEditStart"
+    param QName(PackageNamespace("_-1rh"), "IWindowContainer")
+    param QName(PackageNamespace("_-6G1"), "Triggerable")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 6
+     localcount 4
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           29
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 29
+      debug               1, "k", 1, 29
+      debug               1, "k", 2, 30
+      debugline           30
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "_-1t9")
+      getlex              QName(PrivateNamespace("_-QO"), "_-3EW")
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "split"), 1
+      coerce              QName(PackageNamespace(""), "Array")
+      setlocal3
+
+      debugline           31
+      getlocal0
+      getlocal1
+      pushstring          "bot_name"
+      callproperty        QName(PrivateNamespace("_-QO"), "_-5lD"), 2
+      getlocal3
+      getproperty         QName(PackageNamespace(""), "length")
+      pushbyte            1
+      greaterequals
+      iffalse             L29
+
+      getlocal3
+      pushbyte            0
+      getproperty         MultinameL([PrivateNamespace("_-QO"), PackageNamespace("_-1qK"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("BotTalkDirectToAvatar.as$6348"), PackageInternalNs("_-1qK"), ProtectedNamespace("_-QO"), StaticProtectedNs("_-QO"), StaticProtectedNs("_-1za"), StaticProtectedNs("_-ua")])
+      coerce_s
+      jump                L30
+
+L29:
+      pushstring          ""
+L30:
+      setproperty         QName(Namespace("_-4Mp"), "text")
+
+      debugline           32
+      getlocal0
+      getlocal1
+      pushstring          "chat_message"
+      callproperty        QName(PrivateNamespace("_-QO"), "_-5lD"), 2
+      getlocal3
+      getproperty         QName(PackageNamespace(""), "length")
+      pushbyte            2
+      equals
+      iffalse             L46
+
+      getlocal3
+      pushbyte            1
+      getproperty         MultinameL([PrivateNamespace("_-QO"), PackageNamespace("_-1qK"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("BotTalkDirectToAvatar.as$6348"), PackageInternalNs("_-1qK"), ProtectedNamespace("_-QO"), StaticProtectedNs("_-QO"), StaticProtectedNs("_-1za"), StaticProtectedNs("_-ua")])
+      coerce_s
+      jump                L47
+
+L46:
+      pushstring          ""
+L47:
+      setproperty         QName(Namespace("_-4Mp"), "text")
+
+      debugline           33
+      getlocal0
+      getlocal1
+      pushstring          "type_selector"
+      callproperty        QName(PrivateNamespace("_-QO"), "_-61p"), 2
+      getlocal0
+      getlocal1
+      pushstring          "radio_"
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "_-e7")
+      pushbyte            0
+      getproperty         MultinameL([PrivateNamespace("_-QO"), PackageNamespace("_-1qK"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("BotTalkDirectToAvatar.as$6348"), PackageInternalNs("_-1qK"), ProtectedNamespace("_-QO"), StaticProtectedNs("_-QO"), StaticProtectedNs("_-1za"), StaticProtectedNs("_-ua")])
+      add
+      callproperty        QName(PrivateNamespace("_-QO"), "_-0dK"), 2
+      callpropvoid        QName(Namespace("_-yV"), "_-5ub"), 1
+
+      debugline           34
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "readIntParamsFromForm") flag OVERRIDE
+   method
+    refid "_-1qK:BotTalkDirectToAvatar/instance/readIntParamsFromForm"
+    param QName(PackageNamespace("_-1rh"), "IWindowContainer")
+    returns QName(PackageNamespace(""), "Array")
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           36
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 36
+      debugline           37
+      getlocal0
+      getlocal1
+      pushstring          "type_selector"
+      callproperty        QName(PrivateNamespace("_-QO"), "_-61p"), 2
+      callproperty        QName(Namespace("_-yV"), "_-4G0"), 0
+      getproperty         QName(Namespace("_-6Dt"), "id")
+      newarray            1
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "hasSpecialInputs") flag OVERRIDE
+   method
+    refid "_-1qK:BotTalkDirectToAvatar/instance/hasSpecialInputs/getter"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           40
+      getlocal0
+      pushscope
+
+      debugline           41
+      pushtrue
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-QO"), "_-5lD")
+   method
+    refid "_-1qK:BotTalkDirectToAvatar/instance/_-1qK:BotTalkDirectToAvatar/_-5lD"
+    param QName(PackageNamespace("_-1rh"), "IWindowContainer")
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace("_-3yU"), "ITextFieldWindow")
+    body
+     maxstack 3
+     localcount 4
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           44
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 44
+      debug               1, "k", 1, 44
+      debug               1, "k", 2, 45
+      debugline           45
+      findpropstrict      QName(PackageNamespace("_-3yU"), "ITextFieldWindow")
+      getlocal1
+      getlocal2
+      callproperty        QName(Namespace("_-0zV"), "findChildByName"), 1
+      callproperty        QName(PackageNamespace("_-3yU"), "ITextFieldWindow"), 1
+      coerce              QName(PackageNamespace("_-3yU"), "ITextFieldWindow")
+      setlocal3
+
+      debugline           46
+      getlocal3
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-QO"), "_-61p")
+   method
+    refid "_-1qK:BotTalkDirectToAvatar/instance/_-1qK:BotTalkDirectToAvatar/_-61p"
+    param QName(PackageNamespace("_-1rh"), "IWindowContainer")
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace("_-3yU"), "ISelectorWindow")
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           49
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 49
+      debug               1, "k", 1, 49
+      debugline           50
+      findpropstrict      QName(PackageNamespace("_-3yU"), "ISelectorWindow")
+      getlocal1
+      getlocal2
+      callproperty        QName(Namespace("_-0zV"), "findChildByName"), 1
+      callproperty        QName(PackageNamespace("_-3yU"), "ISelectorWindow"), 1
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-QO"), "_-0dK")
+   method
+    refid "_-1qK:BotTalkDirectToAvatar/instance/_-1qK:BotTalkDirectToAvatar/_-0dK"
+    param QName(PackageNamespace("_-1rh"), "IWindowContainer")
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace("_-3yU"), "IRadioButtonWindow")
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           53
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 53
+      debug               1, "k", 1, 53
+      debugline           54
+      findpropstrict      QName(PackageNamespace("_-3yU"), "IRadioButtonWindow")
+      getlocal1
+      getlocal2
+      callproperty        QName(Namespace("_-0zV"), "findChildByName"), 1
+      callproperty        QName(PackageNamespace("_-3yU"), "IRadioButtonWindow"), 1
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-1qK:BotTalkDirectToAvatar/class/init"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 5
+   maxscopedepth 6
+   code
+    getlocal0
+    pushscope
+
+    debug               1, "k", 0, 13
+    findproperty        QName(PrivateNamespace("_-QO"), "_-3EW")
+    pushstring          "\x09"
+    initproperty        QName(PrivateNamespace("_-QO"), "_-3EW")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait const QName(PrivateNamespace("_-QO"), "_-3EW") slotid 1 value Utf8("\x09") end
+end ; class

@@ -1,0 +1,47 @@
+script ; 5
+ sinit
+  refid "_-12V:MouseWheelEnabler/init"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 1
+   maxscopedepth 3
+   code
+    getlocal0
+    pushscope
+
+    debugfile           "k"
+    debugline           14
+    findpropstrict      Multiname("MouseWheelEnabler", [PackageNamespace("_-12V")])
+    getlex              QName(PackageNamespace("", "#0"), "Object")
+    pushscope
+
+    getlex              QName(PackageNamespace("", "#0"), "Object")
+    newclass            "_-12V:MouseWheelEnabler"
+    popscope
+    initproperty        QName(PackageNamespace("_-12V"), "MouseWheelEnabler")
+
+    debugfile           "k"
+    debugline           113
+    findpropstrict      Multiname("MouseWheelEnabler_JavaScript", [PrivateNamespace("MouseWheelEnabler.as$70")])
+    getlex              QName(PackageNamespace("", "#0"), "Object")
+    pushscope
+
+    getlex              QName(PackageNamespace("", "#0"), "Object")
+    newclass            "_-12V:MouseWheelEnabler/MouseWheelEnabler_JavaScript"
+    popscope
+    initproperty        QName(PrivateNamespace("MouseWheelEnabler.as$70"), "MouseWheelEnabler_JavaScript")
+
+    debugfile           "k"
+    debugline           1
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait class QName(PackageNamespace("_-12V"), "MouseWheelEnabler")
+  #include "MouseWheelEnabler.class.asasm"
+ end ; trait
+ trait class QName(PrivateNamespace("MouseWheelEnabler.as$70"), "MouseWheelEnabler_JavaScript")
+  #include "MouseWheelEnabler/MouseWheelEnabler_JavaScript.class.asasm"
+ end ; trait
+end ; script

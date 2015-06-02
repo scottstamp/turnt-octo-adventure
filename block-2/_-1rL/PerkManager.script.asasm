@@ -1,0 +1,33 @@
+script ; 3407
+ sinit
+  refid "_-1rL:PerkManager/init"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 1
+   maxscopedepth 3
+   code
+    getlocal0
+    pushscope
+
+    debugfile           "k"
+    debugline           10
+    findpropstrict      Multiname("PerkManager", [PackageNamespace("_-1rL")])
+    getlex              QName(PackageNamespace(""), "Object")
+    pushscope
+
+    getlex              QName(PackageNamespace(""), "Object")
+    newclass            "_-1rL:PerkManager"
+    popscope
+    initproperty        QName(PackageNamespace("_-1rL"), "PerkManager")
+
+    debugfile           "k"
+    debugline           1
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait class QName(PackageNamespace("_-1rL"), "PerkManager")
+  #include "PerkManager.class.asasm"
+ end ; trait
+end ; script

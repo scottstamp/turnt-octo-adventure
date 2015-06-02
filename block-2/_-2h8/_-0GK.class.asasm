@@ -1,0 +1,238 @@
+class
+ refid "_-2h8:_-0GK"
+ instance QName(PackageNamespace("_-2h8"), "_-0GK")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-bI")
+  iinit
+   refid "_-2h8:_-0GK/instance/init"
+   param QName(PackageNamespace("_-2h8"), "HabboTracking")
+   body
+    maxstack 2
+    localcount 2
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     debugfile           "k"
+     debugline           15
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 15
+     debugline           15
+     getlocal0
+     constructsuper      0
+
+     debugline           16
+     getlocal0
+     getlocal1
+     initproperty        QName(PrivateNamespace("_-bI"), "_-67V")
+
+     debugline           17
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-bI"), "_-1wZ") type QName(PackageNamespace(""), "int") end
+  trait slot QName(PrivateNamespace("_-bI"), "_-1-z") type QName(PackageNamespace(""), "int") end
+  trait slot QName(PrivateNamespace("_-bI"), "_-276") type QName(PackageNamespace(""), "Number") end
+  trait slot QName(PrivateNamespace("_-bI"), "_-59j") type QName(PackageNamespace(""), "int") end
+  trait slot QName(PrivateNamespace("_-bI"), "_-67V") type QName(PackageNamespace("_-2h8"), "HabboTracking") end
+  trait getter QName(PackageNamespace(""), "frameRate")
+   method
+    refid "_-2h8:_-0GK/instance/frameRate/getter"
+    returns QName(PackageNamespace(""), "int")
+    body
+     maxstack 3
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           11
+      getlocal0
+      pushscope
+
+      debugline           12
+      getlex              QName(PackageNamespace(""), "Math")
+      pushshort           1000
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-bI"), "_-276")
+      divide
+      callproperty        QName(PackageNamespace(""), "round"), 1
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-0pq")
+   method
+    refid "_-2h8:_-0GK/instance/_-0pq"
+    param QName(PackageNamespace(""), "uint")
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 6
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           19
+      getlocal0
+      pushscope
+
+      pushnan
+      setlocal3
+
+      debug               1, "k", 0, 19
+      debug               1, "k", 1, 19
+      debugline           20
+      getlocal0
+      dup
+      setlocal            4
+
+      getproperty         QName(PrivateNamespace("_-bI"), "_-1-z")
+      increment_i
+      setlocal            5
+
+      getlocal            4
+      getlocal            5
+      setproperty         QName(PrivateNamespace("_-bI"), "_-1-z")
+
+      kill                5
+      kill                4
+      debugline           24
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-bI"), "_-1-z")
+      pushbyte            1
+      ifne                L41
+
+      debugline           25
+      getlocal0
+      getlocal1
+      initproperty        QName(PrivateNamespace("_-bI"), "_-276")
+
+      debugline           26
+      getlocal0
+      getlocal2
+      initproperty        QName(PrivateNamespace("_-bI"), "_-1wZ")
+
+      jump                L64
+
+      ; 0xEF
+      ; 0x01
+      ; 0x02
+      ; 0x02
+      ; 0x1C
+      ; 0xF0
+      ; 0x1C
+L41:
+      findpropstrict      QName(PackageNamespace(""), "Number")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-bI"), "_-1-z")
+      callproperty        QName(PackageNamespace(""), "Number"), 1
+      convert_d
+      setlocal3
+
+      debugline           29
+      getlocal0
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-bI"), "_-276")
+      getlocal3
+      decrement
+      multiply
+      getlocal3
+      divide
+      findpropstrict      QName(PackageNamespace(""), "Number")
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "Number"), 1
+      getlocal3
+      divide
+      add
+      initproperty        QName(PrivateNamespace("_-bI"), "_-276")
+
+      debugline           32
+L64:
+      getlocal2
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-bI"), "_-1wZ")
+      subtract
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-bI"), "_-67V")
+      pushstring          "tracking.framerate.reportInterval.seconds"
+      pushshort           300
+      callproperty        QName(PackageNamespace(""), "getInteger"), 2
+      pushshort           1000
+      multiply
+      ifnge               L114
+
+      debugline           33
+      getlocal0
+      pushbyte            0
+      initproperty        QName(PrivateNamespace("_-bI"), "_-1-z")
+
+      debugline           34
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-bI"), "_-59j")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-bI"), "_-67V")
+      pushstring          "tracking.framerate.maximumEvents"
+      pushbyte            5
+      callproperty        QName(PackageNamespace(""), "getInteger"), 2
+      ifnlt               L114
+
+      debugline           35
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-bI"), "_-67V")
+      pushstring          "performance"
+      pushstring          "averageFramerate"
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "frameRate")
+      callpropvoid        QName(PackageNamespace(""), "trackGoogle"), 3
+
+      debugline           36
+      getlocal0
+      dup
+      setlocal            4
+
+      getproperty         QName(PrivateNamespace("_-bI"), "_-59j")
+      increment_i
+      setlocal            5
+
+      getlocal            4
+      getlocal            5
+      setproperty         QName(PrivateNamespace("_-bI"), "_-59j")
+
+      kill                5
+      kill                4
+      debugline           37
+      getlocal0
+      getlocal2
+      initproperty        QName(PrivateNamespace("_-bI"), "_-1wZ")
+
+      debugline           40
+L114:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-2h8:_-0GK/class/init"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

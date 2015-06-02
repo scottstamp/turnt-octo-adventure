@@ -1,0 +1,33 @@
+script ; 6031
+ sinit
+  refid "_-fd:RoomToolsHistory/init"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 1
+   maxscopedepth 3
+   code
+    getlocal0
+    pushscope
+
+    debugfile           "k"
+    debugline           11
+    findpropstrict      Multiname("RoomToolsHistory", [PackageNamespace("_-fd")])
+    getlex              QName(PackageNamespace(""), "Object")
+    pushscope
+
+    getlex              QName(PackageNamespace(""), "Object")
+    newclass            "_-fd:RoomToolsHistory"
+    popscope
+    initproperty        QName(PackageNamespace("_-fd"), "RoomToolsHistory")
+
+    debugfile           "k"
+    debugline           1
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait class QName(PackageNamespace("_-fd"), "RoomToolsHistory")
+  #include "RoomToolsHistory.class.asasm"
+ end ; trait
+end ; script

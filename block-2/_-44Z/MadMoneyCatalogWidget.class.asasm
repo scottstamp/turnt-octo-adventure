@@ -1,0 +1,193 @@
+class
+ refid "_-44Z:MadMoneyCatalogWidget"
+ instance QName(PackageNamespace("_-44Z"), "MadMoneyCatalogWidget")
+  extends QName(PackageNamespace("_-44Z"), "CatalogWidget")
+  implements Multiname("_-23L", [PackageNamespace("_-44Z")])
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-5cm")
+  iinit
+   refid "_-44Z:MadMoneyCatalogWidget/instance/init#0"
+   param QName(PackageNamespace("_-1rh"), "IWindowContainer")
+   body
+    maxstack 2
+    localcount 2
+    initscopedepth 5
+    maxscopedepth 6
+    code
+     debugfile           "k"
+     debugline           25
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 25
+     debugline           26
+     getlocal0
+     getlocal1
+     constructsuper      1
+
+     debugline           28
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-5cm"), "_-4zK") type QName(PackageNamespace("_-3yU"), "IButtonWindow") end
+  trait method QName(PackageNamespace(""), "dispose") flag OVERRIDE
+   method
+    refid "_-44Z:MadMoneyCatalogWidget/instance/dispose"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           33
+      getlocal0
+      pushscope
+
+      debugline           34
+      getlocal0
+      callsupervoid       QName(PackageNamespace(""), "dispose"), 0
+      debugline           36
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5cm"), "_-4zK")
+      pushnull
+      ifeq                L25
+
+      debugline           37
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5cm"), "_-4zK")
+      getlex              QName(PackageNamespace("_-5-S"), "WindowMouseEvent")
+      getproperty         QName(PackageNamespace(""), "CLICK")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5cm"), "_-0zX")
+      callpropvoid        QName(Namespace("_-6Dt"), "removeEventListener"), 2
+
+      debugline           38
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-5cm"), "_-4zK")
+
+      debugline           41
+L25:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "init") flag OVERRIDE
+   method
+    refid "_-44Z:MadMoneyCatalogWidget/instance/init#1"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 3
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           46
+      getlocal0
+      pushscope
+
+      debugline           47
+      getlocal0
+      callsuper           QName(PackageNamespace(""), "init"), 0
+      iftrue              L13
+
+      debugline           48
+      pushfalse
+      returnvalue
+
+      ; 0xF0
+      ; 0x32
+L13:
+      getlocal0
+      getlex              QName(ProtectedNamespace("_-1BS"), "_-04A")
+      pushstring          "ctlg_madmoney_button"
+      callproperty        QName(Namespace("_-0zV"), "findChildByName"), 1
+      getlex              QName(PackageNamespace("_-3yU"), "IButtonWindow")
+      astypelate
+      initproperty        QName(PrivateNamespace("_-5cm"), "_-4zK")
+
+      debugline           52
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5cm"), "_-4zK")
+      pushnull
+      ifeq                L26
+
+      debugline           56
+L26:
+      pushtrue
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-5cm"), "_-0zX")
+   method
+    refid "_-44Z:MadMoneyCatalogWidget/instance/_-44Z:MadMoneyCatalogWidget/instance/_-0zX"
+    param QName(PackageNamespace("_-5-S"), "WindowMouseEvent")
+    returns QName(PackageNamespace(""), "void")
+    flag NEED_ACTIVATION
+    body
+     maxstack 5
+     localcount 3
+     initscopedepth 6
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           63
+      getlocal0
+      pushscope
+
+      newactivation
+      dup
+      setlocal2
+
+      pushscope
+
+      debug               1, "k", 1, 63
+      getscopeobject      1
+      getlocal1
+      setslot             1
+
+      debug               1, "k", 0, 63
+      debugline           64
+      getlex              QName(PackageNamespace(""), "page")
+      getproperty         QName(Namespace("_-5W6"), "viewer")
+      getproperty         QName(Namespace("_-5tj"), "catalog")
+      getproperty         QName(Namespace("_-5qx"), "windowManager")
+      pushstring          "TODO"
+      pushstring          "Fix in MadMoneyCatalogWidget.as"
+      pushbyte            0
+      newfunction         "_-44Z:MadMoneyCatalogWidget/instance/_-44Z:MadMoneyCatalogWidget/instance/_-0zX/inline_method"
+      callpropvoid        Multiname("alert", [PrivateNamespace("_-5cm"), PackageNamespace(""), PrivateNamespace("MadMoneyCatalogWidget.as$3245"), PackageNamespace("_-44Z"), PackageInternalNs("_-44Z"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-5cm"), StaticProtectedNs("_-5cm"), StaticProtectedNs("_-1BS")]), 4
+
+      debugfile           "k"
+      debugline           67
+      returnvoid
+     end ; code
+     trait slot QName(PackageInternalNs("_-44Z"), "event") slotid 1 type QName(PackageNamespace("_-5-S"), "WindowMouseEvent") end
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-44Z:MadMoneyCatalogWidget/class/init"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 4
+   maxscopedepth 5
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

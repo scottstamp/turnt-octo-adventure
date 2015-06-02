@@ -1,0 +1,102 @@
+class
+ refid "_-1kC:_-2yd"
+ instance QName(PackageNamespace("_-1kC"), "_-2yd")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-0kK")
+  iinit
+   refid "_-1kC:_-2yd/instance/init"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     debugfile           "k"
+     debugline           14
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+ end ; instance
+ cinit
+  refid "_-1kC:_-2yd/class/init"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait method QName(PackageNamespace(""), "_-4lK") flag FINAL dispid 3
+  method
+   refid "_-1kC:_-2yd/class/_-4lK"
+   param QName(PackageNamespace("_-5le"), "_-50Q")
+   param QName(PackageNamespace("_-1rh"), "IWindow")
+   returns QName(PackageNamespace(""), "void")
+   body
+    maxstack 2
+    localcount 3
+    initscopedepth 3
+    maxscopedepth 4
+    code
+     debugfile           "k"
+     debugline           6
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 6
+     debug               1, "k", 1, 6
+     debugline           7
+     getlocal1
+     pushnull
+     equals
+     dup
+     iftrue              L16
+
+     pop
+     getlocal2
+     pushnull
+     equals
+L16:
+     iffalse             L21
+
+     debugline           8
+     returnvoid
+
+     ; 0xF0
+     ; 0x0A
+L21:
+     getlocal2
+     getlocal1
+     getproperty         QName(Namespace("_-HR"), "_-2EZ")
+     iffalse             L27
+
+     pushstring          "${catalog.purchase_confirmation.rent}"
+     jump                L28
+
+L27:
+     pushstring          "${catalog.purchase_confirmation.buy}"
+L28:
+     setproperty         QName(Namespace("_-6Dt"), "caption")
+
+     debugline           11
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+end ; class

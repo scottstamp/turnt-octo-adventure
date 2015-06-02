@@ -1,0 +1,682 @@
+class
+ refid "_-5Ri:CategoryListCtrl"
+ instance QName(PackageNamespace("_-5Ri"), "CategoryListCtrl")
+  extends QName(PackageNamespace(""), "Object")
+  implements Multiname("_-5c1", [PackageNamespace("_-1Im")])
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-4-G")
+  iinit
+   refid "_-5Ri:CategoryListCtrl/instance/init"
+   param QName(PackageNamespace("_-1Im"), "HabboNavigator")
+   body
+    maxstack 3
+    localcount 2
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     debugfile           "k"
+     debugline           29
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 29
+     debugline           29
+     getlocal0
+     constructsuper      0
+
+     debugline           30
+     getlocal0
+     getlocal1
+     initproperty        QName(PrivateNamespace("_-4-G"), "_-07t")
+
+     debugline           31
+     getlocal0
+     findpropstrict      QName(PackageNamespace("_-1Im"), "UserCountRenderer")
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-4-G"), "_-07t")
+     constructprop       QName(PackageNamespace("_-1Im"), "UserCountRenderer"), 1
+     initproperty        QName(PrivateNamespace("_-4-G"), "_-3Pi")
+
+     debugline           32
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-4-G"), "_-3Pi") type QName(PackageNamespace("_-1Im"), "UserCountRenderer") end
+  trait slot QName(PrivateNamespace("_-4-G"), "_-07t") type QName(PackageNamespace("_-1Im"), "HabboNavigator") end
+  trait slot QName(PrivateNamespace("_-4-G"), "_content") type QName(PackageNamespace("_-1rh"), "IWindowContainer") end
+  trait slot QName(PrivateNamespace("_-4-G"), "_-0aW") type QName(PackageNamespace("_-3yU"), "IItemListWindow") end
+  trait slot QName(PrivateNamespace("_-4-G"), "_-60O") type QName(PackageNamespace("_-3yU"), "IScrollbarWindow") end
+  trait method QName(PackageNamespace(""), "dispose")
+   method
+    refid "_-5Ri:CategoryListCtrl/instance/dispose"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           34
+      getlocal0
+      pushscope
+
+      debugline           35
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4-G"), "_-3Pi")
+      iffalse             L17
+
+      debugline           36
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4-G"), "_-3Pi")
+      callpropvoid        QName(PackageNamespace(""), "dispose"), 0
+
+      debugline           37
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-4-G"), "_-3Pi")
+
+      debugline           39
+L17:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "refresh")
+   method
+    refid "_-5Ri:CategoryListCtrl/instance/refresh"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 5
+     localcount 11
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           41
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-294"), "_-1LP")
+      setlocal            7
+
+      pushnull
+      coerce              QName(PackageNamespace("_-1rh"), "IWindowContainer")
+      setlocal            8
+
+      pushbyte            0
+      setlocal            9
+
+      pushbyte            0
+      setlocal            10
+
+      debug               1, "k", 0, 42
+      debug               1, "k", 1, 43
+      debug               1, "k", 2, 44
+      debug               1, "k", 3, 45
+      debug               1, "k", 4, 47
+      debug               1, "k", 5, 49
+      debugline           42
+      pushbyte            0
+      setlocal1
+
+      debugline           43
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4-G"), "_-07t")
+      getproperty         QName(PackageNamespace(""), "data")
+      getproperty         QName(PackageNamespace(""), "allCategories")
+      coerce              QName(PackageNamespace(""), "Array")
+      setlocal2
+
+      debugline           44
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4-G"), "_-07t")
+      getproperty         QName(PackageNamespace(""), "data")
+      getproperty         QName(PackageNamespace(""), "_-4n-")
+      getproperty         QName(PackageNamespace(""), "categoryToCurrentUserCountMap")
+      coerce              QName(PackageNamespace("_-12V"), "Map")
+      setlocal3
+
+      debugline           45
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4-G"), "_-07t")
+      getproperty         QName(PackageNamespace(""), "data")
+      getproperty         QName(PackageNamespace(""), "_-4n-")
+      getproperty         QName(PackageNamespace(""), "categoryToMaxUserCountMap")
+      coerce              QName(PackageNamespace("_-12V"), "Map")
+      setlocal            4
+
+      debugline           47
+      findpropstrict      QName(PackageNamespace("_-1rh"), "IWindowContainer")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4-G"), "_-0aW")
+      pushbyte            0
+      callproperty        QName(Namespace("_-LC"), "getListItemAt"), 1
+      callproperty        QName(PackageNamespace("_-1rh"), "IWindowContainer"), 1
+      coerce              QName(PackageNamespace("_-1rh"), "IWindowContainer")
+      setlocal            5
+
+      debugline           49
+      pushbyte            0
+      setlocal            6
+
+      jump                L156
+
+L59:
+      label
+      debug               1, "k", 6, 50
+      debugline           50
+      getlocal2
+      getlocal            6
+      getproperty         MultinameL([PrivateNamespace("_-4-G"), PackageNamespace(""), PrivateNamespace("CategoryListCtrl.as$3595"), PackageNamespace("_-5Ri"), PackageInternalNs("_-5Ri"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-4-G"), StaticProtectedNs("_-4-G")])
+      coerce              QName(PackageNamespace("_-294"), "_-1LP")
+      setlocal            7
+
+      debugline           51
+      getlocal            7
+      getproperty         QName(PackageNamespace(""), "visible")
+      iffalse             L155
+
+      debug               1, "k", 7, 52
+      debug               1, "k", 8, 59
+      debug               1, "k", 9, 60
+      debugline           52
+      getlocal0
+      getlocal            5
+      getlocal            6
+      callproperty        QName(PrivateNamespace("_-4-G"), "getCategoryContainer"), 2
+      coerce              QName(PackageNamespace("_-1rh"), "IWindowContainer")
+      setlocal            8
+
+      debugline           53
+      getlocal            8
+      pushnull
+      ifne                L100
+
+      debugline           54
+      getlocal0
+      getlocal            6
+      callproperty        QName(PackageNamespace(""), "_-1J9"), 1
+      coerce              QName(PackageNamespace("_-1rh"), "IWindowContainer")
+      setlocal            8
+
+      debugline           55
+      getlocal            8
+      getlocal            6
+      setproperty         QName(Namespace("_-6Dt"), "id")
+
+      debugline           56
+      getlocal            5
+      getlocal            8
+      callpropvoid        QName(Namespace("_-0zV"), "addChild"), 1
+
+      debugline           59
+L100:
+      getlocal3
+      getlocal            7
+      getproperty         QName(PackageNamespace(""), "_-2j5")
+      callproperty        QName(PackageNamespace(""), "getValue"), 1
+      convert_i
+      setlocal            9
+
+      debugline           60
+      getlocal            4
+      getlocal            7
+      getproperty         QName(PackageNamespace(""), "_-2j5")
+      callproperty        QName(PackageNamespace(""), "getValue"), 1
+      convert_i
+      setlocal            10
+
+      debugline           62
+      getlocal0
+      getlocal            8
+      getlocal            7
+      getlocal            9
+      getlocal            10
+      callpropvoid        QName(PackageNamespace(""), "_-0SQ"), 4
+
+      debugline           63
+      getlocal            8
+      getlocal1
+      setproperty         QName(Namespace("_-6Dt"), "y")
+
+      debugline           64
+      getlocal1
+      getlocal            8
+      getproperty         QName(Namespace("_-6Dt"), "height")
+      getlex              QName(PrivateNamespace("_-4-G"), "_-cA")
+      add
+      add
+      convert_i
+      setlocal1
+
+      debugline           65
+      getlocal            8
+      pushtrue
+      setproperty         QName(Namespace("_-6Dt"), "visible")
+
+      debugline           66
+      getlocal            5
+      getlex              QName(PackageNamespace("_-1Im"), "_-3TH")
+      getlocal            5
+      callproperty        QName(PackageNamespace(""), "_-22e"), 1
+      pushbyte            0
+      greaterthan
+      iffalse             L152
+
+      getlex              QName(PackageNamespace("_-1Im"), "_-3TH")
+      getlocal            5
+      callproperty        QName(PackageNamespace(""), "_-22e"), 1
+      pushbyte            5
+      add
+      convert_i
+      jump                L153
+
+L152:
+      pushbyte            0
+L153:
+      setproperty         QName(Namespace("_-6Dt"), "height")
+
+      debugline           49
+L155:
+      inclocal_i          6
+L156:
+      getlocal            6
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "length")
+      iflt                L59
+
+      debugline           70
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4-G"), "_-60O")
+      pushnull
+      ifeq                L176
+
+      debugline           71
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4-G"), "_-60O")
+      pushbyte            0
+      setproperty         QName(Namespace("_-4sa"), "scrollV")
+
+      debugline           72
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4-G"), "_-60O")
+      pushtrue
+      setproperty         QName(Namespace("_-6Dt"), "visible")
+
+      debugline           74
+L176:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-0SQ")
+   method
+    refid "_-5Ri:CategoryListCtrl/instance/_-0SQ"
+    param QName(PackageNamespace("_-1rh"), "IWindowContainer")
+    param QName(PackageNamespace("_-294"), "_-1LP")
+    param QName(PackageNamespace(""), "int")
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 7
+     localcount 5
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           76
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 76
+      debug               1, "k", 1, 76
+      debug               1, "k", 2, 76
+      debug               1, "k", 3, 76
+      debugline           77
+      getlocal1
+      pushstring          "category_name_txt"
+      callproperty        QName(Namespace("_-0zV"), "findChildByName"), 1
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "_-2pP")
+      setproperty         QName(Namespace("_-6Dt"), "caption")
+
+      debugline           78
+      getlocal1
+      pushstring          "arrow_right_icon"
+      callproperty        QName(Namespace("_-0zV"), "findChildByName"), 1
+      pushtrue
+      setproperty         QName(Namespace("_-6Dt"), "visible")
+
+      debugline           80
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4-G"), "_-3Pi")
+      getlocal            4
+      findpropstrict      QName(PackageNamespace("_-1rh"), "IWindowContainer")
+      getlocal1
+      pushstring          "enter_category_button"
+      callproperty        QName(Namespace("_-0zV"), "findChildByName"), 1
+      callproperty        QName(PackageNamespace("_-1rh"), "IWindowContainer"), 1
+      getlocal3
+      pushstring          "${navigator.usercounttooltip.users}"
+      pushshort           297
+      pushbyte            35
+      callpropvoid        QName(PackageNamespace(""), "refreshUserCount"), 6
+
+      debugline           81
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-1J9")
+   method
+    refid "_-5Ri:CategoryListCtrl/instance/_-1J9"
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace("_-1rh"), "IWindowContainer")
+    body
+     maxstack 6
+     localcount 3
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           83
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 83
+      debug               1, "k", 1, 84
+      debugline           84
+      findpropstrict      QName(PackageNamespace("_-1rh"), "IWindowContainer")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4-G"), "_-07t")
+      pushstring          "grs_category_selector"
+      callproperty        QName(PackageNamespace(""), "getXmlWindow"), 1
+      callproperty        QName(PackageNamespace("_-1rh"), "IWindowContainer"), 1
+      coerce              QName(PackageNamespace("_-1rh"), "IWindowContainer")
+      setlocal2
+
+      debugline           85
+      getlocal0
+      getlocal2
+      getlocal1
+      pushstring          "enter_category_button"
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4-G"), "_-1ea")
+      callpropvoid        QName(PrivateNamespace("_-4-G"), "_-0cc"), 4
+
+      debugline           86
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4-G"), "_-07t")
+      getlocal2
+      pushstring          "navi_room_icon"
+      pushtrue
+      pushnull
+      pushbyte            0
+      callpropvoid        QName(PackageNamespace(""), "refreshButton"), 5
+
+      debugline           87
+      getlocal2
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-4-G"), "_-1ea")
+   method
+    refid "_-5Ri:CategoryListCtrl/instance/_-5Ri:CategoryListCtrl/_-1ea"
+    param QName(PackageNamespace("_-5-S"), "WindowEvent")
+    param QName(PackageNamespace("_-1rh"), "IWindow")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 5
+     localcount 4
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           90
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-294"), "_-1LP")
+      setlocal3
+
+      debug               1, "k", 0, 90
+      debug               1, "k", 1, 90
+      debugline           91
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "type")
+      getlex              QName(PackageNamespace("_-5-S"), "WindowMouseEvent")
+      getproperty         QName(PackageNamespace(""), "CLICK")
+      ifne                L40
+
+      debug               1, "k", 2, 92
+      debugline           92
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4-G"), "_-07t")
+      getproperty         QName(PackageNamespace(""), "data")
+      getproperty         QName(PackageNamespace(""), "allCategories")
+      getlocal2
+      getproperty         QName(Namespace("_-6Dt"), "id")
+      getproperty         MultinameL([PrivateNamespace("_-4-G"), PackageNamespace(""), PrivateNamespace("CategoryListCtrl.as$3595"), PackageNamespace("_-5Ri"), PackageInternalNs("_-5Ri"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-4-G"), StaticProtectedNs("_-4-G")])
+      coerce              QName(PackageNamespace("_-294"), "_-1LP")
+      setlocal3
+
+      debugline           93
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4-G"), "_-07t")
+      getproperty         QName(PackageNamespace(""), "_-65D")
+      getlex              QName(PackageNamespace("_-3Co"), "Tabs")
+      getproperty         QName(PackageNamespace(""), "_-3Mg")
+      getlex              QName(PackageNamespace("_-3Co"), "Tabs")
+      getproperty         QName(PackageNamespace(""), "_-IQ")
+      pushstring          ""
+      getlocal3
+      getproperty         QName(PackageNamespace(""), "_-2j5")
+      add
+      callpropvoid        QName(Namespace("_-4ez"), "_-0yW"), 3
+
+      debugline           95
+L40:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-4-G"), "getCategoryContainer")
+   method
+    refid "_-5Ri:CategoryListCtrl/instance/_-5Ri:CategoryListCtrl/getCategoryContainer"
+    param QName(PackageNamespace("_-1rh"), "IWindowContainer")
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace("_-1rh"), "IWindowContainer")
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           97
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 97
+      debug               1, "k", 1, 97
+      debugline           98
+      findpropstrict      QName(PackageNamespace("_-1rh"), "IWindowContainer")
+      getlocal1
+      getlocal2
+      callproperty        QName(Namespace("_-0zV"), "getChildByID"), 1
+      callproperty        QName(PackageNamespace("_-1rh"), "IWindowContainer"), 1
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-4-G"), "_-0cc")
+   method
+    refid "_-5Ri:CategoryListCtrl/instance/_-5Ri:CategoryListCtrl/_-0cc"
+    param QName(PackageNamespace("_-1rh"), "IWindowContainer")
+    param QName(PackageNamespace(""), "int")
+    param QName(PackageNamespace(""), "String")
+    param QName(PackageNamespace(""), "Function")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 5
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           101
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 101
+      debug               1, "k", 1, 101
+      debug               1, "k", 2, 101
+      debug               1, "k", 3, 101
+      debugline           102
+      getlocal1
+      getlocal3
+      callproperty        QName(Namespace("_-0zV"), "findChildByName"), 1
+      getlocal            4
+      setproperty         QName(Namespace("_-6Dt"), "procedure")
+
+      debugline           103
+      getlocal1
+      getlocal3
+      callproperty        QName(Namespace("_-0zV"), "findChildByName"), 1
+      getlocal2
+      setproperty         QName(Namespace("_-6Dt"), "id")
+
+      debugline           104
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait setter QName(PackageNamespace(""), "content")
+   method
+    refid "_-5Ri:CategoryListCtrl/instance/content/setter"
+    param QName(PackageNamespace("_-1rh"), "IWindowContainer")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           106
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 106
+      debugline           107
+      getlocal0
+      getlocal1
+      initproperty        QName(PrivateNamespace("_-4-G"), "_content")
+
+      debugline           108
+      getlocal0
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4-G"), "_content")
+      iffalse             L22
+
+      findpropstrict      QName(PackageNamespace("_-3yU"), "IItemListWindow")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4-G"), "_content")
+      pushstring          "item_list_category"
+      callproperty        QName(Namespace("_-0zV"), "findChildByName"), 1
+      callproperty        QName(PackageNamespace("_-3yU"), "IItemListWindow"), 1
+      coerce              QName(PackageNamespace("_-3yU"), "IItemListWindow")
+      jump                L24
+
+L22:
+      pushnull
+      coerce              QName(PackageNamespace("_-3yU"), "IItemListWindow")
+L24:
+      initproperty        QName(PrivateNamespace("_-4-G"), "_-0aW")
+
+      debugline           109
+      getlocal0
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4-G"), "_content")
+      iffalse             L38
+
+      findpropstrict      QName(PackageNamespace("_-3yU"), "IScrollbarWindow")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4-G"), "_content")
+      pushstring          "scroller"
+      callproperty        QName(Namespace("_-0zV"), "findChildByName"), 1
+      callproperty        QName(PackageNamespace("_-3yU"), "IScrollbarWindow"), 1
+      coerce              QName(PackageNamespace("_-3yU"), "IScrollbarWindow")
+      jump                L40
+
+L38:
+      pushnull
+      coerce              QName(PackageNamespace("_-3yU"), "IScrollbarWindow")
+L40:
+      initproperty        QName(PrivateNamespace("_-4-G"), "_-60O")
+
+      debugline           110
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "content")
+   method
+    refid "_-5Ri:CategoryListCtrl/instance/content/getter"
+    returns QName(PackageNamespace("_-1rh"), "IWindowContainer")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           112
+      getlocal0
+      pushscope
+
+      debugline           113
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4-G"), "_content")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-5Ri:CategoryListCtrl/class/init"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    debug               1, "k", 0, 20
+    findproperty        QName(PrivateNamespace("_-4-G"), "_-cA")
+    pushbyte            5
+    initproperty        QName(PrivateNamespace("_-4-G"), "_-cA")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait const QName(PrivateNamespace("_-4-G"), "_-cA") slotid 1 type QName(PackageNamespace(""), "int") value Integer(5) end
+end ; class

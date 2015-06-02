@@ -1,0 +1,115 @@
+class
+ refid "_-1Sp:_-69c"
+ instance QName(PackageNamespace("_-1Sp"), "_-69c")
+  extends QName(PackageNamespace("_-3kP"), "AdServerConfig")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-46G")
+  iinit
+   refid "_-1Sp:_-69c/instance/init"
+   param QName(PackageNamespace(""), "Object")
+   flag HAS_OPTIONAL
+   optional Null()
+   body
+    maxstack 3
+    localcount 2
+    initscopedepth 6
+    maxscopedepth 7
+    code
+     debugfile           "k"
+     debugline           27
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 27
+     debugline           28
+     getlocal0
+     pushtrue
+     initproperty        QName(PackageNamespace(""), "oneAdPerRequest")
+
+     debugline           29
+     getlocal0
+     pushstring          "Adify"
+     getlocal1
+     constructsuper      2
+
+     debugline           30
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait getter QName(ProtectedNamespace("_-46G"), "defaultTemplate") flag OVERRIDE
+   method
+    refid "_-1Sp:_-69c/instance/_-46G:defaultTemplate/getter"
+    returns QName(PackageNamespace(""), "String")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           36
+      getlocal0
+      pushscope
+
+      pushstring          "__api-address__/ad?enc=__enc__&asId=__zone__&sf=__sf__&ct=__ct__"
+      debugline           37
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(ProtectedNamespace("_-46G"), "defaultCustomProperties") flag OVERRIDE
+   method
+    refid "_-1Sp:_-69c/instance/_-46G:defaultCustomProperties/getter"
+    returns QName(PackageNamespace("_-3kP"), "CustomProperties")
+    body
+     maxstack 7
+     localcount 1
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           40
+      getlocal0
+      pushscope
+
+      debugline           41
+      findpropstrict      QName(PackageNamespace("_-3kP"), "CustomProperties")
+      pushstring          "enc"
+      debugline           43
+      convert_s
+      pushstring          "4"
+      pushstring          "sf"
+      debugline           44
+      convert_s
+      pushstring          "0"
+      pushstring          "ct"
+      debugline           45
+      convert_s
+      pushstring          "256"
+      newobject           3
+      constructprop       QName(PackageNamespace("_-3kP"), "CustomProperties"), 1
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-1Sp:_-69c/class/init"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 5
+   maxscopedepth 6
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

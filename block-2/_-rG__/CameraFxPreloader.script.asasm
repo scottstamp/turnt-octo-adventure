@@ -1,0 +1,33 @@
+script ; 6022
+ sinit
+  refid "_-rG:CameraFxPreloader/init"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 1
+   maxscopedepth 3
+   code
+    getlocal0
+    pushscope
+
+    debugfile           "k"
+    debugline           12
+    findpropstrict      Multiname("CameraFxPreloader", [PackageNamespace("_-rG")])
+    getlex              QName(PackageNamespace(""), "Object")
+    pushscope
+
+    getlex              QName(PackageNamespace(""), "Object")
+    newclass            "_-rG:CameraFxPreloader"
+    popscope
+    initproperty        QName(PackageNamespace("_-rG"), "CameraFxPreloader")
+
+    debugfile           "k"
+    debugline           1
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait class QName(PackageNamespace("_-rG"), "CameraFxPreloader")
+  #include "CameraFxPreloader.class.asasm"
+ end ; trait
+end ; script

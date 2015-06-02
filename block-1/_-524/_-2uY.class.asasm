@@ -1,0 +1,2009 @@
+class
+ refid "_-524:_-2uY"
+ instance QName(PackageNamespace("_-524"), "_-2uY")
+  extends QName(PackageNamespace("", "#0"), "Object")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-0AR")
+  iinit
+   refid "_-524:_-2uY/instance/init"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     debugfile           "k"
+     debugline           349
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+ end ; instance
+ cinit
+  refid "_-524:_-2uY/class/init"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    debug               1, "k", 0, 7
+    findproperty        QName(PackageNamespace("", "#0"), "_-2Kv")
+    pushstring          "advertisement"
+    initproperty        QName(PackageNamespace("", "#0"), "_-2Kv")
+
+    debug               1, "k", 1, 8
+    findproperty        QName(PackageNamespace("", "#0"), "_-4TS")
+    pushstring          "openlink"
+    initproperty        QName(PackageNamespace("", "#0"), "_-4TS")
+
+    debug               1, "k", 2, 9
+    findproperty        QName(PackageNamespace("", "#0"), "_-2jL")
+    pushstring          "openroom"
+    initproperty        QName(PackageNamespace("", "#0"), "_-2jL")
+
+    debug               1, "k", 3, 11
+    findproperty        QName(PrivateNamespace("_-0AR"), "_isSpaWeb")
+    pushfalse
+    setproperty         QName(PrivateNamespace("_-0AR"), "_isSpaWeb")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait const QName(PackageNamespace("", "#0"), "_-2Kv") slotid 1 type QName(PackageNamespace("", "#0"), "String") value Utf8("advertisement") end
+ trait const QName(PackageNamespace("", "#0"), "_-4TS") slotid 2 type QName(PackageNamespace("", "#0"), "String") value Utf8("openlink") end
+ trait const QName(PackageNamespace("", "#0"), "_-2jL") slotid 3 type QName(PackageNamespace("", "#0"), "String") value Utf8("openroom") end
+ trait slot QName(PrivateNamespace("_-0AR"), "_isSpaWeb") slotid 4 type QName(PackageNamespace("", "#0"), "Boolean") value False() end
+ trait setter QName(PackageNamespace("", "#0"), "_-3Au") flag FINAL dispid 3
+  method
+   refid "_-524:_-2uY/class/_-3Au/setter"
+   param QName(PackageNamespace("", "#0"), "Boolean")
+   returns QName(PackageNamespace("", "#0"), "void")
+   body
+    maxstack 2
+    localcount 2
+    initscopedepth 3
+    maxscopedepth 4
+    code
+     debugfile           "k"
+     debugline           13
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 13
+     debugline           14
+     findproperty        QName(PrivateNamespace("_-0AR"), "_isSpaWeb")
+     getlocal1
+     setproperty         QName(PrivateNamespace("_-0AR"), "_isSpaWeb")
+
+     debugline           15
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PackageNamespace("", "#0"), "logEventLog") flag FINAL dispid 4
+  method
+   refid "_-524:_-2uY/class/logEventLog"
+   param QName(PackageNamespace("", "#0"), "String")
+   returns QName(PackageNamespace("", "#0"), "void")
+   flag NEED_ACTIVATION
+   body
+    maxstack 3
+    localcount 4
+    initscopedepth 4
+    maxscopedepth 9
+    code
+     debugfile           "k"
+     debugline           17
+     getlocal0
+     pushscope
+
+     newactivation
+     dup
+     setlocal2
+
+     pushscope
+
+     debug               1, "k", 1, 17
+     getscopeobject      1
+     getlocal1
+     setslot             1
+
+     debug               1, "k", 0, 17
+     debugline           20
+L14:
+     getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+     getproperty         QName(PackageNamespace("", "#0"), "available")
+     iffalse             L24
+
+     debugline           21
+     getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+     pushstring          "FlashExternalInterface.logEventLog"
+     getscopeobject      1
+     getslot             1
+     callpropvoid        QName(PackageNamespace("", "#0"), "call"), 2
+
+     debugline           23
+L24:
+     jump                L43
+
+L25:
+     getlocal0
+     pushscope
+
+     getlocal2
+     pushscope
+
+     newcatch            0
+     dup
+     setlocal3
+
+     dup
+     pushscope
+
+     swap
+     setslot             1
+
+     debugline           24
+     getlex              QName(PackageNamespace("", "#0"), "_-1pV")
+     pushstring          "External interface not working, failed to log event log."
+     callpropvoid        QName(PackageNamespace("", "#0"), "log"), 1
+
+     popscope
+     kill                3
+     debugline           26
+L43:
+     returnvoid
+    end ; code
+    try from L14 to L24 target L25 type QName(PackageNamespace("", "#0"), "Error") name QName(PackageNamespace("", "#0"), "e") end
+    trait slot QName(PackageInternalNs("_-524"), "data") slotid 1 type QName(PackageNamespace("", "#0"), "String") end
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PackageNamespace("", "#0"), "_-4rI") flag FINAL dispid 5
+  method
+   refid "_-524:_-2uY/class/_-4rI"
+   param QName(PackageNamespace("", "#0"), "String")
+   param QName(PackageNamespace("", "#0"), "String")
+   returns QName(PackageNamespace("", "#0"), "void")
+   flag NEED_ACTIVATION
+   flag HAS_OPTIONAL
+   optional Utf8("")
+   body
+    maxstack 4
+    localcount 5
+    initscopedepth 4
+    maxscopedepth 9
+    code
+     debugfile           "k"
+     debugline           33
+     getlocal0
+     pushscope
+
+     newactivation
+     dup
+     setlocal3
+
+     pushscope
+
+     debug               1, "k", 2, 33
+     getscopeobject      1
+     pushnull
+     coerce_s
+     setslot             4
+
+     getscopeobject      1
+     getlocal1
+     setslot             1
+
+     getscopeobject      1
+     getlocal2
+     setslot             2
+
+     debug               1, "k", 0, 33
+     debug               1, "k", 1, 33
+     debugline           36
+     getscopeobject      1
+     getslot             2
+     pushnull
+     equals
+     dup
+     iftrue              L33
+
+     pop
+     getscopeobject      1
+     getslot             2
+     pushstring          ""
+     equals
+L33:
+     iffalse             L40
+
+     debugline           37
+     getscopeobject      1
+     getlex              QName(PackageNamespace("", "#0"), "_-2Kv")
+     coerce_s
+     setslot             2
+
+     debugline           40
+L40:
+     getscopeobject      1
+     findpropstrict      QName(PackageNamespace("flash.net"), "URLRequest")
+     getscopeobject      1
+     getslot             1
+     constructprop       QName(PackageNamespace("flash.net"), "URLRequest"), 1
+     coerce              QName(PackageNamespace("flash.net"), "URLRequest")
+     setslot             3
+
+     debugline           41
+     getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+     getproperty         QName(PackageNamespace("", "#0"), "available")
+     iftrue              L61
+
+     debugline           42
+     findpropstrict      QName(PackageNamespace("flash.net"), "navigateToURL")
+     getscopeobject      1
+     getslot             3
+     getscopeobject      1
+     getslot             2
+     callpropvoid        QName(PackageNamespace("flash.net"), "navigateToURL"), 2
+
+     jump                L139
+
+     ; 0xF0
+     ; 0x2D
+L61:
+     getscopeobject      1
+     findpropstrict      QName(PackageNamespace("", "#0"), "String")
+     getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+     pushstring          "function() {return navigator.userAgent;}"
+     callproperty        QName(PackageNamespace("", "#0"), "call"), 1
+     callproperty        QName(PackageNamespace("", "#0"), "String"), 1
+     callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "toLowerCase"), 0
+     coerce_s
+     setslot             4
+
+     debugline           46
+     getscopeobject      1
+     getslot             4
+     pushstring          "firefox"
+     callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "indexOf"), 1
+     pushbyte            0
+     ifnge               L89
+
+     debugline           47
+     getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+     pushstring          "window.open"
+     getscopeobject      1
+     getslot             3
+     getproperty         QName(PackageNamespace("", "#0"), "url")
+     getscopeobject      1
+     getslot             2
+     callpropvoid        QName(PackageNamespace("", "#0"), "call"), 3
+
+     jump                L120
+
+     ; 0xF0
+     ; 0x30
+L89:
+     getscopeobject      1
+     getslot             4
+     pushstring          "msie"
+     callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "indexOf"), 1
+     pushbyte            0
+     ifnge               L113
+
+     debugline           49
+     getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+     pushstring          "function setWMWindow() {window.open('"
+     getscopeobject      1
+     getslot             3
+     getproperty         QName(PackageNamespace("", "#0"), "url")
+     add
+     pushstring          "', '"
+     add
+     getscopeobject      1
+     getslot             2
+     add
+     pushstring          "');}"
+     add
+     callpropvoid        QName(PackageNamespace("", "#0"), "call"), 1
+
+     jump                L120
+
+     ; 0xF0
+     ; 0x33
+L113:
+     findpropstrict      QName(PackageNamespace("flash.net"), "navigateToURL")
+     getscopeobject      1
+     getslot             3
+     getscopeobject      1
+     getslot             2
+     callpropvoid        QName(PackageNamespace("flash.net"), "navigateToURL"), 2
+
+     debugline           53
+L120:
+     jump                L139
+
+L121:
+     getlocal0
+     pushscope
+
+     getlocal3
+     pushscope
+
+     newcatch            0
+     dup
+     setlocal            4
+
+     dup
+     pushscope
+
+     swap
+     setslot             1
+
+     debugline           54
+     getlex              QName(PackageNamespace("", "#0"), "_-1pV")
+     pushstring          "External interface not working, failed to open web page."
+     callpropvoid        QName(PackageNamespace("", "#0"), "log"), 1
+
+     popscope
+     kill                4
+     debugline           57
+L139:
+     returnvoid
+    end ; code
+    try from L61 to L120 target L121 type QName(PackageNamespace("", "#0"), "Error") name QName(PackageNamespace("", "#0"), "e") end
+    trait slot QName(PackageInternalNs("_-524"), "url") slotid 1 type QName(PackageNamespace("", "#0"), "String") end
+    trait slot QName(PackageInternalNs("_-524"), "targetWindow") slotid 2 type QName(PackageNamespace("", "#0"), "String") value Utf8("") end
+    trait slot QName(PackageInternalNs("_-524"), "req") slotid 3 type QName(PackageNamespace("flash.net"), "URLRequest") end
+    trait slot QName(PackageInternalNs("_-524"), "strUserAgent") slotid 4 type QName(PackageNamespace("", "#0"), "String") end
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PackageNamespace("", "#0"), "openPage") flag FINAL dispid 6
+  method
+   refid "_-524:_-2uY/class/openPage"
+   param QName(PackageNamespace("", "#0"), "String")
+   returns QName(PackageNamespace("", "#0"), "void")
+   flag NEED_ACTIVATION
+   body
+    maxstack 3
+    localcount 4
+    initscopedepth 4
+    maxscopedepth 9
+    code
+     debugfile           "k"
+     debugline           63
+     getlocal0
+     pushscope
+
+     newactivation
+     dup
+     setlocal2
+
+     pushscope
+
+     debug               1, "k", 1, 63
+     getscopeobject      1
+     getlocal1
+     setslot             1
+
+     debug               1, "k", 0, 63
+     debugline           65
+L14:
+     getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+     getproperty         QName(PackageNamespace("", "#0"), "available")
+     iffalse             L26
+
+     debugline           66
+     getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+     pushstring          "FlashExternalInterface.openPage"
+     getscopeobject      1
+     getslot             1
+     callpropvoid        QName(PackageNamespace("", "#0"), "call"), 2
+
+     jump                L30
+
+     ; 0xF0
+     ; 0x46
+L26:
+     getlex              QName(PackageNamespace("", "#0"), "_-1pV")
+     pushstring          "External interface not available, openPage failed."
+     callpropvoid        QName(PackageNamespace("", "#0"), "log"), 1
+
+     debugline           72
+L30:
+     jump                L52
+
+L31:
+     getlocal0
+     pushscope
+
+     getlocal2
+     pushscope
+
+     newcatch            0
+     dup
+     setlocal3
+
+     dup
+     pushscope
+
+     swap
+     setslot             1
+
+     debugline           73
+     getlex              QName(PackageNamespace("", "#0"), "_-1pV")
+     pushstring          "Failed to open web page "
+     getscopeobject      1
+     getslot             1
+     add
+     callpropvoid        QName(PackageNamespace("", "#0"), "log"), 1
+
+     popscope
+     kill                3
+     debugline           75
+L52:
+     returnvoid
+    end ; code
+    try from L14 to L30 target L31 type QName(PackageNamespace("", "#0"), "Error") name QName(PackageNamespace("", "#0"), "e") end
+    trait slot QName(PackageInternalNs("_-524"), "pageUrl") slotid 1 type QName(PackageNamespace("", "#0"), "String") end
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PackageNamespace("", "#0"), "sendHeartBeat") flag FINAL dispid 7
+  method
+   refid "_-524:_-2uY/class/sendHeartBeat"
+   returns QName(PackageNamespace("", "#0"), "void")
+   body
+    maxstack 3
+    localcount 2
+    initscopedepth 3
+    maxscopedepth 6
+    code
+     debugfile           "k"
+     debugline           81
+     getlocal0
+     pushscope
+
+     debugline           83
+L5:
+     getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+     getproperty         QName(PackageNamespace("", "#0"), "available")
+     iffalse             L13
+
+     debugline           84
+     getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+     pushstring          "FlashExternalInterface.heartBeat"
+     callpropvoid        QName(PackageNamespace("", "#0"), "call"), 1
+
+     debugline           90
+L13:
+     jump                L26
+
+L14:
+     getlocal0
+     pushscope
+
+     newcatch            0
+     dup
+     setlocal1
+
+     dup
+     pushscope
+
+     swap
+     setslot             1
+
+     popscope
+     kill                1
+     debugline           93
+L26:
+     returnvoid
+    end ; code
+    try from L5 to L13 target L14 type QName(PackageNamespace("", "#0"), "Error") name QName(PackageNamespace("", "#0"), "e") end
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PackageNamespace("", "#0"), "openWebPageAndMinimizeClient") flag FINAL dispid 8
+  method
+   refid "_-524:_-2uY/class/openWebPageAndMinimizeClient"
+   param QName(PackageNamespace("", "#0"), "String")
+   returns QName(PackageNamespace("", "#0"), "void")
+   flag NEED_ACTIVATION
+   body
+    maxstack 3
+    localcount 4
+    initscopedepth 4
+    maxscopedepth 9
+    code
+     debugfile           "k"
+     debugline           99
+     getlocal0
+     pushscope
+
+     newactivation
+     dup
+     setlocal2
+
+     pushscope
+
+     debug               1, "k", 1, 99
+     getscopeobject      1
+     getlocal1
+     setslot             1
+
+     debug               1, "k", 0, 99
+     debugline           101
+L14:
+     getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+     getproperty         QName(PackageNamespace("", "#0"), "available")
+     iffalse             L34
+
+     debugline           102
+     getlex              QName(PrivateNamespace("_-0AR"), "_isSpaWeb")
+     iffalse             L28
+
+     debugline           103
+     findpropstrict      QName(PackageNamespace("", "#0"), "openPage")
+     getscopeobject      1
+     getslot             1
+     callpropvoid        QName(PackageNamespace("", "#0"), "openPage"), 1
+
+     jump                L34
+
+     ; 0xF0
+     ; 0x69
+L28:
+     getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+     pushstring          "FlashExternalInterface.openWebPageAndMinimizeClient"
+     getscopeobject      1
+     getslot             1
+     callpropvoid        QName(PackageNamespace("", "#0"), "call"), 2
+
+     debugline           108
+L34:
+     jump                L56
+
+L35:
+     getlocal0
+     pushscope
+
+     getlocal2
+     pushscope
+
+     newcatch            0
+     dup
+     setlocal3
+
+     dup
+     pushscope
+
+     swap
+     setslot             1
+
+     debugline           109
+     getlex              QName(PackageNamespace("", "#0"), "_-1pV")
+     pushstring          "Failed to open web page "
+     getscopeobject      1
+     getslot             1
+     add
+     callpropvoid        QName(PackageNamespace("", "#0"), "log"), 1
+
+     popscope
+     kill                3
+     debugline           111
+L56:
+     returnvoid
+    end ; code
+    try from L14 to L34 target L35 type QName(PackageNamespace("", "#0"), "Error") name QName(PackageNamespace("", "#0"), "e") end
+    trait slot QName(PackageInternalNs("_-524"), "pageUrl") slotid 1 type QName(PackageNamespace("", "#0"), "String") end
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PackageNamespace("", "#0"), "closeWebPageAndRestoreClient") flag FINAL dispid 9
+  method
+   refid "_-524:_-2uY/class/closeWebPageAndRestoreClient"
+   returns QName(PackageNamespace("", "#0"), "void")
+   flag NEED_ACTIVATION
+   body
+    maxstack 3
+    localcount 3
+    initscopedepth 4
+    maxscopedepth 9
+    code
+     debugfile           "k"
+     debugline           116
+     getlocal0
+     pushscope
+
+     newactivation
+     dup
+     setlocal1
+
+     pushscope
+
+     debug               1, "k", 0, 116
+     debugline           118
+L10:
+     getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+     getproperty         QName(PackageNamespace("", "#0"), "available")
+     iffalse             L18
+
+     debugline           119
+     getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+     pushstring          "FlashExternalInterface.closeWebPageAndRestoreClient"
+     callpropvoid        QName(PackageNamespace("", "#0"), "call"), 1
+
+     debugline           121
+L18:
+     jump                L37
+
+L19:
+     getlocal0
+     pushscope
+
+     getlocal1
+     pushscope
+
+     newcatch            0
+     dup
+     setlocal2
+
+     dup
+     pushscope
+
+     swap
+     setslot             1
+
+     debugline           122
+     getlex              QName(PackageNamespace("", "#0"), "_-1pV")
+     pushstring          "Failed to close web page and restore client!"
+     callpropvoid        QName(PackageNamespace("", "#0"), "log"), 1
+
+     popscope
+     kill                2
+     debugline           124
+L37:
+     returnvoid
+    end ; code
+    try from L10 to L18 target L19 type QName(PackageNamespace("", "#0"), "Error") name QName(PackageNamespace("", "#0"), "e") end
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PackageNamespace("", "#0"), "_-4Kj") flag FINAL dispid 10
+  method
+   refid "_-524:_-2uY/class/_-4Kj"
+   param QName(PackageNamespace("", "#0"), "String")
+   param QName(PackageNamespace("", "#0"), "String")
+   returns QName(PackageNamespace("", "#0"), "void")
+   flag NEED_ACTIVATION
+   flag HAS_OPTIONAL
+   optional Null()
+   body
+    maxstack 4
+    localcount 5
+    initscopedepth 4
+    maxscopedepth 9
+    code
+     debugfile           "k"
+     debugline           130
+     getlocal0
+     pushscope
+
+     newactivation
+     dup
+     setlocal3
+
+     pushscope
+
+     debug               1, "k", 2, 130
+     getscopeobject      1
+     getlocal1
+     setslot             1
+
+     getscopeobject      1
+     getlocal2
+     setslot             2
+
+     debug               1, "k", 0, 130
+     debug               1, "k", 1, 130
+     debugline           133
+L18:
+     getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+     getproperty         QName(PackageNamespace("", "#0"), "available")
+     iffalse             L30
+
+     debugline           134
+     getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+     pushstring          "FlashExternalInterface.openHabblet"
+     getscopeobject      1
+     getslot             1
+     getscopeobject      1
+     getslot             2
+     callpropvoid        QName(PackageNamespace("", "#0"), "call"), 3
+
+     debugline           136
+L30:
+     jump                L52
+
+L31:
+     getlocal0
+     pushscope
+
+     getlocal3
+     pushscope
+
+     newcatch            0
+     dup
+     setlocal            4
+
+     dup
+     pushscope
+
+     swap
+     setslot             1
+
+     debugline           137
+     getlex              QName(PackageNamespace("", "#0"), "_-1pV")
+     pushstring          "Failed to open Habblet "
+     getscopeobject      1
+     getslot             1
+     add
+     callpropvoid        QName(PackageNamespace("", "#0"), "log"), 1
+
+     popscope
+     kill                4
+     debugline           139
+L52:
+     returnvoid
+    end ; code
+    try from L18 to L30 target L31 type QName(PackageNamespace("", "#0"), "Error") name QName(PackageNamespace("", "#0"), "e") end
+    trait slot QName(PackageInternalNs("_-524"), "name") slotid 1 type QName(PackageNamespace("", "#0"), "String") end
+    trait slot QName(PackageInternalNs("_-524"), "param") slotid 2 type QName(PackageNamespace("", "#0"), "String") value Null() end
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PackageNamespace("", "#0"), "_-4uI") flag FINAL dispid 11
+  method
+   refid "_-524:_-2uY/class/_-4uI"
+   param QName(PackageNamespace("", "#0"), "String")
+   param QName(PackageNamespace("", "#0"), "String")
+   returns QName(PackageNamespace("", "#0"), "void")
+   flag NEED_ACTIVATION
+   flag HAS_OPTIONAL
+   optional Null()
+   body
+    maxstack 4
+    localcount 5
+    initscopedepth 4
+    maxscopedepth 9
+    code
+     debugfile           "k"
+     debugline           145
+     getlocal0
+     pushscope
+
+     newactivation
+     dup
+     setlocal3
+
+     pushscope
+
+     debug               1, "k", 2, 145
+     getscopeobject      1
+     getlocal1
+     setslot             1
+
+     getscopeobject      1
+     getlocal2
+     setslot             2
+
+     debug               1, "k", 0, 145
+     debug               1, "k", 1, 145
+     debugline           148
+L18:
+     getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+     getproperty         QName(PackageNamespace("", "#0"), "available")
+     iffalse             L30
+
+     debugline           149
+     getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+     pushstring          "FlashExternalInterface.closeHabblet"
+     getscopeobject      1
+     getslot             1
+     getscopeobject      1
+     getslot             2
+     callpropvoid        QName(PackageNamespace("", "#0"), "call"), 3
+
+     debugline           151
+L30:
+     jump                L52
+
+L31:
+     getlocal0
+     pushscope
+
+     getlocal3
+     pushscope
+
+     newcatch            0
+     dup
+     setlocal            4
+
+     dup
+     pushscope
+
+     swap
+     setslot             1
+
+     debugline           152
+     getlex              QName(PackageNamespace("", "#0"), "_-1pV")
+     pushstring          "Failed to close Habblet "
+     getscopeobject      1
+     getslot             1
+     add
+     callpropvoid        QName(PackageNamespace("", "#0"), "log"), 1
+
+     popscope
+     kill                4
+     debugline           154
+L52:
+     returnvoid
+    end ; code
+    try from L18 to L30 target L31 type QName(PackageNamespace("", "#0"), "Error") name QName(PackageNamespace("", "#0"), "e") end
+    trait slot QName(PackageInternalNs("_-524"), "name") slotid 1 type QName(PackageNamespace("", "#0"), "String") end
+    trait slot QName(PackageInternalNs("_-524"), "param") slotid 2 type QName(PackageNamespace("", "#0"), "String") value Null() end
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PackageNamespace("", "#0"), "_-5QQ") flag FINAL dispid 12
+  method
+   refid "_-524:_-2uY/class/_-5QQ"
+   param QName(PackageNamespace("", "#0"), "int")
+   param QName(PackageNamespace("", "#0"), "String")
+   returns QName(PackageNamespace("", "#0"), "void")
+   flag NEED_ACTIVATION
+   body
+    maxstack 4
+    localcount 5
+    initscopedepth 4
+    maxscopedepth 9
+    code
+     debugfile           "k"
+     debugline           156
+     getlocal0
+     pushscope
+
+     newactivation
+     dup
+     setlocal3
+
+     pushscope
+
+     debug               1, "k", 2, 156
+     getscopeobject      1
+     getlocal1
+     setslot             1
+
+     getscopeobject      1
+     getlocal2
+     setslot             2
+
+     debug               1, "k", 0, 156
+     debug               1, "k", 1, 156
+     debugline           159
+L18:
+     getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+     getproperty         QName(PackageNamespace("", "#0"), "available")
+     iffalse             L30
+
+     debugline           160
+     getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+     pushstring          "FlashExternalInterface.disconnect"
+     getscopeobject      1
+     getslot             1
+     getscopeobject      1
+     getslot             2
+     callpropvoid        QName(PackageNamespace("", "#0"), "call"), 3
+
+     debugline           162
+L30:
+     jump                L49
+
+L31:
+     getlocal0
+     pushscope
+
+     getlocal3
+     pushscope
+
+     newcatch            0
+     dup
+     setlocal            4
+
+     dup
+     pushscope
+
+     swap
+     setslot             1
+
+     debugline           163
+     getlex              QName(PackageNamespace("", "#0"), "_-1pV")
+     pushstring          "Failed to close send "
+     callpropvoid        QName(PackageNamespace("", "#0"), "log"), 1
+
+     popscope
+     kill                4
+     debugline           165
+L49:
+     returnvoid
+    end ; code
+    try from L18 to L30 target L31 type QName(PackageNamespace("", "#0"), "Error") name QName(PackageNamespace("", "#0"), "e") end
+    trait slot QName(PackageInternalNs("_-524"), "reasonCode") slotid 1 type QName(PackageNamespace("", "#0"), "int") end
+    trait slot QName(PackageInternalNs("_-524"), "reasonString") slotid 2 type QName(PackageNamespace("", "#0"), "String") end
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PackageNamespace("", "#0"), "showGame") flag FINAL dispid 13
+  method
+   refid "_-524:_-2uY/class/showGame"
+   param QName(PackageNamespace("", "#0"), "String")
+   returns QName(PackageNamespace("", "#0"), "void")
+   flag NEED_ACTIVATION
+   body
+    maxstack 3
+    localcount 4
+    initscopedepth 4
+    maxscopedepth 9
+    code
+     debugfile           "k"
+     debugline           173
+     getlocal0
+     pushscope
+
+     newactivation
+     dup
+     setlocal2
+
+     pushscope
+
+     debug               1, "k", 1, 173
+     getscopeobject      1
+     getlocal1
+     setslot             1
+
+     debug               1, "k", 0, 173
+     debugline           175
+L14:
+     getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+     getproperty         QName(PackageNamespace("", "#0"), "available")
+     iffalse             L24
+
+     debugline           176
+     getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+     pushstring          "FlashExternalGameInterface.showGame"
+     getscopeobject      1
+     getslot             1
+     callpropvoid        QName(PackageNamespace("", "#0"), "call"), 2
+
+     debugline           178
+L24:
+     jump                L46
+
+L25:
+     getlocal0
+     pushscope
+
+     getlocal2
+     pushscope
+
+     newcatch            0
+     dup
+     setlocal3
+
+     dup
+     pushscope
+
+     swap
+     setslot             1
+
+     debugline           179
+     getlex              QName(PackageNamespace("", "#0"), "_-1pV")
+     pushstring          "Failed to open game: "
+     getscopeobject      2
+     getslot             1
+     add
+     callpropvoid        QName(PackageNamespace("", "#0"), "log"), 1
+
+     popscope
+     kill                3
+     debugline           181
+L46:
+     returnvoid
+    end ; code
+    try from L14 to L24 target L25 type QName(PackageNamespace("", "#0"), "Error") name QName(PackageNamespace("", "#0"), "e") end
+    trait slot QName(PackageInternalNs("_-524"), "gameUrl") slotid 1 type QName(PackageNamespace("", "#0"), "String") end
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PackageNamespace("", "#0"), "hideGame") flag FINAL dispid 14
+  method
+   refid "_-524:_-2uY/class/hideGame"
+   returns QName(PackageNamespace("", "#0"), "void")
+   flag NEED_ACTIVATION
+   body
+    maxstack 3
+    localcount 3
+    initscopedepth 4
+    maxscopedepth 9
+    code
+     debugfile           "k"
+     debugline           188
+     getlocal0
+     pushscope
+
+     newactivation
+     dup
+     setlocal1
+
+     pushscope
+
+     debug               1, "k", 0, 188
+     debugline           190
+L10:
+     getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+     getproperty         QName(PackageNamespace("", "#0"), "available")
+     iffalse             L18
+
+     debugline           191
+     getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+     pushstring          "FlashExternalGameInterface.hideGame"
+     callpropvoid        QName(PackageNamespace("", "#0"), "call"), 1
+
+     debugline           193
+L18:
+     jump                L37
+
+L19:
+     getlocal0
+     pushscope
+
+     getlocal1
+     pushscope
+
+     newcatch            0
+     dup
+     setlocal2
+
+     dup
+     pushscope
+
+     swap
+     setslot             1
+
+     debugline           194
+     getlex              QName(PackageNamespace("", "#0"), "_-1pV")
+     pushstring          "Failed to hide game"
+     callpropvoid        QName(PackageNamespace("", "#0"), "log"), 1
+
+     popscope
+     kill                2
+     debugline           196
+L37:
+     returnvoid
+    end ; code
+    try from L10 to L18 target L19 type QName(PackageNamespace("", "#0"), "Error") name QName(PackageNamespace("", "#0"), "e") end
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PackageNamespace("", "#0"), "navigateToURL") flag FINAL dispid 15
+  method
+   refid "_-524:_-2uY/class/navigateToURL"
+   param QName(PackageNamespace("", "#0"), "String")
+   param QName(PackageNamespace("", "#0"), "String")
+   returns QName(PackageNamespace("", "#0"), "void")
+   flag HAS_OPTIONAL
+   optional Null()
+   body
+    maxstack 3
+    localcount 4
+    initscopedepth 3
+    maxscopedepth 4
+    code
+     debugfile           "k"
+     debugline           203
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 203
+     debug               1, "k", 1, 203
+     debug               1, "k", 2, 204
+     debugline           204
+     findpropstrict      QName(PackageNamespace("flash.net"), "URLRequest")
+     getlocal1
+     constructprop       QName(PackageNamespace("flash.net"), "URLRequest"), 1
+     coerce              QName(PackageNamespace("flash.net"), "URLRequest")
+     setlocal3
+
+     debugline           205
+     findpropstrict      QName(PackageNamespace("flash.net"), "navigateToURL")
+     getlocal3
+     getlocal2
+     callpropvoid        QName(PackageNamespace("flash.net"), "navigateToURL"), 2
+
+     debugline           206
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PackageNamespace("", "#0"), "_-2Mv") flag FINAL dispid 16
+  method
+   refid "_-524:_-2uY/class/_-2Mv"
+   param QName(PackageNamespace("", "#0"), "String")
+   returns QName(PackageNamespace("", "#0"), "void")
+   flag NEED_ACTIVATION
+   body
+    maxstack 4
+    localcount 4
+    initscopedepth 4
+    maxscopedepth 9
+    code
+     debugfile           "k"
+     debugline           212
+     getlocal0
+     pushscope
+
+     newactivation
+     dup
+     setlocal2
+
+     pushscope
+
+     debug               1, "k", 1, 212
+     getscopeobject      1
+     getlocal1
+     setslot             1
+
+     debug               1, "k", 0, 212
+     debugline           214
+L14:
+     getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+     getproperty         QName(PackageNamespace("", "#0"), "available")
+     iffalse             L29
+
+     debugline           215
+     getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+     pushstring          "FlashExternalInterface.openExternalLink"
+     findpropstrict      QName(PackageNamespace("", "#0"), "escape")
+     getscopeobject      1
+     getslot             1
+     callproperty        QName(PackageNamespace("", "#0"), "escape"), 1
+     callpropvoid        QName(PackageNamespace("", "#0"), "call"), 2
+
+     jump                L36
+
+     ; 0xF0
+     ; 0xD9
+     ; 0x01
+L29:
+     getlex              QName(PackageNamespace("", "#0"), "_-1pV")
+     pushstring          "External interface not available. Could not request to open: "
+     getscopeobject      1
+     getslot             1
+     add
+     callpropvoid        QName(PackageNamespace("", "#0"), "log"), 1
+
+     debugline           219
+L36:
+     jump                L58
+
+L37:
+     getlocal0
+     pushscope
+
+     getlocal2
+     pushscope
+
+     newcatch            0
+     dup
+     setlocal3
+
+     dup
+     pushscope
+
+     swap
+     setslot             1
+
+     debugline           220
+     getlex              QName(PackageNamespace("", "#0"), "_-1pV")
+     pushstring          "External interface not working. Could not request to open: "
+     getscopeobject      1
+     getslot             1
+     add
+     callpropvoid        QName(PackageNamespace("", "#0"), "log"), 1
+
+     popscope
+     kill                3
+     debugline           222
+L58:
+     returnvoid
+    end ; code
+    try from L14 to L36 target L37 type QName(PackageNamespace("", "#0"), "Error") name QName(PackageNamespace("", "#0"), "e") end
+    trait slot QName(PackageInternalNs("_-524"), "url") slotid 1 type QName(PackageNamespace("", "#0"), "String") end
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PackageNamespace("", "#0"), "facebookLike") flag FINAL dispid 17
+  method
+   refid "_-524:_-2uY/class/facebookLike"
+   param QName(PackageNamespace("", "#0"), "int")
+   returns QName(PackageNamespace("", "#0"), "void")
+   flag NEED_ACTIVATION
+   body
+    maxstack 3
+    localcount 4
+    initscopedepth 4
+    maxscopedepth 9
+    code
+     debugfile           "k"
+     debugline           224
+     getlocal0
+     pushscope
+
+     newactivation
+     dup
+     setlocal2
+
+     pushscope
+
+     debug               1, "k", 1, 224
+     getscopeobject      1
+     getlocal1
+     setslot             1
+
+     debug               1, "k", 0, 224
+     debugline           226
+L14:
+     getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+     getproperty         QName(PackageNamespace("", "#0"), "available")
+     iffalse             L27
+
+     debugline           227
+     getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+     pushstring          "FlashExternalInterface.fbLike"
+     getscopeobject      1
+     getslot             1
+     callpropvoid        QName(PackageNamespace("", "#0"), "call"), 2
+
+     jump                L31
+
+     ; 0xF0
+     ; 0xE5
+     ; 0x01
+L27:
+     getlex              QName(PackageNamespace("", "#0"), "_-1pV")
+     pushstring          "External interface not available. Could not request Facebook like view."
+     callpropvoid        QName(PackageNamespace("", "#0"), "log"), 1
+
+     debugline           231
+L31:
+     jump                L50
+
+L32:
+     getlocal0
+     pushscope
+
+     getlocal2
+     pushscope
+
+     newcatch            0
+     dup
+     setlocal3
+
+     dup
+     pushscope
+
+     swap
+     setslot             1
+
+     debugline           232
+     getlex              QName(PackageNamespace("", "#0"), "_-1pV")
+     pushstring          "External interface not working. Could not request Facebook like view."
+     callpropvoid        QName(PackageNamespace("", "#0"), "log"), 1
+
+     popscope
+     kill                3
+     debugline           234
+L50:
+     returnvoid
+    end ; code
+    try from L14 to L31 target L32 type QName(PackageNamespace("", "#0"), "Error") name QName(PackageNamespace("", "#0"), "e") end
+    trait slot QName(PackageInternalNs("_-524"), "roomId") slotid 1 type QName(PackageNamespace("", "#0"), "int") end
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PackageNamespace("", "#0"), "roomVisited") flag FINAL dispid 18
+  method
+   refid "_-524:_-2uY/class/roomVisited"
+   param QName(PackageNamespace("", "#0"), "int")
+   returns QName(PackageNamespace("", "#0"), "void")
+   flag NEED_ACTIVATION
+   body
+    maxstack 3
+    localcount 4
+    initscopedepth 4
+    maxscopedepth 9
+    code
+     debugfile           "k"
+     debugline           236
+     getlocal0
+     pushscope
+
+     newactivation
+     dup
+     setlocal2
+
+     pushscope
+
+     debug               1, "k", 1, 236
+     getscopeobject      1
+     getlocal1
+     setslot             1
+
+     debug               1, "k", 0, 236
+     debugline           238
+L14:
+     getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+     getproperty         QName(PackageNamespace("", "#0"), "available")
+     iffalse             L27
+
+     debugline           239
+     getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+     pushstring          "FlashExternalInterface.roomVisited"
+     getscopeobject      1
+     getslot             1
+     callpropvoid        QName(PackageNamespace("", "#0"), "call"), 2
+
+     jump                L31
+
+     ; 0xF0
+     ; 0xF1
+     ; 0x01
+L27:
+     getlex              QName(PackageNamespace("", "#0"), "_-1pV")
+     pushstring          "External interface not available. Could not store last room visit."
+     callpropvoid        QName(PackageNamespace("", "#0"), "log"), 1
+
+     debugline           243
+L31:
+     jump                L50
+
+L32:
+     getlocal0
+     pushscope
+
+     getlocal2
+     pushscope
+
+     newcatch            0
+     dup
+     setlocal3
+
+     dup
+     pushscope
+
+     swap
+     setslot             1
+
+     debugline           244
+     getlex              QName(PackageNamespace("", "#0"), "_-1pV")
+     pushstring          "External interface not working. Could not store last room visit."
+     callpropvoid        QName(PackageNamespace("", "#0"), "log"), 1
+
+     popscope
+     kill                3
+     debugline           246
+L50:
+     returnvoid
+    end ; code
+    try from L14 to L31 target L32 type QName(PackageNamespace("", "#0"), "Error") name QName(PackageNamespace("", "#0"), "e") end
+    trait slot QName(PackageInternalNs("_-524"), "roomId") slotid 1 type QName(PackageNamespace("", "#0"), "int") end
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PackageNamespace("", "#0"), "openMinimail") flag FINAL dispid 19
+  method
+   refid "_-524:_-2uY/class/openMinimail"
+   param QName(PackageNamespace("", "#0"), "String")
+   returns QName(PackageNamespace("", "#0"), "void")
+   flag NEED_ACTIVATION
+   body
+    maxstack 3
+    localcount 4
+    initscopedepth 4
+    maxscopedepth 9
+    code
+     debugfile           "k"
+     debugline           252
+     getlocal0
+     pushscope
+
+     newactivation
+     dup
+     setlocal2
+
+     pushscope
+
+     debug               1, "k", 1, 252
+     getscopeobject      1
+     getlocal1
+     setslot             1
+
+     debug               1, "k", 0, 252
+     debugline           254
+L14:
+     getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+     getproperty         QName(PackageNamespace("", "#0"), "available")
+     iffalse             L39
+
+     debugline           255
+     getlex              QName(PrivateNamespace("_-0AR"), "_isSpaWeb")
+     iffalse             L30
+
+     debugline           256
+     getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+     pushstring          "FlashExternalInterface.openMinimail"
+     getscopeobject      1
+     getslot             1
+     callpropvoid        QName(PackageNamespace("", "#0"), "call"), 2
+
+     jump                L35
+
+     ; 0xF0
+     ; 0x82
+     ; 0x02
+L30:
+     findpropstrict      QName(PackageNamespace("", "#0"), "_-4Kj")
+     pushstring          "minimail"
+     getscopeobject      1
+     getslot             1
+     callpropvoid        QName(PackageNamespace("", "#0"), "_-4Kj"), 2
+
+L35:
+     jump                L43
+
+     ; 0xF0
+     ; 0x85
+     ; 0x02
+L39:
+     getlex              QName(PackageNamespace("", "#0"), "_-1pV")
+     pushstring          "External interface not available. Could not open minimail."
+     callpropvoid        QName(PackageNamespace("", "#0"), "log"), 1
+
+     debugline           263
+L43:
+     jump                L62
+
+L44:
+     getlocal0
+     pushscope
+
+     getlocal2
+     pushscope
+
+     newcatch            0
+     dup
+     setlocal3
+
+     dup
+     pushscope
+
+     swap
+     setslot             1
+
+     debugline           264
+     getlex              QName(PackageNamespace("", "#0"), "_-1pV")
+     pushstring          "External interface not working. Could not open minimail."
+     callpropvoid        QName(PackageNamespace("", "#0"), "log"), 1
+
+     popscope
+     kill                3
+     debugline           267
+L62:
+     returnvoid
+    end ; code
+    try from L14 to L43 target L44 type QName(PackageNamespace("", "#0"), "Error") name QName(PackageNamespace("", "#0"), "e") end
+    trait slot QName(PackageInternalNs("_-524"), "target") slotid 1 type QName(PackageNamespace("", "#0"), "String") end
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PackageNamespace("", "#0"), "openNews") flag FINAL dispid 20
+  method
+   refid "_-524:_-2uY/class/openNews"
+   returns QName(PackageNamespace("", "#0"), "void")
+   flag NEED_ACTIVATION
+   body
+    maxstack 3
+    localcount 3
+    initscopedepth 4
+    maxscopedepth 9
+    code
+     debugfile           "k"
+     debugline           269
+     getlocal0
+     pushscope
+
+     newactivation
+     dup
+     setlocal1
+
+     pushscope
+
+     debug               1, "k", 0, 269
+     debugline           271
+L10:
+     getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+     getproperty         QName(PackageNamespace("", "#0"), "available")
+     iffalse             L31
+
+     debugline           272
+     getlex              QName(PrivateNamespace("_-0AR"), "_isSpaWeb")
+     iffalse             L24
+
+     debugline           273
+     getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+     pushstring          "FlashExternalInterface.openNews"
+     callpropvoid        QName(PackageNamespace("", "#0"), "call"), 1
+
+     jump                L27
+
+     ; 0xF0
+     ; 0x93
+     ; 0x02
+L24:
+     findpropstrict      QName(PackageNamespace("", "#0"), "_-4Kj")
+     pushstring          "news"
+     callpropvoid        QName(PackageNamespace("", "#0"), "_-4Kj"), 1
+
+L27:
+     jump                L35
+
+     ; 0xF0
+     ; 0x96
+     ; 0x02
+L31:
+     getlex              QName(PackageNamespace("", "#0"), "_-1pV")
+     pushstring          "External interface not available. Could not open news."
+     callpropvoid        QName(PackageNamespace("", "#0"), "log"), 1
+
+     debugline           280
+L35:
+     jump                L54
+
+L36:
+     getlocal0
+     pushscope
+
+     getlocal1
+     pushscope
+
+     newcatch            0
+     dup
+     setlocal2
+
+     dup
+     pushscope
+
+     swap
+     setslot             1
+
+     debugline           281
+     getlex              QName(PackageNamespace("", "#0"), "_-1pV")
+     pushstring          "External interface not working. Could not open news."
+     callpropvoid        QName(PackageNamespace("", "#0"), "log"), 1
+
+     popscope
+     kill                2
+     debugline           283
+L54:
+     returnvoid
+    end ; code
+    try from L10 to L35 target L36 type QName(PackageNamespace("", "#0"), "Error") name QName(PackageNamespace("", "#0"), "e") end
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PackageNamespace("", "#0"), "closeNews") flag FINAL dispid 21
+  method
+   refid "_-524:_-2uY/class/closeNews"
+   returns QName(PackageNamespace("", "#0"), "void")
+   flag NEED_ACTIVATION
+   body
+    maxstack 3
+    localcount 3
+    initscopedepth 4
+    maxscopedepth 9
+    code
+     debugfile           "k"
+     debugline           285
+     getlocal0
+     pushscope
+
+     newactivation
+     dup
+     setlocal1
+
+     pushscope
+
+     debug               1, "k", 0, 285
+     debugline           287
+L10:
+     getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+     getproperty         QName(PackageNamespace("", "#0"), "available")
+     iffalse             L31
+
+     debugline           288
+     getlex              QName(PrivateNamespace("_-0AR"), "_isSpaWeb")
+     iffalse             L24
+
+     debugline           289
+     getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+     pushstring          "FlashExternalInterface.closeNews"
+     callpropvoid        QName(PackageNamespace("", "#0"), "call"), 1
+
+     jump                L27
+
+     ; 0xF0
+     ; 0xA3
+     ; 0x02
+L24:
+     findpropstrict      QName(PackageNamespace("", "#0"), "_-4uI")
+     pushstring          "news"
+     callpropvoid        QName(PackageNamespace("", "#0"), "_-4uI"), 1
+
+L27:
+     jump                L35
+
+     ; 0xF0
+     ; 0xA6
+     ; 0x02
+L31:
+     getlex              QName(PackageNamespace("", "#0"), "_-1pV")
+     pushstring          "External interface not available. Could not close news."
+     callpropvoid        QName(PackageNamespace("", "#0"), "log"), 1
+
+     debugline           296
+L35:
+     jump                L54
+
+L36:
+     getlocal0
+     pushscope
+
+     getlocal1
+     pushscope
+
+     newcatch            0
+     dup
+     setlocal2
+
+     dup
+     pushscope
+
+     swap
+     setslot             1
+
+     debugline           297
+     getlex              QName(PackageNamespace("", "#0"), "_-1pV")
+     pushstring          "External interface not working. Could not close news."
+     callpropvoid        QName(PackageNamespace("", "#0"), "log"), 1
+
+     popscope
+     kill                2
+     debugline           299
+L54:
+     returnvoid
+    end ; code
+    try from L10 to L35 target L36 type QName(PackageNamespace("", "#0"), "Error") name QName(PackageNamespace("", "#0"), "e") end
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PackageNamespace("", "#0"), "openAvatars") flag FINAL dispid 22
+  method
+   refid "_-524:_-2uY/class/openAvatars"
+   returns QName(PackageNamespace("", "#0"), "void")
+   flag NEED_ACTIVATION
+   body
+    maxstack 3
+    localcount 3
+    initscopedepth 4
+    maxscopedepth 9
+    code
+     debugfile           "k"
+     debugline           301
+     getlocal0
+     pushscope
+
+     newactivation
+     dup
+     setlocal1
+
+     pushscope
+
+     debug               1, "k", 0, 301
+     debugline           303
+L10:
+     getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+     getproperty         QName(PackageNamespace("", "#0"), "available")
+     iffalse             L31
+
+     debugline           304
+     getlex              QName(PrivateNamespace("_-0AR"), "_isSpaWeb")
+     iffalse             L24
+
+     debugline           305
+     getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+     pushstring          "FlashExternalInterface.openAvatars"
+     callpropvoid        QName(PackageNamespace("", "#0"), "call"), 1
+
+     jump                L27
+
+     ; 0xF0
+     ; 0xB3
+     ; 0x02
+L24:
+     findpropstrict      QName(PackageNamespace("", "#0"), "_-4Kj")
+     pushstring          "avatars"
+     callpropvoid        QName(PackageNamespace("", "#0"), "_-4Kj"), 1
+
+L27:
+     jump                L35
+
+     ; 0xF0
+     ; 0xB6
+     ; 0x02
+L31:
+     getlex              QName(PackageNamespace("", "#0"), "_-1pV")
+     pushstring          "External interface not available. Could not open avatars."
+     callpropvoid        QName(PackageNamespace("", "#0"), "log"), 1
+
+     debugline           312
+L35:
+     jump                L54
+
+L36:
+     getlocal0
+     pushscope
+
+     getlocal1
+     pushscope
+
+     newcatch            0
+     dup
+     setlocal2
+
+     dup
+     pushscope
+
+     swap
+     setslot             1
+
+     debugline           313
+     getlex              QName(PackageNamespace("", "#0"), "_-1pV")
+     pushstring          "External interface not working. Could not open avatars."
+     callpropvoid        QName(PackageNamespace("", "#0"), "log"), 1
+
+     popscope
+     kill                2
+     debugline           315
+L54:
+     returnvoid
+    end ; code
+    try from L10 to L35 target L36 type QName(PackageNamespace("", "#0"), "Error") name QName(PackageNamespace("", "#0"), "e") end
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PackageNamespace("", "#0"), "openRoomEnterAd") flag FINAL dispid 23
+  method
+   refid "_-524:_-2uY/class/openRoomEnterAd"
+   returns QName(PackageNamespace("", "#0"), "void")
+   flag NEED_ACTIVATION
+   body
+    maxstack 3
+    localcount 3
+    initscopedepth 4
+    maxscopedepth 9
+    code
+     debugfile           "k"
+     debugline           317
+     getlocal0
+     pushscope
+
+     newactivation
+     dup
+     setlocal1
+
+     pushscope
+
+     debug               1, "k", 0, 317
+     debugline           319
+L10:
+     getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+     getproperty         QName(PackageNamespace("", "#0"), "available")
+     iffalse             L32
+
+     debugline           320
+     getlex              QName(PrivateNamespace("_-0AR"), "_isSpaWeb")
+     iffalse             L24
+
+     debugline           321
+     getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+     pushstring          "FlashExternalInterface.openRoomEnterAd"
+     callpropvoid        QName(PackageNamespace("", "#0"), "call"), 1
+
+     jump                L28
+
+     ; 0xF0
+     ; 0xC3
+     ; 0x02
+L24:
+     findpropstrict      QName(PackageNamespace("", "#0"), "_-4Kj")
+     pushstring          "roomenterad"
+     pushstring          ""
+     callpropvoid        QName(PackageNamespace("", "#0"), "_-4Kj"), 2
+
+L28:
+     jump                L36
+
+     ; 0xF0
+     ; 0xC6
+     ; 0x02
+L32:
+     getlex              QName(PackageNamespace("", "#0"), "_-1pV")
+     pushstring          "External interface not available. Could not open roomenterad."
+     callpropvoid        QName(PackageNamespace("", "#0"), "log"), 1
+
+     debugline           328
+L36:
+     jump                L55
+
+L37:
+     getlocal0
+     pushscope
+
+     getlocal1
+     pushscope
+
+     newcatch            0
+     dup
+     setlocal2
+
+     dup
+     pushscope
+
+     swap
+     setslot             1
+
+     debugline           329
+     getlex              QName(PackageNamespace("", "#0"), "_-1pV")
+     pushstring          "External interface not working. Could not open roomenterad."
+     callpropvoid        QName(PackageNamespace("", "#0"), "log"), 1
+
+     popscope
+     kill                2
+     debugline           331
+L55:
+     returnvoid
+    end ; code
+    try from L10 to L36 target L37 type QName(PackageNamespace("", "#0"), "Error") name QName(PackageNamespace("", "#0"), "e") end
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PackageNamespace("", "#0"), "updateFigure") flag FINAL dispid 24
+  method
+   refid "_-524:_-2uY/class/updateFigure"
+   param QName(PackageNamespace("", "#0"), "String")
+   returns QName(PackageNamespace("", "#0"), "void")
+   flag NEED_ACTIVATION
+   body
+    maxstack 3
+    localcount 4
+    initscopedepth 4
+    maxscopedepth 9
+    code
+     debugfile           "k"
+     debugline           333
+     getlocal0
+     pushscope
+
+     newactivation
+     dup
+     setlocal2
+
+     pushscope
+
+     debug               1, "k", 1, 333
+     getscopeobject      1
+     getlocal1
+     setslot             1
+
+     debug               1, "k", 0, 333
+     debugline           335
+L14:
+     getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+     getproperty         QName(PackageNamespace("", "#0"), "available")
+     iffalse             L30
+
+     debugline           336
+     getlex              QName(PrivateNamespace("_-0AR"), "_isSpaWeb")
+     iffalse             L26
+
+     debugline           337
+     getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+     pushstring          "FlashExternalInterface.updateFigure"
+     getscopeobject      1
+     getslot             1
+     callpropvoid        QName(PackageNamespace("", "#0"), "call"), 2
+
+L26:
+     jump                L34
+
+     ; 0xF0
+     ; 0xD4
+     ; 0x02
+L30:
+     getlex              QName(PackageNamespace("", "#0"), "_-1pV")
+     pushstring          "External interface not available. Could not update figure."
+     callpropvoid        QName(PackageNamespace("", "#0"), "log"), 1
+
+     debugline           342
+L34:
+     jump                L53
+
+L35:
+     getlocal0
+     pushscope
+
+     getlocal2
+     pushscope
+
+     newcatch            0
+     dup
+     setlocal3
+
+     dup
+     pushscope
+
+     swap
+     setslot             1
+
+     debugline           343
+     getlex              QName(PackageNamespace("", "#0"), "_-1pV")
+     pushstring          "External interface not working. Could not update figure."
+     callpropvoid        QName(PackageNamespace("", "#0"), "log"), 1
+
+     popscope
+     kill                3
+     debugline           346
+L53:
+     returnvoid
+    end ; code
+    try from L14 to L34 target L35 type QName(PackageNamespace("", "#0"), "Error") name QName(PackageNamespace("", "#0"), "e") end
+    trait slot QName(PackageInternalNs("_-524"), "figure") slotid 1 type QName(PackageNamespace("", "#0"), "String") end
+   end ; body
+  end ; method
+ end ; trait
+end ; class

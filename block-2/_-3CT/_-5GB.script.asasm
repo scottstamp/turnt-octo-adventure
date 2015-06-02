@@ -1,0 +1,33 @@
+script ; 4330
+ sinit
+  refid "_-3CT:_-5GB/init"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 1
+   maxscopedepth 3
+   code
+    getlocal0
+    pushscope
+
+    debugfile           "k"
+    debugline           2
+    findpropstrict      Multiname("_-5GB", [PackageNamespace("_-3CT")])
+    getlex              QName(PackageNamespace(""), "Object")
+    pushscope
+
+    getlex              QName(PackageNamespace(""), "Object")
+    newclass            "_-3CT:_-5GB"
+    popscope
+    initproperty        QName(PackageNamespace("_-3CT"), "_-5GB")
+
+    debugfile           "k"
+    debugline           1
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait class QName(PackageNamespace("_-3CT"), "_-5GB")
+  #include "_-5GB.class.asasm"
+ end ; trait
+end ; script

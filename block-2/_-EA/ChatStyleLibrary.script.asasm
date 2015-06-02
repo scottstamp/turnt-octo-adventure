@@ -1,0 +1,33 @@
+script ; 5043
+ sinit
+  refid "_-EA:ChatStyleLibrary/init"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 1
+   maxscopedepth 3
+   code
+    getlocal0
+    pushscope
+
+    debugfile           "k"
+    debugline           18
+    findpropstrict      Multiname("ChatStyleLibrary", [PackageNamespace("_-EA")])
+    getlex              QName(PackageNamespace(""), "Object")
+    pushscope
+
+    getlex              QName(PackageNamespace(""), "Object")
+    newclass            "_-EA:ChatStyleLibrary"
+    popscope
+    initproperty        QName(PackageNamespace("_-EA"), "ChatStyleLibrary")
+
+    debugfile           "k"
+    debugline           5
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait class QName(PackageNamespace("_-EA"), "ChatStyleLibrary")
+  #include "ChatStyleLibrary.class.asasm"
+ end ; trait
+end ; script

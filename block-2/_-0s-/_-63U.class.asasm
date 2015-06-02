@@ -1,0 +1,194 @@
+class
+ refid "_-0s-:_-63U"
+ instance QName(PackageNamespace("_-0s-"), "_-63U")
+  extends QName(PackageNamespace("_-5cb"), "ChildEntityArray")
+  implements Multiname("ISkinTemplate", [PackageNamespace("_-0s-")])
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-Za")
+  iinit
+   refid "_-0s-:_-63U/instance/init"
+   param QName(PackageNamespace(""), "String")
+   param QName(PackageNamespace("_-1t2"), "if ")
+   body
+    maxstack 2
+    localcount 3
+    initscopedepth 6
+    maxscopedepth 7
+    code
+     debugfile           "k"
+     debugline           20
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 20
+     debug               1, "k", 1, 20
+     debugline           22
+     getlocal0
+     constructsuper      0
+
+     debugline           23
+     getlocal0
+     getlocal1
+     initproperty        QName(ProtectedNamespace("_-Za"), "_name")
+
+     debugline           24
+     getlocal0
+     getlocal2
+     initproperty        QName(ProtectedNamespace("_-Za"), "_-0jc")
+
+     debugline           25
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait getter QName(PackageNamespace(""), "id")
+   method
+    refid "_-0s-:_-63U/instance/id/getter"
+    returns QName(PackageNamespace(""), "uint")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           8
+      getlocal0
+      pushscope
+
+      pushbyte            0
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "name")
+   method
+    refid "_-0s-:_-63U/instance/name/getter"
+    returns QName(PackageNamespace(""), "String")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           9
+      getlocal0
+      pushscope
+
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-Za"), "_name")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "asset")
+   method
+    refid "_-0s-:_-63U/instance/asset/getter"
+    returns QName(PackageNamespace("_-1t2"), "if ")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           10
+      getlocal0
+      pushscope
+
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-Za"), "_-0jc")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait slot QName(ProtectedNamespace("_-Za"), "_name") type QName(PackageNamespace(""), "String") end
+  trait slot QName(ProtectedNamespace("_-Za"), "_-0jc") type QName(PackageNamespace("_-1t2"), "if ") end
+  trait method QName(PackageNamespace(""), "dispose")
+   method
+    refid "_-0s-:_-63U/instance/dispose"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 3
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           30
+      getlocal0
+      pushscope
+
+      pushbyte            0
+      convert_u
+      setlocal2
+
+      debug               1, "k", 0, 32
+      debug               1, "k", 1, 33
+      debugline           32
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "numChildren")
+      convert_u
+      setlocal1
+
+      debugline           35
+      pushbyte            0
+      convert_u
+      setlocal2
+
+      jump                L27
+
+L19:
+      label
+      getlocal0
+      pushbyte            0
+      callpropvoid        QName(PackageNamespace(""), "removeChildAt"), 1
+
+      getlocal2
+      increment
+      convert_u
+      setlocal2
+
+L27:
+      getlocal2
+      getlocal1
+      iflt                L19
+
+      debugline           37
+      getlocal0
+      pushnull
+      initproperty        QName(ProtectedNamespace("_-Za"), "_-0jc")
+
+      debugline           38
+      getlocal0
+      pushnull
+      initproperty        QName(ProtectedNamespace("_-Za"), "_name")
+
+      debugline           39
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-0s-:_-63U/class/init"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 5
+   maxscopedepth 6
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

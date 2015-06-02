@@ -1,0 +1,1662 @@
+class
+ refid "_-44Z:RecyclerCatalogWidget"
+ instance QName(PackageNamespace("_-44Z"), "RecyclerCatalogWidget")
+  extends QName(PackageNamespace("_-44Z"), "CatalogWidget")
+  implements Multiname("_-23L", [PackageNamespace("_-44Z")])
+  implements Multiname("_-3vl", [PackageNamespace("_-6ZW")])
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-xM")
+  iinit
+   refid "_-44Z:RecyclerCatalogWidget/instance/init#0"
+   param QName(PackageNamespace("_-1rh"), "IWindowContainer")
+   body
+    maxstack 2
+    localcount 2
+    initscopedepth 5
+    maxscopedepth 6
+    code
+     debugfile           "k"
+     debugline           36
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 36
+     debugline           38
+     getlocal0
+     getlocal1
+     constructsuper      1
+
+     debugline           39
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-xM"), "_-19i") type QName(PackageNamespace("_-0Cr"), "_-46l") end
+  trait getter QName(PrivateNamespace("_-xM"), "recycler")
+   method
+    refid "_-44Z:RecyclerCatalogWidget/instance/_-44Z:RecyclerCatalogWidget/instance/recycler/getter"
+    returns QName(PackageNamespace("_-6ZW"), "_-2bz")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           28
+      getlocal0
+      pushscope
+
+      debugline           29
+      getlex              QName(PackageNamespace(""), "page")
+      getproperty         QName(Namespace("_-5W6"), "viewer")
+      getproperty         QName(Namespace("_-5tj"), "catalog")
+      callproperty        QName(Namespace("_-5qx"), "getRecycler"), 0
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "dispose") flag OVERRIDE
+   method
+    refid "_-44Z:RecyclerCatalogWidget/instance/dispose"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           44
+      getlocal0
+      pushscope
+
+      debugline           46
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-xM"), "_-19i")
+      pushnull
+      ifeq                L18
+
+      debugline           47
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-xM"), "_-19i")
+      callpropvoid        QName(PackageNamespace(""), "dispose"), 0
+
+      debugline           48
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-xM"), "_-19i")
+
+      debugline           51
+L18:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-xM"), "recycler")
+      pushnull
+      ifeq                L27
+
+      debugline           52
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-xM"), "recycler")
+      callpropvoid        QName(Namespace("_-3CB"), "cancel"), 0
+
+      debugline           55
+L27:
+      getlocal0
+      callsupervoid       QName(PackageNamespace(""), "dispose"), 0
+      debugline           56
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "init") flag OVERRIDE
+   method
+    refid "_-44Z:RecyclerCatalogWidget/instance/init#1"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           61
+      getlocal0
+      pushscope
+
+      debugline           63
+      getlocal0
+      callsuper           QName(PackageNamespace(""), "init"), 0
+      iftrue              L13
+
+      debugline           64
+      pushfalse
+      returnvalue
+
+      ; 0xF0
+      ; 0x43
+L13:
+      findpropstrict      QName(ProtectedNamespace("_-1BS"), "_-1nE")
+      getlex              QName(PackageNamespace("_-44Z"), "_-07e")
+      getproperty         QName(PackageNamespace(""), "_-2gm")
+      callpropvoid        QName(ProtectedNamespace("_-1BS"), "_-1nE"), 1
+
+      debugline           69
+      getlex              QName(PackageNamespace(""), "window")
+      pushstring          "inactive"
+      callproperty        QName(Namespace("_-0zV"), "findChildByName"), 1
+      pushfalse
+      setproperty         QName(Namespace("_-6Dt"), "visible")
+
+      debugline           70
+      getlex              QName(PackageNamespace(""), "window")
+      pushstring          "timeout"
+      callproperty        QName(Namespace("_-0zV"), "findChildByName"), 1
+      pushfalse
+      setproperty         QName(Namespace("_-6Dt"), "visible")
+
+      debugline           71
+      getlex              QName(PackageNamespace(""), "window")
+      pushstring          "normal"
+      callproperty        QName(Namespace("_-0zV"), "findChildByName"), 1
+      pushfalse
+      setproperty         QName(Namespace("_-6Dt"), "visible")
+
+      debugline           73
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-xM"), "recycler")
+      pushnull
+      ifne                L44
+
+      pushfalse
+      returnvalue
+
+      ; 0xF0
+      ; 0x4A
+L44:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-xM"), "recycler")
+      getlocal0
+      callpropvoid        QName(Namespace("_-3CB"), "init"), 1
+
+      debugline           75
+      pushtrue
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-k4")
+   method
+    refid "_-44Z:RecyclerCatalogWidget/instance/_-k4"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           81
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 89
+      debugline           83
+      getlex              QName(PackageNamespace(""), "window")
+      pushstring          "inactive"
+      callproperty        QName(Namespace("_-0zV"), "findChildByName"), 1
+      pushtrue
+      setproperty         QName(Namespace("_-6Dt"), "visible")
+
+      debugline           84
+      getlex              QName(PackageNamespace(""), "window")
+      pushstring          "timeout"
+      callproperty        QName(Namespace("_-0zV"), "findChildByName"), 1
+      pushfalse
+      setproperty         QName(Namespace("_-6Dt"), "visible")
+
+      debugline           85
+      getlex              QName(PackageNamespace(""), "window")
+      pushstring          "normal"
+      callproperty        QName(Namespace("_-0zV"), "findChildByName"), 1
+      pushfalse
+      setproperty         QName(Namespace("_-6Dt"), "visible")
+
+      debugline           87
+      getlocal0
+      callpropvoid        QName(PrivateNamespace("_-xM"), "_-1ub"), 0
+
+      debugline           89
+      getlex              QName(PackageNamespace(""), "window")
+      getproperty         QName(Namespace("_-6Dt"), "parent")
+      getlex              QName(PackageNamespace("_-1rh"), "IWindowContainer")
+      astypelate
+      getlex              QName(PackageNamespace("_-0Cr"), "PageLocalization")
+      getproperty         QName(PackageNamespace(""), "_-0a3")
+      callproperty        QName(Namespace("_-0zV"), "findChildByName"), 1
+      coerce              QName(PackageNamespace("_-1rh"), "IWindow")
+      setlocal1
+
+      debugline           90
+      getlocal1
+      pushnull
+      ifeq                L45
+
+      debugline           91
+      getlocal1
+      pushstring          "${recycler.info.closed}"
+      setproperty         QName(Namespace("_-6Dt"), "caption")
+
+      debugline           93
+L45:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-1TJ")
+   method
+    refid "_-44Z:RecyclerCatalogWidget/instance/_-1TJ"
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 5
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           99
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 99
+      debug               1, "k", 1, 101
+      debug               1, "k", 2, 102
+      debug               1, "k", 3, 111
+      debugline           101
+      findpropstrict      QName(PackageNamespace(""), "String")
+      findpropstrict      QName(PackageNamespace(""), "int")
+      getlocal1
+      pushbyte            60
+      divide
+      callproperty        QName(PackageNamespace(""), "int"), 1
+      callproperty        QName(PackageNamespace(""), "String"), 1
+      coerce_s
+      setlocal2
+
+      debugline           102
+      findpropstrict      QName(PackageNamespace(""), "String")
+      getlocal1
+      pushbyte            60
+      modulo
+      callproperty        QName(PackageNamespace(""), "String"), 1
+      coerce_s
+      setlocal3
+
+      debugline           104
+      getlex              QName(PackageNamespace(""), "page")
+      getproperty         QName(Namespace("_-5W6"), "viewer")
+      getproperty         QName(Namespace("_-5tj"), "catalog")
+      getproperty         QName(Namespace("_-5qx"), "localization")
+      pushstring          "recycler.alert.timeout"
+      pushstring          "minutes"
+      getlocal2
+      callpropvoid        Multiname("registerParameter", [PrivateNamespace("_-xM"), PackageNamespace(""), PackageNamespace("_-44Z"), PrivateNamespace("RecyclerCatalogWidget.as$3277"), PackageInternalNs("_-44Z"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-xM"), StaticProtectedNs("_-xM"), StaticProtectedNs("_-1BS")]), 3
+
+      debugline           105
+      getlex              QName(PackageNamespace(""), "page")
+      getproperty         QName(Namespace("_-5W6"), "viewer")
+      getproperty         QName(Namespace("_-5tj"), "catalog")
+      getproperty         QName(Namespace("_-5qx"), "localization")
+      pushstring          "recycler.alert.timeout"
+      pushstring          "seconds"
+      getlocal3
+      callpropvoid        Multiname("registerParameter", [PrivateNamespace("_-xM"), PackageNamespace(""), PackageNamespace("_-44Z"), PrivateNamespace("RecyclerCatalogWidget.as$3277"), PackageInternalNs("_-44Z"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-xM"), StaticProtectedNs("_-xM"), StaticProtectedNs("_-1BS")]), 3
+
+      debugline           107
+      getlex              QName(PackageNamespace(""), "window")
+      pushstring          "inactive"
+      callproperty        QName(Namespace("_-0zV"), "findChildByName"), 1
+      pushfalse
+      setproperty         QName(Namespace("_-6Dt"), "visible")
+
+      debugline           108
+      getlex              QName(PackageNamespace(""), "window")
+      pushstring          "timeout"
+      callproperty        QName(Namespace("_-0zV"), "findChildByName"), 1
+      pushtrue
+      setproperty         QName(Namespace("_-6Dt"), "visible")
+
+      debugline           109
+      getlex              QName(PackageNamespace(""), "window")
+      pushstring          "normal"
+      callproperty        QName(Namespace("_-0zV"), "findChildByName"), 1
+      pushfalse
+      setproperty         QName(Namespace("_-6Dt"), "visible")
+
+      debugline           111
+      getlex              QName(PackageNamespace(""), "window")
+      getproperty         QName(Namespace("_-6Dt"), "parent")
+      getlex              QName(PackageNamespace("_-1rh"), "IWindowContainer")
+      astypelate
+      getlex              QName(PackageNamespace("_-0Cr"), "PageLocalization")
+      getproperty         QName(PackageNamespace(""), "_-0a3")
+      callproperty        QName(Namespace("_-0zV"), "findChildByName"), 1
+      coerce              QName(PackageNamespace("_-1rh"), "IWindow")
+      setlocal            4
+
+      debugline           112
+      getlocal            4
+      pushnull
+      ifeq                L81
+
+      debugline           113
+      getlocal            4
+      pushstring          "${recycler.alert.timeout}"
+      setproperty         QName(Namespace("_-6Dt"), "caption")
+
+      debugline           115
+L81:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-6R")
+   method
+    refid "_-44Z:RecyclerCatalogWidget/instance/_-6R"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           120
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 127
+      debugline           121
+      getlex              QName(PackageNamespace(""), "window")
+      pushstring          "inactive"
+      callproperty        QName(Namespace("_-0zV"), "findChildByName"), 1
+      pushtrue
+      setproperty         QName(Namespace("_-6Dt"), "visible")
+
+      debugline           122
+      getlex              QName(PackageNamespace(""), "window")
+      pushstring          "timeout"
+      callproperty        QName(Namespace("_-0zV"), "findChildByName"), 1
+      pushfalse
+      setproperty         QName(Namespace("_-6Dt"), "visible")
+
+      debugline           123
+      getlex              QName(PackageNamespace(""), "window")
+      pushstring          "normal"
+      callproperty        QName(Namespace("_-0zV"), "findChildByName"), 1
+      pushfalse
+      setproperty         QName(Namespace("_-6Dt"), "visible")
+
+      debugline           125
+      getlocal0
+      callpropvoid        QName(PrivateNamespace("_-xM"), "_-1ub"), 0
+
+      debugline           127
+      getlex              QName(PackageNamespace(""), "window")
+      getproperty         QName(Namespace("_-6Dt"), "parent")
+      getlex              QName(PackageNamespace("_-1rh"), "IWindowContainer")
+      astypelate
+      getlex              QName(PackageNamespace("_-0Cr"), "PageLocalization")
+      getproperty         QName(PackageNamespace(""), "_-0a3")
+      callproperty        QName(Namespace("_-0zV"), "findChildByName"), 1
+      coerce              QName(PackageNamespace("_-1rh"), "IWindow")
+      setlocal1
+
+      debugline           128
+      getlocal1
+      pushnull
+      ifeq                L45
+
+      debugline           129
+      getlocal1
+      pushstring          ""
+      setproperty         QName(Namespace("_-6Dt"), "caption")
+
+      debugline           131
+L45:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-3Hs")
+   method
+    refid "_-44Z:RecyclerCatalogWidget/instance/_-3Hs"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           136
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 143
+      debug               1, "k", 1, 148
+      debugline           137
+      getlex              QName(PackageNamespace(""), "window")
+      pushstring          "inactive"
+      callproperty        QName(Namespace("_-0zV"), "findChildByName"), 1
+      pushtrue
+      setproperty         QName(Namespace("_-6Dt"), "visible")
+
+      debugline           138
+      getlex              QName(PackageNamespace(""), "window")
+      pushstring          "timeout"
+      callproperty        QName(Namespace("_-0zV"), "findChildByName"), 1
+      pushfalse
+      setproperty         QName(Namespace("_-6Dt"), "visible")
+
+      debugline           139
+      getlex              QName(PackageNamespace(""), "window")
+      pushstring          "normal"
+      callproperty        QName(Namespace("_-0zV"), "findChildByName"), 1
+      pushfalse
+      setproperty         QName(Namespace("_-6Dt"), "visible")
+
+      debugline           141
+      getlocal0
+      callpropvoid        QName(PrivateNamespace("_-xM"), "_-1ub"), 0
+
+      debugline           143
+      getlex              QName(PackageNamespace(""), "window")
+      getproperty         QName(Namespace("_-6Dt"), "parent")
+      getlex              QName(PackageNamespace("_-1rh"), "IWindowContainer")
+      astypelate
+      getlex              QName(PackageNamespace("_-0Cr"), "PageLocalization")
+      getproperty         QName(PackageNamespace(""), "_-0a3")
+      callproperty        QName(Namespace("_-0zV"), "findChildByName"), 1
+      coerce              QName(PackageNamespace("_-1rh"), "IWindow")
+      setlocal1
+
+      debugline           144
+      getlocal1
+      pushnull
+      ifeq                L46
+
+      debugline           145
+      getlocal1
+      pushstring          "${recycler.info.finished}"
+      setproperty         QName(Namespace("_-6Dt"), "caption")
+
+      debugline           148
+L46:
+      findpropstrict      QName(PackageNamespace("_-3yU"), "IButtonWindow")
+      getlex              QName(PackageNamespace(""), "window")
+      pushstring          "recycle_again_button"
+      callproperty        QName(Namespace("_-0zV"), "findChildByName"), 1
+      callproperty        QName(PackageNamespace("_-3yU"), "IButtonWindow"), 1
+      coerce              QName(PackageNamespace("_-3yU"), "IButtonWindow")
+      setlocal2
+
+      debugline           149
+      getlocal2
+      pushtrue
+      setproperty         QName(Namespace("_-6Dt"), "visible")
+
+      debugline           150
+      getlocal2
+      getlex              QName(PackageNamespace("_-5-S"), "WindowMouseEvent")
+      getproperty         QName(PackageNamespace(""), "CLICK")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-xM"), "_-5uF")
+      callpropvoid        QName(Namespace("_-6Dt"), "addEventListener"), 2
+
+      debugline           151
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-3n0")
+   method
+    refid "_-44Z:RecyclerCatalogWidget/instance/_-3n0"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           156
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 167
+      debugline           158
+      getlex              QName(PackageNamespace(""), "window")
+      pushstring          "inactive"
+      callproperty        QName(Namespace("_-0zV"), "findChildByName"), 1
+      pushfalse
+      setproperty         QName(Namespace("_-6Dt"), "visible")
+
+      debugline           159
+      getlex              QName(PackageNamespace(""), "window")
+      pushstring          "timeout"
+      callproperty        QName(Namespace("_-0zV"), "findChildByName"), 1
+      pushfalse
+      setproperty         QName(Namespace("_-6Dt"), "visible")
+
+      debugline           160
+      getlex              QName(PackageNamespace(""), "window")
+      pushstring          "normal"
+      callproperty        QName(Namespace("_-0zV"), "findChildByName"), 1
+      pushtrue
+      setproperty         QName(Namespace("_-6Dt"), "visible")
+
+      debugline           162
+      getlocal0
+      callpropvoid        QName(PrivateNamespace("_-xM"), "_-1ub"), 0
+
+      debugline           164
+      getlex              QName(PackageNamespace(""), "window")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-xM"), "_-2wP")
+      setproperty         QName(Namespace("_-6Dt"), "procedure")
+
+      debugline           165
+      getlex              QName(PackageNamespace(""), "window")
+      getproperty         QName(Namespace("_-6Dt"), "parent")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-xM"), "_-2wP")
+      setproperty         QName(Namespace("_-6Dt"), "procedure")
+
+      debugline           167
+      getlex              QName(PackageNamespace(""), "window")
+      getproperty         QName(Namespace("_-6Dt"), "parent")
+      getlex              QName(PackageNamespace("_-1rh"), "IWindowContainer")
+      astypelate
+      getlex              QName(PackageNamespace("_-0Cr"), "PageLocalization")
+      getproperty         QName(PackageNamespace(""), "_-0a3")
+      callproperty        QName(Namespace("_-0zV"), "findChildByName"), 1
+      coerce              QName(PackageNamespace("_-1rh"), "IWindow")
+      setlocal1
+
+      debugline           168
+      getlocal1
+      pushnull
+      ifeq                L56
+
+      debugline           169
+      getlocal1
+      pushstring          "${recycler.info.ready}"
+      setproperty         QName(Namespace("_-6Dt"), "caption")
+
+      debugline           171
+L56:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-xM"), "_-1ub")
+   method
+    refid "_-44Z:RecyclerCatalogWidget/instance/_-44Z:RecyclerCatalogWidget/instance/_-1ub"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 4
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           176
+      getlocal0
+      pushscope
+
+      pushbyte            0
+      setlocal2
+
+      pushnull
+      coerce              QName(PackageNamespace("_-3yU"), "IBitmapWrapperWindow")
+      setlocal3
+
+      debug               1, "k", 0, 178
+      debug               1, "k", 1, 181
+      debug               1, "k", 2, 182
+      debugline           178
+      findpropstrict      QName(ProtectedNamespace("_-1BS"), "_-2-z")
+      pushstring          "ctlg_recycler_slot_bg"
+      callproperty        QName(ProtectedNamespace("_-1BS"), "_-2-z"), 1
+      coerce              QName(PackageNamespace("flash.display"), "BitmapData")
+      setlocal1
+
+      debugline           179
+      getlocal1
+      pushnull
+      ifne                L26
+
+      returnvoid
+
+      ; 0xF0
+      ; 0xB8
+      ; 0x01
+L26:
+      pushbyte            1
+      setlocal2
+
+      jump                L56
+
+L29:
+      label
+      debugline           185
+      getlex              QName(PackageNamespace(""), "window")
+      pushstring          "slot_bg_"
+      getlocal2
+      add
+      callproperty        QName(Namespace("_-0zV"), "findChildByName"), 1
+      getlex              QName(PackageNamespace("_-3yU"), "IBitmapWrapperWindow")
+      astypelate
+      coerce              QName(PackageNamespace("_-3yU"), "IBitmapWrapperWindow")
+      setlocal3
+
+      debugline           186
+      getlocal3
+      pushnull
+      ifeq                L55
+
+      debugline           187
+      getlocal3
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "clone"), 0
+      setproperty         QName(Namespace("_-E9"), "bitmap")
+
+      debugline           188
+      getlocal3
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-xM"), "_-5Ps")
+      setproperty         QName(Namespace("_-6Dt"), "procedure")
+
+      debugline           184
+L55:
+      inclocal_i          2
+L56:
+      getlocal2
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-xM"), "recycler")
+      getproperty         QName(Namespace("_-3CB"), "_-1QQ")
+      ifle                L29
+
+      debugline           192
+      pushbyte            1
+      setlocal2
+
+      jump                L92
+
+L65:
+      label
+      debugline           193
+      getlex              QName(PackageNamespace(""), "window")
+      pushstring          "slot_img_"
+      getlocal2
+      add
+      callproperty        QName(Namespace("_-0zV"), "findChildByName"), 1
+      getlex              QName(PackageNamespace("_-3yU"), "IBitmapWrapperWindow")
+      astypelate
+      coerce              QName(PackageNamespace("_-3yU"), "IBitmapWrapperWindow")
+      setlocal3
+
+      debugline           194
+      getlocal3
+      pushnull
+      ifeq                L91
+
+      debugline           195
+      getlocal3
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "clone"), 0
+      setproperty         QName(Namespace("_-E9"), "bitmap")
+
+      debugline           196
+      getlocal3
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-xM"), "_-5Ps")
+      setproperty         QName(Namespace("_-6Dt"), "procedure")
+
+      debugline           192
+L91:
+      inclocal_i          2
+L92:
+      getlocal2
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-xM"), "recycler")
+      getproperty         QName(Namespace("_-3CB"), "_-1QQ")
+      ifle                L65
+
+      debugline           199
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-nH")
+   method
+    refid "_-44Z:RecyclerCatalogWidget/instance/_-nH"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 7
+     localcount 7
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           204
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-3yU"), "IBitmapWrapperWindow")
+      setlocal2
+
+      pushnull
+      coerce              QName(PackageNamespace("_-6ZW"), "_-5Cj")
+      setlocal3
+
+      pushnull
+      coerce              QName(PackageNamespace("_-5rP"), "_-5Qz")
+      setlocal            4
+
+      pushnull
+      coerce              QName(PackageNamespace("flash.display"), "BitmapData")
+      setlocal            5
+
+      pushnull
+      coerce              QName(PackageNamespace("flash.geom"), "Point")
+      setlocal            6
+
+      debug               1, "k", 0, 207
+      debugline           205
+      getlex              QName(PackageNamespace(""), "window")
+      pushnull
+      equals
+      dup
+      iftrue              L31
+
+      pop
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-xM"), "recycler")
+      pushnull
+      equals
+L31:
+      iffalse             L36
+
+      returnvoid
+
+      ; 0xF0
+      ; 0xCF
+      ; 0x01
+L36:
+      pushbyte            0
+      setlocal1
+
+      jump                L172
+
+L39:
+      label
+      debug               1, "k", 1, 208
+      debug               1, "k", 2, 210
+      debugline           208
+      getlex              QName(PackageNamespace(""), "window")
+      pushstring          "slot_img_"
+      getlocal1
+      pushbyte            1
+      add
+      add
+      callproperty        QName(Namespace("_-0zV"), "findChildByName"), 1
+      getlex              QName(PackageNamespace("_-3yU"), "IBitmapWrapperWindow")
+      astypelate
+      coerce              QName(PackageNamespace("_-3yU"), "IBitmapWrapperWindow")
+      setlocal2
+
+      debugline           209
+      getlocal2
+      pushnull
+      ifne                L62
+
+      returnvoid
+
+      ; 0xF0
+      ; 0xD2
+      ; 0x01
+L62:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-xM"), "recycler")
+      getlocal1
+      callproperty        QName(Namespace("_-3CB"), "_-5k1"), 1
+      coerce              QName(PackageNamespace("_-6ZW"), "_-5Cj")
+      setlocal3
+
+      debugline           211
+      getlocal3
+      pushnull
+      ifne                L91
+
+      debugline           212
+      getlocal2
+      findpropstrict      QName(PackageNamespace("flash.display"), "BitmapData")
+      pushbyte            1
+      dup
+      pushtrue
+      pushint             16777215
+      constructprop       QName(PackageNamespace("flash.display"), "BitmapData"), 4
+      setproperty         QName(Namespace("_-E9"), "bitmap")
+
+      jump                L171
+
+      ; 0xEF
+      ; 0x01
+      ; 0x02
+      ; 0x03
+      ; 0xD6
+      ; 0x01
+      ; 0xF0
+      ; 0xD6
+      ; 0x01
+L91:
+      getlocal0
+      getlocal3
+      callproperty        QName(PrivateNamespace("_-xM"), "_-448"), 1
+      coerce              QName(PackageNamespace("_-5rP"), "_-5Qz")
+      setlocal            4
+
+      debugline           215
+      getlocal            4
+      pushnull
+      equals
+      not
+      dup
+      iffalse             L109
+
+      pop
+      getlocal            4
+      getproperty         QName(PackageNamespace(""), "data")
+      pushnull
+      equals
+      not
+L109:
+      iffalse             L171
+
+      debug               1, "k", 4, 216
+      debug               1, "k", 5, 218
+      debugline           216
+      findpropstrict      QName(PackageNamespace("flash.display"), "BitmapData")
+      getlocal2
+      getproperty         QName(Namespace("_-6Dt"), "width")
+      getlocal2
+      getproperty         QName(Namespace("_-6Dt"), "height")
+      pushtrue
+      pushint             16777215
+      constructprop       QName(PackageNamespace("flash.display"), "BitmapData"), 4
+      coerce              QName(PackageNamespace("flash.display"), "BitmapData")
+      setlocal            5
+
+      debugline           217
+      getlocal            5
+      getlocal            5
+      getproperty         QName(PackageNamespace(""), "rect")
+      pushint             16777215
+      callpropvoid        QName(PackageNamespace(""), "fillRect"), 2
+
+      debugline           218
+      findpropstrict      QName(PackageNamespace("flash.geom"), "Point")
+      getlocal2
+      getproperty         QName(Namespace("_-6Dt"), "width")
+      getlocal            4
+      getproperty         QName(PackageNamespace(""), "data")
+      getproperty         QName(PackageNamespace(""), "width")
+      subtract
+      pushbyte            2
+      divide
+      getlocal2
+      getproperty         QName(Namespace("_-6Dt"), "height")
+      getlocal            4
+      getproperty         QName(PackageNamespace(""), "data")
+      getproperty         QName(PackageNamespace(""), "height")
+      subtract
+      pushbyte            2
+      divide
+      constructprop       QName(PackageNamespace("flash.geom"), "Point"), 2
+      coerce              QName(PackageNamespace("flash.geom"), "Point")
+      setlocal            6
+
+      debugline           219
+      getlocal            5
+      getlocal            4
+      getproperty         QName(PackageNamespace(""), "data")
+      getlocal            4
+      getproperty         QName(PackageNamespace(""), "data")
+      getproperty         QName(PackageNamespace(""), "rect")
+      getlocal            6
+      pushnull
+      pushnull
+      pushtrue
+      callpropvoid        QName(PackageNamespace(""), "copyPixels"), 6
+
+      debugline           220
+      getlocal2
+      getlocal            5
+      setproperty         QName(Namespace("_-E9"), "bitmap")
+
+      debugline           221
+      getlocal            4
+      getproperty         QName(PackageNamespace(""), "data")
+      callpropvoid        QName(PackageNamespace(""), "dispose"), 0
+
+      debugline           207
+L171:
+      inclocal_i          1
+L172:
+      getlocal1
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-xM"), "recycler")
+      getproperty         QName(Namespace("_-3CB"), "_-1QQ")
+      iflt                L39
+
+      debugline           225
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-xM"), "_-448")
+   method
+    refid "_-44Z:RecyclerCatalogWidget/instance/_-44Z:RecyclerCatalogWidget/instance/_-448"
+    param QName(PackageNamespace("_-6ZW"), "_-5Cj")
+    returns QName(PackageNamespace("_-5rP"), "_-5Qz")
+    body
+     maxstack 4
+     localcount 3
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           243
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-5rP"), "_-5Qz")
+      setlocal2
+
+      debug               1, "k", 0, 243
+      debug               1, "k", 1, 246
+      debugline           244
+      getlocal1
+      pushnull
+      equals
+      dup
+      iftrue              L21
+
+      pop
+      getlex              QName(PackageNamespace(""), "page")
+      getproperty         QName(Namespace("_-5W6"), "viewer")
+      getproperty         QName(Namespace("_-5tj"), "roomEngine")
+      pushnull
+      equals
+L21:
+      iffalse             L27
+
+      pushnull
+      returnvalue
+
+      ; 0xF0
+      ; 0xF7
+      ; 0x01
+L27:
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "category")
+      getlex              QName(PackageNamespace("_-Rk"), "_-4dV")
+      getproperty         QName(PackageNamespace(""), "_-3aq")
+      ifne                L44
+
+      debugline           248
+      getlex              QName(PackageNamespace(""), "page")
+      getproperty         QName(Namespace("_-5W6"), "viewer")
+      getproperty         QName(Namespace("_-5tj"), "roomEngine")
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "typeId")
+      pushnull
+      callproperty        QName(Namespace("_-1-k"), "getFurnitureIcon"), 2
+      returnvalue
+
+      ; 0xF0
+      ; 0xFA
+      ; 0x01
+L44:
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "category")
+      getlex              QName(PackageNamespace("_-Rk"), "_-4dV")
+      getproperty         QName(PackageNamespace(""), "_-1Zr")
+      ifne                L63
+
+      debugline           251
+      getlex              QName(PackageNamespace(""), "page")
+      getproperty         QName(Namespace("_-5W6"), "viewer")
+      getproperty         QName(Namespace("_-5tj"), "roomEngine")
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "typeId")
+      pushnull
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "xxxExtra")
+      callproperty        QName(Namespace("_-1-k"), "getWallItemIcon"), 3
+      returnvalue
+
+      ; 0xF0
+      ; 0xFE
+      ; 0x01
+L63:
+      pushnull
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-xM"), "_-2wP")
+   method
+    refid "_-44Z:RecyclerCatalogWidget/instance/_-44Z:RecyclerCatalogWidget/instance/_-2wP"
+    param QName(PackageNamespace("_-5-S"), "WindowEvent")
+    param QName(PackageNamespace("_-1rh"), "IWindow")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 6
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           262
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 262
+      debug               1, "k", 1, 262
+      debug               1, "k", 2, 265
+      debug               1, "k", 3, 267
+      debugline           265
+      getlex              QName(PackageNamespace(""), "page")
+      getproperty         QName(Namespace("_-5W6"), "viewer")
+      getproperty         QName(Namespace("_-5tj"), "roomEngine")
+      coerce              QName(PackageNamespace("_-5rP"), "_-3o8")
+      setlocal3
+
+      debugline           266
+      getlocal3
+      pushnull
+      ifne                L22
+
+      returnvoid
+
+      ; 0xF0
+      ; 0x8B
+      ; 0x02
+L22:
+      getlocal3
+      getlocal3
+      getproperty         QName(Namespace("_-1-k"), "activeRoomId")
+      callproperty        QName(Namespace("_-1-k"), "_-0vs"), 1
+      coerce              QName(PackageNamespace("_-5rP"), "_-Op")
+      setlocal            4
+
+      jump                L84
+
+L29:
+      label
+      debugline           273
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-xM"), "_-19i")
+      pushnull
+      ifeq                L40
+
+      debugline           274
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-xM"), "_-19i")
+      callpropvoid        QName(PackageNamespace(""), "_-0yr"), 0
+
+      debugline           276
+L40:
+      jump                L125
+
+L41:
+      label
+      debugline           280
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-xM"), "_-19i")
+      pushnull
+      ifeq                L55
+
+      debugline           281
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-xM"), "_-19i")
+      getlocal1
+      getlocal2
+      getlocal            4
+      callpropvoid        QName(PackageNamespace(""), "_-2wP"), 3
+
+      debugline           283
+L55:
+      jump                L125
+
+L56:
+      label
+      debugline           288
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-xM"), "_-19i")
+      pushnull
+      ifne                L78
+
+      debugline           289
+      getlocal0
+      findpropstrict      QName(PackageNamespace("_-0Cr"), "_-46l")
+      constructprop       QName(PackageNamespace("_-0Cr"), "_-46l"), 0
+      initproperty        QName(PrivateNamespace("_-xM"), "_-19i")
+
+      debugline           290
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-xM"), "_-19i")
+      getlex              QName(PackageNamespace(""), "window")
+      setproperty         QName(PackageNamespace(""), "mainContainer")
+
+      debugline           291
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-xM"), "_-19i")
+      getlocal3
+      setproperty         QName(PackageNamespace(""), "roomEngine")
+
+      debugline           293
+L78:
+      jump                L125
+
+L79:
+      label
+      jump                L125
+
+      ; 0xF0
+      ; 0x8D
+      ; 0x02
+L84:
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "type")
+      setlocal            5
+
+      debugline           272
+      getlex              QName(PackageNamespace("_-5-S"), "WindowMouseEvent")
+      getproperty         QName(PackageNamespace(""), "_-4V9")
+      getlocal            5
+      ifstrictne          L97
+
+      pushbyte            0
+      jump                L120
+
+      ; 0xF0
+      ; 0x97
+      ; 0x02
+L97:
+      getlex              QName(PackageNamespace("_-5-S"), "WindowMouseEvent")
+      getproperty         QName(PackageNamespace(""), "_-2eb")
+      getlocal            5
+      ifstrictne          L106
+
+      pushbyte            1
+      jump                L120
+
+      ; 0xF0
+      ; 0x9E
+      ; 0x02
+L106:
+      getlex              QName(PackageNamespace("_-5-S"), "WindowMouseEvent")
+      getproperty         QName(PackageNamespace(""), "_-5Ek")
+      getlocal            5
+      ifstrictne          L112
+
+      pushbyte            2
+      jump                L120
+
+L112:
+      jump                L119
+
+      ; 0x24
+      ; 0x03
+      ; 0x10
+      ; 0x02
+      ; 0x00
+      ; 0x00
+L119:
+      pushbyte            3
+L120:
+      kill                5
+      lookupswitch        L79, [L29, L41, L56, L79]
+
+      ; 0xF0
+      ; 0xA7
+      ; 0x02
+L125:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-xM"), "_-5Ps")
+   method
+    refid "_-44Z:RecyclerCatalogWidget/instance/_-44Z:RecyclerCatalogWidget/instance/_-5Ps"
+    param QName(PackageNamespace("_-5-S"), "WindowEvent")
+    param QName(PackageNamespace("_-1rh"), "IWindow")
+    returns QName(PackageNamespace(""), "void")
+    flag NEED_ACTIVATION
+    body
+     maxstack 6
+     localcount 4
+     initscopedepth 6
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           302
+      getlocal0
+      pushscope
+
+      newactivation
+      dup
+      setlocal3
+
+      pushscope
+
+      debug               1, "k", 2, 302
+      getscopeobject      1
+      pushbyte            0
+      setslot             5
+
+      getscopeobject      1
+      getlocal1
+      setslot             1
+
+      getscopeobject      1
+      getlocal2
+      setslot             2
+
+      debug               1, "k", 0, 302
+      debug               1, "k", 1, 302
+      debugline           306
+      getscopeobject      1
+      getlex              QName(PackageNamespace(""), "page")
+      getproperty         QName(Namespace("_-5W6"), "viewer")
+      getproperty         QName(Namespace("_-5tj"), "roomEngine")
+      coerce              QName(PackageNamespace("_-5rP"), "_-3o8")
+      setslot             3
+
+      debugline           307
+      getscopeobject      1
+      getslot             3
+      pushnull
+      equals
+      dup
+      iftrue              L39
+
+      pop
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-xM"), "recycler")
+      pushnull
+      equals
+L39:
+      iffalse             L44
+
+      returnvoid
+
+      ; 0xF0
+      ; 0xB4
+      ; 0x02
+L44:
+      getscopeobject      1
+      getscopeobject      1
+      getslot             3
+      getscopeobject      1
+      getslot             3
+      getproperty         QName(Namespace("_-1-k"), "activeRoomId")
+      callproperty        QName(Namespace("_-1-k"), "_-0vs"), 1
+      coerce              QName(PackageNamespace("_-5rP"), "_-Op")
+      setslot             4
+
+      debugline           310
+      getscopeobject      1
+      getslot             1
+      getproperty         QName(PackageNamespace(""), "type")
+      getlex              QName(PackageNamespace("_-5-S"), "WindowMouseEvent")
+      getproperty         QName(PackageNamespace(""), "UP")
+      ifne                L159
+
+      debugline           313
+      getscopeobject      1
+      getslot             1
+      getproperty         QName(PackageNamespace(""), "window")
+      getproperty         QName(Namespace("_-6Dt"), "name")
+      pushstring          "slot_"
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "indexOf"), 1
+      pushbyte            0
+      ifne                L159
+
+      debugline           314
+      getscopeobject      1
+      findpropstrict      QName(PackageNamespace(""), "int")
+      getscopeobject      1
+      getslot             1
+      getproperty         QName(PackageNamespace(""), "window")
+      getproperty         QName(Namespace("_-6Dt"), "name")
+      getscopeobject      1
+      getslot             1
+      getproperty         QName(PackageNamespace(""), "window")
+      getproperty         QName(Namespace("_-6Dt"), "name")
+      getproperty         QName(PackageNamespace(""), "length")
+      decrement
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "charAt"), 1
+      callproperty        QName(PackageNamespace(""), "int"), 1
+      decrement
+      convert_i
+      setslot             5
+
+      debugline           316
+      getscopeobject      1
+      getslot             4
+      pushnull
+      ifeq                L136
+
+      debugline           317
+      getscopeobject      1
+      getslot             4
+      getproperty         QName(Namespace("_-06z"), "operation")
+      getlex              QName(PackageNamespace("_-Rk"), "_-S7")
+      getproperty         QName(PackageNamespace(""), "OBJECT_PLACE")
+      ifeq                L115
+
+      debugline           318
+      getlex              QName(PackageNamespace(""), "page")
+      getproperty         QName(Namespace("_-5W6"), "viewer")
+      getproperty         QName(Namespace("_-5tj"), "catalog")
+      getproperty         QName(Namespace("_-5qx"), "windowManager")
+      pushstring          "${generic.alert.title}"
+      pushstring          "${catalog.alert.recycler.inventory}"
+      pushbyte            0
+      newfunction         "_-44Z:RecyclerCatalogWidget/instance/_-44Z:RecyclerCatalogWidget/instance/_-5Ps/inline_method"
+      callpropvoid        Multiname("alert", [PrivateNamespace("_-xM"), PackageNamespace(""), PackageNamespace("_-44Z"), PrivateNamespace("RecyclerCatalogWidget.as$3277"), PackageInternalNs("_-44Z"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-xM"), StaticProtectedNs("_-xM"), StaticProtectedNs("_-1BS")]), 4
+
+      debugfile           "k"
+      debugline           319
+      returnvoid
+
+      ; 0xF0
+      ; 0xC1
+      ; 0x02
+L115:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-xM"), "recycler")
+      getscopeobject      1
+      getslot             5
+      getscopeobject      1
+      getslot             4
+      getproperty         QName(Namespace("_-06z"), "id")
+      getscopeobject      1
+      getslot             4
+      getproperty         QName(Namespace("_-06z"), "category")
+      getscopeobject      1
+      getslot             4
+      getproperty         QName(Namespace("_-06z"), "typeId")
+      getscopeobject      1
+      getslot             4
+      getproperty         QName(Namespace("_-06z"), "_-3hd")
+      callpropvoid        QName(Namespace("_-3CB"), "_-4u2"), 5
+
+      jump                L142
+
+      ; 0xF0
+      ; 0xC3
+      ; 0x02
+L136:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-xM"), "recycler")
+      getscopeobject      1
+      getslot             5
+      callpropvoid        QName(Namespace("_-3CB"), "_-21e"), 1
+
+      debugline           326
+L142:
+      getscopeobject      1
+      getslot             3
+      callpropvoid        QName(Namespace("_-1-k"), "_-3-e"), 0
+
+      debugline           327
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-xM"), "_-19i")
+      pushnull
+      ifeq                L155
+
+      debugline           328
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-xM"), "_-19i")
+      callpropvoid        QName(PackageNamespace(""), "_-0yr"), 0
+
+      debugline           330
+L155:
+      returnvoid
+
+      ; 0xF0
+      ; 0xCE
+      ; 0x02
+L159:
+      getscopeobject      1
+      getslot             1
+      getproperty         QName(PackageNamespace(""), "type")
+      getlex              QName(PackageNamespace("_-5-S"), "WindowMouseEvent")
+      getproperty         QName(PackageNamespace(""), "_-2eb")
+      ifne                L173
+
+      debugline           335
+      getlocal0
+      getscopeobject      1
+      getslot             1
+      getscopeobject      1
+      getslot             2
+      callpropvoid        QName(PrivateNamespace("_-xM"), "_-2wP"), 2
+
+      debugline           337
+L173:
+      returnvoid
+     end ; code
+     trait slot QName(PackageInternalNs("_-44Z"), "event") slotid 1 type QName(PackageNamespace("_-5-S"), "WindowEvent") end
+     trait slot QName(PackageInternalNs("_-44Z"), "target") slotid 2 type QName(PackageNamespace("_-1rh"), "IWindow") end
+     trait slot QName(PackageInternalNs("_-44Z"), "roomEngine") slotid 3 type QName(PackageNamespace("_-5rP"), "_-3o8") end
+     trait slot QName(PackageInternalNs("_-44Z"), "objectData") slotid 4 type QName(PackageNamespace("_-5rP"), "_-Op") end
+     trait slot QName(PackageInternalNs("_-44Z"), "slotId") slotid 5 type QName(PackageNamespace(""), "int") end
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-0Wy")
+   method
+    refid "_-44Z:RecyclerCatalogWidget/instance/_-0Wy"
+    param QName(PackageNamespace(""), "Boolean")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           343
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 343
+      debug               1, "k", 1, 347
+      debugline           344
+      getlex              QName(PackageNamespace(""), "disposed")
+      convert_b
+      dup
+      iftrue              L15
+
+      pop
+      getlex              QName(PackageNamespace(""), "window")
+      pushnull
+      equals
+L15:
+      iffalse             L21
+
+      debugline           345
+      returnvoid
+
+      ; 0xF0
+      ; 0xDB
+      ; 0x02
+L21:
+      getlex              QName(PackageNamespace(""), "window")
+      pushstring          "recycler_recycle"
+      callproperty        QName(Namespace("_-0zV"), "findChildByName"), 1
+      coerce              QName(PackageNamespace("_-1rh"), "IWindow")
+      setlocal2
+
+      debugline           348
+      getlocal2
+      pushnull
+      ifeq                L50
+
+      debugline           349
+      getlocal1
+      iffalse             L47
+
+      debugline           350
+      getlocal2
+      callpropvoid        QName(Namespace("_-6Dt"), "enable"), 0
+
+      debugline           351
+      getlocal2
+      getlex              QName(PackageNamespace("_-5-S"), "WindowMouseEvent")
+      getproperty         QName(PackageNamespace(""), "CLICK")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-xM"), "_-1gD")
+      callpropvoid        QName(Namespace("_-6Dt"), "addEventListener"), 2
+
+      jump                L50
+
+      ; 0xF0
+      ; 0xE1
+      ; 0x02
+L47:
+      getlocal2
+      callpropvoid        QName(Namespace("_-6Dt"), "disable"), 0
+
+      debugline           356
+L50:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-xM"), "_-1gD")
+   method
+    refid "_-44Z:RecyclerCatalogWidget/instance/_-44Z:RecyclerCatalogWidget/instance/_-1gD"
+    param QName(PackageNamespace("_-5-S"), "WindowMouseEvent")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           362
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 362
+      debugline           363
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-xM"), "recycler")
+      pushnull
+      ifeq                L15
+
+      debugline           364
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-xM"), "recycler")
+      callpropvoid        QName(Namespace("_-3CB"), "_-46V"), 0
+
+      debugline           366
+L15:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-xM"), "_-5uF")
+   method
+    refid "_-44Z:RecyclerCatalogWidget/instance/_-44Z:RecyclerCatalogWidget/instance/_-5uF"
+    param QName(PackageNamespace("_-5-S"), "WindowMouseEvent")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           372
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 372
+      debugline           373
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-xM"), "recycler")
+      pushnull
+      ifeq                L20
+
+      debugline           374
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-xM"), "recycler")
+      callpropvoid        QName(Namespace("_-3CB"), "empty"), 0
+
+      debugline           375
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-xM"), "recycler")
+      getlocal0
+      callpropvoid        QName(Namespace("_-3CB"), "init"), 1
+
+      debugline           377
+L20:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-44Z:RecyclerCatalogWidget/class/init"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 4
+   maxscopedepth 5
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

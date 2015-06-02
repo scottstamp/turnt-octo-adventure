@@ -1,0 +1,107 @@
+class
+ refid "_-4J4:_-4KW"
+ instance QName(PackageNamespace("_-4J4"), "_-4KW")
+  extends QName(PackageNamespace("_-3kP"), "AdServerConfig")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-2ph")
+  iinit
+   refid "_-4J4:_-4KW/instance/init"
+   param QName(PackageNamespace(""), "Object")
+   flag HAS_OPTIONAL
+   optional Null()
+   body
+    maxstack 3
+    localcount 2
+    initscopedepth 6
+    maxscopedepth 7
+    code
+     debugfile           "k"
+     debugline           25
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 25
+     debugline           26
+     getlocal0
+     pushtrue
+     initproperty        QName(PackageNamespace(""), "oneAdPerRequest")
+
+     debugline           27
+     getlocal0
+     pushstring          "Adform"
+     getlocal1
+     constructsuper      2
+
+     debugline           28
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait getter QName(ProtectedNamespace("_-2ph"), "defaultTemplate") flag OVERRIDE
+   method
+    refid "_-4J4:_-4KW/instance/_-2ph:defaultTemplate/getter"
+    returns QName(PackageNamespace(""), "String")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           34
+      getlocal0
+      pushscope
+
+      pushstring          "__api-address__/?bn=__zone__&ord=__timestamp__"
+      debugline           35
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(ProtectedNamespace("_-2ph"), "defaultCustomProperties") flag OVERRIDE
+   method
+    refid "_-4J4:_-4KW/instance/_-2ph:defaultCustomProperties/getter"
+    returns QName(PackageNamespace("_-3kP"), "CustomProperties")
+    body
+     maxstack 3
+     localcount 1
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           38
+      getlocal0
+      pushscope
+
+      debugline           39
+      findpropstrict      QName(PackageNamespace("_-3kP"), "CustomProperties")
+      pushstring          "api-address"
+      debugline           41
+      convert_s
+      pushstring          "http://track.adform.net/serving/videoad"
+      newobject           1
+      constructprop       QName(PackageNamespace("_-3kP"), "CustomProperties"), 1
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-4J4:_-4KW/class/init"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 5
+   maxscopedepth 6
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

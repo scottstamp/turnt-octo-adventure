@@ -1,0 +1,1002 @@
+class
+ refid "_-rG:RoomThumbnailCameraWidget"
+ instance QName(PackageNamespace("_-rG"), "RoomThumbnailCameraWidget")
+  extends QName(PackageNamespace("_-05P"), "_-17P")
+  implements Multiname("_-6Uo", [PackageNamespace("_-6Sg")])
+  implements Multiname("_-5bv", [PackageNamespace("_-3Fd")])
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-1")
+  iinit
+   refid "_-rG:RoomThumbnailCameraWidget/instance/init"
+   param QName(PackageNamespace("_-jx"), "_-2Sk")
+   param QName(PackageNamespace("_-6AR"), "_-6Ja")
+   param QName(PackageNamespace("_-1t2"), "_-1Xk")
+   param QName(PackageNamespace("_-6Sg"), "_-3lI")
+   param QName(PackageNamespace("_-0YE"), "_-3an")
+   param QName(PackageNamespace("_-jx"), "RoomUI")
+   body
+    maxstack 5
+    localcount 7
+    initscopedepth 5
+    maxscopedepth 6
+    code
+     debugfile           "k"
+     debugline           43
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 43
+     debug               1, "k", 1, 43
+     debug               1, "k", 2, 43
+     debug               1, "k", 3, 43
+     debug               1, "k", 4, 43
+     debug               1, "k", 5, 43
+     debugline           44
+     getlocal0
+     getlocal1
+     getlocal2
+     getlocal3
+     getlocal            5
+     constructsuper      4
+
+     debugline           46
+     getlocal0
+     getlocal            6
+     initproperty        QName(PrivateNamespace("_-1"), "_-5VX")
+
+     debugline           47
+     getlocal0
+     getproperty         QName(PackageNamespace(""), "handler")
+     getlocal0
+     setproperty         QName(PackageNamespace(""), "widget")
+
+     debugline           48
+     getlocal0
+     getproperty         QName(PackageNamespace(""), "roomEngine")
+     iffalse             L49
+
+     debugline           49
+     getlocal0
+     getproperty         QName(PackageNamespace(""), "roomEngine")
+     getproperty         QName(Namespace("_-1-k"), "events")
+     getlex              QName(PackageNamespace("_-0B-"), "_-303")
+     getproperty         QName(PackageNamespace(""), "_-190")
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-1"), "_-6V8")
+     callpropvoid        QName(Namespace("flash.events:IEventDispatcher"), "addEventListener"), 2
+
+     debugline           50
+     getlocal0
+     getproperty         QName(PackageNamespace(""), "roomEngine")
+     getproperty         QName(Namespace("_-1-k"), "events")
+     getlex              QName(PackageNamespace("_-0B-"), "_-303")
+     getproperty         QName(PackageNamespace(""), "_-0W7")
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-1"), "_-472")
+     callpropvoid        QName(Namespace("flash.events:IEventDispatcher"), "addEventListener"), 2
+
+     debugline           52
+L49:
+     getlocal2
+     getlex              QName(PackageNamespace("_-6Sg"), "Component")
+     astypelate
+     getproperty         QName(PackageNamespace(""), "context")
+     getlocal0
+     callpropvoid        QName(Namespace("_-4eL"), "addLinkEventTracker"), 1
+
+     debugline           53
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-1"), "_-5VX") type QName(PackageNamespace("_-jx"), "RoomUI") end
+  trait slot QName(PrivateNamespace("_-1"), "_-04A") type QName(PackageNamespace("_-3yU"), "IFrameWindow") value Null() end
+  trait slot QName(PrivateNamespace("_-1"), "_-n9") type QName(PackageNamespace("_-3yU"), "IBitmapWrapperWindow") end
+  trait method QName(PackageNamespace(""), "dispose") flag OVERRIDE
+   method
+    refid "_-rG:RoomThumbnailCameraWidget/instance/dispose"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           55
+      getlocal0
+      pushscope
+
+      debugline           56
+      getlex              QName(PackageNamespace(""), "disposed")
+      iffalse             L11
+
+      debugline           57
+      returnvoid
+
+      ; 0xF0
+      ; 0x3B
+L11:
+      getlex              QName(PackageNamespace(""), "windowManager")
+      getlex              QName(PackageNamespace("_-6Sg"), "Component")
+      astypelate
+      getproperty         QName(PackageNamespace(""), "context")
+      getlocal0
+      callpropvoid        QName(Namespace("_-4eL"), "removeLinkEventTracker"), 1
+
+      debugline           60
+      getlocal0
+      callsupervoid       QName(PackageNamespace(""), "dispose"), 0
+      debugline           61
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "container")
+   method
+    refid "_-rG:RoomThumbnailCameraWidget/instance/container/getter"
+    returns QName(PackageNamespace("_-jx"), "_-EM")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           63
+      getlocal0
+      pushscope
+
+      debugline           64
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "handler")
+      iffalse             L13
+
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "handler")
+      getproperty         QName(PackageNamespace(""), "container")
+      coerce              QName(PackageNamespace("_-jx"), "_-EM")
+      jump                L15
+
+L13:
+      pushnull
+      coerce              QName(PackageNamespace("_-jx"), "_-EM")
+L15:
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "handler")
+   method
+    refid "_-rG:RoomThumbnailCameraWidget/instance/handler/getter"
+    returns QName(PackageNamespace("_-4fL"), "_-5dp")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           67
+      getlocal0
+      pushscope
+
+      debugline           68
+      getlex              QName(ProtectedNamespace("_-15E"), "_-e")
+      getlex              QName(PackageNamespace("_-4fL"), "_-5dp")
+      astypelate
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "roomEngine")
+   method
+    refid "_-rG:RoomThumbnailCameraWidget/instance/roomEngine/getter"
+    returns QName(PackageNamespace("_-5rP"), "_-3o8")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           71
+      getlocal0
+      pushscope
+
+      debugline           72
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "container")
+      iffalse             L13
+
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "container")
+      getproperty         QName(Namespace("_-2wy"), "roomEngine")
+      coerce              QName(PackageNamespace("_-5rP"), "_-3o8")
+      jump                L15
+
+L13:
+      pushnull
+      coerce              QName(PackageNamespace("_-5rP"), "_-3o8")
+L15:
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "update")
+   method
+    refid "_-rG:RoomThumbnailCameraWidget/instance/update"
+    param QName(PackageNamespace(""), "uint")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 6
+     localcount 5
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           75
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("flash.geom"), "Point")
+      setlocal2
+
+      pushnull
+      coerce              QName(PackageNamespace("flash.geom"), "Matrix")
+      setlocal3
+
+      pushnull
+      coerce              QName(PackageNamespace("_-1rL"), "_-5su")
+      setlocal            4
+
+      debug               1, "k", 0, 75
+      debugline           76
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1"), "_-04A")
+      convert_b
+      dup
+      iffalse             L24
+
+      pop
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1"), "_-n9")
+      convert_b
+L24:
+      iffalse             L112
+
+      debug               1, "k", 1, 82
+      debug               1, "k", 2, 84
+      debug               1, "k", 3, 87
+      debugline           77
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1"), "_-n9")
+      getproperty         QName(Namespace("_-E9"), "bitmap")
+      pushnull
+      ifne                L49
+
+      debugline           78
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1"), "_-n9")
+      findpropstrict      QName(PackageNamespace("flash.display"), "BitmapData")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1"), "_-n9")
+      getproperty         QName(Namespace("_-6Dt"), "width")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1"), "_-n9")
+      getproperty         QName(Namespace("_-6Dt"), "height")
+      pushfalse
+      pushbyte            0
+      constructprop       QName(PackageNamespace("flash.display"), "BitmapData"), 4
+      setproperty         QName(Namespace("_-E9"), "bitmap")
+
+      debugline           80
+L49:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1"), "_-n9")
+      getproperty         QName(Namespace("_-E9"), "bitmap")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1"), "_-n9")
+      getproperty         QName(Namespace("_-E9"), "bitmap")
+      getproperty         QName(PackageNamespace(""), "rect")
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "handler")
+      getproperty         QName(PackageNamespace(""), "_-5AA")
+      getproperty         QName(PackageNamespace(""), "_-2Gm")
+      callpropvoid        QName(PackageNamespace(""), "fillRect"), 2
+
+      debugline           82
+      findpropstrict      QName(PackageNamespace("flash.geom"), "Point")
+      pushbyte            0
+      dup
+      constructprop       QName(PackageNamespace("flash.geom"), "Point"), 2
+      coerce              QName(PackageNamespace("flash.geom"), "Point")
+      setlocal2
+
+      debugline           83
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1"), "_-n9")
+      getlocal2
+      callpropvoid        QName(Namespace("_-6Dt"), "getGlobalPosition"), 1
+
+      debugline           84
+      findpropstrict      QName(PackageNamespace("flash.geom"), "Matrix")
+      constructprop       QName(PackageNamespace("flash.geom"), "Matrix"), 0
+      coerce              QName(PackageNamespace("flash.geom"), "Matrix")
+      setlocal3
+
+      debugline           85
+      getlocal3
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "x")
+      negate
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "y")
+      negate
+      callpropvoid        QName(PackageNamespace(""), "translate"), 2
+
+      debugline           87
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "container")
+      getproperty         QName(Namespace("_-2wy"), "roomSession")
+      coerce              QName(PackageNamespace("_-1rL"), "_-5su")
+      setlocal            4
+
+      debugline           88
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "roomEngine")
+      getlocal            4
+      getproperty         QName(Namespace("_-4i2"), "roomId")
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "container")
+      callproperty        QName(Namespace("_-2wy"), "getFirstCanvasId"), 0
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1"), "_-n9")
+      getproperty         QName(Namespace("_-E9"), "bitmap")
+      getlocal3
+      pushfalse
+      callpropvoid        QName(Namespace("_-1-k"), "_-4A7"), 5
+
+      debugline           89
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1"), "_-n9")
+      callpropvoid        QName(Namespace("_-6Dt"), "invalidate"), 0
+
+      debugline           91
+L112:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-3BB")
+   method
+    refid "_-rG:RoomThumbnailCameraWidget/instance/_-3BB"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 5
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           93
+      getlocal0
+      pushscope
+
+      debugline           94
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "roomEngine")
+      convert_b
+      dup
+      iffalse             L17
+
+      pop
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "roomEngine")
+      callproperty        QName(Namespace("_-1-k"), "_-1Pw"), 0
+      pushbyte            1
+      equals
+      not
+L17:
+      iffalse             L29
+
+      debugline           95
+      getlex              QName(PackageNamespace(""), "windowManager")
+      pushstring          "Camera only works on normal zoom!"
+      pushstring          "Return to normal zoom level and try again!"
+      pushbyte            0
+      pushnull
+      callpropvoid        QName(Namespace("_-0XZ"), "alert"), 4
+
+      debugline           96
+      returnvoid
+
+      ; 0xF0
+      ; 0x62
+L29:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1"), "_-04A")
+      iftrue              L36
+
+      debugline           99
+      getlocal0
+      callpropvoid        QName(PrivateNamespace("_-1"), "createWindow"), 0
+
+      debugline           101
+L36:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-1"), "createWindow")
+   method
+    refid "_-rG:RoomThumbnailCameraWidget/instance/_-rG:RoomThumbnailCameraWidget/instance/createWindow"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 6
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           103
+      getlocal0
+      pushscope
+
+      debugline           104
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1"), "_-04A")
+      iffalse             L11
+
+      getlocal0
+      callpropvoid        QName(PackageNamespace(""), "destroy"), 0
+
+      debugline           105
+L11:
+      getlocal0
+      findpropstrict      QName(PackageNamespace("_-3yU"), "IFrameWindow")
+      getlex              QName(PackageNamespace(""), "windowManager")
+      findpropstrict      QName(PackageNamespace(""), "XML")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1"), "_-5VX")
+      getproperty         QName(PackageNamespace(""), "assets")
+      pushstring          "iro_room_thumbnail_camera_xml"
+      callproperty        QName(Namespace("_-6V0"), "getAssetByName"), 1
+      getproperty         QName(Namespace("_-6LB"), "content")
+      callproperty        QName(PackageNamespace(""), "XML"), 1
+      callproperty        QName(Namespace("_-110"), "buildFromXML"), 1
+      callproperty        QName(PackageNamespace("_-3yU"), "IFrameWindow"), 1
+      initproperty        QName(PrivateNamespace("_-1"), "_-04A")
+
+      debugline           106
+      getlocal0
+      findpropstrict      QName(PackageNamespace("_-3yU"), "IBitmapWrapperWindow")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1"), "_-04A")
+      pushstring          "viewfinder"
+      callproperty        QName(Namespace("_-0zV"), "findChildByName"), 1
+      callproperty        QName(PackageNamespace("_-3yU"), "IBitmapWrapperWindow"), 1
+      initproperty        QName(PrivateNamespace("_-1"), "_-n9")
+
+      debugline           107
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1"), "_-04A")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1"), "_-2o8")
+      setproperty         QName(Namespace("_-6Dt"), "procedure")
+
+      debugline           108
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1"), "_-04A")
+      callpropvoid        QName(Namespace("_-6Dt"), "center"), 0
+
+      debugline           109
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1"), "_-5VX")
+      getlocal0
+      pushbyte            10
+      callpropvoid        QName(PackageNamespace(""), "registerUpdateReceiver"), 2
+
+      debugline           110
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "destroy")
+   method
+    refid "_-rG:RoomThumbnailCameraWidget/instance/destroy"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           112
+      getlocal0
+      pushscope
+
+      debugline           113
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1"), "_-04A")
+      iffalse             L22
+
+      debugline           114
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1"), "_-04A")
+      callpropvoid        QName(Namespace("_-6Dt"), "destroy"), 0
+
+      debugline           115
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-1"), "_-04A")
+
+      debugline           116
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1"), "_-5VX")
+      getlocal0
+      callpropvoid        QName(PackageNamespace(""), "removeUpdateReceiver"), 1
+
+      debugline           118
+L22:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "_-3zg")
+   method
+    refid "_-rG:RoomThumbnailCameraWidget/instance/_-3zg/getter"
+    returns QName(PackageNamespace("flash.geom"), "Rectangle")
+    body
+     maxstack 5
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           120
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 121
+      debugline           121
+      findpropstrict      QName(PackageNamespace("flash.geom"), "Point")
+      pushbyte            0
+      dup
+      constructprop       QName(PackageNamespace("flash.geom"), "Point"), 2
+      coerce              QName(PackageNamespace("flash.geom"), "Point")
+      setlocal1
+
+      debugline           122
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1"), "_-n9")
+      getlocal1
+      callpropvoid        QName(Namespace("_-6Dt"), "getGlobalPosition"), 1
+
+      debugline           123
+      findpropstrict      QName(PackageNamespace("flash.geom"), "Rectangle")
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "x")
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "y")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1"), "_-n9")
+      getproperty         QName(Namespace("_-6Dt"), "width")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1"), "_-n9")
+      getproperty         QName(Namespace("_-6Dt"), "height")
+      constructprop       QName(PackageNamespace("flash.geom"), "Rectangle"), 4
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-1"), "_-6V8")
+   method
+    refid "_-rG:RoomThumbnailCameraWidget/instance/_-rG:RoomThumbnailCameraWidget/instance/_-6V8"
+    param QName(PackageNamespace("_-0B-"), "_-303")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 1
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           126
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 126
+      debugline           127
+      getlocal0
+      callpropvoid        QName(PackageNamespace(""), "destroy"), 0
+
+      debugline           128
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-1"), "_-472")
+   method
+    refid "_-rG:RoomThumbnailCameraWidget/instance/_-rG:RoomThumbnailCameraWidget/instance/_-472"
+    param QName(PackageNamespace("_-0B-"), "_-303")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           130
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 130
+      debugline           131
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "roomEngine")
+      convert_b
+      dup
+      iffalse             L18
+
+      pop
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "roomEngine")
+      callproperty        QName(Namespace("_-1-k"), "_-1Pw"), 0
+      pushbyte            1
+      equals
+      not
+L18:
+      iffalse             L22
+
+      getlocal0
+      callpropvoid        QName(PackageNamespace(""), "destroy"), 0
+
+      debugline           132
+L22:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-1HV")
+   method
+    refid "_-rG:RoomThumbnailCameraWidget/instance/_-1HV"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           134
+      getlocal0
+      pushscope
+
+      debugline           135
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "container")
+      getproperty         QName(Namespace("_-2wy"), "_-3LR")
+      getlex              QName(PackageNamespace("_-2Tm"), "_-3JF")
+      getproperty         QName(PackageNamespace(""), "_-0ff")
+      callpropvoid        QName(Namespace("_-2IH"), "_-1Du"), 1
+
+      debugline           136
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-1"), "_-2o8")
+   method
+    refid "_-rG:RoomThumbnailCameraWidget/instance/_-rG:RoomThumbnailCameraWidget/instance/_-2o8"
+    param QName(PackageNamespace("_-5-S"), "WindowEvent")
+    param QName(PackageNamespace("_-1rh"), "IWindow")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 5
+     localcount 6
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           138
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-4FJ"), "_-1Zk")
+      setlocal            4
+
+      debug               1, "k", 0, 138
+      debug               1, "k", 1, 138
+      debug               1, "k", 2, 139
+      debugline           139
+      getlocal1
+      getlex              QName(PackageNamespace("_-5-S"), "WindowMouseEvent")
+      astypelate
+      coerce              QName(PackageNamespace("_-5-S"), "WindowMouseEvent")
+      setlocal3
+
+      debugline           140
+      getlocal3
+      convert_b
+      dup
+      iffalse             L27
+
+      pop
+      getlocal3
+      getproperty         QName(PackageNamespace(""), "type")
+      getlex              QName(PackageNamespace("_-5-S"), "WindowMouseEvent")
+      getproperty         QName(PackageNamespace(""), "CLICK")
+      equals
+L27:
+      iffalse             L138
+
+      jump                L104
+
+      ; 0xEF
+      ; 0x01
+      ; 0x02
+      ; 0x03
+      ; 0x90
+      ; 0x01
+L35:
+      label
+      debugline           143
+      getlocal0
+      callpropvoid        QName(PackageNamespace(""), "_-1HV"), 0
+
+      debugline           144
+      findpropstrict      QName(PackageNamespace("_-4fL"), "_-5dp")
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "handler")
+      callproperty        QName(PackageNamespace("_-4fL"), "_-5dp"), 1
+      callproperty        QName(PackageNamespace(""), "_-2T4"), 0
+      coerce              QName(PackageNamespace("_-4FJ"), "_-1Zk")
+      setlocal            4
+
+      debugline           145
+      getlocal            4
+      pushnull
+      equals
+      not
+      dup
+      iffalse             L58
+
+      pop
+      getlocal            4
+      callproperty        QName(PackageNamespace(""), "_-hU"), 0
+      convert_b
+L58:
+      iffalse             L85
+
+      debugline           146
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "handler")
+      getlocal            4
+      callpropvoid        QName(PackageNamespace(""), "_-5v2"), 1
+
+      debugline           147
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1"), "_-04A")
+      pushstring          "button_capture"
+      callproperty        QName(Namespace("_-0zV"), "findChildByName"), 1
+      callpropvoid        QName(Namespace("_-6Dt"), "disable"), 0
+
+      debugline           148
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1"), "_-04A")
+      pushstring          "button_cancel"
+      callproperty        QName(Namespace("_-0zV"), "findChildByName"), 1
+      callpropvoid        QName(Namespace("_-6Dt"), "disable"), 0
+
+      debugline           149
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1"), "_-5VX")
+      getlocal0
+      callpropvoid        QName(PackageNamespace(""), "removeUpdateReceiver"), 1
+
+      jump                L92
+
+      ; 0xF0
+      ; 0x97
+      ; 0x01
+L85:
+      getlex              QName(PackageNamespace(""), "windowManager")
+      pushstring          "${generic.alert.title}"
+      pushstring          "${camera.alert.too_much_stuff}"
+      pushbyte            0
+      pushnull
+      callpropvoid        QName(Namespace("_-0XZ"), "alert"), 4
+
+      debugline           153
+L92:
+      returnvoid
+
+L93:
+      label
+      debugline           156
+      getlocal0
+      callpropvoid        QName(PackageNamespace(""), "destroy"), 0
+
+      debugline           158
+      jump                L138
+
+L99:
+      label
+      jump                L138
+
+      ; 0xF0
+      ; 0x8D
+      ; 0x01
+L104:
+      getlocal2
+      getproperty         QName(Namespace("_-6Dt"), "name")
+      setlocal            5
+
+      pushstring          "button_capture"
+      debugline           142
+      getlocal            5
+      ifstrictne          L113
+
+      pushbyte            0
+      jump                L133
+
+L113:
+      pushstring          "header_button_close"
+      debugline           154
+      getlocal            5
+      ifstrictne          L119
+
+      pushbyte            1
+      jump                L133
+
+L119:
+      pushstring          "button_cancel"
+      debugline           155
+      getlocal            5
+      ifstrictne          L125
+
+      pushbyte            2
+      jump                L133
+
+L125:
+      jump                L132
+
+      ; 0x24
+      ; 0x03
+      ; 0x10
+      ; 0x02
+      ; 0x00
+      ; 0x00
+L132:
+      pushbyte            3
+L133:
+      kill                5
+      lookupswitch        L99, [L35, L93, L93, L99]
+
+      ; 0xF0
+      ; 0xA1
+      ; 0x01
+L138:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "_-4vl")
+   method
+    refid "_-rG:RoomThumbnailCameraWidget/instance/_-4vl/getter"
+    returns QName(PackageNamespace(""), "String")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           163
+      getlocal0
+      pushscope
+
+      pushstring          "roomThumbnailCamera"
+      debugline           164
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-10W")
+   method
+    refid "_-rG:RoomThumbnailCameraWidget/instance/_-10W"
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 4
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           167
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 167
+      debug               1, "k", 1, 168
+      debug               1, "k", 2, 169
+      debugline           168
+      getlocal1
+      pushstring          "/"
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "split"), 1
+      coerce              QName(PackageNamespace(""), "Array")
+      setlocal2
+
+      debugline           169
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "length")
+      convert_i
+      setlocal3
+
+      debugline           170
+      getlocal3
+      pushbyte            2
+      ifnlt               L27
+
+      debugline           171
+      returnvoid
+
+      ; 0xF0
+      ; 0xAE
+      ; 0x01
+L27:
+      getlocal2
+      pushbyte            1
+      getproperty         MultinameL([PrivateNamespace("_-1"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("RoomThumbnailCameraWidget.as$4470"), PackageNamespace("_-rG"), PackageInternalNs("_-rG"), ProtectedNamespace("_-1"), StaticProtectedNs("_-1"), StaticProtectedNs("_-15E")])
+      pushstring          "open"
+      ifne                L36
+
+      debugline           175
+      getlocal0
+      callpropvoid        QName(PackageNamespace(""), "_-3BB"), 0
+
+      debugline           177
+L36:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-rG:RoomThumbnailCameraWidget/class/init"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 4
+   maxscopedepth 5
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

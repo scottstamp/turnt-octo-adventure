@@ -1,0 +1,278 @@
+class
+ refid "_-1a1:_-23o"
+ instance QName(PackageNamespace("_-1a1"), "_-23o")
+  extends QName(PackageNamespace("_-1a1"), "_-43D")
+  implements Multiname("_-3rl", [PackageNamespace("_-1a1")])
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-4cE")
+  iinit
+   refid "_-1a1:_-23o/instance/init"
+   param QName(PackageNamespace("_-6AR"), "_-6Ja")
+   param QName(PackageNamespace(""), "XML")
+   param QName(PackageNamespace(""), "String")
+   param QName(PackageNamespace(""), "String")
+   param QName(PackageNamespace(""), "String")
+   param QName(PackageNamespace(""), "String")
+   param QName(PackageNamespace(""), "uint")
+   param QName(PackageNamespace(""), "Function")
+   body
+    maxstack 8
+    localcount 9
+    initscopedepth 5
+    maxscopedepth 6
+    code
+     debugfile           "k"
+     debugline           13
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 13
+     debug               1, "k", 1, 13
+     debug               1, "k", 2, 13
+     debug               1, "k", 3, 13
+     debug               1, "k", 4, 13
+     debug               1, "k", 5, 13
+     debug               1, "k", 6, 13
+     debug               1, "k", 7, 13
+     debugline           15
+     getlocal0
+     getlocal1
+     getlocal2
+     getlocal3
+     getlocal            4
+     getlocal            7
+     getlocal            8
+     pushfalse
+     constructsuper      7
+
+     debugline           17
+     getlocal0
+     getlocal            5
+     initproperty        QName(PackageNamespace(""), "linkTitle")
+
+     debugline           18
+     getlocal0
+     getlocal            6
+     initproperty        QName(PackageNamespace(""), "linkUrl")
+
+     debugline           19
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait method QName(ProtectedNamespace("_-4cE"), "dialogEventProc") flag OVERRIDE
+   method
+    refid "_-1a1:_-23o/instance/_-4cE:dialogEventProc"
+    param QName(PackageNamespace("_-5-S"), "WindowEvent")
+    param QName(PackageNamespace("_-1rh"), "IWindow")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 4
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           26
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 26
+      debug               1, "k", 1, 26
+      debugline           30
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "type")
+      getlex              QName(PackageNamespace("_-5-S"), "WindowMouseEvent")
+      getproperty         QName(PackageNamespace(""), "CLICK")
+      ifne                L47
+
+      jump                L26
+
+L13:
+      label
+      debugline           33
+      getlex              QName(PackageNamespace("_-524"), "_-2uY")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-4cE"), "_-1Kp")
+      pushstring          "_empty"
+      callpropvoid        QName(PackageNamespace(""), "navigateToURL"), 2
+
+      debugline           34
+      returnvoid
+
+L22:
+      label
+      jump                L47
+
+      ; 0xF0
+      ; 0x1F
+L26:
+      getlocal2
+      getproperty         QName(Namespace("_-6Dt"), "name")
+      setlocal3
+
+      pushstring          "_alert_button_link"
+      debugline           32
+      getlocal3
+      ifstrictne          L35
+
+      pushbyte            0
+      jump                L43
+
+L35:
+      jump                L42
+
+      ; 0x24
+      ; 0x01
+      ; 0x10
+      ; 0x02
+      ; 0x00
+      ; 0x00
+L42:
+      pushbyte            1
+L43:
+      kill                3
+      lookupswitch        L22, [L13, L22]
+
+      ; 0xF0
+      ; 0x27
+L47:
+      getlocal0
+      getlocal1
+      getlocal2
+      callsupervoid       QName(ProtectedNamespace("_-2zA"), "dialogEventProc"), 2
+      debugline           40
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait setter QName(PackageNamespace(""), "linkTitle")
+   method
+    refid "_-1a1:_-23o/instance/linkTitle/setter"
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           42
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 42
+      getlocal0
+      getlocal1
+      initproperty        QName(ProtectedNamespace("_-4cE"), "_-31V")
+
+      getlex              QName(ProtectedNamespace("_-2zA"), "_-04A")
+      iffalse             L18
+
+      findpropstrict      QName(PackageNamespace("_-3yU"), "IButtonWindow")
+      getlex              QName(ProtectedNamespace("_-2zA"), "_-04A")
+      pushstring          "LINK"
+      callproperty        QName(Namespace("_-0zV"), "findChildByTag"), 1
+      callproperty        QName(PackageNamespace("_-3yU"), "IButtonWindow"), 1
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-4cE"), "_-31V")
+      setproperty         QName(Namespace("_-6Dt"), "caption")
+
+L18:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "linkTitle")
+   method
+    refid "_-1a1:_-23o/instance/linkTitle/getter"
+    returns QName(PackageNamespace(""), "String")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           43
+      getlocal0
+      pushscope
+
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-4cE"), "_-31V")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait slot QName(ProtectedNamespace("_-4cE"), "_-31V") type QName(PackageNamespace(""), "String") value Utf8("") end
+  trait setter QName(PackageNamespace(""), "linkUrl")
+   method
+    refid "_-1a1:_-23o/instance/linkUrl/setter"
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           46
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 46
+      getlocal0
+      getlocal1
+      initproperty        QName(ProtectedNamespace("_-4cE"), "_-1Kp")
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "linkUrl")
+   method
+    refid "_-1a1:_-23o/instance/linkUrl/getter"
+    returns QName(PackageNamespace(""), "String")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           47
+      getlocal0
+      pushscope
+
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-4cE"), "_-1Kp")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait slot QName(ProtectedNamespace("_-4cE"), "_-1Kp") type QName(PackageNamespace(""), "String") value Utf8("") end
+ end ; instance
+ cinit
+  refid "_-1a1:_-23o/class/init"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 4
+   maxscopedepth 5
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

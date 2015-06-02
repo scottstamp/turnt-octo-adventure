@@ -1,0 +1,361 @@
+class
+ refid "_-4rJ:Queue"
+ instance QName(PackageNamespace("_-4rJ"), "Queue")
+  extends QName(PackageNamespace("_-4rJ"), "_-1Bb")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-5WH")
+  iinit
+   refid "_-4rJ:Queue/instance/init"
+   flag NEED_REST
+   body
+    maxstack 4
+    localcount 5
+    initscopedepth 5
+    maxscopedepth 6
+    code
+     debugfile           "k"
+     debugline           19
+     getlocal0
+     pushscope
+
+     pushnull
+     coerce              QName(PackageNamespace("_-4rJ"), "_-1Bb")
+     setlocal2
+
+     debug               1, "k", 0, 19
+     debugline           13
+     getlocal0
+     getlex              Multiname("Vector", [PrivateNamespace("_-5WH"), PackageNamespace(""), PackageNamespace("_-4rJ"), PrivateNamespace("Queue.as$2234"), PackageInternalNs("_-4rJ"), Namespace("http://adobe.com/AS3/2006/builtin"), PackageInternalNs("com.sulake.core.window.motion:friend"), ProtectedNamespace("_-5WH"), StaticProtectedNs("_-5WH"), StaticProtectedNs("_-bj"), PackageNamespace("__AS3__.vec")])
+     getlex              QName(PackageNamespace("_-4rJ"), "_-1Bb")
+     applytype           1
+     construct           0
+     initproperty        QName(PrivateNamespace("_-5WH"), "_-0q9")
+
+     debug               1, "k", 1, 23
+     debugline           21
+     getlocal0
+     getlocal1
+     iffalse             L28
+
+     findpropstrict      QName(PackageNamespace("_-4rJ"), "_-1Bb")
+     getlocal1
+     pushbyte            0
+     getproperty         MultinameL([PrivateNamespace("_-5WH"), PackageNamespace(""), PackageNamespace("_-4rJ"), PrivateNamespace("Queue.as$2234"), PackageInternalNs("_-4rJ"), Namespace("http://adobe.com/AS3/2006/builtin"), PackageInternalNs("com.sulake.core.window.motion:friend"), ProtectedNamespace("_-5WH"), StaticProtectedNs("_-5WH"), StaticProtectedNs("_-bj")])
+     callproperty        QName(PackageNamespace("_-4rJ"), "_-1Bb"), 1
+     getproperty         QName(PackageNamespace(""), "target")
+     coerce              QName(PackageNamespace("_-1rh"), "IWindow")
+     jump                L30
+
+L28:
+     pushnull
+     coerce              QName(PackageNamespace("_-1rh"), "IWindow")
+L30:
+     constructsuper      1
+
+     debugline           23
+     pushbyte            0
+     setlocal3
+
+     getlocal1
+     coerce_a
+     setlocal            4
+
+     jump                L50
+
+L38:
+     label
+     getlocal            4
+     getlocal3
+     nextvalue
+     coerce              QName(PackageNamespace("_-4rJ"), "_-1Bb")
+     setlocal2
+
+     debugline           24
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-5WH"), "_-0q9")
+     getlocal2
+     callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+     debugline           23
+L50:
+     hasnext2            4, 3
+     iftrue              L38
+
+     kill                4
+     kill                3
+     debugline           27
+     getlocal0
+     getlocal1
+     pushbyte            0
+     getproperty         MultinameL([PrivateNamespace("_-5WH"), PackageNamespace(""), PackageNamespace("_-4rJ"), PrivateNamespace("Queue.as$2234"), PackageInternalNs("_-4rJ"), Namespace("http://adobe.com/AS3/2006/builtin"), PackageInternalNs("com.sulake.core.window.motion:friend"), ProtectedNamespace("_-5WH"), StaticProtectedNs("_-5WH"), StaticProtectedNs("_-bj")])
+     initproperty        QName(PrivateNamespace("_-5WH"), "_-1n9")
+
+     debugline           28
+     findproperty        QName(ProtectedNamespace("_-bj"), "_-2go")
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-5WH"), "_-1n9")
+     pushnull
+     equals
+     initproperty        QName(ProtectedNamespace("_-bj"), "_-2go")
+
+     debugline           29
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait getter QName(PackageNamespace(""), "running") flag OVERRIDE
+   method
+    refid "_-4rJ:Queue/instance/running/getter"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           10
+      getlocal0
+      pushscope
+
+      getlex              QName(ProtectedNamespace("_-bj"), "_-0C7")
+      convert_b
+      dup
+      iffalse             L12
+
+      pop
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5WH"), "_-1n9")
+      convert_b
+L12:
+      iffalse             L18
+
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5WH"), "_-1n9")
+      getproperty         QName(PackageNamespace(""), "running")
+      convert_b
+      jump                L19
+
+L18:
+      pushfalse
+L19:
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait slot QName(PrivateNamespace("_-5WH"), "_-1n9") type QName(PackageNamespace("_-4rJ"), "_-1Bb") end
+  trait slot QName(PrivateNamespace("_-5WH"), "_-0q9") type TypeName(QName(PackageNamespace("__AS3__.vec"), "Vector")<QName(PackageNamespace("_-4rJ"), "_-1Bb")>) end
+  trait method QName(PackageInternalNs("com.sulake.core.window.motion:friend"), "start") flag OVERRIDE
+   method
+    refid "_-4rJ:Queue/instance/com.sulake.core.window.motion:friend:start"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           34
+      getlocal0
+      pushscope
+
+      debugline           36
+      getlocal0
+      callsupervoid       QName(PackageInternalNs("com.sulake.core.window.motion:friend"), "start"), 0
+      debugline           37
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5WH"), "_-1n9")
+      callpropvoid        QName(PackageInternalNs("com.sulake.core.window.motion:friend"), "start"), 0
+
+      debugline           38
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageInternalNs("com.sulake.core.window.motion:friend"), "update") flag OVERRIDE
+   method
+    refid "_-4rJ:Queue/instance/com.sulake.core.window.motion:friend:update"
+    param QName(PackageNamespace(""), "Number")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           44
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 44
+      debugline           46
+      getlocal0
+      getlocal1
+      callsupervoid       QName(PackageInternalNs("com.sulake.core.window.motion:friend"), "update"), 1
+      debugline           48
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5WH"), "_-1n9")
+      getproperty         QName(PackageNamespace(""), "running")
+      iffalse             L20
+
+      debugline           49
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5WH"), "_-1n9")
+      getlocal1
+      callpropvoid        QName(PackageInternalNs("com.sulake.core.window.motion:friend"), "update"), 1
+
+      debugline           51
+L20:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageInternalNs("com.sulake.core.window.motion:friend"), "stop") flag OVERRIDE
+   method
+    refid "_-4rJ:Queue/instance/com.sulake.core.window.motion:friend:stop"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           56
+      getlocal0
+      pushscope
+
+      debugline           58
+      getlocal0
+      callsupervoid       QName(PackageInternalNs("com.sulake.core.window.motion:friend"), "stop"), 0
+      debugline           59
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5WH"), "_-1n9")
+      callpropvoid        QName(PackageInternalNs("com.sulake.core.window.motion:friend"), "stop"), 0
+
+      debugline           60
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageInternalNs("com.sulake.core.window.motion:friend"), "tick") flag OVERRIDE
+   method
+    refid "_-4rJ:Queue/instance/com.sulake.core.window.motion:friend:tick"
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 3
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           66
+      getlocal0
+      pushscope
+
+      pushbyte            0
+      setlocal2
+
+      debug               1, "k", 0, 66
+      debugline           68
+      getlocal0
+      getlocal1
+      callsupervoid       QName(PackageInternalNs("com.sulake.core.window.motion:friend"), "tick"), 1
+      debugline           70
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5WH"), "_-1n9")
+      getlocal1
+      callpropvoid        QName(PackageInternalNs("com.sulake.core.window.motion:friend"), "tick"), 1
+
+      debugline           72
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5WH"), "_-1n9")
+      getproperty         QName(PackageNamespace(""), "complete")
+      iffalse             L67
+
+      debug               1, "k", 1, 74
+      debugline           73
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5WH"), "_-1n9")
+      callpropvoid        QName(PackageInternalNs("com.sulake.core.window.motion:friend"), "stop"), 0
+
+      debugline           74
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5WH"), "_-0q9")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5WH"), "_-1n9")
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "indexOf"), 1
+      convert_i
+      setlocal2
+
+      debugline           75
+      getlocal2
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5WH"), "_-0q9")
+      getproperty         QName(PackageNamespace(""), "length")
+      decrement
+      ifnlt               L63
+
+      debugline           76
+      getlocal0
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5WH"), "_-0q9")
+      getlocal2
+      pushbyte            1
+      add
+      getproperty         MultinameL([PrivateNamespace("_-5WH"), PackageNamespace(""), PackageNamespace("_-4rJ"), PrivateNamespace("Queue.as$2234"), PackageInternalNs("_-4rJ"), Namespace("http://adobe.com/AS3/2006/builtin"), PackageInternalNs("com.sulake.core.window.motion:friend"), ProtectedNamespace("_-5WH"), StaticProtectedNs("_-5WH"), StaticProtectedNs("_-bj")])
+      initproperty        QName(PrivateNamespace("_-5WH"), "_-1n9")
+
+      debugline           77
+      findproperty        QName(ProtectedNamespace("_-bj"), "_-5j9")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5WH"), "_-1n9")
+      getproperty         QName(PackageNamespace(""), "target")
+      initproperty        QName(ProtectedNamespace("_-bj"), "_-5j9")
+
+      debugline           78
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5WH"), "_-1n9")
+      callpropvoid        QName(PackageInternalNs("com.sulake.core.window.motion:friend"), "start"), 0
+
+      jump                L67
+
+      ; 0xF0
+      ; 0x50
+L63:
+      findproperty        QName(ProtectedNamespace("_-bj"), "_-2go")
+      pushtrue
+      initproperty        QName(ProtectedNamespace("_-bj"), "_-2go")
+
+      debugline           83
+L67:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-4rJ:Queue/class/init"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 4
+   maxscopedepth 5
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

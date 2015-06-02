@@ -1,0 +1,33 @@
+script ; 17
+ sinit
+  refid "_-12V:BrowserInfo/init"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 1
+   maxscopedepth 3
+   code
+    getlocal0
+    pushscope
+
+    debugfile           "k"
+    debugline           3
+    findpropstrict      Multiname("BrowserInfo", [PackageNamespace("_-12V")])
+    getlex              QName(PackageNamespace("", "#0"), "Object")
+    pushscope
+
+    getlex              QName(PackageNamespace("", "#0"), "Object")
+    newclass            "_-12V:BrowserInfo"
+    popscope
+    initproperty        QName(PackageNamespace("_-12V"), "BrowserInfo")
+
+    debugfile           "k"
+    debugline           1
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait class QName(PackageNamespace("_-12V"), "BrowserInfo")
+  #include "BrowserInfo.class.asasm"
+ end ; trait
+end ; script

@@ -1,0 +1,172 @@
+method
+ refid "_-6Sg:Component/instance/_-6Sg:Component/_-2HY/inline_method#2"
+ param QName(PackageNamespace("_-6Sg"), "_-01J")
+ param QName(PackageNamespace("_-6Sg"), "_-2YL")
+ returns QName(PackageNamespace("", "#0"), "void")
+ flag NEED_ACTIVATION
+ body
+  maxstack 5
+  localcount 6
+  initscopedepth 7
+  maxscopedepth 8
+  code
+   debugfile           "k"
+   debugline           123
+   newactivation
+   dup
+   setlocal3
+
+   pushscope
+
+   debug               1, "k", 2, 123
+   getscopeobject      0
+   pushundefined
+   coerce_a
+   setslot             3
+
+   getscopeobject      0
+   pushundefined
+   coerce_a
+   setslot             4
+
+   getscopeobject      0
+   getlocal1
+   setslot             1
+
+   getscopeobject      0
+   getlocal2
+   setslot             2
+
+   debug               1, "k", 0, 123
+   debug               1, "k", 1, 123
+   debugline           124
+   getlex              QName(PackageNamespace("", "#0"), "disposed")
+   iffalse             L31
+
+   debugline           125
+   returnvoid
+
+   ; 0xF0
+   ; 0x80
+   ; 0x01
+L31:
+   getlex              QName(PackageNamespace("", "#0"), "_-1pV")
+   pushstring          "Injecting "
+   getscopeobject      0
+   getslot             1
+   add
+   pushstring          " into "
+   add
+   getlex              QName(PackageInternalNs("_-6Sg"), "componentName")
+   add
+   callpropvoid        QName(PackageNamespace("", "#0"), "log"), 1
+
+   debugline           130
+   getlex              QName(PackageInternalNs("_-6Sg"), "setter")
+   pushnull
+   ifeq                L52
+
+   debugline           131
+   findpropstrict      QName(PackageInternalNs("_-6Sg"), "setter")
+   getscopeobject      0
+   getslot             2
+   callproplex         QName(PackageInternalNs("_-6Sg"), "setter"), 1
+   pop
+   debugline           133
+L52:
+   getlex              QName(PackageInternalNs("_-6Sg"), "listeners")
+   pushnull
+   ifeq                L102
+
+   debugline           134
+   getscopeobject      0
+   findpropstrict      QName(PackageNamespace("_-6Sg"), "Component")
+   getscopeobject      0
+   getslot             2
+   callproperty        QName(PackageNamespace("_-6Sg"), "Component"), 1
+   getproperty         QName(PackageNamespace("", "#0"), "events")
+   coerce_a
+   setslot             3
+
+   debugline           135
+   pushbyte            0
+   setlocal            4
+
+   getlex              QName(PackageInternalNs("_-6Sg"), "listeners")
+   coerce_a
+   setlocal            5
+
+   jump                L97
+
+L71:
+   label
+   getscopeobject      0
+   getlocal            5
+   getlocal            4
+   nextvalue
+   coerce_a
+   setslot             4
+
+   debugline           137
+   getlex              QName(PackageNamespace("", "#0"), "_-1pV")
+   pushstring          "Adding event listener for "
+   getscopeobject      0
+   getslot             4
+   getproperty         Multiname("type", [PrivateNamespace("_-5gL"), PackageNamespace("", "#0"), StaticProtectedNs("_-5gL"), PackageInternalNs("_-6Sg"), PackageNamespace("_-6Sg"), PrivateNamespace("Component.as$225"), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-1jv"), ProtectedNamespace("_-5gL")])
+   add
+   callpropvoid        QName(PackageNamespace("", "#0"), "log"), 1
+
+   debugline           139
+   getscopeobject      0
+   getslot             3
+   getscopeobject      0
+   getslot             4
+   getproperty         Multiname("type", [PrivateNamespace("_-5gL"), PackageNamespace("", "#0"), StaticProtectedNs("_-5gL"), PackageInternalNs("_-6Sg"), PackageNamespace("_-6Sg"), PrivateNamespace("Component.as$225"), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-1jv"), ProtectedNamespace("_-5gL")])
+   getscopeobject      0
+   getslot             4
+   getproperty         Multiname("callback", [PrivateNamespace("_-5gL"), PackageNamespace("", "#0"), StaticProtectedNs("_-5gL"), PackageInternalNs("_-6Sg"), PackageNamespace("_-6Sg"), PrivateNamespace("Component.as$225"), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-1jv"), ProtectedNamespace("_-5gL")])
+   callpropvoid        Multiname("addEventListener", [PrivateNamespace("_-5gL"), PackageNamespace("", "#0"), StaticProtectedNs("_-5gL"), PackageInternalNs("_-6Sg"), PackageNamespace("_-6Sg"), PrivateNamespace("Component.as$225"), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-1jv"), ProtectedNamespace("_-5gL")]), 2
+
+   debugline           135
+L97:
+   hasnext2            5, 4
+   iftrue              L71
+
+   kill                5
+   kill                4
+   debugline           142
+L102:
+   getlex              QName(PrivateNamespace("_-5gL"), "_-5yr")
+   newfunction         "_-6Sg:Component/instance/_-6Sg:Component/_-2HY/inline_method#1"
+   getglobalscope
+   debugfile           "k"
+   debugline           163
+   getscopeobject      0
+   getslot             1
+   getscopeobject      0
+   getslot             2
+   call                2
+   callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+   debugline           164
+   getlex              QName(PackageInternalNs("_-6Sg"), "required")
+   iffalse             L124
+
+   debugline           165
+   findpropstrict      QName(PrivateNamespace("_-5gL"), "_-6-e")
+   findpropstrict      QName(PackageNamespace("flash.utils"), "getQualifiedClassName")
+   getscopeobject      0
+   getslot             1
+   callproperty        QName(PackageNamespace("flash.utils"), "getQualifiedClassName"), 1
+   callpropvoid        QName(PrivateNamespace("_-5gL"), "_-6-e"), 1
+
+   debugline           167
+L124:
+   returnvoid
+  end ; code
+  trait slot QName(PackageInternalNs("_-6Sg"), "identifier") slotid 1 type QName(PackageNamespace("_-6Sg"), "_-01J") end
+  trait slot QName(PackageInternalNs("_-6Sg"), "unknown") slotid 2 type QName(PackageNamespace("_-6Sg"), "_-2YL") end
+  trait slot QName(PackageInternalNs("_-6Sg"), "eventDispatcher") slotid 3 end
+  trait slot QName(PackageInternalNs("_-6Sg"), "listener") slotid 4 end
+ end ; body
+end ; method

@@ -1,0 +1,178 @@
+class
+ refid "_-5-N:_-4tA"
+ instance QName(PackageNamespace("_-5-N"), "_-4tA")
+  extends QName(PackageNamespace("flash.events"), "Event")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-46y")
+  iinit
+   refid "_-5-N:_-4tA/instance/init"
+   param QName(PackageNamespace(""), "String")
+   param QName(PackageNamespace("_-2TN"), "AdSlot")
+   param QName(PackageNamespace(""), "Boolean")
+   param QName(PackageNamespace(""), "Boolean")
+   flag HAS_OPTIONAL
+   optional False()
+   optional False()
+   body
+    maxstack 4
+    localcount 5
+    initscopedepth 5
+    maxscopedepth 6
+    code
+     debugfile           "k"
+     debugline           36
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 36
+     debug               1, "k", 1, 36
+     debug               1, "k", 2, 36
+     debug               1, "k", 3, 36
+     debugline           37
+     getlocal0
+     getlocal1
+     getlocal3
+     getlocal            4
+     constructsuper      3
+
+     debugline           38
+     getlocal0
+     getlocal2
+     initproperty        QName(ProtectedNamespace("_-46y"), "_-4wc")
+
+     debugline           39
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(ProtectedNamespace("_-46y"), "_-4wc") type QName(PackageNamespace("_-2TN"), "AdSlot") value Null() end
+  trait setter QName(PackageNamespace(""), "adSlot")
+   method
+    refid "_-5-N:_-4tA/instance/adSlot/setter"
+    param QName(PackageNamespace("_-2TN"), "AdSlot")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           41
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 41
+      debugline           42
+      getlocal0
+      getlocal1
+      initproperty        QName(ProtectedNamespace("_-46y"), "_-4wc")
+
+      debugline           43
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "ad")
+   method
+    refid "_-5-N:_-4tA/instance/ad/getter"
+    returns QName(PackageNamespace("_-0yR"), "LinearVideoAd")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           45
+      getlocal0
+      pushscope
+
+      debugline           46
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "linearVideoAd")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "linearVideoAd")
+   method
+    refid "_-5-N:_-4tA/instance/linearVideoAd/getter"
+    returns QName(PackageNamespace("_-0yR"), "LinearVideoAd")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           49
+      getlocal0
+      pushscope
+
+      debugline           50
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-46y"), "_-4wc")
+      pushnull
+      ifeq                L17
+
+      debugline           51
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-46y"), "_-4wc")
+      getproperty         QName(PackageNamespace(""), "videoAd")
+      getproperty         QName(PackageNamespace(""), "linearVideoAd")
+      returnvalue
+
+      ; 0xF0
+      ; 0x35
+L17:
+      pushnull
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-5-N:_-4tA/class/init"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 4
+   maxscopedepth 5
+   code
+    getlocal0
+    pushscope
+
+    debug               1, "k", 0, 29
+    findproperty        QName(PackageNamespace(""), "_-0Jg")
+    pushstring          "linear-ad-started"
+    initproperty        QName(PackageNamespace(""), "_-0Jg")
+
+    debug               1, "k", 1, 30
+    findproperty        QName(PackageNamespace(""), "COMPLETE")
+    pushstring          "linear-ad-complete"
+    initproperty        QName(PackageNamespace(""), "COMPLETE")
+
+    debug               1, "k", 2, 31
+    findproperty        QName(PackageNamespace(""), "_-0H5")
+    pushstring          "linear-ad-skipped"
+    initproperty        QName(PackageNamespace(""), "_-0H5")
+
+    debug               1, "k", 3, 32
+    findproperty        QName(PackageNamespace(""), "_-0uG")
+    pushstring          "linear-ad-click-through"
+    initproperty        QName(PackageNamespace(""), "_-0uG")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait const QName(PackageNamespace(""), "_-0Jg") slotid 1 type QName(PackageNamespace(""), "String") value Utf8("linear-ad-started") end
+ trait const QName(PackageNamespace(""), "COMPLETE") slotid 2 type QName(PackageNamespace(""), "String") value Utf8("linear-ad-complete") end
+ trait const QName(PackageNamespace(""), "_-0H5") slotid 3 type QName(PackageNamespace(""), "String") value Utf8("linear-ad-skipped") end
+ trait const QName(PackageNamespace(""), "_-0uG") slotid 4 type QName(PackageNamespace(""), "String") value Utf8("linear-ad-click-through") end
+end ; class

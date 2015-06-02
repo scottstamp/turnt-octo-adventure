@@ -1,0 +1,33 @@
+script ; 4066
+ sinit
+  refid "_-4ds:CatalogNode/init"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 1
+   maxscopedepth 3
+   code
+    getlocal0
+    pushscope
+
+    debugfile           "k"
+    debugline           4
+    findpropstrict      Multiname("CatalogNode", [PackageNamespace("_-4ds")])
+    getlex              QName(PackageNamespace(""), "Object")
+    pushscope
+
+    getlex              QName(PackageNamespace(""), "Object")
+    newclass            "_-4ds:CatalogNode"
+    popscope
+    initproperty        QName(PackageNamespace("_-4ds"), "CatalogNode")
+
+    debugfile           "k"
+    debugline           1
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait class QName(PackageNamespace("_-4ds"), "CatalogNode")
+  #include "CatalogNode.class.asasm"
+ end ; trait
+end ; script

@@ -1,0 +1,199 @@
+class
+ refid "_-3yU:_-1TZ"
+ instance QName(PackageNamespace("_-3yU"), "_-1TZ")
+  extends QName(PackageNamespace("_-3yU"), "_-4im")
+  implements Multiname("ITabButtonWindow", [PackageNamespace("_-3yU")])
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-3hh")
+  iinit
+   refid "_-3yU:_-1TZ/instance/init"
+   param QName(PackageNamespace(""), "String")
+   param QName(PackageNamespace(""), "uint")
+   param QName(PackageNamespace(""), "uint")
+   param QName(PackageNamespace(""), "uint")
+   param QName(PackageNamespace("_-1rh"), "WindowContext")
+   param QName(PackageNamespace("flash.geom"), "Rectangle")
+   param QName(PackageNamespace("_-1rh"), "IWindow")
+   param QName(PackageNamespace(""), "Function")
+   param QName(PackageNamespace(""), "Array")
+   param QName(PackageNamespace(""), "Array")
+   param QName(PackageNamespace(""), "uint")
+   flag HAS_OPTIONAL
+   optional Null()
+   optional Null()
+   optional Null()
+   optional Integer(0)
+   body
+    maxstack 12
+    localcount 12
+    initscopedepth 8
+    maxscopedepth 9
+    code
+     debugfile           "k"
+     debugline           43
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 43
+     debug               1, "k", 1, 43
+     debug               1, "k", 2, 43
+     debug               1, "k", 3, 43
+     debug               1, "k", 4, 43
+     debug               1, "k", 5, 43
+     debug               1, "k", 6, 43
+     debug               1, "k", 7, 43
+     debug               1, "k", 8, 43
+     debug               1, "k", 9, 43
+     debug               1, "k", 10, 43
+     debugline           57
+     getlocal            4
+     getlex              QName(PackageNamespace("_-1w2"), "WindowParam")
+     getproperty         QName(PackageNamespace(""), "_-4hi")
+     bitor
+     convert_u
+     setlocal            4
+
+     debugline           60
+     getlocal0
+     getlocal1
+     getlocal2
+     getlocal3
+     getlocal            4
+     getlocal            5
+     getlocal            6
+     getlocal            7
+     getlocal            8
+     getlocal            9
+     getlocal            10
+     getlocal            11
+     constructsuper      11
+
+     debugline           63
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait setter QName(PackageNamespace(""), "caption") flag OVERRIDE
+   method
+    refid "_-3yU:_-1TZ/instance/caption/setter"
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 3
+     initscopedepth 8
+     maxscopedepth 9
+     code
+      debugfile           "k"
+      debugline           15
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 15
+      debug               1, "k", 1, 19
+      debugline           17
+      getlocal0
+      getlocal1
+      setsuper            QName(PackageNamespace(""), "caption")
+
+      debugline           19
+      findpropstrict      QName(PackageNamespace(""), "findChildByTag")
+      getlex              QName(PrivateNamespace("_-3hh"), "_-5De")
+      callproperty        QName(PackageNamespace(""), "findChildByTag"), 1
+      coerce              QName(PackageNamespace("_-1rh"), "IWindow")
+      setlocal2
+
+      debugline           20
+      getlocal2
+      pushnull
+      ifeq                L24
+
+      getlocal2
+      getlocal1
+      setproperty         QName(Namespace("_-6Dt"), "caption")
+
+      debugline           21
+L24:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "update") flag OVERRIDE
+   method
+    refid "_-3yU:_-1TZ/instance/update"
+    param QName(PackageNamespace("_-1rh"), "WindowController")
+    param QName(PackageNamespace("_-5-S"), "WindowEvent")
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 8
+     maxscopedepth 9
+     code
+      debugfile           "k"
+      debugline           70
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 70
+      debug               1, "k", 1, 70
+      debugline           74
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "type")
+      getlex              QName(PackageNamespace("_-5-S"), "WindowEvent")
+      getproperty         QName(PackageNamespace(""), "_-3ZY")
+      ifne                L17
+
+      debugline           75
+      getlex              QName(PackageNamespace("_-1rh"), "WindowController")
+      getlocal0
+      callpropvoid        QName(PackageNamespace(""), "resizeToAccommodateChildren"), 1
+
+      debugline           78
+L17:
+      getlocal0
+      getlocal1
+      getlocal2
+      callsuper           QName(PackageNamespace(""), "update"), 2
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-3yU:_-1TZ/class/init"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 7
+   maxscopedepth 8
+   code
+    getlocal0
+    pushscope
+
+    debug               1, "k", 0, 35
+    findproperty        QName(PrivateNamespace("_-3hh"), "_-5O0")
+    pushstring          "TAB_BUTTON_CONTENT"
+    initproperty        QName(PrivateNamespace("_-3hh"), "_-5O0")
+
+    debug               1, "k", 1, 36
+    findproperty        QName(PrivateNamespace("_-3hh"), "_-5De")
+    pushstring          "TAB_BUTTON_TITLE"
+    initproperty        QName(PrivateNamespace("_-3hh"), "_-5De")
+
+    debug               1, "k", 2, 37
+    findproperty        QName(PrivateNamespace("_-3hh"), "_-0jt")
+    pushstring          "TAB_BUTTON_ICON"
+    initproperty        QName(PrivateNamespace("_-3hh"), "_-0jt")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait const QName(PrivateNamespace("_-3hh"), "_-5O0") slotid 1 type QName(PackageNamespace(""), "String") value Utf8("TAB_BUTTON_CONTENT") end
+ trait const QName(PrivateNamespace("_-3hh"), "_-5De") slotid 2 type QName(PackageNamespace(""), "String") value Utf8("TAB_BUTTON_TITLE") end
+ trait const QName(PrivateNamespace("_-3hh"), "_-0jt") slotid 3 type QName(PackageNamespace(""), "String") value Utf8("TAB_BUTTON_ICON") end
+end ; class

@@ -1,0 +1,258 @@
+class
+ refid "_-293:_-3m4"
+ instance QName(PackageNamespace("_-293"), "_-3m4")
+  extends QName(PackageNamespace("_-293"), "CommunityGoalVsModeWidget")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-5cz")
+  iinit
+   refid "_-293:_-3m4/instance/init"
+   param QName(PackageNamespace("_-4CO"), "HabboLandingView")
+   body
+    maxstack 3
+    localcount 2
+    initscopedepth 6
+    maxscopedepth 7
+    code
+     debugfile           "k"
+     debugline           17
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 17
+     debugline           18
+     getlocal0
+     getlocal1
+     pushtrue
+     constructsuper      2
+
+     debugline           19
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-5cz"), "_-5lQ") type QName(PackageNamespace("_-1rh"), "IWindow") end
+  trait slot QName(PrivateNamespace("_-5cz"), "_-0Rp") type QName(PackageNamespace("_-1rh"), "IWindow") end
+  trait slot QName(PrivateNamespace("_-5cz"), "_-3WA") type QName(PackageNamespace(""), "String") end
+  trait method QName(PackageNamespace(""), "initialize") flag OVERRIDE
+   method
+    refid "_-293:_-3m4/instance/initialize"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 1
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           21
+      getlocal0
+      pushscope
+
+      debugline           22
+      getlocal0
+      callsupervoid       QName(PackageNamespace(""), "initialize"), 0
+      debugline           23
+      getlocal0
+      getlex              QName(ProtectedNamespace("_-Zd"), "_-11Z")
+      pushstring          "community_vote_one_button"
+      callproperty        QName(Namespace("_-0zV"), "findChildByName"), 1
+      initproperty        QName(PrivateNamespace("_-5cz"), "_-5lQ")
+
+      debugline           24
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5cz"), "_-5lQ")
+      pushtrue
+      setproperty         QName(Namespace("_-6Dt"), "visible")
+
+      debugline           25
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5cz"), "_-5lQ")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5cz"), "_-5uY")
+      setproperty         QName(Namespace("_-6Dt"), "procedure")
+
+      debugline           27
+      getlocal0
+      getlex              QName(ProtectedNamespace("_-Zd"), "_-11Z")
+      pushstring          "community_vote_two_button"
+      callproperty        QName(Namespace("_-0zV"), "findChildByName"), 1
+      initproperty        QName(PrivateNamespace("_-5cz"), "_-0Rp")
+
+      debugline           28
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5cz"), "_-0Rp")
+      pushtrue
+      setproperty         QName(Namespace("_-6Dt"), "visible")
+
+      debugline           29
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5cz"), "_-0Rp")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5cz"), "_-5HK")
+      setproperty         QName(Namespace("_-6Dt"), "procedure")
+
+      debugline           31
+      getlex              QName(ProtectedNamespace("_-Zd"), "_-4DO")
+      getproperty         QName(PackageNamespace(""), "communicationManager")
+      findpropstrict      QName(PackageNamespace("_-1IQ"), "_-Us")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5cz"), "_-3ey")
+      constructprop       QName(PackageNamespace("_-1IQ"), "_-Us"), 1
+      callpropvoid        QName(Namespace("_-7I"), "addHabboConnectionMessageEvent"), 1
+
+      debugline           32
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-5cz"), "_-5uY")
+   method
+    refid "_-293:_-3m4/instance/_-293:_-3m4/instance/_-5uY"
+    param QName(PackageNamespace("_-5-S"), "WindowEvent")
+    param QName(PackageNamespace("_-1rh"), "IWindow")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           34
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 34
+      debug               1, "k", 1, 34
+      debugline           35
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "type")
+      getlex              QName(PackageNamespace("_-5-S"), "WindowMouseEvent")
+      getproperty         QName(PackageNamespace(""), "CLICK")
+      ifne                L23
+
+      debugline           36
+      getlex              QName(ProtectedNamespace("_-Zd"), "_-4DO")
+      pushbyte            1
+      callpropvoid        QName(PackageNamespace(""), "communityGoalVote"), 1
+
+      debugline           37
+      getlex              QName(ProtectedNamespace("_-Zd"), "_-4DO")
+      getproperty         QName(PackageNamespace(""), "tracking")
+      pushstring          "landingView"
+      pushstring          "click_voteoption_one"
+      callpropvoid        QName(Namespace("_-fX"), "trackGoogle"), 2
+
+      debugline           39
+L23:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-5cz"), "_-5HK")
+   method
+    refid "_-293:_-3m4/instance/_-293:_-3m4/instance/_-5HK"
+    param QName(PackageNamespace("_-5-S"), "WindowEvent")
+    param QName(PackageNamespace("_-1rh"), "IWindow")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           41
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 41
+      debug               1, "k", 1, 41
+      debugline           42
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "type")
+      getlex              QName(PackageNamespace("_-5-S"), "WindowMouseEvent")
+      getproperty         QName(PackageNamespace(""), "CLICK")
+      ifne                L23
+
+      debugline           43
+      getlex              QName(ProtectedNamespace("_-Zd"), "_-4DO")
+      pushbyte            2
+      callpropvoid        QName(PackageNamespace(""), "communityGoalVote"), 1
+
+      debugline           44
+      getlex              QName(ProtectedNamespace("_-Zd"), "_-4DO")
+      getproperty         QName(PackageNamespace(""), "tracking")
+      pushstring          "landingView"
+      pushstring          "click_voteoption_two"
+      callpropvoid        QName(Namespace("_-fX"), "trackGoogle"), 2
+
+      debugline           46
+L23:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-5cz"), "_-3ey")
+   method
+    refid "_-293:_-3m4/instance/_-293:_-3m4/instance/_-3ey"
+    param QName(PackageNamespace("_-1IQ"), "_-Us")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           48
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 48
+      debugline           49
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "_-p9"), 0
+      getproperty         QName(PackageNamespace(""), "_-3f6")
+      iffalse             L21
+
+      debugline           50
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5cz"), "_-5lQ")
+      pushfalse
+      setproperty         QName(Namespace("_-6Dt"), "visible")
+
+      debugline           51
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5cz"), "_-0Rp")
+      pushfalse
+      setproperty         QName(Namespace("_-6Dt"), "visible")
+
+      debugline           53
+L21:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-293:_-3m4/class/init"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 5
+   maxscopedepth 6
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

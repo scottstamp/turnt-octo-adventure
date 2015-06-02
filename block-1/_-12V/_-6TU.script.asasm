@@ -1,0 +1,37 @@
+script ; 395
+ sinit
+  refid "_-12V:_-6TU/init"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 1
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    debugfile           "k"
+    debugline           10
+    getscopeobject      0
+    getlex              QName(PackageNamespace("", "#0"), "Object")
+    pushscope
+
+    getlex              QName(PackageNamespace("_-3Fd"), "EventDispatcherWrapper")
+    pushscope
+
+    getlex              QName(PackageNamespace("_-3Fd"), "EventDispatcherWrapper")
+    newclass            "_-12V:_-6TU"
+    popscope
+    popscope
+    initproperty        QName(PackageNamespace("_-12V"), "_-6TU")
+
+    debugfile           "k"
+    debugline           1
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait class QName(PackageNamespace("_-12V"), "_-6TU") slotid 1
+  #include "_-6TU.class.asasm"
+ end ; trait
+end ; script

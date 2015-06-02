@@ -1,0 +1,37 @@
+script ; 5935
+ sinit
+  refid "_-bf:_-2SA/init"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 1
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    debugfile           "k"
+    debugline           13
+    findpropstrict      Multiname("_-2SA", [PackageNamespace("_-bf")])
+    getlex              QName(PackageNamespace(""), "Object")
+    pushscope
+
+    getlex              QName(PackageNamespace("_-bf"), "Plane")
+    pushscope
+
+    getlex              QName(PackageNamespace("_-bf"), "Plane")
+    newclass            "_-bf:_-2SA"
+    popscope
+    popscope
+    initproperty        QName(PackageNamespace("_-bf"), "_-2SA")
+
+    debugfile           "k"
+    debugline           1
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait class QName(PackageNamespace("_-bf"), "_-2SA")
+  #include "_-2SA.class.asasm"
+ end ; trait
+end ; script

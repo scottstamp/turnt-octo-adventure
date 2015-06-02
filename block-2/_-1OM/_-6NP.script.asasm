@@ -1,0 +1,33 @@
+script ; 5101
+ sinit
+  refid "_-1OM:_-6NP/init"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 1
+   maxscopedepth 3
+   code
+    getlocal0
+    pushscope
+
+    debugfile           "k"
+    debugline           7
+    findpropstrict      Multiname("_-6NP", [PackageNamespace("_-1OM")])
+    getlex              QName(PackageNamespace(""), "Object")
+    pushscope
+
+    getlex              QName(PackageNamespace(""), "Object")
+    newclass            "_-1OM:_-6NP"
+    popscope
+    initproperty        QName(PackageNamespace("_-1OM"), "_-6NP")
+
+    debugfile           "k"
+    debugline           1
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait class QName(PackageNamespace("_-1OM"), "_-6NP")
+  #include "_-6NP.class.asasm"
+ end ; trait
+end ; script

@@ -1,0 +1,1070 @@
+class
+ refid "_-1rL:BadgeImageManager"
+ instance QName(PackageNamespace("_-1rL"), "BadgeImageManager")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-BZ")
+  iinit
+   refid "_-1rL:BadgeImageManager/instance/init"
+   param QName(PackageNamespace("_-1t2"), "_-1Xk")
+   param QName(PackageNamespace("flash.events"), "IEventDispatcher")
+   param QName(PackageNamespace("_-6Sg"), "_-3lI")
+   body
+    maxstack 2
+    localcount 4
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     debugfile           "k"
+     debugline           39
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 39
+     debug               1, "k", 1, 39
+     debug               1, "k", 2, 39
+     debugline           30
+     getlocal0
+     findpropstrict      QName(PackageNamespace("flash.utils"), "Dictionary")
+     constructprop       QName(PackageNamespace("flash.utils"), "Dictionary"), 0
+     initproperty        QName(PrivateNamespace("_-BZ"), "_-4Fh")
+
+     debugline           39
+     getlocal0
+     constructsuper      0
+
+     debugline           41
+     getlocal1
+     pushnull
+     ifne                L26
+
+     debugline           42
+     findpropstrict      QName(PackageNamespace("_-1t2"), "AssetLibrary")
+     pushstring          "badge_images"
+     constructprop       QName(PackageNamespace("_-1t2"), "AssetLibrary"), 1
+     coerce              QName(PackageNamespace("_-1t2"), "_-1Xk")
+     setlocal1
+
+     debugline           44
+L26:
+     getlocal0
+     getlocal1
+     initproperty        QName(PrivateNamespace("_-BZ"), "_assets")
+
+     debugline           45
+     getlocal0
+     getlocal2
+     initproperty        QName(PrivateNamespace("_-BZ"), "_-Ts")
+
+     debugline           46
+     getlocal0
+     getlocal3
+     initproperty        QName(PrivateNamespace("_-BZ"), "_-25V")
+
+     debugline           47
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait const QName(PrivateNamespace("_-BZ"), "_-1oV") type QName(PackageNamespace(""), "String") value Utf8("badge_") end
+  trait const QName(PrivateNamespace("_-BZ"), "_-3gW") type QName(PackageNamespace(""), "String") value Utf8("_32") end
+  trait slot QName(PrivateNamespace("_-BZ"), "_assets") type QName(PackageNamespace("_-1t2"), "_-1Xk") end
+  trait slot QName(PrivateNamespace("_-BZ"), "_-Ts") type QName(PackageNamespace("flash.events"), "IEventDispatcher") end
+  trait slot QName(PrivateNamespace("_-BZ"), "_-25V") type QName(PackageNamespace("_-6Sg"), "_-3lI") end
+  trait slot QName(PrivateNamespace("_-BZ"), "_-4Fh") type QName(PackageNamespace("flash.utils"), "Dictionary") end
+  trait method QName(PackageNamespace(""), "dispose")
+   method
+    refid "_-1rL:BadgeImageManager/instance/dispose"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           49
+      getlocal0
+      pushscope
+
+      debugline           50
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-BZ"), "_assets")
+
+      debugline           51
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "getBadgeImage")
+   method
+    refid "_-1rL:BadgeImageManager/instance/getBadgeImage"
+    param QName(PackageNamespace(""), "String")
+    param QName(PackageNamespace(""), "String")
+    param QName(PackageNamespace(""), "Boolean")
+    param QName(PackageNamespace(""), "Boolean")
+    returns QName(PackageNamespace("flash.display"), "BitmapData")
+    flag HAS_OPTIONAL
+    optional Utf8("normal_badge")
+    optional True()
+    optional False()
+    body
+     maxstack 4
+     localcount 6
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           53
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 53
+      debug               1, "k", 1, 53
+      debug               1, "k", 2, 53
+      debug               1, "k", 3, 53
+      debug               1, "k", 4, 54
+      debugline           54
+      getlocal0
+      getlocal1
+      getlocal2
+      getlocal            4
+      callproperty        QName(PrivateNamespace("_-BZ"), "_-5r-"), 3
+      coerce              QName(PackageNamespace("flash.display"), "BitmapData")
+      setlocal            5
+
+      debugline           55
+      getlocal            5
+      not
+      dup
+      iffalse             L25
+
+      pop
+      getlocal3
+      convert_b
+L25:
+      iffalse             L31
+
+      getlocal0
+      callproperty        QName(PrivateNamespace("_-BZ"), "_-0aw"), 0
+      coerce              QName(PackageNamespace("flash.display"), "BitmapData")
+      setlocal            5
+
+      debugline           56
+L31:
+      getlocal            5
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-5P")
+   method
+    refid "_-1rL:BadgeImageManager/instance/_-5P"
+    param QName(PackageNamespace(""), "String")
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace("flash.display"), "BitmapData")
+    flag HAS_OPTIONAL
+    optional Utf8("normal_badge")
+    body
+     maxstack 5
+     localcount 3
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           65
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 65
+      debug               1, "k", 1, 65
+      debugline           66
+      getlocal0
+      getlocal1
+      getlocal2
+      pushtrue
+      callproperty        QName(PrivateNamespace("_-BZ"), "_-5r-"), 3
+      pushnull
+      equals
+      dup
+      iffalse             L23
+
+      pop
+      getlocal0
+      getlocal1
+      callproperty        QName(PrivateNamespace("_-BZ"), "_-5r-"), 1
+      pushnull
+      equals
+      not
+L23:
+      iffalse             L33
+
+      debugline           67
+      getlocal0
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-BZ"), "_-1oV")
+      getlocal1
+      add
+      getlocal1
+      callpropvoid        QName(PrivateNamespace("_-BZ"), "_-0Iz"), 2
+
+      debugline           69
+L33:
+      getlocal0
+      getlocal1
+      getlocal2
+      pushfalse
+      pushtrue
+      callproperty        QName(PackageNamespace(""), "getBadgeImage"), 4
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-0xl")
+   method
+    refid "_-1rL:BadgeImageManager/instance/_-0xl"
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace("_-1rL"), "_-03S")
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           72
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 72
+      debug               1, "k", 1, 73
+      debugline           73
+      getlocal0
+      getlocal1
+      callproperty        QName(PrivateNamespace("_-BZ"), "_-5r-"), 1
+      coerce              QName(PackageNamespace("flash.display"), "BitmapData")
+      setlocal2
+
+      debugline           74
+      getlocal2
+      pushnull
+      ifeq                L22
+
+      findpropstrict      QName(PackageNamespace("_-1rL"), "_-03S")
+      getlocal2
+      pushfalse
+      constructprop       QName(PackageNamespace("_-1rL"), "_-03S"), 2
+      coerce              QName(PackageNamespace("_-1rL"), "_-03S")
+      jump                L28
+
+L22:
+      findpropstrict      QName(PackageNamespace("_-1rL"), "_-03S")
+      getlocal0
+      callproperty        QName(PrivateNamespace("_-BZ"), "_-0aw"), 0
+      pushtrue
+      constructprop       QName(PackageNamespace("_-1rL"), "_-03S"), 2
+      coerce              QName(PackageNamespace("_-1rL"), "_-03S")
+L28:
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-3Xg")
+   method
+    refid "_-1rL:BadgeImageManager/instance/_-3Xg"
+    param QName(PackageNamespace(""), "String")
+    param QName(PackageNamespace(""), "String")
+    param QName(PackageNamespace(""), "Boolean")
+    returns QName(PackageNamespace(""), "String")
+    flag HAS_OPTIONAL
+    optional Utf8("normal_badge")
+    optional False()
+    body
+     maxstack 4
+     localcount 5
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           77
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 77
+      debug               1, "k", 1, 77
+      debug               1, "k", 2, 77
+      debug               1, "k", 3, 78
+      debugline           78
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-BZ"), "_-1oV")
+      getlocal1
+      add
+      getlocal3
+      iffalse             L18
+
+      pushstring          "_32"
+      coerce_a
+      jump                L20
+
+L18:
+      pushstring          ""
+      coerce_a
+L20:
+      add
+      coerce_s
+      setlocal            4
+
+      debugline           79
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-BZ"), "_assets")
+      getlocal            4
+      callproperty        QName(Namespace("_-6V0"), "hasAsset"), 1
+      iffalse             L34
+
+      debugline           80
+      getlocal            4
+      returnvalue
+
+      ; 0xF0
+      ; 0x52
+L34:
+      getlocal0
+      getlocal1
+      getlocal2
+      getlocal3
+      callpropvoid        QName(PrivateNamespace("_-BZ"), "_-5r-"), 3
+
+      debugline           83
+      pushnull
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-4-c")
+   method
+    refid "_-1rL:BadgeImageManager/instance/_-4-c"
+    param QName(PackageNamespace(""), "String")
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace(""), "String")
+    flag HAS_OPTIONAL
+    optional Utf8("normal_badge")
+    body
+     maxstack 4
+     localcount 4
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           87
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 87
+      debug               1, "k", 1, 87
+      debug               1, "k", 2, 88
+      debugline           88
+      getlocal0
+      getlocal1
+      getlocal2
+      pushtrue
+      callproperty        QName(PackageNamespace(""), "_-3Xg"), 3
+      coerce_s
+      setlocal3
+
+      debugline           89
+      getlocal3
+      pushnull
+      ifne                L30
+
+      debugline           90
+      getlocal0
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-BZ"), "_-1oV")
+      getlocal1
+      add
+      getlocal1
+      callpropvoid        QName(PrivateNamespace("_-BZ"), "_-0Iz"), 2
+
+      jump                L34
+
+      ; 0xF0
+      ; 0x5C
+L30:
+      getlocal3
+      returnvalue
+
+      ; 0xF0
+      ; 0x5F
+L34:
+      getlocal0
+      getlocal1
+      getlocal2
+      pushtrue
+      callproperty        QName(PackageNamespace(""), "_-3Xg"), 3
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-BZ"), "_-5r-")
+   method
+    refid "_-1rL:BadgeImageManager/instance/_-1rL:BadgeImageManager/instance/_-5r-"
+    param QName(PackageNamespace(""), "String")
+    param QName(PackageNamespace(""), "String")
+    param QName(PackageNamespace(""), "Boolean")
+    returns QName(PackageNamespace("flash.display"), "BitmapData")
+    flag HAS_OPTIONAL
+    optional Utf8("normal_badge")
+    optional False()
+    body
+     maxstack 4
+     localcount 10
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           98
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("flash.net"), "URLRequest")
+      setlocal            5
+
+      pushnull
+      coerce_s
+      setlocal            6
+
+      pushnull
+      coerce              QName(PackageNamespace("_-1t2"), "BitmapDataAsset")
+      setlocal            7
+
+      pushnull
+      coerce              QName(PackageNamespace("_-1t2"), "_-4S6")
+      setlocal            8
+
+      debug               1, "k", 0, 98
+      debug               1, "k", 1, 98
+      debug               1, "k", 2, 98
+      debug               1, "k", 3, 99
+      debug               1, "k", 4, 116
+      debug               1, "k", 5, 117
+      debugline           99
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-BZ"), "_-1oV")
+      getlocal1
+      add
+      getlocal3
+      iffalse             L32
+
+      pushstring          "_32"
+      coerce_a
+      jump                L34
+
+L32:
+      pushstring          ""
+      coerce_a
+L34:
+      add
+      coerce_s
+      setlocal            4
+
+      debugline           102
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-BZ"), "_assets")
+      getlocal            4
+      callproperty        QName(Namespace("_-6V0"), "hasAsset"), 1
+      iffalse             L62
+
+      debug               1, "k", 6, 103
+      debugline           103
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-BZ"), "_assets")
+      getlocal            4
+      callproperty        QName(Namespace("_-6V0"), "getAssetByName"), 1
+      getlex              QName(PackageNamespace("_-1t2"), "BitmapDataAsset")
+      astypelate
+      coerce              QName(PackageNamespace("_-1t2"), "BitmapDataAsset")
+      setlocal            7
+
+      debugline           104
+      getlocal            7
+      getproperty         QName(PackageNamespace(""), "content")
+      getlex              QName(PackageNamespace("flash.display"), "BitmapData")
+      astypelate
+      callproperty        QName(PackageNamespace(""), "clone"), 0
+      returnvalue
+
+      ; 0xF0
+      ; 0x6C
+L62:
+      getlocal3
+      iffalse             L69
+
+      debugline           109
+      pushnull
+      returnvalue
+
+      ; 0xF0
+      ; 0x70
+L69:
+      getlex              QName(PackageNamespace(""), "_-1pV")
+      pushstring          "Request badge: "
+      getlocal1
+      add
+      callpropvoid        QName(PackageNamespace(""), "log"), 1
+
+      jump                L167
+
+L75:
+      label
+      debugline           122
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-BZ"), "_-25V")
+      pushnull
+      ifeq                L118
+
+      debugline           123
+      getlex              QName(PackageNamespace("_-5um"), "GameConfigurations")
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "_-6Y6"), 1
+      iffalse             L95
+
+      debugline           124
+      getlex              QName(PackageNamespace("_-5um"), "GameConfigurations")
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "_-3wk"), 1
+      coerce_s
+      setlocal            6
+
+      jump                L112
+
+      ; 0xF0
+      ; 0x7E
+L95:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-BZ"), "_-25V")
+      pushstring          "image.library.url"
+      callproperty        QName(Namespace("_-aX"), "getProperty"), 1
+      coerce_s
+      setlocal            6
+
+      debugline           127
+      getlocal            6
+      pushstring          "album1584/"
+      getlocal1
+      add
+      pushstring          ".gif"
+      add
+      add
+      coerce_s
+      setlocal            6
+
+      debugline           129
+L112:
+      findpropstrict      QName(PackageNamespace("flash.net"), "URLRequest")
+      getlocal            6
+      constructprop       QName(PackageNamespace("flash.net"), "URLRequest"), 1
+      coerce              QName(PackageNamespace("flash.net"), "URLRequest")
+      setlocal            5
+
+      debugline           131
+L118:
+      jump                L196
+
+L119:
+      label
+      debugline           133
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-BZ"), "_-25V")
+      pushnull
+      equals
+      not
+      dup
+      iffalse             L134
+
+      pop
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-BZ"), "_-4Fh")
+      getlocal            4
+      getproperty         MultinameL([PrivateNamespace("_-BZ"), PackageNamespace(""), PackageNamespace("_-1rL"), PrivateNamespace("BadgeImageManager.as$3359"), PackageInternalNs("_-1rL"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-BZ"), StaticProtectedNs("_-BZ")])
+      not
+L134:
+      iffalse             L162
+
+      debugline           134
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-BZ"), "_-25V")
+      pushstring          "group.badge.url"
+      callproperty        QName(Namespace("_-aX"), "getProperty"), 1
+      coerce_s
+      setlocal            6
+
+      debugline           136
+      getlocal            6
+      pushstring          "%imagerdata%"
+      getlocal1
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "replace"), 2
+      coerce_s
+      setlocal            6
+
+      debugline           137
+      findpropstrict      QName(PackageNamespace("flash.net"), "URLRequest")
+      getlocal            6
+      constructprop       QName(PackageNamespace("flash.net"), "URLRequest"), 1
+      coerce              QName(PackageNamespace("flash.net"), "URLRequest")
+      setlocal            5
+
+      debugline           138
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-BZ"), "_-4Fh")
+      getlocal            4
+      pushtrue
+      setproperty         MultinameL([PrivateNamespace("_-BZ"), PackageNamespace(""), PackageNamespace("_-1rL"), PrivateNamespace("BadgeImageManager.as$3359"), PackageInternalNs("_-1rL"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-BZ"), StaticProtectedNs("_-BZ")])
+
+      debugline           140
+L162:
+      jump                L196
+
+L163:
+      label
+      jump                L196
+
+      ; 0xF0
+      ; 0x77
+L167:
+      getlocal2
+      setlocal            9
+
+      debugline           120
+      getlex              QName(PackageNamespace(""), "_-0A1")
+      getlocal            9
+      ifstrictne          L178
+
+      pushbyte            0
+      jump                L191
+
+      ; 0xF0
+      ; 0x84
+      ; 0x01
+L178:
+      getlex              QName(PackageNamespace(""), "_-10t")
+      getlocal            9
+      ifstrictne          L183
+
+      pushbyte            1
+      jump                L191
+
+L183:
+      jump                L190
+
+      ; 0x24
+      ; 0x02
+      ; 0x10
+      ; 0x02
+      ; 0x00
+      ; 0x00
+L190:
+      pushbyte            2
+L191:
+      kill                9
+      lookupswitch        L163, [L75, L119, L163]
+
+      ; 0xF0
+      ; 0x8F
+      ; 0x01
+L196:
+      getlocal            5
+      pushnull
+      ifeq                L217
+
+      debug               1, "k", 7, 144
+      debugline           144
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-BZ"), "_assets")
+      getlocal            4
+      getlocal            5
+      pushstring          "image/gif"
+      callproperty        QName(Namespace("_-6V0"), "loadAssetFromFile"), 3
+      coerce              QName(PackageNamespace("_-1t2"), "_-4S6")
+      setlocal            8
+
+      debugline           145
+      getlocal            8
+      getlex              QName(PackageNamespace("_-4CW"), "AssetLoaderEvent")
+      getproperty         QName(PackageNamespace(""), "_-xY")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-BZ"), "_-0ot")
+      callpropvoid        QName(PackageNamespace(""), "addEventListener"), 2
+
+      debugline           147
+L217:
+      pushnull
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-BZ"), "_-0aw")
+   method
+    refid "_-1rL:BadgeImageManager/instance/_-1rL:BadgeImageManager/instance/_-0aw"
+    returns QName(PackageNamespace("flash.display"), "BitmapData")
+    body
+     maxstack 3
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           150
+      getlocal0
+      pushscope
+
+      debugline           152
+      findpropstrict      QName(PackageNamespace("flash.display"), "BitmapData")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-BZ"), "_assets")
+      pushstring          "loading_icon"
+      callproperty        QName(Namespace("_-6V0"), "getAssetByName"), 1
+      getproperty         QName(Namespace("_-6LB"), "content")
+      callproperty        QName(PackageNamespace("flash.display"), "BitmapData"), 1
+      callproperty        QName(PackageNamespace(""), "clone"), 0
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-BZ"), "_-0ot")
+   method
+    refid "_-1rL:BadgeImageManager/instance/_-1rL:BadgeImageManager/instance/_-0ot"
+    param QName(PackageNamespace("_-4CW"), "AssetLoaderEvent")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 6
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           159
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce_s
+      setlocal3
+
+      pushnull
+      coerce_s
+      setlocal            4
+
+      pushnull
+      coerce              QName(PackageNamespace("flash.display"), "Bitmap")
+      setlocal            5
+
+      debug               1, "k", 0, 159
+      debug               1, "k", 1, 161
+      debugline           161
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "target")
+      getlex              QName(PackageNamespace("_-1t2"), "_-4S6")
+      astypelate
+      coerce              QName(PackageNamespace("_-1t2"), "_-4S6")
+      setlocal2
+
+      debugline           163
+      getlocal2
+      pushnull
+      ifeq                L85
+
+      debugline           164
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "_-4Gt")
+      pushnull
+      equals
+      not
+      dup
+      iffalse             L41
+
+      pop
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "_-4Gt")
+      getproperty         QName(Namespace("_-4jK"), "content")
+      pushnull
+      equals
+      not
+L41:
+      iffalse             L85
+
+      debug               1, "k", 2, 165
+      debug               1, "k", 3, 166
+      debug               1, "k", 4, 167
+      debugline           165
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "assetName")
+      coerce_s
+      setlocal3
+
+      debugline           166
+      getlocal3
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-BZ"), "_-1oV")
+      pushstring          ""
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "replace"), 2
+      coerce_s
+      setlocal            4
+
+      debugline           167
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "_-4Gt")
+      getproperty         QName(Namespace("_-4jK"), "content")
+      getlex              QName(PackageNamespace("flash.display"), "Bitmap")
+      astypelate
+      coerce              QName(PackageNamespace("flash.display"), "Bitmap")
+      setlocal            5
+
+      debugline           170
+      getlocal            5
+      pushnull
+      ifne                L75
+
+      debugline           171
+      returnvoid
+
+      ; 0xF0
+      ; 0xAD
+      ; 0x01
+L75:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-BZ"), "_-Ts")
+      findpropstrict      QName(PackageNamespace("_-5fK"), "_-3g-")
+      getlocal            4
+      getlocal            5
+      getproperty         QName(PackageNamespace(""), "bitmapData")
+      callproperty        QName(PackageNamespace(""), "clone"), 0
+      constructprop       QName(PackageNamespace("_-5fK"), "_-3g-"), 2
+      callpropvoid        QName(Namespace("flash.events:IEventDispatcher"), "dispatchEvent"), 1
+
+      debugline           176
+L85:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-BZ"), "_-0Iz")
+   method
+    refid "_-1rL:BadgeImageManager/instance/_-1rL:BadgeImageManager/instance/_-0Iz"
+    param QName(PackageNamespace(""), "String")
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 5
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           178
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-1t2"), "BitmapDataAsset")
+      setlocal            4
+
+      debug               1, "k", 0, 178
+      debug               1, "k", 1, 178
+      debug               1, "k", 2, 179
+      debugline           179
+      getlocal0
+      getlocal1
+      callproperty        QName(PrivateNamespace("_-BZ"), "_-2cD"), 1
+      coerce              QName(PackageNamespace("flash.display"), "BitmapData")
+      setlocal3
+
+      debugline           180
+      getlocal3
+      iffalse             L50
+
+      debug               1, "k", 3, 182
+      debugline           182
+      findpropstrict      QName(PackageNamespace("_-1t2"), "BitmapDataAsset")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-BZ"), "_assets")
+      getlex              QName(PackageNamespace("_-1t2"), "BitmapDataAsset")
+      callproperty        QName(Namespace("_-6V0"), "getAssetTypeDeclarationByClass"), 1
+      constructprop       QName(PackageNamespace("_-1t2"), "BitmapDataAsset"), 1
+      coerce              QName(PackageNamespace("_-1t2"), "BitmapDataAsset")
+      setlocal            4
+
+      debugline           183
+      getlocal            4
+      pushnull
+      ifeq                L50
+
+      debugline           184
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-BZ"), "_assets")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-BZ"), "_-1oV")
+      getlocal2
+      add
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-BZ"), "_-3gW")
+      add
+      getlocal            4
+      callpropvoid        QName(Namespace("_-6V0"), "setAsset"), 2
+
+      debugline           185
+      getlocal            4
+      getlocal3
+      callpropvoid        QName(PackageNamespace(""), "_-3iw"), 1
+
+      debugline           188
+L50:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-BZ"), "_-2cD")
+   method
+    refid "_-1rL:BadgeImageManager/instance/_-1rL:BadgeImageManager/instance/_-2cD"
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace("flash.display"), "BitmapData")
+    body
+     maxstack 7
+     localcount 6
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           191
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("flash.display"), "BitmapData")
+      setlocal3
+
+      pushnull
+      coerce              QName(PackageNamespace("flash.display"), "BitmapData")
+      setlocal            4
+
+      pushnull
+      coerce              QName(PackageNamespace("flash.geom"), "Matrix")
+      setlocal            5
+
+      debug               1, "k", 0, 191
+      debug               1, "k", 1, 192
+      debugline           192
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-BZ"), "_assets")
+      getlocal1
+      callproperty        QName(Namespace("_-6V0"), "getAssetByName"), 1
+      coerce              QName(PackageNamespace("_-1t2"), "if ")
+      setlocal2
+
+      debugline           193
+      getlocal2
+      pushnull
+      ifeq                L75
+
+      debug               1, "k", 2, 194
+      debug               1, "k", 3, 195
+      debug               1, "k", 4, 196
+      debugline           194
+      getlocal2
+      getproperty         QName(Namespace("_-6LB"), "content")
+      getlex              QName(PackageNamespace("flash.display"), "BitmapData")
+      astypelate
+      coerce              QName(PackageNamespace("flash.display"), "BitmapData")
+      setlocal3
+
+      debugline           195
+      findpropstrict      QName(PackageNamespace("flash.display"), "BitmapData")
+      getlocal3
+      getproperty         QName(PackageNamespace(""), "width")
+      pushbyte            2
+      divide
+      getlocal3
+      getproperty         QName(PackageNamespace(""), "height")
+      pushbyte            2
+      divide
+      pushtrue
+      pushbyte            0
+      constructprop       QName(PackageNamespace("flash.display"), "BitmapData"), 4
+      coerce              QName(PackageNamespace("flash.display"), "BitmapData")
+      setlocal            4
+
+      debugline           196
+      findpropstrict      QName(PackageNamespace("flash.geom"), "Matrix")
+      pushdouble          0.5
+      pushbyte            0
+      dup
+      pushdouble          0.5
+      constructprop       QName(PackageNamespace("flash.geom"), "Matrix"), 4
+      coerce              QName(PackageNamespace("flash.geom"), "Matrix")
+      setlocal            5
+
+      debugline           197
+      getlocal            4
+      getlocal3
+      getlocal            5
+      pushnull
+      pushnull
+      pushnull
+      pushtrue
+      callpropvoid        QName(PackageNamespace(""), "draw"), 6
+
+      debugline           198
+      getlocal            4
+      returnvalue
+
+      ; 0xF0
+      ; 0xC8
+      ; 0x01
+L75:
+      pushnull
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-1rL:BadgeImageManager/class/init"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    debug               1, "k", 0, 24
+    findproperty        QName(PackageNamespace(""), "_-10t")
+    pushstring          "group_badge"
+    initproperty        QName(PackageNamespace(""), "_-10t")
+
+    debug               1, "k", 1, 25
+    findproperty        QName(PackageNamespace(""), "_-0A1")
+    pushstring          "normal_badge"
+    initproperty        QName(PackageNamespace(""), "_-0A1")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait const QName(PackageNamespace(""), "_-10t") slotid 1 type QName(PackageNamespace(""), "String") value Utf8("group_badge") end
+ trait const QName(PackageNamespace(""), "_-0A1") slotid 2 type QName(PackageNamespace(""), "String") value Utf8("normal_badge") end
+end ; class

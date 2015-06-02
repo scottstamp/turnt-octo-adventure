@@ -1,0 +1,1537 @@
+class
+ refid "_-3r2:HabboNotificationItemView"
+ instance QName(PackageNamespace("_-3r2"), "HabboNotificationItemView")
+  extends QName(PackageNamespace(""), "Object")
+  implements Multiname("_-6Uo", [PackageNamespace("_-6Sg")])
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-0xb")
+  iinit
+   refid "_-3r2:HabboNotificationItemView/instance/init"
+   param QName(PackageNamespace("_-1t2"), "if ")
+   param QName(PackageNamespace("_-6AR"), "_-6Ja")
+   param QName(PackageNamespace("_-12V"), "Map")
+   param QName(PackageNamespace("_-12V"), "Map")
+   param QName(PackageNamespace("_-3r2"), "_-46b")
+   body
+    maxstack 4
+    localcount 8
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     debugfile           "k"
+     debugline           55
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 55
+     debug               1, "k", 1, 55
+     debug               1, "k", 2, 55
+     debug               1, "k", 3, 55
+     debug               1, "k", 4, 55
+     debugline           55
+     getlocal0
+     constructsuper      0
+
+     debug               1, "k", 5, 59
+     debug               1, "k", 6, 71
+     debugline           56
+     getlocal0
+     getlocal3
+     initproperty        QName(PrivateNamespace("_-0xb"), "_-NK")
+
+     debugline           57
+     getlocal0
+     getlocal            4
+     initproperty        QName(PrivateNamespace("_-0xb"), "_-Ew")
+
+     debugline           59
+     getlocal1
+     getlex              QName(PackageNamespace("_-1t2"), "XmlAsset")
+     astypelate
+     coerce              QName(PackageNamespace("_-1t2"), "XmlAsset")
+     setlocal            6
+
+     debugline           60
+     getlocal            6
+     pushnull
+     ifne                L36
+
+     debugline           61
+     returnvoid
+
+     ; 0xF0
+     ; 0x40
+L36:
+     getlocal0
+     getlocal2
+     getlocal            6
+     getproperty         QName(PackageNamespace(""), "content")
+     getlex              QName(PackageNamespace(""), "XML")
+     astypelate
+     pushbyte            1
+     callproperty        QName(Namespace("_-110"), "buildFromXML"), 2
+     initproperty        QName(PrivateNamespace("_-0xb"), "_-04A")
+
+     debugline           65
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-0xb"), "_-04A")
+     getproperty         QName(Namespace("_-6Dt"), "tags")
+     pushstring          "notificationview"
+     callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+     debugline           66
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-0xb"), "_-04A")
+     getproperty         QName(Namespace("_-6Dt"), "context")
+     callproperty        QName(Namespace("_-503"), "getDesktopWindow"), 0
+     getlex              QName(PackageNamespace("_-5-S"), "WindowEvent")
+     getproperty         QName(PackageNamespace(""), "_-0Bf")
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-0xb"), "_-aP")
+     callpropvoid        QName(Namespace("_-6Dt"), "addEventListener"), 2
+
+     debugline           67
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-0xb"), "_-04A")
+     getlocal0
+     getproperty         QName(PackageNamespace(""), "_-5cq")
+     setproperty         QName(Namespace("_-6Dt"), "procedure")
+
+     debugline           68
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-0xb"), "_-04A")
+     pushbyte            0
+     setproperty         QName(Namespace("_-6Dt"), "blend")
+
+     debugline           69
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-0xb"), "_-04A")
+     pushfalse
+     setproperty         QName(Namespace("_-6Dt"), "visible")
+
+     debugline           71
+     findpropstrict      QName(PackageNamespace("_-1rh"), "IWindowContainer")
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-0xb"), "_-04A")
+     callproperty        QName(PackageNamespace("_-1rh"), "IWindowContainer"), 1
+     pushstring          "notification_text"
+     callproperty        QName(Namespace("_-0zV"), "findChildByTag"), 1
+     getlex              QName(PackageNamespace("_-3yU"), "ITextWindow")
+     astypelate
+     coerce              QName(PackageNamespace("_-3yU"), "ITextWindow")
+     setlocal            7
+
+     debugline           72
+     getlocal            7
+     pushnull
+     ifeq                L104
+
+     debugline           73
+     getlocal0
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-0xb"), "_-04A")
+     getproperty         QName(Namespace("_-6Dt"), "height")
+     getlocal            7
+     getproperty         QName(Namespace("_-6Dt"), "bottom")
+     subtract
+     initproperty        QName(PrivateNamespace("_-0xb"), "_-6DN")
+
+     jump                L108
+
+     ; 0xF0
+     ; 0x4B
+L104:
+     getlocal0
+     pushbyte            15
+     initproperty        QName(PrivateNamespace("_-0xb"), "_-6DN")
+
+     debugline           77
+L108:
+     getlocal0
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-0xb"), "_-04A")
+     getproperty         QName(Namespace("_-6Dt"), "height")
+     initproperty        QName(PrivateNamespace("_-0xb"), "_-1Ty")
+
+     debugline           78
+     getlocal0
+     pushbyte            4
+     initproperty        QName(PrivateNamespace("_-0xb"), "_-1jE")
+
+     debugline           79
+     getlocal0
+     pushbyte            0
+     initproperty        QName(PrivateNamespace("_-0xb"), "_-31A")
+
+     debugline           80
+     getlocal0
+     getlex              QName(PrivateNamespace("_-0xb"), "_-ji")
+     initproperty        QName(PrivateNamespace("_-0xb"), "_-2r7")
+
+     debugline           82
+     getlocal0
+     getlocal            5
+     callpropvoid        QName(PrivateNamespace("_-0xb"), "_-qm"), 1
+
+     debugline           83
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-0xb"), "_-04A") type QName(PackageNamespace("_-1rh"), "IWindow") end
+  trait slot QName(PrivateNamespace("_-0xb"), "_-3Tu") type QName(PackageNamespace("_-3r2"), "_-46b") end
+  trait slot QName(PrivateNamespace("_-0xb"), "_-j3") type QName(PackageNamespace(""), "Boolean") value False() end
+  trait slot QName(PrivateNamespace("_-0xb"), "_-NK") type QName(PackageNamespace("_-12V"), "Map") end
+  trait slot QName(PrivateNamespace("_-0xb"), "_-Ew") type QName(PackageNamespace("_-12V"), "Map") end
+  trait slot QName(PrivateNamespace("_-0xb"), "_-34L") type QName(PackageNamespace(""), "uint") end
+  trait slot QName(PrivateNamespace("_-0xb"), "_-6RM") type QName(PackageNamespace(""), "uint") end
+  trait slot QName(PrivateNamespace("_-0xb"), "_-vt") type QName(PackageNamespace(""), "uint") end
+  trait slot QName(PrivateNamespace("_-0xb"), "_-1jE") type QName(PackageNamespace(""), "int") end
+  trait slot QName(PrivateNamespace("_-0xb"), "_-31A") type QName(PackageNamespace(""), "Number") end
+  trait slot QName(PrivateNamespace("_-0xb"), "_-6DN") type QName(PackageNamespace(""), "int") end
+  trait slot QName(PrivateNamespace("_-0xb"), "_-1Ty") type QName(PackageNamespace(""), "int") end
+  trait slot QName(PrivateNamespace("_-0xb"), "_-2r7") type QName(PackageNamespace(""), "int") end
+  trait getter QName(PackageNamespace(""), "disposed")
+   method
+    refid "_-3r2:HabboNotificationItemView/instance/disposed/getter"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           43
+      getlocal0
+      pushscope
+
+      debugline           44
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0xb"), "_-04A")
+      pushnull
+      equals
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "ready")
+   method
+    refid "_-3r2:HabboNotificationItemView/instance/ready/getter"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           47
+      getlocal0
+      pushscope
+
+      debugline           48
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0xb"), "_-2r7")
+      getlex              QName(PrivateNamespace("_-0xb"), "_-ji")
+      equals
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "verticalPosition")
+   method
+    refid "_-3r2:HabboNotificationItemView/instance/verticalPosition/getter"
+    returns QName(PackageNamespace(""), "int")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           51
+      getlocal0
+      pushscope
+
+      debugline           52
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0xb"), "_-1jE")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-0xb"), "_-qm")
+   method
+    refid "_-3r2:HabboNotificationItemView/instance/_-3r2:HabboNotificationItemView/_-qm"
+    param QName(PackageNamespace("_-3r2"), "_-46b")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 4
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           85
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("flash.display"), "BitmapData")
+      setlocal3
+
+      debug               1, "k", 0, 85
+      debug               1, "k", 1, 90
+      debugline           86
+      getlocal1
+      pushnull
+      ifne                L17
+
+      debugline           87
+      returnvoid
+
+      ; 0xF0
+      ; 0x5A
+L17:
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "content")
+      coerce_s
+      setlocal2
+
+      debugline           91
+      getlocal0
+      getlocal2
+      callpropvoid        QName(PrivateNamespace("_-0xb"), "_-2E-"), 1
+
+      debugline           93
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "style")
+      getproperty         QName(PackageNamespace(""), "_-K7")
+      pushnull
+      ifne                L45
+
+      debug               1, "k", 2, 95
+      debugline           95
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "style")
+      getproperty         QName(PackageNamespace(""), "icon")
+      coerce              QName(PackageNamespace("flash.display"), "BitmapData")
+      setlocal3
+
+      debugline           96
+      getlocal0
+      getlocal3
+      callpropvoid        QName(PrivateNamespace("_-0xb"), "_-144"), 1
+
+      jump                L58
+
+      ; 0xF0
+      ; 0x62
+L45:
+      findpropstrict      QName(PackageNamespace("_-3yU"), "_-an")
+      findpropstrict      QName(PackageNamespace("_-1rh"), "IWindowContainer")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0xb"), "_-04A")
+      callproperty        QName(PackageNamespace("_-1rh"), "IWindowContainer"), 1
+      pushstring          "notification_icon_static"
+      callproperty        QName(Namespace("_-0zV"), "findChildByTag"), 1
+      callproperty        QName(PackageNamespace("_-3yU"), "_-an"), 1
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "style")
+      getproperty         QName(PackageNamespace(""), "_-K7")
+      setproperty         QName(Namespace("_-6Yo"), "assetUri")
+
+      debugline           101
+L58:
+      getlocal0
+      getlocal1
+      initproperty        QName(PrivateNamespace("_-0xb"), "_-3Tu")
+
+      debugline           103
+      getlocal0
+      callpropvoid        QName(PackageNamespace(""), "_-6P7"), 0
+
+      debugline           104
+      getlocal0
+      callpropvoid        QName(PrivateNamespace("_-0xb"), "_-6Jn"), 0
+
+      debugline           105
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-69k")
+   method
+    refid "_-3r2:HabboNotificationItemView/instance/_-69k"
+    param QName(PackageNamespace("_-5fK"), "_-3g-")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           107
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 107
+      debugline           108
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "_-0dy")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0xb"), "_-3Tu")
+      getproperty         QName(PackageNamespace(""), "style")
+      getproperty         QName(PackageNamespace(""), "_-f")
+      ifeq                L17
+
+      debugline           109
+      returnvoid
+
+      ; 0xF0
+      ; 0x6F
+L17:
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "_-6Cn")
+      pushnull
+      ifeq                L27
+
+      debugline           112
+      getlocal0
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "_-6Cn")
+      callpropvoid        QName(PrivateNamespace("_-0xb"), "_-144"), 1
+
+      debugline           114
+L27:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "update")
+   method
+    refid "_-3r2:HabboNotificationItemView/instance/update"
+    param QName(PackageNamespace(""), "uint")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 5
+     localcount 5
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           116
+      getlocal0
+      pushscope
+
+      pushnan
+      setlocal2
+
+      pushnan
+      setlocal3
+
+      debug               1, "k", 0, 116
+      jump                L142
+
+      ; 0xEF
+      ; 0x01
+      ; 0x02
+      ; 0x01
+      ; 0x7B
+      ; 0xEF
+      ; 0x01
+      ; 0x02
+      ; 0x02
+      ; 0x89
+      ; 0x01
+L21:
+      label
+      debugline           120
+      jump                L187
+
+L24:
+      label
+      debugline           122
+      getlocal0
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0xb"), "_-34L")
+      getlocal1
+      add
+      initproperty        QName(PrivateNamespace("_-0xb"), "_-34L")
+
+      debugline           123
+      findpropstrict      QName(PackageNamespace(""), "Number")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0xb"), "_-34L")
+      callproperty        QName(PackageNamespace(""), "Number"), 1
+      findpropstrict      QName(PackageNamespace(""), "Number")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0xb"), "_-Ew")
+      pushstring          "time_fade_in"
+      getproperty         MultinameL([PrivateNamespace("_-0xb"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-3r2"), PrivateNamespace("HabboNotificationItemView.as$6260"), PackageInternalNs("_-3r2"), ProtectedNamespace("_-0xb"), StaticProtectedNs("_-0xb")])
+      callproperty        QName(PackageNamespace(""), "Number"), 1
+      divide
+      convert_d
+      setlocal2
+
+      debugline           124
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0xb"), "_-34L")
+      findpropstrict      QName(PackageNamespace(""), "int")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0xb"), "_-Ew")
+      pushstring          "time_fade_in"
+      getproperty         MultinameL([PrivateNamespace("_-0xb"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-3r2"), PrivateNamespace("HabboNotificationItemView.as$6260"), PackageInternalNs("_-3r2"), ProtectedNamespace("_-0xb"), StaticProtectedNs("_-0xb")])
+      callproperty        QName(PackageNamespace(""), "int"), 1
+      ifngt               L60
+
+      debugline           125
+      getlocal0
+      callpropvoid        QName(PrivateNamespace("_-0xb"), "_-Ge"), 0
+
+      debugline           127
+L60:
+      getlocal0
+      getlocal2
+      callpropvoid        QName(PrivateNamespace("_-0xb"), "_-3nx"), 1
+
+      debugline           128
+      jump                L187
+
+L65:
+      label
+      debugline           130
+      getlocal0
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0xb"), "_-vt")
+      getlocal1
+      add
+      initproperty        QName(PrivateNamespace("_-0xb"), "_-vt")
+
+      debugline           131
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0xb"), "_-vt")
+      findpropstrict      QName(PackageNamespace(""), "int")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0xb"), "_-Ew")
+      pushstring          "time_display"
+      getproperty         MultinameL([PrivateNamespace("_-0xb"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-3r2"), PrivateNamespace("HabboNotificationItemView.as$6260"), PackageInternalNs("_-3r2"), ProtectedNamespace("_-0xb"), StaticProtectedNs("_-0xb")])
+      callproperty        QName(PackageNamespace(""), "int"), 1
+      greaterthan
+      dup
+      iffalse             L89
+
+      pop
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0xb"), "_-j3")
+      not
+L89:
+      iffalse             L94
+
+      debugline           132
+      getlocal0
+      callpropvoid        QName(PrivateNamespace("_-0xb"), "_-2rb"), 0
+
+      debugline           134
+L94:
+      jump                L187
+
+L95:
+      label
+      debugline           136
+      getlocal0
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0xb"), "_-6RM")
+      getlocal1
+      add
+      initproperty        QName(PrivateNamespace("_-0xb"), "_-6RM")
+
+      debugline           137
+      pushbyte            1
+      findpropstrict      QName(PackageNamespace(""), "Number")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0xb"), "_-6RM")
+      callproperty        QName(PackageNamespace(""), "Number"), 1
+      findpropstrict      QName(PackageNamespace(""), "Number")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0xb"), "_-Ew")
+      pushstring          "time_fade_out"
+      getproperty         MultinameL([PrivateNamespace("_-0xb"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-3r2"), PrivateNamespace("HabboNotificationItemView.as$6260"), PackageInternalNs("_-3r2"), ProtectedNamespace("_-0xb"), StaticProtectedNs("_-0xb")])
+      callproperty        QName(PackageNamespace(""), "Number"), 1
+      divide
+      subtract
+      convert_d
+      setlocal3
+
+      debugline           138
+      getlocal0
+      getlocal3
+      callpropvoid        QName(PrivateNamespace("_-0xb"), "_-3nx"), 1
+
+      debugline           139
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0xb"), "_-6RM")
+      findpropstrict      QName(PackageNamespace(""), "int")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0xb"), "_-Ew")
+      pushstring          "time_fade_in"
+      getproperty         MultinameL([PrivateNamespace("_-0xb"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-3r2"), PrivateNamespace("HabboNotificationItemView.as$6260"), PackageInternalNs("_-3r2"), ProtectedNamespace("_-0xb"), StaticProtectedNs("_-0xb")])
+      callproperty        QName(PackageNamespace(""), "int"), 1
+      ifngt               L137
+
+      debugline           140
+      getlocal0
+      callpropvoid        QName(PrivateNamespace("_-0xb"), "_-09V"), 0
+
+      debugline           142
+L137:
+      jump                L187
+
+L138:
+      label
+      jump                L187
+
+      ; 0xF0
+      ; 0x75
+L142:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0xb"), "_-2r7")
+      setlocal            4
+
+      debugline           118
+      getlex              QName(PrivateNamespace("_-0xb"), "_-ji")
+      getlocal            4
+      ifstrictne          L153
+
+      pushbyte            0
+      jump                L182
+
+      ; 0xF0
+      ; 0x79
+L153:
+      getlex              QName(PrivateNamespace("_-0xb"), "_-gD")
+      getlocal            4
+      ifstrictne          L161
+
+      pushbyte            1
+      jump                L182
+
+      ; 0xF0
+      ; 0x81
+      ; 0x01
+L161:
+      getlex              QName(PrivateNamespace("_-0xb"), "_-0q0")
+      getlocal            4
+      ifstrictne          L169
+
+      pushbyte            2
+      jump                L182
+
+      ; 0xF0
+      ; 0x87
+      ; 0x01
+L169:
+      getlex              QName(PrivateNamespace("_-0xb"), "_-6RT")
+      getlocal            4
+      ifstrictne          L174
+
+      pushbyte            3
+      jump                L182
+
+L174:
+      jump                L181
+
+      ; 0x24
+      ; 0x04
+      ; 0x10
+      ; 0x02
+      ; 0x00
+      ; 0x00
+L181:
+      pushbyte            4
+L182:
+      kill                4
+      lookupswitch        L138, [L21, L24, L65, L95, L138]
+
+      ; 0xF0
+      ; 0x90
+      ; 0x01
+L187:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "dispose")
+   method
+    refid "_-3r2:HabboNotificationItemView/instance/dispose"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           146
+      getlocal0
+      pushscope
+
+      debugline           147
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0xb"), "_-04A")
+      pushnull
+      ifeq                L18
+
+      debugline           148
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0xb"), "_-04A")
+      callpropvoid        QName(Namespace("_-1Dt"), "dispose"), 0
+
+      debugline           149
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-0xb"), "_-04A")
+
+      debugline           151
+L18:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0xb"), "_-3Tu")
+      pushnull
+      ifeq                L31
+
+      debugline           152
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0xb"), "_-3Tu")
+      callpropvoid        QName(PackageNamespace(""), "dispose"), 0
+
+      debugline           153
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-0xb"), "_-3Tu")
+
+      debugline           156
+L31:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-0xb"), "_-2E-")
+   method
+    refid "_-3r2:HabboNotificationItemView/instance/_-3r2:HabboNotificationItemView/_-2E-"
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           158
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 158
+      debug               1, "k", 1, 159
+      debugline           159
+      findpropstrict      QName(PackageNamespace("_-1rh"), "IWindowContainer")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0xb"), "_-04A")
+      callproperty        QName(PackageNamespace("_-1rh"), "IWindowContainer"), 1
+      pushstring          "notification_text"
+      callproperty        QName(Namespace("_-0zV"), "findChildByTag"), 1
+      getlex              QName(PackageNamespace("_-3yU"), "ITextWindow")
+      astypelate
+      coerce              QName(PackageNamespace("_-3yU"), "ITextWindow")
+      setlocal2
+
+      debugline           160
+      getlocal2
+      pushnull
+      equals
+      dup
+      iftrue              L27
+
+      pop
+      getlocal1
+      pushnull
+      equals
+L27:
+      iffalse             L33
+
+      debugline           161
+      returnvoid
+
+      ; 0xF0
+      ; 0xA5
+      ; 0x01
+L33:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0xb"), "_-04A")
+      pushbyte            0
+      setproperty         QName(Namespace("_-6Dt"), "height")
+
+      debugline           166
+      getlocal2
+      getlocal1
+      setproperty         QName(Namespace("_-4Mp"), "text")
+
+      debugline           167
+      getlocal2
+      getlocal2
+      getproperty         QName(Namespace("_-4Mp"), "textHeight")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0xb"), "_-6DN")
+      add
+      setproperty         QName(Namespace("_-6Dt"), "height")
+
+      debugline           168
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0xb"), "_-04A")
+      getproperty         QName(Namespace("_-6Dt"), "height")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0xb"), "_-1Ty")
+      ifnlt               L63
+
+      debugline           169
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0xb"), "_-04A")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0xb"), "_-1Ty")
+      setproperty         QName(Namespace("_-6Dt"), "height")
+
+      debugline           171
+L63:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-0xb"), "_-144")
+   method
+    refid "_-3r2:HabboNotificationItemView/instance/_-3r2:HabboNotificationItemView/_-144"
+    param QName(PackageNamespace("flash.display"), "BitmapData")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 6
+     localcount 7
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           173
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("flash.display"), "BitmapData")
+      setlocal3
+
+      pushbyte            0
+      setlocal            4
+
+      pushbyte            0
+      setlocal            5
+
+      pushbyte            0
+      setlocal            6
+
+      debug               1, "k", 0, 173
+      debug               1, "k", 1, 174
+      debug               1, "k", 2, 184
+      debug               1, "k", 3, 185
+      debugline           174
+      findpropstrict      QName(PackageNamespace("_-1rh"), "IWindowContainer")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0xb"), "_-04A")
+      callproperty        QName(PackageNamespace("_-1rh"), "IWindowContainer"), 1
+      pushstring          "notification_icon"
+      callproperty        QName(Namespace("_-0zV"), "findChildByTag"), 1
+      getlex              QName(PackageNamespace("_-3yU"), "IBitmapWrapperWindow")
+      astypelate
+      coerce              QName(PackageNamespace("_-3yU"), "IBitmapWrapperWindow")
+      setlocal2
+
+      debugline           175
+      getlocal2
+      pushnull
+      ifne                L37
+
+      debugline           176
+      returnvoid
+
+      ; 0xF0
+      ; 0xB2
+      ; 0x01
+L37:
+      getlocal1
+      pushnull
+      ifne                L49
+
+      debugline           179
+      getlocal2
+      pushnull
+      setproperty         QName(Namespace("_-E9"), "bitmap")
+
+      debugline           180
+      returnvoid
+
+      ; 0xF0
+      ; 0xBB
+      ; 0x01
+L49:
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "width")
+      getlocal2
+      getproperty         QName(Namespace("_-6Dt"), "width")
+      lessthan
+      dup
+      iffalse             L62
+
+      pop
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "height")
+      getlocal2
+      getproperty         QName(Namespace("_-6Dt"), "height")
+      lessthan
+L62:
+      iffalse             L110
+
+      debug               1, "k", 4, 190
+      debug               1, "k", 5, 191
+      debugline           189
+      findpropstrict      QName(PackageNamespace("flash.display"), "BitmapData")
+      getlocal2
+      getproperty         QName(Namespace("_-6Dt"), "width")
+      getlocal2
+      getproperty         QName(Namespace("_-6Dt"), "height")
+      pushtrue
+      pushbyte            0
+      constructprop       QName(PackageNamespace("flash.display"), "BitmapData"), 4
+      coerce              QName(PackageNamespace("flash.display"), "BitmapData")
+      setlocal3
+
+      debugline           190
+      getlocal2
+      getproperty         QName(Namespace("_-6Dt"), "width")
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "width")
+      subtract
+      pushbyte            2
+      divide
+      convert_i
+      setlocal            5
+
+      debugline           191
+      getlocal2
+      getproperty         QName(Namespace("_-6Dt"), "height")
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "height")
+      subtract
+      pushbyte            2
+      divide
+      convert_i
+      setlocal            6
+
+      debugline           192
+      getlocal3
+      getlocal1
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "rect")
+      findpropstrict      QName(PackageNamespace("flash.geom"), "Point")
+      getlocal            5
+      getlocal            6
+      constructprop       QName(PackageNamespace("flash.geom"), "Point"), 2
+      callpropvoid        QName(PackageNamespace(""), "copyPixels"), 3
+
+      jump                L209
+
+      ; 0xF0
+      ; 0xC1
+      ; 0x01
+L110:
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "width")
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "height")
+      ifnlt               L150
+
+      debugline           195
+      findpropstrict      QName(PackageNamespace("flash.display"), "BitmapData")
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "height")
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "height")
+      pushtrue
+      pushbyte            0
+      constructprop       QName(PackageNamespace("flash.display"), "BitmapData"), 4
+      coerce              QName(PackageNamespace("flash.display"), "BitmapData")
+      setlocal3
+
+      debugline           196
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "height")
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "width")
+      subtract
+      pushbyte            2
+      divide
+      convert_i
+      setlocal            4
+
+      debugline           197
+      getlocal3
+      getlocal1
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "rect")
+      findpropstrict      QName(PackageNamespace("flash.geom"), "Point")
+      getlocal            4
+      pushbyte            0
+      constructprop       QName(PackageNamespace("flash.geom"), "Point"), 2
+      callpropvoid        QName(PackageNamespace(""), "copyPixels"), 3
+
+      jump                L209
+
+      ; 0xF0
+      ; 0xC6
+      ; 0x01
+L150:
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "width")
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "height")
+      ifngt               L190
+
+      debugline           200
+      findpropstrict      QName(PackageNamespace("flash.display"), "BitmapData")
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "width")
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "width")
+      pushtrue
+      pushbyte            0
+      constructprop       QName(PackageNamespace("flash.display"), "BitmapData"), 4
+      coerce              QName(PackageNamespace("flash.display"), "BitmapData")
+      setlocal3
+
+      debugline           201
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "width")
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "height")
+      subtract
+      pushbyte            2
+      divide
+      convert_i
+      setlocal            4
+
+      debugline           202
+      getlocal3
+      getlocal1
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "rect")
+      findpropstrict      QName(PackageNamespace("flash.geom"), "Point")
+      pushbyte            0
+      getlocal            4
+      constructprop       QName(PackageNamespace("flash.geom"), "Point"), 2
+      callpropvoid        QName(PackageNamespace(""), "copyPixels"), 3
+
+      jump                L209
+
+      ; 0xF0
+      ; 0xCC
+      ; 0x01
+L190:
+      findpropstrict      QName(PackageNamespace("flash.display"), "BitmapData")
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "width")
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "height")
+      constructprop       QName(PackageNamespace("flash.display"), "BitmapData"), 2
+      coerce              QName(PackageNamespace("flash.display"), "BitmapData")
+      setlocal3
+
+      debugline           205
+      getlocal3
+      getlocal1
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "rect")
+      findpropstrict      QName(PackageNamespace("flash.geom"), "Point")
+      pushbyte            0
+      dup
+      constructprop       QName(PackageNamespace("flash.geom"), "Point"), 2
+      callpropvoid        QName(PackageNamespace(""), "copyPixels"), 3
+
+      debugline           208
+L209:
+      getlocal2
+      getlocal3
+      setproperty         QName(Namespace("_-E9"), "bitmap")
+
+      debugline           209
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-0xb"), "_-6Jn")
+   method
+    refid "_-3r2:HabboNotificationItemView/instance/_-3r2:HabboNotificationItemView/_-6Jn"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           211
+      getlocal0
+      pushscope
+
+      debugline           212
+      getlocal0
+      pushbyte            0
+      initproperty        QName(PrivateNamespace("_-0xb"), "_-34L")
+
+      debugline           213
+      getlocal0
+      getlex              QName(PrivateNamespace("_-0xb"), "_-gD")
+      initproperty        QName(PrivateNamespace("_-0xb"), "_-2r7")
+
+      debugline           214
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0xb"), "_-04A")
+      pushtrue
+      setproperty         QName(Namespace("_-6Dt"), "visible")
+
+      debugline           215
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-0xb"), "_-2rb")
+   method
+    refid "_-3r2:HabboNotificationItemView/instance/_-3r2:HabboNotificationItemView/_-2rb"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           217
+      getlocal0
+      pushscope
+
+      debugline           218
+      getlocal0
+      pushbyte            0
+      initproperty        QName(PrivateNamespace("_-0xb"), "_-6RM")
+
+      debugline           219
+      getlocal0
+      getlex              QName(PrivateNamespace("_-0xb"), "_-6RT")
+      initproperty        QName(PrivateNamespace("_-0xb"), "_-2r7")
+
+      debugline           220
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-0xb"), "_-Ge")
+   method
+    refid "_-3r2:HabboNotificationItemView/instance/_-3r2:HabboNotificationItemView/_-Ge"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           222
+      getlocal0
+      pushscope
+
+      debugline           223
+      getlocal0
+      pushbyte            0
+      initproperty        QName(PrivateNamespace("_-0xb"), "_-vt")
+
+      debugline           224
+      getlocal0
+      getlex              QName(PrivateNamespace("_-0xb"), "_-0q0")
+      initproperty        QName(PrivateNamespace("_-0xb"), "_-2r7")
+
+      debugline           225
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-0xb"), "_-09V")
+   method
+    refid "_-3r2:HabboNotificationItemView/instance/_-3r2:HabboNotificationItemView/_-09V"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           227
+      getlocal0
+      pushscope
+
+      debugline           228
+      getlocal0
+      getlex              QName(PrivateNamespace("_-0xb"), "_-ji")
+      initproperty        QName(PrivateNamespace("_-0xb"), "_-2r7")
+
+      debugline           229
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0xb"), "_-04A")
+      pushfalse
+      setproperty         QName(Namespace("_-6Dt"), "visible")
+
+      debugline           230
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-6P7")
+   method
+    refid "_-3r2:HabboNotificationItemView/instance/_-6P7"
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_OPTIONAL
+    optional Integer(-1)
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           232
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 232
+      debug               1, "k", 1, 237
+      debugline           233
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0xb"), "_-04A")
+      pushnull
+      ifne                L16
+
+      debugline           234
+      returnvoid
+
+      ; 0xF0
+      ; 0xED
+      ; 0x01
+L16:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0xb"), "_-04A")
+      getproperty         QName(Namespace("_-6Dt"), "context")
+      callproperty        QName(Namespace("_-503"), "getDesktopWindow"), 0
+      coerce              QName(PackageNamespace("_-3yU"), "IDesktopWindow")
+      setlocal2
+
+      debugline           238
+      getlocal2
+      pushnull
+      ifne                L31
+
+      debugline           239
+      returnvoid
+
+      ; 0xF0
+      ; 0xF2
+      ; 0x01
+L31:
+      getlocal1
+      pushbyte            -1
+      ifeq                L39
+
+      debugline           243
+      getlocal0
+      getlocal1
+      initproperty        QName(PrivateNamespace("_-0xb"), "_-1jE")
+
+      debugline           246
+L39:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0xb"), "_-04A")
+      getlocal2
+      getproperty         QName(Namespace("_-6Dt"), "width")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0xb"), "_-04A")
+      getproperty         QName(Namespace("_-6Dt"), "width")
+      subtract
+      getlex              QName(PackageNamespace(""), "_-6Eq")
+      subtract
+      setproperty         QName(Namespace("_-6Dt"), "x")
+
+      debugline           247
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0xb"), "_-04A")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0xb"), "_-1jE")
+      setproperty         QName(Namespace("_-6Dt"), "y")
+
+      debugline           248
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-5cq")
+   method
+    refid "_-3r2:HabboNotificationItemView/instance/_-5cq"
+    param QName(PackageNamespace("_-5-S"), "WindowEvent")
+    param QName(PackageNamespace("_-1rh"), "IWindow")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 3
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           250
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 250
+      debug               1, "k", 1, 250
+      debugline           251
+      getlocal1
+      pushnull
+      ifne                L15
+
+      debugline           252
+      returnvoid
+
+      ; 0xF0
+      ; 0xFF
+      ; 0x01
+L15:
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "type")
+      getlex              QName(PackageNamespace("_-5-S"), "WindowMouseEvent")
+      getproperty         QName(PackageNamespace(""), "_-5Ek")
+      ifne                L28
+
+      debugline           256
+      getlocal0
+      pushtrue
+      initproperty        QName(PrivateNamespace("_-0xb"), "_-j3")
+
+      jump                L59
+
+      ; 0xF0
+      ; 0x81
+      ; 0x02
+L28:
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "type")
+      getlex              QName(PackageNamespace("_-5-S"), "WindowMouseEvent")
+      getproperty         QName(PackageNamespace(""), "_-4V9")
+      ifne                L41
+
+      debugline           258
+      getlocal0
+      pushfalse
+      initproperty        QName(PrivateNamespace("_-0xb"), "_-j3")
+
+      jump                L59
+
+      ; 0xF0
+      ; 0x83
+      ; 0x02
+L41:
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "type")
+      getlex              QName(PackageNamespace("_-5-S"), "WindowMouseEvent")
+      getproperty         QName(PackageNamespace(""), "CLICK")
+      ifne                L59
+
+      debugline           260
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0xb"), "_-3Tu")
+      pushnull
+      ifeq                L59
+
+      debugline           261
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0xb"), "_-3Tu")
+      callpropvoid        QName(PackageNamespace(""), "_-0i4"), 0
+
+      debugline           262
+      getlocal0
+      callpropvoid        QName(PrivateNamespace("_-0xb"), "_-2rb"), 0
+
+      debugline           265
+L59:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-0xb"), "_-aP")
+   method
+    refid "_-3r2:HabboNotificationItemView/instance/_-3r2:HabboNotificationItemView/_-aP"
+    param QName(PackageNamespace("_-5-S"), "WindowEvent")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 1
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           267
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 267
+      debugline           268
+      getlocal0
+      callpropvoid        QName(PackageNamespace(""), "_-6P7"), 0
+
+      debugline           269
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-0xb"), "_-3nx")
+   method
+    refid "_-3r2:HabboNotificationItemView/instance/_-3r2:HabboNotificationItemView/_-3nx"
+    param QName(PackageNamespace(""), "Number")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           271
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 271
+      debugline           272
+      getlocal0
+      getlocal1
+      initproperty        QName(PrivateNamespace("_-0xb"), "_-31A")
+
+      debugline           273
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0xb"), "_-31A")
+      pushbyte            1
+      ifngt               L19
+
+      debugline           274
+      getlocal0
+      pushbyte            1
+      initproperty        QName(PrivateNamespace("_-0xb"), "_-31A")
+
+      debugline           276
+L19:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0xb"), "_-31A")
+      pushbyte            0
+      ifnlt               L28
+
+      debugline           277
+      getlocal0
+      pushbyte            0
+      initproperty        QName(PrivateNamespace("_-0xb"), "_-31A")
+
+      debugline           279
+L28:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0xb"), "_-04A")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0xb"), "_-31A")
+      setproperty         QName(Namespace("_-6Dt"), "blend")
+
+      debugline           280
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-3r2:HabboNotificationItemView/class/init"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    debug               1, "k", 0, 21
+    findproperty        QName(PackageNamespace(""), "_-0rJ")
+    pushbyte            70
+    initproperty        QName(PackageNamespace(""), "_-0rJ")
+
+    debug               1, "k", 1, 22
+    findproperty        QName(PackageNamespace(""), "_-6Eq")
+    pushbyte            5
+    initproperty        QName(PackageNamespace(""), "_-6Eq")
+
+    debug               1, "k", 2, 24
+    findproperty        QName(PrivateNamespace("_-0xb"), "_-ji")
+    pushbyte            0
+    initproperty        QName(PrivateNamespace("_-0xb"), "_-ji")
+
+    debug               1, "k", 3, 25
+    findproperty        QName(PrivateNamespace("_-0xb"), "_-gD")
+    pushbyte            1
+    initproperty        QName(PrivateNamespace("_-0xb"), "_-gD")
+
+    debug               1, "k", 4, 26
+    findproperty        QName(PrivateNamespace("_-0xb"), "_-0q0")
+    pushbyte            2
+    initproperty        QName(PrivateNamespace("_-0xb"), "_-0q0")
+
+    debug               1, "k", 5, 27
+    findproperty        QName(PrivateNamespace("_-0xb"), "_-6RT")
+    pushbyte            3
+    initproperty        QName(PrivateNamespace("_-0xb"), "_-6RT")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait const QName(PackageNamespace(""), "_-0rJ") slotid 1 type QName(PackageNamespace(""), "int") value Integer(70) end
+ trait const QName(PackageNamespace(""), "_-6Eq") slotid 2 type QName(PackageNamespace(""), "int") value Integer(5) end
+ trait const QName(PrivateNamespace("_-0xb"), "_-ji") slotid 3 type QName(PackageNamespace(""), "int") value Integer(0) end
+ trait const QName(PrivateNamespace("_-0xb"), "_-gD") slotid 4 type QName(PackageNamespace(""), "int") value Integer(1) end
+ trait const QName(PrivateNamespace("_-0xb"), "_-0q0") slotid 5 type QName(PackageNamespace(""), "int") value Integer(2) end
+ trait const QName(PrivateNamespace("_-0xb"), "_-6RT") slotid 6 type QName(PackageNamespace(""), "int") value Integer(3) end
+end ; class
