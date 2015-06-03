@@ -12,10 +12,10 @@ class
    param QName(PackageNamespace(""), "int")
    param QName(PackageNamespace("flash.utils"), "ByteArray")
    body
-    maxstack 2
+    maxstack 7
     localcount 3
-    initscopedepth 4
-    maxscopedepth 5
+    initscopedepth 1
+    maxscopedepth 12
     code
      debugfile           "k"
      debugline           14
@@ -39,12 +39,23 @@ class
      initproperty        QName(PrivateNamespace("_-1gu"), "_-4u1")
 
      debugline           17
+     getlocal0
+     newarray            0
+     initproperty        QName(PrivateNamespace("_-1gu"), "message")
+
+     getlocal0
+     getproperty QName(PrivateNamespace("_1qu"), "message")
+     getlocal1
+     getlocal2
+     callpropvoid QName(PrivateNamespace("http://adobe.com/AS3/2006/builtin"), "push"), 2
+
      returnvoid
     end ; code
    end ; body
   end ; method
   trait slot QName(PrivateNamespace("_-1gu"), "_-5T3") type QName(PackageNamespace(""), "int") end
   trait slot QName(PrivateNamespace("_-1gu"), "_-4u1") type QName(PackageNamespace("flash.utils"), "ByteArray") end
+  trait slot QName(PrivateNamespace("_-1gu"), "message") type QName(PackageNamespace(""), "Array") end
   trait method QName(PackageNamespace(""), "_-64r")
    method
     refid "_-3nz:_-5F2/instance/_-64r"
@@ -66,10 +77,16 @@ class
       convert_i
       setlocal1
 
-      getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
-      pushstring          "Trafficker.logIncomingHeader"
-      getlocal1
-      callpropvoid        QName(PackageNamespace(""), "call"), 2
+   ;   getlocal0
+  ;    getproperty         QName(PrivateNamespace("_1qu"), "message")
+ ;     getlocal1
+;      callpropvoid        QName(PrivateNamespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+    ;  getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+   ;   pushstring          "Trafficker.logIncomingHeader"
+  ;    getlocal0
+ ;     getproperty         QName(PrivateNamespace("_1qu"), "message")
+;      callpropvoid        QName(PackageNamespace(""), "call"), 2
 
       debugline           21
       getlocal1
@@ -100,10 +117,16 @@ class
       coerce_s
       setlocal1
 
-      getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
-      pushstring          "Trafficker.logIncoming"
-      getlocal1
-      callpropvoid        QName(PackageNamespace(""), "call"), 2
+;      getlocal0
+;      getproperty         QName(PrivateNamespace("_1qu"), "message")
+ ;     getlocal1
+  ;    callpropvoid        QName(PrivateNamespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+   ;   getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+    ;  pushstring          "Trafficker.logIncomingHeader"
+     ; getlocal0
+      ;getproperty         QName(PrivateNamespace("_1qu"), "message")
+      ;callpropvoid        QName(PackageNamespace(""), "call"), 2
 
       debugline           25
       getlocal1
